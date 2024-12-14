@@ -1,0 +1,981 @@
+[
+    {
+        "Language": "HTML",
+        "Summary": "HTML (Hypertext Markup Language) is the standard markup language used to create and structure content on the web. It uses a system of tags to define elements like headings, paragraphs, links, images, and other multimedia. HTML forms the backbone of web pages, allowing browsers to render content and providing a framework for integrating styles and scripts.",
+        "More": [
+            {
+                "Framework": "HTML5",
+                "Summary": "The latest version of HTML, providing new elements and attributes for modern web development.",
+                "URL": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "HTML5 Boilerplate",
+                        "Summary": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
+                        "URL": "https://html5boilerplate.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "W3C Markup Validation Service",
+                        "Summary": "A tool for checking the validity of HTML and XHTML documents against W3C standards.",
+                        "URL": "https://validator.w3.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Foundation for Sites",
+                "Summary": "A responsive front-end framework that allows you to design responsive websites quickly.",
+                "URL": "https://get.foundation/sites/docs/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Foundation CLI",
+                        "Summary": "A command-line tool for creating Foundation projects.",
+                        "URL": "https://get.foundation/sites/docs/installation.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Foundation Docs",
+                        "Summary": "Comprehensive documentation and guides for using Foundation.",
+                        "URL": "https://get.foundation/sites/docs/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "HTML5 UP",
+                "Summary": "A collection of free, fully responsive HTML5 and CSS3 site templates.",
+                "URL": "https://html5up.net/",
+                "Libraries": [],
+                "Tools": []
+            },
+            {
+                "Framework": "Bootstrap",
+                "Summary": "A popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.",
+                "URL": "https://getbootstrap.com/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Bootstrap Studio",
+                        "Summary": "A powerful desktop app for designing and prototyping websites using Bootstrap.",
+                        "URL": "https://bootstrapstudio.io/",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "Pingdom Website Speed Test",
+                        "Summary": "Tool for testing the performance of your Bootstrap-based site.",
+                        "URL": "https://tools.pingdom.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Materialize",
+                "Summary": "A modern responsive front-end framework based on Material Design.",
+                "URL": "https://materializecss.com/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Materialize CSS Templates",
+                        "Summary": "A collection of templates and components using Materialize CSS.",
+                        "URL": "https://materializecss.com/templates.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Material Icons",
+                        "Summary": "A set of icons for use with Materialize.",
+                        "URL": "https://material.io/resources/icons/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Semantic UI",
+                "Summary": "A development framework that helps create beautiful, responsive layouts using human-friendly HTML.",
+                "URL": "https://semantic-ui.com/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Semantic UI CDN",
+                        "Summary": "A content delivery network for quickly including Semantic UI in projects.",
+                        "URL": "https://cdnjs.com/libraries/semantic-ui",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Semantic UI Theme Template",
+                        "Summary": "A template for creating custom themes with Semantic UI.",
+                        "URL": "https://semantic-ui.com/usage/theming.html",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "CSS",
+        "Summary": "CSS (Cascading Style Sheets) is a stylesheet language used to style HTML and XML documents, controlling the appearance of web pages by defining styles for elements like colors and fonts. It enables responsive design and promotes a separation between content and layout, making it essential for web development.",
+        "More": [
+            {
+                "Framework": "Bootstrap",
+                "Summary": "A popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.",
+                "URL": "https://getbootstrap.com/",
+                "Libraries": [
+                    {
+                        "Name": "Bootstrap Icons",
+                        "Summary": "A collection of free, high-quality icons designed for Bootstrap.",
+                        "URL": "https://icons.getbootstrap.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Bootstrap Vue",
+                        "Summary": "Vue.js components and directives built on Bootstrap.",
+                        "URL": "https://bootstrap-vue.org/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Bootstrap Studio",
+                        "Summary": "A powerful desktop app for designing and prototyping websites using Bootstrap.",
+                        "URL": "https://bootstrapstudio.io/",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "Pingdom Website Speed Test",
+                        "Summary": "Tool for testing the performance of your Bootstrap-based site.",
+                        "URL": "https://tools.pingdom.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Tailwind CSS",
+                "Summary": "A utility-first CSS framework for creating custom designs without having to leave your HTML.",
+                "URL": "https://tailwindcss.com/",
+                "Libraries": [
+                    {
+                        "Name": "Tailwind UI",
+                        "Summary": "A collection of professionally designed components built with Tailwind CSS.",
+                        "URL": "https://tailwindui.com/",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "DaisyUI",
+                        "Summary": "A Tailwind CSS component library with a set of customizable UI components.",
+                        "URL": "https://daisyui.com/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Tailwind Play",
+                        "Summary": "An online playground for testing Tailwind CSS utilities.",
+                        "URL": "https://play.tailwindcss.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "PurgeCSS",
+                        "Summary": "A tool for removing unused CSS, often used with Tailwind to optimize file size.",
+                        "URL": "https://purgecss.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Bulma",
+                "Summary": "A modern CSS framework based on Flexbox, providing a clean and responsive design.",
+                "URL": "https://bulma.io/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Bulma Extensions",
+                        "Summary": "A collection of extensions and components built on Bulma.",
+                        "URL": "https://extensions.bulma.io/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Bulma CSS Grid",
+                        "Summary": "Grid layout components built using Bulma's CSS framework.",
+                        "URL": "https://bulma.io/documentation/layout/grid/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Foundation",
+                "Summary": "A responsive front-end framework that allows you to design responsive websites quickly.",
+                "URL": "https://get.foundation/",
+                "Libraries": [
+                    {
+                        "Name": "Foundation for Sites",
+                        "Summary": "The standard Foundation framework for building responsive websites.",
+                        "URL": "https://get.foundation/sites/docs/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Foundation for Emails",
+                        "Summary": "A framework for responsive email templates.",
+                        "URL": "https://get.foundation/emails/docs/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Foundation CLI",
+                        "Summary": "A command-line tool for creating Foundation projects.",
+                        "URL": "https://get.foundation/sites/docs/installation.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Foundation Docs",
+                        "Summary": "Comprehensive documentation and guides for using Foundation.",
+                        "URL": "https://get.foundation/sites/docs/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Materialize",
+                "Summary": "A modern responsive front-end framework based on Material Design.",
+                "URL": "https://materializecss.com/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Materialize CSS Templates",
+                        "Summary": "A collection of templates and components using Materialize CSS.",
+                        "URL": "https://materializecss.com/templates.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Material Icons",
+                        "Summary": "A set of icons for use with Materialize.",
+                        "URL": "https://material.io/resources/icons/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Semantic UI",
+                "Summary": "A development framework that helps create beautiful, responsive layouts using human-friendly HTML.",
+                "URL": "https://semantic-ui.com/",
+                "Libraries": [
+                    {
+                        "Name": "Semantic UI React",
+                        "Summary": "React integration for Semantic UI.",
+                        "URL": "https://react.semantic-ui.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Semantic UI Vue",
+                        "Summary": "Vue integration for Semantic UI.",
+                        "URL": "https://semantic-ui-vue.github.io/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Semantic UI CDN",
+                        "Summary": "A content delivery network for quickly including Semantic UI in projects.",
+                        "URL": "https://cdnjs.com/libraries/semantic-ui",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Semantic UI Theme Template",
+                        "Summary": "A template for creating custom themes with Semantic UI.",
+                        "URL": "https://semantic-ui.com/usage/theming.html",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "JavaScript",
+        "Summary": " JavaScript, a versatile programming language primarily used for web development. It enables interactive features on websites, such as dynamic content updates, animations, and form validations. JavaScript runs in web browsers and can also be used on the server-side (with environments like Node.js).",
+        "More": [
+            {
+                "Framework": "React",
+                "Summary": "A JavaScript library for building user interfaces, maintained by Facebook.",
+                "URL": "https://react.dev/",
+                "Libraries": [
+                    {
+                        "Name": "Redux",
+                        "Summary": "A predictable state container for JavaScript apps, enabling centralized state management.",
+                        "URL": "https://redux.js.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "MobX",
+                        "Summary": "A simple and scalable state management library that uses observables to manage state in applications.",
+                        "URL": "https://mobx.js.org/README.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Recoil",
+                        "Summary": "A state management library for React that allows for shared state between components with a focus on performance.",
+                        "URL": "https://recoiljs.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Zustand",
+                        "Summary": "A minimal and flexible state management solution with a small footprint and hooks-based API.",
+                        "URL": "https://github.com/pmndrs/zustand",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "React Router",
+                        "Summary": "A standard library for routing in React applications, allowing for dynamic routing and navigation.",
+                        "URL": "https://reactrouter.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Axios",
+                        "Summary": "A promise-based HTTP client for making requests to APIs, supporting interceptors and automatic JSON data transformation.",
+                        "URL": "https://axios-http.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Formik",
+                        "Summary": "A library designed for building forms in React, offering easy form state management and validation.",
+                        "URL": "https://formik.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Styled Components",
+                        "Summary": "A CSS-in-JS library that allows for writing component-level styles using tagged template literals.",
+                        "URL": "https://styled-components.com/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Create React App (CRA)",
+                        "Summary": "A CLI tool for setting up a new React project with no configuration required.",
+                        "URL": "https://create-react-app.dev/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Next.js",
+                        "Summary": "A React framework for building server-side rendered (SSR) and static websites.",
+                        "URL": "https://nextjs.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Gatsby",
+                        "Summary": "A React-based static site generator, great for building fast websites.",
+                        "URL": "https://www.gatsbyjs.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Jest",
+                        "Summary": "A testing framework often used with React for unit and integration tests.",
+                        "URL": "https://jestjs.io/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "ESLint",
+                        "Summary": "A linting tool used with React to enforce code quality and style guidelines.",
+                        "URL": "https://eslint.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Vue.js",
+                "Summary": "A progressive framework for building UIs and single-page applications.",
+                "URL": "https://vuejs.org/",
+                "Libraries": [
+                    {
+                        "Name": "Vuex",
+                        "Summary": "A state management library for Vue.js applications.",
+                        "URL": "https://vuex.vuejs.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vue Router",
+                        "Summary": "The official router for Vue.js, allowing navigation between components.",
+                        "URL": "https://router.vuejs.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vuetify",
+                        "Summary": "A Material Design component framework for Vue.js.",
+                        "URL": "https://vuetifyjs.com/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Vue CLI",
+                        "Summary": "A command-line interface for scaffolding Vue.js projects.",
+                        "URL": "https://cli.vuejs.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Nuxt.js",
+                        "Summary": "A framework for building server-side rendered applications using Vue.js.",
+                        "URL": "https://nuxtjs.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Angular",
+                "Summary": "A full-featured JavaScript framework for dynamic web applications, developed by Google.",
+                "URL": "https://angular.io/",
+                "Libraries": [
+                    {
+                        "Name": "RxJS",
+                        "Summary": "A library for reactive programming using observables, often used in Angular applications.",
+                        "URL": "https://rxjs.dev/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "NgRx",
+                        "Summary": "Reactive state management for Angular applications based on the Redux pattern.",
+                        "URL": "https://ngrx.io/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Angular CLI",
+                        "Summary": "A command-line interface for creating and managing Angular projects.",
+                        "URL": "https://angular.io/cli",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Svelte",
+                "Summary": "A compiler that generates highly optimized vanilla JavaScript at build time, no virtual DOM.",
+                "URL": "https://svelte.dev/",
+                "Libraries": [
+                    {
+                        "Name": "Sapper",
+                        "Summary": "A framework for building web applications with Svelte.",
+                        "URL": "https://sapper.svelte.dev/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "SvelteKit",
+                        "Summary": "A framework for building applications using Svelte.",
+                        "URL": "https://kit.svelte.dev/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Svelte REPL",
+                        "Summary": "An interactive playground for experimenting with Svelte components and syntax.",
+                        "URL": "https://svelte.dev/repl",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Svelte DevTools",
+                        "Summary": "Browser extension for inspecting Svelte components in the development environment.",
+                        "URL": "https://github.com/sveltejs/svelte-devtools",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vite",
+                        "Summary": "A build tool that provides a faster development experience with Svelte, often used for Svelte projects.",
+                        "URL": "https://vitejs.dev/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Rollup",
+                        "Summary": "A module bundler that can be used to build Svelte applications, known for its simplicity.",
+                        "URL": "https://rollupjs.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Ember.js",
+                "Summary": "A framework with a strong convention-over-configuration approach for ambitious web applications.",
+                "URL": "https://emberjs.com/",
+                "Libraries": [
+                    {
+                        "Name": "Ember Data",
+                        "Summary": "A data persistence library for Ember applications that provides a robust model layer.",
+                        "URL": "https://emberjs.com/data/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Ember CLI",
+                        "Summary": "The command line interface for Ember, which provides powerful project generation and development tools.",
+                        "URL": "https://cli.emberjs.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Ember Inspector",
+                        "Summary": "A browser extension for debugging Ember applications, providing insights into routes, models, and components.",
+                        "URL": "https://emberjs.com/inspector/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Ember CLI",
+                        "Summary": "The official command line tool for managing Ember.js projects and workflows.",
+                        "URL": "https://cli.emberjs.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Ember Observer",
+                        "Summary": "A website that tracks the quality and maintenance of Ember addons.",
+                        "URL": "https://emberobserver.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "ember-cli-deploy",
+                        "Summary": "A deployment tool for Ember applications, allowing for easy deployment to various environments.",
+                        "URL": "https://ember-cli-deploy.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "ember-screenshot",
+                        "Summary": "An addon for taking screenshots of your Ember applications during tests.",
+                        "URL": "https://github.com/carla-sobrinho/ember-screenshot",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Backbone.js",
+                "Summary": "A lightweight framework that provides models, views, and collections to organize code.",
+                "URL": "https://backbonejs.org/",
+                "Libraries": [
+                    {
+                        "Name": "Underscore.js",
+                        "Summary": "A utility-belt library that provides functional programming support for Backbone.js.",
+                        "URL": "https://underscorejs.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Marionette.js",
+                        "Summary": "A composite application library built on Backbone.js, providing structure and enhanced features.",
+                        "URL": "https://marionettejs.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Backbone.LocalStorage",
+                        "Summary": "A simple local storage adapter for Backbone.js models and collections.",
+                        "URL": "https://github.com/jeromegn/Backbone.localStorage",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Backbone.Validation",
+                        "Summary": "A validation library for Backbone models that provides various validation methods.",
+                        "URL": "https://github.com/thednp/backbone.validation",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Backbone Boilerplate",
+                        "Summary": "A template to help kickstart Backbone.js applications with best practices.",
+                        "URL": "https://github.com/addyosmani/backbone-boilerplate",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Backbone Marionette CLI",
+                        "Summary": "A command line interface for quickly generating Backbone.Marionette applications.",
+                        "URL": "https://github.com/marionettejs/backbone.marionette-cli",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Yeoman",
+                        "Summary": "A scaffolding tool for modern web applications, often used with Backbone.js to generate projects.",
+                        "URL": "http://yeoman.io/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Alpine.js",
+                "Summary": "A minimal framework for adding interactivity with a Vue-inspired syntax and smaller footprint.",
+                "URL": "https://alpinejs.dev/",
+                "Libraries": [
+                    {
+                        "Name": "Alpine.js Transition",
+                        "Summary": "A library that adds transition effects to Alpine.js elements, enabling smooth animations.",
+                        "URL": "https://github.com/alpinejs/alpine/tree/master/src/plugins/transition",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Alpine.js Magic Helpers",
+                        "Summary": "A set of utilities for simplifying common tasks in Alpine.js applications.",
+                        "URL": "https://github.com/alpinejs/alpine/tree/master/src/plugins/magic",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Alpine.js DevTools",
+                        "Summary": "A browser extension for debugging Alpine.js applications, allowing inspection of component states.",
+                        "URL": "https://github.com/alpinejs/alpine/tree/master/src/devtools",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Alpine.js CLI",
+                        "Summary": "A command-line interface tool for scaffolding Alpine.js projects and managing dependencies.",
+                        "URL": "https://github.com/alpinejs/alpine-cli",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Laravel Mix",
+                        "Summary": "A wrapper around Webpack for managing assets in Laravel applications, compatible with Alpine.js.",
+                        "URL": "https://laravel-mix.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Preact",
+                "Summary": "A fast, lightweight alternative to React with the same API, focused on performance.",
+                "URL": "https://preactjs.com/",
+                "Libraries": [
+                    {
+                        "Name": "Preact Router",
+                        "Summary": "A lightweight routing solution for Preact applications, similar to React Router.",
+                        "URL": "https://github.com/preactjs/preact-router",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Preact X",
+                        "Summary": "The latest version of Preact that introduces features such as hooks and a context API.",
+                        "URL": "https://preactjs.com/guide/v10/getting-started",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Preact Compat",
+                        "Summary": "A compatibility layer that allows you to use React libraries with Preact.",
+                        "URL": "https://github.com/developit/preact-compat",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Preact Signals",
+                        "Summary": "A reactive state management library for Preact that simplifies state management.",
+                        "URL": "https://preactjs.com/guide/v10/signals",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Preact CLI",
+                        "Summary": "A command-line interface for bootstrapping Preact applications with minimal configuration.",
+                        "URL": "https://github.com/preactjs/preact-cli",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Preact DevTools",
+                        "Summary": "A browser extension for debugging Preact applications, providing a similar experience to React DevTools.",
+                        "URL": "https://github.com/preactjs/preact-devtools",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vite",
+                        "Summary": "A modern build tool that works well with Preact for fast development and bundling.",
+                        "URL": "https://vitejs.dev/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Mithril",
+                "Summary": "A small, modern JavaScript framework for building single-page applications.",
+                "URL": "https://mithril.js.org/",
+                "Libraries": [
+                    {
+                        "Name": "Mithril Router",
+                        "Summary": "A routing library for Mithril that allows you to define routes in a straightforward manner.",
+                        "URL": "https://mithril.js.org/router.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Mithril Query",
+                        "Summary": "A testing utility for Mithril applications that allows for simple testing of components.",
+                        "URL": "https://mithril.js.org/query.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Mithril Stream",
+                        "Summary": "A library for creating observable streams, facilitating reactive programming in Mithril applications.",
+                        "URL": "https://mithril.js.org/stream.html",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Mithril CLI",
+                        "Summary": "A command-line tool to quickly scaffold Mithril applications with basic configurations.",
+                        "URL": "https://github.com/MithrilJS/mithril-cli",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Mithril DevTools",
+                        "Summary": "A browser extension for debugging Mithril applications, similar to React DevTools.",
+                        "URL": "https://github.com/MithrilJS/mithril-devtools",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Parcel",
+                        "Summary": "A web application bundler that can be used with Mithril for fast and easy builds.",
+                        "URL": "https://parceljs.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Lit",
+                "Summary": "A lightweight library for building fast web components, part of Google’s Polymer Project.",
+                "URL": "https://lit.dev/",
+                "Libraries": [
+                    {
+                        "Name": "LitElement",
+                        "Summary": "A base class for creating fast, lightweight web components using Lit.",
+                        "URL": "https://lit.dev/docs/components/litelement/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "LitHtml",
+                        "Summary": "A library for rendering HTML templates with a declarative syntax and efficient updates.",
+                        "URL": "https://lit.dev/docs/templates/lithtml/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Lit-SSR",
+                        "Summary": "Server-side rendering support for Lit applications, enabling fast initial load times.",
+                        "URL": "https://lit.dev/docs/ssr/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Lit CLI",
+                        "Summary": "A command-line interface for quickly scaffolding Lit applications and components.",
+                        "URL": "https://lit.dev/docs/tools/lit-cli/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vite",
+                        "Summary": "A build tool that can be used with Lit for rapid development and optimized builds.",
+                        "URL": "https://vitejs.dev/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Storybook",
+                        "Summary": "A tool for developing and showcasing UI components in isolation, compatible with Lit.",
+                        "URL": "https://storybook.js.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Phython",
+        "Summary": "Python is a high-level, interpreted programming language known for its readability and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used for web development, data analysis, artificial intelligence, scientific computing, automation, and more. Its extensive libraries and frameworks make it a popular choice for both beginners and experienced developers.",
+        "More": [
+            {
+                "Framework": "Django",
+                "Summary": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+                "URL": "https://www.djangoproject.com/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Django REST framework",
+                        "Summary": "A powerful toolkit for building Web APIs in Django.",
+                        "URL": "https://www.django-rest-framework.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Django Admin",
+                        "Summary": "A built-in administration interface for managing site content.",
+                        "URL": "https://docs.djangoproject.com/en/stable/ref/contrib/admin/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Flask",
+                "Summary": "A lightweight WSGI web application framework in Python.",
+                "URL": "https://flask.palletsprojects.com/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Flask-SQLAlchemy",
+                        "Summary": "An extension that adds support for SQLAlchemy to Flask applications.",
+                        "URL": "https://flask-sqlalchemy.palletsprojects.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Flask-RESTful",
+                        "Summary": "An extension for Flask that adds support for quickly building REST APIs.",
+                        "URL": "https://flask-restful.readthedocs.io/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Pyramid",
+                "Summary": "A lightweight Python web framework aimed at making it easy to build web applications quickly.",
+                "URL": "https://trypyramid.com/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Pyramid CLI",
+                        "Summary": "A command-line tool for creating and managing Pyramid applications.",
+                        "URL": "https://docs.pylonsproject.org/projects/pyramid/en/latest/narr/cli.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Pyramid Documentation",
+                        "Summary": "Comprehensive documentation for learning and using Pyramid.",
+                        "URL": "https://docs.pylonsproject.org/projects/pyramid/en/latest/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "FastAPI",
+                "Summary": "A modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.",
+                "URL": "https://fastapi.tiangolo.com/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "FastAPI Documentation",
+                        "Summary": "Official documentation to help you get started with FastAPI.",
+                        "URL": "https://fastapi.tiangolo.com/#documentation",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "FastAPI Examples",
+                        "Summary": "A collection of examples to demonstrate FastAPI features.",
+                        "URL": "https://github.com/tiangolo/fastapi/tree/master/examples",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Tornado",
+                "Summary": "A Python web framework and asynchronous networking library, originally developed for FriendFeed.",
+                "URL": "https://www.tornadoweb.org/en/stable/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Tornado Documentation",
+                        "Summary": "Comprehensive documentation for Tornado.",
+                        "URL": "https://www.tornadoweb.org/en/stable/guide/index.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Tornado Sample Applications",
+                        "Summary": "Sample applications to help you understand how to use Tornado.",
+                        "URL": "https://www.tornadoweb.org/en/stable/gettingstarted.html#sample-applications",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Java",
+        "Summary": "JAvA is a programming language primarily used for building applications on the Java platform, particularly in Indonesia. It is not widely recognized outside specific contexts. If you're referring to Java, it is a popular, object-oriented programming language known for its portability across platforms via the Java Virtual Machine (JVM), allowing applications to run on any device with a JVM installed.",
+        "More": [
+            {
+                "Framework": "Spring",
+                "Summary": "A comprehensive framework for building enterprise applications in Java.",
+                "URL": "https://spring.io/",
+                "Libraries": [
+                    {
+                        "Name": "Spring Boot",
+                        "Summary": "A module of Spring that simplifies the setup and development of new applications.",
+                        "URL": "https://spring.io/projects/spring-boot",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Spring Data",
+                        "Summary": "A set of tools for accessing data in a variety of databases with ease.",
+                        "URL": "https://spring.io/projects/spring-data",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Spring Tool Suite",
+                        "Summary": "An IDE for developing Spring applications.",
+                        "URL": "https://spring.io/tools",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Hibernate",
+                "Summary": "An ORM framework for mapping Java classes to database tables.",
+                "URL": "https://hibernate.org/",
+                "Libraries": [
+                    {
+                        "Name": "Hibernate Validator",
+                        "Summary": "A bean validation framework for Hibernate.",
+                        "URL": "https://hibernate.org/validator/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Hibernate Tools",
+                        "Summary": "A set of tools for reverse engineering and code generation.",
+                        "URL": "https://hibernate.org/tools/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Apache Struts",
+                "Summary": "A framework for building web applications using Java.",
+                "URL": "https://struts.apache.org/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Struts 2",
+                        "Summary": "A more modern version of the Struts framework.",
+                        "URL": "https://struts.apache.org/docs/struts2.html",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "JSF (JavaServer Faces)",
+                "Summary": "A framework for building component-based user interfaces for web applications.",
+                "URL": "https://www.javaserverfaces.org/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Mojarra",
+                        "Summary": "The reference implementation of JSF.",
+                        "URL": "https://github.com/eclipse-ee4j/mojarra",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Grails",
+                "Summary": "A web application framework that leverages the Groovy language and is built on top of Spring.",
+                "URL": "https://grails.org/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Grails CLI",
+                        "Summary": "Command line interface for creating and managing Grails applications.",
+                        "URL": "https://grails.org/documentation.html",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    }
+]
