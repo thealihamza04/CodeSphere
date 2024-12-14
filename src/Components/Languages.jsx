@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import List from './JS.json';
 import LanCard from './LanCard';
 
+
 const Languages = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const def = "A programming language is a formal set of instructions that allows developers to communicate with computers to create software applications, scripts, or other tools. It provides the syntax and semantics for writing code that can perform specific tasks, manipulate data, and control hardware. Examples of programming languages include Python, Java, C++, and JavaScript, each with its own features, use cases, and paradigms.";
 
     return (

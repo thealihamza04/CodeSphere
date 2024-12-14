@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Tool_Lib_Card from './Tool_Lib_Card';
 import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
+
 
 const Tool_Lib = () => {
   const location = useLocation();
   const { tools } = location.state || { tools: [] }; // Handle if no state is passed
   const { Libraries } = location.state || { Libraries: [] }; // Handle if no state is passed
   const { ReturnIT } = location.state || { ReturnIT: [] };
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
 
   let printIt = [];
   let heading = "";

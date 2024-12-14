@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from './Card';
 import { Link, useLocation } from 'react-router-dom';
+
 
 const ProgLan = () => {
     const location = useLocation();
     const { Frameworks } = location.state || { Frameworks: [] };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
 
     const def = "A framework is a pre-built structure or platform that provides a foundation for developing software applications. It includes reusable components, libraries, and tools to help developers organize and standardize their code, making development faster and more efficient.";
 
