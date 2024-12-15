@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Card from './Card';
+import Card from './cards/Card';
 import { Link, useLocation } from 'react-router-dom';
 
 

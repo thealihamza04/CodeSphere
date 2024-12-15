@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Tool_Lib_Card from './Tool_Lib_Card';
+import Tool_Lib_Card from './cards/Tool_Lib_Card';
 import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
 

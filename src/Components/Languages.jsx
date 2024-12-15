@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import List from './JS.json';
-import LanCard from './LanCard';
+import LanCard from './cards/LanCard';
 
 
 const Languages = () => {
