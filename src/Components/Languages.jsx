@@ -18,7 +18,7 @@ const Languages = () => {
                 <div className="px-4 md:px-48">
                     <hr />
                 </div>
-                <p className="px-4 md:px-20 text-sm sm:text-base md:text-lg text-justify">{def}</p>
+                <p className="px-4 md:px-20 text-sm md:text-lg text-justify">{def}</p>
             </div>
 
             <div className="flex flex-wrap gap-4 justify-center items-center px-4 md:px-10 lg:px-16">

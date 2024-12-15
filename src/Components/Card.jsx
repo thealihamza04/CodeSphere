@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Card = ({ Title, Summary, URL, Tools, Lib, RTNIT }) => {
   return (
     <>
-      <div>
-        <div className="card bg-base-300 w-80 mt-5 shadow-xl">
-          <div className="card-body">
+     <div className="w-full sm:w-80 mt-5">
+      <div className="card bg-base-300 shadow-xl">
+        <div className="card-body">
             <h2 className="card-title font-bold text-2xl">{Title}</h2>
             <p>{Summary}</p>
             <a
