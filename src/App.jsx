@@ -1,5 +1,6 @@
 import React from 'react'
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,7 +20,7 @@ const App = () => {
           <Route path='/Frameworks/ToLib' element={<Tool_Lib />} />
         </Routes>
       </Router>
-      <SpeedInsights/>
+      <Analytics/>
     </>
   )
 }
