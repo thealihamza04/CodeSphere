@@ -8,13 +8,13 @@ const Tool_Lib_Card = ({ Name, Summary, URL }) => {
           <h2 className="card-title font-bold text-2xl">{Name}</h2>
           <p className="text-sm sm:text-base text-justify mt-2">{Summary}</p>
           <a
-            className="opacity-25 mt-4 break-words text-sm sm:text-base delay-75 flex items-center flex-row"
+            className="opacity-25 mt-4 break-words text-sm sm:text-base delay-75"
             href={URL}
             target="_blank"
             rel="noopener noreferrer"
           >
-            open
-            <i className="material-icons text-sm">arrow_forward_ios</i>
+            <span className="text-center">open</span>
+            {/* <i className="material-icons text-xs text-center">arrow_forward_ios</i> */}
           </a>
         </div>
       </div>

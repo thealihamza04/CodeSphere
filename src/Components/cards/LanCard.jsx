@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const LanCard = ({ Title, Summary, Details }) => {
   return (
-    <div className="w-full sm:w-80 mt-3 mb-5">
+    <div className="w-full sm:w-80 mt-5">
       <div className="card bg-base-300 shadow-xl">
         <div className="card-body">
           <h2 className="card-title font-bold text-2xl">{Title}</h2>
