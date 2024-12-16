@@ -7,4 +7,9 @@ export default {
     extend: {},
   },
   plugins: [daisyui],
+  daisyui: {
+    themes: ["light"], // Force only light mode
+    darkTheme: "light", // Prevent DaisyUI from applying dark mode
+  },
+  darkMode: false, // Disable Tailwind's dark mode
 };
