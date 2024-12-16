@@ -29,7 +29,7 @@ const Card = ({ Title, Summary, URL, Tools, Lib, RTNIT }) => {
                 Tools
               </Link>
               <Link
-                className="text-[10px] px-[7px] bg-blue-500 p-1 rounded-full text-white font-medium"
+                className="text-[10px] px-[10px]   bg-blue-500 p-1 rounded-full text-white font-medium"
                 to="ToLib"
                 state={{ Libraries: Lib, ReturnIT: RTNIT }}
               >
