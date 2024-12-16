@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 const LanCard = ({ Title, Summary, Details }) => {
   return (
-    <div className="w-full sm:w-80 mt-5">
-      <div className="card bg-base-300 shadow-xl ">
+    <div className="w-full sm:w-80 mt-5 rounded-xl cursor-default">
+      <div className="card bg-white shadow-md hover:shadow-lg  hover:scale-105 transition-all duration-500 ease-linear ">
         <div className="card-body">
           <h2 className="card-title font-bold text-2xl">{Title}</h2>
-          <p className="text-sm sm:text-base text-justify mt-2">{Summary}</p>
-          <div className="card-actions justify-end mt-4">
+          <p className="text-xs hover:text-sm transition-all duration-300 ease-in-out mt-2">{Summary}</p>
+          <div className="card-actions justify-end mt-2">
             <Link
-              className="btn btn-outline btn-primary px-4  sm:px-5 text-sm sm:text-base "
+              className="text-[10px] px-[8px] bg-blue-500 p-1 rounded-full text-white font-medium"
               to="/Frameworks"
               state={{ Frameworks: Details }}
             >
-              Frameworks
+              Frmwrks
             </Link>
           </div>
         </div>

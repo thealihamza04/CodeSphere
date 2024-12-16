@@ -4,7 +4,11 @@ import daisyui from 'daisyui';
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Quicksand', 'Roboto', 'sans-serif'],  // or any other font you choose
+      },
+    },
   },
   plugins: [daisyui],
   daisyui: {

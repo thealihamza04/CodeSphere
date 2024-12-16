@@ -4,35 +4,36 @@ import { Link } from "react-router-dom";
 const Card = ({ Title, Summary, URL, Tools, Lib, RTNIT }) => {
   return (
     <>
-     <div className="w-full sm:w-80 mt-5">
-      <div className="card bg-base-300 shadow-xl">
-        <div className="card-body">
+      <div className="w-full sm:w-80 pt-5 rounded-xl cursor-default">
+        <div className="card bg-white shadow-md border-[1px] border-gray-100 hover:shadow-lg  hover:scale-105 transition-all duration-500 ease-linear ">
+          <div className="card-body">
             <h2 className="card-title font-bold text-2xl">{Title}</h2>
-            <p>{Summary}</p>
+            <p className="text-xs hover:text-sm transition-all duration-300 ease-in-out mt-2">
+              {Summary}
+            </p>
             <a
-            className="opacity-25 mt-4 break-words text-sm sm:text-base delay-75"
-            href={URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="text-center">open</span>
-            {/* <i className="material-icons text-xs text-center">arrow_forward_ios</i> */}
-          </a>
+              className="opacity-25 mt-0 break-words text-xs delay-75"
+              href={URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="text-center">Open</span>
+            </a>
 
-            <div className="card-actions justify-end mt-2 opacity-75">
+            <div className="card-actions justify-end mt-1">
               <Link
-                className="btn btn-primary btn-outline"
+                className="text-[10px] border-[1px] px-[10px] border-blue-500 p-1 rounded-full text-blue-500 font-medium"
                 to="ToLib"
                 state={{ tools: Tools, ReturnIT: RTNIT }}
               >
                 Tools
               </Link>
               <Link
-                className="btn btn-outline"
+                className="text-[10px] px-[7px] bg-blue-500 p-1 rounded-full text-white font-medium"
                 to="ToLib"
                 state={{ Libraries: Lib, ReturnIT: RTNIT }}
               >
-                Libraries
+                Lib
               </Link>
             </div>
           </div>

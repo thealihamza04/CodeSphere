@@ -1,7 +1,7 @@
 [
     {
         "Language": "HTML",
-        "Summary": "HTML (Hypertext Markup Language) is the standard markup language used to create and structure content on the web. It uses a system of tags to define elements like headings, paragraphs, links, images, and other multimedia. HTML forms the backbone of web pages, allowing browsers to render content and providing a framework for integrating styles and scripts.",
+        "Summary": "HTML(Hypertext Markup Language) is the standard markup language used to create and structure content on the web. It uses a system of tags to define elements like headings, paragraphs, links, images, and other multimedia. HTML forms the backbone of web pages, allowing browsers to render content and providing a framework for integrating styles and scripts.",
         "More": [
             {
                 "Framework": "HTML5",

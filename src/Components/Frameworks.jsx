@@ -16,7 +16,7 @@ const ProgLan = () => {
 
     return (
         <>
-            <div className="my-9 mx-4 md:mx-10 space-y-6">
+            <div className="py-9 px-4 space-y-6 bg-gray-100">
                 <h1 className="text-center text-3xl md:text-5xl font-bold">Frameworks</h1>
                 <div className="px-4 md:px-48">
                     <hr />
@@ -28,7 +28,7 @@ const ProgLan = () => {
                     </Link>
                 </div>
             </div>
-            <div className="flex flex-wrap gap-4 justify-center items-center px-4 md:px-10 mb-10">
+            <div className="flex flex-wrap gap-4 justify-center items-center px-4 md:px-10 pb-10">
                 {Frameworks.map((framework, index) => (
                     <Card
                         key={index} // Unique key for each framework
