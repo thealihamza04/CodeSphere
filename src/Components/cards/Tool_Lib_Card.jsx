@@ -7,7 +7,7 @@ const Tool_Lib_Card = ({ Name, Summary, URL }) => {
         <div className="card bg-white shadow-md border-[1px] border-gray-100 hover:shadow-lg  hover:scale-105 transition-all duration-500 ease-linear ">
           <div className="card-body">
             <h2 className="card-title font-bold text-2xl">{Name}</h2>
-            <p className="text-xs hover:text-sm transition-all duration-300 ease-in-out mt-2">
+            <p className="text-[13px] mt-2">
               {Summary}
             </p>
             <a

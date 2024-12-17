@@ -893,7 +893,467 @@
                         "Supply": "Free"
                     }
                 ]
+            },
+            {
+                "Framework": "Express.js",
+                "Summary": "A minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications.",
+                "URL": "https://expressjs.com/",
+                "Libraries": [
+                    {
+                        "Name": "Body-parser",
+                        "Summary": "A middleware for parsing incoming request bodies in a middleware before your handlers.",
+                        "URL": "https://expressjs.com/en/resources/middleware/body-parser.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Cors",
+                        "Summary": "A middleware for enabling Cross-Origin Resource Sharing (CORS) in Express apps.",
+                        "URL": "https://expressjs.com/en/resources/middleware/cors.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Helmet",
+                        "Summary": "A middleware for securing Express apps by setting various HTTP headers.",
+                        "URL": "https://expressjs.com/en/resources/middleware/helmet.html",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Express Generator",
+                        "Summary": "A command-line tool for scaffolding Express applications quickly and efficiently.",
+                        "URL": "https://expressjs.com/en/starter/generator.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Nodemon",
+                        "Summary": "A tool that monitors for changes in files and restarts the server automatically.",
+                        "URL": "https://nodemon.io/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Postman",
+                        "Summary": "A tool for testing, documenting, and monitoring APIs, often used with Express.",
+                        "URL": "https://www.postman.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Fastify",
+                "Summary": "A fast and low-overhead web framework for Node.js, optimized for speed and efficiency.",
+                "URL": "https://www.fastify.io/",
+                "Libraries": [
+                    {
+                        "Name": "Fastify Plugin System",
+                        "Summary": "A built-in system for organizing and reusing plugins to extend Fastify functionality.",
+                        "URL": "https://www.fastify.io/docs/latest/Reference/Plugins/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Fastify Swagger",
+                        "Summary": "A library to generate Swagger/OpenAPI documentation for Fastify routes.",
+                        "URL": "https://github.com/fastify/fastify-swagger",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Fastify Helmet",
+                        "Summary": "A plugin to add secure HTTP headers to Fastify applications.",
+                        "URL": "https://github.com/fastify/fastify-helmet",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Fastify CLI",
+                        "Summary": "A command-line tool for scaffolding, running, and managing Fastify applications.",
+                        "URL": "https://www.fastify.io/docs/latest/Reference/CLI/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Pino",
+                        "Summary": "A high-performance logging library used with Fastify for detailed and efficient logging.",
+                        "URL": "https://getpino.io/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Autoload",
+                        "Summary": "A plugin for automatically loading routes, plugins, and decorators in a Fastify project.",
+                        "URL": "https://github.com/fastify/fastify-autoload",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "NestJS",
+                "Summary": "A progressive Node.js framework for building efficient, reliable, and scalable server-side applications using TypeScript.",
+                "URL": "https://nestjs.com/",
+                "Libraries": [
+                    {
+                        "Name": "Nest CLI",
+                        "Summary": "A command-line interface to quickly scaffold, develop, and manage NestJS projects.",
+                        "URL": "https://docs.nestjs.com/cli/overview",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "TypeORM",
+                        "Summary": "An ORM library integrated with NestJS for database management and SQL-based operations.",
+                        "URL": "https://docs.nestjs.com/techniques/database",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "GraphQL Module",
+                        "Summary": "A module that provides tools for building GraphQL APIs with NestJS.",
+                        "URL": "https://docs.nestjs.com/graphql/quick-start",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "NestJS CLI",
+                        "Summary": "A command-line tool to generate, build, and maintain NestJS applications easily.",
+                        "URL": "https://docs.nestjs.com/cli/overview",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Swagger (OpenAPI)",
+                        "Summary": "A module for generating API documentation in NestJS using Swagger/OpenAPI.",
+                        "URL": "https://docs.nestjs.com/openapi/introduction",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Jest",
+                        "Summary": "A testing framework integrated with NestJS for unit and end-to-end testing.",
+                        "URL": "https://jestjs.io/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Next.js",
+                "Summary": "A React-based framework for building server-rendered and static web applications with optimized performance.",
+                "URL": "https://nextjs.org/",
+                "Libraries": [
+                    {
+                        "Name": "NextAuth.js",
+                        "Summary": "An authentication library for adding secure, flexible, and easy-to-use authentication to Next.js apps.",
+                        "URL": "https://next-auth.js.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "SWR",
+                        "Summary": "A data-fetching library for React, built and optimized for use with Next.js.",
+                        "URL": "https://swr.vercel.app/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "React Query",
+                        "Summary": "A library for managing, caching, and synchronizing server state in Next.js applications.",
+                        "URL": "https://tanstack.com/query",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Next.js CLI",
+                        "Summary": "A command-line tool to create, build, and run Next.js applications with ease.",
+                        "URL": "https://nextjs.org/docs/api-reference/cli",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vercel",
+                        "Summary": "A platform for deploying, hosting, and optimizing Next.js applications.",
+                        "URL": "https://vercel.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Storybook",
+                        "Summary": "A tool for building and testing UI components in isolation with Next.js.",
+                        "URL": "https://storybook.js.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            }, 
+            {
+                "Framework": "Nuxt.js",
+                "Summary": "A Vue-based framework for building server-side rendered (SSR), static, and hybrid web applications with ease.",
+                "URL": "https://nuxt.com/",
+                "Libraries": [
+                    {
+                        "Name": "Nuxt Auth",
+                        "Summary": "A library for adding authentication support to Nuxt.js applications with multiple providers.",
+                        "URL": "https://auth.nuxt.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Nuxt Content",
+                        "Summary": "A content management library that allows writing and rendering content in Markdown, JSON, or YAML.",
+                        "URL": "https://content.nuxt.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vuex",
+                        "Summary": "A state management library for managing global state in Nuxt.js applications.",
+                        "URL": "https://nuxtjs.org/docs/directory-structure/store",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Nuxt CLI",
+                        "Summary": "A command-line tool for scaffolding, building, and managing Nuxt.js projects efficiently.",
+                        "URL": "https://nuxt.com/docs/getting-started/installation",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vite",
+                        "Summary": "A fast build tool that can be used with Nuxt for rapid development and optimized builds.",
+                        "URL": "https://vitejs.dev/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Netlify",
+                        "Summary": "A platform for deploying and hosting Nuxt.js applications with continuous deployment support.",
+                        "URL": "https://www.netlify.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Remix",
+                "Summary": "A React-based framework for building fast, scalable, and dynamic web applications with a focus on server-side rendering and data fetching.",
+                "URL": "https://remix.run/",
+                "Libraries": [
+                    {
+                        "Name": "React Router",
+                        "Summary": "A routing library that is integrated into Remix for building navigation and dynamic routes.",
+                        "URL": "https://reactrouter.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Remix Auth",
+                        "Summary": "An authentication library designed for Remix to handle various auth strategies.",
+                        "URL": "https://github.com/sergiodxa/remix-auth",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Remix Utils",
+                        "Summary": "A collection of utility functions and helpers for building Remix applications efficiently.",
+                        "URL": "https://github.com/sergiodxa/remix-utils",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Remix CLI",
+                        "Summary": "A command-line tool for scaffolding, building, and managing Remix applications.",
+                        "URL": "https://remix.run/docs/en/main/cli",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vercel",
+                        "Summary": "A platform for deploying Remix applications with serverless and edge support.",
+                        "URL": "https://vercel.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Netlify",
+                        "Summary": "A deployment platform for Remix applications with continuous deployment and serverless functions.",
+                        "URL": "https://www.netlify.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Meteor.js",
+                "Summary": "A full-stack JavaScript framework for building real-time web and mobile applications, integrating frontend, backend, and database seamlessly.",
+                "URL": "https://www.meteor.com/",
+                "Libraries": [
+                    {
+                        "Name": "Blaze",
+                        "Summary": "A reactive frontend templating library for building UI components in Meteor applications.",
+                        "URL": "https://guide.meteor.com/blaze.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Apollo",
+                        "Summary": "A library for integrating GraphQL into Meteor for efficient data fetching and management.",
+                        "URL": "https://www.apollographql.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "MongoDB",
+                        "Summary": "A NoSQL database natively integrated with Meteor for real-time data synchronization.",
+                        "URL": "https://www.mongodb.com/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Meteor CLI",
+                        "Summary": "A command-line tool for creating, managing, and deploying Meteor.js applications.",
+                        "URL": "https://guide.meteor.com/command-line.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Galaxy",
+                        "Summary": "A cloud hosting platform optimized for deploying and scaling Meteor applications.",
+                        "URL": "https://www.meteor.com/hosting",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "Kadira APM",
+                        "Summary": "An application performance monitoring tool for tracking performance issues in Meteor apps.",
+                        "URL": "https://github.com/meteor/meteor-apm-server",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "React Native",
+                "Summary": "An open-source framework for building cross-platform mobile applications using React and JavaScript.",
+                "URL": "https://reactnative.dev/",
+                "Libraries": [
+                    {
+                        "Name": "React Navigation",
+                        "Summary": "A library for handling navigation and routing in React Native applications.",
+                        "URL": "https://reactnavigation.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Redux",
+                        "Summary": "A state management library for managing application state in React Native apps.",
+                        "URL": "https://redux.js.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "React Native Paper",
+                        "Summary": "A library of customizable Material Design components for React Native.",
+                        "URL": "https://reactnativepaper.com/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Expo CLI",
+                        "Summary": "A command-line tool for developing, building, and deploying React Native apps quickly.",
+                        "URL": "https://docs.expo.dev/get-started/installation/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Metro Bundler",
+                        "Summary": "A JavaScript bundler optimized for React Native projects, enabling fast bundling and development.",
+                        "URL": "https://facebook.github.io/metro/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Flipper",
+                        "Summary": "A debugging tool for React Native apps, providing visual insights and performance monitoring.",
+                        "URL": "https://fbflipper.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Ionic",
+                "Summary": "An open-source framework for building cross-platform mobile, web, and desktop applications using web technologies like HTML, CSS, and JavaScript.",
+                "URL": "https://ionicframework.com/",
+                "Libraries": [
+                    {
+                        "Name": "Ionic UI Components",
+                        "Summary": "A library of pre-built, customizable UI components optimized for mobile and web applications.",
+                        "URL": "https://ionicframework.com/docs/components",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Capacitor",
+                        "Summary": "A cross-platform runtime for deploying web applications natively to iOS, Android, and the web.",
+                        "URL": "https://capacitorjs.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Stencil",
+                        "Summary": "A tool for building reusable, framework-agnostic web components used within Ionic applications.",
+                        "URL": "https://stenciljs.com/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Ionic CLI",
+                        "Summary": "A command-line tool for creating, developing, and building Ionic applications efficiently.",
+                        "URL": "https://ionicframework.com/docs/cli",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Ionic Appflow",
+                        "Summary": "A cloud platform for building, deploying, and automating Ionic app workflows.",
+                        "URL": "https://ionic.io/appflow",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "Visual Studio Code",
+                        "Summary": "A lightweight code editor with Ionic extensions for faster development.",
+                        "URL": "https://code.visualstudio.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Expo",
+                "Summary": "An open-source platform for building cross-platform React Native applications with a streamlined development process.",
+                "URL": "https://expo.dev/",
+                "Libraries": [
+                    {
+                        "Name": "Expo SDK",
+                        "Summary": "A collection of pre-built libraries and APIs for accessing native device features without custom configurations.",
+                        "URL": "https://docs.expo.dev/versions/latest/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "React Navigation",
+                        "Summary": "A navigation library fully compatible with Expo for creating seamless app routing.",
+                        "URL": "https://reactnavigation.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Expo Router",
+                        "Summary": "A file-based routing library for Expo projects that simplifies navigation.",
+                        "URL": "https://expo.github.io/router/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Expo CLI",
+                        "Summary": "A command-line tool for creating, running, and deploying Expo applications efficiently.",
+                        "URL": "https://docs.expo.dev/get-started/installation/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Expo Go",
+                        "Summary": "A mobile app that enables live testing and previewing of Expo projects on iOS and Android devices.",
+                        "URL": "https://expo.dev/client",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "EAS (Expo Application Services)",
+                        "Summary": "A cloud-based service for building, deploying, and updating Expo applications.",
+                        "URL": "https://docs.expo.dev/eas/",
+                        "Supply": "Free/Paid"
+                    }
+                ]
             }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         ]
     },
     {
