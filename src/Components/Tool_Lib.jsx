@@ -57,7 +57,7 @@ const Tool_Lib = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-4 justify-center items-center px-4 md:px-10">
+        <div className="flex flex-wrap gap-4 justify-center items-center px-4 pb-5 md:px-10">
           {printIt.map((Item, index) => (
             <Tool_Lib_Card
               key={index} // Use a unique key (assuming Framework names are unique)
