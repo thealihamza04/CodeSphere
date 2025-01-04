@@ -2493,5 +2493,239 @@
                 ]
             }
         ]
-    }   
+    },
+    {
+        "Language": "C++",
+        "Summary": "C++ is a powerful, high-performance programming language widely used in systems software, game development, and applications requiring high-performance graphics and computation. It is a statically-typed language with support for object-oriented, procedural, and generic programming paradigms.",
+        "More": [
+            {
+                "Framework": "Qt",
+                "Summary": "Qt is a cross-platform framework used for developing GUI applications, as well as non-GUI programs like command-line tools and server-side applications.",
+                "URL": "https://www.qt.io/",
+                "Libraries": [
+                    {
+                        "Name": "Qt Core",
+                        "Summary": "Provides core functionalities like data structures, file handling, and time management in C++ applications.",
+                        "URL": "https://doc.qt.io/qt-5/qtcoredoc.html"
+                    },
+                    {
+                        "Name": "Qt Widgets",
+                        "Summary": "A set of UI elements that allows developers to create desktop applications with rich graphical user interfaces.",
+                        "URL": "https://doc.qt.io/qt-5/widgets-index.html"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Qt Creator",
+                        "Summary": "A powerful IDE for developing Qt applications, providing advanced code completion, debugging, and integrated tools for both C++ and QML development.",
+                        "URL": "https://www.qt.io/qt-creator"
+                    }
+                ]
+            },
+            {
+                "Framework": "Boost",
+                "Summary": "Boost is a collection of peer-reviewed, portable C++ source libraries that help with everything from basic utilities to advanced techniques.",
+                "URL": "https://www.boost.org/",
+                "Libraries": [
+                    {
+                        "Name": "Boost Asio",
+                        "Summary": "A cross-platform C++ library for network and low-level I/O programming.",
+                        "URL": "https://www.boost.org/doc/libs/1_75_0/doc/html/boost_asio.html"
+                    },
+                    {
+                        "Name": "Boost Filesystem",
+                        "Summary": "Provides facilities for performing operations on file systems and their components, such as paths, regular files, and directories.",
+                        "URL": "https://www.boost.org/doc/libs/1_75_0/doc/html/boost_filesystem.html"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "CLion",
+                        "Summary": "A C++ IDE that provides comprehensive support for CMake, Boost libraries, and easy debugging tools.",
+                        "URL": "https://www.jetbrains.com/clion/"
+                    }
+                ]
+            },
+            {
+                "Framework": "Eigen",
+                "Summary": "Eigen is a C++ template library for linear algebra, including matrices, vectors, numerical solvers, and vector operations, widely used in machine learning, robotics, and scientific computing.",
+                "URL": "https://eigen.tuxfamily.org/dox/",
+                "Libraries": [
+                    {
+                        "Name": "Eigen Core",
+                        "Summary": "Provides matrix and vector operations and algorithms.",
+                        "URL": "https://eigen.tuxfamily.org/dox/group__Core__Module.html"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "CLion",
+                        "Summary": "A C++ IDE that supports Eigen and provides code suggestions, debugging, and integration tools.",
+                        "URL": "https://www.jetbrains.com/clion/"
+                    }
+                ]
+            },
+            {
+                "Framework": "STL (Standard Template Library)",
+                "Summary": "The STL is a collection of template classes and functions in C++ that provides data structures like vectors, lists, queues, and algorithms for sorting and searching.",
+                "URL": "https://en.cppreference.com/w/cpp/standard_library",
+                "Libraries": [
+                    {
+                        "Name": "STL Containers",
+                        "Summary": "Provides container classes like vector, map, and set to store and manipulate data efficiently.",
+                        "URL": "https://en.cppreference.com/w/cpp/container"
+                    },
+                    {
+                        "Name": "STL Algorithms",
+                        "Summary": "A collection of algorithms like sort, find, and transform that can operate on STL containers.",
+                        "URL": "https://en.cppreference.com/w/cpp/algorithm"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Visual Studio",
+                        "Summary": "A popular IDE for C++ development that provides extensive debugging tools, support for STL, and integration with CMake.",
+                        "URL": "https://visualstudio.microsoft.com/"
+                    }
+                ]
+            },
+            {
+                "Framework": "OpenCV",
+                "Summary": "OpenCV is an open-source computer vision and machine learning software library that provides tools for real-time image and video processing.",
+                "URL": "https://opencv.org/",
+                "Libraries": [
+                    {
+                        "Name": "OpenCV Core",
+                        "Summary": "Provides low-level data structures and functions for image and video processing, as well as matrix operations.",
+                        "URL": "https://docs.opencv.org/4.x/d2/d6e/tutorial_py_geometric_transformations.html"
+                    },
+                    {
+                        "Name": "OpenCV Imgproc",
+                        "Summary": "Contains a wide variety of functions for image processing, including filters, color space conversions, and edge detection.",
+                        "URL": "https://docs.opencv.org/4.x/d8/d01/tutorial_mat_operations.html"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "CLion",
+                        "Summary": "A C++ IDE by JetBrains with support for OpenCV development, debugging, and advanced code assistance.",
+                        "URL": "https://www.jetbrains.com/clion/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "C#",
+        "Summary": "C# is a modern, object-oriented, and type-safe programming language developed by Microsoft. It is widely used for developing Windows applications, web applications, and cross-platform mobile apps using .NET Core and Xamarin. C# combines the power of C++ with the simplicity of languages like Java, making it a great choice for both enterprise and game development.",
+        "More": [
+            {
+                "Framework": "ASP.NET",
+                "Summary": "ASP.NET is a framework for building dynamic web applications and services with C#. It provides tools and libraries for web development, including MVC architecture, Web API, and real-time communication using SignalR.",
+                "URL": "https://dotnet.microsoft.com/apps/aspnet",
+                "Libraries": [
+                    {
+                        "Name": "ASP.NET Core",
+                        "Summary": "A cross-platform framework for building modern web applications and APIs. ASP.NET Core offers better performance and scalability over traditional ASP.NET.",
+                        "URL": "https://docs.microsoft.com/en-us/aspnet/core/"
+                    },
+                    {
+                        "Name": "SignalR",
+                        "Summary": "A library for adding real-time web functionality to applications, allowing server-side code to push content to clients instantly.",
+                        "URL": "https://dotnet.microsoft.com/apps/aspnet/signalr"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Visual Studio",
+                        "Summary": "A powerful IDE for C# development with tools for building web applications using ASP.NET, debugging, and managing dependencies.",
+                        "URL": "https://visualstudio.microsoft.com/"
+                    }
+                ]
+            },
+            {
+                "Framework": "Xamarin",
+                "Summary": "Xamarin is a cross-platform framework for building mobile applications for Android, iOS, and Windows using C# and .NET. It allows sharing code across platforms while providing native performance.",
+                "URL": "https://dotnet.microsoft.com/apps/xamarin",
+                "Libraries": [
+                    {
+                        "Name": "Xamarin.Forms",
+                        "Summary": "A UI toolkit for building cross-platform mobile applications with a single codebase, leveraging native controls for a seamless user experience.",
+                        "URL": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Visual Studio",
+                        "Summary": "An integrated development environment for building mobile applications with Xamarin, featuring rich debugging and emulator tools.",
+                        "URL": "https://visualstudio.microsoft.com/"
+                    }
+                ]
+            },
+            {
+                "Framework": "Entity Framework",
+                "Summary": "Entity Framework (EF) is an object-relational mapping (ORM) framework for .NET that allows developers to work with databases using .NET objects, eliminating the need for most of the data-access code.",
+                "URL": "https://docs.microsoft.com/en-us/ef/",
+                "Libraries": [
+                    {
+                        "Name": "EF Core",
+                        "Summary": "A lightweight, cross-platform version of Entity Framework that works with .NET Core to enable developers to use databases with modern applications.",
+                        "URL": "https://docs.microsoft.com/en-us/ef/core/"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Visual Studio",
+                        "Summary": "The primary IDE for .NET development, supporting Entity Framework for managing database models, migrations, and queries.",
+                        "URL": "https://visualstudio.microsoft.com/"
+                    }
+                ]
+            },
+            {
+                "Framework": "Unity",
+                "Summary": "Unity is a powerful game development platform that uses C# as its primary scripting language. It is widely used for developing both 2D and 3D games and interactive experiences across multiple platforms.",
+                "URL": "https://unity.com/",
+                "Libraries": [
+                    {
+                        "Name": "Unity Engine",
+                        "Summary": "The core framework of Unity, which provides tools for game development, physics, rendering, and more.",
+                        "URL": "https://docs.unity3d.com/Manual/UnityManual.html"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Unity Editor",
+                        "Summary": "An integrated development environment for creating, testing, and deploying games and interactive applications using Unity.",
+                        "URL": "https://unity.com/products/unity-editor"
+                    }
+                ]
+            },
+            {
+                "Framework": "Blazor",
+                "Summary": "Blazor is a framework for building interactive web applications using C# instead of JavaScript. It runs in the browser via WebAssembly or on the server.",
+                "URL": "https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor",
+                "Libraries": [
+                    {
+                        "Name": "Blazor WebAssembly",
+                        "Summary": "Enables client-side web applications to be written in C# using WebAssembly, bringing .NET to the browser.",
+                        "URL": "https://docs.microsoft.com/en-us/aspnet/core/blazor/"
+                    },
+                    {
+                        "Name": "Blazor Server",
+                        "Summary": "A server-side model where components run on the server and communicate with the client through a real-time SignalR connection.",
+                        "URL": "https://docs.microsoft.com/en-us/aspnet/core/blazor/"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Visual Studio",
+                        "Summary": "A development environment that includes templates, debugging tools, and support for building Blazor applications.",
+                        "URL": "https://visualstudio.microsoft.com/"
+                    }
+                ]
+            }
+        ]
+    }
+    
+    
 ]
