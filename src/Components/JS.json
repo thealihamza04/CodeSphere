@@ -1,7 +1,7 @@
 [
     {
         "Language": "HTML",
-        "Summary": "HTML(Hypertext Markup Language) is the standard markup language used to create and structure content on the web. It uses a system of tags to define elements like headings, paragraphs, links, images, and other multimedia. HTML forms the backbone of web pages, allowing browsers to render content and providing a framework for integrating styles and scripts.",
+        "Summary": "HTML is the standard markup language used to create and structure content on the web. It uses tags to define elements such as headings, paragraphs, links, and images. HTML serves as the backbone of web pages, enabling browsers to render content while providing a foundation for integrating styles and scripts.",
         "More": [
             {
                 "Framework": "HTML5",
@@ -1358,7 +1358,7 @@
     },
     {
         "Language": "Phython",
-        "Summary": "Python is a high-level, interpreted programming language known for its readability and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used for web development, data analysis, artificial intelligence, scientific computing, automation, and more. Its extensive libraries and frameworks make it a popular choice for both beginners and experienced developers.",
+        "Summary": "Python is a high-level, interpreted coding language known for its easy reading and flexibility. It supports different programming styles, including procedural, object-based, and functional coding. Python is used for web development, data analysis, AI, science, and automation. Its tools make it a popular choice.",
         "More": [
             {
                 "Framework": "Django",
@@ -1464,7 +1464,7 @@
     },
     {
         "Language": "Java",
-        "Summary": "JAvA is a programming language primarily used for building applications on the Java platform, particularly in Indonesia. It is not widely recognized outside specific contexts. If you're referring to Java, it is a popular, object-oriented programming language known for its portability across platforms via the Java Virtual Machine (JVM), allowing applications to run on any device with a JVM installed.",
+        "Summary": "Java is a programming language used for building applications on the Java platform, especially in Indonesia. It is not widely known outside specific contexts. Java is a popular, object-based language known for its portability across platforms via the Java Virtual Machine (JVM), allowing apps to run on any device with a JVM.",
         "More": [
             {
                 "Framework": "Spring",
@@ -1560,7 +1560,7 @@
     },
     {
         "Language": "PHP",
-        "Summary": "PHP is a popular general-purpose scripting language especially suited to web development. It is widely used for creating dynamic and interactive websites and can be embedded into HTML. PHP runs on various platforms and supports a wide range of databases and other services, making it a staple in web development.",
+        "Summary": "PHP is a popular general-purpose scripting language especially suited to web development. It is widely used for creating dynamic and interactive websites and can be embedded into HTML. PHP runs on various platforms and supports many databases and services, making it a key staple in web development.",
         "More": [
             {
                 "Framework": "Laravel",
@@ -2028,7 +2028,7 @@
     },
     {
         "Language": "Swift",
-        "Summary": "Swift is a powerful and intuitive programming language for iOS, macOS, watchOS, tvOS, and beyond. It is designed to work alongside Apple's Cocoa and Cocoa Touch frameworks, providing a modern alternative to Objective-C, offering safety, performance, and expressiveness.",
+        "Summary": "Swift is a powerful and intuitive programming language for iOS, macOS, watchOS, tvOS, and beyond. It is specifically designed to work seamlessly alongside Apple's Cocoa and Cocoa Touch frameworks, providing a modern alternative to Objective-C, offering safety, performance, and expressiveness.",
         "More": [
             {
                 "Framework": "UIKit",
@@ -2262,7 +2262,7 @@
     },
     {
         "Language": "Kotlin",
-        "Summary": "Kotlin is a modern, statically-typed programming language that runs on the JVM and is fully interoperable with Java. It is concise, expressive, and designed to solve many of the issues found in Java, making it a popular choice for Android development and server-side applications.",
+        "Summary": "Kotlin is a modern, statically-typed programming language that runs on the JVM and is fully interoperable with Java. It is concise, expressive, and specifically designed to solve many of the issues found in Java, making it a popular choice for Android development and server-side applications.",
         "More": [
             {
                 "Framework": "Ktor",
@@ -2617,7 +2617,7 @@
     },
     {
         "Language": "C#",
-        "Summary": "C# is a modern, object-oriented, and type-safe programming language developed by Microsoft. It is widely used for developing Windows applications, web applications, and cross-platform mobile apps using .NET Core and Xamarin. C# combines the power of C++ with the simplicity of languages like Java, making it a great choice for both enterprise and game development.",
+        "Summary": "C# is a modern, object-oriented, and type-safe programming language developed by Microsoft. It is widely used for developing Windows applications, web apps, and cross-platform mobile apps using .NET. C# combines the power of C++ with the simplicity of languages like Java, making it a great choice for development.",
         "More": [
             {
                 "Framework": "ASP.NET",

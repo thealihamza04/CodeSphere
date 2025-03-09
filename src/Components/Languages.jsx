@@ -13,7 +13,7 @@ const Languages = () => {
   return (
     <div className="relative min-h-screen bg-gray-100">
       {/* Header Section */}
-      <div className="relative py-9 mx-4 md:mx-8 lg:mx-16 space-y-6 z-10">
+      <div className="relative py-9 mx-2 md:mx-8 lg:mx-16 space-y-6 z-10">
         <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-sans font-extrabold text-gray-800">
           Programming Languages
         </h1>
@@ -26,7 +26,7 @@ const Languages = () => {
       </div>
 
       {/* Language Cards */}
-      <div className="flex flex-wrap gap-6 justify-center items-center px-4 md:px-10 lg:px-16 pb-10">
+      <div className="flex flex-wrap gap-6 justify-center items-center px-4 md:px-10 lg:px-8 pb-10">
         {List.map((Language, index) => (
           <LanCard
             key={index}
