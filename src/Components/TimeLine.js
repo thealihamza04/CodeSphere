@@ -1,0 +1,32 @@
+const languagesTimeLine = {
+    "Assembly": { released: 1949, gap: 0 },
+    "Shell": { released: 1971, gap: 22 },
+    "C": { released: 1972, gap: 1 },
+    "SQL": { released: 1974, gap: 2 },
+    "MATLAB": { released: 1984, gap: 10 },
+    "C++": { released: 1985, gap: 1 },
+    "Perl": { released: 1987, gap: 2 },
+    "Haskell": { released: 1990, gap: 3 },
+    "Python": { released: 1991, gap: 1 },
+    "Lua": { released: 1993, gap: 2 },
+    "R": { released: 1993, gap: 0 },
+    "HTML": { released: 1993, gap: 0 },
+    "Java": { released: 1995, gap: 2 },
+    "JavaScript": { released: 1995, gap: 0 },
+    "PHP": { released: 1995, gap: 0 },
+    "Ruby": { released: 1995, gap: 0 },
+    "CSS": { released: 1996, gap: 1 },
+    "C#": { released: 2000, gap: 4 },
+    "Scala": { released: 2004, gap: 4 },
+    "SASS": { released: 2006, gap: 2 },
+    "Go": { released: 2009, gap: 3 },
+    "LESS": { released: 2009, gap: 0 },
+    "Rust": { released: 2010, gap: 1 },
+    "Kotlin": { released: 2011, gap: 1 },
+    "Dart": { released: 2011, gap: 0 },
+    "Elixir": { released: 2011, gap: 0 },
+    "TypeScript": { released: 2012, gap: 1 },
+    "Swift": { released: 2014, gap: 2 }
+};
+
+export default languagesTimeLine;
