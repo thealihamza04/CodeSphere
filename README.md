@@ -5,5 +5,6 @@
  # Todo
 - add ai's timeline like which __traning methods__ used first and then which new method came in market  and many more
 
+
  # Issues
- - no issues
+ - change font of the definition of programming language on home page
