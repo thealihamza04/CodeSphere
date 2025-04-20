@@ -1,8 +1,13 @@
 import languagesTimeLine from "./TimeLine.js";
 import { MdCircle } from "react-icons/md";
 import Footer from "./Footer.jsx";
+import { useEffect } from "react";
 
 const TimeLine = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className='bg-gray-200 min-h-screen px-12 py-20'>

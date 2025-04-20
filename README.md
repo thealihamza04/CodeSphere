@@ -1,8 +1,9 @@
-# React + Vite
+# Codes sphere 
+ ` a versaltile webapp to get a broad image of programming language, their tools and libraries and the time line of the programming languages`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+ # Todo
+- add ai's timeline like which __traning methods__ used first and then which new method came in market  and many more
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ # Issues
+ - no issues
