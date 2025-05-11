@@ -5,12 +5,12 @@ import { useEffect } from "react";
 
 const TimeLine = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   return (
     <>
-      <div className='bg-gray-200 min-h-screen px-12 py-20'>
+      <div className=' min-h-screen px-12 py-20'>
         <h1 className='text-4xl font-bold py-12 text-center'>
           The TimeLine of Languages
         </h1>
@@ -36,7 +36,6 @@ const TimeLine = () => {
           </ul>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

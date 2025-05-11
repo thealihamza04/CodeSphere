@@ -15,26 +15,24 @@ const ProgLan = () => {
 
   return (
     <>
-      <div className="py-9 px-4 space-y-6 bg-gray-100">
-        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-sans font-extrabold text-gray-800">
-          Frameworks
-        </h1>
-        <div className="px-4 md:px-48">
+      <div className='py-9 px-4 space-y-6 bg-gray-100'>
+        <h1 className='heading'>Frameworks</h1>
+        <div className='px-4 md:px-48'>
           <hr />
         </div>
-        <p className="px-4 md:px-20 text-sm font-medium text-justify leading-relaxed">
+        <p className='px-4 md:px-20 text-sm font-normal text-justify leading-relaxed tracking-wide'>
           {def}
         </p>
-        <div className="flex justify-center mt-8">
+        <div className='flex justify-center mt-8'>
           <Link
-            className="btn btn-outline no-animation text-sm md:text-base"
-            to="/"
+            className='btn btn-outline no-animation text-sm md:text-base'
+            to='/'
           >
             Back
           </Link>
         </div>
       </div>
-      <div className="flex flex-wrap gap-4 justify-center items-center px-4 md:px-10 pb-10">
+      <div className='flex flex-wrap gap-4 justify-center items-center px-4 md:px-10 pb-10'>
         {Frameworks.map((framework, index) => (
           <Card
             key={index} // Unique key for each framework

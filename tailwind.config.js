@@ -6,14 +6,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Quicksand', 'Roboto', 'sans-serif'],  // or any other font you choose
+        sans: ['Roboto', 'sans-serif'],
       },
-    },
+    }
+
+
   },
-  plugins: [daisyui],
+  plugins: [require("daisyui")],
   daisyui: {
     themes: ["light"], // Force only light mode
     darkTheme: "light", // Prevent DaisyUI from applying dark mode
   },
-  darkMode: false, // Disable Tailwind's dark mode
 };
