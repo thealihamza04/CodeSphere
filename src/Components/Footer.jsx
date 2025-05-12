@@ -9,6 +9,10 @@ const Footer = () => {
   const [isLoading, setLoading] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [feedback, setFeedback] = useState({
+    name: "",
+    message: "",
+  });
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -17,27 +21,20 @@ const Footer = () => {
   const sendFeedback = async (e) => {
     e.preventDefault();
     setLoading(true);
-    const name =
-      document.getElementById("name").value != ""
-        ? "undefined"
-        : document.getElementById("name").value;
-    const message = document.getElementById("message").value;
-
     try {
       const response = await axios.post(
         "https://feed-backs.vercel.app/response/add",
         {
           webapp: "codes-sphere",
-          senderName: name,
+          senderName: feedback.name,
           senderEmail: "undefined",
-          message: message,
+          message: feedback.message,
         },
         { timeout: 4000 }
       );
 
       if (response.status == 200) {
-        document.getElementById("name").value = "";
-        document.getElementById("message").value = "";
+        setFeedback({ name: "", message: "" });
         setShowAlert(true);
         setTimeout(() => {
           setShowAlert(false);
@@ -135,6 +132,10 @@ const Footer = () => {
               <input
                 id='name'
                 type='text'
+                value={feedback.name}
+                onChange={(e) =>
+                  setFeedback({ ...feedback, name: e.target.value })
+                }
                 placeholder='your Good Name'
                 className='input input-sm focus:outline-none input-bordered'
               />
@@ -162,6 +163,10 @@ const Footer = () => {
               className='input input-lg focus:outline-none text-xs py-2 px-2 resize-none w-full '
               rows={3}
               id='message'
+              onChange={(e) =>
+                setFeedback({ ...feedback, message: e.target.value })
+              }
+              value={feedback.message}
               placeholder='share your thoughts *'
               required={true}
             ></textarea>
