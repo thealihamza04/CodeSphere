@@ -4,14 +4,16 @@ import LanCard from "./cards/LanCard";
 
 const Languages = () => {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
   const def =
     "A programming language is a formal set of instructions that allows developers to communicate with computers to create software applications, scripts, or other tools. It provides the syntax and semantics for writing code that can perform specific tasks, manipulate data, and control hardware. Examples of programming languages include Python, Java, C++, and JavaScript, each with its own features, use cases, and paradigms.";
 
   return (
-    <div className='relative min-h-screen bg-gray-100'>
+    <div
+      className={`relative min-h-screen bg-gray-100   motion-opacity-in-[0%] motion-blur-in-[40px] motion-ease-spring-snappy`}
+    >
       {/* Header Section */}
       <div className='relative py-9 mx-2 md:mx-8 lg:mx-16 space-y-6 z-10'>
         <h1 className='heading'>Programming Languages</h1>
@@ -34,8 +36,6 @@ const Languages = () => {
           />
         ))}
       </div>
-
-      {/* Background Accent */}
     </div>
   );
 };
