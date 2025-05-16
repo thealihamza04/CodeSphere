@@ -126,7 +126,7 @@ const Footer = () => {
           </div>
         </nav>
         <form onSubmit={sendFeedback}>
-          <h6 className='footer-title'>FeedBack</h6>
+          <h6 className='footer-title '>FeedBack</h6>
           <fieldset className='w-92 space-y-2'>
             <div className='flex flex-row gap-3'>
               <input
