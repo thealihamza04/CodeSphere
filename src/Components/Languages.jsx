@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
-import List from "./JS.json";
+import List from "../Data/JS.json";
 import LanCard from "./cards/LanCard";
+import useScrollRestoration from "./Hooks/ScrollRestoration";
 
 const Languages = () => {
+  // useScrollRestoration();
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);

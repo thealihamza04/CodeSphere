@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import useScrollRestoration from "./Hooks/ScrollRestoration";
 
 const AccordionItem = ({ title, content }) => (
   <div className='collapse  join-item border-b border-base-200'>
     <input type='radio' name='my-accordion-4' />
-    <div className='collapse-title text-xl font-medium'>{title}</div>
+    <div className='collapse-title text-xl font-normal'>{title}</div>
     <div className='collapse-content opacity-65'>
       <p>{content}</p>
     </div>
@@ -12,10 +13,11 @@ const AccordionItem = ({ title, content }) => (
 );
 
 const AccordionGroup = () => {
+  // useScrollRestoration();
   const [openIndex, setOpenIndex] = useState(0);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
   const items = [
@@ -152,8 +154,8 @@ const AccordionGroup = () => {
   return (
     <>
       <div className='spacey-y-24 container mx-auto py-12'>
-        <h1 className='text-3xl md:text-8xl font-bold py-12 text-center'>
-          Frequntly Asked Auestions
+        <h1 className='text-3xl md:text-3xl font-extrabold py-12 text-center'>
+          Essential Questions Every Developer Should Know
         </h1>
         <div className='join join-vertical w-full space-y-4'>
           {items.map((item, index) => (

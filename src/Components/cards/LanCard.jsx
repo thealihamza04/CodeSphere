@@ -13,7 +13,7 @@ const LanCard = ({ Title, Summary, Details }) => {
           <div className='card-actions justify-end mt-2'>
             <Link
               className={`text-[10px] px-[12px] bg-blue-500 p-1 rounded-full text-white font-[400]`}
-              to='/Frameworks'
+              to={`/Frameworks?lang=${encodeURIComponent(Title)}`}
               state={{ Frameworks: Details }}
             >
               Frmwrks

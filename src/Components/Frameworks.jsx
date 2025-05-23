@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import Card from "./cards/Card";
 import { Link, useLocation } from "react-router-dom";
+import useScrollRestoration from "./Hooks/ScrollRestoration";
 
 const ProgLan = () => {
+  // useScrollRestoration();
   const location = useLocation();
   const { Frameworks } = location.state || { Frameworks: [] };
 
@@ -42,6 +44,7 @@ const ProgLan = () => {
             Tools={framework.Tools}
             Lib={framework.Libraries}
             RTNIT={Frameworks}
+            PrevPath={location.pathname}
           />
         ))}
       </div>

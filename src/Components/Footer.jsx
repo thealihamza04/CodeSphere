@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoDuotone } from "react-icons/pi";
 import { SiGmail } from "react-icons/si";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 const Footer = () => {
   const [isLoading, setLoading] = useState(false);
@@ -33,24 +34,14 @@ const Footer = () => {
         { timeout: 4000 }
       );
 
-      if (response.status == 200) {
-        setFeedback({ name: "", message: "" });
-        setShowAlert(true);
-        setTimeout(() => {
-          setShowAlert(false);
-        }, 1500);
-      } else {
-        setIsError(true);
-        setTimeout(() => {
-          setShowAlert(false);
-        }, 1500);
-      }
+      toast.success("Thanks for your feedback! We appreciate your input");
+      setFeedback({
+        name: "",
+        message: "",
+      });
     } catch (error) {
       console.log(error);
-      setIsError(true);
-      setTimeout(() => {
-        setShowAlert(false);
-      }, 1500);
+      toast.error(" Oops! Something went wrong. Please try again later");
     } finally {
       setLoading(false);
     }
@@ -58,33 +49,6 @@ const Footer = () => {
 
   return (
     <div className='bg-gray-200'>
-      <div>
-        <div
-          role='alert'
-          className={`alert ${
-            isError ? "alert-error" : "alert-success"
-          } fixed  right-4 w-80 z-50 ${
-            showAlert ? "bottom-4" : "-bottom-24"
-          } transition-all duration-500 ease-in-out`}
-        >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-6 w-6 shrink-0 stroke-current'
-            fill='none'
-            viewBox='0 0 24 24'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
-            />
-          </svg>
-          <span>
-            {isError ? "ops! Server down" : " Thanks for your feedback!"}
-          </span>
-        </div>
-      </div>
       <footer className='footer  text-base-content p-10 container mx-auto'>
         <nav>
           <h6 className='footer-title'>Services</h6>
@@ -95,7 +59,7 @@ const Footer = () => {
             TimeLine
           </Link>
           <Link to={"/developer-essential-skills"} className='link link-hover '>
-            Dev essential skills
+            Why Matters
           </Link>
         </nav>
         <nav>
