@@ -1,8 +1,53 @@
-# Codes sphere 
- ` a versaltile webapp to get a broad image of programming language, their tools and libraries and the time line of the programming languages`
+# CodeSphere 🌐
 
-A list of programming language
-![image](https://github.com/user-attachments/assets/58e0912f-c811-4b95-b230-c24835b8c39f)
+**A Developer Collaboration Platform**  
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![GitHub stars](https://img.shields.io/github/stars/thealihamza04/CodeSphere?style=social)
 
-- the timeline of programming languages 
-![image](https://github.com/user-attachments/assets/30926dd5-0b13-4bc0-8e8c-c6a2fb2b1c3b)
+CodeSphere is a MERN stack application designed to help developers collaborate, share code snippets, and manage projects efficiently.
+
+![CodeSphere Screenshot](./screenshot.png) <!-- Add actual screenshot path -->
+
+## Features ✨
+
+- **Real-time Code Collaboration** - Pair program with teammates
+- **Project Management** - Task boards and issue tracking
+- **Code Snippet Sharing** - Save and share reusable code
+- **Markdown Documentation** - Built-in docs support
+- **User Profiles** - Developer portfolio pages
+- **API Playground** - Test APIs directly in the platform
+
+## Tech Stack 🛠️
+
+**Frontend:**
+- React.js
+- Redux (State Management)
+- Monaco Editor (Code Editor)
+- Socket.io (Real-time features)
+- Tailwind CSS (Styling)
+
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB (Database)
+- Mongoose (ODM)
+- JWT (Authentication)
+
+**DevOps:**
+- Docker (Containerization)
+- GitHub Actions (CI/CD)
+- AWS EC2 (Deployment)
+
+## Installation 💻
+
+### Prerequisites
+- Node.js (v16+)
+- MongoDB (v5+)
+- Git
+
+### Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/thealihamza04/CodeSphere.git
+   cd CodeSphere
