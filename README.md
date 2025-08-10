@@ -2,8 +2,6 @@
 # CodeSphere 🌐 (Frontend)
 
 **A Developer Collaboration Platform UI**  
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) 
-![GitHub stars](https://img.shields.io/github/stars/thealihamza04/CodeSphere?style=social)
 
 Frontend interface for CodeSphere - a platform for developers to collaborate and share code snippets (Mock API data used for demonstration).
 
