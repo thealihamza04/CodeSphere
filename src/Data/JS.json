@@ -1357,8 +1357,8 @@
         ]
     },
     {
-        "Language": "Phython",
-        "Summary": "Python is a high-level, interpreted coding language known for its easy reading and flexibility. It supports different programming styles, including procedural, object-based, and functional coding. Python is used for web development, data analysis, AI, science, and automation. Its tools make it a popular choice.",
+        "Language": "Python",
+        "Summary": "Python is a high-level, interpreted programming language known for its easy reading and flexibility. It supports different programming styles, including procedural, object-based, and functional programming. Python is used for web development, data analysis, AI, science, and automation. Its tools make it a popular choice.",
         "More": [
             {
                 "Framework": "Django",
@@ -2725,7 +2725,155 @@
                 ]
             }
         ]
+    },
+    {
+        "Language": "Go",
+        "Summary": "Go is an open-source programming language designed at Google for building reliable and efficient software with built-in support for concurrency.",
+        "More": [
+            {
+                "Framework": "Gin",
+                "Summary": "A high-performance HTTP web framework for Go that features a martini-like API and middleware support.",
+                "URL": "https://gin-gonic.com/",
+                "Libraries": [
+                    {
+                        "Name": "GORM",
+                        "Summary": "An ORM library for Go that simplifies database interactions and supports multiple database backends.",
+                        "URL": "https://gorm.io/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "GoLand",
+                        "Summary": "A commercial IDE by JetBrains tailored for Go development with advanced debugging and code analysis.",
+                        "URL": "https://www.jetbrains.com/go/",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "Visual Studio Code",
+                        "Summary": "A free code editor that provides Go extensions for debugging and code navigation.",
+                        "URL": "https://code.visualstudio.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Beego",
+                "Summary": "An MVC framework for building enterprise-level web applications in Go with built-in modules and tools.",
+                "URL": "https://beego.me/",
+                "Libraries": [
+                    {
+                        "Name": "Bee",
+                        "Summary": "A development tool for Beego that accelerates project scaffolding and management.",
+                        "URL": "https://beego.me/docs/install/bee/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "GoLand",
+                        "Summary": "A Go IDE from JetBrains offering integration with Beego projects.",
+                        "URL": "https://www.jetbrains.com/go/",
+                        "Supply": "Paid"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Rust",
+        "Summary": "Rust is a systems programming language that focuses on safety, speed, and concurrency without a garbage collector.",
+        "More": [
+            {
+                "Framework": "Rocket",
+                "Summary": "A web framework for Rust that makes it simple to write fast and secure web applications.",
+                "URL": "https://rocket.rs/",
+                "Libraries": [
+                    {
+                        "Name": "Diesel",
+                        "Summary": "A safe and extensible ORM and query builder for Rust.",
+                        "URL": "https://diesel.rs/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Cargo",
+                        "Summary": "Rust's package manager and build system that manages dependencies and compilation.",
+                        "URL": "https://doc.rust-lang.org/cargo/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Actix Web",
+                "Summary": "A powerful, pragmatic, and extremely fast web framework for Rust built on the Actix actor system.",
+                "URL": "https://actix.rs/",
+                "Libraries": [
+                    {
+                        "Name": "Tokio",
+                        "Summary": "An asynchronous runtime for the Rust programming language, providing the building blocks for writing network applications.",
+                        "URL": "https://tokio.rs/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Cargo",
+                        "Summary": "The standard Rust build tool and package manager used with Actix Web projects.",
+                        "URL": "https://doc.rust-lang.org/cargo/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Ruby",
+        "Summary": "Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.",
+        "More": [
+            {
+                "Framework": "Ruby on Rails",
+                "Summary": "A full-stack web application framework that follows the MVC pattern and emphasizes convention over configuration.",
+                "URL": "https://rubyonrails.org/",
+                "Libraries": [
+                    {
+                        "Name": "Active Record",
+                        "Summary": "Rails' built-in ORM that facilitates database interactions using Ruby objects.",
+                        "URL": "https://guides.rubyonrails.org/active_record_basics.html",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Bundler",
+                        "Summary": "A dependency manager for Ruby applications that tracks and installs the exact gems and versions needed.",
+                        "URL": "https://bundler.io/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Sinatra",
+                "Summary": "A DSL for quickly creating web applications in Ruby with minimal effort.",
+                "URL": "https://sinatrarb.com/",
+                "Libraries": [
+                    {
+                        "Name": "Rack",
+                        "Summary": "A modular interface for developing web applications in Ruby, used as the foundation for Sinatra.",
+                        "URL": "https://rack.github.io/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Bundler",
+                        "Summary": "Manages Sinatra application dependencies and gem versions.",
+                        "URL": "https://bundler.io/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
     }
-    
-    
 ]
