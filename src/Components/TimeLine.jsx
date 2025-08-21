@@ -1,17 +1,60 @@
 import languagesTimeLine from "../Data/TimeLine.js";
-import { MdCircle } from "react-icons/md";
-import Footer from "./Footer.jsx";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useInView } from "motion/react";
-import { useRef } from "react";
 import TimeLineCard from "./cards/TimeLine/TimeLineCard.jsx";
 import Line from "./cards/TimeLine/Line.jsx";
-import useScrollRestoration from "./Hooks/ScrollRestoration.jsx";
+import useSEO from "./Hooks/useSEO";
 
 const TimeLine = () => {
-  // useScrollRestoration();
   const ref = useRef();
   const isInView = useInView(ref, { once: true });
+
+  useSEO({
+    title: "Programming Languages Timeline | CodeSphere",
+    description:
+      "Chronological timeline showcasing the evolution of programming languages.",
+    canonical: "https://codesphere.dev/TimeLine",
+    og: {
+      title: "Programming Languages Timeline | CodeSphere",
+      description:
+        "Chronological timeline showcasing the evolution of programming languages.",
+      url: "https://codesphere.dev/TimeLine",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Programming Languages Timeline | CodeSphere",
+      description:
+        "Chronological timeline showcasing the evolution of programming languages.",
+    },
+    structuredData: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          name: "Programming Languages Timeline",
+          url: "https://codesphere.dev/TimeLine",
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://codesphere.dev/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Timeline",
+              item: "https://codesphere.dev/TimeLine",
+            },
+          ],
+        },
+      ],
+    },
+  });
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });

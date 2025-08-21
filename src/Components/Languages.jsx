@@ -1,10 +1,34 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import List from "../Data/JS.json";
 import LanCard from "./cards/LanCard";
-import useScrollRestoration from "./Hooks/ScrollRestoration";
+import useSEO from "./Hooks/useSEO";
 
 const Languages = () => {
-  // useScrollRestoration();
+  useSEO({
+    title: "Programming Languages Guide | CodeSphere",
+    description:
+      "Explore programming languages, their summaries and key details at CodeSphere.",
+    canonical: "https://codesphere.dev/",
+    og: {
+      title: "Programming Languages Guide | CodeSphere",
+      description:
+        "Explore programming languages, their summaries and key details at CodeSphere.",
+      url: "https://codesphere.dev/",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Programming Languages Guide | CodeSphere",
+      description:
+        "Explore programming languages, their summaries and key details at CodeSphere.",
+    },
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Programming Languages Guide",
+      url: "https://codesphere.dev/",
+    },
+  });
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });

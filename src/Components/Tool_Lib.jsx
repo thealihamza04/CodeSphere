@@ -1,6 +1,6 @@
-import React from "react";
 import Tool_Lib_Card from "./cards/Tool_Lib_Card";
 import { useLocation, Link } from "react-router-dom";
+import useSEO from "./Hooks/useSEO";
 
 const Tool_Lib = () => {
   const location = useLocation();
@@ -14,6 +14,7 @@ const Tool_Lib = () => {
   let printIt = [];
   let heading = "";
   let def = "";
+  let crumbName = "";
 
   const toolDef =
     "Framework tools are software frameworks that provide developers with a structured foundation and pre-built components to build applications more efficiently. These tools often include libraries, templates, and best practices that streamline the development process.";
@@ -25,11 +26,64 @@ const Tool_Lib = () => {
     printIt = tools;
     heading = "Tools";
     def = toolDef;
+    crumbName = "Tools";
   } else {
     printIt = Libraries;
     heading = "Libraries";
     def = libDef;
+    crumbName = "Libraries";
   }
+
+  useSEO({
+    title: `${heading} for Frameworks | CodeSphere`,
+    description: def,
+    canonical: "https://codesphere.dev/Frameworks/ToLib",
+    og: {
+      title: `${heading} for Frameworks | CodeSphere`,
+      description: def,
+      url: "https://codesphere.dev/Frameworks/ToLib",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${heading} for Frameworks | CodeSphere`,
+      description: def,
+    },
+    structuredData: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          name: `${heading} for Frameworks`,
+          provider: { "@type": "Organization", name: "CodeSphere" },
+          url: "https://codesphere.dev/Frameworks/ToLib",
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://codesphere.dev/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Frameworks",
+              item: "https://codesphere.dev/Frameworks",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: crumbName,
+              item: "https://codesphere.dev/Frameworks/ToLib",
+            },
+          ],
+        },
+      ],
+    },
+  });
 
   return (
     <>

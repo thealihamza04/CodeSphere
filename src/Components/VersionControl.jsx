@@ -1,6 +1,6 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
-import useScrollRestoration from "./Hooks/ScrollRestoration";
+import useSEO from "./Hooks/useSEO";
 
 const AccordionItem = ({ title, content }) => (
   <div className='collapse  join-item border-b border-base-200'>
@@ -13,8 +13,52 @@ const AccordionItem = ({ title, content }) => (
 );
 
 const AccordionGroup = () => {
-  // useScrollRestoration();
-  const [openIndex, setOpenIndex] = useState(0);
+  useSEO({
+    title: "Developer Essential Skills | CodeSphere",
+    description:
+      "Key questions highlighting why core developer skills like version control, testing and design patterns matter.",
+    canonical: "https://codesphere.dev/developer-essential-skills",
+    og: {
+      title: "Developer Essential Skills | CodeSphere",
+      description:
+        "Key questions highlighting why core developer skills like version control, testing and design patterns matter.",
+      url: "https://codesphere.dev/developer-essential-skills",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Developer Essential Skills | CodeSphere",
+      description:
+        "Key questions highlighting why core developer skills like version control, testing and design patterns matter.",
+    },
+    structuredData: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          name: "Developer Essential Skills",
+          url: "https://codesphere.dev/developer-essential-skills",
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://codesphere.dev/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Developer Essential Skills",
+              item: "https://codesphere.dev/developer-essential-skills",
+            },
+          ],
+        },
+      ],
+    },
+  });
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
@@ -163,7 +207,6 @@ const AccordionGroup = () => {
               key={index}
               title={item.title}
               content={item.content}
-              onClick={() => setOpenIndex(index)}
             />
           ))}
         </div>

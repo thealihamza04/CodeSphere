@@ -1,12 +1,59 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Card from "./cards/Card";
 import { Link, useLocation } from "react-router-dom";
-import useScrollRestoration from "./Hooks/ScrollRestoration";
+import useSEO from "./Hooks/useSEO";
 
 const ProgLan = () => {
-  // useScrollRestoration();
   const location = useLocation();
   const { Frameworks } = location.state || { Frameworks: [] };
+
+  useSEO({
+    title: "Frameworks Overview | CodeSphere",
+    description:
+      "Browse popular programming frameworks and tools with summaries and links.",
+    canonical: "https://codesphere.dev/Frameworks",
+    og: {
+      title: "Frameworks Overview | CodeSphere",
+      description:
+        "Browse popular programming frameworks and tools with summaries and links.",
+      url: "https://codesphere.dev/Frameworks",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Frameworks Overview | CodeSphere",
+      description:
+        "Browse popular programming frameworks and tools with summaries and links.",
+    },
+    structuredData: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          name: "Frameworks Overview",
+          provider: { "@type": "Organization", name: "CodeSphere" },
+          url: "https://codesphere.dev/Frameworks",
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://codesphere.dev/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Frameworks",
+              item: "https://codesphere.dev/Frameworks",
+            },
+          ],
+        },
+      ],
+    },
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
