@@ -1,10 +1,36 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import List from "../Data/JS.json";
 import LanCard from "./cards/LanCard";
-import useScrollRestoration from "./Hooks/ScrollRestoration";
+import useSEO from "./Hooks/useSEO";
 
 const Languages = () => {
-  // useScrollRestoration();
+  useSEO({
+    title: "Programming Languages Guide | CodeSphere",
+    description:
+      "Explore programming languages, AliHamza projects and thealihamza04 programming language timeline on CodeSphere.",
+    keywords:
+      "AliHamza projects, thealihamza04 projects, programming language timeline, projramming lang time line",
+    canonical: "https://codes-sphere.vercel.app/",
+    og: {
+      title: "Programming Languages Guide | CodeSphere",
+      description:
+        "Explore programming languages, AliHamza projects and thealihamza04 programming language timeline on CodeSphere.",
+      url: "https://codes-sphere.vercel.app/",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Programming Languages Guide | CodeSphere",
+      description:
+        "Explore programming languages, AliHamza projects and thealihamza04 programming language timeline on CodeSphere.",
+    },
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Programming Languages Guide",
+      url: "https://codes-sphere.vercel.app/",
+    },
+  });
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
@@ -25,6 +51,10 @@ const Languages = () => {
         </div>
         <p className='px-4 md:px-20 text-sm tracking-wider text-justify leading-relaxed opacity-70'>
           {def}
+        </p>
+        <p className='px-4 md:px-20 text-sm tracking-wider text-justify leading-relaxed opacity-70'>
+          Discover AliHamza projects, thealihamza04 repositories and a programming
+          language time line in this community-driven guide.
         </p>
       </div>
 

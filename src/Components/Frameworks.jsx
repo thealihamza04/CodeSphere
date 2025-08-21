@@ -1,12 +1,61 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Card from "./cards/Card";
 import { Link, useLocation } from "react-router-dom";
-import useScrollRestoration from "./Hooks/ScrollRestoration";
+import useSEO from "./Hooks/useSEO";
 
 const ProgLan = () => {
-  // useScrollRestoration();
   const location = useLocation();
   const { Frameworks } = location.state || { Frameworks: [] };
+
+  useSEO({
+    title: "Frameworks Overview | CodeSphere",
+    description:
+      "Browse popular programming frameworks and tools with summaries and links.",
+    keywords:
+      "AliHamza projects, thealihamza04 projects, programming language timeline, projramming lang time line",
+    canonical: "https://codes-sphere.vercel.app/Frameworks",
+    og: {
+      title: "Frameworks Overview | CodeSphere",
+      description:
+        "Browse popular programming frameworks and tools with summaries and links.",
+      url: "https://codes-sphere.vercel.app/Frameworks",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Frameworks Overview | CodeSphere",
+      description:
+        "Browse popular programming frameworks and tools with summaries and links.",
+    },
+    structuredData: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          name: "Frameworks Overview",
+          provider: { "@type": "Organization", name: "CodeSphere" },
+          url: "https://codes-sphere.vercel.app/Frameworks",
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://codes-sphere.vercel.app/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Frameworks",
+              item: "https://codes-sphere.vercel.app/Frameworks",
+            },
+          ],
+        },
+      ],
+    },
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);

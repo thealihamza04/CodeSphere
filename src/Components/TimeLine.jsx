@@ -1,17 +1,62 @@
 import languagesTimeLine from "../Data/TimeLine.js";
-import { MdCircle } from "react-icons/md";
-import Footer from "./Footer.jsx";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useInView } from "motion/react";
-import { useRef } from "react";
 import TimeLineCard from "./cards/TimeLine/TimeLineCard.jsx";
 import Line from "./cards/TimeLine/Line.jsx";
-import useScrollRestoration from "./Hooks/ScrollRestoration.jsx";
+import useSEO from "./Hooks/useSEO";
 
 const TimeLine = () => {
-  // useScrollRestoration();
   const ref = useRef();
   const isInView = useInView(ref, { once: true });
+
+  useSEO({
+    title: "Programming Languages Timeline | CodeSphere",
+    description:
+      "Chronological timeline showcasing the evolution of programming languages and AliHamza projects.",
+    keywords:
+      "AliHamza projects, thealihamza04 projects, programming language timeline, projramming lang time line",
+    canonical: "https://codes-sphere.vercel.app/TimeLine",
+    og: {
+      title: "Programming Languages Timeline | CodeSphere",
+      description:
+        "Chronological timeline showcasing the evolution of programming languages and AliHamza projects.",
+      url: "https://codes-sphere.vercel.app/TimeLine",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Programming Languages Timeline | CodeSphere",
+      description:
+        "Chronological timeline showcasing the evolution of programming languages and AliHamza projects.",
+    },
+    structuredData: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          name: "Programming Languages Timeline",
+          url: "https://codes-sphere.vercel.app/TimeLine",
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://codes-sphere.vercel.app/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Timeline",
+              item: "https://codes-sphere.vercel.app/TimeLine",
+            },
+          ],
+        },
+      ],
+    },
+  });
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });

@@ -8,8 +8,6 @@ import toast from "react-hot-toast";
 
 const Footer = () => {
   const [isLoading, setLoading] = useState(false);
-  const [showAlert, setShowAlert] = useState(false);
-  const [isError, setIsError] = useState(false);
   const [feedback, setFeedback] = useState({
     name: "",
     message: "",
@@ -23,7 +21,7 @@ const Footer = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post(
+      await axios.post(
         "https://feed-backs.vercel.app/response/add",
         {
           webapp: "codes-sphere",
@@ -57,6 +55,9 @@ const Footer = () => {
           </Link>
           <Link to={"/TimeLine"} className='link link-hover '>
             TimeLine
+          </Link>
+          <Link to={"/Frameworks"} className='link link-hover '>
+            Frameworks
           </Link>
           <Link to={"/developer-essential-skills"} className='link link-hover '>
             Why Matters

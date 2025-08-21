@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codes-sphere.vercel.app/sitemap.xml
