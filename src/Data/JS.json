@@ -1358,7 +1358,7 @@
     },
     {
         "Language": "Python",
-        "Summary": "Python is a high-level, interpreted coding language known for its easy reading and flexibility. It supports different programming styles, including procedural, object-based, and functional coding. Python is used for web development, data analysis, AI, science, and automation. Its tools make it a popular choice.",
+        "Summary": "Python is a high-level, interpreted programming language known for its easy reading and flexibility. It supports different programming styles, including procedural, object-based, and functional programming. Python is used for web development, data analysis, AI, science, and automation. Its tools make it a popular choice.",
         "More": [
             {
                 "Framework": "Django",
