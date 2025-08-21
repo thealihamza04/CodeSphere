@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://codesphere.dev/sitemap.xml
+Sitemap: https://codes-sphere.vercel.app/sitemap.xml

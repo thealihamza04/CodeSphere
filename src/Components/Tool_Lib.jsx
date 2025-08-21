@@ -37,11 +37,13 @@ const Tool_Lib = () => {
   useSEO({
     title: `${heading} for Frameworks | CodeSphere`,
     description: def,
-    canonical: "https://codesphere.dev/Frameworks/ToLib",
+    keywords:
+      "AliHamza projects, thealihamza04 projects, programming language timeline, projramming lang time line",
+    canonical: "https://codes-sphere.vercel.app/Frameworks/ToLib",
     og: {
       title: `${heading} for Frameworks | CodeSphere`,
       description: def,
-      url: "https://codesphere.dev/Frameworks/ToLib",
+      url: "https://codes-sphere.vercel.app/Frameworks/ToLib",
       type: "website",
     },
     twitter: {
@@ -56,7 +58,7 @@ const Tool_Lib = () => {
           "@type": "Service",
           name: `${heading} for Frameworks`,
           provider: { "@type": "Organization", name: "CodeSphere" },
-          url: "https://codesphere.dev/Frameworks/ToLib",
+          url: "https://codes-sphere.vercel.app/Frameworks/ToLib",
         },
         {
           "@type": "BreadcrumbList",
@@ -65,19 +67,19 @@ const Tool_Lib = () => {
               "@type": "ListItem",
               position: 1,
               name: "Home",
-              item: "https://codesphere.dev/",
+              item: "https://codes-sphere.vercel.app/",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "Frameworks",
-              item: "https://codesphere.dev/Frameworks",
+              item: "https://codes-sphere.vercel.app/Frameworks",
             },
             {
               "@type": "ListItem",
               position: 3,
               name: crumbName,
-              item: "https://codesphere.dev/Frameworks/ToLib",
+              item: "https://codes-sphere.vercel.app/Frameworks/ToLib",
             },
           ],
         },

@@ -12,20 +12,22 @@ const TimeLine = () => {
   useSEO({
     title: "Programming Languages Timeline | CodeSphere",
     description:
-      "Chronological timeline showcasing the evolution of programming languages.",
-    canonical: "https://codesphere.dev/TimeLine",
+      "Chronological timeline showcasing the evolution of programming languages and AliHamza projects.",
+    keywords:
+      "AliHamza projects, thealihamza04 projects, programming language timeline, projramming lang time line",
+    canonical: "https://codes-sphere.vercel.app/TimeLine",
     og: {
       title: "Programming Languages Timeline | CodeSphere",
       description:
-        "Chronological timeline showcasing the evolution of programming languages.",
-      url: "https://codesphere.dev/TimeLine",
+        "Chronological timeline showcasing the evolution of programming languages and AliHamza projects.",
+      url: "https://codes-sphere.vercel.app/TimeLine",
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
       title: "Programming Languages Timeline | CodeSphere",
       description:
-        "Chronological timeline showcasing the evolution of programming languages.",
+        "Chronological timeline showcasing the evolution of programming languages and AliHamza projects.",
     },
     structuredData: {
       "@context": "https://schema.org",
@@ -33,7 +35,7 @@ const TimeLine = () => {
         {
           "@type": "Article",
           name: "Programming Languages Timeline",
-          url: "https://codesphere.dev/TimeLine",
+          url: "https://codes-sphere.vercel.app/TimeLine",
         },
         {
           "@type": "BreadcrumbList",
@@ -42,13 +44,13 @@ const TimeLine = () => {
               "@type": "ListItem",
               position: 1,
               name: "Home",
-              item: "https://codesphere.dev/",
+              item: "https://codes-sphere.vercel.app/",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "Timeline",
-              item: "https://codesphere.dev/TimeLine",
+              item: "https://codes-sphere.vercel.app/TimeLine",
             },
           ],
         },

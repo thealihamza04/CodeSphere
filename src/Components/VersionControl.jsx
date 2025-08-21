@@ -17,12 +17,14 @@ const AccordionGroup = () => {
     title: "Developer Essential Skills | CodeSphere",
     description:
       "Key questions highlighting why core developer skills like version control, testing and design patterns matter.",
-    canonical: "https://codesphere.dev/developer-essential-skills",
+    keywords:
+      "AliHamza projects, thealihamza04 projects, programming language timeline, projramming lang time line",
+    canonical: "https://codes-sphere.vercel.app/developer-essential-skills",
     og: {
       title: "Developer Essential Skills | CodeSphere",
       description:
         "Key questions highlighting why core developer skills like version control, testing and design patterns matter.",
-      url: "https://codesphere.dev/developer-essential-skills",
+      url: "https://codes-sphere.vercel.app/developer-essential-skills",
       type: "website",
     },
     twitter: {
@@ -37,7 +39,7 @@ const AccordionGroup = () => {
         {
           "@type": "Article",
           name: "Developer Essential Skills",
-          url: "https://codesphere.dev/developer-essential-skills",
+          url: "https://codes-sphere.vercel.app/developer-essential-skills",
         },
         {
           "@type": "BreadcrumbList",
@@ -46,13 +48,13 @@ const AccordionGroup = () => {
               "@type": "ListItem",
               position: 1,
               name: "Home",
-              item: "https://codesphere.dev/",
+              item: "https://codes-sphere.vercel.app/",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "Developer Essential Skills",
-              item: "https://codesphere.dev/developer-essential-skills",
+              item: "https://codes-sphere.vercel.app/developer-essential-skills",
             },
           ],
         },

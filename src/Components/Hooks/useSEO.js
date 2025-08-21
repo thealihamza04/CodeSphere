@@ -10,13 +10,24 @@ const setMeta = (attr, name, content) => {
   element.setAttribute("content", content);
 };
 
-const useSEO = ({ title, description, canonical, og = {}, twitter = {}, structuredData }) => {
+const useSEO = ({
+  title,
+  description,
+  keywords,
+  canonical,
+  og = {},
+  twitter = {},
+  structuredData,
+}) => {
   useEffect(() => {
     if (title) {
       document.title = title;
     }
     if (description) {
       setMeta("name", "description", description);
+    }
+    if (keywords) {
+      setMeta("name", "keywords", keywords);
     }
     if (canonical) {
       let link = document.head.querySelector("link[rel=\"canonical\"]");
@@ -49,7 +60,7 @@ const useSEO = ({ title, description, canonical, og = {}, twitter = {}, structur
     } else if (script) {
       script.remove();
     }
-  }, [title, description, canonical, og, twitter, structuredData]);
+  }, [title, description, keywords, canonical, og, twitter, structuredData]);
 };
 
 export default useSEO;

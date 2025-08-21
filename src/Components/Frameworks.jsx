@@ -11,12 +11,14 @@ const ProgLan = () => {
     title: "Frameworks Overview | CodeSphere",
     description:
       "Browse popular programming frameworks and tools with summaries and links.",
-    canonical: "https://codesphere.dev/Frameworks",
+    keywords:
+      "AliHamza projects, thealihamza04 projects, programming language timeline, projramming lang time line",
+    canonical: "https://codes-sphere.vercel.app/Frameworks",
     og: {
       title: "Frameworks Overview | CodeSphere",
       description:
         "Browse popular programming frameworks and tools with summaries and links.",
-      url: "https://codesphere.dev/Frameworks",
+      url: "https://codes-sphere.vercel.app/Frameworks",
       type: "website",
     },
     twitter: {
@@ -32,7 +34,7 @@ const ProgLan = () => {
           "@type": "Service",
           name: "Frameworks Overview",
           provider: { "@type": "Organization", name: "CodeSphere" },
-          url: "https://codesphere.dev/Frameworks",
+          url: "https://codes-sphere.vercel.app/Frameworks",
         },
         {
           "@type": "BreadcrumbList",
@@ -41,13 +43,13 @@ const ProgLan = () => {
               "@type": "ListItem",
               position: 1,
               name: "Home",
-              item: "https://codesphere.dev/",
+              item: "https://codes-sphere.vercel.app/",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "Frameworks",
-              item: "https://codesphere.dev/Frameworks",
+              item: "https://codes-sphere.vercel.app/Frameworks",
             },
           ],
         },

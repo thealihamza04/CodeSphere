@@ -10,10 +10,16 @@
 No private or dashboard routes were detected.
 
 ## Changes Implemented
-- Added baseline SEO metadata and Organization schema in `index.html`.
+- Updated canonical URLs, Open Graph data and sitemap to use the live domain
+  `https://codes-sphere.vercel.app`.
+- Added baseline SEO metadata, keywords for "AliHamza projects", "thealihamza04
+  projects" and "programming language timeline", plus Organization schema in
+  `index.html`.
 - Created reusable `useSEO` hook to set titles, meta tags, canonical URLs,
-  Open Graph and Twitter Card data, and JSON‑LD structured data per route.
-- Applied `useSEO` to all public pages with unique titles and descriptions.
+  Open Graph and Twitter Card data, keywords and JSON‑LD structured data per
+  route.
+- Applied `useSEO` to all public pages with unique titles, descriptions and
+  shared keywords.
 - Added `robots.txt` and `sitemap.xml` in `public/`.
 - Added internal link to Frameworks in the footer for better navigation.
 
