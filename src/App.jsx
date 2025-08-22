@@ -1,4 +1,3 @@
-import React from "react";
 import { Analytics } from "@vercel/analytics/react";
 import {
   BrowserRouter as Router,
@@ -11,6 +10,7 @@ import Tool_Lib from "./Components/Tool_Lib";
 import Languages from "./Components/Languages";
 import TimeLine from "./Components/TimeLine.jsx";
 import VersionControl from "./Components/VersionControl";
+import AIMLDL from "./Components/AIMLDL";
 import Footer from "./Components/Footer.jsx";
 import { Toaster } from "react-hot-toast";
 
@@ -33,6 +33,7 @@ const Layout = () => {
           path='/developer-essential-skills'
           element={<VersionControl />}
         />
+        <Route path='/ai-ml-dl' element={<AIMLDL />} />
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>
       {!hideFooter && <Footer />}
