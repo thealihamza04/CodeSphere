@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ Title, Summary, URL, Tools, Lib, RTNIT }) => {
+const Card = ({ Title, Summary, URL, Tools, Lib, RTNIT, PrevPath }) => {
   return (
     <>
       <div className="w-full sm:w-80 pt-5 rounded-xl cursor-default">
@@ -23,15 +23,15 @@ const Card = ({ Title, Summary, URL, Tools, Lib, RTNIT }) => {
             <div className="card-actions justify-end mt-1">
               <Link
                 className="text-[10px] border-[1px] px-[10px] border-blue-500 p-1 rounded-full text-blue-500 font-medium"
-                to="ToLib"
-                state={{ tools: Tools, ReturnIT: RTNIT }}
+                to={`/Frameworks/${encodeURIComponent(Title)}/tools`}
+                state={{ tools: Tools, ReturnIT: RTNIT, PrevPath }}
               >
                 Tools
               </Link>
               <Link
                 className="text-[10px] px-[10px]   bg-blue-500 p-1 rounded-full text-white font-medium"
-                to="ToLib"
-                state={{ Libraries: Lib, ReturnIT: RTNIT }}
+                to={`/Frameworks/${encodeURIComponent(Title)}/libraries`}
+                state={{ Libraries: Lib, ReturnIT: RTNIT, PrevPath }}
               >
                 Lib
               </Link>

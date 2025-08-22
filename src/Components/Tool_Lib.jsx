@@ -1,15 +1,36 @@
 import Tool_Lib_Card from "./cards/Tool_Lib_Card";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useParams } from "react-router-dom";
 import useSEO from "./Hooks/useSEO";
+import List from "../Data/JS.json";
 
 const Tool_Lib = () => {
   const location = useLocation();
+  const { frameworkName = "", type = "" } = useParams();
   const {
-    tools = [],
-    Libraries = [],
-    ReturnIT = [],
+    tools: stateTools = [],
+    Libraries: stateLibraries = [],
+    ReturnIT: stateReturn = [],
     PrevPath = "/Frameworks",
   } = location.state || {};
+
+  let tools = stateTools;
+  let Libraries = stateLibraries;
+  let ReturnIT = stateReturn;
+
+  if (tools.length === 0 && Libraries.length === 0 && frameworkName) {
+    const decoded = decodeURIComponent(frameworkName).toLowerCase();
+    const allFrameworks = List.flatMap((lang) =>
+      lang.More.map((fw) => ({ ...fw, Language: lang.Language }))
+    );
+    const match = allFrameworks.find(
+      (fw) => fw.Framework.toLowerCase() === decoded
+    );
+    if (match) {
+      tools = match.Tools || [];
+      Libraries = match.Libraries || [];
+    }
+    ReturnIT = allFrameworks;
+  }
 
   let printIt = [];
   let heading = "";
@@ -22,7 +43,7 @@ const Tool_Lib = () => {
   const libDef =
     "A framework's library refers to a collection of pre-written, reusable code or functions that a framework depends on or integrates with to provide specific functionalities. Libraries within a framework offer tools or utilities to perform common tasks like data manipulation, API calls, or user interface rendering.";
 
-  if (tools.length > 0) {
+  if (type === "tools") {
     printIt = tools;
     heading = "Tools";
     def = toolDef;
@@ -39,11 +60,15 @@ const Tool_Lib = () => {
     description: def,
     keywords:
       "AliHamza projects, thealihamza04 projects, programming language timeline, projramming lang time line",
-    canonical: "https://codes-sphere.vercel.app/Frameworks/ToLib",
+    canonical: `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
+      frameworkName
+    )}/${type}`,
     og: {
       title: `${heading} for Frameworks | CodeSphere`,
       description: def,
-      url: "https://codes-sphere.vercel.app/Frameworks/ToLib",
+      url: `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
+        frameworkName
+      )}/${type}`,
       type: "website",
     },
     twitter: {
@@ -58,7 +83,9 @@ const Tool_Lib = () => {
           "@type": "Service",
           name: `${heading} for Frameworks`,
           provider: { "@type": "Organization", name: "CodeSphere" },
-          url: "https://codes-sphere.vercel.app/Frameworks/ToLib",
+          url: `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
+            frameworkName
+          )}/${type}`,
         },
         {
           "@type": "BreadcrumbList",
@@ -79,7 +106,9 @@ const Tool_Lib = () => {
               "@type": "ListItem",
               position: 3,
               name: crumbName,
-              item: "https://codes-sphere.vercel.app/Frameworks/ToLib",
+              item: `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
+                frameworkName
+              )}/${type}`,
             },
           ],
         },
@@ -110,9 +139,9 @@ const Tool_Lib = () => {
       </div>
 
       <div className='flex flex-wrap gap-4 justify-center items-center px-4 pb-5 md:px-10'>
-        {printIt.map((Item, index) => (
+        {printIt.map((Item) => (
           <Tool_Lib_Card
-            key={index}
+            key={Item.Name}
             Name={Item.Name}
             Summary={Item.Summary}
             URL={Item.URL}

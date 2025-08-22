@@ -16,9 +16,7 @@ import { Toaster } from "react-hot-toast";
 
 const Layout = () => {
   const location = useLocation();
-  const hideFooter = ["/Frameworks/ToLib", "/Frameworks"].includes(
-    location.pathname
-  );
+  const hideFooter = location.pathname.startsWith("/Frameworks");
 
   return (
     <>
@@ -26,7 +24,10 @@ const Layout = () => {
       <Routes>
         <Route path='/' element={<Languages />} />
         <Route path='/Frameworks' element={<Frameworks />} />
-        <Route path='/Frameworks/ToLib' element={<Tool_Lib />} />
+        <Route
+          path='/Frameworks/:frameworkName/:type'
+          element={<Tool_Lib />}
+        />
         <Route path='/TimeLine' element={<TimeLine />} />
         <Route
           path='/developer-essential-skills'
