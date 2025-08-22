@@ -115,3 +115,43 @@ To connect to your backend:
 3. Commit changes (`git commit -m 'Add amazing feature'`)
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+## Python Ecosystem 🐍
+
+### Frameworks
+- Django
+- Flask
+- FastAPI
+- Pyramid
+- Bottle
+- Falcon
+- Tornado
+- CherryPy
+- web2py
+- Sanic
+
+### Libraries
+- NumPy
+- pandas
+- SciPy
+- Matplotlib
+- Seaborn
+- scikit-learn
+- TensorFlow
+- PyTorch
+- Requests
+- Beautiful Soup
+
+### Tools
+- pip
+- virtualenv
+- conda
+- pipenv
+- Poetry
+- pytest
+- tox
+- black
+- flake8
+- mypy
+- Sphinx
+
