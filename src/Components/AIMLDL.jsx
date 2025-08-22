@@ -40,16 +40,31 @@ const AIMLDL = () => {
       title: "Artificial Intelligence",
       summary:
         "AI is the science of making machines perform tasks that typically require human intelligence such as reasoning or problem solving.",
+      roadmap: [
+        "Learn programming fundamentals and logic",
+        "Explore search, knowledge representation and planning",
+        "Build small AI projects like chatbots or game agents",
+      ],
     },
     {
       title: "Machine Learning",
       summary:
         "Machine learning enables systems to learn from data and improve their performance without being explicitly programmed.",
+      roadmap: [
+        "Study statistics, probability and linear algebra",
+        "Understand supervised and unsupervised learning",
+        "Practice with libraries such as scikit-learn or TensorFlow",
+      ],
     },
     {
       title: "Deep Learning",
       summary:
         "Deep learning is a subset of machine learning that uses multi-layered neural networks to model complex patterns in data.",
+      roadmap: [
+        "Review neural network fundamentals",
+        "Dive into architectures like CNNs and RNNs",
+        "Experiment with frameworks such as PyTorch",
+      ],
     },
   ];
 
@@ -66,6 +81,12 @@ const AIMLDL = () => {
             <p className='text-sm tracking-wider leading-relaxed opacity-70'>
               {topic.summary}
             </p>
+            <h3 className='text-sm font-medium mt-2'>Roadmap</h3>
+            <ul className='list-disc list-inside text-sm tracking-wider leading-relaxed opacity-70 space-y-1'>
+              {topic.roadmap.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
