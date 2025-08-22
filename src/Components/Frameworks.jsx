@@ -105,9 +105,9 @@ const ProgLan = () => {
             </h2>
           )}
           <div className='flex flex-wrap gap-4 justify-center items-center px-4 md:px-10 pb-10'>
-            {list.map((framework, index) => (
+            {list.map((framework) => (
               <Card
-                key={`${language}-${index}`}
+                key={`${language}-${framework.Framework}`}
                 Title={framework.Framework}
                 Summary={framework.Summary}
                 URL={framework.URL}
