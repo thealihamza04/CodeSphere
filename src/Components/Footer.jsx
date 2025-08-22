@@ -59,9 +59,6 @@ const Footer = () => {
           <Link to={"/Frameworks"} className='link link-hover '>
             Frameworks
           </Link>
-          <Link to={"/ai-ml-dl"} className='link link-hover '>
-            AI / ML / DL
-          </Link>
           <Link to={"/developer-essential-skills"} className='link link-hover '>
             Why Matters
           </Link>
