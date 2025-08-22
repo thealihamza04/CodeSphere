@@ -80,7 +80,7 @@ const ProgLan = () => {
 
   return (
     <>
-      <div className='py-9 px-4 space-y-6 bg-gray-100'>
+      <div className='py-9 px-4 space-y-6 bg-base-100'>
         <h1 className='heading'>Frameworks</h1>
         <div className='px-4 md:px-48'>
           <hr />

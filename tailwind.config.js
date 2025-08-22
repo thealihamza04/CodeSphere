@@ -14,7 +14,6 @@ export default {
   },
   plugins: [require("daisyui"), tailwindcssMotion],
   daisyui: {
-    themes: ["light"], // Force only light mode
-    darkTheme: "light", // Prevent DaisyUI from applying dark mode
+    themes: ["light", "dark"],
   },
 };

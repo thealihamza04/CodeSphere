@@ -46,7 +46,7 @@ const Footer = () => {
   };
 
   return (
-    <div className='bg-gray-200'>
+    <div className='bg-base-200'>
       <footer className='footer  text-base-content p-10 container mx-auto'>
         <nav>
           <h6 className='footer-title'>Services</h6>

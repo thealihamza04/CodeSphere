@@ -41,7 +41,7 @@ const Languages = () => {
 
   return (
     <div
-      className={`relative min-h-screen bg-gray-100   motion-opacity-in-[0%] motion-blur-in-[40px] motion-ease-spring-snappy`}
+      className={`relative min-h-screen bg-base-100   motion-opacity-in-[0%] motion-blur-in-[40px] motion-ease-spring-snappy`}
     >
       {/* Header Section */}
       <div className='relative py-9 mx-2 md:mx-8 lg:mx-16 space-y-6 z-10'>
