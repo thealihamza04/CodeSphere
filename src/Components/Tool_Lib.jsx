@@ -121,9 +121,9 @@ const Tool_Lib = () => {
       <div className='py-9 px-4 pd:px-10 space-y-6 bg-base-100'>
         <h1 className='heading'>{heading}</h1>
         <div className='px-4 md:px-48'>
-          <hr />
+          <hr className='border-base-content' />
         </div>
-        <p className='px-4 md:px-20 text-sm font-normal tracking-wide text-justify leading-relaxed'>
+        <p className='px-4 md:px-20 text-sm font-normal tracking-wide text-justify leading-relaxed text-base-content/80'>
           {def}
         </p>
 

@@ -16,12 +16,12 @@ const TimeLineCard = ({ released, language, description }) => {
             : ""
         } `}
       >
-        <h1 className='min-w-[25%]  '>{released}</h1>
-        <MdCircle className='min-w-[20%] text-3xl text-slate-700 opacity-45' />
-        <h1 className='min-w-[50%] '>{language}</h1>
+        <h1 className='min-w-[25%]'>{released}</h1>
+        <MdCircle className='min-w-[20%] text-3xl text-base-content/45' />
+        <h1 className='min-w-[50%]'>{language}</h1>
       </div>
       {description && (
-        <p className='ml-[45%] md:ml-[43%] mt-2 text-xs text-gray-500 max-w-xs'>
+        <p className='ml-[45%] md:ml-[43%] mt-2 text-xs text-base-content/50 max-w-xs'>
           {description}
         </p>
       )}

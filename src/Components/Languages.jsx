@@ -47,12 +47,12 @@ const Languages = () => {
       <div className='relative py-9 mx-2 md:mx-8 lg:mx-16 space-y-6 z-10'>
         <h1 className='heading'>Programming Languages</h1>
         <div className='px-4 md:px-48'>
-          <hr className='border-slate-700' />
+          <hr className='border-base-content' />
         </div>
-        <p className='px-4 md:px-20 text-sm tracking-wider text-justify leading-relaxed opacity-70'>
+        <p className='px-4 md:px-20 text-sm tracking-wider text-justify leading-relaxed text-base-content/70'>
           {def}
         </p>
-        <p className='px-4 md:px-20 text-sm tracking-wider text-justify leading-relaxed opacity-70'>
+        <p className='px-4 md:px-20 text-sm tracking-wider text-justify leading-relaxed text-base-content/70'>
           Discover AliHamza projects, thealihamza04 repositories and a programming
           language time line in this community-driven guide.
         </p>
