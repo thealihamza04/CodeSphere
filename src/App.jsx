@@ -13,6 +13,7 @@ import MLRoadmap from "./Components/MLRoadmap.jsx";
 import VersionControl from "./Components/VersionControl";
 import Footer from "./Components/Footer.jsx";
 import { Toaster } from "react-hot-toast";
+import ThemeToggle from "./Components/ThemeToggle.jsx";
 
 const Layout = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const Layout = () => {
   return (
     <>
       <Toaster />
+      <ThemeToggle />
       <Routes>
         <Route path='/' element={<Languages />} />
         <Route path='/Frameworks' element={<Frameworks />} />

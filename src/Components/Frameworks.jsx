@@ -80,12 +80,12 @@ const ProgLan = () => {
 
   return (
     <>
-      <div className='py-9 px-4 space-y-6 bg-gray-100'>
+      <div className='py-9 px-4 space-y-6 bg-base-100'>
         <h1 className='heading'>Frameworks</h1>
         <div className='px-4 md:px-48'>
-          <hr />
+          <hr className='border-base-content' />
         </div>
-        <p className='px-4 md:px-20 text-sm font-normal text-justify leading-relaxed tracking-wide'>
+        <p className='px-4 md:px-20 text-sm font-normal text-justify leading-relaxed tracking-wide text-base-content/80'>
           {def}
         </p>
         <div className='flex justify-center mt-8'>
