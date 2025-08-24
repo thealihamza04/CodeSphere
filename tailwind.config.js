@@ -29,8 +29,8 @@ export default {
         dark: {
           ...themes["dark"],
           "base-100": "#343541",
-          "base-200": "#444654",
-          "base-300": "#565869",
+          "base-200": "#40414F",
+          "base-300": "#202123",
           "base-content": "#ececf1",
         },
       },
