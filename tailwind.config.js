@@ -28,8 +28,8 @@ export default {
       {
         dark: {
           ...themes["dark"],
-          "base-100": "#343541",
-          "base-200": "#40414F",
+          "base-100": "#212121",
+          "base-200": "#303030",
           "base-300": "#202123",
           "base-content": "#ececf1",
         },
