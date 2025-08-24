@@ -16,11 +16,17 @@ const ThemeToggle = () => {
 
   return (
     <button
-      className="btn btn-ghost fixed top-4 right-4 z-50"
+      className="btn btn-ghost fixed top-4 right-4 z-50 transition-transform duration-300"
       onClick={toggleTheme}
       aria-label="Toggle Theme"
     >
-      {theme === "light" ? "🌙" : "☀️"}
+      <span
+        className={`inline-block transition-transform duration-300 ${
+          theme === "light" ? "rotate-0" : "rotate-180"
+        }`}
+      >
+        {theme === "light" ? "🌙" : "☀️"}
+      </span>
     </button>
   );
 };

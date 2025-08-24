@@ -4,7 +4,7 @@ const Tool_Lib_Card = ({ Name, Summary, URL }) => {
   return (
     <>
       <div className="w-full sm:w-80 pt-5 last:pb-5 rounded-xl cursor-default">
-        <div className="card bg-base-100 shadow-sm border border-base-300 text-base-content hover:shadow-md  transition-all duration-500 ease-linear">
+        <div className="card bg-base-200 shadow-sm border border-base-300 text-base-content hover:shadow-md  transition-all duration-500 ease-linear">
           <div className="card-body">
             <h2 className="card-title font-bold text-2xl">{Name}</h2>
             <p className="text-[13px] text-base-content/80 mt-2">
