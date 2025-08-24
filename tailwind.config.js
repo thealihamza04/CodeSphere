@@ -17,15 +17,21 @@ export default {
   daisyui: {
     themes: [
       {
-        light: { ...themes["light"] },
+        light: {
+          ...themes["light"],
+          "base-100": "#ffffff",
+          "base-200": "#f7f7f8",
+          "base-300": "#e5e5e5",
+          "base-content": "#202123",
+        },
       },
       {
         dark: {
           ...themes["dark"],
-          "base-100": "#000000",
-          "base-200": "#0a0a0a",
-          "base-300": "#171717",
-          "base-content": "#ffffff",
+          "base-100": "#343541",
+          "base-200": "#444654",
+          "base-300": "#565869",
+          "base-content": "#ececf1",
         },
       },
     ],
