@@ -92,7 +92,11 @@ const TimeLine = () => {
                     <h1 className='min-w-[50%] '>{language}</h1>
                   </div> */}
                   <Line gap={info.gap} />
-                  <TimeLineCard released={info.released} language={language} />
+                  <TimeLineCard
+                    released={info.released}
+                    language={language}
+                    description={info.description}
+                  />
                 </li>
               )
             )}
