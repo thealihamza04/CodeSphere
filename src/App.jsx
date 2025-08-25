@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,6 +15,7 @@ import VersionControl from "./Components/VersionControl";
 import Footer from "./Components/Footer.jsx";
 import { Toaster } from "react-hot-toast";
 import ThemeToggle from "./Components/ThemeToggle.jsx";
+import Lenis from "lenis";
 
 const Layout = () => {
   const location = useLocation();
@@ -44,6 +46,21 @@ const Layout = () => {
 };
 
 const App = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <Router>
       <Layout />
