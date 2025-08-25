@@ -199,11 +199,11 @@ const AccordionGroup = () => {
 
   return (
     <>
-      <div className='spacey-y-24 container mx-auto py-12'>
-        <h1 className='text-3xl md:text-3xl font-extrabold py-12 text-center'>
+      <div className='space-y-6xl container mx-auto py-3xl'>
+        <h1 className='text-3xl md:text-3xl font-extrabold py-3xl text-center'>
           Essential Questions Every Developer Should Know
         </h1>
-        <div className='join join-vertical w-full space-y-4'>
+        <div className='join join-vertical w-full space-y-md'>
           {items.map((item, index) => (
             <AccordionItem
               key={index}

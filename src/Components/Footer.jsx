@@ -47,7 +47,7 @@ const Footer = () => {
 
   return (
     <div className='bg-base-200'>
-      <footer className='footer  text-base-content p-10 container mx-auto'>
+      <footer className='footer  text-base-content p-2xl container mx-auto'>
         <nav>
           <h6 className='footer-title'>Services</h6>
           <Link to={"/"} className='link link-hover '>
@@ -68,20 +68,20 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className='footer-title'>Social</h6>
-          <div className='grid grid-flow-col gap-4'>
+          <div className='grid grid-flow-col gap-md'>
             <a
               className='fill-current'
               target='_blank'
               href='https://www.linkedin.com/in/contact-with-alihamza'
             >
-              <FaLinkedinIn className='size-5' />
+              <FaLinkedinIn className='size-lg' />
             </a>
             <a
               className='fill-current'
               target='_blank'
               href='https://github.com/thealihamza04'
             >
-              <PiGithubLogoDuotone className='size-6' />
+              <PiGithubLogoDuotone className='size-lg' />
             </a>
             <a
               href='https://mail.google.com/mail/?view=cm&fs=1&to=ah0681988@gmail.com'
@@ -89,14 +89,14 @@ const Footer = () => {
               rel='noopener noreferrer'
               className='fill-current'
             >
-              <SiGmail className='size-5' />
+              <SiGmail className='size-lg' />
             </a>
           </div>
         </nav>
         <form onSubmit={sendFeedback}>
           <h6 className='footer-title '>FeedBack</h6>
-          <fieldset className='w-92 space-y-2'>
-            <div className='flex flex-row gap-3'>
+          <fieldset className='w-92 space-y-sm'>
+            <div className='flex flex-row gap-sm'>
               <input
                 id='name'
                 type='text'
@@ -128,7 +128,7 @@ const Footer = () => {
               </button>
             </div>
             <textarea
-              className='input input-lg focus:outline-none text-xs py-2 px-2 resize-none w-full '
+              className='input input-lg focus:outline-none text-xs py-sm px-sm resize-none w-full '
               rows={3}
               id='message'
               onChange={(e) =>

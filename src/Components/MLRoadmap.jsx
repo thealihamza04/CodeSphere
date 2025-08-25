@@ -63,14 +63,14 @@ const MLRoadmap = () => {
   }, []);
 
   return (
-    <div className='min-h-screen px-12 py-20 overflow-x-hidden'>
-      <h1 className='text-4xl font-bold py-12 text-center'>Machine Learning Roadmap</h1>
+    <div className='min-h-screen px-3xl py-5xl overflow-x-hidden'>
+      <h1 className='text-4xl font-bold py-3xl text-center'>Machine Learning Roadmap</h1>
       <div>
         <ul className='flex flex-col justify-center items-center'>
           {Object.entries(mlRoadmap).map(([topic, info], index) => (
             <li
               key={index}
-              className={`min-w-52 md:min-w-60 my-1 ${
+              className={`min-w-52 md:min-w-60 my-xs ${
                 isInView
                   ? "motion-translate-x-in-[0%] motion-translate-y-in-[95%]"
                   : ""

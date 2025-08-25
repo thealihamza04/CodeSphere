@@ -16,7 +16,7 @@ const ThemeToggle = () => {
 
   return (
     <button
-      className="btn btn-ghost fixed top-4 right-4 z-50 transition-transform duration-300"
+      className="btn btn-ghost fixed top-md right-md z-50 transition-transform duration-300"
       onClick={toggleTheme}
       aria-label="Toggle Theme"
     >

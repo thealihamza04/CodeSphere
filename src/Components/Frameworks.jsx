@@ -80,15 +80,15 @@ const ProgLan = () => {
 
   return (
     <>
-      <div className='py-9 px-4 space-y-6 bg-base-100'>
+      <div className='py-2xl px-md space-y-lg bg-base-100'>
         <h1 className='heading'>Frameworks</h1>
-        <div className='px-4 md:px-48'>
+        <div className='px-md md:px-7xl'>
           <hr className='border-base-content' />
         </div>
-        <p className='px-4 md:px-20 text-sm font-normal text-justify leading-relaxed tracking-wide text-base-content/80'>
+        <p className='px-md md:px-5xl text-sm font-normal text-justify leading-relaxed tracking-wide text-base-content/80'>
           {def}
         </p>
-        <div className='flex justify-center mt-8'>
+        <div className='flex justify-center mt-xl'>
           <Link
             className='btn btn-outline no-animation text-sm md:text-base'
             to='/'
@@ -100,11 +100,11 @@ const ProgLan = () => {
       {groupedFrameworks.map(({ language, list }) => (
         <div key={language} className='w-full'>
           {groupedFrameworks.length > 1 && (
-            <h2 className='text-lg font-semibold text-center mt-8 mb-4'>
+            <h2 className='text-lg font-semibold text-center mt-xl mb-md'>
               {language}
             </h2>
           )}
-          <div className='flex flex-wrap gap-4 justify-center items-center px-4 md:px-10 pb-10'>
+          <div className='flex flex-wrap gap-md justify-center items-center px-md md:px-2xl pb-2xl'>
             {list.map((framework) => (
               <Card
                 key={`${language}-${framework.Framework}`}

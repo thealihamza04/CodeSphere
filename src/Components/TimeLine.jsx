@@ -64,8 +64,8 @@ const TimeLine = () => {
 
   return (
     <>
-      <div className=' min-h-screen px-12 py-20 overflow-x-hidden'>
-        <h1 className='text-4xl font-bold py-12 text-center'>
+      <div className=' min-h-screen px-3xl py-5xl overflow-x-hidden'>
+        <h1 className='text-4xl font-bold py-3xl text-center'>
           The TimeLine of Languages
         </h1>
         <div>
@@ -74,7 +74,7 @@ const TimeLine = () => {
               ([language, info], index) => (
                 <li
                   key={index}
-                  className={`min-w-52 md:min-w-60  my-1  ${
+                  className={`min-w-52 md:min-w-60  my-xs  ${
                     isInView
                       ? "motion-translate-x-in-[0%] motion-translate-y-in-[95%] "
                       : ""
@@ -86,7 +86,7 @@ const TimeLine = () => {
                   // className={`bg-gray-700 opacity-50 w-1 px rounded-full  ml-[43.9%] md:ml-[42.3%] `}
                   // style={{ minHeight: `${info.gap * 20}px` }}
                   />
-                  {/* <div className='flex flex-row gap-5 '>
+                  {/* <div className='flex flex-row gap-lg '>
                     <h1 className='min-w-[25%]  '>{info.released}</h1>
                     <MdCircle className='min-w-[20%] text-3xl text-slate-700 opacity-45' />{" "}
                     <h1 className='min-w-[50%] '>{language}</h1>

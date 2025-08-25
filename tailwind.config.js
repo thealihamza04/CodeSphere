@@ -5,13 +5,28 @@ import themes from "daisyui/src/theming/themes.js";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    spacing: {
+      0: "0px",
+      xs: "0.25rem",
+      sm: "0.5rem",
+      md: "1rem",
+      lg: "1.5rem",
+      xl: "2rem",
+      "2xl": "2.5rem",
+      "3xl": "3rem",
+      "4xl": "4rem",
+      "5xl": "5rem",
+      "6xl": "6rem",
+      "7xl": "12rem",
+      "52": "13rem",
+      "60": "15rem",
+      "80": "20rem",
+    },
     extend: {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
       },
-    }
-
-
+    },
   },
   plugins: [daisyui, tailwindcssMotion],
   daisyui: {

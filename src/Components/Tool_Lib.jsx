@@ -118,27 +118,27 @@ const Tool_Lib = () => {
 
   return (
     <>
-      <div className='py-9 px-4 pd:px-10 space-y-6 bg-base-100'>
+      <div className='py-2xl px-md md:px-2xl space-y-lg bg-base-100'>
         <h1 className='heading'>{heading}</h1>
-        <div className='px-4 md:px-48'>
+        <div className='px-md md:px-7xl'>
           <hr className='border-base-content' />
         </div>
-        <p className='px-4 md:px-20 text-sm font-normal tracking-wide text-justify leading-relaxed text-base-content/80'>
+        <p className='px-md md:px-5xl text-sm font-normal tracking-wide text-justify leading-relaxed text-base-content/80'>
           {def}
         </p>
 
-        <div className='flex justify-center mt-6'>
+        <div className='flex justify-center mt-lg'>
           <Link
             to={PrevPath}
             state={{ Frameworks: ReturnIT }}
-            className='btn btn-outline text-sm md:text-base px-4 py-2'
+            className='btn btn-outline text-sm md:text-base px-md py-sm'
           >
             Back
           </Link>
         </div>
       </div>
 
-      <div className='flex flex-wrap gap-4 justify-center items-center px-4 pb-5 md:px-10'>
+      <div className='flex flex-wrap gap-md justify-center items-center px-md pb-lg md:px-2xl'>
         {printIt.map((Item) => (
           <Tool_Lib_Card
             key={Item.Name}
