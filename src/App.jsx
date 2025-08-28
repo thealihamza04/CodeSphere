@@ -11,6 +11,7 @@ import Tool_Lib from "./Components/Tool_Lib";
 import Languages from "./Components/Languages";
 import TimeLine from "./Components/TimeLine.jsx";
 import MLRoadmap from "./Components/MLRoadmap.jsx";
+import SoftSkillsRoadmap from "./Components/SoftSkillsRoadmap.jsx";
 import VersionControl from "./Components/VersionControl";
 import Footer from "./Components/Footer.jsx";
 import { Toaster } from "react-hot-toast";
@@ -34,6 +35,7 @@ const Layout = () => {
         />
         <Route path='/TimeLine' element={<TimeLine />} />
         <Route path='/ml-roadmap' element={<MLRoadmap />} />
+        <Route path='/soft-skills-roadmap' element={<SoftSkillsRoadmap />} />
         <Route
           path='/developer-essential-skills'
           element={<VersionControl />}
