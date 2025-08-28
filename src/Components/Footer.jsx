@@ -59,6 +59,9 @@ const Footer = () => {
           <Link to={"/ml-roadmap"} className='link link-hover '>
             ML Roadmap
           </Link>
+          <Link to={"/soft-skills-roadmap"} className='link link-hover '>
+            Soft Skills Roadmaps
+          </Link>
           <Link to={"/Frameworks"} className='link link-hover '>
             Frameworks
           </Link>

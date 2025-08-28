@@ -3,7 +3,7 @@ import { MdCircle } from "react-icons/md";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
-const TimeLineCard = ({ released, language, description }) => {
+const TimeLineCard = ({ released, language, description, resource }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "10px 0px 0px" });
 
@@ -24,6 +24,16 @@ const TimeLineCard = ({ released, language, description }) => {
         <p className='ml-[45%] md:ml-[43%] mt-2 text-xs text-base-content/50 max-w-xs'>
           {description}
         </p>
+      )}
+      {resource && (
+        <a
+          href={resource}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='ml-[45%] md:ml-[43%] mt-1 text-xs text-info underline block max-w-xs'
+        >
+          Free Resource
+        </a>
       )}
     </motion.div>
   );
