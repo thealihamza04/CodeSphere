@@ -22,7 +22,7 @@
     "react-router-dom": "^6.27.0"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
