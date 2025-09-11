@@ -1,12 +1,11 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
-  "routes": [
-    { "src": "/(.*)", "dest": "/api/index" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
   ],
   "functions": {
     "api/**/*.js": {
-      "runtime": "nodejs22.x",
       "includeFiles": "dist/**"
     }
   }
