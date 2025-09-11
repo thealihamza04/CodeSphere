@@ -12,10 +12,10 @@ const resolve = (...p) => path.resolve(__dirname, ...p)
 const clientDist = resolve('dist', 'client')
 const serverDist = resolve('dist', 'server')
 
-// Cached production assets
-const templateHtml = isProduction
-    ? await fs.readFile(path.join(clientDist, 'index.html'), 'utf-8')
-    : ''
+
+// Cached production assets (lazy-loaded to avoid top-level await failures in serverless)
+let cachedTemplateHtml = ''
+let cachedRender /*: undefined | ((url: string) => Promise<{ html: string, head?: string }>)*/
 
 // Create http server
 const app = express()
@@ -53,10 +53,16 @@ app.use(async (req, res) => {
             template = await vite.transformIndexHtml(url, template)
             render = (await vite.ssrLoadModule('/src/entry-server.tsx')).render
         } else {
-            template = templateHtml
-            // Vite outputs a JS bundle for SSR build; import via file URL
-            const entryUrl = pathToFileURL(path.join(serverDist, 'entry-server.js')).href
-            render = (await import(entryUrl)).render
+            // Lazy read template and SSR entry once per runtime instance
+            if (!cachedTemplateHtml) {
+                cachedTemplateHtml = await fs.readFile(path.join(clientDist, 'index.html'), 'utf-8')
+            }
+            template = cachedTemplateHtml
+            if (!cachedRender) {
+                const entryUrl = pathToFileURL(path.join(serverDist, 'entry-server.js')).href
+                cachedRender = (await import(entryUrl)).render
+            }
+            render = cachedRender
         }
 
         const rendered = await render(url)

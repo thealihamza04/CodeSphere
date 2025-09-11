@@ -16,13 +16,15 @@
     "@vercel/speed-insights": "^1.1.0",
     "axios": "^1.9.0",
     "express": "^5.1.0",
+    "compression": "^1.7.4",
+    "sirv": "^2.0.4",
     "lenis": "^1.0.0",
     "motion": "^12.11.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0",
-    "react-router": "^7.8.2",
+    "react-router": "^6.30.1",
     "react-router-dom": "^6.30.1"
   },
   "engines": {
