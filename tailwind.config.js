@@ -1,6 +1,7 @@
-import daisyui from 'daisyui';
-import tailwindcssMotion from "tailwindcss-motion";
-import themes from "daisyui/src/theming/themes.js";
+import daisyui from 'daisyui'
+import tailwindcssMotion from 'tailwindcss-motion'
+import themes from 'daisyui/src/theming/themes.js'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -9,9 +10,7 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
       },
-    }
-
-
+    },
   },
   plugins: [daisyui, tailwindcssMotion],
   daisyui: {
@@ -36,4 +35,4 @@ export default {
       },
     ],
   },
-};
+}
