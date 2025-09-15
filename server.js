@@ -15,7 +15,9 @@ async function createServer() {
 
     let vite
     if (isProduction) {
-        app.use(sirv('dist/client', { extensions: [] }))
+        // Handle static files for Vercel
+        app.use('/assets', express.static(path.join(__dirname, 'dist/client/assets')))
+        app.use(express.static(path.join(__dirname, 'dist/client')))
     } else {
         vite = await createViteServer({
             server: { middlewareMode: true },
@@ -24,7 +26,7 @@ async function createServer() {
         app.use(vite.middlewares)
     }
 
-    // Catch-all route (fixed crash)
+    // Catch-all route
     app.use(async (req, res, next) => {
         const url = req.originalUrl
 
@@ -62,8 +64,16 @@ async function createServer() {
         }
     })
 
-    app.listen(3000)
+    const port = process.env.PORT || 3000
+    if (!isProduction) {
+        app.listen(port, () => {
+            console.log(`Server running on http://localhost:${port}`)
+        })
+    }
+
+    // For Vercel, export the app
+    return app
 }
 
-createServer()
-
+// Export for Vercel
+export default createServer()

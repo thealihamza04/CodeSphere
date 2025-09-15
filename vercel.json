@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "server.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["dist/**"]
+      }
     },
     {
       "src": "dist/client/**",
@@ -12,13 +15,18 @@
   ],
   "routes": [
     {
+      "src": "/assets/(.*)",
+      "dest": "/dist/client/assets/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/server.js"
     }
   ],
-  "functions": {
-    "server.js": {
-      "includeFiles": "dist/**"
-    }
+  "env": {
+    "NODE_ENV": "production"
   }
 }
+
+
+
