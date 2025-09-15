@@ -9,15 +9,19 @@ import { createServer as createViteServer } from 'vite'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const isProduction = process.env.NODE_ENV === 'production'
 
-async function createServer() {
+export async function createServer() {
     const app = express()
     app.use(compression())
 
     let vite
     if (isProduction) {
-        // Handle static files for Vercel
-        app.use('/assets', express.static(path.join(__dirname, 'dist/client/assets')))
-        app.use(express.static(path.join(__dirname, 'dist/client')))
+        app.use(
+            sirv('dist/client', {
+                extensions: [],
+                immutable: true,
+                maxAge: 31536000
+            })
+        )
     } else {
         vite = await createViteServer({
             server: { middlewareMode: true },
@@ -26,11 +30,10 @@ async function createServer() {
         app.use(vite.middlewares)
     }
 
-    // Catch-all route
-    app.use(async (req, res, next) => {
-        const url = req.originalUrl
-
+    // Render function
+    const renderPage = async (req, res, next) => {
         try {
+            const url = req.originalUrl
             let template, render
 
             if (isProduction) {
@@ -48,32 +51,54 @@ async function createServer() {
                 render = (await vite.ssrLoadModule('/src/entry-server.jsx')).render
             }
 
-            const context = {}
-            const appHtml = await render(url, context)
-
-            if (context.url) {
-                return res.redirect(301, context.url)
-            }
-
-            const html = template.replace(`<!--ssr-outlet-->`, appHtml)
+            const appHtml = await render(url)
+            const html = template.replace('<!--ssr-outlet-->', appHtml)
             res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
         } catch (e) {
-            !isProduction && vite?.ssrFixStacktrace(e)
-            console.error(e.stack)
             next(e)
         }
-    })
-
-    const port = process.env.PORT || 3000
-    if (!isProduction) {
-        app.listen(port, () => {
-            console.log(`Server running on http://localhost:${port}`)
-        })
     }
 
-    // For Vercel, export the app
+    // Serve static files first
+    if (isProduction) {
+        app.use('/assets', express.static(path.join(__dirname, 'dist/client/assets')))
+    }
+
+    // Handle all routes with middleware
+    app.use((req, res, next) => renderPage(req, res, next))
+
+    // Error handler
+    app.use((err, req, res, next) => {
+        console.error(err.stack)
+        !isProduction && vite?.ssrFixStacktrace(err)
+        res.status(500).send(isProduction ? 'Server Error' : err.stack)
+    })
+
     return app
 }
 
+// Start locally (dev/preview)
+const isDirectRun = (() => {
+    try {
+        const thisFilePath = fileURLToPath(import.meta.url)
+        const invokedPath = process.argv[1] ? path.resolve(process.argv[1]) : ''
+        return thisFilePath === invokedPath
+    } catch {
+        return false
+    }
+})()
+
+if (isDirectRun) {
+    try {
+        const app = await createServer()
+        const port = Number(process.env.PORT) || 3000 // Hardcoded default with env override
+        app.listen(port, () => {
+            console.log(`Server running at http://localhost:${port}`)
+        })
+    } catch (error) {
+        console.error("Error starting server:", error)
+    }
+}
+
 // Export for Vercel
-export default createServer()
+export default await createServer()

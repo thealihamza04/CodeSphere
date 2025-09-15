@@ -2,15 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
+      "src": "package.json",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["dist/**"]
+        "buildCommand": "npm run build"
       }
     },
     {
-      "src": "dist/client/**",
-      "use": "@vercel/static"
+      "src": "api/index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -20,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/server.js"
+      "dest": "/api/index.js"
     }
   ],
   "env": {
