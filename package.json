@@ -7,8 +7,8 @@
     "dev": "node server.js",
     "dev:ssr": "node server.js",
     "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build --outDir dist/client --ssrManifest",
-    "build:server": "vite build --outDir dist/server --ssr src/entry-server.jsx",
+    "build:client": "vite build --outDir api/client --ssrManifest",
+    "build:server": "vite build --outDir api/server --ssr src/entry-server.jsx",
     "preview": "NODE_ENV=production node server.js",
     "start": "NODE_ENV=production node server.js",
     "vercel-build": "npm run build"

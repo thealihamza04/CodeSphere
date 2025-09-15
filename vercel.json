@@ -2,13 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/node",
-      "config": {
-        "buildCommand": "npm run build"
-      }
-    },
-    {
       "src": "api/index.js",
       "use": "@vercel/node"
     }
@@ -16,7 +9,7 @@
   "routes": [
     {
       "src": "/assets/(.*)",
-      "dest": "/dist/client/assets/$1"
+      "dest": "/api/client/assets/$1"
     },
     {
       "src": "/(.*)",

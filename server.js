@@ -15,8 +15,14 @@ export async function createServer() {
 
     let vite
     if (isProduction) {
+        const clientDir = fs.existsSync(path.resolve(__dirname, 'dist/client'))
+            ? 'dist/client'
+            : fs.existsSync(path.resolve(__dirname, 'api/client'))
+            ? 'api/client'
+            : 'dist/client'
+
         app.use(
-            sirv('dist/client', {
+            sirv(clientDir, {
                 extensions: [],
                 immutable: true,
                 maxAge: 31536000
@@ -37,11 +43,17 @@ export async function createServer() {
             let template, render
 
             if (isProduction) {
-                template = fs.readFileSync(
-                    path.resolve(__dirname, 'dist/client/index.html'),
-                    'utf-8'
-                )
-                render = (await import('./dist/server/entry-server.js')).render
+                const clientIndexPath = fs.existsSync(path.resolve(__dirname, 'dist/client/index.html'))
+                    ? path.resolve(__dirname, 'dist/client/index.html')
+                    : path.resolve(__dirname, 'api/client/index.html')
+
+                template = fs.readFileSync(clientIndexPath, 'utf-8')
+
+                const serverEntryPath = fs.existsSync(path.resolve(__dirname, './dist/server/entry-server.js'))
+                    ? './dist/server/entry-server.js'
+                    : './api/server/entry-server.js'
+
+                render = (await import(serverEntryPath)).render
             } else {
                 template = fs.readFileSync(
                     path.resolve(__dirname, 'index.html'),
