@@ -10,7 +10,8 @@
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --outDir dist/server --ssr src/entry-server.jsx",
     "preview": "NODE_ENV=production node server.js",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "@vercel/analytics": "^1.4.1",
