@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 import express from 'express'
 import compression from 'compression'
 import sirv from 'sirv'
@@ -50,8 +50,8 @@ export async function createServer() {
                 template = fs.readFileSync(clientIndexPath, 'utf-8')
 
                 const serverEntryPath = fs.existsSync(path.resolve(__dirname, './dist/server/entry-server.js'))
-                    ? './dist/server/entry-server.js'
-                    : './api/server/entry-server.js'
+                    ? pathToFileURL(path.resolve(__dirname, './dist/server/entry-server.js')).href
+                    : pathToFileURL(path.resolve(__dirname, './api/server/entry-server.js')).href
 
                 render = (await import(serverEntryPath)).render
             } else {
@@ -112,5 +112,4 @@ if (isDirectRun) {
     }
 }
 
-// Export for Vercel
-export default await createServer()
+// No default export here; serverless entry creates and reuses the app
