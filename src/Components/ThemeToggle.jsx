@@ -1,11 +1,23 @@
 import { useEffect, useState } from "react";
 
+const isBrowser = typeof window !== "undefined";
+
+const getInitialTheme = () => {
+  if (!isBrowser) {
+    return "light";
+  }
+
+  return localStorage.getItem("theme") || "light";
+};
+
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState(
-    () => localStorage.getItem("theme") || "light"
-  );
+  const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
+    if (!isBrowser) {
+      return;
+    }
+
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
