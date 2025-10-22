@@ -3,6 +3,8 @@ import Card from "./cards/Card";
 import { Link, useLocation } from "react-router-dom";
 import useSEO from "./Hooks/useSEO";
 import List from "../Data/JS.json";
+import { IoIosArrowBack } from "react-icons/io";
+
 
 const ProgLan = () => {
   const location = useLocation();
@@ -77,8 +79,8 @@ const ProgLan = () => {
     frameworksForLanguage.length > 0
       ? frameworksForLanguage
       : normalizedStateFrameworks.length > 0
-      ? normalizedStateFrameworks
-      : allFrameworks;
+        ? normalizedStateFrameworks
+        : allFrameworks;
 
   const groupedFrameworks = useMemo(() => {
     if (frameworksForLanguage.length > 0) {
@@ -122,8 +124,8 @@ const ProgLan = () => {
 
   const canonicalUrl = languageDetails
     ? `https://codes-sphere.vercel.app/Frameworks?lang=${encodeURIComponent(
-        languageDetails.Language
-      )}`
+      languageDetails.Language
+    )}`
     : "https://codes-sphere.vercel.app/Frameworks";
 
   const seoTitle = languageDetails
@@ -192,31 +194,32 @@ const ProgLan = () => {
 
   return (
     <>
-      <div className='py-9 px-4 space-y-6 bg-base-100'>
+      <div className='px-4 space-y-6 py-9 bg-base-100'>
         <h1 className='heading'>{heroTitle}</h1>
         <div className='px-4 md:px-48'>
-          <hr className='border-base-content' />
         </div>
-        <p className='px-4 md:px-20 text-sm font-normal text-justify leading-relaxed tracking-wide text-base-content/80'>
+        <p className='px-4 text-sm font-normal leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'>
           {heroDescription}
         </p>
-        <div className='flex justify-center mt-8'>
+        <div
+          className='fixed top-0 flex justify-center mt-8 !z-[999]'
+        >
           <Link
-            className='btn btn-outline no-animation text-sm md:text-base'
+            className='text-sm btn btn-sm btn-ghost no-animation md:text-base'
             to='/'
           >
-            Back
+            <IoIosArrowBack />
           </Link>
         </div>
       </div>
       {groupedFrameworks.map(({ language, list }) => (
         <div key={language} className='w-full'>
           {groupedFrameworks.length > 1 && (
-            <h2 className='text-lg font-semibold text-center mt-8 mb-4'>
+            <h2 className='mt-8 mb-4 text-lg font-semibold text-center'>
               {language}
             </h2>
           )}
-          <div className='flex flex-wrap gap-4 justify-center items-center px-4 md:px-10 pb-10'>
+          <div className='flex flex-wrap items-center justify-center gap-4 px-4 pb-10 md:px-10'>
             {list.map((framework) => (
               <Card
                 key={`${language}-${framework.Framework}`}

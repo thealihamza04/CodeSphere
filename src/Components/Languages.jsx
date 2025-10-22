@@ -41,25 +41,20 @@ const Languages = () => {
 
   return (
     <div
-      className={`relative min-h-screen bg-base-100   motion-opacity-in-[0%] motion-blur-in-[40px] motion-ease-spring-snappy`}
+      className={`relative min-h-screen bg-base-100   `}
     >
       {/* Header Section */}
-      <div className='relative py-9 mx-2 md:mx-8 lg:mx-16 space-y-6 z-10'>
+      <div className='relative z-10 mx-2 space-y-6 py-9 md:mx-8 lg:mx-16'>
         <h1 className='heading'>Programming Languages</h1>
         <div className='px-4 md:px-48'>
-          <hr className='border-base-content' />
         </div>
-        <p className='px-4 md:px-20 text-sm tracking-wider text-justify leading-relaxed text-base-content/70'>
+        <p className='px-4 text-sm leading-relaxed tracking-wider text-center md:px-20 text-base-content/70'>
           {def}
-        </p>
-        <p className='px-4 md:px-20 text-sm tracking-wider text-justify leading-relaxed text-base-content/70'>
-          Discover AliHamza projects, thealihamza04 repositories and a programming
-          language time line in this community-driven guide.
         </p>
       </div>
 
       {/* Language Cards */}
-      <div className='flex flex-wrap gap-6 justify-center items-center px-4 md:px-10 lg:px-8 pb-10'>
+      <div className='flex flex-wrap items-center justify-center gap-6 px-4 pb-10 md:px-10 lg:px-8'>
         {List.map((Language, index) => (
           <LanCard
             key={index}

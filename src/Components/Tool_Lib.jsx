@@ -3,6 +3,8 @@ import Tool_Lib_Card from "./cards/Tool_Lib_Card";
 import { useLocation, Link, useParams } from "react-router-dom";
 import useSEO from "./Hooks/useSEO";
 import List from "../Data/JS.json";
+import { IoIosArrowBack } from "react-icons/io";
+
 
 const Tool_Lib = () => {
   const location = useLocation();
@@ -69,15 +71,15 @@ const Tool_Lib = () => {
     stateTools.length > 0
       ? stateTools
       : frameworkDetails?.Tools
-      ? frameworkDetails.Tools
-      : [];
+        ? frameworkDetails.Tools
+        : [];
 
   const Libraries =
     stateLibraries.length > 0
       ? stateLibraries
       : frameworkDetails?.Libraries
-      ? frameworkDetails.Libraries
-      : [];
+        ? frameworkDetails.Libraries
+        : [];
 
   const ReturnIT = searchPool;
 
@@ -162,32 +164,33 @@ const Tool_Lib = () => {
 
   return (
     <>
-      <div className='py-9 px-4 pd:px-10 space-y-6 bg-base-100'>
+      <div className='px-4 space-y-6 py-9 pd:px-10 bg-base-100'>
         <h1 className='heading'>{heroTitle}</h1>
         <div className='px-4 md:px-48'>
-          <hr className='border-base-content' />
         </div>
-        <p className='px-4 md:px-20 text-sm font-normal tracking-wide text-justify leading-relaxed text-base-content/80'>
+        <p className='px-4 text-sm font-normal leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'>
           {heroDescription}
         </p>
-        {frameworkDetails && (
-          <p className='px-4 md:px-20 text-xs md:text-sm font-normal tracking-wide text-justify leading-relaxed text-base-content/60'>
+        {/* {frameworkDetails && (
+          <p className='px-4 text-xs font-normal leading-relaxed tracking-wide text-justify md:px-20 md:text-sm text-base-content/60'>
             {heroSupplementary}
           </p>
-        )}
+        )} */}
 
-        <div className='flex justify-center mt-6'>
+        <div
+          className='fixed top-0 flex justify-center mt-8 !z-[999]'
+        >
           <Link
             to={PrevPath}
             state={{ Frameworks: ReturnIT }}
-            className='btn btn-outline text-sm md:text-base px-4 py-2'
+            className='px-4 py-2 text-sm btn btn-sm btn-ghost md:text-base'
           >
-            Back
+            <IoIosArrowBack />
           </Link>
         </div>
       </div>
 
-      <div className='flex flex-wrap gap-4 justify-center items-center px-4 pb-5 md:px-10'>
+      <div className='flex flex-wrap items-center justify-center gap-4 px-4 md:px-10'>
         {printIt.map((Item) => (
           <Tool_Lib_Card
             key={Item.Name}

@@ -1,20 +1,25 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { MdNavigateNext } from "react-icons/md";
+import { motion } from "motion/react";
+
 
 const LanCard = ({ Title, Summary, Details }) => {
   return (
-    <div className='w-full md:w-80 mt-5 rounded-xl cursor-default group z-30'>
-      <div className='card bg-base-200 border border-base-300 text-base-content transition-all duration-300 ease-in-out'>
-        <div className='card-body'>
-          <h2 className='card-title font-bold text-2xl'>{Title}</h2>
-          <p className='text-[14px] text-base-content/80 mt-2 break-words'>{Summary}</p>
-          <div className='card-actions justify-end mt-2'>
+    <div className='z-30 w-full rounded-sm cursor-default md:w-80 group '>
+      <div className='transition-all duration-150 ease-in-out border !rounded-3xl  card bg-base-200 border-base-300 text-base-content '>
+        <div className='p-[24px] card-body'>
+          <h2 className='text-[15px] font-extrabold card-title'>{Title}</h2>
+          <p className='text-[14px] text-base-content/80  text-pretty  '>{Summary}</p>
+          <div className='justify-end card-actions'>
             <Link
-              className='text-[10px] px-[12px] bg-blue-500 p-1 rounded-full text-white font-[400]'
+              className='text-[12px] px-[12px] p-1 rounded-full text-base-content font-[400] flex  items-center group underline-offset-2  underline'
               to={`/Frameworks?lang=${encodeURIComponent(Title)}`}
               state={{ Frameworks: Details }}
             >
-              Frmwrks
+              <span>
+                Frmwrks
+              </span>
             </Link>
           </div>
         </div>

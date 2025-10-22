@@ -64,21 +64,20 @@ const TimeLine = () => {
 
   return (
     <>
-      <div className=' min-h-screen px-12 py-20 overflow-x-hidden'>
-        <h1 className='text-4xl font-bold py-12 text-center'>
+      <div className='w-screen min-h-screen px-12 py-20 overflow-x-hidden '>
+        <h1 className='py-12 text-4xl font-bold text-center'>
           The TimeLine of Languages
         </h1>
         <div>
-          <ul className='flex flex-col justify-center items-center  '>
+          <ul className='flex flex-col items-center justify-center '>
             {Object.entries(languagesTimeLine).map(
               ([language, info], index) => (
                 <li
                   key={index}
-                  className={`min-w-52 md:min-w-60  my-1  ${
-                    isInView
+                  className={`min-w-52 md:min-w-60  my-1  ${isInView
                       ? "motion-translate-x-in-[0%] motion-translate-y-in-[95%] "
                       : ""
-                  }`}
+                    }`}
                   ref={ref}
                 >
                   {/* vertical line */}
