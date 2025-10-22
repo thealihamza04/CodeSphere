@@ -2875,5 +2875,1071 @@
                 ]
             }
         ]
+    },
+    {
+        "Language": "Assembly",
+        "Summary": "Assembly language provides low-level, hardware-specific instructions that allow developers to write programs that interact directly with CPU registers and memory. It is used for performance-critical code, embedded systems, and understanding how high-level languages translate into machine instructions.",
+        "More": [
+            {
+                "Framework": "NASM",
+                "Summary": "The Netwide Assembler is a popular assembler for x86 architectures with a straightforward syntax.",
+                "URL": "https://www.nasm.us/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "NASM Manual",
+                        "Summary": "Official documentation covering the NASM syntax, directives, and command-line options.",
+                        "URL": "https://www.nasm.us/doc/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "ndisasm",
+                        "Summary": "A disassembler bundled with NASM for examining compiled binaries at the instruction level.",
+                        "URL": "https://www.nasm.us/doc/nasmdoc4.html",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "GNU Assembler (GAS)",
+                "Summary": "The assembler component of GNU Binutils used across Unix-like systems and embedded toolchains.",
+                "URL": "https://sourceware.org/binutils/docs/as/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Binutils",
+                        "Summary": "A collection of binary tools including GAS, ld, and objdump for working with compiled code.",
+                        "URL": "https://sourceware.org/binutils/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "GDB",
+                        "Summary": "The GNU debugger for inspecting register state and stepping through assembly programs.",
+                        "URL": "https://www.gnu.org/software/gdb/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "MASM",
+                "Summary": "Microsoft Macro Assembler for creating Windows executables with access to system-level APIs.",
+                "URL": "https://learn.microsoft.com/cpp/assembler/masm/microsoft-macro-assembler-reference",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Visual Studio Build Tools",
+                        "Summary": "Command-line build tools that include MASM for assembling and linking Windows programs.",
+                        "URL": "https://visualstudio.microsoft.com/downloads/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Shell",
+        "Summary": "Shell scripting languages such as Bash enable developers and system administrators to automate tasks, orchestrate command-line tools, and customize Unix-like environments with reusable scripts.",
+        "More": [
+            {
+                "Framework": "Bash",
+                "Summary": "The GNU Bourne Again Shell is the default shell on most Linux distributions and supports rich scripting features.",
+                "URL": "https://www.gnu.org/software/bash/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "bash-completion",
+                        "Summary": "Programmable completion functions that improve interactive command-line workflows.",
+                        "URL": "https://github.com/scop/bash-completion",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Bash-it",
+                        "Summary": "A community-driven Bash framework with themes, aliases, and auto-completion helpers.",
+                        "URL": "https://github.com/Bash-it/bash-it",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Zsh",
+                "Summary": "The Z shell offers advanced interactive features, powerful globbing, and plugin support.",
+                "URL": "https://www.zsh.org/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Oh My Zsh",
+                        "Summary": "A popular configuration framework for managing Zsh plugins and themes.",
+                        "URL": "https://ohmyz.sh/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Antigen",
+                        "Summary": "A lightweight Zsh plugin manager that simplifies sharing and loading shell extensions.",
+                        "URL": "https://github.com/zsh-users/antigen",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "fish",
+                "Summary": "The Friendly Interactive SHell focuses on usability with smart suggestions and simple scripting.",
+                "URL": "https://fishshell.com/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Fisher",
+                        "Summary": "A plugin manager for fish that installs and updates shell functions, completions, and prompts.",
+                        "URL": "https://github.com/jorgebucaran/fisher",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Oh My Fish",
+                        "Summary": "A fish shell framework providing community-maintained plugins and themes.",
+                        "URL": "https://github.com/oh-my-fish/oh-my-fish",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "C",
+        "Summary": "C is a general-purpose, procedural programming language known for its efficiency, portability, and direct memory manipulation capabilities, making it foundational for operating systems, embedded software, and performance-critical applications.",
+        "More": [
+            {
+                "Framework": "GTK",
+                "Summary": "A cross-platform toolkit for creating graphical user interfaces in C with bindings for many languages.",
+                "URL": "https://www.gtk.org/",
+                "Libraries": [
+                    {
+                        "Name": "GLib",
+                        "Summary": "A core utility library that provides data structures, event loops, and utilities used across GTK applications.",
+                        "URL": "https://docs.gtk.org/glib/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Glade",
+                        "Summary": "A GUI designer for building GTK interfaces visually and exporting XML definitions.",
+                        "URL": "https://glade.gnome.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "libuv",
+                "Summary": "An asynchronous I/O library that provides event loops and cross-platform abstractions for networked C applications.",
+                "URL": "https://libuv.org/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "CMake",
+                        "Summary": "A cross-platform build system generator commonly used to configure and build libuv-based projects.",
+                        "URL": "https://cmake.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "SDL",
+                "Summary": "Simple DirectMedia Layer provides low-level access to graphics, audio, and input devices for games and multimedia software.",
+                "URL": "https://www.libsdl.org/",
+                "Libraries": [
+                    {
+                        "Name": "SDL_image",
+                        "Summary": "An extension library that adds image loading capabilities to SDL applications.",
+                        "URL": "https://www.libsdl.org/projects/SDL_image/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "SDL_mixer",
+                        "Summary": "A multi-channel audio mixer library for SDL.",
+                        "URL": "https://www.libsdl.org/projects/SDL_mixer/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "CLion",
+                        "Summary": "A cross-platform IDE with integrated debugging and CMake support for C projects.",
+                        "URL": "https://www.jetbrains.com/clion/",
+                        "Supply": "Paid"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "SQL",
+        "Summary": "Structured Query Language (SQL) is the standard language for managing and querying relational databases, enabling developers to define schemas, manipulate data, and enforce integrity constraints.",
+        "More": [
+            {
+                "Framework": "PostgreSQL",
+                "Summary": "An advanced open-source relational database known for standards compliance and extensibility.",
+                "URL": "https://www.postgresql.org/",
+                "Libraries": [
+                    {
+                        "Name": "PostGIS",
+                        "Summary": "A spatial database extender for PostgreSQL that adds support for geographic objects.",
+                        "URL": "https://postgis.net/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "pgRouting",
+                        "Summary": "Adds routing functionality to PostgreSQL/PostGIS databases for spatial analysis.",
+                        "URL": "https://pgrouting.org/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "psql",
+                        "Summary": "The interactive terminal client for PostgreSQL used to manage databases via SQL.",
+                        "URL": "https://www.postgresql.org/docs/current/app-psql.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "pgAdmin",
+                        "Summary": "A graphical administration and development platform for PostgreSQL.",
+                        "URL": "https://www.pgadmin.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "MySQL",
+                "Summary": "A widely used open-source relational database powering web applications and services.",
+                "URL": "https://www.mysql.com/",
+                "Libraries": [
+                    {
+                        "Name": "MySQL Connector/Python",
+                        "Summary": "A pure Python driver that enables applications to interact with MySQL databases.",
+                        "URL": "https://dev.mysql.com/doc/connector-python/en/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "InnoDB",
+                        "Summary": "A default MySQL storage engine providing ACID-compliant transactions and foreign keys.",
+                        "URL": "https://dev.mysql.com/doc/refman/en/innodb-storage-engine.html",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "MySQL Workbench",
+                        "Summary": "An integrated environment for database design, SQL development, and administration.",
+                        "URL": "https://www.mysql.com/products/workbench/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "mysqlsh",
+                        "Summary": "The MySQL Shell with advanced scripting capabilities for automation and administration.",
+                        "URL": "https://dev.mysql.com/doc/mysql-shell/en/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "SQLite",
+                "Summary": "A self-contained, serverless SQL database engine used in embedded systems and local storage.",
+                "URL": "https://www.sqlite.org/",
+                "Libraries": [
+                    {
+                        "Name": "SpatiaLite",
+                        "Summary": "An SQLite extension that adds spatial SQL capabilities for geospatial applications.",
+                        "URL": "https://www.gaia-gis.it/fossil/libspatialite/index",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "DB Browser for SQLite",
+                        "Summary": "A visual tool for creating, designing, and editing SQLite database files.",
+                        "URL": "https://sqlitebrowser.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "SQLiteStudio",
+                        "Summary": "A cross-platform GUI manager for SQLite databases with query editing and data export features.",
+                        "URL": "https://sqlitestudio.pl/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "MATLAB",
+        "Summary": "MATLAB is a high-level language and interactive environment for numerical computation, visualization, and algorithm development widely used in engineering and scientific research.",
+        "More": [
+            {
+                "Framework": "Simulink",
+                "Summary": "A graphical environment for modeling, simulating, and analyzing dynamic systems integrated with MATLAB.",
+                "URL": "https://www.mathworks.com/products/simulink.html",
+                "Libraries": [
+                    {
+                        "Name": "Simscape",
+                        "Summary": "A set of physical modeling components for Simulink that represent mechanical, electrical, and hydraulic systems.",
+                        "URL": "https://www.mathworks.com/products/simscape.html",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "Stateflow",
+                        "Summary": "A library for modeling state machines and control logic within Simulink models.",
+                        "URL": "https://www.mathworks.com/products/stateflow.html",
+                        "Supply": "Paid"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Simulink Test",
+                        "Summary": "An add-on for managing simulation-based tests, assessments, and reports.",
+                        "URL": "https://www.mathworks.com/products/simulink-test.html",
+                        "Supply": "Paid"
+                    }
+                ]
+            },
+            {
+                "Framework": "MATLAB Toolboxes",
+                "Summary": "Domain-specific collections of functions that extend MATLAB for areas like signal processing, control systems, and machine learning.",
+                "URL": "https://www.mathworks.com/products.html",
+                "Libraries": [
+                    {
+                        "Name": "Statistics and Machine Learning Toolbox",
+                        "Summary": "Provides algorithms and apps for descriptive statistics, predictive modeling, and machine learning.",
+                        "URL": "https://www.mathworks.com/products/statistics.html",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "Image Processing Toolbox",
+                        "Summary": "Functions and apps for image analysis, visualization, and algorithm development.",
+                        "URL": "https://www.mathworks.com/products/image.html",
+                        "Supply": "Paid"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "MATLAB Online",
+                        "Summary": "A web-based version of MATLAB that allows running code and apps directly in a browser.",
+                        "URL": "https://matlab.mathworks.com/",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "MATLAB Add-On Explorer",
+                        "Summary": "An interface within MATLAB for discovering, installing, and managing toolboxes and community submissions.",
+                        "URL": "https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "MATLAB Production Server",
+                "Summary": "A runtime that lets you deploy MATLAB analytics as scalable, secure web services.",
+                "URL": "https://www.mathworks.com/products/matlab-production-server.html",
+                "Libraries": [
+                    {
+                        "Name": "MATLAB Compiler SDK",
+                        "Summary": "Enables packaging MATLAB programs as software components for integration with enterprise applications.",
+                        "URL": "https://www.mathworks.com/products/matlab-compiler-sdk.html",
+                        "Supply": "Paid"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "MATLAB Compiler",
+                        "Summary": "A tool for creating standalone executables, shared libraries, and web apps from MATLAB code.",
+                        "URL": "https://www.mathworks.com/products/compiler.html",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "MATLAB Web App Server",
+                        "Summary": "Allows hosting and sharing of MATLAB web apps created with App Designer or GUIDE.",
+                        "URL": "https://www.mathworks.com/products/web-app-server.html",
+                        "Supply": "Paid"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Perl",
+        "Summary": "Perl is a flexible, high-level scripting language known for its text processing capabilities and support for rapid web and automation development.",
+        "More": [
+            {
+                "Framework": "Catalyst",
+                "Summary": "A mature MVC web framework that encourages reusable components and rapid development in Perl.",
+                "URL": "https://www.catalystframework.org/",
+                "Libraries": [
+                    {
+                        "Name": "DBIx::Class",
+                        "Summary": "An extensible ORM for Perl applications that integrates seamlessly with Catalyst.",
+                        "URL": "https://metacpan.org/pod/DBIx::Class",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Template Toolkit",
+                        "Summary": "A powerful templating system frequently paired with Catalyst for view rendering.",
+                        "URL": "https://metacpan.org/pod/Template",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Catalyst Dev Helper",
+                        "Summary": "A command-line helper for generating Catalyst components and managing projects.",
+                        "URL": "https://metacpan.org/pod/Catalyst::Devel",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Mojolicious",
+                "Summary": "A modern real-time web framework for Perl with a focus on minimalism and performance.",
+                "URL": "https://mojolicious.org/",
+                "Libraries": [
+                    {
+                        "Name": "Minion",
+                        "Summary": "A job queue system bundled with Mojolicious for running background tasks.",
+                        "URL": "https://metacpan.org/pod/Minion",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Mojolicious Command Line",
+                        "Summary": "Generates applications, scaffolds controllers, and starts development servers with simple commands.",
+                        "URL": "https://docs.mojolicious.org/Mojolicious/Command",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Dancer2",
+                "Summary": "A lightweight web application framework inspired by Sinatra and designed for simplicity in Perl.",
+                "URL": "https://perldancer.org/",
+                "Libraries": [
+                    {
+                        "Name": "Template::Tiny",
+                        "Summary": "A minimal templating engine commonly used with Dancer2 for rendering views.",
+                        "URL": "https://metacpan.org/pod/Template::Tiny",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Carton",
+                        "Summary": "A dependency manager for Perl applications ensuring consistent module versions.",
+                        "URL": "https://metacpan.org/pod/Carton",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "perlcritic",
+                        "Summary": "A static analysis tool that enforces Perl best practices and coding standards.",
+                        "URL": "https://metacpan.org/pod/Perl::Critic",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Haskell",
+        "Summary": "Haskell is a purely functional programming language emphasizing immutability, strong static typing, and expressive abstractions for building reliable software.",
+        "More": [
+            {
+                "Framework": "Yesod",
+                "Summary": "A high-performance web framework leveraging Haskell's type system for safety and correctness.",
+                "URL": "https://www.yesodweb.com/",
+                "Libraries": [
+                    {
+                        "Name": "Persistent",
+                        "Summary": "A type-safe database access library integrated with Yesod.",
+                        "URL": "https://www.yesodweb.com/book/persistent",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Stack",
+                        "Summary": "A cross-platform build tool and package manager for Haskell projects.",
+                        "URL": "https://docs.haskellstack.org/en/stable/README/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Servant",
+                "Summary": "A type-level DSL for building web APIs in Haskell with automatic client and server generation.",
+                "URL": "https://www.servant.dev/",
+                "Libraries": [
+                    {
+                        "Name": "servant-client",
+                        "Summary": "Generates type-safe Haskell clients from Servant API definitions.",
+                        "URL": "https://hackage.haskell.org/package/servant-client",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Cabal",
+                        "Summary": "The standard build system and package manager for Haskell libraries and applications.",
+                        "URL": "https://www.haskell.org/cabal/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Scotty",
+                "Summary": "A lightweight web framework inspired by Sinatra, ideal for quickly prototyping Haskell services.",
+                "URL": "https://hackage.haskell.org/package/scotty",
+                "Libraries": [
+                    {
+                        "Name": "wai",
+                        "Summary": "The Web Application Interface library powering Scotty and other Haskell web frameworks.",
+                        "URL": "https://hackage.haskell.org/package/wai",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "GHCi",
+                        "Summary": "The interactive environment for experimenting with Haskell code and testing functions quickly.",
+                        "URL": "https://downloads.haskell.org/ghc/latest/docs/html/users_guide/ghci.html",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Lua",
+        "Summary": "Lua is a lightweight, embeddable scripting language often used for game development, extensibility, and embedded systems due to its speed and small footprint.",
+        "More": [
+            {
+                "Framework": "LÖVE",
+                "Summary": "A 2D game framework that makes it easy to build games using Lua.",
+                "URL": "https://love2d.org/",
+                "Libraries": [
+                    {
+                        "Name": "HUMP",
+                        "Summary": "A collection of helper modules for LÖVE that provide gamedev utilities like vector math and cameras.",
+                        "URL": "https://hump.readthedocs.io/en/latest/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "ZeroBrane Studio",
+                        "Summary": "A lightweight IDE with debugging and live coding support for Lua projects.",
+                        "URL": "https://studio.zerobrane.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "OpenResty",
+                "Summary": "A full-fledged web platform that integrates Nginx with Lua for high-performance server-side scripting.",
+                "URL": "https://openresty.org/",
+                "Libraries": [
+                    {
+                        "Name": "lua-resty-core",
+                        "Summary": "A collection of Lua libraries optimized for OpenResty applications.",
+                        "URL": "https://github.com/openresty/lua-resty-core",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "LuaRocks",
+                        "Summary": "The package manager for Lua modules, often used to install OpenResty dependencies.",
+                        "URL": "https://luarocks.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Defold",
+                "Summary": "A cross-platform game engine powered by Lua with a component-based architecture.",
+                "URL": "https://defold.com/",
+                "Libraries": [
+                    {
+                        "Name": "Defold Asset Portal",
+                        "Summary": "A curated collection of reusable Lua assets and extensions for Defold projects.",
+                        "URL": "https://defold.com/assets/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Defold Editor",
+                        "Summary": "An integrated editor for scripting, visual scene building, and debugging Lua-based games.",
+                        "URL": "https://defold.com/editor/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Scala",
+        "Summary": "Scala is a scalable language that fuses object-oriented and functional programming on the JVM, enabling concise code for distributed systems and data processing.",
+        "More": [
+            {
+                "Framework": "Play Framework",
+                "Summary": "A reactive web framework for building scalable applications with asynchronous APIs and developer-friendly tooling.",
+                "URL": "https://www.playframework.com/",
+                "Libraries": [
+                    {
+                        "Name": "Anorm",
+                        "Summary": "A simple data access library for Play applications interacting with relational databases.",
+                        "URL": "https://playframework.com/documentation/latest/Anorm",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "sbt",
+                        "Summary": "The standard build tool for Scala used to compile, test, and package Play projects.",
+                        "URL": "https://www.scala-sbt.org/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Akka",
+                "Summary": "A toolkit and runtime for building concurrent, distributed, and resilient message-driven applications on the JVM.",
+                "URL": "https://akka.io/",
+                "Libraries": [
+                    {
+                        "Name": "Akka HTTP",
+                        "Summary": "A library for building RESTful services on top of Akka streams and actors.",
+                        "URL": "https://doc.akka.io/docs/akka-http/current/index.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Akka Streams",
+                        "Summary": "Provides a Reactive Streams implementation for processing data asynchronously.",
+                        "URL": "https://doc.akka.io/docs/akka/current/stream/index.html",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "IntelliJ IDEA Scala Plugin",
+                        "Summary": "Adds rich Scala language support, refactoring, and debugging to IntelliJ IDEA.",
+                        "URL": "https://plugins.jetbrains.com/plugin/1347-scala",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Apache Spark",
+                "Summary": "An analytics engine for large-scale data processing with first-class Scala APIs.",
+                "URL": "https://spark.apache.org/",
+                "Libraries": [
+                    {
+                        "Name": "Spark SQL",
+                        "Summary": "Provides structured data processing with DataFrame and Dataset APIs.",
+                        "URL": "https://spark.apache.org/sql/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "MLlib",
+                        "Summary": "A scalable machine learning library built on Spark.",
+                        "URL": "https://spark.apache.org/mllib/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Databricks Community Edition",
+                        "Summary": "A hosted environment for experimenting with Spark notebooks and jobs in Scala.",
+                        "URL": "https://community.cloud.databricks.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "SASS",
+        "Summary": "SASS (Syntactically Awesome Style Sheets) is a CSS preprocessor that adds variables, nesting, and mixins to streamline authoring maintainable stylesheets.",
+        "More": [
+            {
+                "Framework": "Compass",
+                "Summary": "An open-source CSS authoring framework built on SASS that provides reusable patterns and mixins.",
+                "URL": "http://compass-style.org/",
+                "Libraries": [
+                    {
+                        "Name": "Blueprint",
+                        "Summary": "A Compass-based CSS framework offering grids and typography helpers.",
+                        "URL": "https://github.com/joshuaclayton/blueprint-css",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Dart Sass",
+                        "Summary": "The reference compiler for SASS supporting both .sass and .scss syntaxes.",
+                        "URL": "https://sass-lang.com/install",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Bourbon",
+                "Summary": "A lightweight mixin library for SASS that helps build modern, responsive layouts.",
+                "URL": "https://www.bourbon.io/",
+                "Libraries": [
+                    {
+                        "Name": "Neat",
+                        "Summary": "A semantic grid framework built on top of Bourbon.",
+                        "URL": "https://neat.bourbon.io/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "CodeKit",
+                        "Summary": "A build tool for macOS that compiles SASS, optimizes assets, and refreshes browsers.",
+                        "URL": "https://codekitapp.com/",
+                        "Supply": "Paid"
+                    }
+                ]
+            },
+            {
+                "Framework": "Susy",
+                "Summary": "A responsive grid layout engine for SASS that offers flexible column and gutter control.",
+                "URL": "https://www.oddbird.net/susy/",
+                "Libraries": [],
+                "Tools": [
+                    {
+                        "Name": "Prepros",
+                        "Summary": "A cross-platform GUI compiler for SASS that handles preprocessing and asset optimization.",
+                        "URL": "https://prepros.io/",
+                        "Supply": "Paid"
+                    },
+                    {
+                        "Name": "Scout-App",
+                        "Summary": "An open-source desktop app that compiles SASS/SCSS to CSS with live reloading.",
+                        "URL": "https://scout-app.io/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "LESS",
+        "Summary": "LESS is a backward-compatible CSS preprocessor that extends CSS with variables, mixins, and functions, simplifying large stylesheet maintenance.",
+        "More": [
+            {
+                "Framework": "Less.js",
+                "Summary": "The official LESS compiler that enables dynamic stylesheet authoring in browsers and build pipelines.",
+                "URL": "https://lesscss.org/",
+                "Libraries": [
+                    {
+                        "Name": "Less Hat",
+                        "Summary": "A mixin library that provides vendor-prefixed helpers and shortcuts for LESS projects.",
+                        "URL": "https://github.com/madebysource/lesshat",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Less CLI",
+                        "Summary": "The command-line compiler for transforming LESS files into CSS.",
+                        "URL": "https://lesscss.org/usage/#using-the-command-line",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Bootstrap (Less)",
+                "Summary": "Earlier versions of Bootstrap were authored in LESS, offering customizable variables and mixins.",
+                "URL": "https://getbootstrap.com/docs/3.4/",
+                "Libraries": [
+                    {
+                        "Name": "Bootswatch",
+                        "Summary": "Theme library that customizes Bootstrap's LESS variables to create new looks.",
+                        "URL": "https://bootswatch.com/3/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Koala",
+                        "Summary": "A GUI application that compiles LESS, Sass, and CoffeeScript with live monitoring.",
+                        "URL": "http://koala-app.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Semantic UI",
+                "Summary": "A UI component framework originally authored with LESS for theming and customization.",
+                "URL": "https://semantic-ui.com/",
+                "Libraries": [
+                    {
+                        "Name": "Fomantic-UI",
+                        "Summary": "A community-driven fork of Semantic UI that continues maintaining the LESS codebase.",
+                        "URL": "https://fomantic-ui.com/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Gulp",
+                        "Summary": "Task runner frequently used to compile Semantic UI's LESS source and build themes.",
+                        "URL": "https://gulpjs.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Dart",
+        "Summary": "Dart is a client-optimized language for fast apps on any platform, designed for UI development with a familiar syntax and strong tooling.",
+        "More": [
+            {
+                "Framework": "Flutter",
+                "Summary": "An open-source UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.",
+                "URL": "https://flutter.dev/",
+                "Libraries": [
+                    {
+                        "Name": "Provider",
+                        "Summary": "A recommended Flutter library for managing state using InheritedWidgets under the hood.",
+                        "URL": "https://pub.dev/packages/provider",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "bloc",
+                        "Summary": "Implements the BLoC pattern to separate business logic from presentation in Flutter apps.",
+                        "URL": "https://pub.dev/packages/bloc",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Flutter DevTools",
+                        "Summary": "A suite of performance and debugging tools for Flutter and Dart applications.",
+                        "URL": "https://docs.flutter.dev/tools/devtools/overview",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Flutter CLI",
+                        "Summary": "Command-line interface for creating, building, and deploying Flutter projects.",
+                        "URL": "https://docs.flutter.dev/reference/flutter-cli",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "AngularDart",
+                "Summary": "A web framework that brings Angular's component architecture to Dart developers.",
+                "URL": "https://angulardart.dev/",
+                "Libraries": [
+                    {
+                        "Name": "Angular Components",
+                        "Summary": "A material design component library for AngularDart applications.",
+                        "URL": "https://pub.dev/packages/angular_components",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Dart Dev Compiler",
+                        "Summary": "Transpiles Dart code to JavaScript for development with incremental rebuilds.",
+                        "URL": "https://dart.dev/tools/dart-dev-compiler",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Shelf",
+                "Summary": "A minimalist web server framework for building REST APIs and backend services in Dart.",
+                "URL": "https://pub.dev/packages/shelf",
+                "Libraries": [
+                    {
+                        "Name": "shelf_router",
+                        "Summary": "Adds declarative routing APIs to Shelf-based servers.",
+                        "URL": "https://pub.dev/packages/shelf_router",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Dart SDK",
+                        "Summary": "Provides the core tools, compilers, and libraries necessary for Dart development.",
+                        "URL": "https://dart.dev/get-dart",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Elixir",
+        "Summary": "Elixir is a functional, concurrent language built on the Erlang VM, ideal for scalable, fault-tolerant applications.",
+        "More": [
+            {
+                "Framework": "Phoenix",
+                "Summary": "A web framework that leverages Elixir's concurrency to build real-time, fault-tolerant systems.",
+                "URL": "https://www.phoenixframework.org/",
+                "Libraries": [
+                    {
+                        "Name": "Ecto",
+                        "Summary": "A database wrapper and query generator for Elixir applications, tightly integrated with Phoenix.",
+                        "URL": "https://hexdocs.pm/ecto/Ecto.html",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Phoenix LiveView",
+                        "Summary": "Enables rich, real-time user experiences with server-rendered HTML updated over websockets.",
+                        "URL": "https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Mix",
+                        "Summary": "Elixir's build tool for compiling code, running tasks, and managing dependencies.",
+                        "URL": "https://hexdocs.pm/mix/Mix.html",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Nerves",
+                "Summary": "A platform for building embedded systems using Elixir with reproducible firmware images.",
+                "URL": "https://www.nerves-project.org/",
+                "Libraries": [
+                    {
+                        "Name": "VintageNet",
+                        "Summary": "Networking utilities for Nerves devices supporting Ethernet, Wi-Fi, and cellular.",
+                        "URL": "https://hexdocs.pm/vintage_net/VintageNet.html",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Nerves CLI",
+                        "Summary": "Command-line tooling for creating, configuring, and deploying Nerves firmware projects.",
+                        "URL": "https://hexdocs.pm/nerves/installation.html",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Absinthe",
+                "Summary": "A GraphQL toolkit for Elixir that provides robust schemas, resolvers, and integrations.",
+                "URL": "https://absinthe-graphql.org/",
+                "Libraries": [
+                    {
+                        "Name": "Absinthe Relay",
+                        "Summary": "Helpers for building Relay-compliant GraphQL APIs in Elixir.",
+                        "URL": "https://hexdocs.pm/absinthe_relay/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "GraphiQL",
+                        "Summary": "An in-browser IDE for exploring and testing Absinthe-powered GraphQL endpoints.",
+                        "URL": "https://github.com/graphql/graphiql",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "TypeScript",
+        "Summary": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript, enabling scalable application development with static typing and modern tooling.",
+        "More": [
+            {
+                "Framework": "Angular",
+                "Summary": "A platform for building mobile and desktop web applications using TypeScript-based components.",
+                "URL": "https://angular.io/",
+                "Libraries": [
+                    {
+                        "Name": "RxJS",
+                        "Summary": "A reactive programming library for composing asynchronous and event-based programs in Angular.",
+                        "URL": "https://rxjs.dev/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "NgRx",
+                        "Summary": "Reactive state management inspired by Redux for Angular applications.",
+                        "URL": "https://ngrx.io/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Angular CLI",
+                        "Summary": "Command-line tooling for scaffolding, testing, and building Angular projects.",
+                        "URL": "https://angular.io/cli",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "NestJS",
+                "Summary": "A progressive Node.js framework for building efficient server-side applications with TypeScript and modular architecture.",
+                "URL": "https://nestjs.com/",
+                "Libraries": [
+                    {
+                        "Name": "TypeORM",
+                        "Summary": "An ORM that supports TypeScript decorators for defining models and relations used in NestJS apps.",
+                        "URL": "https://typeorm.io/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Class Validator",
+                        "Summary": "Decorator-based validation library integrated with NestJS DTOs.",
+                        "URL": "https://github.com/typestack/class-validator",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Nest CLI",
+                        "Summary": "A CLI for generating modules, controllers, and providers in NestJS projects.",
+                        "URL": "https://docs.nestjs.com/cli/overview",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Next.js",
+                "Summary": "A React framework that provides hybrid static and server rendering with excellent TypeScript support out of the box.",
+                "URL": "https://nextjs.org/",
+                "Libraries": [
+                    {
+                        "Name": "SWR",
+                        "Summary": "A data fetching library from Vercel that works seamlessly with TypeScript and React.",
+                        "URL": "https://swr.vercel.app/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "next-auth",
+                        "Summary": "Authentication for Next.js applications with built-in TypeScript definitions.",
+                        "URL": "https://next-auth.js.org/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "TypeScript ESLint",
+                        "Summary": "Linting tooling that brings ESLint rules and formatting to TypeScript projects.",
+                        "URL": "https://typescript-eslint.io/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
     }
 ]
