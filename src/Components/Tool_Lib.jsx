@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import Tool_Lib_Card from "./cards/Tool_Lib_Card";
 import { useLocation, Link, useParams } from "react-router-dom";
 import useSEO from "./Hooks/useSEO";
@@ -13,79 +14,124 @@ const Tool_Lib = () => {
     PrevPath = "/Frameworks",
   } = location.state || {};
 
-  let tools = stateTools;
-  let Libraries = stateLibraries;
-  let ReturnIT = stateReturn;
+  const decodedFrameworkName = decodeURIComponent(frameworkName || "");
+  const normalizedFrameworkName = decodedFrameworkName.toLowerCase();
 
-  if (tools.length === 0 && Libraries.length === 0 && frameworkName) {
-    const decoded = decodeURIComponent(frameworkName).toLowerCase();
-    const allFrameworks = List.flatMap((lang) =>
-      lang.More.map((fw) => ({ ...fw, Language: lang.Language }))
+  const allFrameworks = useMemo(
+    () =>
+      List.flatMap((lang) =>
+        lang.More.map((fw) => ({
+          ...fw,
+          Language: lang.Language,
+          LanguageSummary: lang.Summary,
+        }))
+      ),
+    []
+  );
+
+  const normalizedStateReturn = useMemo(() => {
+    if (stateReturn.length === 0) return [];
+
+    return stateReturn.map((fw) => {
+      if (fw.Language && fw.LanguageSummary) return fw;
+
+      const languageMatch = List.find((lang) =>
+        lang.More.some(
+          (item) => item.Framework.toLowerCase() === fw.Framework.toLowerCase()
+        )
+      );
+
+      if (languageMatch) {
+        return {
+          ...fw,
+          Language: languageMatch.Language,
+          LanguageSummary: languageMatch.Summary,
+        };
+      }
+
+      return fw;
+    });
+  }, [stateReturn]);
+
+  const searchPool =
+    normalizedStateReturn.length > 0 ? normalizedStateReturn : allFrameworks;
+
+  const frameworkDetails = useMemo(() => {
+    if (!normalizedFrameworkName) return null;
+    return (
+      searchPool.find(
+        (fw) => fw.Framework.toLowerCase() === normalizedFrameworkName
+      ) || null
     );
-    const match = allFrameworks.find(
-      (fw) => fw.Framework.toLowerCase() === decoded
-    );
-    if (match) {
-      tools = match.Tools || [];
-      Libraries = match.Libraries || [];
-    }
-    ReturnIT = allFrameworks;
-  }
+  }, [normalizedFrameworkName, searchPool]);
 
-  let printIt = [];
-  let heading = "";
-  let def = "";
-  let crumbName = "";
+  const tools =
+    stateTools.length > 0
+      ? stateTools
+      : frameworkDetails?.Tools
+      ? frameworkDetails.Tools
+      : [];
 
-  const toolDef =
+  const Libraries =
+    stateLibraries.length > 0
+      ? stateLibraries
+      : frameworkDetails?.Libraries
+      ? frameworkDetails.Libraries
+      : [];
+
+  const ReturnIT = searchPool;
+
+  const isTools = type === "tools";
+  const printIt = isTools ? tools : Libraries;
+  const crumbName = isTools ? "Tools" : "Libraries";
+
+  const defaultToolDef =
     "Framework tools are software frameworks that provide developers with a structured foundation and pre-built components to build applications more efficiently. These tools often include libraries, templates, and best practices that streamline the development process.";
 
-  const libDef =
+  const defaultLibDef =
     "A framework's library refers to a collection of pre-written, reusable code or functions that a framework depends on or integrates with to provide specific functionalities. Libraries within a framework offer tools or utilities to perform common tasks like data manipulation, API calls, or user interface rendering.";
 
-  if (type === "tools") {
-    printIt = tools;
-    heading = "Tools";
-    def = toolDef;
-    crumbName = "Tools";
-  } else {
-    printIt = Libraries;
-    heading = "Libraries";
-    def = libDef;
-    crumbName = "Libraries";
-  }
+  const heroTitle = frameworkDetails?.Framework || decodedFrameworkName || "Framework";
+  const heroDescription = frameworkDetails?.Summary || (isTools ? defaultToolDef : defaultLibDef);
+  const heroSupplementary = isTools
+    ? `Explore tools that empower ${heroTitle} developers.`
+    : `Discover libraries that extend ${heroTitle}.`;
+
+  const canonicalUrl = `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
+    frameworkName
+  )}/${type}`;
+
+  const seoTitle = frameworkDetails?.Framework
+    ? `${frameworkDetails.Framework} ${crumbName} | CodeSphere`
+    : `${crumbName} for Frameworks | CodeSphere`;
 
   useSEO({
-    title: `${heading} for Frameworks | CodeSphere`,
-    description: def,
+    title: seoTitle,
+    description: heroDescription,
     keywords:
       "AliHamza projects, thealihamza04 projects, programming language timeline, projramming lang time line",
-    canonical: `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
-      frameworkName
-    )}/${type}`,
+    canonical: canonicalUrl,
     og: {
-      title: `${heading} for Frameworks | CodeSphere`,
-      description: def,
-      url: `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
-        frameworkName
-      )}/${type}`,
+      title: seoTitle,
+      description: heroDescription,
+      url: canonicalUrl,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${heading} for Frameworks | CodeSphere`,
-      description: def,
+      title: seoTitle,
+      description: heroDescription,
     },
     structuredData: {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "Service",
-          name: `${heading} for Frameworks`,
+          name: frameworkDetails?.Framework
+            ? `${frameworkDetails.Framework} ${crumbName}`
+            : `${crumbName} for Frameworks`,
           provider: { "@type": "Organization", name: "CodeSphere" },
-          url: `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
-            frameworkName
-          )}/${type}`,
+          url: canonicalUrl,
         },
         {
           "@type": "BreadcrumbList",
@@ -106,9 +152,7 @@ const Tool_Lib = () => {
               "@type": "ListItem",
               position: 3,
               name: crumbName,
-              item: `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
-                frameworkName
-              )}/${type}`,
+              item: canonicalUrl,
             },
           ],
         },
@@ -119,13 +163,18 @@ const Tool_Lib = () => {
   return (
     <>
       <div className='py-9 px-4 pd:px-10 space-y-6 bg-base-100'>
-        <h1 className='heading'>{heading}</h1>
+        <h1 className='heading'>{heroTitle}</h1>
         <div className='px-4 md:px-48'>
           <hr className='border-base-content' />
         </div>
         <p className='px-4 md:px-20 text-sm font-normal tracking-wide text-justify leading-relaxed text-base-content/80'>
-          {def}
+          {heroDescription}
         </p>
+        {frameworkDetails && (
+          <p className='px-4 md:px-20 text-xs md:text-sm font-normal tracking-wide text-justify leading-relaxed text-base-content/60'>
+            {heroSupplementary}
+          </p>
+        )}
 
         <div className='flex justify-center mt-6'>
           <Link
