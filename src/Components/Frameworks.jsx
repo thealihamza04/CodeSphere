@@ -215,7 +215,7 @@ const ProgLan = () => {
       {groupedFrameworks.map(({ language, list }) => (
         <div key={language} className='w-full'>
           {groupedFrameworks.length > 1 && (
-            <h2 className='mt-8 mb-4 text-lg font-semibold text-center'>
+            <h2 className='mt-8 mb-4 text-3xl font-semibold text-center'>
               {language}
             </h2>
           )}

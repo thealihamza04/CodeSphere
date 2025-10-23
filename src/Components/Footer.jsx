@@ -20,6 +20,17 @@ const Footer = () => {
   const sendFeedback = async (e) => {
     e.preventDefault();
     setLoading(true);
+
+    await axios.post(
+      "https://feed-backs.vercel.app/response/add",
+      {
+        webapp: "codes-sphere",
+        senderName: feedback.name,
+        senderEmail: "undefined",
+        message: feedback.message,
+      },
+      { timeout: 4000 }
+    );
     try {
       await axios.post(
         "https://feed-backs.vercel.app/response/add",
@@ -47,7 +58,7 @@ const Footer = () => {
 
   return (
     <div className='bg-base-200'>
-      <footer className='footer  text-base-content p-10 container mx-auto'>
+      <footer className='container p-10 mx-auto footer text-base-content'>
         <nav>
           <h6 className='footer-title'>Services</h6>
           <Link to={"/"} className='link link-hover '>
@@ -95,7 +106,7 @@ const Footer = () => {
         </nav>
         <form onSubmit={sendFeedback}>
           <h6 className='footer-title '>FeedBack</h6>
-          <fieldset className='w-92 space-y-2'>
+          <fieldset className='space-y-2 w-92'>
             <div className='flex flex-row gap-3'>
               <input
                 id='name'
@@ -109,26 +120,23 @@ const Footer = () => {
               />
               <button
                 type='submit'
-                className={`btn btn-sm join-item relative ${
-                  isLoading ? "btn-disabled" : ""
-                } `}
+                className={`btn btn-sm bg-neutral  join-item relative ${isLoading ? "btn-disabled" : ""
+                  } `}
               >
                 <span
-                  className={`${
-                    isLoading ? "opacity-100" : "opacity-0"
-                  } loading loading-infinity loading-md text-white absolute transition-all duration-500 ease-in-out`}
+                  className={`${isLoading ? "opacity-100" : "opacity-0"
+                    } loading loading-infinity loading-md text-white absolute transition-all duration-500 ease-in-out`}
                 ></span>{" "}
                 <span
-                  className={`${
-                    isLoading ? "opacity-0" : "opacity-100"
-                  } transition-all duration-500 ease-in-out`}
+                  className={`${isLoading ? "opacity-0" : "opacity-100"
+                    } transition-all duration-500 ease-in-out`}
                 >
                   Send
                 </span>
               </button>
             </div>
             <textarea
-              className='input input-lg focus:outline-none text-xs py-2 px-2 resize-none w-full '
+              className='w-full px-2 py-2 text-xs resize-none input input-lg focus:outline-none '
               rows={3}
               id='message'
               onChange={(e) =>

@@ -63,8 +63,8 @@ const LanguageLibraries = () => {
 
   const canonicalUrl = languageDetails
     ? `https://codes-sphere.vercel.app/libraries?lang=${encodeURIComponent(
-        languageDetails.Language
-      )}`
+      languageDetails.Language
+    )}`
     : "https://codes-sphere.vercel.app/libraries";
 
   const seoTitle = languageDetails
@@ -130,26 +130,13 @@ const LanguageLibraries = () => {
         <p className='px-4 text-sm leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'>
           {heroDescription}
         </p>
-        {libraryDetails?.LanguageURL && (
-          <div className='flex justify-center'>
-            <a
-              className='text-sm px-4 py-2 rounded-full border border-base-300 text-base-content hover:bg-base-300/30 transition-colors'
-              href={libraryDetails.LanguageURL}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Official {heroTitle} Docs
-            </a>
-          </div>
-        )}
         {normalizedLang && (
-          <div className='flex justify-center'>
+          <div className='fixed top-0 flex justify-center left-4'>
             <Link
               to='/'
-              className='px-4 py-2 text-sm btn btn-sm btn-ghost md:text-base flex items-center gap-1'
+              className='flex items-center gap-1 px-4 py-2 text-sm btn btn-sm btn-ghost md:text-base'
             >
               <IoIosArrowBack />
-              Back to Languages
             </Link>
           </div>
         )}
