@@ -4,19 +4,124 @@
     "LanguageURL": "https://developer.mozilla.org/en-US/docs/Web/HTML",
     "Libraries": [
       {
+        "Name": "Bootstrap Icons",
+        "Summary": "An official icon set designed to match Bootstrap styling for interfaces.",
+        "URL": "https://icons.getbootstrap.com/"
+      },
+      {
+        "Name": "Bourbon",
+        "Summary": "A library of Sass mixins for managing prefixes, typography, and layout primitives.",
+        "URL": "https://www.bourbon.io/"
+      },
+      {
+        "Name": "Buefy",
+        "Summary": "Lightweight UI components for Vue.js built on top of Bulma styling.",
+        "URL": "https://buefy.org/"
+      },
+      {
+        "Name": "Bulma Extensions",
+        "Summary": "Community add-ons that provide calendars, timelines, and other Bulma-compatible components.",
+        "URL": "https://wikiki.github.io/bulma-extensions/"
+      },
+      {
+        "Name": "Compass",
+        "Summary": "An open-source Sass framework with reusable mixins, blueprints, and helpers.",
+        "URL": "https://compass-style.org/"
+      },
+      {
+        "Name": "Font Awesome",
+        "Summary": "Iconography library bundled across HTML5 UP themes for scalable vector icons.",
+        "URL": "https://fontawesome.com/"
+      },
+      {
+        "Name": "Foundation Icon Fonts",
+        "Summary": "A comprehensive icon font set designed to pair with Foundation layouts.",
+        "URL": "https://zurb.com/playground/foundation-icon-fonts-3"
+      },
+      {
+        "Name": "Hammer.js",
+        "Summary": "A touch-gesture library that powers Materialize's mobile interactions like carousels and sliders.",
+        "URL": "https://hammerjs.github.io/"
+      },
+      {
+        "Name": "Headless UI",
+        "Summary": "A set of completely unstyled, fully accessible UI components designed to integrate with Tailwind CSS.",
+        "URL": "https://headlessui.dev/"
+      },
+      {
+        "Name": "lit-element",
+        "Summary": "Base class that implements declarative reactive components in the Lit ecosystem.",
+        "URL": "https://lit.dev/docs/components/overview/"
+      },
+      {
+        "Name": "lit-labs/router",
+        "Summary": "Experimental router from Lit Labs for structuring multi-page web component apps.",
+        "URL": "https://github.com/lit/lit/tree/main/packages/labs/router"
+      },
+      {
+        "Name": "mithril-node-render",
+        "Summary": "Server-side rendering utility for generating HTML strings from Mithril components.",
+        "URL": "https://github.com/MithrilJS/mithril.js/tree/next/render/node"
+      },
+      {
+        "Name": "mithril/stream",
+        "Summary": "A small functional reactive stream library maintained by the Mithril team for state management.",
+        "URL": "https://github.com/MithrilJS/mithril.js/tree/next/stream"
+      },
+      {
         "Name": "Modernizr",
-        "Summary": "Detects HTML5 and CSS3 features in the user’s browser so you can gracefully handle unsupported capabilities.",
+        "Summary": "A feature-detection library that reports browser support for HTML5 and CSS3 capabilities.",
         "URL": "https://modernizr.com/"
       },
       {
-        "Name": "HTML5 Boilerplate",
-        "Summary": "A professional HTML/CSS/JS template that jump-starts modern, performant websites.",
-        "URL": "https://html5boilerplate.com/"
+        "Name": "Motion UI",
+        "Summary": "Foundation's animation library for composing transitions and motion effects.",
+        "URL": "https://get.foundation/sites/docs/motion-ui.html"
       },
       {
-        "Name": "Normalize.css",
-        "Summary": "Provides cross-browser consistency by resetting default HTML element styles.",
-        "URL": "https://necolas.github.io/normalize.css/"
+        "Name": "Pickadate.js",
+        "Summary": "A date and time picker plugin integrated into Materialize components.",
+        "URL": "https://amsul.ca/pickadate.js/"
+      },
+      {
+        "Name": "Polyfill.io",
+        "Summary": "A service and script loader that supplies HTML5 polyfills tailored to the requesting browser.",
+        "URL": "https://polyfill.io/"
+      },
+      {
+        "Name": "Popper.js",
+        "Summary": "The positioning library Bootstrap uses for tooltips, dropdowns, and popovers.",
+        "URL": "https://popper.js.org/"
+      },
+      {
+        "Name": "pug-filters",
+        "Summary": "Reusable filter collection that extends the Pug templating language with Markdown and code highlighting.",
+        "URL": "https://github.com/pugjs/pug-filters"
+      },
+      {
+        "Name": "pug-plain-loader",
+        "Summary": "Webpack loader that compiles Pug templates for use in Vue and other bundler setups.",
+        "URL": "https://github.com/vuejs/pug-plain-loader"
+      },
+      {
+        "Name": "Semantic UI React",
+        "Summary": "Official React integration that provides Semantic UI components with JSX bindings.",
+        "URL": "https://react.semantic-ui.com/"
+      },
+      {
+        "Name": "Semantic UI Vue",
+        "Summary": "Vue bindings that expose Semantic UI elements as Vue components.",
+        "URL": "https://semantic-ui-vue.github.io/"
+      },
+      {
+        "Name": "Skel",
+        "Summary": "The responsive framework that powers layout breakpoints and grids in HTML5 UP templates.",
+        "URL": "https://github.com/ajlkn/skel"
+      },
+      {
+        "Name": "Tailwind UI",
+        "Summary": "A set of professionally designed, fully responsive UI components built with Tailwind CSS.",
+        "URL": "https://tailwindui.com/"
       }
     ]
   },
@@ -25,19 +130,64 @@
     "LanguageURL": "https://developer.mozilla.org/en-US/docs/Web/CSS",
     "Libraries": [
       {
-        "Name": "Tailwind CSS",
-        "Summary": "Utility-first CSS framework for rapidly building custom designs without leaving your HTML.",
-        "URL": "https://tailwindcss.com/"
+        "Name": "Bootstrap Icons",
+        "Summary": "A collection of free, high-quality icons designed for Bootstrap.",
+        "URL": "https://icons.getbootstrap.com/"
       },
       {
-        "Name": "Bulma",
-        "Summary": "A modern CSS framework based on Flexbox with ready-to-use components.",
-        "URL": "https://bulma.io/"
+        "Name": "Bootstrap Vue",
+        "Summary": "Vue.js components and directives built on Bootstrap.",
+        "URL": "https://bootstrap-vue.org/"
       },
       {
-        "Name": "Animate.css",
-        "Summary": "Curated CSS animations that you can drop into projects to emphasize interactions.",
-        "URL": "https://animate.style/"
+        "Name": "Bulma Extensions",
+        "Summary": "Additional Bulma components such as carousels, badges, and steps.",
+        "URL": "https://wikiki.github.io/bulma-extensions/"
+      },
+      {
+        "Name": "Bulmaswatch",
+        "Summary": "A collection of themed skins that restyle Bulma with curated color palettes.",
+        "URL": "https://jenil.github.io/bulmaswatch/"
+      },
+      {
+        "Name": "DaisyUI",
+        "Summary": "A Tailwind CSS component library with a set of customizable UI components.",
+        "URL": "https://daisyui.com/"
+      },
+      {
+        "Name": "Foundation for Emails",
+        "Summary": "A framework for responsive email templates.",
+        "URL": "https://get.foundation/emails/docs/"
+      },
+      {
+        "Name": "Foundation for Sites",
+        "Summary": "The standard Foundation framework for building responsive websites.",
+        "URL": "https://get.foundation/sites/docs/"
+      },
+      {
+        "Name": "Material Icons",
+        "Summary": "Google's Material Design icon set packaged for use with Materialize projects.",
+        "URL": "https://fonts.google.com/icons"
+      },
+      {
+        "Name": "noUiSlider",
+        "Summary": "A lightweight range slider library often paired with Materialize forms.",
+        "URL": "https://refreshless.com/nouislider/"
+      },
+      {
+        "Name": "Semantic UI React",
+        "Summary": "React integration for Semantic UI.",
+        "URL": "https://react.semantic-ui.com/"
+      },
+      {
+        "Name": "Semantic UI Vue",
+        "Summary": "Vue integration for Semantic UI.",
+        "URL": "https://semantic-ui-vue.github.io/"
+      },
+      {
+        "Name": "Tailwind UI",
+        "Summary": "A collection of professionally designed components built with Tailwind CSS.",
+        "URL": "https://tailwindui.com/"
       }
     ]
   },
@@ -46,19 +196,304 @@
     "LanguageURL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     "Libraries": [
       {
-        "Name": "React",
-        "Summary": "Component-based library for building interactive user interfaces and single-page applications.",
-        "URL": "https://react.dev/"
+        "Name": "Alpine.js Magic Helpers",
+        "Summary": "A set of utilities for simplifying common tasks in Alpine.js applications.",
+        "URL": "https://github.com/alpinejs/alpine/tree/master/src/plugins/magic"
       },
       {
-        "Name": "Lodash",
-        "Summary": "Utility library delivering modular helpers for arrays, objects, and functional patterns.",
-        "URL": "https://lodash.com/"
+        "Name": "Alpine.js Transition",
+        "Summary": "A library that adds transition effects to Alpine.js elements, enabling smooth animations.",
+        "URL": "https://github.com/alpinejs/alpine/tree/master/src/plugins/transition"
+      },
+      {
+        "Name": "Apollo",
+        "Summary": "A library for integrating GraphQL into Meteor for efficient data fetching and management.",
+        "URL": "https://www.apollographql.com/"
       },
       {
         "Name": "Axios",
-        "Summary": "Promise-based HTTP client for browsers and Node.js with a clean, intuitive API.",
+        "Summary": "A promise-based HTTP client for making requests to APIs, supporting interceptors and automatic JSON data transformation.",
         "URL": "https://axios-http.com/"
+      },
+      {
+        "Name": "Backbone.LocalStorage",
+        "Summary": "A simple local storage adapter for Backbone.js models and collections.",
+        "URL": "https://github.com/jeromegn/Backbone.localStorage"
+      },
+      {
+        "Name": "Backbone.Validation",
+        "Summary": "A validation library for Backbone models that provides various validation methods.",
+        "URL": "https://github.com/thednp/backbone.validation"
+      },
+      {
+        "Name": "Blaze",
+        "Summary": "A reactive frontend templating library for building UI components in Meteor applications.",
+        "URL": "https://guide.meteor.com/blaze.html"
+      },
+      {
+        "Name": "Body-parser",
+        "Summary": "A middleware for parsing incoming request bodies in a middleware before your handlers.",
+        "URL": "https://expressjs.com/en/resources/middleware/body-parser.html"
+      },
+      {
+        "Name": "Capacitor",
+        "Summary": "A cross-platform runtime for deploying web applications natively to iOS, Android, and the web.",
+        "URL": "https://capacitorjs.com/"
+      },
+      {
+        "Name": "Cors",
+        "Summary": "A middleware for enabling Cross-Origin Resource Sharing (CORS) in Express apps.",
+        "URL": "https://expressjs.com/en/resources/middleware/cors.html"
+      },
+      {
+        "Name": "Ember CLI",
+        "Summary": "The command line interface for Ember, which provides powerful project generation and development tools.",
+        "URL": "https://cli.emberjs.com/"
+      },
+      {
+        "Name": "Ember Data",
+        "Summary": "A data persistence library for Ember applications that provides a robust model layer.",
+        "URL": "https://emberjs.com/data/"
+      },
+      {
+        "Name": "Ember Inspector",
+        "Summary": "A browser extension for debugging Ember applications, providing insights into routes, models, and components.",
+        "URL": "https://emberjs.com/inspector/"
+      },
+      {
+        "Name": "Expo Router",
+        "Summary": "A file-based routing library for Expo projects that simplifies navigation.",
+        "URL": "https://expo.github.io/router/"
+      },
+      {
+        "Name": "Expo SDK",
+        "Summary": "A collection of pre-built libraries and APIs for accessing native device features without custom configurations.",
+        "URL": "https://docs.expo.dev/versions/latest/"
+      },
+      {
+        "Name": "Fastify Helmet",
+        "Summary": "A plugin to add secure HTTP headers to Fastify applications.",
+        "URL": "https://github.com/fastify/fastify-helmet"
+      },
+      {
+        "Name": "Fastify Plugin System",
+        "Summary": "A built-in system for organizing and reusing plugins to extend Fastify functionality.",
+        "URL": "https://www.fastify.io/docs/latest/Reference/Plugins/"
+      },
+      {
+        "Name": "Fastify Swagger",
+        "Summary": "A library to generate Swagger/OpenAPI documentation for Fastify routes.",
+        "URL": "https://github.com/fastify/fastify-swagger"
+      },
+      {
+        "Name": "Formik",
+        "Summary": "A library designed for building forms in React, offering easy form state management and validation.",
+        "URL": "https://formik.org/"
+      },
+      {
+        "Name": "GraphQL Module",
+        "Summary": "A module that provides tools for building GraphQL APIs with NestJS.",
+        "URL": "https://docs.nestjs.com/graphql/quick-start"
+      },
+      {
+        "Name": "Helmet",
+        "Summary": "A middleware for securing Express apps by setting various HTTP headers.",
+        "URL": "https://expressjs.com/en/resources/middleware/helmet.html"
+      },
+      {
+        "Name": "Ionic UI Components",
+        "Summary": "A library of pre-built, customizable UI components optimized for mobile and web applications.",
+        "URL": "https://ionicframework.com/docs/components"
+      },
+      {
+        "Name": "Lit-SSR",
+        "Summary": "Server-side rendering support for Lit applications, enabling fast initial load times.",
+        "URL": "https://lit.dev/docs/ssr/"
+      },
+      {
+        "Name": "LitElement",
+        "Summary": "A base class for creating fast, lightweight web components using Lit.",
+        "URL": "https://lit.dev/docs/components/litelement/"
+      },
+      {
+        "Name": "LitHtml",
+        "Summary": "A library for rendering HTML templates with a declarative syntax and efficient updates.",
+        "URL": "https://lit.dev/docs/templates/lithtml/"
+      },
+      {
+        "Name": "Marionette.js",
+        "Summary": "A composite application library built on Backbone.js, providing structure and enhanced features.",
+        "URL": "https://marionettejs.com/"
+      },
+      {
+        "Name": "Mithril Query",
+        "Summary": "A testing utility for Mithril applications that allows for simple testing of components.",
+        "URL": "https://mithril.js.org/query.html"
+      },
+      {
+        "Name": "Mithril Router",
+        "Summary": "A routing library for Mithril that allows you to define routes in a straightforward manner.",
+        "URL": "https://mithril.js.org/router.html"
+      },
+      {
+        "Name": "Mithril Stream",
+        "Summary": "A library for creating observable streams, facilitating reactive programming in Mithril applications.",
+        "URL": "https://mithril.js.org/stream.html"
+      },
+      {
+        "Name": "MobX",
+        "Summary": "A simple and scalable state management library that uses observables to manage state in applications.",
+        "URL": "https://mobx.js.org/README.html"
+      },
+      {
+        "Name": "MongoDB",
+        "Summary": "A NoSQL database natively integrated with Meteor for real-time data synchronization.",
+        "URL": "https://www.mongodb.com/"
+      },
+      {
+        "Name": "Nest CLI",
+        "Summary": "A command-line interface to quickly scaffold, develop, and manage NestJS projects.",
+        "URL": "https://docs.nestjs.com/cli/overview"
+      },
+      {
+        "Name": "NextAuth.js",
+        "Summary": "An authentication library for adding secure, flexible, and easy-to-use authentication to Next.js apps.",
+        "URL": "https://next-auth.js.org/"
+      },
+      {
+        "Name": "NgRx",
+        "Summary": "Reactive state management for Angular applications based on the Redux pattern.",
+        "URL": "https://ngrx.io/"
+      },
+      {
+        "Name": "Nuxt Auth",
+        "Summary": "A library for adding authentication support to Nuxt.js applications with multiple providers.",
+        "URL": "https://auth.nuxt.com/"
+      },
+      {
+        "Name": "Nuxt Content",
+        "Summary": "A content management library that allows writing and rendering content in Markdown, JSON, or YAML.",
+        "URL": "https://content.nuxt.com/"
+      },
+      {
+        "Name": "Preact Compat",
+        "Summary": "A compatibility layer that allows you to use React libraries with Preact.",
+        "URL": "https://github.com/developit/preact-compat"
+      },
+      {
+        "Name": "Preact Router",
+        "Summary": "A lightweight routing solution for Preact applications, similar to React Router.",
+        "URL": "https://github.com/preactjs/preact-router"
+      },
+      {
+        "Name": "Preact Signals",
+        "Summary": "A reactive state management library for Preact that simplifies state management.",
+        "URL": "https://preactjs.com/guide/v10/signals"
+      },
+      {
+        "Name": "Preact X",
+        "Summary": "The latest version of Preact that introduces features such as hooks and a context API.",
+        "URL": "https://preactjs.com/guide/v10/getting-started"
+      },
+      {
+        "Name": "React Native Paper",
+        "Summary": "A library of customizable Material Design components for React Native.",
+        "URL": "https://reactnativepaper.com/"
+      },
+      {
+        "Name": "React Navigation",
+        "Summary": "A library for handling navigation and routing in React Native applications.",
+        "URL": "https://reactnavigation.org/"
+      },
+      {
+        "Name": "React Query",
+        "Summary": "A library for managing, caching, and synchronizing server state in Next.js applications.",
+        "URL": "https://tanstack.com/query"
+      },
+      {
+        "Name": "React Router",
+        "Summary": "A standard library for routing in React applications, allowing for dynamic routing and navigation.",
+        "URL": "https://reactrouter.com/"
+      },
+      {
+        "Name": "Recoil",
+        "Summary": "A state management library for React that allows for shared state between components with a focus on performance.",
+        "URL": "https://recoiljs.org/"
+      },
+      {
+        "Name": "Redux",
+        "Summary": "A predictable state container for JavaScript apps, enabling centralized state management.",
+        "URL": "https://redux.js.org/"
+      },
+      {
+        "Name": "Remix Auth",
+        "Summary": "An authentication library designed for Remix to handle various auth strategies.",
+        "URL": "https://github.com/sergiodxa/remix-auth"
+      },
+      {
+        "Name": "Remix Utils",
+        "Summary": "A collection of utility functions and helpers for building Remix applications efficiently.",
+        "URL": "https://github.com/sergiodxa/remix-utils"
+      },
+      {
+        "Name": "RxJS",
+        "Summary": "A library for reactive programming using observables, often used in Angular applications.",
+        "URL": "https://rxjs.dev/"
+      },
+      {
+        "Name": "Sapper",
+        "Summary": "A framework for building web applications with Svelte.",
+        "URL": "https://sapper.svelte.dev/"
+      },
+      {
+        "Name": "Stencil",
+        "Summary": "A tool for building reusable, framework-agnostic web components used within Ionic applications.",
+        "URL": "https://stenciljs.com/"
+      },
+      {
+        "Name": "Styled Components",
+        "Summary": "A CSS-in-JS library that allows for writing component-level styles using tagged template literals.",
+        "URL": "https://styled-components.com/"
+      },
+      {
+        "Name": "SvelteKit",
+        "Summary": "A framework for building applications using Svelte.",
+        "URL": "https://kit.svelte.dev/"
+      },
+      {
+        "Name": "SWR",
+        "Summary": "A data-fetching library for React, built and optimized for use with Next.js.",
+        "URL": "https://swr.vercel.app/"
+      },
+      {
+        "Name": "TypeORM",
+        "Summary": "An ORM library integrated with NestJS for database management and SQL-based operations.",
+        "URL": "https://docs.nestjs.com/techniques/database"
+      },
+      {
+        "Name": "Underscore.js",
+        "Summary": "A utility-belt library that provides functional programming support for Backbone.js.",
+        "URL": "https://underscorejs.org/"
+      },
+      {
+        "Name": "Vue Router",
+        "Summary": "The official router for Vue.js, allowing navigation between components.",
+        "URL": "https://router.vuejs.org/"
+      },
+      {
+        "Name": "Vuetify",
+        "Summary": "A Material Design component framework for Vue.js.",
+        "URL": "https://vuetifyjs.com/"
+      },
+      {
+        "Name": "Vuex",
+        "Summary": "A state management library for Vue.js applications.",
+        "URL": "https://vuex.vuejs.org/"
+      },
+      {
+        "Name": "Zustand",
+        "Summary": "A minimal and flexible state management solution with a small footprint and hooks-based API.",
+        "URL": "https://github.com/pmndrs/zustand"
       }
     ]
   },
@@ -67,19 +502,54 @@
     "LanguageURL": "https://www.python.org/doc/",
     "Libraries": [
       {
-        "Name": "Requests",
-        "Summary": "Elegant HTTP library for Python that simplifies making web requests.",
-        "URL": "https://requests.readthedocs.io/"
+        "Name": "Celery",
+        "Summary": "Distributed task queue that integrates with Django for asynchronous background jobs.",
+        "URL": "https://docs.celeryq.dev/en/stable/django/first-steps-with-django.html"
       },
       {
-        "Name": "NumPy",
-        "Summary": "Fundamental package for scientific computing with support for large, multi-dimensional arrays.",
-        "URL": "https://numpy.org/"
+        "Name": "Cornice",
+        "Summary": "RESTful framework on top of Pyramid for quickly exposing JSON services.",
+        "URL": "https://cornice.readthedocs.io/"
       },
       {
-        "Name": "Django",
-        "Summary": "High-level web framework that encourages rapid development and clean, pragmatic design.",
-        "URL": "https://www.djangoproject.com/"
+        "Name": "Django REST framework",
+        "Summary": "Toolkit for building Web APIs with serializers, viewsets, and browsable interfaces.",
+        "URL": "https://www.django-rest-framework.org/"
+      },
+      {
+        "Name": "Flask-Login",
+        "Summary": "Session management extension that handles user authentication in Flask apps.",
+        "URL": "https://flask-login.readthedocs.io/"
+      },
+      {
+        "Name": "Flask-SQLAlchemy",
+        "Summary": "Database integration layer that brings SQLAlchemy ORM support to Flask projects.",
+        "URL": "https://flask-sqlalchemy.palletsprojects.com/"
+      },
+      {
+        "Name": "Motor",
+        "Summary": "Asynchronous MongoDB driver designed to run on Tornado's event loop.",
+        "URL": "https://motor.readthedocs.io/"
+      },
+      {
+        "Name": "Pydantic",
+        "Summary": "Data validation and settings management library powering FastAPI's request models.",
+        "URL": "https://docs.pydantic.dev/"
+      },
+      {
+        "Name": "pyramid_jinja2",
+        "Summary": "Template renderer that adds Jinja2 support to Pyramid applications.",
+        "URL": "https://docs.pylonsproject.org/projects/pyramid-jinja2/en/latest/"
+      },
+      {
+        "Name": "SQLModel",
+        "Summary": "ORM built by the FastAPI author that combines SQLAlchemy and Pydantic for typed models.",
+        "URL": "https://sqlmodel.tiangolo.com/"
+      },
+      {
+        "Name": "tornado-redis",
+        "Summary": "Non-blocking Redis client that integrates with Tornado coroutines.",
+        "URL": "https://github.com/mrjoes/tornado-redis"
       }
     ]
   },
@@ -88,19 +558,49 @@
     "LanguageURL": "https://docs.oracle.com/en/java/",
     "Libraries": [
       {
-        "Name": "Spring Framework",
-        "Summary": "Comprehensive programming and configuration model for building Java applications.",
-        "URL": "https://spring.io/projects/spring-framework"
+        "Name": "GORM",
+        "Summary": "The Grails object-relational mapping layer with support for SQL and NoSQL datastores.",
+        "URL": "https://gorm.grails.org/"
       },
       {
-        "Name": "Hibernate ORM",
-        "Summary": "Object-relational mapping library that simplifies persistence for Java applications.",
-        "URL": "https://hibernate.org/orm/"
+        "Name": "Hibernate Validator",
+        "Summary": "A bean validation framework for Hibernate.",
+        "URL": "https://hibernate.org/validator/"
       },
       {
-        "Name": "JUnit",
-        "Summary": "Unit testing framework that underpins test-driven development in the Java ecosystem.",
-        "URL": "https://junit.org/junit5/"
+        "Name": "OmniFaces",
+        "Summary": "Utility library that augments JSF with reusable converters, validators, and helpers.",
+        "URL": "https://omnifaces.org/"
+      },
+      {
+        "Name": "PrimeFaces",
+        "Summary": "A rich component suite that extends JSF with responsive widgets and themes.",
+        "URL": "https://www.primefaces.org/"
+      },
+      {
+        "Name": "Spring Boot",
+        "Summary": "A module of Spring that simplifies the setup and development of new applications.",
+        "URL": "https://spring.io/projects/spring-boot"
+      },
+      {
+        "Name": "Spring Data",
+        "Summary": "A set of tools for accessing data in a variety of databases with ease.",
+        "URL": "https://spring.io/projects/spring-data"
+      },
+      {
+        "Name": "Spring Security Core",
+        "Summary": "Grails plugin that adds robust authentication and authorization features.",
+        "URL": "https://plugins.grails.org/plugin/grails/spring-security-core"
+      },
+      {
+        "Name": "Struts2 Core",
+        "Summary": "The primary Struts runtime providing MVC actions, interceptors, and tag libraries.",
+        "URL": "https://struts.apache.org/getting-started/"
+      },
+      {
+        "Name": "Struts2 Spring Plugin",
+        "Summary": "Plugin that wires Spring beans into Struts actions for dependency injection.",
+        "URL": "https://struts.apache.org/plugins/spring/"
       }
     ]
   },
@@ -109,19 +609,99 @@
     "LanguageURL": "https://www.php.net/manual/en/",
     "Libraries": [
       {
-        "Name": "Laravel",
-        "Summary": "Expressive PHP framework offering routing, ORM, templating, and developer-friendly tooling.",
-        "URL": "https://laravel.com/"
+        "Name": "CakePHP ORM",
+        "Summary": "An Object-Relational Mapper for handling database interactions in CakePHP.",
+        "URL": "https://book.cakephp.org/4/en/orm/index.html"
       },
       {
-        "Name": "Symfony",
-        "Summary": "Modular component library and framework for building robust PHP applications.",
-        "URL": "https://symfony.com/"
+        "Name": "CakePHP Validation",
+        "Summary": "A validation library for validating data in CakePHP applications.",
+        "URL": "https://book.cakephp.org/4/en/core-libraries/validation.html"
       },
       {
-        "Name": "Guzzle",
-        "Summary": "HTTP client for sending requests with PSR-7 support and middleware architecture.",
-        "URL": "https://docs.guzzlephp.org/"
+        "Name": "CodeIgniter Database Library",
+        "Summary": "A powerful database abstraction library for connecting and querying databases.",
+        "URL": "https://codeigniter.com/user_guide/database/index.html"
+      },
+      {
+        "Name": "CodeIgniter Validation Library",
+        "Summary": "A set of tools for validating form data in PHP applications.",
+        "URL": "https://codeigniter.com/user_guide/libraries/validation.html"
+      },
+      {
+        "Name": "Eloquent ORM",
+        "Summary": "An Object-Relational Mapper (ORM) for managing database records as objects.",
+        "URL": "https://laravel.com/docs/eloquent"
+      },
+      {
+        "Name": "Laravel Cashier",
+        "Summary": "A library for managing subscriptions and payments in Laravel applications.",
+        "URL": "https://laravel.com/docs/cashier"
+      },
+      {
+        "Name": "Laravel Horizon",
+        "Summary": "A dashboard and queue management tool for Laravel queues.",
+        "URL": "https://laravel.com/docs/horizon"
+      },
+      {
+        "Name": "Laravel Passport",
+        "Summary": "An OAuth2 server implementation for API authentication in Laravel.",
+        "URL": "https://laravel.com/docs/passport"
+      },
+      {
+        "Name": "Phalcon ORM",
+        "Summary": "High-performance ORM component providing models, relationships, and query builders.",
+        "URL": "https://docs.phalcon.io/5.0/en/db-models"
+      },
+      {
+        "Name": "slim/flash",
+        "Summary": "Middleware that adds flash messaging support to Slim applications.",
+        "URL": "https://github.com/slimphp/Slim-Flash"
+      },
+      {
+        "Name": "slim/twig-view",
+        "Summary": "Integration package that brings the Twig templating engine to Slim.",
+        "URL": "https://github.com/slimphp/Twig-View"
+      },
+      {
+        "Name": "Symfony Forms",
+        "Summary": "A component that simplifies form handling in PHP applications.",
+        "URL": "https://symfony.com/components/Form"
+      },
+      {
+        "Name": "Symfony Routing",
+        "Summary": "A component for routing HTTP requests to appropriate controllers.",
+        "URL": "https://symfony.com/components/Routing"
+      },
+      {
+        "Name": "Symfony Security",
+        "Summary": "A component for handling authentication and authorization in PHP applications.",
+        "URL": "https://symfony.com/components/Security"
+      },
+      {
+        "Name": "Symfony Translation",
+        "Summary": "A component that provides translation and localization support.",
+        "URL": "https://symfony.com/components/Translation"
+      },
+      {
+        "Name": "Volt",
+        "Summary": "Phalcon's templating engine with a concise syntax compiled to optimized PHP.",
+        "URL": "https://docs.phalcon.io/5.0/en/volt"
+      },
+      {
+        "Name": "Yii2 ActiveRecord",
+        "Summary": "An ORM that provides easy-to-use data management in Yii.",
+        "URL": "https://www.yiiframework.com/doc/guide/2.0/en/db-active-record"
+      },
+      {
+        "Name": "Zend Expressive",
+        "Summary": "A middleware-based framework for building APIs and web applications.",
+        "URL": "https://zendframework.github.io/zend-expressive/"
+      },
+      {
+        "Name": "Zend Service Manager",
+        "Summary": "A component for dependency injection and managing service objects in PHP applications.",
+        "URL": "https://docs.zendframework.com/zend-servicemanager/"
       }
     ]
   },
@@ -130,19 +710,129 @@
     "LanguageURL": "https://cran.r-project.org/manuals.html",
     "Libraries": [
       {
-        "Name": "ggplot2",
-        "Summary": "Data visualization package based on the grammar of graphics, enabling complex plots with concise syntax.",
-        "URL": "https://ggplot2.tidyverse.org/"
+        "Name": "bookdown",
+        "Summary": "Authoring framework built on knitr for creating books and technical documentation.",
+        "URL": "https://bookdown.org/yihui/bookdown/"
       },
       {
-        "Name": "dplyr",
-        "Summary": "Grammar of data manipulation providing verbs for transforming data frames efficiently.",
-        "URL": "https://dplyr.tidyverse.org/"
+        "Name": "caretEnsemble",
+        "Summary": "A package that builds ensembles of caret models for improved predictions.",
+        "URL": "https://cran.r-project.org/web/packages/caretEnsemble/caretEnsemble.pdf"
       },
       {
-        "Name": "Shiny",
-        "Summary": "Framework for building interactive web applications directly from R scripts.",
-        "URL": "https://shiny.posit.co/"
+        "Name": "clock",
+        "Summary": "A modern date-time library that complements lubridate with precise arithmetic.",
+        "URL": "https://clock.r-lib.org/"
+      },
+      {
+        "Name": "covr",
+        "Summary": "Code coverage analysis toolkit with reporters for testthat suites.",
+        "URL": "https://covr.r-lib.org/"
+      },
+      {
+        "Name": "crosstalk",
+        "Summary": "Library enabling linked brushing and shared selections across plotly widgets.",
+        "URL": "https://rstudio.github.io/crosstalk/"
+      },
+      {
+        "Name": "dbplyr",
+        "Summary": "Translates dplyr verbs to SQL so databases can execute tidy data pipelines.",
+        "URL": "https://dbplyr.tidyverse.org/"
+      },
+      {
+        "Name": "dtplyr",
+        "Summary": "Data.table backend for dplyr that accelerates grouped operations on large data sets.",
+        "URL": "https://dtplyr.tidyverse.org/"
+      },
+      {
+        "Name": "fst",
+        "Summary": "Fast serialization format and helpers for persisting large data.table objects.",
+        "URL": "https://www.fstpackage.org/"
+      },
+      {
+        "Name": "ggplot2 extensions",
+        "Summary": "Additional libraries extending ggplot2 functionality with more visualizations and custom themes.",
+        "URL": "https://ggplot2.tidyverse.org/reference/index.html"
+      },
+      {
+        "Name": "htmlwidgets",
+        "Summary": "Framework that embeds JavaScript visualizations like plotly into R outputs.",
+        "URL": "https://www.htmlwidgets.org/"
+      },
+      {
+        "Name": "knitr",
+        "Summary": "A library used with R Markdown to knit R code into dynamic reports and documents.",
+        "URL": "https://yihui.org/knitr/"
+      },
+      {
+        "Name": "PerformanceAnalytics",
+        "Summary": "Suite of econometric functions leveraging xts for portfolio analysis.",
+        "URL": "https://cran.r-project.org/package=PerformanceAnalytics"
+      },
+      {
+        "Name": "plumberDeploy",
+        "Summary": "Helper package that simplifies deploying plumber services to RStudio Connect.",
+        "URL": "https://github.com/sol-eng/plumberDeploy"
+      },
+      {
+        "Name": "plumbertableau",
+        "Summary": "Toolkit for deploying plumber APIs directly to Tableau dashboards.",
+        "URL": "https://github.com/rstudio/plumbertableau"
+      },
+      {
+        "Name": "quantmod",
+        "Summary": "Quantitative financial modeling package that builds on xts time-series objects.",
+        "URL": "https://www.quantmod.com/"
+      },
+      {
+        "Name": "RcppArmadillo",
+        "Summary": "Seamless R and C++ integration with the Armadillo linear algebra library.",
+        "URL": "https://cran.r-project.org/package=RcppArmadillo"
+      },
+      {
+        "Name": "RcppEigen",
+        "Summary": "Bindings that expose the Eigen C++ template library to R through Rcpp.",
+        "URL": "https://cran.r-project.org/package=RcppEigen"
+      },
+      {
+        "Name": "rmarkdown",
+        "Summary": "A package for rendering R Markdown files into multiple formats (HTML, PDF, Word, etc.).",
+        "URL": "https://cran.r-project.org/web/packages/rmarkdown/rmarkdown.pdf"
+      },
+      {
+        "Name": "rticles",
+        "Summary": "Templates that help generate journal articles and reports using knitr and R Markdown.",
+        "URL": "https://github.com/rstudio/rticles"
+      },
+      {
+        "Name": "shinydashboard",
+        "Summary": "A library to create dashboards in Shiny with a wide variety of UI components.",
+        "URL": "https://rstudio.github.io/shinydashboard/"
+      },
+      {
+        "Name": "shinymaterial",
+        "Summary": "A library for creating Shiny apps using Material Design components.",
+        "URL": "https://cran.r-project.org/web/packages/shinymaterial/shinymaterial.pdf"
+      },
+      {
+        "Name": "tidyselect",
+        "Summary": "Helper package that powers tidyverse selection syntax used across tidyr verbs.",
+        "URL": "https://tidyselect.r-lib.org/"
+      },
+      {
+        "Name": "tidytext",
+        "Summary": "Extends tidy data principles to text mining workflows alongside tidyr functions.",
+        "URL": "https://cran.r-project.org/package=tidytext"
+      },
+      {
+        "Name": "timechange",
+        "Summary": "Utilities for modifying time zones and daylight saving adjustments alongside lubridate.",
+        "URL": "https://github.com/r-lib/timechange"
+      },
+      {
+        "Name": "vdiffr",
+        "Summary": "Visual regression testing helpers that integrate with testthat snapshots.",
+        "URL": "https://vdiffr.r-lib.org/"
       }
     ]
   },
@@ -152,18 +842,98 @@
     "Libraries": [
       {
         "Name": "Alamofire",
-        "Summary": "HTTP networking library wrapping URLSession with chainable request/response APIs.",
-        "URL": "https://alamofire.org/"
+        "Summary": "A widely used HTTP networking library for iOS, macOS, watchOS, and tvOS.",
+        "URL": "https://github.com/Alamofire/Alamofire"
       },
       {
-        "Name": "SwiftUI",
-        "Summary": "Declarative UI framework from Apple for building apps across all Apple platforms.",
-        "URL": "https://developer.apple.com/xcode/swiftui/"
+        "Name": "AsyncHTTPClient",
+        "Summary": "Non-blocking HTTP client library built on top of SwiftNIO event loops.",
+        "URL": "https://github.com/swift-server/async-http-client"
+      },
+      {
+        "Name": "Charts",
+        "Summary": "iOS charting library leveraging Core Graphics for drawing beautiful visualizations.",
+        "URL": "https://github.com/danielgindi/Charts"
+      },
+      {
+        "Name": "ClockKit",
+        "Summary": "Framework for building watchOS complications that complement WatchKit interfaces.",
+        "URL": "https://developer.apple.com/documentation/clockkit"
+      },
+      {
+        "Name": "Cocos2d",
+        "Summary": "A framework for building 2D games, offering features for physics, graphics, and audio.",
+        "URL": "https://www.cocos2d-x.org/"
+      },
+      {
+        "Name": "CorePlot",
+        "Summary": "2D plotting framework built on Core Graphics for scientific charts.",
+        "URL": "https://github.com/core-plot/core-plot"
+      },
+      {
+        "Name": "Create ML",
+        "Summary": "A tool for training machine learning models directly within macOS applications, with no need for extensive coding.",
+        "URL": "https://developer.apple.com/machine-learning/create-ml/"
+      },
+      {
+        "Name": "gRPC Swift",
+        "Summary": "Server and client implementations of gRPC powered by SwiftNIO.",
+        "URL": "https://github.com/grpc/grpc-swift"
+      },
+      {
+        "Name": "Hero",
+        "Summary": "Open-source animation library for crafting complex view controller transitions on iOS.",
+        "URL": "https://github.com/HeroTransitions/Hero"
+      },
+      {
+        "Name": "MagicalRecord",
+        "Summary": "A simple, clean Core Data wrapper for iOS and OS X.",
+        "URL": "https://github.com/magicalpanda/MagicalRecord"
+      },
+      {
+        "Name": "QuartzCore",
+        "Summary": "Objective-C and Swift framework that exposes Core Animation layers and transactions.",
+        "URL": "https://developer.apple.com/documentation/quartzcore"
       },
       {
         "Name": "Realm",
-        "Summary": "Mobile database for persisting Swift objects with reactive change notifications.",
-        "URL": "https://realm.io/docs/swift/latest/"
+        "Summary": "A mobile database for iOS and macOS, offering a simple alternative to Core Data.",
+        "URL": "https://realm.io/"
+      },
+      {
+        "Name": "RxSwift",
+        "Summary": "A popular reactive programming library for Swift, providing a comprehensive set of tools for managing asynchronous data streams.",
+        "URL": "https://github.com/ReactiveX/RxSwift"
+      },
+      {
+        "Name": "SceneKit",
+        "Summary": "A high-level framework for 3D graphics, compatible with ARKit for building 3D augmented reality experiences.",
+        "URL": "https://developer.apple.com/documentation/scenekit/"
+      },
+      {
+        "Name": "Swift Argument Parser",
+        "Summary": "Official SPM package that simplifies building type-safe command-line interfaces.",
+        "URL": "https://github.com/apple/swift-argument-parser"
+      },
+      {
+        "Name": "SwiftUI",
+        "Summary": "A declarative framework for building user interfaces across all Apple platforms.",
+        "URL": "https://developer.apple.com/xcode/swiftui/"
+      },
+      {
+        "Name": "SwiftUIX",
+        "Summary": "A collection of missing SwiftUI components, extensions, and utilities.",
+        "URL": "https://github.com/SwiftUIX/SwiftUIX"
+      },
+      {
+        "Name": "The Composable Architecture",
+        "Summary": "Library for building predictable SwiftUI apps with composable state management.",
+        "URL": "https://github.com/pointfreeco/swift-composable-architecture"
+      },
+      {
+        "Name": "WatchConnectivity",
+        "Summary": "API for syncing data between watchOS apps and their paired iOS counterparts.",
+        "URL": "https://developer.apple.com/documentation/watchconnectivity"
       }
     ]
   },
@@ -172,19 +942,109 @@
     "LanguageURL": "https://kotlinlang.org/docs/home.html",
     "Libraries": [
       {
-        "Name": "Ktor",
-        "Summary": "Asynchronous framework for creating connected applications in Kotlin.",
-        "URL": "https://ktor.io/"
+        "Name": "Anko Commons",
+        "Summary": "Collection of helpers for intents, dialogs, and logging in Anko-based Android apps.",
+        "URL": "https://github.com/Kotlin/anko/tree/master/anko/library/static/commons"
       },
       {
-        "Name": "Kotlin Coroutines",
-        "Summary": "Concurrency library that simplifies asynchronous programming using structured concurrency.",
-        "URL": "https://kotlinlang.org/docs/coroutines-overview.html"
+        "Name": "Anko Layouts",
+        "Summary": "DSL module that lets you declare Android layouts directly in Kotlin code.",
+        "URL": "https://github.com/Kotlin/anko/tree/master/anko/library/static/layouts"
       },
       {
-        "Name": "Exposed",
-        "Summary": "Type-safe SQL library for Kotlin with DSL and DAO APIs.",
-        "URL": "https://github.com/JetBrains/Exposed"
+        "Name": "Arrow Fx",
+        "Summary": "A library for building asynchronous, concurrent, and reactive code using functional programming techniques.",
+        "URL": "https://arrow-kt.io/docs/arrow-fx/"
+      },
+      {
+        "Name": "Arrow Optics",
+        "Summary": "A library for working with immutable data using optics like lenses and prisms.",
+        "URL": "https://arrow-kt.io/docs/arrow-optics/"
+      },
+      {
+        "Name": "Compose Animation",
+        "Summary": "Animation toolkit modules that enhance motion and transitions in Compose for Desktop.",
+        "URL": "https://github.com/JetBrains/compose-multiplatform/tree/master/components/animation"
+      },
+      {
+        "Name": "Compose Material",
+        "Summary": "Material Design components packaged for Compose Multiplatform desktop apps.",
+        "URL": "https://github.com/JetBrains/compose-multiplatform/tree/master/components/material"
+      },
+      {
+        "Name": "Exposed DAO",
+        "Summary": "Module that offers an active-record style DAO API on top of Exposed.",
+        "URL": "https://github.com/JetBrains/Exposed/tree/master/exposed-dao"
+      },
+      {
+        "Name": "Exposed JDBC",
+        "Summary": "Core Exposed module that maps Kotlin SQL DSL queries onto JDBC drivers.",
+        "URL": "https://github.com/JetBrains/Exposed/tree/master/exposed-jdbc"
+      },
+      {
+        "Name": "Kotest Assertions",
+        "Summary": "Assertion library with matchers and inspectors used across Kotest specs.",
+        "URL": "https://kotest.io/docs/assertions/assertions.html"
+      },
+      {
+        "Name": "Kotest Property",
+        "Summary": "Property-based testing module for generating data and shrinking failures.",
+        "URL": "https://kotest.io/docs/property/property-testing.html"
+      },
+      {
+        "Name": "Kotlin Build DSL",
+        "Summary": "A Kotlin-based DSL for building Gradle build scripts.",
+        "URL": "https://docs.gradle.org/current/userguide/kotlin_dsl.html"
+      },
+      {
+        "Name": "Kotlin Multiplatform",
+        "Summary": "A feature of Kotlin Native that allows sharing code across multiple platforms (Android, iOS, JVM, etc.).",
+        "URL": "https://kotlinlang.org/docs/multiplatform.html"
+      },
+      {
+        "Name": "KotlinPoet ClassInspector",
+        "Summary": "Utility for reading classpath metadata so KotlinPoet can target existing binaries.",
+        "URL": "https://github.com/square/kotlinpoet/tree/master/kotlinpoet-classinspector"
+      },
+      {
+        "Name": "KotlinPoet Metadata",
+        "Summary": "Extension that inspects Kotlin metadata to generate source based on existing symbols.",
+        "URL": "https://github.com/square/kotlinpoet/tree/master/kotlinpoet-metadata"
+      },
+      {
+        "Name": "Kotlinx Serialization JSON",
+        "Summary": "A specific module for handling JSON serialization and deserialization in Kotlin.",
+        "URL": "https://github.com/Kotlin/kotlinx.serialization/tree/master/json"
+      },
+      {
+        "Name": "kotlinx-coroutines-core",
+        "Summary": "Core coroutine builders, scopes, and dispatchers for Kotlin applications.",
+        "URL": "https://github.com/Kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-core"
+      },
+      {
+        "Name": "kotlinx-coroutines-reactor",
+        "Summary": "Bridge module that adapts Project Reactor types to Kotlin coroutines.",
+        "URL": "https://github.com/Kotlin/kotlinx.coroutines/tree/master/reactive/kotlinx-coroutines-reactor"
+      },
+      {
+        "Name": "Ktor Client",
+        "Summary": "A client library for making HTTP requests with Kotlin, part of the Ktor framework.",
+        "URL": "https://ktor.io/docs/client.html"
+      },
+      {
+        "Name": "Ktor Features",
+        "Summary": "A set of additional libraries and tools to extend Ktor, including authentication, sessions, logging, and more.",
+        "URL": "https://ktor.io/docs/features.html"
+      },
+      {
+        "Name": "Spring Data Kotlin",
+        "Summary": "Kotlin-specific extensions for Spring Data, simplifying database interactions with Kotlin.",
+        "URL": "https://spring.io/projects/spring-data-kotlin"
+      },
+      {
+        "Name": "Spring WebFlux",
+        "Summary": "A reactive programming model for building web applications in Kotlin.",
+        "URL": "https://spring.io/projects/spring-webflux"
       }
     ]
   },
@@ -193,19 +1053,49 @@
     "LanguageURL": "https://isocpp.org/std/the-standard",
     "Libraries": [
       {
-        "Name": "Boost",
-        "Summary": "Collection of peer-reviewed libraries that extend C++ functionality across domains.",
-        "URL": "https://www.boost.org/"
+        "Name": "Boost Asio",
+        "Summary": "A cross-platform C++ library for network and low-level I/O programming.",
+        "URL": "https://www.boost.org/doc/libs/1_75_0/doc/html/boost_asio.html"
       },
       {
-        "Name": "Qt",
-        "Summary": "Cross-platform application framework for building GUIs and embedded systems.",
-        "URL": "https://www.qt.io/"
+        "Name": "Boost Filesystem",
+        "Summary": "Provides facilities for performing operations on file systems and their components, such as paths, regular files, and directories.",
+        "URL": "https://www.boost.org/doc/libs/1_75_0/doc/html/boost_filesystem.html"
       },
       {
-        "Name": "POCO C++ Libraries",
-        "Summary": "Modular C++ class libraries for building network-centric and internet applications.",
-        "URL": "https://pocoproject.org/"
+        "Name": "Eigen Core",
+        "Summary": "Provides matrix and vector operations and algorithms.",
+        "URL": "https://eigen.tuxfamily.org/dox/group__Core__Module.html"
+      },
+      {
+        "Name": "OpenCV Core",
+        "Summary": "Provides low-level data structures and functions for image and video processing, as well as matrix operations.",
+        "URL": "https://docs.opencv.org/4.x/d2/d6e/tutorial_py_geometric_transformations.html"
+      },
+      {
+        "Name": "OpenCV Imgproc",
+        "Summary": "Contains a wide variety of functions for image processing, including filters, color space conversions, and edge detection.",
+        "URL": "https://docs.opencv.org/4.x/d8/d01/tutorial_mat_operations.html"
+      },
+      {
+        "Name": "Qt Core",
+        "Summary": "Provides core functionalities like data structures, file handling, and time management in C++ applications.",
+        "URL": "https://doc.qt.io/qt-5/qtcoredoc.html"
+      },
+      {
+        "Name": "Qt Widgets",
+        "Summary": "A set of UI elements that allows developers to create desktop applications with rich graphical user interfaces.",
+        "URL": "https://doc.qt.io/qt-5/widgets-index.html"
+      },
+      {
+        "Name": "STL Algorithms",
+        "Summary": "A collection of algorithms like sort, find, and transform that can operate on STL containers.",
+        "URL": "https://en.cppreference.com/w/cpp/algorithm"
+      },
+      {
+        "Name": "STL Containers",
+        "Summary": "Provides container classes like vector, map, and set to store and manipulate data efficiently.",
+        "URL": "https://en.cppreference.com/w/cpp/container"
       }
     ]
   },
@@ -214,19 +1104,39 @@
     "LanguageURL": "https://learn.microsoft.com/en-us/dotnet/csharp/",
     "Libraries": [
       {
-        "Name": ".NET SDK",
-        "Summary": "Primary development platform for C# including the runtime, compiler, and base class libraries.",
-        "URL": "https://dotnet.microsoft.com/en-us/download"
+        "Name": "ASP.NET Core",
+        "Summary": "A cross-platform framework for building modern web applications and APIs. ASP.NET Core offers better performance and scalability over traditional ASP.NET.",
+        "URL": "https://docs.microsoft.com/en-us/aspnet/core/"
       },
       {
-        "Name": "Entity Framework Core",
-        "Summary": "Modern object-database mapper for .NET supporting LINQ queries and change tracking.",
-        "URL": "https://learn.microsoft.com/en-us/ef/core/"
+        "Name": "Blazor Server",
+        "Summary": "A server-side model where components run on the server and communicate with the client through a real-time SignalR connection.",
+        "URL": "https://docs.microsoft.com/en-us/aspnet/core/blazor/"
       },
       {
-        "Name": "NUnit",
-        "Summary": "Unit-testing framework for C# with fluent assertions and extensible runners.",
-        "URL": "https://nunit.org/"
+        "Name": "Blazor WebAssembly",
+        "Summary": "Enables client-side web applications to be written in C# using WebAssembly, bringing .NET to the browser.",
+        "URL": "https://docs.microsoft.com/en-us/aspnet/core/blazor/"
+      },
+      {
+        "Name": "EF Core",
+        "Summary": "A lightweight, cross-platform version of Entity Framework that works with .NET Core to enable developers to use databases with modern applications.",
+        "URL": "https://docs.microsoft.com/en-us/ef/core/"
+      },
+      {
+        "Name": "SignalR",
+        "Summary": "A library for adding real-time web functionality to applications, allowing server-side code to push content to clients instantly.",
+        "URL": "https://dotnet.microsoft.com/apps/aspnet/signalr"
+      },
+      {
+        "Name": "Unity Engine",
+        "Summary": "The core framework of Unity, which provides tools for game development, physics, rendering, and more.",
+        "URL": "https://docs.unity3d.com/Manual/UnityManual.html"
+      },
+      {
+        "Name": "Xamarin.Forms",
+        "Summary": "A UI toolkit for building cross-platform mobile applications with a single codebase, leveraging native controls for a seamless user experience.",
+        "URL": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/"
       }
     ]
   },
@@ -235,19 +1145,14 @@
     "LanguageURL": "https://go.dev/doc/",
     "Libraries": [
       {
-        "Name": "Gin",
-        "Summary": "High-performance HTTP web framework with a Martini-like API.",
-        "URL": "https://gin-gonic.com/"
+        "Name": "Bee",
+        "Summary": "A development tool for Beego that accelerates project scaffolding and management.",
+        "URL": "https://beego.me/docs/install/bee/"
       },
       {
         "Name": "GORM",
-        "Summary": "ORM library for Golang featuring associations, hooks, and eager loading.",
+        "Summary": "An ORM library for Go that simplifies database interactions and supports multiple database backends.",
         "URL": "https://gorm.io/"
-      },
-      {
-        "Name": "Cobra",
-        "Summary": "Library for creating modern CLI applications with automatic help and command parsing.",
-        "URL": "https://github.com/spf13/cobra"
       }
     ]
   },
@@ -256,19 +1161,14 @@
     "LanguageURL": "https://www.rust-lang.org/learn",
     "Libraries": [
       {
+        "Name": "Diesel",
+        "Summary": "A safe and extensible ORM and query builder for Rust.",
+        "URL": "https://diesel.rs/"
+      },
+      {
         "Name": "Tokio",
-        "Summary": "Asynchronous runtime for building reliable network applications in Rust.",
+        "Summary": "An asynchronous runtime for the Rust programming language, providing the building blocks for writing network applications.",
         "URL": "https://tokio.rs/"
-      },
-      {
-        "Name": "Serde",
-        "Summary": "Serialization framework supporting JSON, YAML, and many other data formats.",
-        "URL": "https://serde.rs/"
-      },
-      {
-        "Name": "Actix Web",
-        "Summary": "Powerful, pragmatic web framework built on the Actix actor system.",
-        "URL": "https://actix.rs/"
       }
     ]
   },
@@ -277,19 +1177,14 @@
     "LanguageURL": "https://www.ruby-lang.org/en/documentation/",
     "Libraries": [
       {
-        "Name": "Ruby on Rails",
-        "Summary": "Full-stack web framework emphasizing convention over configuration.",
-        "URL": "https://rubyonrails.org/"
+        "Name": "Active Record",
+        "Summary": "Rails' built-in ORM that facilitates database interactions using Ruby objects.",
+        "URL": "https://guides.rubyonrails.org/active_record_basics.html"
       },
       {
-        "Name": "Sinatra",
-        "Summary": "DSL for quickly creating web applications in Ruby with minimal effort.",
-        "URL": "http://sinatrarb.com/"
-      },
-      {
-        "Name": "Sidekiq",
-        "Summary": "Background job processor for Ruby using Redis for persistence.",
-        "URL": "https://sidekiq.org/"
+        "Name": "Rack",
+        "Summary": "A modular interface for developing web applications in Ruby, used as the foundation for Sinatra.",
+        "URL": "https://rack.github.io/"
       }
     ]
   },
@@ -298,19 +1193,34 @@
     "LanguageURL": "https://www.nasm.us/doc/",
     "Libraries": [
       {
-        "Name": "NASM",
-        "Summary": "The Netwide Assembler supporting Intel x86 architecture with rich macro capabilities.",
-        "URL": "https://www.nasm.us/"
+        "Name": "Kernel32.lib",
+        "Summary": "Windows API import library that exposes system services to MASM programs.",
+        "URL": "https://learn.microsoft.com/windows/win32/apiindex/windows-api-list"
       },
       {
-        "Name": "GAS",
-        "Summary": "The GNU Assembler used within the GNU Binutils toolchain for multiple architectures.",
-        "URL": "https://sourceware.org/binutils/docs/as/"
+        "Name": "libopcodes",
+        "Summary": "Library from GNU Binutils providing disassembly and assembly helpers for GAS workflows.",
+        "URL": "https://sourceware.org/binutils/"
       },
       {
-        "Name": "FASM",
-        "Summary": "Fast assembler providing flat memory model support and self-hosting macros.",
-        "URL": "https://flatassembler.net/"
+        "Name": "NASM Macro Library",
+        "Summary": "Curated set of reusable NASM macros for arithmetic, structures, and string handling.",
+        "URL": "https://github.com/netwide-assembler/nasm/tree/master/macro"
+      },
+      {
+        "Name": "NASMX",
+        "Summary": "High-level macro framework that streamlines Windows and Linux assembly development with NASM.",
+        "URL": "https://github.com/AllTheHaxx/nasmx"
+      },
+      {
+        "Name": "Newlib",
+        "Summary": "C standard library implementation used with GAS for embedded and bare-metal targets.",
+        "URL": "https://sourceware.org/newlib/"
+      },
+      {
+        "Name": "User32.lib",
+        "Summary": "User interface API import library for working with windows, messages, and controls in MASM.",
+        "URL": "https://learn.microsoft.com/windows/win32/api/winuser/"
       }
     ]
   },
@@ -319,19 +1229,34 @@
     "LanguageURL": "https://www.gnu.org/software/bash/manual/",
     "Libraries": [
       {
-        "Name": "Oh My Zsh",
-        "Summary": "Community-driven framework for managing zsh configuration with plugins and themes.",
-        "URL": "https://ohmyz.sh/"
+        "Name": "bash-git-prompt",
+        "Summary": "Rich Git prompt scripts that enhance Bash interactive workflows.",
+        "URL": "https://github.com/magicmonty/bash-git-prompt"
       },
       {
-        "Name": "Bash-it",
-        "Summary": "Collection of community Bash commands, aliases, completions, and themes.",
-        "URL": "https://bash-it.github.io/bash-it/"
+        "Name": "bash-preexec",
+        "Summary": "Hook framework that adds zsh-style preexec/precmd functions to Bash scripts.",
+        "URL": "https://github.com/rcaloras/bash-preexec"
       },
       {
-        "Name": "tmux",
-        "Summary": "Terminal multiplexer that lets you switch between multiple shell sessions in one window.",
-        "URL": "https://github.com/tmux/tmux"
+        "Name": "bass",
+        "Summary": "Wrapper that lets fish reuse utilities written for bash by automatically translating environment functions.",
+        "URL": "https://github.com/edc/bass"
+      },
+      {
+        "Name": "fzf.fish",
+        "Summary": "Fuzzy finder integration that adds fzf-powered history and file search to fish.",
+        "URL": "https://github.com/PatrickF1/fzf.fish"
+      },
+      {
+        "Name": "zsh-autosuggestions",
+        "Summary": "Fish-like autosuggestion plugin that predicts commands as you type.",
+        "URL": "https://github.com/zsh-users/zsh-autosuggestions"
+      },
+      {
+        "Name": "zsh-syntax-highlighting",
+        "Summary": "Highlights valid commands and flags inline to reduce mistakes in Zsh.",
+        "URL": "https://github.com/zsh-users/zsh-syntax-highlighting"
       }
     ]
   },
@@ -341,18 +1266,28 @@
     "Libraries": [
       {
         "Name": "GLib",
-        "Summary": "Low-level core library that forms the basis for projects like GTK.",
-        "URL": "https://developer.gnome.org/glib/"
+        "Summary": "A core utility library that provides data structures, event loops, and utilities used across GTK applications.",
+        "URL": "https://docs.gtk.org/glib/"
       },
       {
-        "Name": "libcurl",
-        "Summary": "Client-side URL transfer library supporting multiple protocols including HTTP, FTP, and SMTP.",
-        "URL": "https://curl.se/libcurl/"
+        "Name": "SDL_image",
+        "Summary": "An extension library that adds image loading capabilities to SDL applications.",
+        "URL": "https://www.libsdl.org/projects/SDL_image/"
       },
       {
-        "Name": "SQLite",
-        "Summary": "Self-contained, serverless SQL database engine widely embedded in applications.",
-        "URL": "https://www.sqlite.org/index.html"
+        "Name": "SDL_mixer",
+        "Summary": "A multi-channel audio mixer library for SDL.",
+        "URL": "https://www.libsdl.org/projects/SDL_mixer/"
+      },
+      {
+        "Name": "uvw",
+        "Summary": "Header-only C++ wrapper around libuv that provides a modern RAII interface.",
+        "URL": "https://github.com/skypjack/uvw"
+      },
+      {
+        "Name": "uvwasi",
+        "Summary": "WebAssembly System Interface implementation built on libuv for WASI runtimes.",
+        "URL": "https://github.com/nodejs/uvwasi"
       }
     ]
   },
@@ -361,19 +1296,29 @@
     "LanguageURL": "https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html",
     "Libraries": [
       {
-        "Name": "psycopg",
-        "Summary": "Popular PostgreSQL adapter for Python, enabling efficient database access.",
-        "URL": "https://www.psycopg.org/"
+        "Name": "InnoDB",
+        "Summary": "A default MySQL storage engine providing ACID-compliant transactions and foreign keys.",
+        "URL": "https://dev.mysql.com/doc/refman/en/innodb-storage-engine.html"
       },
       {
-        "Name": "Sequelize",
-        "Summary": "Promise-based ORM for Node.js supporting PostgreSQL, MySQL, MariaDB, SQLite, and MSSQL.",
-        "URL": "https://sequelize.org/"
+        "Name": "MySQL Connector/Python",
+        "Summary": "A pure Python driver that enables applications to interact with MySQL databases.",
+        "URL": "https://dev.mysql.com/doc/connector-python/en/"
       },
       {
-        "Name": "Knex.js",
-        "Summary": "SQL query builder for Node.js supporting multiple relational databases.",
-        "URL": "https://knexjs.org/"
+        "Name": "pgRouting",
+        "Summary": "Adds routing functionality to PostgreSQL/PostGIS databases for spatial analysis.",
+        "URL": "https://pgrouting.org/"
+      },
+      {
+        "Name": "PostGIS",
+        "Summary": "A spatial database extender for PostgreSQL that adds support for geographic objects.",
+        "URL": "https://postgis.net/"
+      },
+      {
+        "Name": "SpatiaLite",
+        "Summary": "An SQLite extension that adds spatial SQL capabilities for geospatial applications.",
+        "URL": "https://www.gaia-gis.it/fossil/libspatialite/index"
       }
     ]
   },
@@ -383,17 +1328,27 @@
     "Libraries": [
       {
         "Name": "Image Processing Toolbox",
-        "Summary": "Algorithms and tools for image processing, analysis, and visualization in MATLAB.",
+        "Summary": "Functions and apps for image analysis, visualization, and algorithm development.",
         "URL": "https://www.mathworks.com/products/image.html"
       },
       {
-        "Name": "Signal Processing Toolbox",
-        "Summary": "Provides functions and apps to analyze, preprocess, and extract features from signals.",
-        "URL": "https://www.mathworks.com/products/signal.html"
+        "Name": "MATLAB Compiler SDK",
+        "Summary": "Enables packaging MATLAB programs as software components for integration with enterprise applications.",
+        "URL": "https://www.mathworks.com/products/matlab-compiler-sdk.html"
+      },
+      {
+        "Name": "Simscape",
+        "Summary": "A set of physical modeling components for Simulink that represent mechanical, electrical, and hydraulic systems.",
+        "URL": "https://www.mathworks.com/products/simscape.html"
+      },
+      {
+        "Name": "Stateflow",
+        "Summary": "A library for modeling state machines and control logic within Simulink models.",
+        "URL": "https://www.mathworks.com/products/stateflow.html"
       },
       {
         "Name": "Statistics and Machine Learning Toolbox",
-        "Summary": "Offers functions for descriptive statistics, predictive modeling, and machine learning workflows.",
+        "Summary": "Provides algorithms and apps for descriptive statistics, predictive modeling, and machine learning.",
         "URL": "https://www.mathworks.com/products/statistics.html"
       }
     ]
@@ -403,19 +1358,24 @@
     "LanguageURL": "https://perldoc.perl.org/",
     "Libraries": [
       {
-        "Name": "Moose",
-        "Summary": "Postmodern object system for Perl 5 with roles, type constraints, and declarative syntax.",
-        "URL": "https://metacpan.org/pod/Moose"
+        "Name": "DBIx::Class",
+        "Summary": "An extensible ORM for Perl applications that integrates seamlessly with Catalyst.",
+        "URL": "https://metacpan.org/pod/DBIx::Class"
       },
       {
-        "Name": "DBI",
-        "Summary": "Database-independent interface for interacting with SQL databases from Perl.",
-        "URL": "https://metacpan.org/pod/DBI"
+        "Name": "Minion",
+        "Summary": "A job queue system bundled with Mojolicious for running background tasks.",
+        "URL": "https://metacpan.org/pod/Minion"
       },
       {
-        "Name": "Catalyst",
-        "Summary": "MVC web application framework for Perl designed for rapid development.",
-        "URL": "https://www.catalystframework.org/"
+        "Name": "Template Toolkit",
+        "Summary": "A powerful templating system frequently paired with Catalyst for view rendering.",
+        "URL": "https://metacpan.org/pod/Template"
+      },
+      {
+        "Name": "Template::Tiny",
+        "Summary": "A minimal templating engine commonly used with Dancer2 for rendering views.",
+        "URL": "https://metacpan.org/pod/Template::Tiny"
       }
     ]
   },
@@ -424,19 +1384,19 @@
     "LanguageURL": "https://www.haskell.org/documentation/",
     "Libraries": [
       {
-        "Name": "Yesod",
-        "Summary": "Type-safe, RESTful web framework for rapidly developing Haskell web applications.",
-        "URL": "https://www.yesodweb.com/"
+        "Name": "Persistent",
+        "Summary": "A type-safe database access library integrated with Yesod.",
+        "URL": "https://www.yesodweb.com/book/persistent"
       },
       {
-        "Name": "lens",
-        "Summary": "Powerful abstractions for functional references, traversals, and optic combinators.",
-        "URL": "https://hackage.haskell.org/package/lens"
+        "Name": "servant-client",
+        "Summary": "Generates type-safe Haskell clients from Servant API definitions.",
+        "URL": "https://hackage.haskell.org/package/servant-client"
       },
       {
-        "Name": "aeson",
-        "Summary": "Fast JSON parsing and encoding library leveraging Haskell’s type system.",
-        "URL": "https://hackage.haskell.org/package/aeson"
+        "Name": "wai",
+        "Summary": "The Web Application Interface library powering Scotty and other Haskell web frameworks.",
+        "URL": "https://hackage.haskell.org/package/wai"
       }
     ]
   },
@@ -445,19 +1405,19 @@
     "LanguageURL": "https://www.lua.org/docs.html",
     "Libraries": [
       {
-        "Name": "LÖVE",
-        "Summary": "2D game framework that makes it easy to build games using Lua.",
-        "URL": "https://love2d.org/"
+        "Name": "Defold Asset Portal",
+        "Summary": "A curated collection of reusable Lua assets and extensions for Defold projects.",
+        "URL": "https://defold.com/assets/"
       },
       {
-        "Name": "OpenResty",
-        "Summary": "Full-fledged web platform integrating NGINX and LuaJIT for scalable web apps.",
-        "URL": "https://openresty.org/"
+        "Name": "HUMP",
+        "Summary": "A collection of helper modules for LÖVE that provide gamedev utilities like vector math and cameras.",
+        "URL": "https://hump.readthedocs.io/en/latest/"
       },
       {
-        "Name": "LuaRocks",
-        "Summary": "Package manager for Lua modules with a vast ecosystem of extensions.",
-        "URL": "https://luarocks.org/"
+        "Name": "lua-resty-core",
+        "Summary": "A collection of Lua libraries optimized for OpenResty applications.",
+        "URL": "https://github.com/openresty/lua-resty-core"
       }
     ]
   },
@@ -466,19 +1426,29 @@
     "LanguageURL": "https://docs.scala-lang.org/",
     "Libraries": [
       {
-        "Name": "Akka",
-        "Summary": "Toolkit and runtime for building concurrent, distributed applications on the JVM.",
-        "URL": "https://akka.io/"
+        "Name": "Akka HTTP",
+        "Summary": "A library for building RESTful services on top of Akka streams and actors.",
+        "URL": "https://doc.akka.io/docs/akka-http/current/index.html"
       },
       {
-        "Name": "Play Framework",
-        "Summary": "Reactive web application framework for Scala and Java with hot-reload capabilities.",
-        "URL": "https://www.playframework.com/"
+        "Name": "Akka Streams",
+        "Summary": "Provides a Reactive Streams implementation for processing data asynchronously.",
+        "URL": "https://doc.akka.io/docs/akka/current/stream/index.html"
       },
       {
-        "Name": "Cats",
-        "Summary": "Abstraction library providing functional programming patterns and type classes for Scala.",
-        "URL": "https://typelevel.org/cats/"
+        "Name": "Anorm",
+        "Summary": "A simple data access library for Play applications interacting with relational databases.",
+        "URL": "https://playframework.com/documentation/latest/Anorm"
+      },
+      {
+        "Name": "MLlib",
+        "Summary": "A scalable machine learning library built on Spark.",
+        "URL": "https://spark.apache.org/mllib/"
+      },
+      {
+        "Name": "Spark SQL",
+        "Summary": "Provides structured data processing with DataFrame and Dataset APIs.",
+        "URL": "https://spark.apache.org/sql/"
       }
     ]
   },
@@ -487,19 +1457,24 @@
     "LanguageURL": "https://sass-lang.com/documentation",
     "Libraries": [
       {
-        "Name": "Compass",
-        "Summary": "Open-source Sass authoring framework that provides mixins and reusable patterns.",
-        "URL": "http://compass-style.org/"
+        "Name": "Blueprint",
+        "Summary": "A Compass-based CSS framework offering grids and typography helpers.",
+        "URL": "https://github.com/joshuaclayton/blueprint-css"
       },
       {
-        "Name": "Bourbon",
-        "Summary": "Lightweight Sass toolset offering mixins and functions for cleaner stylesheets.",
-        "URL": "https://www.bourbon.io/"
+        "Name": "Breakpoint",
+        "Summary": "Media query helper library that pairs with Susy for responsive Sass grids.",
+        "URL": "https://github.com/at-import/breakpoint"
       },
       {
-        "Name": "Susy",
-        "Summary": "Responsive layout toolkit built on Sass for creating custom grids.",
-        "URL": "https://www.oddbird.net/susy/"
+        "Name": "Neat",
+        "Summary": "A semantic grid framework built on top of Bourbon.",
+        "URL": "https://neat.bourbon.io/"
+      },
+      {
+        "Name": "Sassy Maps",
+        "Summary": "Utility collection for using Sass maps that complements Susy's grid mixins.",
+        "URL": "https://github.com/at-import/Sassy-Maps"
       }
     ]
   },
@@ -508,19 +1483,19 @@
     "LanguageURL": "https://lesscss.org/usage/",
     "Libraries": [
       {
+        "Name": "Bootswatch",
+        "Summary": "Theme library that customizes Bootstrap's LESS variables to create new looks.",
+        "URL": "https://bootswatch.com/3/"
+      },
+      {
+        "Name": "Fomantic-UI",
+        "Summary": "A community-driven fork of Semantic UI that continues maintaining the LESS codebase.",
+        "URL": "https://fomantic-ui.com/"
+      },
+      {
         "Name": "Less Hat",
-        "Summary": "Utility mixin library that speeds up LESS stylesheet authoring.",
-        "URL": "https://lesshat.madebysource.com/"
-      },
-      {
-        "Name": "UIkit",
-        "Summary": "Modular front-end framework built with LESS and Sass for creating modern web interfaces.",
-        "URL": "https://getuikit.com/"
-      },
-      {
-        "Name": "Semantic UI",
-        "Summary": "Design framework leveraging human-friendly HTML with theming powered by LESS.",
-        "URL": "https://semantic-ui.com/"
+        "Summary": "A mixin library that provides vendor-prefixed helpers and shortcuts for LESS projects.",
+        "URL": "https://github.com/madebysource/lesshat"
       }
     ]
   },
@@ -529,19 +1504,24 @@
     "LanguageURL": "https://dart.dev/guides",
     "Libraries": [
       {
-        "Name": "Flutter",
-        "Summary": "UI toolkit for building natively compiled applications from a single codebase.",
-        "URL": "https://flutter.dev/"
+        "Name": "Angular Components",
+        "Summary": "A material design component library for AngularDart applications.",
+        "URL": "https://pub.dev/packages/angular_components"
       },
       {
-        "Name": "AngularDart",
-        "Summary": "Web app framework that brings Angular’s component model to Dart.",
-        "URL": "https://angulardart.dev/"
+        "Name": "bloc",
+        "Summary": "Implements the BLoC pattern to separate business logic from presentation in Flutter apps.",
+        "URL": "https://pub.dev/packages/bloc"
       },
       {
-        "Name": "Shelf",
-        "Summary": "Middleware-based web server framework for building REST APIs in Dart.",
-        "URL": "https://pub.dev/packages/shelf"
+        "Name": "Provider",
+        "Summary": "A recommended Flutter library for managing state using InheritedWidgets under the hood.",
+        "URL": "https://pub.dev/packages/provider"
+      },
+      {
+        "Name": "shelf_router",
+        "Summary": "Adds declarative routing APIs to Shelf-based servers.",
+        "URL": "https://pub.dev/packages/shelf_router"
       }
     ]
   },
@@ -550,19 +1530,24 @@
     "LanguageURL": "https://elixir-lang.org/docs.html",
     "Libraries": [
       {
-        "Name": "Phoenix",
-        "Summary": "Productive web framework leveraging Elixir’s concurrency and fault-tolerance.",
-        "URL": "https://www.phoenixframework.org/"
+        "Name": "Absinthe Relay",
+        "Summary": "Helpers for building Relay-compliant GraphQL APIs in Elixir.",
+        "URL": "https://hexdocs.pm/absinthe_relay/"
       },
       {
         "Name": "Ecto",
-        "Summary": "Database wrapper and query language for Elixir with migrations and changesets.",
+        "Summary": "A database wrapper and query generator for Elixir applications, tightly integrated with Phoenix.",
         "URL": "https://hexdocs.pm/ecto/Ecto.html"
       },
       {
-        "Name": "Absinthe",
-        "Summary": "GraphQL toolkit for building APIs with Elixir and Phoenix.",
-        "URL": "https://absinthe-graphql.org/"
+        "Name": "Phoenix LiveView",
+        "Summary": "Enables rich, real-time user experiences with server-rendered HTML updated over websockets.",
+        "URL": "https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html"
+      },
+      {
+        "Name": "VintageNet",
+        "Summary": "Networking utilities for Nerves devices supporting Ethernet, Wi-Fi, and cellular.",
+        "URL": "https://hexdocs.pm/vintage_net/VintageNet.html"
       }
     ]
   },
@@ -571,18 +1556,33 @@
     "LanguageURL": "https://www.typescriptlang.org/docs/",
     "Libraries": [
       {
-        "Name": "Angular",
-        "Summary": "Platform for building scalable web applications with TypeScript-first tooling.",
-        "URL": "https://angular.dev/"
+        "Name": "Class Validator",
+        "Summary": "Decorator-based validation library integrated with NestJS DTOs.",
+        "URL": "https://github.com/typestack/class-validator"
       },
       {
-        "Name": "NestJS",
-        "Summary": "Progressive Node.js framework for building efficient server-side applications in TypeScript.",
-        "URL": "https://nestjs.com/"
+        "Name": "next-auth",
+        "Summary": "Authentication for Next.js applications with built-in TypeScript definitions.",
+        "URL": "https://next-auth.js.org/"
+      },
+      {
+        "Name": "NgRx",
+        "Summary": "Reactive state management inspired by Redux for Angular applications.",
+        "URL": "https://ngrx.io/"
+      },
+      {
+        "Name": "RxJS",
+        "Summary": "A reactive programming library for composing asynchronous and event-based programs in Angular.",
+        "URL": "https://rxjs.dev/"
+      },
+      {
+        "Name": "SWR",
+        "Summary": "A data fetching library from Vercel that works seamlessly with TypeScript and React.",
+        "URL": "https://swr.vercel.app/"
       },
       {
         "Name": "TypeORM",
-        "Summary": "Data-mapper ORM for TypeScript and JavaScript supporting Active Record and Data Mapper patterns.",
+        "Summary": "An ORM that supports TypeScript decorators for defining models and relations used in NestJS apps.",
         "URL": "https://typeorm.io/"
       }
     ]
