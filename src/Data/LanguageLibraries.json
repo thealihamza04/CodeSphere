@@ -1,0 +1,590 @@
+[
+  {
+    "Language": "HTML",
+    "LanguageURL": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "Libraries": [
+      {
+        "Name": "Modernizr",
+        "Summary": "Detects HTML5 and CSS3 features in the user’s browser so you can gracefully handle unsupported capabilities.",
+        "URL": "https://modernizr.com/"
+      },
+      {
+        "Name": "HTML5 Boilerplate",
+        "Summary": "A professional HTML/CSS/JS template that jump-starts modern, performant websites.",
+        "URL": "https://html5boilerplate.com/"
+      },
+      {
+        "Name": "Normalize.css",
+        "Summary": "Provides cross-browser consistency by resetting default HTML element styles.",
+        "URL": "https://necolas.github.io/normalize.css/"
+      }
+    ]
+  },
+  {
+    "Language": "CSS",
+    "LanguageURL": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "Libraries": [
+      {
+        "Name": "Tailwind CSS",
+        "Summary": "Utility-first CSS framework for rapidly building custom designs without leaving your HTML.",
+        "URL": "https://tailwindcss.com/"
+      },
+      {
+        "Name": "Bulma",
+        "Summary": "A modern CSS framework based on Flexbox with ready-to-use components.",
+        "URL": "https://bulma.io/"
+      },
+      {
+        "Name": "Animate.css",
+        "Summary": "Curated CSS animations that you can drop into projects to emphasize interactions.",
+        "URL": "https://animate.style/"
+      }
+    ]
+  },
+  {
+    "Language": "JavaScript",
+    "LanguageURL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "Libraries": [
+      {
+        "Name": "React",
+        "Summary": "Component-based library for building interactive user interfaces and single-page applications.",
+        "URL": "https://react.dev/"
+      },
+      {
+        "Name": "Lodash",
+        "Summary": "Utility library delivering modular helpers for arrays, objects, and functional patterns.",
+        "URL": "https://lodash.com/"
+      },
+      {
+        "Name": "Axios",
+        "Summary": "Promise-based HTTP client for browsers and Node.js with a clean, intuitive API.",
+        "URL": "https://axios-http.com/"
+      }
+    ]
+  },
+  {
+    "Language": "Python",
+    "LanguageURL": "https://www.python.org/doc/",
+    "Libraries": [
+      {
+        "Name": "Requests",
+        "Summary": "Elegant HTTP library for Python that simplifies making web requests.",
+        "URL": "https://requests.readthedocs.io/"
+      },
+      {
+        "Name": "NumPy",
+        "Summary": "Fundamental package for scientific computing with support for large, multi-dimensional arrays.",
+        "URL": "https://numpy.org/"
+      },
+      {
+        "Name": "Django",
+        "Summary": "High-level web framework that encourages rapid development and clean, pragmatic design.",
+        "URL": "https://www.djangoproject.com/"
+      }
+    ]
+  },
+  {
+    "Language": "Java",
+    "LanguageURL": "https://docs.oracle.com/en/java/",
+    "Libraries": [
+      {
+        "Name": "Spring Framework",
+        "Summary": "Comprehensive programming and configuration model for building Java applications.",
+        "URL": "https://spring.io/projects/spring-framework"
+      },
+      {
+        "Name": "Hibernate ORM",
+        "Summary": "Object-relational mapping library that simplifies persistence for Java applications.",
+        "URL": "https://hibernate.org/orm/"
+      },
+      {
+        "Name": "JUnit",
+        "Summary": "Unit testing framework that underpins test-driven development in the Java ecosystem.",
+        "URL": "https://junit.org/junit5/"
+      }
+    ]
+  },
+  {
+    "Language": "PHP",
+    "LanguageURL": "https://www.php.net/manual/en/",
+    "Libraries": [
+      {
+        "Name": "Laravel",
+        "Summary": "Expressive PHP framework offering routing, ORM, templating, and developer-friendly tooling.",
+        "URL": "https://laravel.com/"
+      },
+      {
+        "Name": "Symfony",
+        "Summary": "Modular component library and framework for building robust PHP applications.",
+        "URL": "https://symfony.com/"
+      },
+      {
+        "Name": "Guzzle",
+        "Summary": "HTTP client for sending requests with PSR-7 support and middleware architecture.",
+        "URL": "https://docs.guzzlephp.org/"
+      }
+    ]
+  },
+  {
+    "Language": "R",
+    "LanguageURL": "https://cran.r-project.org/manuals.html",
+    "Libraries": [
+      {
+        "Name": "ggplot2",
+        "Summary": "Data visualization package based on the grammar of graphics, enabling complex plots with concise syntax.",
+        "URL": "https://ggplot2.tidyverse.org/"
+      },
+      {
+        "Name": "dplyr",
+        "Summary": "Grammar of data manipulation providing verbs for transforming data frames efficiently.",
+        "URL": "https://dplyr.tidyverse.org/"
+      },
+      {
+        "Name": "Shiny",
+        "Summary": "Framework for building interactive web applications directly from R scripts.",
+        "URL": "https://shiny.posit.co/"
+      }
+    ]
+  },
+  {
+    "Language": "Swift",
+    "LanguageURL": "https://developer.apple.com/swift/",
+    "Libraries": [
+      {
+        "Name": "Alamofire",
+        "Summary": "HTTP networking library wrapping URLSession with chainable request/response APIs.",
+        "URL": "https://alamofire.org/"
+      },
+      {
+        "Name": "SwiftUI",
+        "Summary": "Declarative UI framework from Apple for building apps across all Apple platforms.",
+        "URL": "https://developer.apple.com/xcode/swiftui/"
+      },
+      {
+        "Name": "Realm",
+        "Summary": "Mobile database for persisting Swift objects with reactive change notifications.",
+        "URL": "https://realm.io/docs/swift/latest/"
+      }
+    ]
+  },
+  {
+    "Language": "Kotlin",
+    "LanguageURL": "https://kotlinlang.org/docs/home.html",
+    "Libraries": [
+      {
+        "Name": "Ktor",
+        "Summary": "Asynchronous framework for creating connected applications in Kotlin.",
+        "URL": "https://ktor.io/"
+      },
+      {
+        "Name": "Kotlin Coroutines",
+        "Summary": "Concurrency library that simplifies asynchronous programming using structured concurrency.",
+        "URL": "https://kotlinlang.org/docs/coroutines-overview.html"
+      },
+      {
+        "Name": "Exposed",
+        "Summary": "Type-safe SQL library for Kotlin with DSL and DAO APIs.",
+        "URL": "https://github.com/JetBrains/Exposed"
+      }
+    ]
+  },
+  {
+    "Language": "C++",
+    "LanguageURL": "https://isocpp.org/std/the-standard",
+    "Libraries": [
+      {
+        "Name": "Boost",
+        "Summary": "Collection of peer-reviewed libraries that extend C++ functionality across domains.",
+        "URL": "https://www.boost.org/"
+      },
+      {
+        "Name": "Qt",
+        "Summary": "Cross-platform application framework for building GUIs and embedded systems.",
+        "URL": "https://www.qt.io/"
+      },
+      {
+        "Name": "POCO C++ Libraries",
+        "Summary": "Modular C++ class libraries for building network-centric and internet applications.",
+        "URL": "https://pocoproject.org/"
+      }
+    ]
+  },
+  {
+    "Language": "C#",
+    "LanguageURL": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "Libraries": [
+      {
+        "Name": ".NET SDK",
+        "Summary": "Primary development platform for C# including the runtime, compiler, and base class libraries.",
+        "URL": "https://dotnet.microsoft.com/en-us/download"
+      },
+      {
+        "Name": "Entity Framework Core",
+        "Summary": "Modern object-database mapper for .NET supporting LINQ queries and change tracking.",
+        "URL": "https://learn.microsoft.com/en-us/ef/core/"
+      },
+      {
+        "Name": "NUnit",
+        "Summary": "Unit-testing framework for C# with fluent assertions and extensible runners.",
+        "URL": "https://nunit.org/"
+      }
+    ]
+  },
+  {
+    "Language": "Go",
+    "LanguageURL": "https://go.dev/doc/",
+    "Libraries": [
+      {
+        "Name": "Gin",
+        "Summary": "High-performance HTTP web framework with a Martini-like API.",
+        "URL": "https://gin-gonic.com/"
+      },
+      {
+        "Name": "GORM",
+        "Summary": "ORM library for Golang featuring associations, hooks, and eager loading.",
+        "URL": "https://gorm.io/"
+      },
+      {
+        "Name": "Cobra",
+        "Summary": "Library for creating modern CLI applications with automatic help and command parsing.",
+        "URL": "https://github.com/spf13/cobra"
+      }
+    ]
+  },
+  {
+    "Language": "Rust",
+    "LanguageURL": "https://www.rust-lang.org/learn",
+    "Libraries": [
+      {
+        "Name": "Tokio",
+        "Summary": "Asynchronous runtime for building reliable network applications in Rust.",
+        "URL": "https://tokio.rs/"
+      },
+      {
+        "Name": "Serde",
+        "Summary": "Serialization framework supporting JSON, YAML, and many other data formats.",
+        "URL": "https://serde.rs/"
+      },
+      {
+        "Name": "Actix Web",
+        "Summary": "Powerful, pragmatic web framework built on the Actix actor system.",
+        "URL": "https://actix.rs/"
+      }
+    ]
+  },
+  {
+    "Language": "Ruby",
+    "LanguageURL": "https://www.ruby-lang.org/en/documentation/",
+    "Libraries": [
+      {
+        "Name": "Ruby on Rails",
+        "Summary": "Full-stack web framework emphasizing convention over configuration.",
+        "URL": "https://rubyonrails.org/"
+      },
+      {
+        "Name": "Sinatra",
+        "Summary": "DSL for quickly creating web applications in Ruby with minimal effort.",
+        "URL": "http://sinatrarb.com/"
+      },
+      {
+        "Name": "Sidekiq",
+        "Summary": "Background job processor for Ruby using Redis for persistence.",
+        "URL": "https://sidekiq.org/"
+      }
+    ]
+  },
+  {
+    "Language": "Assembly",
+    "LanguageURL": "https://www.nasm.us/doc/",
+    "Libraries": [
+      {
+        "Name": "NASM",
+        "Summary": "The Netwide Assembler supporting Intel x86 architecture with rich macro capabilities.",
+        "URL": "https://www.nasm.us/"
+      },
+      {
+        "Name": "GAS",
+        "Summary": "The GNU Assembler used within the GNU Binutils toolchain for multiple architectures.",
+        "URL": "https://sourceware.org/binutils/docs/as/"
+      },
+      {
+        "Name": "FASM",
+        "Summary": "Fast assembler providing flat memory model support and self-hosting macros.",
+        "URL": "https://flatassembler.net/"
+      }
+    ]
+  },
+  {
+    "Language": "Shell",
+    "LanguageURL": "https://www.gnu.org/software/bash/manual/",
+    "Libraries": [
+      {
+        "Name": "Oh My Zsh",
+        "Summary": "Community-driven framework for managing zsh configuration with plugins and themes.",
+        "URL": "https://ohmyz.sh/"
+      },
+      {
+        "Name": "Bash-it",
+        "Summary": "Collection of community Bash commands, aliases, completions, and themes.",
+        "URL": "https://bash-it.github.io/bash-it/"
+      },
+      {
+        "Name": "tmux",
+        "Summary": "Terminal multiplexer that lets you switch between multiple shell sessions in one window.",
+        "URL": "https://github.com/tmux/tmux"
+      }
+    ]
+  },
+  {
+    "Language": "C",
+    "LanguageURL": "https://en.cppreference.com/w/c",
+    "Libraries": [
+      {
+        "Name": "GLib",
+        "Summary": "Low-level core library that forms the basis for projects like GTK.",
+        "URL": "https://developer.gnome.org/glib/"
+      },
+      {
+        "Name": "libcurl",
+        "Summary": "Client-side URL transfer library supporting multiple protocols including HTTP, FTP, and SMTP.",
+        "URL": "https://curl.se/libcurl/"
+      },
+      {
+        "Name": "SQLite",
+        "Summary": "Self-contained, serverless SQL database engine widely embedded in applications.",
+        "URL": "https://www.sqlite.org/index.html"
+      }
+    ]
+  },
+  {
+    "Language": "SQL",
+    "LanguageURL": "https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html",
+    "Libraries": [
+      {
+        "Name": "psycopg",
+        "Summary": "Popular PostgreSQL adapter for Python, enabling efficient database access.",
+        "URL": "https://www.psycopg.org/"
+      },
+      {
+        "Name": "Sequelize",
+        "Summary": "Promise-based ORM for Node.js supporting PostgreSQL, MySQL, MariaDB, SQLite, and MSSQL.",
+        "URL": "https://sequelize.org/"
+      },
+      {
+        "Name": "Knex.js",
+        "Summary": "SQL query builder for Node.js supporting multiple relational databases.",
+        "URL": "https://knexjs.org/"
+      }
+    ]
+  },
+  {
+    "Language": "MATLAB",
+    "LanguageURL": "https://www.mathworks.com/help/matlab/",
+    "Libraries": [
+      {
+        "Name": "Image Processing Toolbox",
+        "Summary": "Algorithms and tools for image processing, analysis, and visualization in MATLAB.",
+        "URL": "https://www.mathworks.com/products/image.html"
+      },
+      {
+        "Name": "Signal Processing Toolbox",
+        "Summary": "Provides functions and apps to analyze, preprocess, and extract features from signals.",
+        "URL": "https://www.mathworks.com/products/signal.html"
+      },
+      {
+        "Name": "Statistics and Machine Learning Toolbox",
+        "Summary": "Offers functions for descriptive statistics, predictive modeling, and machine learning workflows.",
+        "URL": "https://www.mathworks.com/products/statistics.html"
+      }
+    ]
+  },
+  {
+    "Language": "Perl",
+    "LanguageURL": "https://perldoc.perl.org/",
+    "Libraries": [
+      {
+        "Name": "Moose",
+        "Summary": "Postmodern object system for Perl 5 with roles, type constraints, and declarative syntax.",
+        "URL": "https://metacpan.org/pod/Moose"
+      },
+      {
+        "Name": "DBI",
+        "Summary": "Database-independent interface for interacting with SQL databases from Perl.",
+        "URL": "https://metacpan.org/pod/DBI"
+      },
+      {
+        "Name": "Catalyst",
+        "Summary": "MVC web application framework for Perl designed for rapid development.",
+        "URL": "https://www.catalystframework.org/"
+      }
+    ]
+  },
+  {
+    "Language": "Haskell",
+    "LanguageURL": "https://www.haskell.org/documentation/",
+    "Libraries": [
+      {
+        "Name": "Yesod",
+        "Summary": "Type-safe, RESTful web framework for rapidly developing Haskell web applications.",
+        "URL": "https://www.yesodweb.com/"
+      },
+      {
+        "Name": "lens",
+        "Summary": "Powerful abstractions for functional references, traversals, and optic combinators.",
+        "URL": "https://hackage.haskell.org/package/lens"
+      },
+      {
+        "Name": "aeson",
+        "Summary": "Fast JSON parsing and encoding library leveraging Haskell’s type system.",
+        "URL": "https://hackage.haskell.org/package/aeson"
+      }
+    ]
+  },
+  {
+    "Language": "Lua",
+    "LanguageURL": "https://www.lua.org/docs.html",
+    "Libraries": [
+      {
+        "Name": "LÖVE",
+        "Summary": "2D game framework that makes it easy to build games using Lua.",
+        "URL": "https://love2d.org/"
+      },
+      {
+        "Name": "OpenResty",
+        "Summary": "Full-fledged web platform integrating NGINX and LuaJIT for scalable web apps.",
+        "URL": "https://openresty.org/"
+      },
+      {
+        "Name": "LuaRocks",
+        "Summary": "Package manager for Lua modules with a vast ecosystem of extensions.",
+        "URL": "https://luarocks.org/"
+      }
+    ]
+  },
+  {
+    "Language": "Scala",
+    "LanguageURL": "https://docs.scala-lang.org/",
+    "Libraries": [
+      {
+        "Name": "Akka",
+        "Summary": "Toolkit and runtime for building concurrent, distributed applications on the JVM.",
+        "URL": "https://akka.io/"
+      },
+      {
+        "Name": "Play Framework",
+        "Summary": "Reactive web application framework for Scala and Java with hot-reload capabilities.",
+        "URL": "https://www.playframework.com/"
+      },
+      {
+        "Name": "Cats",
+        "Summary": "Abstraction library providing functional programming patterns and type classes for Scala.",
+        "URL": "https://typelevel.org/cats/"
+      }
+    ]
+  },
+  {
+    "Language": "SASS",
+    "LanguageURL": "https://sass-lang.com/documentation",
+    "Libraries": [
+      {
+        "Name": "Compass",
+        "Summary": "Open-source Sass authoring framework that provides mixins and reusable patterns.",
+        "URL": "http://compass-style.org/"
+      },
+      {
+        "Name": "Bourbon",
+        "Summary": "Lightweight Sass toolset offering mixins and functions for cleaner stylesheets.",
+        "URL": "https://www.bourbon.io/"
+      },
+      {
+        "Name": "Susy",
+        "Summary": "Responsive layout toolkit built on Sass for creating custom grids.",
+        "URL": "https://www.oddbird.net/susy/"
+      }
+    ]
+  },
+  {
+    "Language": "LESS",
+    "LanguageURL": "https://lesscss.org/usage/",
+    "Libraries": [
+      {
+        "Name": "Less Hat",
+        "Summary": "Utility mixin library that speeds up LESS stylesheet authoring.",
+        "URL": "https://lesshat.madebysource.com/"
+      },
+      {
+        "Name": "UIkit",
+        "Summary": "Modular front-end framework built with LESS and Sass for creating modern web interfaces.",
+        "URL": "https://getuikit.com/"
+      },
+      {
+        "Name": "Semantic UI",
+        "Summary": "Design framework leveraging human-friendly HTML with theming powered by LESS.",
+        "URL": "https://semantic-ui.com/"
+      }
+    ]
+  },
+  {
+    "Language": "Dart",
+    "LanguageURL": "https://dart.dev/guides",
+    "Libraries": [
+      {
+        "Name": "Flutter",
+        "Summary": "UI toolkit for building natively compiled applications from a single codebase.",
+        "URL": "https://flutter.dev/"
+      },
+      {
+        "Name": "AngularDart",
+        "Summary": "Web app framework that brings Angular’s component model to Dart.",
+        "URL": "https://angulardart.dev/"
+      },
+      {
+        "Name": "Shelf",
+        "Summary": "Middleware-based web server framework for building REST APIs in Dart.",
+        "URL": "https://pub.dev/packages/shelf"
+      }
+    ]
+  },
+  {
+    "Language": "Elixir",
+    "LanguageURL": "https://elixir-lang.org/docs.html",
+    "Libraries": [
+      {
+        "Name": "Phoenix",
+        "Summary": "Productive web framework leveraging Elixir’s concurrency and fault-tolerance.",
+        "URL": "https://www.phoenixframework.org/"
+      },
+      {
+        "Name": "Ecto",
+        "Summary": "Database wrapper and query language for Elixir with migrations and changesets.",
+        "URL": "https://hexdocs.pm/ecto/Ecto.html"
+      },
+      {
+        "Name": "Absinthe",
+        "Summary": "GraphQL toolkit for building APIs with Elixir and Phoenix.",
+        "URL": "https://absinthe-graphql.org/"
+      }
+    ]
+  },
+  {
+    "Language": "TypeScript",
+    "LanguageURL": "https://www.typescriptlang.org/docs/",
+    "Libraries": [
+      {
+        "Name": "Angular",
+        "Summary": "Platform for building scalable web applications with TypeScript-first tooling.",
+        "URL": "https://angular.dev/"
+      },
+      {
+        "Name": "NestJS",
+        "Summary": "Progressive Node.js framework for building efficient server-side applications in TypeScript.",
+        "URL": "https://nestjs.com/"
+      },
+      {
+        "Name": "TypeORM",
+        "Summary": "Data-mapper ORM for TypeScript and JavaScript supporting Active Record and Data Mapper patterns.",
+        "URL": "https://typeorm.io/"
+      }
+    ]
+  }
+]

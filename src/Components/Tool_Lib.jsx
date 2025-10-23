@@ -95,10 +95,6 @@ const Tool_Lib = () => {
 
   const heroTitle = frameworkDetails?.Framework || decodedFrameworkName || "Framework";
   const heroDescription = frameworkDetails?.Summary || (isTools ? defaultToolDef : defaultLibDef);
-  const heroSupplementary = isTools
-    ? `Explore tools that empower ${heroTitle} developers.`
-    : `Discover libraries that extend ${heroTitle}.`;
-
   const canonicalUrl = `https://codes-sphere.vercel.app/Frameworks/${encodeURIComponent(
     frameworkName
   )}/${type}`;

@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import List from "../Data/JS.json";
+import LibrariesByLanguage from "../Data/LanguageLibraries.json";
 import LanCard from "./cards/LanCard";
 import useSEO from "./Hooks/useSEO";
 
@@ -36,6 +37,22 @@ const Languages = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
+  const languagesWithLibraries = useMemo(() => {
+    const libraryMap = new Map(
+      LibrariesByLanguage.map((entry) => [entry.Language.toLowerCase(), entry])
+    );
+
+    return List.map((language) => {
+      const match = libraryMap.get(language.Language.toLowerCase());
+
+      return {
+        ...language,
+        LanguageURL: match?.LanguageURL ?? "",
+        Libraries: match?.Libraries ?? [],
+      };
+    });
+  }, []);
+
   const def =
     "A programming language is a formal set of instructions that allows developers to communicate with computers to create software applications, scripts, or other tools. It provides the syntax and semantics for writing code that can perform specific tasks, manipulate data, and control hardware. Examples of programming languages include Python, Java, C++, and JavaScript, each with its own features, use cases, and paradigms.";
 
@@ -55,12 +72,14 @@ const Languages = () => {
 
       {/* Language Cards */}
       <div className='flex flex-wrap items-center justify-center gap-6 px-4 pb-10 md:px-10 lg:px-8'>
-        {List.map((Language, index) => (
+        {languagesWithLibraries.map((Language, index) => (
           <LanCard
             key={index}
             Title={Language.Language}
             Summary={Language.Summary}
             Details={Language.More}
+            Libraries={Language.Libraries}
+            LanguageURL={Language.LanguageURL}
           />
         ))}
       </div>
