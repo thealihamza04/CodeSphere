@@ -527,6 +527,11 @@
         "URL": "https://flask-sqlalchemy.palletsprojects.com/"
       },
       {
+        "Name": "Flask-RESTful",
+        "Summary": "An extension for Flask that adds support for quickly building REST APIs.",
+        "URL": "https://flask-restful.readthedocs.io/"
+      },
+      {
         "Name": "Motor",
         "Summary": "Asynchronous MongoDB driver designed to run on Tornado's event loop.",
         "URL": "https://motor.readthedocs.io/"
