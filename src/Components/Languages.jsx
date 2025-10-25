@@ -61,11 +61,18 @@ const Languages = () => {
       className={`relative min-h-screen bg-base-100   `}
     >
       {/* Header Section */}
-      <div className='relative z-10 mx-2 space-y-6 py-9 md:mx-8 lg:mx-16'>
+      <div
+        className='relative z-10 mx-2 space-y-6 py-9 md:mx-8 lg:mx-16'
+        data-aos='fade-up'
+      >
         <h1 className='heading'>Programming Languages</h1>
         <div className='px-4 md:px-48'>
         </div>
-        <p className='px-4 text-sm leading-relaxed tracking-wider text-center md:px-20 text-base-content/70'>
+        <p
+          className='px-4 text-sm leading-relaxed tracking-wider text-center md:px-20 text-base-content/70'
+          data-aos='fade-up'
+          data-aos-delay={100}
+        >
           {def}
         </p>
       </div>
@@ -80,6 +87,7 @@ const Languages = () => {
             Details={Language.More}
             Libraries={Language.Libraries}
             LanguageURL={Language.LanguageURL}
+            animationDelay={index * 60}
           />
         ))}
       </div>

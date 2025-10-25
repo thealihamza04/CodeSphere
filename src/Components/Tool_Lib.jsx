@@ -160,11 +160,15 @@ const Tool_Lib = () => {
 
   return (
     <>
-      <div className='px-4 space-y-6 py-9 pd:px-10 bg-base-100'>
+      <div className='px-4 space-y-6 py-9 pd:px-10 bg-base-100' data-aos='fade-up'>
         <h1 className='heading'>{heroTitle}</h1>
         <div className='px-4 md:px-48'>
         </div>
-        <p className='px-4 text-sm font-normal leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'>
+        <p
+          className='px-4 text-sm font-normal leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'
+          data-aos='fade-up'
+          data-aos-delay={100}
+        >
           {heroDescription}
         </p>
         {/* {frameworkDetails && (
@@ -187,12 +191,13 @@ const Tool_Lib = () => {
       </div>
 
       <div className='flex flex-wrap items-center justify-center gap-4 px-4 md:px-10'>
-        {printIt.map((Item) => (
+        {printIt.map((Item, index) => (
           <Tool_Lib_Card
             key={Item.Name}
             Name={Item.Name}
             Summary={Item.Summary}
             URL={Item.URL}
+            animationDelay={index * 60}
           />
         ))}
       </div>

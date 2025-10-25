@@ -2,9 +2,20 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 
-const LanCard = ({ Title, Summary, Details, Libraries, LanguageURL }) => {
+const LanCard = ({
+  Title,
+  Summary,
+  Details,
+  Libraries,
+  LanguageURL,
+  animationDelay,
+}) => {
   return (
-    <div className='z-30 w-full rounded-sm cursor-default md:w-80 group '>
+    <div
+      className='z-30 w-full rounded-sm cursor-default md:w-80 group '
+      data-aos='fade-up'
+      data-aos-delay={animationDelay}
+    >
       <div className='transition-all duration-150 ease-in-out border !rounded-3xl  card bg-base-200 border-base-300 text-base-content '>
         <div className='p-[24px] card-body'>
           <h2 className='text-[15px] font-extrabold card-title'>
@@ -49,11 +60,13 @@ LanCard.propTypes = {
     })
   ),
   LanguageURL: PropTypes.string,
+  animationDelay: PropTypes.number,
 };
 
 LanCard.defaultProps = {
   Libraries: [],
   LanguageURL: "",
+  animationDelay: 0,
 };
 
 export default LanCard;
