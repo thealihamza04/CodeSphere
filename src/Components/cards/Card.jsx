@@ -1,9 +1,23 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const Card = ({ Title, Summary, URL, Tools, Lib, RTNIT, PrevPath }) => {
+const Card = ({
+  Title,
+  Summary,
+  URL,
+  Tools,
+  Lib,
+  RTNIT,
+  PrevPath,
+  animationDelay,
+}) => {
   return (
-    <div className='z-30 w-full rounded-sm cursor-default md:w-80 group'>
+    <div
+      className='z-30 w-full rounded-sm cursor-default md:w-80 group'
+      data-masonry-item
+      data-aos='fade-up'
+      data-aos-delay={animationDelay}
+    >
       <div className='transition-all duration-150 ease-in-out border !rounded-3xl card bg-base-200 border-base-300 text-base-content'>
         <div className='p-[24px] card-body'>
           <h2 className='text-[15px] font-extrabold card-title'>{Title}</h2>
@@ -46,6 +60,11 @@ Card.propTypes = {
   Lib: PropTypes.array.isRequired,
   RTNIT: PropTypes.array.isRequired,
   PrevPath: PropTypes.string.isRequired,
+  animationDelay: PropTypes.number,
+};
+
+Card.defaultProps = {
+  animationDelay: 0,
 };
 
 export default Card;

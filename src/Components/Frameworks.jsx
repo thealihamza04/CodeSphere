@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import useSEO from "./Hooks/useSEO";
 import List from "../Data/JS.json";
 import { IoIosArrowBack } from "react-icons/io";
+import MasonryGrid from "./layout/MasonryGrid";
 
 
 const ProgLan = () => {
@@ -192,13 +193,25 @@ const ProgLan = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const masonryOptions = useMemo(
+    () => ({
+      gutter: 24,
+      fitWidth: true,
+    }),
+    []
+  );
+
   return (
     <>
-      <div className='px-4 space-y-6 py-9 bg-base-100'>
+      <div className='px-4 space-y-6 py-9 bg-base-100' data-aos='fade-up'>
         <h1 className='heading'>{heroTitle}</h1>
         <div className='px-4 md:px-48'>
         </div>
-        <p className='px-4 text-sm font-normal leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'>
+        <p
+          className='px-4 text-sm font-normal leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'
+          data-aos='fade-up'
+          data-aos-delay={120}
+        >
           {heroDescription}
         </p>
         <div
@@ -212,15 +225,22 @@ const ProgLan = () => {
           </Link>
         </div>
       </div>
-      {groupedFrameworks.map(({ language, list }) => (
+      {groupedFrameworks.map(({ language, list }, sectionIndex) => (
         <div key={language} className='w-full'>
           {groupedFrameworks.length > 1 && (
-            <h2 className='mt-8 mb-4 text-3xl font-semibold text-center'>
+            <h2
+              className='mt-8 mb-4 text-3xl font-semibold text-center'
+              data-aos='fade-up'
+              data-aos-delay={sectionIndex * 80}
+            >
               {language}
             </h2>
           )}
-          <div className='flex flex-wrap items-center justify-center gap-4 px-4 pb-10 md:px-10'>
-            {list.map((framework) => (
+          <MasonryGrid
+            className='grid grid-cols-1 gap-4 px-4 pb-10 mx-auto md:px-10 md:grid-cols-2 xl:grid-cols-3'
+            options={masonryOptions}
+          >
+            {list.map((framework, index) => (
               <Card
                 key={`${language}-${framework.Framework}`}
                 Title={framework.Framework}
@@ -230,9 +250,10 @@ const ProgLan = () => {
                 Lib={framework.Libraries}
                 RTNIT={frameworksData}
                 PrevPath={`${location.pathname}${location.search}`}
+                animationDelay={(index + sectionIndex) * 60}
               />
             ))}
-          </div>
+          </MasonryGrid>
         </div>
       ))}
     </>

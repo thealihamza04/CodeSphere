@@ -5,6 +5,7 @@ import Languages from "../Data/JS.json";
 import LibrariesByLanguage from "../Data/LanguageLibraries.json";
 import Tool_Lib_Card from "./cards/Tool_Lib_Card";
 import { IoIosArrowBack } from "react-icons/io";
+import MasonryGrid from "./layout/MasonryGrid";
 
 const LanguageLibraries = () => {
   const location = useLocation();
@@ -122,12 +123,24 @@ const LanguageLibraries = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
+  const masonryOptions = useMemo(
+    () => ({
+      gutter: 24,
+      fitWidth: true,
+    }),
+    []
+  );
+
   return (
     <>
-      <div className='px-4 space-y-6 py-9 bg-base-100'>
+      <div className='px-4 space-y-6 py-9 bg-base-100' data-aos='fade-up'>
         <h1 className='heading'>{heroTitle}</h1>
         <div className='px-4 md:px-48'></div>
-        <p className='px-4 text-sm leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'>
+        <p
+          className='px-4 text-sm leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'
+          data-aos='fade-up'
+          data-aos-delay={100}
+        >
           {heroDescription}
         </p>
         {normalizedLang && (
@@ -142,10 +155,12 @@ const LanguageLibraries = () => {
         )}
       </div>
 
-      {sections.map((section) => (
+      {sections.map((section, sectionIndex) => (
         <section
           key={section.language}
           className='px-4 py-8 space-y-4 md:px-10 bg-base-100'
+          data-aos='fade-up'
+          data-aos-delay={sectionIndex * 120}
         >
           {!languageDetails && (
             <div className='max-w-3xl mx-auto space-y-3 text-center'>
@@ -168,22 +183,26 @@ const LanguageLibraries = () => {
             </div>
           )}
 
-          <div className='flex flex-wrap items-center justify-center gap-4'>
-            {section.libraries.length > 0 ? (
-              section.libraries.map((library) => (
+          {section.libraries.length > 0 ? (
+            <MasonryGrid
+              className='grid grid-cols-1 gap-4 mx-auto sm:grid-cols-2 xl:grid-cols-3'
+              options={masonryOptions}
+            >
+              {section.libraries.map((library, index) => (
                 <Tool_Lib_Card
                   key={`${section.language}-${library.Name}`}
                   Name={library.Name}
                   Summary={library.Summary}
                   URL={library.URL}
+                  animationDelay={sectionIndex * 120 + index * 60}
                 />
-              ))
-            ) : (
-              <p className='text-sm text-base-content/60'>
-                Libraries coming soon.
-              </p>
-            )}
-          </div>
+              ))}
+            </MasonryGrid>
+          ) : (
+            <p className='text-sm text-base-content/60'>
+              Libraries coming soon.
+            </p>
+          )}
         </section>
       ))}
     </>
