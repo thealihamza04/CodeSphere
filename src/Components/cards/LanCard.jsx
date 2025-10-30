@@ -6,7 +6,7 @@ const LanCard = ({
   Title,
   Summary,
   Details,
-  Libraries,
+  Libraries, // eslint-disable-line no-unused-vars
   LanguageURL,
   animationDelay,
 }) => {

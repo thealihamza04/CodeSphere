@@ -11,6 +11,7 @@ import VersionControl from "./Components/VersionControl";
 import Footer from "./Components/Footer.jsx";
 import { Toaster } from "react-hot-toast";
 import ThemeToggle from "./Components/ThemeToggle.jsx";
+import CalendarView from "./Components/Calendar/CalendarView.jsx";
 
 const Layout = () => {
   const location = useLocation();
@@ -32,6 +33,7 @@ const Layout = () => {
         <Route path='/TimeLine' element={<TimeLine />} />
         <Route path='/ml-roadmap' element={<MLRoadmap />} />
         <Route path='/developer-essential-skills' element={<VersionControl />} />
+        <Route path='/calendar' element={<CalendarView />} />
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>
       {!hideFooter && <Footer />}
