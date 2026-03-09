@@ -8,13 +8,10 @@ const LanCard = ({
   Details,
   Libraries,
   LanguageURL,
-  animationDelay,
 }) => {
   return (
     <div
       className='z-30 w-full rounded-sm cursor-default md:w-80 group '
-      data-aos='fade-up'
-      data-aos-delay={animationDelay}
     >
       <div className='transition-all duration-150 ease-in-out border !rounded-3xl  card bg-base-200 border-base-300 text-base-content '>
         <div className='p-[24px] card-body'>
@@ -60,13 +57,11 @@ LanCard.propTypes = {
     })
   ),
   LanguageURL: PropTypes.string,
-  animationDelay: PropTypes.number,
 };
 
 LanCard.defaultProps = {
   Libraries: [],
   LanguageURL: "",
-  animationDelay: 0,
 };
 
 export default LanCard;

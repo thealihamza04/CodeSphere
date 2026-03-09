@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import AOS from "aos";
 import Frameworks from "./Components/Frameworks";
 import FrameworkResources from "./Components/FrameworkResources";
 import ProgrammingLanguages from "./Components/ProgrammingLanguages";
@@ -15,10 +13,6 @@ import ThemeToggle from "./Components/ThemeToggle.jsx";
 const Layout = () => {
   const location = useLocation();
   const hideFooter = location.pathname.startsWith("/Frameworks");
-
-  useEffect(() => {
-    AOS.refresh();
-  }, [location.pathname, location.search]);
 
   return (
     <>

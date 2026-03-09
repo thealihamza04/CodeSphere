@@ -2,11 +2,9 @@
 import { useEffect } from "react";
 import useSEO from "./Hooks/useSEO";
 
-const AccordionItem = ({ title, content, animationDelay }) => (
+const AccordionItem = ({ title, content }) => (
   <div
     className='collapse  join-item border-b border-base-200'
-    data-aos='fade-up'
-    data-aos-delay={animationDelay}
   >
     <input type='radio' name='my-accordion-4' />
     <div className='collapse-title text-xl font-normal'>{title}</div>
@@ -206,7 +204,6 @@ const EssentialSkills = () => {
       <div className='spacey-y-24 container mx-auto py-12'>
         <h1
           className='text-3xl md:text-3xl font-extrabold py-12 text-center'
-          data-aos='fade-up'
         >
           Essential Questions Every Developer Should Know
         </h1>
@@ -216,7 +213,6 @@ const EssentialSkills = () => {
               key={index}
               title={item.title}
               content={item.content}
-              animationDelay={index * 70}
             />
           ))}
         </div>

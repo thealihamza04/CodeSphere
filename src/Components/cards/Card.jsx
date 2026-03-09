@@ -9,13 +9,10 @@ const Card = ({
   Lib,
   RTNIT,
   PrevPath,
-  animationDelay,
 }) => {
   return (
     <div
       className='z-30 w-full rounded-sm cursor-default md:w-80 group'
-      data-aos='fade-up'
-      data-aos-delay={animationDelay}
     >
       <div className='transition-all duration-150 ease-in-out border !rounded-3xl card bg-base-200 border-base-300 text-base-content'>
         <div className='p-[24px] card-body'>
@@ -59,11 +56,6 @@ Card.propTypes = {
   Lib: PropTypes.array.isRequired,
   RTNIT: PropTypes.array.isRequired,
   PrevPath: PropTypes.string.isRequired,
-  animationDelay: PropTypes.number,
-};
-
-Card.defaultProps = {
-  animationDelay: 0,
 };
 
 export default Card;
