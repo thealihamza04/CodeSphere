@@ -1,8 +1,8 @@
 import { useEffect, useMemo } from "react";
 import { Link, useLocation } from "react-router-dom";
 import useSEO from "./Hooks/useSEO";
-import Languages from "../Data/JS.json";
-import LibrariesByLanguage from "../Data/LanguageLibraries.json";
+import LanguagesCatalog from "../Data/LanguagesCatalog.json";
+import LibrariesRegistry from "../Data/LibrariesRegistry.json";
 import Tool_Lib_Card from "./cards/Tool_Lib_Card";
 import { IoIosArrowBack } from "react-icons/io";
 
@@ -14,7 +14,7 @@ const LanguageLibraries = () => {
   const libraryMap = useMemo(
     () =>
       new Map(
-        LibrariesByLanguage.map((entry) => [entry.Language.toLowerCase(), entry])
+        LibrariesRegistry.map((entry) => [entry.Language.toLowerCase(), entry])
       ),
     []
   );
@@ -22,7 +22,7 @@ const LanguageLibraries = () => {
   const languageDetails = useMemo(() => {
     if (!normalizedLang) return null;
     return (
-      Languages.find(
+      LanguagesCatalog.find(
         (language) => language.Language.toLowerCase() === normalizedLang
       ) || null
     );
@@ -45,7 +45,7 @@ const LanguageLibraries = () => {
       ];
     }
 
-    return Languages.map((language) => {
+    return LanguagesCatalog.map((language) => {
       const entry = libraryMap.get(language.Language.toLowerCase());
       return {
         language: language.Language,

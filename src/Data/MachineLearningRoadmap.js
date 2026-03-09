@@ -47,6 +47,18 @@ const mlRoadmap = {
       "Serve models via APIs, monitor performance, and maintain data pipelines.",
     gap: 2,
   },
+  "Generative AI & LLMs": {
+    released: "Step 9",
+    description:
+      "Master prompt engineering, fine-tuning, and RAG architectures for LLMs.",
+    gap: 2,
+  },
+  "AI Agents & Autonomous Systems": {
+    released: "Step 10",
+    description:
+      "Build autonomous agents with memory, tools, and multi-step reasoning capabilities.",
+    gap: 2,
+  },
 };
 
 export default mlRoadmap;

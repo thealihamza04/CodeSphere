@@ -2,7 +2,7 @@ import { useEffect, useMemo } from "react";
 import Card from "./cards/Card";
 import { Link, useLocation } from "react-router-dom";
 import useSEO from "./Hooks/useSEO";
-import List from "../Data/JS.json";
+import LanguagesCatalog from "../Data/LanguagesCatalog.json";
 import { IoIosArrowBack } from "react-icons/io";
 
 
@@ -16,7 +16,7 @@ const ProgLan = () => {
   const languageDetails = useMemo(() => {
     if (!normalizedLang) return null;
     return (
-      List.find(
+      LanguagesCatalog.find(
         (lang) => lang.Language.toLowerCase() === normalizedLang
       ) || null
     );
@@ -24,7 +24,7 @@ const ProgLan = () => {
 
   const allFrameworks = useMemo(
     () =>
-      List.flatMap((lang) =>
+      LanguagesCatalog.flatMap((lang) =>
         lang.More.map((fw) => ({
           ...fw,
           Language: lang.Language,
@@ -57,7 +57,7 @@ const ProgLan = () => {
         };
       }
 
-      const languageMatch = List.find((lang) =>
+      const languageMatch = LanguagesCatalog.find((lang) =>
         lang.More.some(
           (item) => item.Framework.toLowerCase() === fw.Framework.toLowerCase()
         )
@@ -108,7 +108,7 @@ const ProgLan = () => {
       }));
     }
 
-    return List.map((lang) => ({
+    return LanguagesCatalog.map((lang) => ({
       language: lang.Language,
       list: lang.More.map((fw) => ({
         ...fw,

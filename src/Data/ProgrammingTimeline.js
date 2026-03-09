@@ -26,7 +26,14 @@ const languagesTimeLine = {
     "Dart": { released: 2011, description: "Optimized for client-side apps.", gap: 0 },
     "Elixir": { released: 2011, description: "Functional language for scalable systems.", gap: 0 },
     "TypeScript": { released: 2012, description: "Typed superset of JavaScript.", gap: 1 },
-    "Swift": { released: 2014, description: "Apple's language for iOS and macOS.", gap: 2 }
+    "Swift": { released: 2014, description: "Apple's language for iOS and macOS.", gap: 2 },
+    "Rust": { released: 2015, description: "Focuses on memory safety and performance.", gap: 1 },
+    "Zig": { released: 2016, description: "Modern alternative to C for systems programming.", gap: 1 },
+    "WebAssembly": { released: 2017, description: "Binary instruction format for web browsers.", gap: 1 },
+    "Julia 1.0": { released: 2018, description: "High-performance language for technical computing.", gap: 1 },
+    "Carbon": { released: 2022, description: "Experimental successor to C++.", gap: 4 },
+    "Mojo": { released: 2023, description: "Combines Python's ease with C's performance for AI.", gap: 1 },
+    "Bend": { released: 2024, description: "Massively parallel language for GPUs and CPUs.", gap: 1 }
 };
 
 export default languagesTimeLine;

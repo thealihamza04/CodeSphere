@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from "react";
-import List from "../Data/JS.json";
-import LibrariesByLanguage from "../Data/LanguageLibraries.json";
+import LanguagesCatalog from "../Data/LanguagesCatalog.json";
+import LibrariesRegistry from "../Data/LibrariesRegistry.json";
 import LanCard from "./cards/LanCard";
 import useSEO from "./Hooks/useSEO";
 
@@ -39,10 +39,10 @@ const Languages = () => {
 
   const languagesWithLibraries = useMemo(() => {
     const libraryMap = new Map(
-      LibrariesByLanguage.map((entry) => [entry.Language.toLowerCase(), entry])
+      LibrariesRegistry.map((entry) => [entry.Language.toLowerCase(), entry])
     );
 
-    return List.map((language) => {
+    return LanguagesCatalog.map((language) => {
       const match = libraryMap.get(language.Language.toLowerCase());
 
       return {

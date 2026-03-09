@@ -84,9 +84,9 @@
         "URL": "https://amsul.ca/pickadate.js/"
       },
       {
-        "Name": "Polyfill.io",
-        "Summary": "A service and script loader that supplies HTML5 polyfills tailored to the requesting browser.",
-        "URL": "https://polyfill.io/"
+        "Name": "Core-js",
+        "Summary": "Modular standard library for JavaScript that includes polyfills for ECMAScript up to 2024 and beyond.",
+        "URL": "https://github.com/zloirock/core-js"
       },
       {
         "Name": "Popper.js",
@@ -406,8 +406,8 @@
         "URL": "https://reactnavigation.org/"
       },
       {
-        "Name": "React Query",
-        "Summary": "A library for managing, caching, and synchronizing server state in Next.js applications.",
+        "Name": "TanStack Query",
+        "Summary": "Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte.",
         "URL": "https://tanstack.com/query"
       },
       {
@@ -555,6 +555,101 @@
         "Name": "tornado-redis",
         "Summary": "Non-blocking Redis client that integrates with Tornado coroutines.",
         "URL": "https://github.com/mrjoes/tornado-redis"
+      },
+      {
+        "Name": "NumPy",
+        "Summary": "Fundamental package for scientific computing with Python.",
+        "URL": "https://numpy.org/"
+      },
+      {
+        "Name": "Pandas",
+        "Summary": "Fast, powerful, flexible and easy to use open source data analysis and manipulation tool.",
+        "URL": "https://pandas.pydata.org/"
+      },
+      {
+        "Name": "PyTorch",
+        "Summary": "An open source machine learning framework that accelerates the path from research prototyping to production deployment.",
+        "URL": "https://pytorch.org/"
+      },
+      {
+        "Name": "Transformers (Hugging Face)",
+        "Summary": "State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.",
+        "URL": "https://huggingface.co/docs/transformers/index"
+      },
+      {
+        "Name": "Scikit-learn",
+        "Summary": "A simple and efficient tool for machine learning and data mining.",
+        "URL": "https://scikit-learn.org/"
+      },
+      {
+        "Name": "TensorFlow",
+        "Summary": "An end-to-end open source platform for machine learning.",
+        "URL": "https://www.tensorflow.org/"
+      },
+      {
+        "Name": "Keras",
+        "Summary": "A deep learning API designed for human beings, which runs on top of TensorFlow.",
+        "URL": "https://keras.io/"
+      },
+      {
+        "Name": "Matplotlib",
+        "Summary": "A comprehensive library for creating static, animated, and interactive visualizations in Python.",
+        "URL": "https://matplotlib.org/"
+      },
+      {
+        "Name": "Seaborn",
+        "Summary": "A Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.",
+        "URL": "https://seaborn.pydata.org/"
+      },
+      {
+        "Name": "Plotly",
+        "Summary": "An interactive graphing library for Python.",
+        "URL": "https://plotly.com/python/"
+      },
+      {
+        "Name": "Streamlit",
+        "Summary": "A faster way to build and share data apps.",
+        "URL": "https://streamlit.io/"
+      },
+      {
+        "Name": "Pytest",
+        "Summary": "A framework that makes it easy to write small tests, yet scales to support complex functional testing.",
+        "URL": "https://docs.pytest.org/"
+      },
+      {
+        "Name": "Scrapy",
+        "Summary": "An open source and collaborative framework for extracting the data you need from websites.",
+        "URL": "https://scrapy.org/"
+      },
+      {
+        "Name": "BeautifulSoup",
+        "Summary": "A library that makes it easy to scrape information from web pages.",
+        "URL": "https://www.crummy.com/software/BeautifulSoup/"
+      },
+      {
+        "Name": "Requests",
+        "Summary": "An elegant and simple HTTP library for Python, built for human beings.",
+        "URL": "https://requests.readthedocs.io/"
+      },
+      {
+        "Name": "SciPy",
+        "Summary": "A Python-based ecosystem of open-source software for mathematics, science, and engineering.",
+        "URL": "https://scipy.org/"
+      },
+      {
+        "Name": "Pillow",
+        "Summary": "The friendly PIL fork for image processing in Python.",
+        "URL": "https://python-pillow.org/"
+      },
+      {
+        "Name": "Cryptography",
+        "Summary": "A package which provides cryptographic recipes and primitives to Python developers.",
+        "URL": "https://cryptography.io/"
+      },
+      {
+        "Name": "SQLAlchemy",
+        "Summary": "The Python SQL Toolkit and Object Relational Mapper.",
+        "URL": "https://www.sqlalchemy.org/"
       }
     ]
   },
@@ -1140,8 +1235,18 @@
       },
       {
         "Name": "Xamarin.Forms",
-        "Summary": "A UI toolkit for building cross-platform mobile applications with a single codebase, leveraging native controls for a seamless user experience.",
+        "Summary": "A UI toolkit for building cross-platform mobile applications with a single codebase.",
         "URL": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/"
+      },
+      {
+        "Name": ".NET MAUI",
+        "Summary": "The successor to Xamarin.Forms, for building native cross-platform desktop and mobile apps.",
+        "URL": "https://learn.microsoft.com/en-us/dotnet/maui/"
+      },
+      {
+        "Name": "Dapper",
+        "Summary": "A simple object mapper for .NET, known as the King of Micro ORM.",
+        "URL": "https://github.com/DapperLib/Dapper"
       }
     ]
   },
@@ -1158,6 +1263,21 @@
         "Name": "GORM",
         "Summary": "An ORM library for Go that simplifies database interactions and supports multiple database backends.",
         "URL": "https://gorm.io/"
+      },
+      {
+        "Name": "Echo",
+        "Summary": "High performance, extensible, minimalist Go web framework.",
+        "URL": "https://echo.labstack.com/"
+      },
+      {
+        "Name": "Gin",
+        "Summary": "A high-performance HTTP web framework for Go.",
+        "URL": "https://gin-gonic.com/"
+      },
+      {
+        "Name": "Fiber",
+        "Summary": "An Express-inspired web framework for Go.",
+        "URL": "https://gofiber.io/"
       }
     ]
   },
@@ -1589,6 +1709,89 @@
         "Name": "TypeORM",
         "Summary": "An ORM that supports TypeScript decorators for defining models and relations used in NestJS apps.",
         "URL": "https://typeorm.io/"
+      }
+    ]
+  },
+  {
+    "Language": "Rust",
+    "LanguageURL": "https://doc.rust-lang.org/book/",
+    "Libraries": [
+      {
+        "Name": "Tokio",
+        "Summary": "A runtime for writing reliable, asynchronous, and slim applications with the Rust programming language.",
+        "URL": "https://tokio.rs/"
+      },
+      {
+        "Name": "Serde",
+        "Summary": "A framework for serializing and deserializing Rust data structures efficiently and generically.",
+        "URL": "https://serde.rs/"
+      },
+      {
+        "Name": "Actix Web",
+        "Summary": "A powerful, pragmatic, and extremely fast web framework for Rust.",
+        "URL": "https://actix.rs/"
+      },
+      {
+        "Name": "Axum",
+        "Summary": "Ergonomic and modular web framework built with Tokio, Tower, and Hyper.",
+        "URL": "https://github.com/tokio-rs/axum"
+      },
+      {
+        "Name": "Bevy",
+        "Summary": "A refreshingly simple data-driven game engine built in Rust.",
+        "URL": "https://bevyengine.org/"
+      },
+      {
+        "Name": "Leptos",
+        "Summary": "Build fast web applications with Rust and WebAssembly.",
+        "URL": "https://leptos.dev/"
+      }
+    ]
+  },
+  {
+    "Language": "Zig",
+    "LanguageURL": "https://ziglang.org/learn/",
+    "Libraries": [
+      {
+        "Name": "Zap",
+        "Summary": "A high-performance zig web framework based on facial/zap.",
+        "URL": "https://github.com/zigzap/zap"
+      },
+      {
+        "Name": "Mach",
+        "Summary": "A game engine and graphics toolkit for Zig.",
+        "URL": "https://machengine.org/"
+      },
+      {
+        "Name": "zig-sdl2",
+        "Summary": "Zig bindings for SDL2.",
+        "URL": "https://github.com/MasterQ32/zig-sdl2"
+      }
+    ]
+  },
+  {
+    "Language": "Julia",
+    "LanguageURL": "https://docs.julialang.org/",
+    "Libraries": [
+      {
+        "Name": "DataFrames.jl",
+        "Summary": "In-memory tabular data manipulation in Julia.",
+        "URL": "https://dataframes.juliadata.org/"
+      },
+      {
+        "Name": "Flux.jl",
+        "Summary": "A machine learning library for Julia that is 100% Julia code.",
+        "URL": "https://fluxml.ai/"
+      },
+      {
+        "Name": "Plots.jl",
+        "Summary": "Powerful visualization software and transition backend for Julia plots.",
+        "URL": "https://docs.juliaplots.org/"
+      },
+      {
+        "Name": "Genie.jl",
+        "Summary": "The highly productive Julia web framework.",
+        "URL": "https://genieframework.com/"
       }
     ]
   }

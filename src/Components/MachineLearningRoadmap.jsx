@@ -1,4 +1,4 @@
-import mlRoadmap from "../Data/MLRoadmap.js";
+import mlRoadmap from "../Data/MachineLearningRoadmap.js";
 import { useEffect, useRef } from "react";
 import { useInView } from "motion/react";
 import TimeLineCard from "./cards/TimeLine/TimeLineCard.jsx";

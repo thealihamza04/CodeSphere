@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import Tool_Lib_Card from "./cards/Tool_Lib_Card";
 import { useLocation, Link, useParams } from "react-router-dom";
 import useSEO from "./Hooks/useSEO";
-import List from "../Data/JS.json";
+import List from "../Data/LanguagesCatalog.json";
 import { IoIosArrowBack } from "react-icons/io";
 
 

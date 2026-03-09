@@ -15,9 +15,9 @@
                         "Supply": "Free"
                     },
                     {
-                        "Name": "Polyfill.io",
-                        "Summary": "A service and script loader that supplies HTML5 polyfills tailored to the requesting browser.",
-                        "URL": "https://polyfill.io/",
+                        "Name": "Core-js",
+                        "Summary": "Modular standard library for JavaScript that includes polyfills for ECMAScript up to 2024 and beyond.",
+                        "URL": "https://github.com/zloirock/core-js",
                         "Supply": "Free"
                     }
                 ],
@@ -659,9 +659,9 @@
                 ],
                 "Tools": [
                     {
-                        "Name": "Create React App (CRA)",
-                        "Summary": "A CLI tool for setting up a new React project with no configuration required.",
-                        "URL": "https://create-react-app.dev/",
+                        "Name": "Vite",
+                        "Summary": "Next generation frontend tooling. It's fast, lightweight and comes with out-of-the-box support for HMR and modern features.",
+                        "URL": "https://vitejs.dev/",
                         "Supply": "Free"
                     },
                     {
@@ -1236,8 +1236,8 @@
                         "Supply": "Free"
                     },
                     {
-                        "Name": "React Query",
-                        "Summary": "A library for managing, caching, and synchronizing server state in Next.js applications.",
+                        "Name": "TanStack Query",
+                        "Summary": "Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte.",
                         "URL": "https://tanstack.com/query",
                         "Supply": "Free"
                     }
@@ -1700,6 +1700,108 @@
                         "Name": "Tornado Sample Applications",
                         "Summary": "Sample applications to help you understand how to use Tornado.",
                         "URL": "https://www.tornadoweb.org/en/stable/gettingstarted.html#sample-applications",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Data Science & Machine Learning",
+                "Summary": "A collection of libraries and frameworks for data analysis, machine learning, and artificial intelligence.",
+                "URL": "https://www.python.org/solutions/scientific/",
+                "Libraries": [
+                    {
+                        "Name": "NumPy",
+                        "Summary": "The fundamental package for scientific computing with Python.",
+                        "URL": "https://numpy.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Pandas",
+                        "Summary": "A powerful data analysis and manipulation library for Python.",
+                        "URL": "https://pandas.pydata.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Scikit-learn",
+                        "Summary": "A simple and efficient tool for machine learning and data mining.",
+                        "URL": "https://scikit-learn.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "PyTorch",
+                        "Summary": "An open source machine learning framework that accelerates the path from research prototyping to production deployment.",
+                        "URL": "https://pytorch.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "TensorFlow",
+                        "Summary": "An end-to-end open source platform for machine learning.",
+                        "URL": "https://www.tensorflow.org/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Jupyter Notebook",
+                        "Summary": "An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.",
+                        "URL": "https://jupyter.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Anaconda",
+                        "Summary": "The world's most popular data science platform.",
+                        "URL": "https://www.anaconda.com/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Scientific Computing & Automation",
+                "Summary": "Tools and libraries for scientific research, automation, and general utility.",
+                "URL": "https://www.python.org/about/apps/",
+                "Libraries": [
+                    {
+                        "Name": "SciPy",
+                        "Summary": "A Python-based ecosystem of open-source software for mathematics, science, and engineering.",
+                        "URL": "https://scipy.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Matplotlib",
+                        "Summary": "A comprehensive library for creating static, animated, and interactive visualizations in Python.",
+                        "URL": "https://matplotlib.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Requests",
+                        "Summary": "An elegant and simple HTTP library for Python, built for human beings.",
+                        "URL": "https://requests.readthedocs.io/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "BeautifulSoup",
+                        "Summary": "A library that makes it easy to scrape information from web pages.",
+                        "URL": "https://www.crummy.com/software/BeautifulSoup/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Selenium",
+                        "Summary": "A tool for automating web browsers.",
+                        "URL": "https://www.selenium.dev/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Pytest",
+                        "Summary": "A framework that makes it easy to write small tests, yet scales to support complex functional testing.",
+                        "URL": "https://docs.pytest.org/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Poetry",
+                        "Summary": "Python packaging and dependency management made easy.",
+                        "URL": "https://python-poetry.org/",
                         "Supply": "Free"
                     }
                 ]
@@ -3372,6 +3474,27 @@
                         "Supply": "Paid"
                     }
                 ]
+            },
+            {
+                "Framework": "Echo",
+                "Summary": "High performance, extensible, minimalist Go web framework.",
+                "URL": "https://echo.labstack.com/",
+                "Libraries": [
+                    {
+                        "Name": "Ent",
+                        "Summary": "An entity framework for Go that makes it easy to build and maintain data models.",
+                        "URL": "https://entgo.io/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Air",
+                        "Summary": "Live reload for Go apps.",
+                        "URL": "https://github.com/cosmtrek/air",
+                        "Supply": "Free"
+                    }
+                ]
             }
         ]
     },
@@ -3417,6 +3540,27 @@
                         "Name": "Cargo",
                         "Summary": "The standard Rust build tool and package manager used with Actix Web projects.",
                         "URL": "https://doc.rust-lang.org/cargo/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "Axum",
+                "Summary": "Ergonomic and modular web framework built with Tokio, Tower, and Hyper.",
+                "URL": "https://github.com/tokio-rs/axum",
+                "Libraries": [
+                    {
+                        "Name": "SQLx",
+                        "Summary": "The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries.",
+                        "URL": "https://github.com/launchbadge/sqlx",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Rust Analyzer",
+                        "Summary": "A modular compiler frontend for the Rust language, providing IDE features.",
+                        "URL": "https://rust-analyzer.github.io/",
                         "Supply": "Free"
                     }
                 ]
@@ -4635,6 +4779,99 @@
                         "Name": "TypeScript ESLint",
                         "Summary": "Linting tooling that brings ESLint rules and formatting to TypeScript projects.",
                         "URL": "https://typescript-eslint.io/",
+                        "Supply": "Free"
+                    }
+                ]
+            },
+            {
+                "Framework": "AI & LLM Integration",
+                "Summary": "Building intelligent applications using Large Language Models and AI services.",
+                "URL": "https://www.openai.com/",
+                "Libraries": [
+                    {
+                        "Name": "LangChain.js",
+                        "Summary": "A framework for developing applications powered by language models with composability.",
+                        "URL": "https://js.langchain.com/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "OpenAI SDK",
+                        "Summary": "Official library for accessing OpenAI APIs like GPT-4, DALL-E, and Whisper.",
+                        "URL": "https://github.com/openai/openai-node",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "Vercel AI SDK",
+                        "Summary": "A library for building AI-powered streaming text and chat UIs in React, Svelte, and Vue.",
+                        "URL": "https://sdk.vercel.ai/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Promptfoo",
+                        "Summary": "Test your prompts and evaluate model outputs with systematically.",
+                        "URL": "https://www.promptfoo.dev/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Zig",
+        "Summary": "Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software.",
+        "More": [
+            {
+                "Framework": "Zap",
+                "Summary": "A high-performance zig web framework based on facial/zap.",
+                "URL": "https://github.com/zigzap/zap",
+                "Libraries": [
+                    {
+                        "Name": "zig-sdl2",
+                        "Summary": "Zig bindings for SDL2.",
+                        "URL": "https://github.com/MasterQ32/zig-sdl2",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Zig CLI",
+                        "Summary": "The standard toolchain for compiling and managing Zig projects.",
+                        "URL": "https://ziglang.org/download/",
+                        "Supply": "Free"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Language": "Julia",
+        "Summary": "Julia is a high-level, high-performance, dynamic programming language for numerical computing.",
+        "More": [
+            {
+                "Framework": "Genie",
+                "Summary": "The highly productive Julia web framework.",
+                "URL": "https://genieframework.com/",
+                "Libraries": [
+                    {
+                        "Name": "Flux.jl",
+                        "Summary": "Deep learning and machine learning in Julia.",
+                        "URL": "https://fluxml.ai/",
+                        "Supply": "Free"
+                    },
+                    {
+                        "Name": "DataFrames.jl",
+                        "Summary": "In-memory tabular data manipulation in Julia.",
+                        "URL": "https://dataframes.juliadata.org/",
+                        "Supply": "Free"
+                    }
+                ],
+                "Tools": [
+                    {
+                        "Name": "Julia REPL",
+                        "Summary": "Interactive command line for Julia.",
+                        "URL": "https://docs.julialang.org/en/v1/manual/getting-started/",
                         "Supply": "Free"
                     }
                 ]
