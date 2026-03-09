@@ -1,11 +1,11 @@
-import languagesTimeLine from "../Data/ProgrammingTimeline.js";
+import programmingTimeline from "../Data/ProgrammingTimeline.js";
 import { useEffect, useRef } from "react";
 import { useInView } from "motion/react";
 import TimeLineCard from "./cards/TimeLine/TimeLineCard.jsx";
 import Line from "./cards/TimeLine/Line.jsx";
 import useSEO from "./Hooks/useSEO";
 
-const TimeLine = () => {
+const ProgrammingTimeline = () => {
   const ref = useRef();
   const isInView = useInView(ref, { once: true });
 
@@ -70,7 +70,7 @@ const TimeLine = () => {
         </h1>
         <div>
           <ul className='flex flex-col items-center justify-center '>
-            {Object.entries(languagesTimeLine).map(
+            {Object.entries(programmingTimeline).map(
               ([language, info], index) => (
                 <li
                   key={index}
@@ -106,4 +106,4 @@ const TimeLine = () => {
   );
 };
 
-export default TimeLine;
+export default ProgrammingTimeline;

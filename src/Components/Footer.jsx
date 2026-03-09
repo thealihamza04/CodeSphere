@@ -65,16 +65,16 @@ const Footer = () => {
             Home
           </Link>
           <Link to={"/TimeLine"} className='link link-hover '>
-            TimeLine
+            Programming Timeline
           </Link>
           <Link to={"/ml-roadmap"} className='link link-hover '>
-            ML Roadmap
+            Machine Learning Roadmap
           </Link>
           <Link to={"/Frameworks"} className='link link-hover '>
             Frameworks
           </Link>
           <Link to={"/developer-essential-skills"} className='link link-hover '>
-            Why Matters
+            Essential Skills
           </Link>
         </nav>
         <nav>

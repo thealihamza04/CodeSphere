@@ -6,7 +6,7 @@ import List from "../Data/LanguagesCatalog.json";
 import { IoIosArrowBack } from "react-icons/io";
 
 
-const Tool_Lib = () => {
+const FrameworkResources = () => {
   const location = useLocation();
   const { frameworkName = "", type = "" } = useParams();
   const {
@@ -205,4 +205,4 @@ const Tool_Lib = () => {
   );
 };
 
-export default Tool_Lib;
+export default FrameworkResources;

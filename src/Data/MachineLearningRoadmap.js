@@ -1,4 +1,4 @@
-const mlRoadmap = {
+const machineLearningRoadmap = {
   "Python Fundamentals": {
     released: "Step 1",
     description:
@@ -61,5 +61,5 @@ const mlRoadmap = {
   },
 };
 
-export default mlRoadmap;
+export default machineLearningRoadmap;
 

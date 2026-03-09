@@ -4,7 +4,7 @@ import LibrariesRegistry from "../Data/LibrariesRegistry.json";
 import LanCard from "./cards/LanCard";
 import useSEO from "./Hooks/useSEO";
 
-const Languages = () => {
+const ProgrammingLanguages = () => {
   useSEO({
     title: "Programming Languages Guide | CodeSphere",
     description:
@@ -95,4 +95,4 @@ const Languages = () => {
   );
 };
 
-export default Languages;
+export default ProgrammingLanguages;

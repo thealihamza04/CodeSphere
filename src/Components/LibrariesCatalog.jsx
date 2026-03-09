@@ -6,7 +6,7 @@ import LibrariesRegistry from "../Data/LibrariesRegistry.json";
 import Tool_Lib_Card from "./cards/Tool_Lib_Card";
 import { IoIosArrowBack } from "react-icons/io";
 
-const LanguageLibraries = () => {
+const LibrariesCatalog = () => {
   const location = useLocation();
   const langQuery = new URLSearchParams(location.search).get("lang");
   const normalizedLang = langQuery?.toLowerCase();
@@ -197,4 +197,4 @@ const LanguageLibraries = () => {
   );
 };
 
-export default LanguageLibraries;
+export default LibrariesCatalog;

@@ -16,7 +16,7 @@ const AccordionItem = ({ title, content, animationDelay }) => (
   </div>
 );
 
-const AccordionGroup = () => {
+const EssentialSkills = () => {
   useSEO({
     title: "Developer Essential Skills | CodeSphere",
     description:
@@ -225,4 +225,4 @@ const AccordionGroup = () => {
   );
 };
 
-export default AccordionGroup;
+export default EssentialSkills;

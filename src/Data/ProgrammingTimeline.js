@@ -1,4 +1,4 @@
-const languagesTimeLine = {
+const programmingTimeline = {
     "Assembly": { released: 1949, description: "Low-level language for direct hardware control.", gap: 0 },
     "Shell": { released: 1971, description: "Unix command-line scripting language.", gap: 22 },
     "C": { released: 1972, description: "Procedural language for systems programming.", gap: 1 },
@@ -36,4 +36,4 @@ const languagesTimeLine = {
     "Bend": { released: 2024, description: "Massively parallel language for GPUs and CPUs.", gap: 1 }
 };
 
-export default languagesTimeLine;
+export default programmingTimeline;

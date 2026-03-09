@@ -6,7 +6,7 @@ import LanguagesCatalog from "../Data/LanguagesCatalog.json";
 import { IoIosArrowBack } from "react-icons/io";
 
 
-const ProgLan = () => {
+const Frameworks = () => {
   const location = useLocation();
   const { Frameworks: stateFrameworks = [] } = location.state || {};
 
@@ -248,4 +248,4 @@ const ProgLan = () => {
   );
 };
 
-export default ProgLan;
+export default Frameworks;

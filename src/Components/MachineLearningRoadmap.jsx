@@ -1,11 +1,11 @@
-import mlRoadmap from "../Data/MachineLearningRoadmap.js";
+import machineLearningRoadmap from "../Data/MachineLearningRoadmap.js";
 import { useEffect, useRef } from "react";
 import { useInView } from "motion/react";
 import TimeLineCard from "./cards/TimeLine/TimeLineCard.jsx";
 import Line from "./cards/TimeLine/Line.jsx";
 import useSEO from "./Hooks/useSEO";
 
-const MLRoadmap = () => {
+const MachineLearningRoadmap = () => {
   const ref = useRef();
   const isInView = useInView(ref, { once: true });
 
@@ -67,7 +67,7 @@ const MLRoadmap = () => {
       <h1 className='py-12 text-4xl font-bold text-center'>Machine Learning Roadmap</h1>
       <div>
         <ul className='flex flex-col items-center justify-center'>
-          {Object.entries(mlRoadmap).map(([topic, info], index) => (
+          {Object.entries(machineLearningRoadmap).map(([topic, info], index) => (
             <li
               key={index}
               className={`min-w-52 md:min-w-60 my-1 ${isInView
@@ -90,5 +90,5 @@ const MLRoadmap = () => {
   );
 };
 
-export default MLRoadmap;
+export default MachineLearningRoadmap;
 
