@@ -14,7 +14,7 @@ const Card = ({
     <div
       className='z-30 w-full rounded-sm cursor-default md:w-80 group'
     >
-      <div className='transition-all duration-150 ease-in-out border !rounded-3xl card bg-base-200 border-base-300 text-base-content'>
+      <div className='border !rounded-3xl card bg-base-200 border-base-300 text-base-content'>
         <div className='p-[24px] card-body'>
           <h2 className='text-[15px] font-extrabold card-title'>{Title}</h2>
           <p className='text-[14px] text-base-content/80 text-pretty'>{Summary}</p>

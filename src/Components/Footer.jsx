@@ -1,80 +1,51 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoDuotone } from "react-icons/pi";
 import { SiGmail } from "react-icons/si";
-import axios from "axios";
-import toast from "react-hot-toast";
 
 const Footer = () => {
-  const [isLoading, setLoading] = useState(false);
-  const [feedback, setFeedback] = useState({
-    name: "",
-    message: "",
-  });
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-
-  const sendFeedback = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    await axios.post(
-      "https://feed-backs.vercel.app/response/add",
-      {
-        webapp: "codes-sphere",
-        senderName: feedback.name,
-        senderEmail: "undefined",
-        message: feedback.message,
-      },
-      { timeout: 4000 }
-    );
-    try {
-      await axios.post(
-        "https://feed-backs.vercel.app/response/add",
-        {
-          webapp: "codes-sphere",
-          senderName: feedback.name,
-          senderEmail: "undefined",
-          message: feedback.message,
-        },
-        { timeout: 4000 }
-      );
-
-      toast.success("Thanks for your feedback! We appreciate your input");
-      setFeedback({
-        name: "",
-        message: "",
-      });
-    } catch (error) {
-      console.log(error);
-      toast.error(" Oops! Something went wrong. Please try again later");
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <div className='bg-base-200'>
       <footer className='container p-10 mx-auto footer text-base-content'>
         <nav>
-          <h6 className='footer-title'>Services</h6>
+          <h6 className='footer-title'>Explore</h6>
           <Link to={"/"} className='link link-hover '>
             Home
-          </Link>
-          <Link to={"/TimeLine"} className='link link-hover '>
-            Programming Timeline
-          </Link>
-          <Link to={"/ml-roadmap"} className='link link-hover '>
-            Machine Learning Roadmap
           </Link>
           <Link to={"/Frameworks"} className='link link-hover '>
             Frameworks
           </Link>
+          <Link to={"/libraries"} className='link link-hover '>
+            Libraries
+          </Link>
+        </nav>
+        <nav>
+          <h6 className='footer-title'>Roadmaps</h6>
+          <Link to={"/swe-roadmap"} className='link link-hover '>
+            Software Engineering
+          </Link>
+          <Link to={"/ml-roadmap"} className='link link-hover '>
+            Machine Learning
+          </Link>
+          <Link to={"/ai-roadmap"} className='link link-hover '>
+            AI Engineering
+          </Link>
+        </nav>
+        <nav>
+          <h6 className='footer-title'>Resources</h6>
+          <Link to={"/TimeLine"} className='link link-hover '>
+            Evolution Timeline
+          </Link>
           <Link to={"/developer-essential-skills"} className='link link-hover '>
             Essential Skills
+          </Link>
+          <Link to={"/design-principles"} className='link link-hover '>
+            Design Principles
           </Link>
         </nav>
         <nav>
@@ -104,50 +75,6 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <form onSubmit={sendFeedback}>
-          <h6 className='footer-title '>FeedBack</h6>
-          <fieldset className='space-y-2 w-92'>
-            <div className='flex flex-row gap-3'>
-              <input
-                id='name'
-                type='text'
-                value={feedback.name}
-                onChange={(e) =>
-                  setFeedback({ ...feedback, name: e.target.value })
-                }
-                placeholder='your Good Name'
-                className='input input-sm focus:outline-none input-bordered'
-              />
-              <button
-                type='submit'
-                className={`btn btn-sm bg-neutral  join-item relative ${isLoading ? "btn-disabled" : ""
-                  } `}
-              >
-                <span
-                  className={`${isLoading ? "opacity-100" : "opacity-0"
-                    } loading loading-infinity loading-md text-white absolute transition-all duration-500 ease-in-out`}
-                ></span>{" "}
-                <span
-                  className={`${isLoading ? "opacity-0" : "opacity-100"
-                    } transition-all duration-500 ease-in-out`}
-                >
-                  Send
-                </span>
-              </button>
-            </div>
-            <textarea
-              className='w-full px-2 py-2 text-xs resize-none input input-lg focus:outline-none '
-              rows={3}
-              id='message'
-              onChange={(e) =>
-                setFeedback({ ...feedback, message: e.target.value })
-              }
-              value={feedback.message}
-              placeholder='share your thoughts *'
-              required={true}
-            ></textarea>
-          </fieldset>
-        </form>
       </footer>
     </div>
   );

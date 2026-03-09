@@ -159,7 +159,7 @@ const LibrariesCatalog = () => {
               </p>
               {section.officialURL && (
                 <a
-                  className='inline-flex items-center justify-center px-4 py-2 text-xs font-medium transition-colors border rounded-full text-base-content/80 border-base-300 hover:text-base-content hover:bg-base-300/40'
+                  className='inline-flex items-center justify-center px-4 py-2 text-xs font-medium border rounded-full text-base-content/80 border-base-300 hover:text-base-content hover:bg-base-300/40'
                   href={section.officialURL}
                   target='_blank'
                   rel='noopener noreferrer'

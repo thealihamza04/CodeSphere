@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { LuSun, LuMoon } from "react-icons/lu";
 
 const isBrowser = typeof window !== "undefined";
 
@@ -28,15 +29,12 @@ const ThemeToggle = () => {
 
   return (
     <button
-      className="fixed z-50 transition-transform duration-150 btn btn-ghost top-4 right-4"
+      className="fixed z-50 btn btn-ghost top-4 right-4"
       onClick={toggleTheme}
       aria-label="Toggle Theme"
     >
-      <span
-        className={`inline-block transition-transform duration-300 ${theme === "light" ? "rotate-0" : "rotate-180"
-          }`}
-      >
-        {theme === "light" ? "🌙" : "☀️"}
+      <span className="text-xl">
+        {theme === "light" ? <LuMoon /> : <LuSun />}
       </span>
     </button>
   );

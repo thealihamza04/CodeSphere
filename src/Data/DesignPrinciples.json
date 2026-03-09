@@ -1,0 +1,80 @@
+[
+  {
+    "Principle": "Visual Hierarchy",
+    "Summary": "Visual hierarchy is the arrangement or presentation of elements in a way that implies importance. It guides the user's eye to the most critical information first through the use of size, color, contrast, and layout.",
+    "BestPractices": [
+      "Use larger font sizes for primary headings.",
+      "Place high-priority actions in prominent locations, like the top right or center.",
+      "Use bold colors to draw attention to call-to-action buttons."
+    ],
+    "CommonTools": [
+      { "Name": "Figma", "URL": "https://www.figma.com/" },
+      { "Name": "Adobe XD", "URL": "https://www.adobe.com/products/xd.html" }
+    ]
+  },
+  {
+    "Principle": "Contrast & Color",
+    "Summary": "Contrast helps distinguish between different elements and ensures readability. Proper color usage conveys meaning, sets the mood, and reinforces brand identity while ensuring accessibility for all users.",
+    "BestPractices": [
+      "Ensure text has sufficient contrast against its background (WCAG AA/AAA).",
+      "Avoid using color as the only way to convey information.",
+      "Use a consistent color palette to create a cohesive experience."
+    ],
+    "CommonTools": [
+      { "Name": "Coolors", "URL": "https://coolors.co/" },
+      { "Name": "Contrast Checker", "URL": "https://webaim.org/resources/contrastchecker/" }
+    ]
+  },
+  {
+    "Principle": "Typography",
+    "Summary": "Typography is the art of arranging type to make written language legible, readable, and appealing. It involves choosing typefaces, point sizes, line lengths, line-spacing, and letter-spacing.",
+    "BestPractices": [
+      "Limit the number of typefaces to two or three.",
+      "Ensure line height is sufficient for comfortable reading.",
+      "Use font weights to create hierarchy within text blocks."
+    ],
+    "CommonTools": [
+      { "Name": "Google Fonts", "URL": "https://fonts.google.com/" },
+      { "Name": "Fontshare", "URL": "https://www.fontshare.com/" }
+    ]
+  },
+  {
+    "Principle": "Proximity & Grouping",
+    "Summary": "The principle of proximity states that related items should be placed close together. This helps users perceive a relationship between the elements and reduces cognitive load by organizing information logically.",
+    "BestPractices": [
+      "Group related form fields together.",
+      "Use whitespace to separate distinct sections of content.",
+      "Keep labels close to their corresponding input fields."
+    ],
+    "CommonTools": [
+      { "Name": "Miro", "URL": "https://miro.com/" },
+      { "Name": "Whimsical", "URL": "https://whimsical.com/" }
+    ]
+  },
+  {
+    "Principle": "Consistency",
+    "Summary": "Consistency ensures that similar elements behave in similar ways, making the interface predictable and easier to learn. This applies to visual elements, interactions, and overall navigation patterns.",
+    "BestPractices": [
+      "Use a Design System or UI Kit.",
+      "Maintain consistent button styles and behaviors throughout the app.",
+      "Keep navigation menus in fixed locations across different pages."
+    ],
+    "CommonTools": [
+      { "Name": "Storybook", "URL": "https://storybook.js.org/" },
+      { "Name": "Zeroheight", "URL": "https://zeroheight.com/" }
+    ]
+  },
+  {
+    "Principle": "Affordance & Feedback",
+    "Summary": "Affordance is a quality of an object that allows users to perform an action. Feedback provides immediate information about the result of an action, confirming that the system has registered the user's input.",
+    "BestPractices": [
+      "Make buttons look clickable (shadows, borders).",
+      "Provide loading states for asynchronous actions.",
+      "Use subtle animations to acknowledge user interactions."
+    ],
+    "CommonTools": [
+      { "Name": "LottieFiles", "URL": "https://lottiefiles.com/" },
+      { "Name": "Framer Motion", "URL": "https://www.framer.com/motion/" }
+    ]
+  }
+]

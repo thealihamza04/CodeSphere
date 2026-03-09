@@ -19,5 +19,24 @@
 html {
     overflow-y: scroll;
     overflow-x: hidden;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--bc) / 0.2) transparent;
+}
+
+/* Custom Scrollbar for Chrome, Safari and Edge */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--bc) / 0.2);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--bc) / 0.3);
 }
