@@ -73,7 +73,7 @@ const DesignPrinciples = () => {
     }, [selectedPrinciple]);
 
     return (
-        <div className='relative min-h-screen bg-base-100'>
+        <div className='relative min-h-screen bg-base-100 max-w-full overflow-x-hidden'>
             <div className="px-4 py-12 md:px-12 lg:px-24">
                 {/* Header Section */}
                 <div className='text-center space-y-4 mb-20'>
@@ -143,7 +143,7 @@ const DesignPrinciples = () => {
 
                             <section className="space-y-8">
                                 <div className="p-8 rounded-[2rem] bg-base-200/50 border border-base-300">
-                                    <h4 className="text-[10px] uppercase font-black tracking-[0.3em] text-primary mb-6">Execution Strategy</h4>
+                                    <h4 className="text-[10px] uppercase font-black tracking-wider text-primary mb-6">Execution Strategy</h4>
                                     <ul className="space-y-4">
                                         {selectedPrinciple.BestPractices.map((practice, i) => (
                                             <li key={i} className="flex items-start gap-4">

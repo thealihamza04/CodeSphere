@@ -123,7 +123,7 @@ const LibrariesCatalog = () => {
   }, []);
 
   return (
-    <>
+    <div className="max-w-full overflow-x-hidden">
       <div className='px-4 space-y-6 py-9 bg-base-100'>
         <h1 className='heading'>{heroTitle}</h1>
         <div className='px-4 md:px-48'></div>
@@ -188,7 +188,7 @@ const LibrariesCatalog = () => {
           </div>
         </section>
       ))}
-    </>
+    </div>
   );
 };
 

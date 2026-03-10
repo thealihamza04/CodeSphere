@@ -64,7 +64,7 @@ const ProgrammingTimeline = () => {
 
   return (
     <>
-      <div className='w-screen min-h-screen px-12 py-20 overflow-x-hidden '>
+      <div className='max-w-screen min-h-screen px-12 py-20 overflow-x-hidden '>
         <h1 className='py-12 text-4xl font-bold text-center'>
           The TimeLine of Languages
         </h1>

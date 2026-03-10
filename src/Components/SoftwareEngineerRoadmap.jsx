@@ -59,7 +59,7 @@ const SoftwareEngineerRoadmap = () => {
   }, []);
 
   return (
-    <div className='w-screen min-h-screen px-4 py-20 overflow-x-hidden md:px-12'>
+    <div className='max-w-screen min-h-screen px-4 py-20 overflow-x-hidden md:px-12'>
       <h1 className='py-12 text-4xl font-bold text-center'>Software Engineer Roadmap</h1>
       <div>
         <ul className='flex flex-col items-center justify-center'>

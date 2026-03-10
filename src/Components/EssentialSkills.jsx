@@ -232,7 +232,7 @@ const EssentialSkills = () => {
   ];
 
   return (
-    <>
+    <div className="max-w-full overflow-x-hidden">
       <div className='container mx-auto py-12 space-y-8'>
         <div className='text-center space-y-4'>
           <h1 className='text-4xl md:text-5xl font-extrabold'>
@@ -252,7 +252,7 @@ const EssentialSkills = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

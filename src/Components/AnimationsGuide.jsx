@@ -79,7 +79,7 @@ const AnimationsGuide = () => {
   }, [selectedAnim]);
 
   return (
-    <div className="relative min-h-screen bg-base-100">
+    <div className="relative min-h-screen bg-base-100 max-w-full overflow-x-hidden">
       <div className="px-4 py-12 md:px-12 lg:px-24">
         {/* Header */}
         <div className="text-center space-y-4 mb-20">

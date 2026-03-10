@@ -19,7 +19,7 @@ const Layout = () => {
   const hideFooter = location.pathname.startsWith("/Frameworks");
 
   return (
-    <>
+    <div className="max-w-full overflow-x-hidden">
       <Toaster />
       <ThemeToggle />
       <Routes>
@@ -37,7 +37,7 @@ const Layout = () => {
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>
       {!hideFooter && <Footer />}
-    </>
+    </div>
   );
 };
 

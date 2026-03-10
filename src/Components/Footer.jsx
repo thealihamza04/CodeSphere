@@ -57,7 +57,7 @@ const Footer = () => {
             <a
               className='fill-current'
               target='_blank'
-              href='https://www.linkedin.com/in/contact-with-alihamza'
+              href='https://www.linkedin.com/in/thealihamza04/'
             >
               <FaLinkedinIn className='size-5' />
             </a>
