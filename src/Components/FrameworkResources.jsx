@@ -162,18 +162,11 @@ const FrameworkResources = () => {
     <div className="max-w-full overflow-x-hidden">
       <div className='px-4 space-y-6 py-9 pd:px-10 bg-base-100'>
         <h1 className='heading'>{heroTitle}</h1>
-        <div className='px-4 md:px-48'>
-        </div>
         <p
           className='px-4 text-sm font-normal leading-relaxed tracking-wide text-center md:px-20 text-base-content/80'
         >
           {heroDescription}
         </p>
-        {/* {frameworkDetails && (
-          <p className='px-4 text-xs font-normal leading-relaxed tracking-wide text-justify md:px-20 md:text-sm text-base-content/60'>
-            {heroSupplementary}
-          </p>
-        )} */}
 
         <div
           className='fixed top-0 flex justify-center mt-8 !z-[999]'

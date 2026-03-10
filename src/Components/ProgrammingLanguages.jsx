@@ -65,8 +65,6 @@ const ProgrammingLanguages = () => {
         className='relative z-10 mx-2 space-y-6 py-9 md:mx-8 lg:mx-16'
       >
         <h1 className='heading'>Programming Languages</h1>
-        <div className='px-4 md:px-48'>
-        </div>
         <p
           className='px-4 text-sm leading-relaxed tracking-wider text-center md:px-20 text-base-content/70'
         >

@@ -19,7 +19,6 @@ const Tool_Lib_Card = ({ Name, Summary, URL }) => {
               rel="noopener noreferrer"
             >
               <span className="text-center">open</span>
-              {/* <i className="material-icons text-xs text-center">arrow_forward_ios</i> */}
             </a>
           </div>
         </div>

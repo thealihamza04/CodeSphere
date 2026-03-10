@@ -80,16 +80,6 @@ const ProgrammingTimeline = () => {
                     }`}
                   ref={ref}
                 >
-                  {/* vertical line */}
-                  <div
-                  // className={`bg-gray-700 opacity-50 w-1 px rounded-full  ml-[43.9%] md:ml-[42.3%] `}
-                  // style={{ minHeight: `${info.gap * 20}px` }}
-                  />
-                  {/* <div className='flex flex-row gap-5 '>
-                    <h1 className='min-w-[25%]  '>{info.released}</h1>
-                    <MdCircle className='min-w-[20%] text-3xl text-slate-700 opacity-45' />{" "}
-                    <h1 className='min-w-[50%] '>{language}</h1>
-                  </div> */}
                   <Line gap={info.gap} />
                   <TimeLineCard
                     released={info.released}

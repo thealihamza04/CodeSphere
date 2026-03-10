@@ -69,7 +69,7 @@ const Footer = () => {
               <PiGithubLogoDuotone className='size-6' />
             </a>
             <a
-              href='https://mail.google.com/mail/?view=cm&fs=1&to=ah0681988@gmail.com'
+              href='https://mail.google.com/mail/?view=cm&fs=1&to=thealihamza0@gmail.com'
               target='_blank'
               rel='noopener noreferrer'
               className='fill-current'
