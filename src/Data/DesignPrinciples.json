@@ -1,80 +1,218 @@
 [
   {
-    "Principle": "Visual Hierarchy",
-    "Summary": "Visual hierarchy is the arrangement or presentation of elements in a way that implies importance. It guides the user's eye to the most critical information first through the use of size, color, contrast, and layout.",
-    "BestPractices": [
-      "Use larger font sizes for primary headings.",
-      "Place high-priority actions in prominent locations, like the top right or center.",
-      "Use bold colors to draw attention to call-to-action buttons."
-    ],
-    "CommonTools": [
-      { "Name": "Figma", "URL": "https://www.figma.com/" },
-      { "Name": "Adobe XD", "URL": "https://www.adobe.com/products/xd.html" }
+    "Category": "Core UI/UX Foundations",
+    "Description": "The fundamental pillars that define how users interact with and perceive digital interfaces.",
+    "Principles": [
+      {
+        "Title": "User-Centered Design",
+        "Effect": "Prioritizing user needs and behaviors above all else to ensure the system solves real problems.",
+        "BestPractices": ["Conduct empathy mapping", "Create detailed user personas", "Use research-backed decision making"],
+        "Tools": ["Figma", "Maze", "UserTesting"]
+      },
+      {
+        "Title": "Consistency & Standards",
+        "Effect": "Using familiar patterns so users don't have to learn new behaviors for common tasks.",
+        "BestPractices": ["Implement a Design System", "Use standard UI components", "Maintain uniform terminology"],
+        "Tools": ["Storybook", "Figma Variables", "Zeroheight"]
+      },
+      {
+        "Title": "Clarity & Simplicity",
+        "Effect": "Removing unnecessary elements to reduce cognitive load and focus attention on primary tasks.",
+        "BestPractices": ["Use progressive disclosure", "Minimize visual noise", "Prioritize 'one primary action' per screen"],
+        "Tools": ["Whimsical", "Pencil & Paper", "Balsamiq"]
+      }
     ]
   },
   {
-    "Principle": "Contrast & Color",
-    "Summary": "Contrast helps distinguish between different elements and ensures readability. Proper color usage conveys meaning, sets the mood, and reinforces brand identity while ensuring accessibility for all users.",
-    "BestPractices": [
-      "Ensure text has sufficient contrast against its background (WCAG AA/AAA).",
-      "Avoid using color as the only way to convey information.",
-      "Use a consistent color palette to create a cohesive experience."
-    ],
-    "CommonTools": [
-      { "Name": "Coolors", "URL": "https://coolors.co/" },
-      { "Name": "Contrast Checker", "URL": "https://webaim.org/resources/contrastchecker/" }
+    "Category": "The Laws of UX",
+    "Description": "Psychological mandates that govern how human beings process information and navigate movement.",
+    "Principles": [
+      {
+        "Title": "Hick's Law",
+        "Effect": "Decision time increases with the number of choices. Simplify options to speed up user flow.",
+        "BestPractices": ["Break complex processes into steps", "Categorize menu items", "Hide low-use features"],
+        "Tools": ["Optimal Workshop", "UXPin"]
+      },
+      {
+        "Title": "Fitts's Law",
+        "Effect": "Interactive targets should be large enough and close enough to be easily acquired.",
+        "BestPractices": ["Make buttons at least 44x44px", "Place primary actions near thumb zones", "Increase padding for touch targets"],
+        "Tools": ["Figma", "DevTools Inspector"]
+      },
+      {
+        "Title": "Jakob's Law",
+        "Effect": "Users spend most of their time on other sites; they prefer yours to work the same way.",
+        "BestPractices": ["Don't reinvent common icons", "Use standard navigation placements", "Follow platform-specific guidelines (Material/HIG)"],
+        "Tools": ["Mobbin", "PageFlows"]
+      }
     ]
   },
   {
-    "Principle": "Typography",
-    "Summary": "Typography is the art of arranging type to make written language legible, readable, and appealing. It involves choosing typefaces, point sizes, line lengths, line-spacing, and letter-spacing.",
-    "BestPractices": [
-      "Limit the number of typefaces to two or three.",
-      "Ensure line height is sufficient for comfortable reading.",
-      "Use font weights to create hierarchy within text blocks."
-    ],
-    "CommonTools": [
-      { "Name": "Google Fonts", "URL": "https://fonts.google.com/" },
-      { "Name": "Fontshare", "URL": "https://www.fontshare.com/" }
+    "Category": "Gestalt Principles of Perception",
+    "Description": "Rules describing how the human brain automatically groups similar or local elements together.",
+    "Principles": [
+      {
+        "Title": "Law of Proximity",
+        "Effect": "Elements close to each other are perceived as a related group or a single unit.",
+        "BestPractices": ["Use tight spacing for labels and inputs", "Add clear gaps between sections", "Group related cards in a container"],
+        "Tools": ["Figma Auto Layout", "CSS Gap Property"]
+      },
+      {
+        "Title": "Law of Similarity",
+        "Effect": "Elements with similar visual traits (color, shape, size) are perceived as related.",
+        "BestPractices": ["Define clear primary vs secondary button styles", "Use consistent icon sets", "Color-code states like Success and Error"],
+        "Tools": ["Design Systems", "Tailwind Theme"]
+      },
+      {
+        "Title": "Law of Continuity",
+        "Effect": "The eye is drawn to follow paths, lines, and curves, even if they are broken.",
+        "BestPractices": ["Align content along a common axis", "Use directional cues like arrows", "Ensure seamless flow in multi-step forms"],
+        "Tools": ["Grids & Guides", "Figma Rulers"]
+      }
     ]
   },
   {
-    "Principle": "Proximity & Grouping",
-    "Summary": "The principle of proximity states that related items should be placed close together. This helps users perceive a relationship between the elements and reduces cognitive load by organizing information logically.",
-    "BestPractices": [
-      "Group related form fields together.",
-      "Use whitespace to separate distinct sections of content.",
-      "Keep labels close to their corresponding input fields."
-    ],
-    "CommonTools": [
-      { "Name": "Miro", "URL": "https://miro.com/" },
-      { "Name": "Whimsical", "URL": "https://whimsical.com/" }
+    "Category": "Accessibility & Inclusivity",
+    "Description": "Ensuring the interface is usable and understandable for everyone, regardless of ability or context.",
+    "Principles": [
+      {
+        "Title": "Contrast & Readability",
+        "Effect": "Ensuring text is legible against any background for users with visual impairments.",
+        "BestPractices": ["Meet WCAG AA/AAA standards (4.5:1 ratio)", "Scale font size for readability", "Avoid thin fonts on light backgrounds"],
+        "Tools": ["Contrast Checker", "Stark Figma Plugin"]
+      },
+      {
+        "Title": "Inclusive Interaction",
+        "Effect": "Providing multiple ways to interact, such as keyboard navigation and screen reader support.",
+        "BestPractices": ["Add ARIA labels to icons", "Ensure logical tab order", "Provide 'Skip to Content' links"],
+        "Tools": ["VoiceOver", "Axe DevTools", "Lighthouse"]
+      },
+      {
+        "Title": "Error Prevention & Recovery",
+        "Effect": "Designing to prevent mistakes and providing clear ways to 'undo' or fix them when they happen.",
+        "BestPractices": ["Use confirmation dialogs for destructive actions", "Provide clear error messages with solutions", "Offer 'Undo' for accidental clicks"],
+        "Tools": ["React Hot Toast", "SweetAlert2"]
+      }
     ]
   },
   {
-    "Principle": "Consistency",
-    "Summary": "Consistency ensures that similar elements behave in similar ways, making the interface predictable and easier to learn. This applies to visual elements, interactions, and overall navigation patterns.",
-    "BestPractices": [
-      "Use a Design System or UI Kit.",
-      "Maintain consistent button styles and behaviors throughout the app.",
-      "Keep navigation menus in fixed locations across different pages."
-    ],
-    "CommonTools": [
-      { "Name": "Storybook", "URL": "https://storybook.js.org/" },
-      { "Name": "Zeroheight", "URL": "https://zeroheight.com/" }
+    "Category": "Visual Hierarchy & Flow",
+    "Description": "The strategic use of visual weight to guide the user's eye and control the reading order.",
+    "Principles": [
+      {
+        "Title": "Size & Scale",
+        "Effect": "Large elements command more attention; use them for the most important messages.",
+        "BestPractices": ["Use oversized Hero headings", "Make primary CTA larger than secondary", "Shrink less relevant meta-data"],
+        "Tools": ["Type Scales", "Adobe Fonts"]
+      },
+      {
+        "Title": "Contrast as Priority",
+        "Effect": "The most important element should be the most visually distinct from its surroundings.",
+        "BestPractices": ["Use vibrant colors for main actions", "Dim background elements during modals", "Use white space as a focal tool"],
+        "Tools": ["Coolors", "Adobe Color"]
+      },
+      {
+        "Title": "Scanning Patterns (F & Z)",
+        "Effect": "Designing for the natural way humans scan screens (F-pattern for text, Z-pattern for ads/landings).",
+        "BestPractices": ["Place logos top-left", "Put CTAs at the end of scan paths", "Use bullet points for quick scannability"],
+        "Tools": ["Hotjar", "Crazy Egg (Eye-tracking)"]
+      }
     ]
   },
   {
-    "Principle": "Affordance & Feedback",
-    "Summary": "Affordance is a quality of an object that allows users to perform an action. Feedback provides immediate information about the result of an action, confirming that the system has registered the user's input.",
-    "BestPractices": [
-      "Make buttons look clickable (shadows, borders).",
-      "Provide loading states for asynchronous actions.",
-      "Use subtle animations to acknowledge user interactions."
-    ],
-    "CommonTools": [
-      { "Name": "LottieFiles", "URL": "https://lottiefiles.com/" },
-      { "Name": "Framer Motion", "URL": "https://www.framer.com/motion/" }
+    "Category": "Interaction Design Heuristics",
+    "Description": "Based on Nielsen's heuristics, these are broad rules of thumb for interface usability.",
+    "Principles": [
+      {
+        "Title": "User Control & Freedom",
+        "Effect": "Users often perform actions by mistake and need a clearly marked 'emergency exit' without an extended dialogue.",
+        "BestPractices": ["Support Undo and Redo", "Offer 'Cancel' on all multi-step processes", "Allow easy exit from modals"],
+        "Tools": ["React-Query (Optimistic UI)", "Redux Toolkit (History)"]
+      },
+      {
+        "Title": "Recognition over Recall",
+        "Effect": "Minimize the user's memory load by making objects, actions, and options visible.",
+        "BestPractices": ["Use persistent navigation bars", "Show recently viewed items", "Provide auto-suggest in search bars"],
+        "Tools": ["Algolia", "React Autosuggest"]
+      },
+      {
+        "Title": "Help & Documentation",
+        "Effect": "While better if the system is used without it, it may be necessary to provide documentation focused on user tasks.",
+        "BestPractices": ["Use tooltips for complex icons", "Provide contextual 'Help' links", "Offer a searchable Knowledge Base"],
+        "Tools": ["GitBook", "Intercom", "Intro.js"]
+      }
+    ]
+  },
+  {
+    "Category": "Advanced Cognitive Laws",
+    "Description": "Scientific theories on how human memory and attention spans dictate the success of an interface.",
+    "Principles": [
+      {
+        "Title": "Miller’s Law",
+        "Effect": "The average person can only keep 7 (± 2) items in their working memory. Grouping is essential.",
+        "BestPractices": ["Limit menu items to 5-9", "Chunk phone numbers and IDs", "Break long forms into small sections"],
+        "Tools": ["Navigation Audits", "Card Sorting"]
+      },
+      {
+        "Title": "Peak-End Rule",
+        "Effect": "Users judge an experience largely based on how they felt at its peak and at its end.",
+        "BestPractices": ["Celebrate task completion with micro-animations", "Ensure the exit flow is smooth", "Optimize the most frequent 'peak' actions"],
+        "Tools": ["Framer Motion", "Lottie"]
+      },
+      {
+        "Title": "Zeigarnik Effect",
+        "Effect": "People remember unfinished or interrupted tasks better than completed ones.",
+        "BestPractices": ["Use progress bars to motivate completion", "Show 'percentage complete' on profiles", "Provide 'resume where you left off' features"],
+        "Tools": ["Progress Indicators", "Gamification APIs"]
+      }
+    ]
+  },
+  {
+    "Category": "Strategic Efficiency Principles",
+    "Description": "Methods to manage complexity and maximize the impact of design efforts.",
+    "Principles": [
+      {
+        "Title": "Tesler’s Law",
+        "Effect": "The Law of Conservation of Complexity: every application has an inherent amount of complexity that cannot be removed.",
+        "BestPractices": ["Handle complexity on the backend, not the UI", "Automate default choices", "Pre-fill known user data"],
+        "Tools": ["Backend Automation", "Smart Defaults"]
+      },
+      {
+        "Title": "Pareto Principle",
+        "Effect": "The 80/20 Rule: 80% of users will only use 20% of your features. Focus your design on those.",
+        "BestPractices": ["Identify core features through analytics", "Simplify the primary navigation", "Hide advanced features in 'Settings'"],
+        "Tools": ["Google Analytics", "Mixpanel", "LogRocket"]
+      },
+      {
+        "Title": "Doherty Threshold",
+        "Effect": "Productivity skyrockets when interaction feedback occurs in less than 400ms.",
+        "BestPractices": ["Use skeleton screens for perceived speed", "Provide instant click feedback", "Optimize API response times"],
+        "Tools": ["Skeleton Loaders", "Vercel Speed Insights"]
+      }
+    ]
+  },
+  {
+    "Category": "Ethical & Emotional Design",
+    "Description": "Building trust and delight while avoiding manipulative 'Dark Patterns'.",
+    "Principles": [
+      {
+        "Title": "Aesthetic-Usability Effect",
+        "Effect": "Users often perceive aesthetically pleasing design as more usable.",
+        "BestPractices": ["Invest in high-quality typography", "Use a cohesive, modern color palette", "Balance whitespace for a 'premium' feel"],
+        "Tools": ["Unsplash", "Fontshare", "Adobe Color"]
+      },
+      {
+        "Title": "Ethical Design (Anti-Dark Patterns)",
+        "Effect": "Ensuring users aren't tricked into actions (like subscriptions) through deceptive UI.",
+        "BestPractices": ["Make 'Unsubscribe' as easy as 'Subscribe'", "Clearly label paid content", "Avoid hidden costs in checkout"],
+        "Tools": ["Ethical Design Checklists", "A11y Audits"]
+      },
+      {
+        "Title": "Visceral Interaction",
+        "Effect": "Appealing to the user's immediate emotional reaction through sensory triggers.",
+        "BestPractices": ["Use smooth glassmorphism", "Implement haptic-style vibrations", "Apply satisfying easing functions"],
+        "Tools": ["GSAP", "Three.js", "CSS Filters"]
+      }
     ]
   }
 ]

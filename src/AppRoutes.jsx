@@ -8,6 +8,7 @@ import MachineLearningRoadmap from "./Components/MachineLearningRoadmap.jsx";
 import AIEngineerRoadmap from "./Components/AIEngineerRoadmap.jsx";
 import SoftwareEngineerRoadmap from "./Components/SoftwareEngineerRoadmap.jsx";
 import DesignPrinciples from "./Components/DesignPrinciples";
+import AnimationsGuide from "./Components/AnimationsGuide";
 import EssentialSkills from "./Components/EssentialSkills";
 import Footer from "./Components/Footer.jsx";
 import { Toaster } from "react-hot-toast";
@@ -31,6 +32,7 @@ const Layout = () => {
         <Route path='/ai-roadmap' element={<AIEngineerRoadmap />} />
         <Route path='/swe-roadmap' element={<SoftwareEngineerRoadmap />} />
         <Route path='/design-principles' element={<DesignPrinciples />} />
+        <Route path='/animations-guide' element={<AnimationsGuide />} />
         <Route path='/developer-essential-skills' element={<EssentialSkills />} />
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>

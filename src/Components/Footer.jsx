@@ -47,6 +47,9 @@ const Footer = () => {
           <Link to={"/design-principles"} className='link link-hover '>
             Design Principles
           </Link>
+          <Link to={"/animations-guide"} className='link link-hover '>
+            Animation Systems
+          </Link>
         </nav>
         <nav>
           <h6 className='footer-title'>Social</h6>
