@@ -10,6 +10,9 @@ import SoftwareEngineerRoadmap from "./Components/SoftwareEngineerRoadmap.jsx";
 import DesignPrinciples from "./Components/DesignPrinciples";
 import AnimationsGuide from "./Components/AnimationsGuide";
 import EssentialSkills from "./Components/EssentialSkills";
+import SystemDesign from "./Components/SystemDesign";
+import DesignPatterns from "./Components/DesignPatterns";
+import DevOps from "./Components/DevOps";
 import Footer from "./Components/Footer.jsx";
 import { Toaster } from "react-hot-toast";
 import ThemeToggle from "./Components/ThemeToggle.jsx";
@@ -34,6 +37,9 @@ const Layout = () => {
         <Route path='/design-principles' element={<DesignPrinciples />} />
         <Route path='/animations-guide' element={<AnimationsGuide />} />
         <Route path='/developer-essential-skills' element={<EssentialSkills />} />
+        <Route path='/system-design' element={<SystemDesign />} />
+        <Route path='/design-patterns' element={<DesignPatterns />} />
+        <Route path='/devops' element={<DevOps />} />
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>
       {!hideFooter && <Footer />}

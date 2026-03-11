@@ -1,0 +1,302 @@
+[
+  {
+    "Category": "Creational Patterns",
+    "Description": "Patterns that deal with object creation mechanisms, focusing on how objects are instantiated while hiding the creation logic.",
+    "Principles": [
+      {
+        "Title": "Singleton",
+        "Effect": "Ensures a class has only one instance and provides a global point of access to it.",
+        "BestPractices": [
+          "Use for shared resources like Database connections or Logging services.",
+          "Ensure thread-safety in multi-threaded environments.",
+          "Be cautious of global state which can make unit testing difficult.",
+          "Consider using Dependency Injection as an alternative to avoid tight coupling."
+        ],
+        "Tools": ["Logger Classes", "Database Connection Pools", "Configuration Managers"]
+      },
+      {
+        "Title": "Factory Method",
+        "Effect": "Provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.",
+        "BestPractices": [
+          "Use when a class can't anticipate the class of objects it must create.",
+          "Decouple the code that uses a product from the code that creates it.",
+          "Simplifies adding new products without breaking existing code.",
+          "Helps adhere to the Open/Closed Principle."
+        ],
+        "Tools": ["Cross-platform UI components", "Document Parsers", "Payment Gateways"]
+      },
+      {
+        "Title": "Builder",
+        "Effect": "Allows producing complex objects step by step. Enables producing different types and representations of an object using the same construction code.",
+        "BestPractices": [
+          "Use for objects with many optional parameters or complex initialization.",
+          "Avoid 'telescoping constructors' (constructors with numerous parameters).",
+          "Improves readability of object creation code.",
+          "Enables creating objects in a specific state or configuration."
+        ],
+        "Tools": ["SQL Query Builders", "HTTP Request Builders", "Complex UI Layouts"]
+      },
+      {
+        "Title": "Abstract Factory",
+        "Effect": "Lets you produce families of related objects without specifying their concrete classes.",
+        "BestPractices": [
+          "Use when your code needs to work with various families of related products.",
+          "Ensures the products you're getting from a factory are compatible with each other.",
+          "Avoids tight coupling between concrete products and client code.",
+          "Simplifies introducing new variants of products into a system."
+        ],
+        "Tools": ["Theming Engines", "GUI Libraries", "Cross-Platform API Clients"]
+      }
+    ]
+  },
+  {
+    "Category": "Structural Patterns",
+    "Description": "Patterns that explain how to assemble objects and classes into larger structures while keeping them flexible and efficient.",
+    "Principles": [
+      {
+        "Title": "Adapter",
+        "Effect": "Allows objects with incompatible interfaces to collaborate by wrapping an existing class with a new interface.",
+        "BestPractices": [
+          "Use when you want to use an existing class, but its interface isn't compatible with the rest of your code.",
+          "Acts as a middleware between two objects.",
+          "Converts data formats or method names to match expected interfaces.",
+          "Enables integrating 3rd party libraries without altering core business logic."
+        ],
+        "Tools": ["Legacy Code Integration", "3rd Party API Wrappers", "Unit Conversion"]
+      },
+      {
+        "Title": "Decorator",
+        "Effect": "Allows attaching new behaviors to objects dynamically by placing them inside special wrapper objects.",
+        "BestPractices": [
+          "Use to assign extra behaviors to objects at runtime without breaking existing code.",
+          "Provides a flexible alternative to subclassing for extending functionality.",
+          "Follows the Single Responsibility Principle by dividing functionality between classes.",
+          "Ideal for implementing cross-cutting concerns like logging or validation."
+        ],
+        "Tools": ["Middleware", "I/O Stream Wrappers", "UI Notification Systems"]
+      },
+      {
+        "Title": "Facade",
+        "Effect": "Provides a simplified, high-level interface to a complex library, framework, or set of classes.",
+        "BestPractices": [
+          "Use to provide a simple entry point to a complex subsystem.",
+          "Reduces dependencies between the client code and internal technical classes.",
+          "Helps in layering a system by defining clear entry points to each level.",
+          "Prevents client code from dealing with the internal complexity of a framework."
+        ],
+        "Tools": ["Library Entry Points", "API Gateways", "System Integrators"]
+      },
+      {
+        "Title": "Proxy",
+        "Effect": "Provides a substitute or placeholder for another object to control access, perform lazy loading, or add logging.",
+        "BestPractices": [
+          "Use for Lazy Loading (Virtual Proxy) to delay expensive object creation.",
+          "Use for Access Control (Protection Proxy) to manage object permissions.",
+          "Use for Caching (Smart Proxy) to store results of expensive operations.",
+          "The proxy must strictly implement the same interface as the original object."
+        ],
+        "Tools": ["Authentication Layers", "Caching Proxies", "Lazy Initialization"]
+      }
+    ]
+  },
+  {
+    "Category": "Behavioral Patterns",
+    "Description": "Patterns concerned with algorithms and the assignment of responsibilities between objects.",
+    "Principles": [
+      {
+        "Title": "Observer",
+        "Effect": "Defines a subscription mechanism to notify multiple objects about events that happen to the object they’re observing.",
+        "BestPractices": [
+          "Use when a change to one object requires changing others, and you don't know the exact number.",
+          "Supports loose coupling between the subject and its observers.",
+          "Essential for creating reactive, event-driven systems.",
+          "Always handle unsubscription to prevent memory leaks in long-running apps."
+        ],
+        "Tools": ["Event Listeners", "Redux/State Management", "Pub/Sub Systems"]
+      },
+      {
+        "Title": "Strategy",
+        "Effect": "Defines a family of algorithms and makes them interchangeable at runtime.",
+        "BestPractices": [
+          "Use to switch between different variants of an algorithm within an object.",
+          "Eliminates massive conditional blocks (if/else or switch).",
+          "Decouples the logic of an algorithm from the client using it.",
+          "Enables adding new strategies without modifying the context class."
+        ],
+        "Tools": ["Sorting Algorithms", "Payment Methods", "Compression Types"]
+      },
+      {
+        "Title": "Command",
+        "Effect": "Turns a request into a stand-alone object that contains all information about the request.",
+        "BestPractices": [
+          "Use to parameterize objects with operations and support undoable actions.",
+          "Enables implementing robust Undo/Redo functionality.",
+          "Useful for queuing, logging, or delaying operation execution.",
+          "Decouples the object that triggers the operation from the one that performs it."
+        ],
+        "Tools": ["Undo/Redo Systems", "CLI Tools", "Job Queues"]
+      },
+      {
+        "Title": "State",
+        "Effect": "Lets an object alter its behavior when its internal state changes, appearing as if it changed its class.",
+        "BestPractices": [
+          "Use when an object behaves differently depending on its current state and transitions are complex.",
+          "Eliminates large conditional blocks that manage state logic.",
+          "Encapsulates state-specific behavior into separate objects.",
+          "Keeps the context class clean and focused on managing the state transitions."
+        ],
+        "Tools": ["Workflow Engines", "Audio Players", "Order Processing Systems"]
+      }
+    ]
+  },
+  {
+    "Category": "Architectural Patterns",
+    "Description": "High-level patterns that define the fundamental structural organization of a software system.",
+    "Principles": [
+      {
+        "Title": "MVC (Model-View-Controller)",
+        "Effect": "Separates an application into three main logical components to help manage complexity.",
+        "BestPractices": [
+          "Model: Manage data and business logic independently of the UI.",
+          "View: Focus purely on data representation and user interface.",
+          "Controller: Act as a bridge, handling user input and updating models/views.",
+          "Ensures high maintainability and parallel development of UI and logic."
+        ],
+        "Tools": ["Ruby on Rails", "ASP.NET MVC", "Angular"]
+      },
+      {
+        "Title": "MVVM (Model-View-ViewModel)",
+        "Effect": "Facilitates a clear separation of development of the GUI from development of the business logic or back-end logic.",
+        "BestPractices": [
+          "ViewModel: Expose data from the model in a way that is easily consumable by the view.",
+          "Use Data Binding to automatically synchronize the View and ViewModel.",
+          "Reduces the amount of 'glue code' written in code-behind files.",
+          "Enhances testability of UI logic by decoupling it from the View."
+        ],
+        "Tools": ["Vue.js", "React with Hooks", "WPF/Avalonia"]
+      },
+      {
+        "Title": "Layered (N-Tier) Architecture",
+        "Effect": "Organizes the system into layers, where each layer has a specific role and only communicates with layers directly above or below it.",
+        "BestPractices": [
+          "Presentation Layer: Handles user interface and experience.",
+          "Business Layer: Implements core logic and rules.",
+          "Persistence Layer: Manages database interactions.",
+          "Database Layer: Stores data. Use this for clear separation of concerns."
+        ],
+        "Tools": ["Enterprise Java", ".NET Services", "NestJS"]
+      },
+      {
+        "Title": "Microservices",
+        "Effect": "Structures an application as a collection of loose-coupled, independently deployable services.",
+        "BestPractices": [
+          "Design services around business domains (Bounded Contexts).",
+          "Ensure each service has its own database to avoid tight coupling.",
+          "Use an API Gateway for cross-cutting concerns like auth and routing.",
+          "Implement decentralized governance and data management."
+        ],
+        "Tools": ["Docker", "Kubernetes", "Spring Boot", "Go-Micro"]
+      }
+    ]
+  },
+  {
+    "Category": "Concurrency Patterns",
+    "Description": "Patterns that deal with multi-threaded design, ensuring safe and efficient execution in parallel environments.",
+    "Principles": [
+      {
+        "Title": "Active Object",
+        "Effect": "Decouples method execution from method invocation for objects that each reside in their own thread of control.",
+        "BestPractices": [
+          "Use to enhance concurrency and simplify synchronized access to a shared resource.",
+          "Invoke methods asynchronously via a proxy and a scheduler.",
+          "Enables long-running tasks to execute without blocking the main execution thread.",
+          "Ideal for UI applications that need to stay responsive during heavy processing."
+        ],
+        "Tools": ["Akka Actors", "Android Handlers", "Node.js Workers"]
+      },
+      {
+        "Title": "Monitor Object",
+        "Effect": "Synchronizes method execution locally to ensure that only one method at a time runs within an object.",
+        "BestPractices": [
+          "Use to protect the internal state of an object from concurrent access.",
+          "Encapsulates synchronization data and logic within the object itself.",
+          "Ensures thread-safe access to shared data structures.",
+          "Avoid deadlocks by defining a clear order of lock acquisition."
+        ],
+        "Tools": ["Java Synchronized", "C# Lock", "Pthreads Mutex"]
+      },
+      {
+        "Title": "Producer-Consumer",
+        "Effect": "Decouples processes that produce data from processes that consume data using a shared buffer.",
+        "BestPractices": [
+          "Use a thread-safe queue to manage the data flow between producers and consumers.",
+          "Allows producers and consumers to operate at different speeds.",
+          "Enables easy scaling by adding more consumer threads if processing is slow.",
+          "Handle overflow and underflow conditions using blocking or signaling."
+        ],
+        "Tools": ["BlockingQueue", "RabbitMQ", "Kafka", "Go Channels"]
+      },
+      {
+        "Title": "Lock Patterns",
+        "Effect": "Mechanisms to synchronize access to resources in a concurrent environment, preventing data races.",
+        "BestPractices": [
+          "Read-Write Lock: Allow multiple readers but only one writer.",
+          "Double-Checked Locking: Reduce overhead by checking conditions before locking.",
+          "Optimistic Locking: Use versions instead of locks for high-concurrency data.",
+          "Avoid 'Global Locks' to prevent massive performance bottlenecks."
+        ],
+        "Tools": ["ReentrantLock", "SpinLocks", "Atomic Integers"]
+      }
+    ]
+  },
+  {
+    "Category": "Cloud & Distributed Patterns",
+    "Description": "Patterns designed for the unique challenges of cloud computing, such as scalability, availability, and resiliency.",
+    "Principles": [
+      {
+        "Title": "Circuit Breaker",
+        "Effect": "Prevents an application from repeatedly trying to execute an operation that's likely to fail.",
+        "BestPractices": [
+          "Monitor the number of recent failures and 'trip' the breaker if a threshold is hit.",
+          "Provide a fallback response instead of waiting for a timeout.",
+          "Allow the breaker to 'half-open' periodically to test if the service has recovered.",
+          "Essential for microservices to prevent cascading failures."
+        ],
+        "Tools": ["Resilience4j", "Hystrix", "Istio Outlier Detection"]
+      },
+      {
+        "Title": "Sidecar",
+        "Effect": "Deploy components of an application into a separate process or container to provide isolation and encapsulation.",
+        "BestPractices": [
+          "Use for cross-cutting concerns like logging, monitoring, and security.",
+          "Ensures the main application remains focused on business logic.",
+          "Allows the sidecar to be written in a different language from the main app.",
+          "Optimizes resource usage by scaling sidecars independently if needed."
+        ],
+        "Tools": ["Envoy Proxy", "Fluentd", "Dapr", "Istio"]
+      },
+      {
+        "Title": "CQRS",
+        "Effect": "Command and Query Responsibility Segregation: uses different models to update and read data.",
+        "BestPractices": [
+          "Separate the 'Write' path (Commands) from the 'Read' path (Queries).",
+          "Optimize the read database for performance (e.g., using NoSQL or Materialized Views).",
+          "Handles high volumes of traffic more efficiently than a single model.",
+          "Supports eventual consistency between the write and read data stores."
+        ],
+        "Tools": ["MediatR", "Axon Framework", "EventStoreDB"]
+      },
+      {
+        "Title": "Bulkhead",
+        "Effect": "Isolates elements of an application into pools so that if one fails, the others will continue to function.",
+        "BestPractices": [
+          "Partition service resources (e.g., thread pools, memory) per dependency.",
+          "Prevents a single failing service from consuming all resources of the caller.",
+          "Enables partial functionality even during localized outages.",
+          "Works well alongside Circuit Breakers for maximum resiliency."
+        ],
+        "Tools": ["Resilience4j Bulkhead", "Thread Pools", "Docker Resource Limits"]
+      }
+    ]
+  }
+]

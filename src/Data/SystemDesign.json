@@ -1,0 +1,202 @@
+[
+  {
+    "Category": "Fundamental Concepts",
+    "Description": "The building blocks of large-scale distributed systems and performance optimization.",
+    "Principles": [
+      {
+        "Title": "Scalability",
+        "Effect": "The ability of a system to handle increased load by adding resources without performance degradation.",
+        "BestPractices": [
+          "Vertical Scaling: Adding more power (CPU, RAM) to an existing server.",
+          "Horizontal Scaling: Adding more servers to the service pool.",
+          "Stateless Architecture: Decoupling state from application servers.",
+          "Database Sharding: Partitioning data across multiple database instances."
+        ],
+        "Tools": ["Kubernetes", "AWS Auto Scaling", "Nginx", "Redis"]
+      },
+      {
+        "Title": "Availability",
+        "Effect": "Ensuring the system remains operational and accessible even during component failures.",
+        "BestPractices": [
+          "Redundancy: Eliminating single points of failure (SPOF).",
+          "Automatic Failover: Switching to standby systems during outages.",
+          "SLA Management: Targeting 99.999% ('five nines') availability.",
+          "Multi-AZ / Multi-Region: Deploying across isolated geographic zones."
+        ],
+        "Tools": ["Route 53", "Cloudflare", "HAProxy", "Keepalived"]
+      },
+      {
+        "Title": "Reliability",
+        "Effect": "The probability that a system will perform its intended function without failure for a specified period.",
+        "BestPractices": [
+          "Chaos Engineering: Proactively testing system resilience.",
+          "Retries with Backoff: Implementing exponential backoff logic.",
+          "Circuit Breakers: Preventing cascading failures in dependencies.",
+          "Idempotency: Ensuring operations can be re-run safely."
+        ],
+        "Tools": ["Netflix Hystrix", "Resilience4j", "Gremlin", "Chaos Monkey"]
+      },
+      {
+        "Title": "Latency vs Throughput",
+        "Effect": "Balancing the speed of a single request against the total volume of requests processed.",
+        "BestPractices": [
+          "Connection Pooling: Reusing database and network connections.",
+          "Batching: Combining multiple operations into a single request.",
+          "Asynchronous I/O: Handling requests without blocking threads.",
+          "Network Optimization: Using HTTP/3 and compression."
+        ],
+        "Tools": ["gRPC", "Project Loom", "Netty", "Envoy"]
+      }
+    ]
+  },
+  {
+    "Category": "Architecture Patterns",
+    "Description": "Structural paradigms for organizing components and managing communication flow.",
+    "Principles": [
+      {
+        "Title": "Microservices",
+        "Effect": "Decomposing an application into a collection of small, independently deployable services.",
+        "BestPractices": [
+          "Single Responsibility: Each service owns one business capability.",
+          "Database per Service: Avoiding shared data sources between services.",
+          "API Gateway: Centralizing authentication, routing, and rate limiting.",
+          "Service Discovery: Automating location tracking of dynamic services."
+        ],
+        "Tools": ["Docker", "Istio", "Consul", "Spring Cloud"]
+      },
+      {
+        "Title": "Serverless",
+        "Effect": "An event-driven execution model where the provider manages server allocation and scaling.",
+        "BestPractices": [
+          "Cold Start Optimization: Minimizing package size and using 'provisioned concurrency'.",
+          "Stateless Functions: Ensuring functions don't rely on local persistent state.",
+          "Fine-grained Scaling: Scaling based on specific event triggers.",
+          "Cost Awareness: Designing for short execution durations."
+        ],
+        "Tools": ["AWS Lambda", "Google Cloud Functions", "Vercel", "Azure Functions"]
+      },
+      {
+        "Title": "Event-Driven (EDA)",
+        "Effect": "A system architecture where events trigger and communicate between decoupled services.",
+        "BestPractices": [
+          "Pub/Sub Decoupling: Ensuring publishers don't know about subscribers.",
+          "Event Sourcing: Storing state changes as an immutable sequence of events.",
+          "CQRS: Separating read and write operations for performance.",
+          "Dead Letter Queues: Handling failed message processing gracefully."
+        ],
+        "Tools": ["Apache Kafka", "RabbitMQ", "Amazon SQS/SNS", "EventBridge"]
+      },
+      {
+        "Title": "Sidecar Pattern",
+        "Effect": "Deploying components of an application into a separate process or container to provide isolation.",
+        "BestPractices": [
+          "Abbreviated Communication: Offloading logging and monitoring to sidecars.",
+          "Service Mesh: Managing mTLS and traffic rules outside the application.",
+          "Platform Independence: Running sidecars in any language.",
+          "Resource Separation: Limiting sidecar CPU/RAM usage."
+        ],
+        "Tools": ["Istio Envoy", "Linkerd", "Dapr", "Fluentd"]
+      }
+    ]
+  },
+  {
+    "Category": "Data Management",
+    "Description": "Advanced strategies for persistence, consistency, and large-scale data processing.",
+    "Principles": [
+      {
+        "Title": "SQL vs NoSQL",
+        "Effect": "Selecting a database model based on data structure, consistency, and scaling needs.",
+        "BestPractices": [
+          "ACID Compliance: Choosing SQL for transactional integrity.",
+          "BASE Consistency: Choosing NoSQL for loose coupling and scaling.",
+          "Schema Evolution: Using NoSQL for rapidly changing data formats.",
+          "Polyglot Persistence: Using different databases for different needs."
+        ],
+        "Tools": ["PostgreSQL", "MongoDB", "Cassandra", "DynamoDB"]
+      },
+      {
+        "Title": "Caching Strategies",
+        "Effect": "Improving performance by storing frequently accessed data in a fast-access layer.",
+        "BestPractices": [
+          "Cache Aside: Lazy loading data into cache upon request.",
+          "Write-Through: Synchronously updating cache and DB.",
+          "TTL Management: Implementing time-to-live for data freshness.",
+          "Eviction Policies: Using LRU (Least Recently Used) algorithms."
+        ],
+        "Tools": ["Redis", "Memcached", "Varnish", "Cloudflare"]
+      },
+      {
+        "Title": "Database Sharding",
+        "Effect": "Horizontal partitioning of data to distribute the load across multiple database nodes.",
+        "BestPractices": [
+          "Shard Key Selection: Choosing keys that prevent 'hot shards'.",
+          "Resharding Strategy: Planning for data migration as volume grows.",
+          "Query Routing: Directing requests to the correct shard efficiently.",
+          "Cross-Shard Joins: Minimizing joins between different shards."
+        ],
+        "Tools": ["Vitess", "Citus", "MongoDB Sharding", "Amazon Aurora"]
+      },
+      {
+        "Title": "Indexing & Search",
+        "Effect": "Optimizing data retrieval through specialized data structures and full-text search.",
+        "BestPractices": [
+          "B-Tree vs Hash: Selecting indexing types for range vs point queries.",
+          "Inverted Indexing: Enabling efficient full-text searching.",
+          "Index Maintenance: Monitoring write performance impact.",
+          "Distributed Search: Scaling search across multiple clusters."
+        ],
+        "Tools": ["Elasticsearch", "Solr", "Algolia", "Meilisearch"]
+      }
+    ]
+  },
+  {
+    "Category": "Network & Security",
+    "Description": "Securing data flow and optimizing global content delivery.",
+    "Principles": [
+      {
+        "Title": "Load Balancing",
+        "Effect": "Distributing incoming network traffic across a group of backend servers.",
+        "BestPractices": [
+          "Health Checks: Dynamically removing failed nodes from the pool.",
+          "Sticky Sessions: Ensuring session persistence for stateful apps.",
+          "SSL Offloading: Decrypting HTTPS at the balancer level.",
+          "Global Server Load Balancing (GSLB): Routing based on location."
+        ],
+        "Tools": ["Nginx", "F5 Big-IP", "AWS ELB", "HAProxy"]
+      },
+      {
+        "Title": "Content Delivery (CDN)",
+        "Effect": "A system of distributed servers that deliver web content based on the geographic locations of the user.",
+        "BestPractices": [
+          "Edge Caching: Storing static assets close to end-users.",
+          "Dynamic Acceleration: Optimizing routes between edge and origin.",
+          "Security at Edge: Implementing WAF and DDoS protection.",
+          "Brotli/Gzip: Enabling advanced compression."
+        ],
+        "Tools": ["Cloudflare", "Akamai", "Fastly", "Amazon CloudFront"]
+      },
+      {
+        "Title": "API Design & Security",
+        "Effect": "Building robust and secure interfaces for interoperability between systems.",
+        "BestPractices": [
+          "OAuth2 / OIDC: Implementing industry-standard authentication.",
+          "Rate Limiting: Protecting endpoints from abuse and spikes.",
+          "Idempotency Keys: Preventing duplicate processing of requests.",
+          "API Versioning: managing lifecycle without breaking clients."
+        ],
+        "Tools": ["Kong Gateway", "Apollo GraphQL", "Apigee", "Auth0"]
+      },
+      {
+        "Title": "Observability",
+        "Effect": "Measuring the internal state of a system by examining its external outputs (logs, metrics, traces).",
+        "BestPractices": [
+          "Distributed Tracing: Tracking requests across microservices.",
+          "Structured Logging: Emitting logs in machine-readable formats.",
+          "Anomaly Detection: Setting up automated alerts for unusual patterns.",
+          "Dashboards: Visualizing real-time system health."
+        ],
+        "Tools": ["Prometheus", "Grafana", "Jaeger", "Datadog"]
+      }
+    ]
+  }
+]
