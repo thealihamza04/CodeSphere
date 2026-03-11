@@ -1,0 +1,146 @@
+[
+  {
+    "Category": "Core Foundations",
+    "Description": "The fundamental building blocks of software engineering that every developer must understand deeply.",
+    "Skills": [
+      {
+        "Title": "Programming Languages",
+        "Effect": "Programming languages are the foundation of all software. Mastery of multiple paradigms allows you to choose the best tool for the task.",
+        "BestPractices": ["Master Imperative, Functional, and OOP paradigms", "Understand memory management for each", "Keep up with language evolution"],
+        "Tools": ["JavaScript", "Python", "Java", "C++", "Rust"]
+      },
+      {
+        "Title": "Data Structures & Algorithms",
+        "Effect": "DSA is about efficiency and problem-solving. It separates a coder from a true software engineer.",
+        "BestPractices": ["Understand Big O notation", "Master Arrays, Linked Lists, Trees, and Graphs", "Learn sorting and searching algorithms"],
+        "Tools": ["LeetCode", "Data Structure Visualizers", "Algorithm Analysis"]
+      },
+      {
+        "Title": "Web Development Basics",
+        "Effect": "These are the languages of the web. Crucial for building cohesive, accessible, and high-performance products.",
+        "BestPractices": ["Follow Semantic HTML5", "Master CSS Grid and Flexbox", "Understand Modern ES6+ JavaScript"],
+        "Tools": ["MDN Docs", "Chrome DevTools", "A11y Checkers"]
+      },
+      {
+        "Title": "Memory Management",
+        "Effect": "Knowing how the Stack and Heap work helps you prevent memory leaks and write code that is respectful of machine resources.",
+        "BestPractices": ["Understand Garbage Collection mechanics", "Learn pointer arithmetic (if applicable)", "Optimize for spatial and temporal locality"],
+        "Tools": ["Chrome Head Profiler", "Valgrind", "VisualVM"]
+      },
+      {
+        "Title": "Paradigms: OOP vs Functional",
+        "Effect": "Different problems require different mental models. Understanding both allows for more flexible and maintainable architectures.",
+        "BestPractices": ["Use OOP for entity modeling", "Use FP for data transformation and pure logic", "Master immutability concepts"],
+        "Tools": ["Clean Code", "Design Patterns", "Solid Principles"]
+      }
+    ]
+  },
+  {
+    "Category": "Systems & Data",
+    "Description": "Understanding how data flows, how systems communicate, and how to scale infrastructure.",
+    "Skills": [
+      {
+        "Title": "Database Management",
+        "Effect": "Data is at the heart of every application. Proper management ensures integrity and high performance.",
+        "BestPractices": ["Master SQL and NoSQL databases", "Optimize indexes and query performance", "Understand ACID vs BASE properties"],
+        "Tools": ["PostgreSQL", "MongoDB", "Redis", "DBeaver"]
+      },
+      {
+        "Title": "APIs & System Integration",
+        "Effect": "Modern apps are rarely isolated. Mastering APIs allows your frontend to communicate with powerful backends and services.",
+        "BestPractices": ["Design RESTful and GraphQL APIs", "Implement proper authentication (JWT/OAuth)", "Document with Swagger/OpenAPI"],
+        "Tools": ["Postman", "Apollo", "Swagger", "Stripe API"]
+      },
+      {
+        "Title": "System Design & Architecture",
+        "Effect": "Building scalable systems is hard. Understanding architectural patterns ensures your app can handle millions of users.",
+        "BestPractices": ["Master Microservices and Serverless", "Understand Load Balancing and Caching", "Design for high availability"],
+        "Tools": ["System Design Primer", "Whimsical", "AWS Architecture"]
+      },
+      {
+        "Title": "Operating Systems & Networking",
+        "Effect": "Knowing how memory management, file systems, and HTTP protocols work helps you debug low-level issues and optimize software.",
+        "BestPractices": ["Understand the OSI Model", "Learn process and thread management", "Master DNS and SSL/TLS concepts"],
+        "Tools": ["Wireshark", "Ping", "Traceroute", "cURL"]
+      },
+      {
+        "Title": "Observability & Logging",
+        "Effect": "When things break in production, you need visibility. Monitoring allows you to diagnose issues in minutes instead of hours.",
+        "BestPractices": ["Implement structured logging", "Set up real-time alerting", "Use distributed tracing"],
+        "Tools": ["Prometheus", "Grafana", "Datadog", "OpenTelemetry"]
+      }
+    ]
+  },
+  {
+    "Category": "Process & Automation",
+    "Description": "The tools and workflows that ensure code quality, collaboration, and consistent delivery.",
+    "Skills": [
+      {
+        "Title": "Version Control (Git)",
+        "Effect": "Git is the industry standard for collaboration and safety. It provides a history of every change made to a project.",
+        "BestPractices": ["Use meaningful commit messages", "Master branching and merging strategies", "Perform regular code reviews"],
+        "Tools": ["GitHub", "GitLab", "Bitbucket", "SourceTree"]
+      },
+      {
+        "Title": "Automated Testing",
+        "Effect": "Testing ensures that new changes don't break existing features, reducing technical debt and allowing faster deployment.",
+        "BestPractices": ["Implement Unit, Integration, and E2E tests", "Follow TDD/BDD where appropriate", "Achieve high test coverage for critical paths"],
+        "Tools": ["Jest", "Cypress", "Playwright", "Vitest"]
+      },
+      {
+        "Title": "Mastering the Command Line",
+        "Effect": "The CLI is a power-user's playground. It provides speed and automation capabilities far beyond what GUIs offer.",
+        "BestPractices": ["Automate repetitive tasks with shell scripts", "Learn SSH for remote server management", "Master Grep, Awk, and Sed"],
+        "Tools": ["Zsh", "Bash", "Tmux", "Vim"]
+      },
+      {
+        "Title": "Concurrency & Parallelism",
+        "Effect": "Modern hardware is multi-core. Mastering async logic allows you to write software that handles multiple operations simultaneously.",
+        "BestPractices": ["Handle Race Conditions and Deadlocks", "Use Async/Await and Promises", "Implement thread-safe data structures"],
+        "Tools": ["Thread Profiles", "Async Debuggers", "Worker Threads"]
+      },
+      {
+        "Title": "Technical Debt & Refactoring",
+        "Effect": "Refactoring is 'paying interest' on technical debt to keep the codebase healthy, modular, and maintainable over time.",
+        "BestPractices": ["Refactor early and often", "Follow the Boy Scout Rule", "Use automated code quality tools"],
+        "Tools": ["SonarQube", "ESLint", "Prettier", "CodeClimate"]
+      }
+    ]
+  },
+  {
+    "Category": "Deployment, Security & AI",
+    "Description": "Modern challenges including cloud orchestration, security compliance, and AI-driven development.",
+    "Skills": [
+      {
+        "Title": "Cloud, Docker & DevOps",
+        "Effect": "Ensures your application runs consistently across all environments, enabling seamless scaling and high availability.",
+        "BestPractices": ["Containerize applications with Docker", "Use CI/CD pipelines", "Implement Infrastructure as Code (IaC)"],
+        "Tools": ["AWS", "Docker", "Kubernetes", "GitHub Actions"]
+      },
+      {
+        "Title": "Security & Best Practices",
+        "Effect": "Security is a core responsibility. Protecting user data is critical for trust and company reputation.",
+        "BestPractices": ["Follow OWASP Top 10", "Implement robust encryption", "Use Secure Authentication (OAuth/JWT)"],
+        "Tools": ["Snyk", "OWASP ZAP", "Auth0"]
+      },
+      {
+        "Title": "Data Privacy & Compliance",
+        "Effect": "In the modern era, data is a liability. Understanding GDPR/CCPA is critical for any developer handling user data.",
+        "BestPractices": ["Implement 'Privacy by Design'", "Anonymize sensitive data", "Understand data residency laws"],
+        "Tools": ["GDPR Checklist", "Compliance Audits", "OneTrust"]
+      },
+      {
+        "Title": "AI & LLM Force Multipliers",
+        "Effect": "AI tools are multipliers. They allow you to automate boilerplate and focus on higher-level architectural design.",
+        "BestPractices": ["Master Prompt Engineering", "Integrate AI APIs into workflows", "Audit AI-generated code for security"],
+        "Tools": ["GitHub Copilot", "ChatGPT", "Claude", "LangChain"]
+      },
+      {
+        "Title": "Soft Skills & Teamwork",
+        "Effect": "Coding is a team sport. Communication and documentation are as important as technical ability.",
+        "BestPractices": ["Write clear Pull Request descriptions", "Practice empathy in Code Reviews", "Maintain up-to-date documentation"],
+        "Tools": ["Notion", "Jira", "Slack", "Confluence"]
+      }
+    ]
+  }
+]

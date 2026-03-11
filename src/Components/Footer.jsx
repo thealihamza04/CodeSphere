@@ -12,85 +12,66 @@ const Footer = () => {
 
   const linkGroups = [
     {
-      title: "Navigation",
+      title: "Platform",
       links: [
         { name: "Home", path: "/" },
-        { name: "Frameworks", path: "/Frameworks" },
+        { name: "Frameworks Catalog", path: "/Frameworks" },
+        { name: "Language Timeline", path: "/TimeLine" },
       ],
     },
     {
       title: "Roadmaps",
       links: [
-        { name: "Software Eng.", path: "/swe-roadmap" },
+        { name: "Software Engineering", path: "/swe-roadmap" },
         { name: "AI Engineering", path: "/ai-roadmap" },
         { name: "Machine Learning", path: "/ml-roadmap" },
       ],
     },
     {
-      title: "Resources",
+      title: "Systems",
       links: [
         { name: "System Design", path: "/system-design" },
         { name: "Design Patterns", path: "/design-patterns" },
-        { name: "Infrastructure", path: "/devops" },
+        { name: "DevOps & Infrastructure", path: "/devops" },
+      ],
+    },
+    {
+      title: "Insights",
+      links: [
         { name: "Design Principles", path: "/design-principles" },
+        { name: "Animation Systems", path: "/animations-guide" },
         { name: "Essential Skills", path: "/developer-essential-skills" },
+        { name: "Civic Sense", path: "/civic-sense" },
       ],
     },
   ];
 
   return (
-    <footer className="bg-base-100 border-t border-base-300 pt-20 pb-10">
+    <footer className="bg-base-100 border-t border-base-300 pt-24 pb-12">
       <div className="container mx-auto px-6">
         
         {/* Main Links Section */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 mb-20 place-items-start">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-24">
           {linkGroups.map((group, idx) => (
-            <div key={idx} className="space-y-6 w-full max-w-[150px]">
-              <h6 className="text-[10px] font-bold uppercase tracking-widest text-base-content/30 italic">
+            <div key={idx} className="space-y-6">
+              <h6 className="text-[11px] font-black uppercase tracking-widest text-base-content/40">
                 {group.title}
               </h6>
-              <ul className="space-y-4">
+              <ul className="space-y-3.5">
                 {group.links.map((link, lIdx) => (
                   <li key={lIdx}>
                     <Link 
                       to={link.path} 
-                      className="group/link text-[13px] font-bold text-base-content/60 hover:text-primary transition-all duration-300 flex items-center gap-1.5"
+                      className="group/link text-[14px] font-medium text-base-content/70 hover:text-primary transition-all flex items-center gap-2"
                     >
                       {link.name}
-                      <LuArrowUpRight className="size-3 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all" />
+                      <LuArrowUpRight className="size-3.5 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-[opacity,transform] duration-300 text-primary" />
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-
-          {/* Special Evolution Column */}
-          <div className="space-y-6 w-full max-w-[150px]">
-             <h6 className="text-[10px] font-bold uppercase tracking-widest text-base-content/30 italic">
-                Extra
-              </h6>
-              <ul className="space-y-4">
-                <li>
-                  <Link to="/animations-guide" className="group/link text-[13px] font-bold text-base-content/60 hover:text-primary transition-all duration-300 flex items-center gap-1.5">
-                    Animations
-                    <LuArrowUpRight className="size-3 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/TimeLine" className="group/link text-[13px] font-bold text-base-content/60 hover:text-primary transition-all duration-300 flex items-center gap-1.5 italic">
-                    Timeline
-                    <LuArrowUpRight className="size-3 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/civic-sense" className="group/link text-[13px] font-bold text-base-content/60 hover:text-primary transition-all duration-300 flex items-center gap-1.5 italic">
-                    Civic Sense
-                    <LuArrowUpRight className="size-3 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all" />
-                  </Link>
-                </li>
-              </ul>
-          </div>
         </div>
 
         {/* Branding & Socials Strip */}
@@ -98,13 +79,13 @@ const Footer = () => {
           
           {/* Subtle Socials */}
           <div className="flex items-center gap-6">
-            <a href="https://github.com/thealihamza04" target="_blank" rel="noreferrer" className="text-base-content/40 hover:text-primary hover:scale-110 transition-all duration-300">
+            <a href="https://github.com/thealihamza04" target="_blank" rel="noreferrer" className="text-base-content/40 hover:text-primary hover:scale-110 transition-transform duration-300">
               <FaGithub className="size-5" />
             </a>
-            <a href="https://www.linkedin.com/in/thealihamza04/" target="_blank" rel="noreferrer" className="text-base-content/40 hover:text-primary hover:scale-110 transition-all duration-300">
+            <a href="https://www.linkedin.com/in/thealihamza04/" target="_blank" rel="noreferrer" className="text-base-content/40 hover:text-primary hover:scale-110 transition-transform duration-300">
               <FaLinkedinIn className="size-5" />
             </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thealihamza0@gmail.com" target="_blank" rel="noreferrer" className="text-base-content/40 hover:text-primary hover:scale-110 transition-all duration-300">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thealihamza0@gmail.com" target="_blank" rel="noreferrer" className="text-base-content/40 hover:text-primary hover:scale-110 transition-transform duration-300">
               <FaEnvelope className="size-5" />
             </a>
           </div>

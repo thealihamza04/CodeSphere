@@ -37,10 +37,10 @@ const categoryIcons = {
 const AnimationSubCard = ({ type, onClick }) => (
   <button 
     onClick={onClick}
-    className="group flex items-center justify-between py-4 border-b border-base-300/60 last:border-0 w-full text-left transition-all duration-300 hover:pl-2"
+    className="group flex items-center justify-between py-4 border-b border-base-300/60 last:border-0 w-full text-left transition-[padding-left] duration-300 hover:pl-2"
   >
-    <h3 className="text-[15px] font-bold tracking-tight text-base-content/80 group-hover:text-primary transition-colors leading-none">{type}</h3>
-    <div className="text-base-content/20 group-hover:text-primary group-hover:translate-x-1 transition-all duration-300">
+    <h3 className="text-[15px] font-bold tracking-tight text-base-content/80 group-hover:text-primary leading-none">{type}</h3>
+    <div className="text-base-content/20 group-hover:text-primary group-hover:translate-x-1 transition-transform duration-300">
       <LuArrowUpRight className="size-4" />
     </div>
   </button>
@@ -135,7 +135,7 @@ const AnimationsGuide = () => {
                 <h2 className="text-4xl md:text-5xl font-black leading-none tracking-tighter text-base-content">{selectedAnim.Type}</h2>
               </div>
               <button 
-                className="btn btn-md btn-circle btn-ghost border border-base-300 hover:rotate-90 transition-transform" 
+                className="btn btn-md btn-circle btn-ghost border border-base-300 hover:rotate-90 transition-transform duration-300" 
                 onClick={() => setSelectedAnim(null)}
               >
                 ✕
@@ -160,7 +160,7 @@ const AnimationsGuide = () => {
 
             <div className="mt-auto pt-10">
               <div className="p-8 rounded-[2rem] bg-primary/5 border border-primary/10 relative overflow-hidden group">
-                <div className="absolute top-0 right-0 p-8 text-primary/10 group-hover:scale-110 transition-transform">
+                <div className="absolute top-0 right-0 p-8 text-primary/10 group-hover:scale-110 transition-transform duration-300">
                   <LuSparkles className="size-20" />
                 </div>
                  <p className="text-xs text-base-content/60 leading-relaxed italic relative z-10">

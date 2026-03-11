@@ -10,6 +10,8 @@
     font-family: "DM Sans", sans-serif;
 }
 
+
+
 .heading {
     @apply text-3xl tracking-tighter text-center md:text-7xl;
     font-family: "Quicksand", sans-serif;
