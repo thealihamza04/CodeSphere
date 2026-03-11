@@ -228,10 +228,6 @@ const Frameworks = () => {
                 Title={framework.Framework}
                 Summary={framework.Summary}
                 URL={framework.URL}
-                Tools={framework.Tools}
-                Lib={framework.Libraries}
-                RTNIT={frameworksData}
-                PrevPath={`${location.pathname}${location.search}`}
               />
             ))}
           </div>

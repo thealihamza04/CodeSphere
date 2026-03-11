@@ -1,0 +1,98 @@
+[
+  {
+    "Category": "Social Etiquette & Respect",
+    "Description": "Fundamental behaviors that foster a respectful and harmonious community life.",
+    "Principles": [
+      {
+        "Title": "Respect for Others",
+        "Effect": "Treating everyone with dignity regardless of their background, beliefs, or status.",
+        "BestPractices": ["Practice active listening", "Use polite language", "Respect personal space"],
+        "Tools": ["Empathy", "Patience", "Openness"]
+      },
+      {
+        "Title": "Public Decorum",
+        "Effect": "Maintaining appropriate behavior in public spaces to avoid causing discomfort to others.",
+        "BestPractices": ["Avoid loud conversations", "Queue properly", "Dress appropriately for the context"],
+        "Tools": ["Self-awareness", "Social Graces"]
+      },
+      {
+        "Title": "Helping the Community",
+        "Effect": "Aiding those in need creates a supportive social safety net.",
+        "BestPractices": ["Volunteer for local causes", "Hold the door for others", "Help elderly or disabled individuals"],
+        "Tools": ["Kindness", "Time", "Effort"]
+      }
+    ]
+  },
+  {
+    "Category": "Environmental Stewardship",
+    "Description": "Responsibilities toward preserving and protecting our natural and shared surroundings.",
+    "Principles": [
+      {
+        "Title": "Waste Management",
+        "Effect": "Keeping our environment clean prevents disease and preserves beauty.",
+        "BestPractices": ["Always use dustbins", "Participate in 'Cleanliness Drives'", "Avoid littering in public spaces"],
+        "Tools": ["Binoculars", "Recycle Bins", "Civic Duty"]
+      },
+      {
+        "Title": "Resource Conservation",
+        "Effect": "Mindful use of water, electricity, and fuel ensures sustainability for future generations.",
+        "BestPractices": ["Turn off lights when not in use", "Fix leaking taps", "Reduce plastic usage"],
+        "Tools": ["Solar Energy", "Reusable Bags", "LED Bulbs"]
+      },
+      {
+        "Title": "Care for Public Property",
+        "Effect": "Shared infrastructure like parks, transport, and monuments belong to everyone.",
+        "BestPractices": ["Do not vandalize public assets", "Report damages to authorities", "Use public facilities responsibly"],
+        "Tools": ["Public Awareness", "Reporting Apps"]
+      }
+    ]
+  },
+  {
+    "Category": "Safety & Legal Compliance",
+    "Description": "Adhering to rules that ensure the safety and security of all citizens.",
+    "Principles": [
+      {
+        "Title": "Traffic Discipline",
+        "Effect": "Following road rules saves lives and reduces congestion.",
+        "BestPractices": ["Always wear a seatbelt/helmet", "Do not jump red lights", "Respect pedestrian crossings"],
+        "Tools": ["Dashcams", "Safety Gear", "Driving License"]
+      },
+      {
+        "Title": "Rule of Law",
+        "Effect": "Respecting the legal system maintains order and justice in society.",
+        "BestPractices": ["Pay taxes on time", "Follow local regulations", "Respect law enforcement"],
+        "Tools": ["Legal Literacy", "Honesty", "Integrity"]
+      },
+      {
+        "Title": "Emergency Response",
+        "Effect": "Knowing how to act during crises can mitigate harm.",
+        "BestPractices": ["Learn basic First Aid", "Keep emergency numbers handy", "Stay calm and help others evacuate"],
+        "Tools": ["First Aid Kit", "Emergency Apps", "Training"]
+      }
+    ]
+  },
+  {
+    "Category": "Digital Citizenship",
+    "Description": "Responsible and ethical behavior in the digital world.",
+    "Principles": [
+      {
+        "Title": "Online Etiquette (Netiquette)",
+        "Effect": "Creating a positive digital environment through respectful communication.",
+        "BestPractices": ["Avoid cyberbullying", "Do not share unverified news", "Keep discussions constructive"],
+        "Tools": ["Moderation", "Fact-checking", "Critical Thinking"]
+      },
+      {
+        "Title": "Data Privacy & Security",
+        "Effect": "Protecting your information and respecting others' privacy.",
+        "BestPractices": ["Use strong passwords", "Enable 2FA", "Do not share sensitive info of others"],
+        "Tools": ["Password Managers", "VPNs", "Privacy Settings"]
+      },
+      {
+        "Title": "Intellectual Property",
+        "Effect": "Respecting the creative work and ownership of others.",
+        "BestPractices": ["Give credit to original creators", "Do not pirate content", "Support local artists and developers"],
+        "Tools": ["Copyright Laws", "Creative Commons", "Open Source"]
+      }
+    ]
+  }
+]

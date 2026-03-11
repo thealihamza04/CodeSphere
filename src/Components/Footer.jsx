@@ -16,7 +16,6 @@ const Footer = () => {
       links: [
         { name: "Home", path: "/" },
         { name: "Frameworks", path: "/Frameworks" },
-        { name: "Libraries Catalog", path: "/libraries" },
       ],
     },
     {
@@ -81,6 +80,12 @@ const Footer = () => {
                 <li>
                   <Link to="/TimeLine" className="group/link text-[13px] font-bold text-base-content/60 hover:text-primary transition-all duration-300 flex items-center gap-1.5 italic">
                     Timeline
+                    <LuArrowUpRight className="size-3 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all" />
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/civic-sense" className="group/link text-[13px] font-bold text-base-content/60 hover:text-primary transition-all duration-300 flex items-center gap-1.5 italic">
+                    Civic Sense
                     <LuArrowUpRight className="size-3 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all" />
                   </Link>
                 </li>

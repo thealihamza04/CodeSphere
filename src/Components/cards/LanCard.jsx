@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import { LuArrowUpRight } from "react-icons/lu";
 
 const LanCard = ({
   Title,
@@ -10,32 +10,34 @@ const LanCard = ({
   LanguageURL,
 }) => {
   return (
-    <div
-      className='z-30 w-full rounded-sm cursor-default md:w-80 group '
-    >
-      <div className='border !rounded-3xl card bg-base-200 border-base-300 text-base-content '>
-        <div className='p-[24px] card-body'>
-          <h2 className='text-[15px] font-extrabold card-title'>
-            <a href={LanguageURL ?? ''} target="_blank">
-              {Title}
-            </a>
-          </h2>
-          <p className='text-[14px] text-base-content/80  text-pretty  '>{Summary}</p>
+    <div className='w-full md:w-80 h-full group'>
+      <div className='card h-full bg-base-200/50 hover:bg-base-200 border border-base-300 rounded-[2rem] transition-all duration-300 group-hover:border-base-content/20'>
+        <div className='p-8 card-body flex flex-col justify-between'>
+          <div>
+            {LanguageURL ? (
+              <a
+                href={LanguageURL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/title inline-flex items-baseline gap-2"
+              >
+                <h2 className='text-xl font-bold text-base-content tracking-tight mb-3 group-hover/title:text-primary transition-colors'>{Title}</h2>
+                <LuArrowUpRight className="size-3.5 opacity-0 text-primary transition-all duration-300 group-hover/title:opacity-100 group-hover/title:translate-x-0.5 group-hover/title:-translate-y-0.5" />
+              </a>
+            ) : (
+              <h2 className='text-xl font-bold text-base-content tracking-tight mb-3'>{Title}</h2>
+            )}
+            <p className='text-[14px] leading-relaxed text-base-content/50 font-medium'>{Summary}</p>
+          </div>
 
-          <div className='justify-end pt-3 card-actions'>
-            <div className='flex flex-wrap items-center justify-end w-full gap-2'>
+          <div className="space-y-6 pt-6">
+            <div className='flex items-center gap-3'>
               <Link
-                className='text-[12px] px-[12px] py-1 rounded-full text-base-content font-medium border border-base-300 hover:bg-base-300/30'
+                className='w-full py-2.5 rounded-xl border border-base-300 bg-base-200 hover:bg-base-300 text-[11px] font-bold uppercase tracking-wider text-center transition-all'
                 to={`/Frameworks?lang=${encodeURIComponent(Title)}`}
                 state={{ Frameworks: Details }}
               >
                 Frameworks
-              </Link>
-              <Link
-                className='text-[12px] px-[12px] py-1 rounded-full text-base-content bg-neutral  font-medium border border-base-300 '
-                to={`/libraries?lang=${encodeURIComponent(Title)}`}
-              >
-                Libraries
               </Link>
             </div>
           </div>
@@ -49,18 +51,10 @@ LanCard.propTypes = {
   Title: PropTypes.string.isRequired,
   Summary: PropTypes.string.isRequired,
   Details: PropTypes.array.isRequired,
-  Libraries: PropTypes.arrayOf(
-    PropTypes.shape({
-      Name: PropTypes.string.isRequired,
-      Summary: PropTypes.string.isRequired,
-      URL: PropTypes.string.isRequired,
-    })
-  ),
   LanguageURL: PropTypes.string,
 };
 
 LanCard.defaultProps = {
-  Libraries: [],
   LanguageURL: "",
 };
 

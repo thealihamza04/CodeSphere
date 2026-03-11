@@ -1,8 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import Frameworks from "./Components/Frameworks";
-import FrameworkResources from "./Components/FrameworkResources";
 import ProgrammingLanguages from "./Components/ProgrammingLanguages";
-import LibrariesCatalog from "./Components/LibrariesCatalog";
 import ProgrammingTimeline from "./Components/ProgrammingTimeline.jsx";
 import MachineLearningRoadmap from "./Components/MachineLearningRoadmap.jsx";
 import AIEngineerRoadmap from "./Components/AIEngineerRoadmap.jsx";
@@ -13,6 +11,7 @@ import EssentialSkills from "./Components/EssentialSkills";
 import SystemDesign from "./Components/SystemDesign";
 import DesignPatterns from "./Components/DesignPatterns";
 import DevOps from "./Components/DevOps";
+import CivicSense from "./Components/CivicSense";
 import Footer from "./Components/Footer.jsx";
 import { Toaster } from "react-hot-toast";
 import ThemeToggle from "./Components/ThemeToggle.jsx";
@@ -28,8 +27,6 @@ const Layout = () => {
       <Routes>
         <Route path='/' element={<ProgrammingLanguages />} />
         <Route path='/Frameworks' element={<Frameworks />} />
-        <Route path='/Frameworks/:frameworkName/:type' element={<FrameworkResources />} />
-        <Route path='/libraries' element={<LibrariesCatalog />} />
         <Route path='/TimeLine' element={<ProgrammingTimeline />} />
         <Route path='/ml-roadmap' element={<MachineLearningRoadmap />} />
         <Route path='/ai-roadmap' element={<AIEngineerRoadmap />} />
@@ -40,6 +37,7 @@ const Layout = () => {
         <Route path='/system-design' element={<SystemDesign />} />
         <Route path='/design-patterns' element={<DesignPatterns />} />
         <Route path='/devops' element={<DevOps />} />
+        <Route path='/civic-sense' element={<CivicSense />} />
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>
       {!hideFooter && <Footer />}
