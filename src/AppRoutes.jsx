@@ -7,6 +7,7 @@ import AIEngineerRoadmap from "./Components/AIEngineerRoadmap.jsx";
 import SoftwareEngineerRoadmap from "./Components/SoftwareEngineerRoadmap.jsx";
 import DesignPrinciples from "./Components/DesignPrinciples";
 import AnimationsGuide from "./Components/AnimationsGuide";
+import MotionDesign from "./Components/MotionDesign";
 import EssentialSkills from "./Components/EssentialSkills";
 import SystemDesign from "./Components/SystemDesign";
 import DesignPatterns from "./Components/DesignPatterns";
@@ -33,6 +34,7 @@ const Layout = () => {
         <Route path='/swe-roadmap' element={<SoftwareEngineerRoadmap />} />
         <Route path='/design-principles' element={<DesignPrinciples />} />
         <Route path='/animations-guide' element={<AnimationsGuide />} />
+        <Route path='/motion-design' element={<MotionDesign />} />
         <Route path='/developer-essential-skills' element={<EssentialSkills />} />
         <Route path='/system-design' element={<SystemDesign />} />
         <Route path='/design-patterns' element={<DesignPatterns />} />

@@ -1,0 +1,197 @@
+[
+  {
+    "Category": "Fundamental Timing",
+    "Description": "The bedrock of motion design, controlling the speed and rhythm of elements.",
+    "SubPrinciples": [
+      {
+        "Type": "Duration & Speed",
+        "Effect": "Finding the balance between 'too fast to notice' and 'too slow to wait for'.",
+        "KeyConcepts": ["Human Perception Threshold (100ms-300ms)", "Complexity Scaling", "Distance/Velocity correlation"]
+      },
+      {
+        "Type": "Easing Curves",
+        "Effect": "Simulating physical inertia to make movement feel natural and intentional.",
+        "KeyConcepts": ["Cubic Bezier", "Ease-In-Out (Symmetric)", "Ease-Out (Responsive)", "Spring Physics (Elastic)"]
+      },
+      {
+        "Type": "Rhythm & Tempo",
+        "Effect": "Maintaining a consistent feel across all interactions within a system.",
+        "KeyConcepts": ["Motion Tokens", "Consistent Acceleration", "Frame Rate Optimization"]
+      }
+    ]
+  },
+  {
+    "Category": "Spatial Continuity",
+    "Description": "Ensuring users understand where elements come from and where they go.",
+    "SubPrinciples": [
+      {
+        "Type": "Shared Dimensionality",
+        "Effect": "Creating a sense of depth and physical space between layers.",
+        "KeyConcepts": ["Z-Axis Depth", "Layer Shadowing", "Occlusion Management"]
+      },
+      {
+        "Type": "Anchor Points",
+        "Effect": "Motion that originates from the point of user contact or action.",
+        "KeyConcepts": ["Radial Ripples", "Focal Point Expansion", "Source-Target Continuity"]
+      },
+      {
+        "Type": "Directional Cues",
+        "Effect": "Using motion to suggest where more content exists (e.g., right to left).",
+        "KeyConcepts": ["Implicit Navigation", "Edge Tensions", "Directional Flickering"]
+      }
+    ]
+  },
+  {
+    "Category": "Dynamic Hierarchy",
+    "Description": "Using motion to guide the user's attention to the most important elements.",
+    "SubPrinciples": [
+      {
+        "Type": "Staggering & Sequencing",
+        "Effect": "Revealing content in a logical order to prevent cognitive overload.",
+        "KeyConcepts": ["Visual Reading Path", "Information Chunking", "Cascade Delays"]
+      },
+      {
+        "Type": "Emphasis & Focus",
+        "Effect": "Drawing the eye to critical updates, errors, or next actions.",
+        "KeyConcepts": ["Scale Pulsing", "Shake Alarms", "Luminance Flashes"]
+      },
+      {
+        "Type": "Context Transition",
+        "Effect": "Morphing existing elements to show relationship between old and new state.",
+        "KeyConcepts": ["Icon Transformation", "Component Resizing", "State Bleeding"]
+      }
+    ]
+  },
+  {
+    "Category": "Expression & Delight",
+    "Description": "Infusing brand personality and emotional resonance into the interface.",
+    "SubPrinciples": [
+      {
+        "Type": "Anticipation",
+        "Effect": "Preparing the user for an action with a subtle reverse movement.",
+        "KeyConcepts": ["Wind-up Action", "Interaction Cues", "Affordance Signaling"]
+      },
+      {
+        "Type": "Overshoot & Bounce",
+        "Effect": "Adding 'squash and stretch' physics to emphasize energy and playfulness.",
+        "KeyConcepts": ["Impact Feedback", "Material Character", "Vibrational Finish"]
+      },
+      {
+        "Type": "Attraction & Magnetism",
+        "Effect": "Elements reacting to the proximity of the user's cursor or touch.",
+        "KeyConcepts": ["Proximity Hover", "Gravitational Pull", "Active Field Sensation"]
+      }
+    ]
+  },
+  {
+    "Category": "Functional Feedback",
+    "Description": "Using motion to communicate system status and interaction confirmation.",
+    "SubPrinciples": [
+      {
+        "Type": "Haptic Simulation",
+        "Effect": "Providing visual weight to digital interactions to feel tactile.",
+        "KeyConcepts": ["Digital Compression", "Friction Simulation", "Mass Attribution"]
+      },
+      {
+        "Type": "Validation States",
+        "Effect": "Communicating success or failure through motion patterns.",
+        "KeyConcepts": ["Checkmark Drawing", "Error Shaking", "Progress Fluidity"]
+      },
+      {
+        "Type": "Constraint Feedback",
+        "Effect": "Showing the limits of scroll or movement through rubber-banding.",
+        "KeyConcepts": ["Over-scroll Elasticity", "Boundaries Resistance", "Collision Detection"]
+      }
+    ]
+  },
+  {
+    "Category": "Material Integrity",
+    "Description": "Ensuring digital elements behave according to consistent physical laws.",
+    "SubPrinciples": [
+      {
+        "Type": "Mass & Inertia",
+        "Effect": "Heavier elements moving slower and requiring more distance to stop.",
+        "KeyConcepts": ["Velocity Curves", "Momentum Retention", "Weight Distribution"]
+      },
+      {
+        "Type": "Surface Reactivity",
+        "Effect": "Digital materials bending or stretching on impact or interaction.",
+        "KeyConcepts": ["Elasticity", "Friction Coefficients", "Physical Resistance"]
+      }
+    ]
+  },
+  {
+    "Category": "Visual Narrative",
+    "Description": "Using motion to guide the user through a logical sequence or story.",
+    "SubPrinciples": [
+      {
+        "Type": "Progressive Disclosure",
+        "Effect": "Elements appearing only when relevant to the current user task.",
+        "KeyConcepts": ["Information Scaffolding", "Attention Gating", "Sequence Timing"]
+      },
+      {
+        "Type": "Choreography",
+        "Effect": "Multiple elements moving in synchronized harmony to establish context.",
+        "KeyConcepts": ["Group Orchestration", "Path Synchronization", "Temporal Overlap"]
+      }
+    ]
+  },
+  {
+    "Category": "Inclusive Motion",
+    "Description": "Designing motion that respects user needs and system preferences.",
+    "SubPrinciples": [
+      {
+        "Type": "Reduced Motion",
+        "Effect": "Replacing intense animations with subtle fades for sensitive users.",
+        "KeyConcepts": ["Prefers-Reduced-Motion", "Vestibular Safety", "Functional Essentiality"]
+      },
+      {
+        "Type": "Cognitive Load",
+        "Effect": "Ensuring motion doesn't distract or confuse users from their main goal.",
+        "KeyConcepts": ["Motion Frequency", "Flicker Prevention", "Direct Action Correlation"]
+      }
+    ]
+  },
+  {
+    "Category": "Transformation & State",
+    "Description": "Handling the change of form and value within elements.",
+    "SubPrinciples": [
+      {
+        "Type": "Value Change",
+        "Effect": "Animating numbers or status labels to reflect continuous change.",
+        "KeyConcepts": ["Continuous Feedback", "Counter Realism", "Data Integrity"]
+      },
+      {
+        "Type": "Masking & Obscuration",
+        "Effect": "Using shapes to reveal or hide content layers strategically.",
+        "KeyConcepts": ["Clip Paths", "Depth Blurring", "Focus Isolation"]
+      },
+      {
+        "Type": "Cloning & Reproduction",
+        "Effect": "Creating new elements from existing ones to show relationship.",
+        "KeyConcepts": ["Element Multiplicity", "Parenting Paths", "Splitting Logic"]
+      }
+    ]
+  },
+  {
+    "Category": "Spatial Navigation",
+    "Description": "Using movement through the Z and X/Y axis to explore content.",
+    "SubPrinciples": [
+      {
+        "Type": "Dolly & Zoom",
+        "Effect": "Moving the 'camera' closer to or further from UI elements.",
+        "KeyConcepts": ["Focal Depth", "Immersion Levels", "Scale Transitions"]
+      },
+      {
+        "Type": "Parallax Relationship",
+        "Effect": "Layers moving at different speeds to establish structural hierarchy.",
+        "KeyConcepts": ["Relative Velocity", "Spatial Context", "Background Interaction"]
+      },
+      {
+        "Type": "Overlay & Stacking",
+        "Effect": "Elements sliding over others to establish temporary focus.",
+        "KeyConcepts": ["Z-Index Management", "Contextual Overlays", "Shadow Casting"]
+      }
+    ]
+  }
+]

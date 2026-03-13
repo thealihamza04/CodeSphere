@@ -12,7 +12,7 @@ const Footer = () => {
 
   const linkGroups = [
     {
-      title: "Platform",
+      title: "Catalog",
       links: [
         { name: "Home", path: "/" },
         { name: "Frameworks Catalog", path: "/Frameworks" },
@@ -25,10 +25,11 @@ const Footer = () => {
         { name: "Software Engineering", path: "/swe-roadmap" },
         { name: "AI Engineering", path: "/ai-roadmap" },
         { name: "Machine Learning", path: "/ml-roadmap" },
+        { name: "Essential Skills", path: "/developer-essential-skills" },
       ],
     },
     {
-      title: "Systems",
+      title: "Architecture",
       links: [
         { name: "System Design", path: "/system-design" },
         { name: "Design Patterns", path: "/design-patterns" },
@@ -39,8 +40,8 @@ const Footer = () => {
       title: "Insights",
       links: [
         { name: "Design Principles", path: "/design-principles" },
+        { name: "Motion Principles", path: "/motion-design" },
         { name: "Animation Systems", path: "/animations-guide" },
-        { name: "Essential Skills", path: "/developer-essential-skills" },
         { name: "Civic Sense", path: "/civic-sense" },
       ],
     },
