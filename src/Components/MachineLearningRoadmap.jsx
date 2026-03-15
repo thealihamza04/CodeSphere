@@ -1,94 +1,71 @@
 import machineLearningRoadmap from "../Data/MachineLearningRoadmap.js";
-import { useEffect, useRef } from "react";
-import { useInView } from "motion/react";
-import TimeLineCard from "./cards/TimeLine/TimeLineCard.jsx";
-import Line from "./cards/TimeLine/Line.jsx";
+import { useEffect } from "react";
+import RoadmapCard from "./cards/Roadmap/RoadmapCard.jsx";
 import useSEO from "./Hooks/useSEO";
+import { motion } from "motion/react";
 
 const MachineLearningRoadmap = () => {
-  const ref = useRef();
-  const isInView = useInView(ref, { once: true });
-
-  useSEO({
-    title: "Machine Learning Roadmap | CodeSphere",
-    description:
-      "Step-by-step machine learning roadmap from Python fundamentals to MLOps.",
-    keywords:
-      "machine learning roadmap, ml learning path, CodeSphere, thealihamza04",
-    canonical: "https://codes-sphere.vercel.app/ml-roadmap",
-    og: {
-      title: "Machine Learning Roadmap | CodeSphere",
-      description:
-        "Step-by-step machine learning roadmap from Python fundamentals to MLOps.",
-      url: "https://codes-sphere.vercel.app/ml-roadmap",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: "Machine Learning Roadmap | CodeSphere",
-      description:
-        "Step-by-step machine learning roadmap from Python fundamentals to MLOps.",
-    },
-    structuredData: {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Article",
-          name: "Machine Learning Roadmap",
-          url: "https://codes-sphere.vercel.app/ml-roadmap",
-        },
-        {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://codes-sphere.vercel.app/",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Machine Learning Roadmap",
-              item: "https://codes-sphere.vercel.app/ml-roadmap",
-            },
-          ],
-        },
-      ],
-    },
-  });
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
+  useSEO({
+    title: "Machine Learning Roadmap | CodeSphere",
+    description: "Professional ML foundations and advanced model orchestration.",
+    keywords: "ml roadmap, math, statistics, engineering, CodeSphere",
+    canonical: "https://codes-sphere.vercel.app/ml-roadmap",
+  });
+
   return (
-    <div className='max-w-screen min-h-screen px-12 py-20 overflow-x-hidden'>
-      <h1 className='py-12 text-4xl font-bold text-center'>Machine Learning Roadmap</h1>
-      <div>
-        <ul className='flex flex-col items-center justify-center'>
-          {Object.entries(machineLearningRoadmap).map(([topic, info], index) => (
-            <li
-              key={index}
-              className={`min-w-52 md:min-w-60 my-1 ${isInView
-                  ? "motion-translate-x-in-[0%] motion-translate-y-in-[95%]"
-                  : ""
-                }`}
-              ref={ref}
+    <div className='min-h-screen bg-base-100 selection:bg-primary/10 selection:text-primary overflow-x-hidden'>
+      {/* Classy Editorial Header */}
+      <div className="pt-40 pb-32 px-6 md:px-12 max-w-7xl mx-auto">
+        <div className="space-y-8">
+            <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="flex items-center gap-4"
             >
-              <Line gap={info.gap} />
-              <TimeLineCard
-                released={info.released}
-                language={topic}
-                description={info.description}
-              />
-            </li>
+                <div className="h-px w-12 bg-primary/30" />
+                <span className="text-[10px] uppercase font-black tracking-[0.5em] text-primary/60">Mathematical Foundations</span>
+            </motion.div>
+            
+            <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                className='text-6xl md:text-[10rem] font-black tracking-tighter text-base-content leading-[0.8] mix-blend-difference'
+            >
+                ML Engineer <br />
+                <span className="text-primary italic opacity-90">Science</span>
+            </motion.h1>
+
+            <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="max-w-xl text-base md:text-xl text-base-content/40 font-medium leading-relaxed pt-8"
+            >
+                Mastering the balance between mathematical rigor and engineering scalability.
+            </motion.div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pb-40">
+        <div className="flex flex-col border-b border-base-content/5">
+          {Object.entries(machineLearningRoadmap).map(([topic, info], index) => (
+            <RoadmapCard
+              key={index}
+              index={index}
+              topic={topic}
+              description={info.description}
+              resources={info.resources || []}
+            />
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
 };
 
 export default MachineLearningRoadmap;
-

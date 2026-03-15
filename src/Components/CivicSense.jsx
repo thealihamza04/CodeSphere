@@ -6,7 +6,6 @@ import {
   LuShieldCheck, 
   LuGlobe, 
   LuSparkles,
-  LuHeart,
   LuLightbulb
 } from "react-icons/lu";
 

@@ -10,20 +10,22 @@ const TimeLineCard = ({ released, language, description }) => {
   return (
     <motion.div ref={ref} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <div
-        className={`flex flex-row gap-5 ${
-          isInView
-            ? "motion-scale-in-[0.3] motion-translate-x-in-[90%] motion-translate-y-in-[93%] motion-opacity-in-[50%] motion-rotate-in-[-29deg] motion-ease-spring-smooth"
-            : ""
-        } `}
+        className={`flex flex-row gap-5 ${isInView
+          ? "motion-scale-in-[0.3] motion-translate-x-in-[90%] motion-translate-y-in-[93%] motion-opacity-in-[50%] motion-rotate-in-[-29deg] motion-ease-spring-smooth"
+          : ""
+          } `}
       >
-        <h1 className='min-w-[25%]'>{released}</h1>
-        <MdCircle className='min-w-[20%] text-3xl text-base-content/45' />
-        <h1 className='min-w-[50%]'>{language}</h1>
+        <h1 className='min-w-[25%] text-right font-medium text-base-content/60'>{released}</h1>
+        <MdCircle className='min-w-[20%] text-3xl text-base-content/20' />
+        <h1 className='min-w-[50%] font-bold text-base-content'>{language}</h1>
       </div>
+
       {description && (
-        <p className='ml-[45%] md:ml-[43%] mt-2 text-xs text-base-content/50 max-w-xs'>
-          {description}
-        </p>
+        <div className="ml-[45%] md:ml-[43%] mt-2 max-w-xs">
+          <p className='text-xs leading-relaxed text-base-content/50'>
+            {description}
+          </p>
+        </div>
       )}
     </motion.div>
   );

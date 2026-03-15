@@ -19,15 +19,7 @@ const Footer = () => {
         { name: "Language Timeline", path: "/TimeLine" },
       ],
     },
-    {
-      title: "Roadmaps",
-      links: [
-        { name: "Software Engineering", path: "/swe-roadmap" },
-        { name: "AI Engineering", path: "/ai-roadmap" },
-        { name: "Machine Learning", path: "/ml-roadmap" },
-        { name: "Essential Skills", path: "/developer-essential-skills" },
-      ],
-    },
+
     {
       title: "Architecture",
       links: [
@@ -43,6 +35,7 @@ const Footer = () => {
         { name: "Motion Principles", path: "/motion-design" },
         { name: "Animation Systems", path: "/animations-guide" },
         { name: "Civic Sense", path: "/civic-sense" },
+        { name: "Social Intelligence", path: "/social-intelligence" },
       ],
     },
   ];
@@ -50,9 +43,9 @@ const Footer = () => {
   return (
     <footer className="bg-base-100 border-t border-base-300 pt-24 pb-12">
       <div className="container mx-auto px-6">
-        
+
         {/* Main Links Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mb-24">
           {linkGroups.map((group, idx) => (
             <div key={idx} className="space-y-6">
               <h6 className="text-[11px] font-black uppercase tracking-widest text-base-content/40">
@@ -61,8 +54,8 @@ const Footer = () => {
               <ul className="space-y-3.5">
                 {group.links.map((link, lIdx) => (
                   <li key={lIdx}>
-                    <Link 
-                      to={link.path} 
+                    <Link
+                      to={link.path}
                       className="group/link text-[14px] font-medium text-base-content/70 hover:text-primary transition-all flex items-center gap-2"
                     >
                       {link.name}
@@ -76,29 +69,29 @@ const Footer = () => {
         </div>
 
         {/* Branding & Socials Strip */}
-        <div className="flex flex-col items-start gap-8 pt-10 border-t border-base-200">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 pt-10 border-t border-base-200">
           
-          {/* Subtle Socials */}
-          <div className="flex items-center gap-6">
-            <a href="https://github.com/thealihamza04" target="_blank" rel="noreferrer" className="text-base-content/40 hover:text-primary hover:scale-110 transition-transform duration-300">
-              <FaGithub className="size-5" />
-            </a>
-            <a href="https://www.linkedin.com/in/thealihamza04/" target="_blank" rel="noreferrer" className="text-base-content/40 hover:text-primary hover:scale-110 transition-transform duration-300">
-              <FaLinkedinIn className="size-5" />
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thealihamza0@gmail.com" target="_blank" rel="noreferrer" className="text-base-content/40 hover:text-primary hover:scale-110 transition-transform duration-300">
-              <FaEnvelope className="size-5" />
-            </a>
-          </div>
-
-          {/* Copyright */}
-          <div className="text-left space-y-2">
-            <p className="text-[11px] font-black text-base-content/25 tracking-[0.2em] uppercase italic">
+          {/* Copyright & Branding */}
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+            <p className="text-[11px] font-black text-base-content/25 tracking-[0.3em] uppercase italic">
               CodeSphere
             </p>
-            <p className="text-[10px] font-bold text-base-content/40 uppercase tracking-wider">
+            <p className="text-[10px] font-bold text-base-content/40 uppercase tracking-widest sm:border-l border-base-200 sm:pl-8">
               &copy; {currentYear} &bull; Designed by Ali Hamza
             </p>
+          </div>
+
+          {/* Subtle Socials */}
+          <div className="flex items-center gap-8">
+            <a href="https://github.com/thealihamza04" target="_blank" rel="noreferrer" className="text-base-content/30 hover:text-primary hover:-translate-y-1 transition-all duration-300">
+              <FaGithub className="size-5" />
+            </a>
+            <a href="https://www.linkedin.com/in/thealihamza04/" target="_blank" rel="noreferrer" className="text-base-content/30 hover:text-primary hover:-translate-y-1 transition-all duration-300">
+              <FaLinkedinIn className="size-5" />
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thealihamza0@gmail.com" target="_blank" rel="noreferrer" className="text-base-content/30 hover:text-primary hover:-translate-y-1 transition-all duration-300">
+              <FaEnvelope className="size-5" />
+            </a>
           </div>
         </div>
       </div>

@@ -1,86 +1,68 @@
 import aiEngineerRoadmap from "../Data/AIEngineerRoadmap.js";
-import { useEffect, useRef } from "react";
-import { useInView } from "motion/react";
-import TimeLineCard from "./cards/TimeLine/TimeLineCard.jsx";
-import Line from "./cards/TimeLine/Line.jsx";
+import { useEffect } from "react";
+import RoadmapCard from "./cards/Roadmap/RoadmapCard.jsx";
 import useSEO from "./Hooks/useSEO";
+import { motion } from "motion/react";
 
 const AIEngineerRoadmap = () => {
-  const ref = useRef();
-  const isInView = useInView(ref, { once: true });
-
-  useSEO({
-    title: "AI Engineer Roadmap | CodeSphere",
-    description: "A comprehensive step-by-step guide to becoming an AI Engineer, from LLM fundamentals to agentic workflows.",
-    keywords: "AI engineer roadmap, LLM learning path, RAG architecture, agentic workflows, CodeSphere",
-    canonical: "https://codes-sphere.vercel.app/ai-roadmap",
-    og: {
-      title: "AI Engineer Roadmap | CodeSphere",
-      description: "Step-by-step path to mastering Generative AI, RAG, and AI Agents.",
-      url: "https://codes-sphere.vercel.app/ai-roadmap",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: "AI Engineer Roadmap | CodeSphere",
-      description: "The complete path for modern AI Developers.",
-    },
-    structuredData: {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Article",
-          name: "AI Engineer Roadmap",
-          url: "https://codes-sphere.vercel.app/ai-roadmap",
-        },
-        {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://codes-sphere.vercel.app/",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "AI Engineer Roadmap",
-              item: "https://codes-sphere.vercel.app/ai-roadmap",
-            },
-          ],
-        },
-      ],
-    },
-  });
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
+  useSEO({
+    title: "AI Engineer Roadmap | CodeSphere",
+    description: "The professional path to AI engineering mastery.",
+    keywords: "ai roadmap, curriculum, machine learning, CodeSphere",
+    canonical: "https://codes-sphere.vercel.app/ai-roadmap",
+  });
+
   return (
-    <div className='max-w-screen min-h-screen px-4 py-20 overflow-x-hidden md:px-12'>
-      <h1 className='py-12 text-4xl font-bold text-center'>AI Engineer Roadmap</h1>
-      <div>
-        <ul className='flex flex-col items-center justify-center'>
-          {Object.entries(aiEngineerRoadmap).map(([topic, info], index) => (
-            <li
-              key={index}
-              className={`min-w-52 md:min-w-60 my-1 ${isInView
-                  ? "motion-translate-x-in-[0%] motion-translate-y-in-[95%]"
-                  : ""
-                }`}
-              ref={ref}
+    <div className='min-h-screen bg-base-100 selection:bg-primary/10 selection:text-primary overflow-x-hidden'>
+      {/* Classy Editorial Header */}
+      <div className="pt-40 pb-32 px-6 md:px-12 max-w-7xl mx-auto">
+        <div className="space-y-8">
+            <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="flex items-center gap-4"
             >
-              <Line gap={info.gap} />
-              <TimeLineCard
-                released={info.released}
-                language={topic}
-                description={info.description}
-              />
-            </li>
+                <div className="h-px w-12 bg-primary/30" />
+                <span className="text-[10px] uppercase font-black tracking-[0.5em] text-primary/60">Intelligence Systems</span>
+            </motion.div>
+            
+            <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                className='text-6xl md:text-[10rem] font-black tracking-tighter text-base-content leading-[0.8] mix-blend-difference'
+            >
+                AI Engineer <br />
+                <span className="text-primary italic opacity-90">Architect</span>
+            </motion.h1>
+
+            <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="max-w-xl text-base md:text-xl text-base-content/40 font-medium leading-relaxed pt-8"
+            >
+                Transitioning from basic LLM prompts to autonomous engine architecture and RAG systems.
+            </motion.div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pb-40">
+        <div className="flex flex-col border-b border-base-content/5">
+          {Object.entries(aiEngineerRoadmap).map(([topic, info], index) => (
+            <RoadmapCard
+              key={index}
+              index={index}
+              topic={topic}
+              description={info.description}
+              resources={info.resources || []}
+            />
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

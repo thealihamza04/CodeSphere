@@ -1,52 +1,62 @@
 const softwareEngineerRoadmap = {
   "Computer Science Fundamentals": {
     released: "Step 1",
-    description: "Learn Data Structures, Algorithms, and Complexity Analysis (Big O) to solve problems efficiently.",
+    description: "The Bedrock: Master Data Structures (Trees, Graphs, Hash Maps), Algorithms (Sorting, Search, Dynamic Programming), and Big O notation.",
+    resources: ["LeetCode", "MIT 6.006", "Introduction to Algorithms (CLRS)"],
     gap: 0,
   },
-  "Programming Language Mastery": {
+  "Modern Programming Mastery": {
     released: "Step 2",
-    description: "Deep dive into a language like Java, C++, Python, or Go, mastering its syntax, paradigms, and ecosystem.",
+    description: "Deep dive into language internals of Python, TypeScript, or Go. Master memory management and concurrency models.",
+    resources: ["Effective Python", "You Don't Know JS", "The Go Programming Language"],
     gap: 2,
   },
-  "Version Control (Git)": {
+  "Version Control & Collaboration": {
     released: "Step 3",
-    description: "Master Git for collaboration, merging, branching, and maintaining clean commit histories.",
+    description: "Professional Git workflows: mastering rebasing, atomic commits, and GitHub collaboration patterns.",
+    resources: ["Pro Git Book", "GitHub Skills", "Conventional Commits"],
     gap: 2,
   },
-  "Frontend Development Basics": {
+  "AI-Augmented Engineering": {
     released: "Step 4",
-    description: "Understand how the web works by learning HTML, CSS, and modern JavaScript (ES6+).",
+    description: "The 2025 Standard: Master AI pairing (GitHub Copilot, Cursor), Prompt Engineering, and building LLM-integrated features.",
+    resources: ["DeepLearning.AI", "OpenAI Cookbook", "LangChain Docs"],
     gap: 2,
   },
-  "Backend Development & Databases": {
+  "Full-Stack & API-First Design": {
     released: "Step 5",
-    description: "Learn server-side programming, RESTful APIs, and how to manage SQL (PostgreSQL/MySQL) or NoSQL databases.",
+    description: "Build modern UIs with React/Next.js and develop robust backend services using Node.js or Go.",
+    resources: ["Next.js Learn", "Full Stack Open", "RestfulAPI.net"],
     gap: 2,
   },
-  "Software Design & Architecture": {
+  "Data Engineering & Vector Search": {
     released: "Step 6",
-    description: "Study Design Patterns (SOLID, DRY) and Architectural patterns (MVC, Microservices) for maintainable code.",
+    description: "Beyond basic SQL: Master relational schemas, NoSQL, and high-performance Vector Databases for AI search.",
+    resources: ["PostgreSQL Tutorial", "Pinecone Docs", "Prisma Guide"],
     gap: 2,
   },
-  "Testing & QA": {
+  "System Design & Architecture": {
     released: "Step 7",
-    description: "Implement Unit, Integration, and End-to-End tests to ensure software reliability and confidence.",
+    description: "Designing for millions: Learn Microservices, Event-Driven Architecture (Kafka), and Caching strategies (Redis).",
+    resources: ["System Design Primer", "ByteByteGo", "Grokking System Design"],
     gap: 2,
   },
-  "Operating Systems & Networking": {
+  "Modern DevOps & DevSecOps": {
     released: "Step 8",
-    description: "Understand OS internals (Process management, Memory) and Networking protocols (HTTP, TCP/IP, DNS).",
+    description: "Automation & Security: Build CI/CD pipelines and implement automated security scanning.",
+    resources: ["The DevOps Handbook", "Snyk Security Blog", "GitHub Actions Docs"],
     gap: 2,
   },
-  "Deployment & CI/CD": {
+  "Cloud-Native & Orchestration": {
     released: "Step 9",
-    description: "Learn to automate deployments using Docker, Jenkins, or GitHub Actions for continuous integration.",
+    description: "Mastering Cloud ecosystems (AWS/Azure). Learn Kubernetes, Serverless, and Infrastructure as Code.",
+    resources: ["AWS Training", "Kubernetes.io", "Terraform Hashicorn"],
     gap: 2,
   },
-  "Cloud & System Design": {
+  "Observability & Reliability (SRE)": {
     released: "Step 10",
-    description: "Design scalable distributed systems using Cloud platforms (AWS/Azure) and load balancers.",
+    description: "Keeping systems alive: Implement monitoring (Prometheus), dashboarding (Grafana), and Site Reliability Engineering.",
+    resources: ["Google SRE Book", "Prometheus Docs", "Grafana Labs"],
     gap: 2,
   },
 };

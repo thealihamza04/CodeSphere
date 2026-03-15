@@ -13,6 +13,7 @@ import SystemDesign from "./Components/SystemDesign";
 import DesignPatterns from "./Components/DesignPatterns";
 import DevOps from "./Components/DevOps";
 import CivicSense from "./Components/CivicSense";
+import SocialIntelligence from "./Components/SocialIntelligence";
 import Footer from "./Components/Footer.jsx";
 import { Toaster } from "react-hot-toast";
 import ThemeToggle from "./Components/ThemeToggle.jsx";
@@ -40,6 +41,7 @@ const Layout = () => {
         <Route path='/design-patterns' element={<DesignPatterns />} />
         <Route path='/devops' element={<DevOps />} />
         <Route path='/civic-sense' element={<CivicSense />} />
+        <Route path='/social-intelligence' element={<SocialIntelligence />} />
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>
       {!hideFooter && <Footer />}
