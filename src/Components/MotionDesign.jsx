@@ -82,59 +82,72 @@ const MotionDesign = () => {
 
   return (
     <div className="relative min-h-screen bg-base-100 max-w-full overflow-x-hidden">
-      <div className="px-4 py-12 md:px-12 lg:px-24">
-        {/* Header */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center space-y-4 mb-20"
-        >
-          <h1 className="heading text-4xl md:text-7xl">Motion Principles</h1>
-          <p className="max-w-2xl mx-auto text-base-content/60 text-sm md:text-lg leading-relaxed font-medium">
-            The fundamental laws of kinetics applied to digital interfaces to create meaningful, intuitive, and delightful user experiences.
-          </p>
-        </motion.div>
+      {/* Main Content Wrapper with Dynamic Blur */}
+      <div className={`transition-all duration-500 ease-in-out ${selectedPrinciple ? 'blur-sm scale-[0.98] pointer-events-none brightness-75' : 'blur-0 scale-100'}`}>
+        <div className="px-4 py-12 md:px-12 lg:px-24">
+          {/* Header */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center space-y-4 mb-20"
+          >
+            <h1 className="heading text-4xl md:text-7xl">Motion Principles</h1>
+            <p className="max-w-2xl mx-auto text-base-content/60 text-sm md:text-lg leading-relaxed font-medium">
+              The fundamental laws of kinetics applied to digital interfaces to create meaningful, intuitive, and delightful user experiences.
+            </p>
+          </motion.div>
 
-        {/* Categories Grid */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, staggerChildren: 0.1 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-12"
-        >
-          {MotionDesignData.map((category, idx) => (
-            <motion.div 
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-base-200/50 border border-base-300 rounded-[2.5rem] p-8 md:p-10 space-y-8 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-start gap-5">
-                <div className="p-4 rounded-[1.25rem] bg-primary text-primary-content text-3xl shadow-lg shadow-primary/20">
-                  {categoryIcons[category.Category] || <LuInfo />}
+          {/* Categories Grid */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-12"
+          >
+            {MotionDesignData.map((category, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-base-200/50 border border-base-300 rounded-[2.5rem] p-8 md:p-10 space-y-8 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="flex items-start gap-5">
+                  <div className="p-4 rounded-[1.25rem] bg-primary text-primary-content text-3xl shadow-lg shadow-primary/20">
+                    {categoryIcons[category.Category] || <LuInfo />}
+                  </div>
+                  <div className="space-y-2">
+                    <h2 className="text-2xl font-black tracking-tighter leading-none uppercase text-base-content">{category.Category}</h2>
+                    <p className="text-[13px] text-base-content/60 font-semibold max-w-sm line-clamp-2">{category.Description}</p>
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <h2 className="text-2xl font-black tracking-tighter leading-none uppercase text-base-content">{category.Category}</h2>
-                  <p className="text-[13px] text-base-content/60 font-semibold max-w-sm line-clamp-2">{category.Description}</p>
+                
+                <div className="flex flex-col w-full flex-grow pb-4 mt-4">
+                  {category.SubPrinciples.map((sub, sIdx) => (
+                    <PrincipleSubCard 
+                      key={sIdx}
+                      type={sub.Type}
+                      onClick={() => setSelectedPrinciple({ ...sub, category: category.Category })}
+                    />
+                  ))}
                 </div>
-              </div>
-              
-              <div className="flex flex-col w-full flex-grow pb-4 mt-4">
-                {category.SubPrinciples.map((sub, sIdx) => (
-                  <PrincipleSubCard 
-                    key={sIdx}
-                    type={sub.Type}
-                    onClick={() => setSelectedPrinciple({ ...sub, category: category.Category })}
-                  />
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Footer Note inside blurred area */}
+        <div className="mt-32 p-12 rounded-[3rem] bg-base-200 text-center border border-base-300 mx-4 md:mx-12 lg:mx-24 mb-20 shadow-sm">
+          <div className="inline-flex p-3 rounded-2xl bg-primary/10 text-primary mb-6">
+            <LuSparkles className="size-6" />
+          </div>
+          <h3 className="text-2xl font-black mb-4 uppercase tracking-tight">Meaningful Motion</h3>
+          <p className="text-sm md:text-base text-base-content/60 max-w-2xl mx-auto leading-relaxed font-medium">
+            Motion should never be additive; it should be subtractive of friction. Every animation must serve a purpose: to inform, to focus, or to confirm. If an animation doesn&apos;t help the user, it shouldn&apos;t exist.
+          </p>
+        </div>
       </div>
 
-      {/* Side Sheet / Drawer Implementation */}
+      {/* Side Sheet / Drawer Implementation outside blurred area */}
       <AnimatePresence>
         {selectedPrinciple && (
           <motion.div 
@@ -201,17 +214,6 @@ const MotionDesign = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      
-      {/* Footer Note */}
-      <div className="mt-32 p-12 rounded-[3rem] bg-base-200 text-center border border-base-300 mx-4 md:mx-12 lg:mx-24 mb-20 shadow-sm">
-        <div className="inline-flex p-3 rounded-2xl bg-primary/10 text-primary mb-6">
-          <LuSparkles className="size-6" />
-        </div>
-        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight">Meaningful Motion</h3>
-        <p className="text-sm md:text-base text-base-content/60 max-w-2xl mx-auto leading-relaxed font-medium">
-          Motion should never be additive; it should be subtractive of friction. Every animation must serve a purpose: to inform, to focus, or to confirm. If an animation doesn&apos;t help the user, it shouldn&apos;t exist.
-        </p>
-      </div>
     </div>
   );
 };

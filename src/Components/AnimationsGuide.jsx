@@ -80,44 +80,58 @@ const AnimationsGuide = () => {
 
   return (
     <div className="relative min-h-screen bg-base-100 max-w-full overflow-x-hidden">
-      <div className="px-4 py-12 md:px-12 lg:px-24">
-        {/* Header */}
-        <div className="text-center space-y-4 mb-20">
-          <h1 className="heading text-4xl md:text-7xl">Animation Systems</h1>
-          <p className="max-w-2xl mx-auto text-base-content/60 text-sm md:text-lg leading-relaxed font-medium">
-            A curated taxonomy of motion design principles and the industry-standard toolkits used to implement them.
-          </p>
+      {/* Main Content Wrapper with Dynamic Blur */}
+      <div className={`transition-all duration-500 ease-in-out ${selectedAnim ? 'blur-sm scale-[0.98] pointer-events-none brightness-75' : 'blur-0 scale-100'}`}>
+        <div className="px-4 py-12 md:px-12 lg:px-24">
+          {/* Header */}
+          <div className="text-center space-y-4 mb-20">
+            <h1 className="heading text-4xl md:text-7xl">Animation Systems</h1>
+            <p className="max-w-2xl mx-auto text-base-content/60 text-sm md:text-lg leading-relaxed font-medium">
+              A curated taxonomy of motion design principles and the industry-standard toolkits used to implement them.
+            </p>
+          </div>
+
+          {/* Categories Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-12">
+            {AnimationsData.map((category, idx) => (
+              <div key={idx} className="bg-base-200/50 border border-base-300 rounded-[2.5rem] p-8 md:p-10 space-y-8 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start gap-5">
+                  <div className="p-4 rounded-[1.25rem] bg-primary text-primary-content text-3xl shadow-lg shadow-primary/20">
+                    {categoryIcons[category.Category] || <LuSparkles />}
+                  </div>
+                  <div className="space-y-2">
+                    <h2 className="text-2xl font-black tracking-tighter leading-none uppercase text-base-content">{category.Category}</h2>
+                    <p className="text-[13px] text-base-content/60 font-semibold max-w-sm line-clamp-2">{category.Description}</p>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col w-full flex-grow pb-4 mt-4">
+                  {category.SubAnimations.map((sub, sIdx) => (
+                    <AnimationSubCard 
+                      key={sIdx}
+                      type={sub.Type}
+                      onClick={() => setSelectedAnim({ ...sub, category: category.Category })}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* Categories Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-12">
-          {AnimationsData.map((category, idx) => (
-            <div key={idx} className="bg-base-200/50 border border-base-300 rounded-[2.5rem] p-8 md:p-10 space-y-8 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-start gap-5">
-                <div className="p-4 rounded-[1.25rem] bg-primary text-primary-content text-3xl shadow-lg shadow-primary/20">
-                  {categoryIcons[category.Category] || <LuSparkles />}
-                </div>
-                <div className="space-y-2">
-                  <h2 className="text-2xl font-black tracking-tighter leading-none uppercase text-base-content">{category.Category}</h2>
-                  <p className="text-[13px] text-base-content/60 font-semibold max-w-sm line-clamp-2">{category.Description}</p>
-                </div>
-              </div>
-              
-              <div className="flex flex-col w-full flex-grow pb-4 mt-4">
-                {category.SubAnimations.map((sub, sIdx) => (
-                  <AnimationSubCard 
-                    key={sIdx}
-                    type={sub.Type}
-                    onClick={() => setSelectedAnim({ ...sub, category: category.Category })}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
+        {/* Footer Note inside blurred area */}
+        <div className="mt-32 p-12 rounded-[3rem] bg-base-200 text-center border border-base-300 mx-4 md:mx-12 lg:mx-24 mb-20 shadow-sm">
+          <div className="inline-flex p-3 rounded-2xl bg-primary/10 text-primary mb-6">
+            <LuSparkles className="size-6" />
+          </div>
+          <h3 className="text-2xl font-black mb-4 uppercase tracking-tight">Systemic Motion Selection</h3>
+          <p className="text-sm md:text-base text-base-content/60 max-w-2xl mx-auto leading-relaxed font-medium">
+            For streamlined interactions, prioritize <strong>CSS Transitions</strong>. For complex state-driven layout transformations, <strong>Framer Motion</strong> is optimal. For advanced immersive storytelling and scroll-driven effects, <strong>GSAP</strong> remains the industry benchmark.
+          </p>
         </div>
       </div>
 
-      {/* Side Sheet / Drawer Implementation */}
+      {/* Side Sheet / Drawer Implementation outside blurred area */}
       {selectedAnim && (
         <div className="fixed inset-0 z-[100] flex justify-end bg-black/40" onClick={() => setSelectedAnim(null)}>
           <div 
@@ -171,17 +185,6 @@ const AnimationsGuide = () => {
           </div>
         </div>
       )}
-      
-      {/* Footer Note */}
-      <div className="mt-32 p-12 rounded-[3rem] bg-base-200 text-center border border-base-300 mx-4 md:mx-12 lg:mx-24 mb-20 shadow-sm">
-        <div className="inline-flex p-3 rounded-2xl bg-primary/10 text-primary mb-6">
-          <LuSparkles className="size-6" />
-        </div>
-        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight">Systemic Motion Selection</h3>
-        <p className="text-sm md:text-base text-base-content/60 max-w-2xl mx-auto leading-relaxed font-medium">
-          For streamlined interactions, prioritize <strong>CSS Transitions</strong>. For complex state-driven layout transformations, <strong>Framer Motion</strong> is optimal. For advanced immersive storytelling and scroll-driven effects, <strong>GSAP</strong> remains the industry benchmark.
-        </p>
-      </div>
     </div>
   );
 };
