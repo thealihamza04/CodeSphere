@@ -32,6 +32,7 @@ const Footer = () => {
       title: "Insights",
       links: [
         { name: "Design Principles", path: "/design-principles" },
+        { name: "Design Styles", path: "/design-styles" },
         { name: "Motion Principles", path: "/motion-design" },
         { name: "Animation Systems", path: "/animations-guide" },
         { name: "Civic Sense", path: "/civic-sense" },

@@ -42,3 +42,10 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: hsl(var(--bc) / 0.3);
 }
+
+@keyframes shine {
+  0% { left: -100%; opacity: 0; }
+  20% { opacity: 0.5; }
+  60% { opacity: 0.5; }
+  100% { left: 100%; opacity: 0; }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "category": "Retro & Nostalgic",
+    "styles": [
+      "Brutalist Web",
+      "Lo-Fi Grunge",
+      "VHS Distortion",
+      "Retro Futurism",
+      "Psychedelic 70s",
+      "Art Deco Revival",
+      "80s Neon Glow",
+      "Y2K Glitch",
+      "Cassette Punk",
+      "Analog Noise"
+    ]
+  },
+  {
+    "category": "Type & Layout Driven",
+    "styles": [
+      "Anti-Design",
+      "Deconstructed Grid",
+      "Maximalist Type",
+      "Raw Typographic",
+      "Bauhaus Minimalism",
+      "Condensed Editorial",
+      "Poster Vernacular",
+      "Oversized Headline"
+    ]
+  },
+  {
+    "category": "Texture & Material",
+    "styles": [
+      "Paper Cutout",
+      "Risograph Print",
+      "Woodblock Print",
+      "Letterpress Craft",
+      "Grain & Grit",
+      "Wax Seal Gothic",
+      "Distressed Ink",
+      "Screen Print Pop"
+    ]
+  },
+  {
+    "category": "Digital & Tech",
+    "styles": [
+      "Dark UI Glassmorphism",
+      "Neomorphic Soft UI",
+      "ASCII Terminal",
+      "Wireframe Aesthetic",
+      "Data Viz Minimal",
+      "Isometric Flat",
+      "Vaporwave Grid",
+      "Synthwave Neon",
+      "Holographic Iridescent",
+      "Cyberpunk Industrial"
+    ]
+  },
+  {
+    "category": "Art Movement Inspired",
+    "styles": [
+      "Neo-Brutalism",
+      "Memphis Pattern",
+      "Constructivist Bold",
+      "Surrealist Collage",
+      "De Stijl Geometric",
+      "Cubist Fragment",
+      "Abstract Expressionist",
+      "Pop Art Flat",
+      "Dadaist Chaos",
+      "Futurist Motion"
+    ]
+  },
+  {
+    "category": "Contemporary Minimal",
+    "styles": [
+      "Organic Soft",
+      "Earthy Neutral",
+      "Quiet Luxury",
+      "Mono Ink",
+      "Japanese Wabi-Sabi",
+      "Nordic Cold Minimal",
+      "Negative Space",
+      "Ghost White Editorial"
+    ]
+  }
+]

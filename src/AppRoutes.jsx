@@ -15,6 +15,7 @@ import DevOps from "./Components/DevOps";
 import CivicSense from "./Components/CivicSense";
 import SocialIntelligence from "./Components/SocialIntelligence";
 import Footer from "./Components/Footer.jsx";
+import DesignStyles from "./Components/DesignStyles";
 import { Toaster } from "react-hot-toast";
 import ThemeToggle from "./Components/ThemeToggle.jsx";
 
@@ -42,6 +43,7 @@ const Layout = () => {
         <Route path='/devops' element={<DevOps />} />
         <Route path='/civic-sense' element={<CivicSense />} />
         <Route path='/social-intelligence' element={<SocialIntelligence />} />
+        <Route path='/design-styles' element={<DesignStyles />} />
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>
       {!hideFooter && <Footer />}
