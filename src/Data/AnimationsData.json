@@ -1,592 +1,830 @@
 [
-  {
-    "Category": "Navigational & Functional Animations",
-    "Description": "The eradication of the traditional page load via fluid, continuous spatial routing and functional guidance.",
-    "SubAnimations": [
-      {
-        "Type": "Page Transitions (Basic)",
-        "Effect": "Cross-fades, slides, or shared element transitions between views.",
-        "Tools": ["Framer Motion", "React Transition Group", "GSAP", "CSS View Transitions API"]
-      },
-      {
-        "Type": "Sidebars & Modals",
-        "Effect": "Off-canvas menus sliding in or overlays springing into view.",
-        "Tools": ["CSS Transforms", "React Spring", "Radix UI", "Headless UI"]
-      },
-      {
-        "Type": "Breadcrumb Transitions",
-        "Effect": "Smoothly updating navigation paths as users drill down into content.",
-        "Tools": ["Framer Motion", "React Router", "CSS Transitions"]
-      },
-      {
-        "Type": "Continuous Spatial Routing (Elite)",
-        "Effect": "Elements (cards, images) morph and persist across URLs, simulating an unbroken spatial reality.",
-        "Tools": ["View Transitions API", "GSAP Flip", "React useTransition", "Next.js App Router"]
-      },
-      {
-        "Type": "FAB Morphing",
-        "Effect": "Floating Action Buttons physically expanding into full-page containers without DOM destruction.",
-        "Tools": ["View Transitions API", "CSS Clip-Path", "GSAP", "contain: paint"]
-      },
-      {
-        "Type": "Shared Element Transitions",
-        "Effect": "Decoupling components from the document flow to translate seamlessly into new coordinates.",
-        "Tools": ["view-transition-name", "Framer Motion (layoutId)", "GSAP Flip"]
-      },
-      {
-        "Type": "Layout Morphing (FLIP)",
-        "Effect": "Smoothly resizing and moving elements while bypassing browser layout bottlenecks.",
-        "Tools": ["GSAP Flip", "Framer Motion", "Magic Move"]
-      },
-      {
-        "Type": "Interactive Steppers",
-        "Effect": "Guiding users through complex multi-step flows with animated progress indicators.",
-        "Tools": ["Framer Motion", "React Spring", "Lucide React"]
-      }
-    ]
-  },
-  {
-    "Category": "Feedback & Interaction Animations",
-    "Description": "Immediate visual responses to user actions, bridging the gap between flat glass screens and tangible physics.",
-    "SubAnimations": [
-      {
-        "Type": "Micro-interactions (Basic)",
-        "Effect": "Subtle button presses, toggle switches, or heart icons bubbling up.",
-        "Tools": ["CSS Active States", "Lottie", "Framer Motion", "Anime.js"]
-      },
-      {
-        "Type": "Loading & Progress",
-        "Effect": "Spinners, progress bars, or skeleton screens indicating back-end activity.",
-        "Tools": ["CSS Keyframes", "React Loading Skeleton", "NProgress"]
-      },
-      {
-        "Type": "Hover Effects (Essential)",
-        "Effect": "Scale changes, shadow elevations, or color shifts on mouse-over.",
-        "Tools": ["Tailwind CSS", "CSS Transitions", "Framer Motion (whileHover)"]
-      },
-      {
-        "Type": "Success & Error Feedback",
-        "Effect": "Checkmark reveals, error shakes, or celebratory confetti on action completion.",
-        "Tools": ["Canvas Confetti", "Framer Motion", "Lottie"]
-      },
-      {
-        "Type": "Swipe-to-Action",
-        "Effect": "Revealing hidden actions (delete, archive) by swiping list items.",
-        "Tools": ["Framer Motion (Drag)", "Hammer.js", "Pointer Events"]
-      },
-      {
-        "Type": "Tactile Liquid Interfaces (Elite)",
-        "Effect": "Interactive nodes responding with magnetic attraction, haptic recoil, and organic fluid ripples.",
-        "Tools": ["Rive", "WebGL Shaders", "Framer Motion (Spring Physics)"]
-      },
-      {
-        "Type": "Haptic-Style Visual Shakes (Elite)",
-        "Effect": "Simulating tactile recoil through directional shakes that respond proportionally to interaction velocity.",
-        "Tools": ["Framer Motion", "React Spring", "Custom Physics Hooks"]
-      },
-      {
-        "Type": "Dynamic Organic Ripples (Elite)",
-        "Effect": "WebGL-driven ripples that physically distort background pixels based on impact coordinates.",
-        "Tools": ["WebGL Fragment Shaders", "Canvas 2D API", "GSAP"]
-      },
-      {
-        "Type": "Interactive State Machines (Elite)",
-        "Effect": "UI components that transition through an infinite matrix of states based on live inputs.",
-        "Tools": ["Rive Runtime", "State Machine Editor", "Conditional Logic"]
-      }
-    ]
-  },
-  {
-    "Category": "Structural & Hierarchy Animations",
-    "Description": "Kinetic reflows and architectural choreography that manage cognitive load and guide user focus.",
-    "SubAnimations": [
-      {
-        "Type": "Staggered Reveals (Basic)",
-        "Effect": "List items or grid cards appearing one by one with a slight delay.",
-        "Tools": ["Framer Motion (Variants)", "GSAP (Stagger)", "AOS"]
-      },
-      {
-        "Type": "Accordion & Collapsibles",
-        "Effect": "Content expanding and contracting vertically to manage space.",
-        "Tools": ["CSS Max-Height", "Framer Motion AnimatePresence", "Radix Accordion"]
-      },
-      {
-        "Type": "Focus & Highlight",
-        "Effect": "Pulsing borders or background glows on active form fields or focused elements.",
-        "Tools": ["CSS Box-Shadow", "React Aria", "Tailwind Ring"]
-      },
-      {
-        "Type": "Content Masking",
-        "Effect": "Revealing sections via animated geometric or organic clipping paths.",
-        "Tools": ["CSS clip-path", "SVG Masks", "GSAP"]
-      },
-      {
-        "Type": "Kinetic Bento Morphing (Elite)",
-        "Effect": "Asymmetric grids fluidly reorganizing across viewports without redundant layout repaints using FLIP.",
-        "Tools": ["GSAP FLIP", "CSS Grid", "React Server Components"]
-      },
-      {
-        "Type": "Animated Focus Management (Elite)",
-        "Effect": "Floating SVG layers that physically track and morph around focused interactive elements.",
-        "Tools": ["SVG Focus Tracking", "Framer Motion", "CSS :focus-visible"]
-      },
-      {
-        "Type": "Hierarchical Reveals (Elite)",
-        "Effect": "Content layering that slides or fades in based on structural importance to guide the eye.",
-        "Tools": ["Intersection Observer", "Framer Motion (Stagger)", "GSAP"]
-      }
-    ]
-  },
-  {
-    "Category": "Branding & Delighters",
-    "Description": "Identity as a kinetic origin point, transforming static branding into narrative digital journeys and emotional connections.",
-    "SubAnimations": [
-      {
-        "Type": "Illustrative Motion (Basic)",
-        "Effect": "Complex vector animations used for storytelling or hero sections.",
-        "Tools": ["Lottie (After Effects)", "Rive", "SVG Animations"]
-      },
-      {
-        "Type": "Parallax Scrolling",
-        "Effect": "Background elements moving slower than foreground elements on scroll to create depth.",
-        "Tools": ["Lenis", "GSAP ScrollTrigger", "React Scroll Parallax"]
-      },
-      {
-        "Type": "Particle Systems & 3D (Standard)",
-        "Effect": "Floating backgrounds, interactive 3D models, or mouse-trailing effects.",
-        "Tools": ["Three.js", "React Three Fiber", "tsparticles", "Spline"]
-      },
-      {
-        "Type": "Logo Morphing (Standard)",
-        "Effect": "The brand logo transforming into a navigation icon or back to a home link upon scroll/click.",
-        "Tools": ["SVGO", "GSAP MorphSVG", "Framer Motion"]
-      },
-      {
-        "Type": "Cinematic Brand Sequencing (Elite)",
-        "Effect": "Transforming loading phases into emotional onboarding via logo morphs and full-screen reveals.",
-        "Tools": ["GSAP MorphSVG", "Three.js", "CSS clip-path", "High-bitrate Video"]
-      },
-      {
-        "Type": "Logo-to-Icon Morphing (Elite)",
-        "Effect": "Brand emblems mathematically untangling into functional UI elements like hamburger icons.",
-        "Tools": ["GSAP MorphSVG", "SVGO", "Framer Motion"]
-      },
-      {
-        "Type": "Micro-Narrative Scrollytelling (Elite)",
-        "Effect": "Sequencing animations to tell a story where each element acts as a chapter.",
-        "Tools": ["GSAP ScrollTrigger", "Lenis", "Framer Motion"]
-      },
-      {
-        "Type": "Cinematic Overlay Intros (Elite)",
-        "Effect": "High-end full-screen reveals using typography and masks on first interaction.",
-        "Tools": ["GSAP", "Framer Motion", "CSS Masks"]
-      }
-    ]
-  },
-  {
-    "Category": "Technical & Utility Animations",
-    "Description": "Animations that solve specific technical display problems or optimize perception and perceived performance.",
-    "SubAnimations": [
-      {
-        "Type": "Infinite Marquees (Standard)",
-        "Effect": "Continuously scrolling text or logo ribbons for dynamic content display.",
-        "Tools": ["CSS Animation (linear)", "Framer Motion", "React Fast Marquee"]
-      },
-      {
-        "Type": "Text Typing Effects",
-        "Effect": "Characters appearing as if typed in real-time to simulate active input or system messaging.",
-        "Tools": ["Typed.js", "Typewriter-Effect", "CSS Steps() function"]
-      },
-      {
-        "Type": "Pull-to-Refresh",
-        "Effect": "Bouncy icons triggered by vertical over-scrolling on mobile devices.",
-        "Tools": ["Framer Motion (Drag)", "React Pull To Refresh", "Hammer.js"]
-      },
-      {
-        "Type": "Image Blur-Up / Reveal",
-        "Effect": "Transitioning from low-resolution placeholders or BlurHash to full-fidelity images.",
-        "Tools": ["BlurHash", "Next.js Image", "CSS Filter"]
-      },
-      {
-        "Type": "Perceptual Load Masking (Elite)",
-        "Effect": "Algorithmic skeletons and BlurHash resoltuions resolving into high-res assets to disguise network latency.",
-        "Tools": ["BlurHash", "WebGL Shaders", "React Suspense", "Network Info API"]
-      },
-      {
-        "Type": "Skeleton Shimmer Layers (Elite)",
-        "Effect": "Dynamic lighting effects passing organically over DOM placeholders to simulate activity.",
-        "Tools": ["CSS Custom Properties", "requestAnimationFrame", "WebGL Noise Shaders"]
-      },
-      {
-        "Type": "Skeleton Loading",
-        "Effect": "Subtle shimmering pulses representing document structure before asset resolution.",
-        "Tools": ["React Content Loader", "Tailwind Animate-Pulse", "CSS Gradients"]
-      }
-    ]
-  },
-  {
-    "Category": "Advanced Scroll & Immersion",
-    "Description": "Dimensional orchestration where scroll input is translated into multi-dimensional narrative sequences and high-end depth effects.",
-    "SubAnimations": [
-      {
-        "Type": "Scroll-Driven Reveal (Basic)",
-        "Effect": "Elements fading, scaling, or sliding in as they enter the viewport.",
-        "Tools": ["GSAP ScrollTrigger", "Framer Motion (whileInView)", "Intersection Observer"]
-      },
-      {
-        "Type": "Horizontal Scroll Sections",
-        "Effect": "Vertical scrolling translates to horizontal movement of content blocks.",
-        "Tools": ["GSAP ScrollTrigger", "Lenis", "Locomotive Scroll"]
-      },
-      {
-        "Type": "Sticky Parallax",
-        "Effect": "Layered backgrounds moving at different speeds while foreground content remains 'stuck'.",
-        "Tools": ["CSS Sticky", "React Scroll Parallax", "GSAP"]
-      },
-      {
-        "Type": "Scroll-Path Animations",
-        "Effect": "Elements following a complex SVG path as the user scrolls down.",
-        "Tools": ["GSAP MotionPath", "Framer Motion (useScroll)"]
-      },
-      {
-        "Type": "Dimensional Scrollytelling (Elite)",
-        "Effect": "Vertical scroll wheel input hijacked and translated into Z-axis depth and masked horizontal narratives.",
-        "Tools": ["GSAP ScrollTrigger", "Lenis", "Locomotive Scroll", "Z-Depth Scaling"]
-      },
-      {
-        "Type": "Non-Traditional Axis Scroll (Elite)",
-        "Effect": "Propelling users through 3D spatial environments where the camera trajectory is the narrative.",
-        "Tools": ["Three.js", "GSAP ScrollTrigger", "React Three Fiber"]
-      },
-      {
-        "Type": "Masked Scroll Reveal (Elite)",
-        "Effect": "Revealing underlying layers through dynamically shifting geometric or organic masks bound to scroll.",
-        "Tools": ["CSS clip-path", "SVG Masks", "WebGL Shaders"]
-      }
-    ]
-  },
-  {
-    "Category": "SVG & Vector Morphing",
-    "Description": "Mathematical vector-based animations that create organic motion without raster pixelation, from simple path changes to algorithmic noise.",
-    "SubAnimations": [
-      {
-        "Type": "Shape Morphing (Standard)",
-        "Effect": "One SVG shape smoothly transforming into another (e.g., Play button to Pause).",
-        "Tools": ["GSAP MorphSVG", "Framer Motion", "Anime.js", "Kute.js"]
-      },
-      {
-        "Type": "SVG Filter Effects",
-        "Effect": "Distortions like 'Gooey' effects or grainy noise applied to vector shapes.",
-        "Tools": ["SVG Filters (feGaussianBlur)", "CSS Filter", "GSAP"]
-      },
-      {
-        "Type": "Algorithmic Vector Distortion (Elite)",
-        "Effect": "Applying feTurbulence and feDisplacementMap noise algorithms to vector shapes in real-time.",
-        "Tools": ["SVG Filter Primitives", "feTurbulence", "GSAP", "requestAnimationFrame"]
-      },
-      {
-        "Type": "SVG Line Drawing (Standard/Elite)",
-        "Effect": "Binding stroke-dasharray to scroll or interaction to physically 'draw' illustrations.",
-        "Tools": ["CSS Stroke-Dasharray", "Framer Motion (pathLength)", "GSAP"]
-      },
-      {
-        "Type": "Path-Following Scrollytelling (Elite)",
-        "Effect": "Binding assets to invisible, complex Bezier curves to swoop and dive during scroll traversal.",
-        "Tools": ["GSAP MotionPath", "SVG <path>", "Framer Motion"]
-      }
-    ]
-  },
-  {
-    "Category": "State & Data Visualizations",
-    "Description": "Fluid orchestration of complex datasets into narrative-driven, continuous visual streams and interactive analytics.",
-    "SubAnimations": [
-      {
-        "Type": "Dynamic Charts (Basic)",
-        "Effect": "Bars, lines, or points smoothly transitioning when underlying data updates.",
-        "Tools": ["D3.js", "Recharts", "Victory", "Framer Motion"]
-      },
-      {
-        "Type": "Counter Animations",
-        "Effect": "Numbers rapidly ticking up or down to reflect new values.",
-        "Tools": ["React CountUp", "GSAP", "CSS Number Transitions"]
-      },
-      {
-        "Type": "Animated Table Sorting",
-        "Effect": "Table rows sliding and reordering smoothly when headers are clicked.",
-        "Tools": ["Framer Motion (layout)", "TanStack Table", "React Flip Toolkit"]
-      },
-      {
-        "Type": "Fluid Data Orchestration (Elite)",
-        "Effect": "Data points physically traveling to new coordinates during sorting/filtering rather than instant changes.",
-        "Tools": ["D3.js", "WebGL Instancing", "Three.js", "React Spring"]
-      },
-      {
-        "Type": "Narrative Data Streams (Elite)",
-        "Effect": "Staggered, chronological entry of data points to physically 'draw' analytical insights.",
-        "Tools": ["GSAP", "D3.js", "WebGL Instanced Geometries"]
-      },
-      {
-        "Type": "State Sorting (FLIP)",
-        "Effect": "Analytical grids shuffling positions smoothly using invertible transform mathematics.",
-        "Tools": ["Framer Motion (layout)", "React-Flip-Toolkit", "GSAP FLIP"]
-      }
-    ]
-  },
-  {
-    "Category": "Psychological & Haptic Motion",
-    "Description": "Neuro-responsive motion paths and physical easing designed to trigger dopamine loops and simulate tangible physics.",
-    "SubAnimations": [
-      {
-        "Type": "Anticipation & Overshoot (Standard)",
-        "Effect": "An element pulling back slightly before moving forward, then bouncing at the end.",
-        "Tools": ["React Spring", "Framer Motion (spring)", "Bezier Curves"]
-      },
-      {
-        "Type": "Elastic & Organic Easing",
-        "Effect": "Using non-linear spring curves to mimic natural physical objects with soft rebounds.",
-        "Tools": ["Framer Motion (spring)", "GSAP CustomEase", "Bezier Curves"]
-      },
-      {
-        "Type": "Neuro-Responsive Motion (Elite)",
-        "Effect": "Utilizing tension, release, and calculated curiosity gaps to drive obsessed user progression.",
-        "Tools": ["Custom Asymmetric Beziers", "Behavioral Analytics", "GSAP"]
-      },
-      {
-        "Type": "Emotion-Led Motion Paths (Elite)",
-        "Effect": "Organic sweeping arcs vs. sharp linear paths to evoke specific brand archetypes.",
-        "Tools": ["GSAP MotionPath", "Framer Motion", "Custom Easing Functions"]
-      },
-      {
-        "Type": "Visual Haptics (Elite)",
-        "Effect": "Simulating physical 'click' resonance through subtle, physics-based recoil and scale dips.",
-        "Tools": ["Framer Motion (Spring)", "Anime.js", "Pointer Events"]
-      }
-    ]
-  },
-  {
-    "Category": "Kinetic Typography & Type Motion",
-    "Description": "Breathing letterforms that dynamically morph axes in real-time synchronization with user inputs and narrative flow.",
-    "SubAnimations": [
-      {
-        "Type": "Text Path Animation",
-        "Effect": "Text sliding along complex organic or geometric curves to guide eye movement.",
-        "Tools": ["SVG <textPath>", "Framer Motion", "GSAP ScrollTrigger"]
-      },
-      {
-        "Type": "Glitch & Sci-Fi Typo",
-        "Effect": "High-energy, jittery character offsets and neon-glow shifts for futuristic designs.",
-        "Tools": ["CSS Keyframes", "SVG Filters", "GSAP"]
-      },
-      {
-        "Type": "Kinetic Variable Typography (Elite)",
-        "Effect": "Text morphing in weight, slant, and width based on scroll velocity or pointer proximity.",
-        "Tools": ["Variable Fonts (.woff2)", "CSS font-variation-settings", "GSAP SplitText"]
-      },
-      {
-        "Type": "Animated Text Masking (Elite/Standard)",
-        "Effect": "Video or complex GLSL textures playing through the clipping mask of morphing typography.",
-        "Tools": ["CSS background-clip: text", "SVG Masks", "WebGL Shaders"]
-      },
-      {
-        "Type": "Text Scrambling & Decode (Elite/Standard)",
-        "Effect": "Characters cycling through algorithmic noise fields before resolving into legible content.",
-        "Tools": ["GSAP TextPlugin", "Baffle.js", "Custom JS Algorithms"]
-      }
-    ]
-  },
-  {
-    "Category": "Interactive Cursors & Mouse Trailing",
-    "Description": "Fluid physics pointers that act as localized light sources, magnetic gravitational fields, and interactive reveals.",
-    "SubAnimations": [
-      {
-        "Type": "Magnetic Elements (Standard)",
-        "Effect": "Buttons or icons being 'pulled' toward the cursor when it gets close.",
-        "Tools": ["Framer Motion (useTransform)", "GSAP", "Canvas API"]
-      },
-      {
-        "Type": "Custom Cursor Trails",
-        "Effect": "Shadows, sparkles, or text following the cursor with smoothed physics.",
-        "Tools": ["Canvas 2D API", "Cursor-trailing.js", "Three.js Particles"]
-      },
-      {
-        "Type": "Cursor-Reactive Masks",
-        "Effect": "The cursor acting as a 'flashlight' to reveal hidden content layers underneath.",
-        "Tools": ["CSS Clip-Path", "SVG Masks", "Framer Motion Drag"]
-      },
-      {
-        "Type": "Cursor Color Inversion",
-        "Effect": "The cursor dynamically changing blend mode based on the background it hovers over.",
-        "Tools": ["CSS mix-blend-mode", "Canvas API", "Framer Motion"]
-      },
-      {
-        "Type": "Cursor-Driven Physics",
-        "Effect": "Particles or floating elements being realistically attracted to or repelled by the cursor.",
-        "Tools": ["Matter.js", "P5.js", "Canvas API"]
-      },
-      {
-        "Type": "Fluid Physics Pointers (Elite)",
-        "Effect": "Cursors displacing liquid simulations or generating swirling chromatic wakes.",
-        "Tools": ["WebGL/GLSL", "Three.js", "2D Fluid Dynamics"]
-      },
-      {
-        "Type": "Magnetic Gravitational Fields (Elite)",
-        "Effect": "Interactive elements being physically pulled off-axis toward the cursor's coordinates.",
-        "Tools": ["Matter.js", "Framer Motion (useTransform)", "DOM Bounding Tracking"]
-      },
-      {
-        "Type": "Shader-Reactive Cursors (Elite)",
-        "Effect": "Localized fragment distortions (ripples, aberration) triggered by cursor passage.",
-        "Tools": ["WebGL Shaders", "GSAP", "Three.js"]
-      }
-    ]
-  },
-  {
-    "Category": "Generative & Procedural Motion",
-    "Description": "Non-linear motion governed by complex matrices of conditional logic, algorithms, and environmental variables.",
-    "SubAnimations": [
-      {
-        "Type": "Perlin Noise Backgrounds (Standard)",
-        "Effect": "Organic, flow-like movements that never repeat exactly.",
-        "Tools": ["WebGL/GLSL", "Three.js", "Simplex-noise.js"]
-      },
-      {
-        "Type": "Particle Attraction & Repulsion",
-        "Effect": "Thousands of dots reacting to mouse movement or screen events.",
-        "Tools": ["tsparticles", "Canvas API", "PixiJS"]
-      },
-      {
-        "Type": "Fluid Simulations (Standard)",
-        "Effect": "Simulating high-fidelity liquid or smoke movement on the screen.",
-        "Tools": ["WebGL", "p5.js", "GPU.js"]
-      },
-      {
-        "Type": "State-Driven Procedural Motion (Elite)",
-        "Effect": "Logic-based animations (e.g., mascots) that respond conditionally to live inputs.",
-        "Tools": ["Rive Runtime", "State Machine Editor", "Conditional Logic"]
-      },
-      {
-        "Type": "Algorithmic Noise Backgrounds (Elite)",
-        "Effect": "Organic, flow-like movements generated on the GPU via Perlin or Simplex noise shaders.",
-        "Tools": ["WebGL Compute Shaders", "Three.js", "Math.random() Algorithms"]
-      },
-      {
-        "Type": "Particle Physics Simulations (Elite)",
-        "Effect": "Massive boids or flocking simulations pushing millions of particles directly on the GPU.",
-        "Tools": ["WebGL", "PixiJS", "Canvas API"]
-      }
-    ]
-  },
-  {
-    "Category": "Spatial UI & Immersive Depth",
-    "Description": "The dissolution of boundaries between 2D interface elements and 3D spatial environments using the Z-axis.",
-    "SubAnimations": [
-      {
-        "Type": "3D Card Tilting (Standard)",
-        "Effect": "Elements tilting and reflecting light based on mouse position.",
-        "Tools": ["Vanilla-Tilt.js", "Framer Motion (rotateX/Y)", "CSS Perspective"]
-      },
-      {
-        "Type": "Camera Orbit & Flythroughs",
-        "Effect": "The viewpoint moving through a 3D landscape of UI components.",
-        "Tools": ["Three.js", "React Three Fiber", "Spline"]
-      },
-      {
-        "Type": "AR/VR Web Transitions (Standard)",
-        "Effect": "Preparing UI elements for spatial computing and immersive head-mounted displays.",
-        "Tools": ["WebXR Device API", "A-Frame", "Three.js"]
-      },
-      {
-        "Type": "Hybrid Dimensionality (Elite)",
-        "Effect": "Persistent WebGL scenes that maintain state across URL changes via uninterrupted camera flights.",
-        "Tools": ["React Three Fiber (R3F)", "Three.js", "App Shell Model", "GLTF Compression"]
-      },
-      {
-        "Type": "Z-Axis Depth Transitions (Elite)",
-        "Effect": "Layers pushing back or coming forward to indicate hierarchy depth and architectural volume.",
-        "Tools": ["CSS 3D Transforms", "Framer Motion", "GSAP"]
-      },
-      {
-        "Type": "Mixed 2D/3D Storytelling (Elite)",
-        "Effect": "Blending flat illustrations with Z-axis camera movements for deep visual narratives.",
-        "Tools": ["Three.js", "React Three Fiber", "Framer Motion 3D"]
-      }
-    ]
-  },
-  {
-    "Category": "Inclusive & Adaptive Motion",
-    "Description": "Context-aware kinematics that intelligently adapt to hardware, accessibility, and environmental variables.",
-    "SubAnimations": [
-      {
-        "Type": "Contextual Intent Scaling (Standard)",
-        "Effect": "Speeding up or slowing down transitions based on the user's interaction frequency.",
-        "Tools": ["Framer Motion", "Custom Hooks", "Interaction Timing APIs"]
-      },
-      {
-        "Type": "Battery-Aware Motion",
-        "Effect": "Disabling or simplifying GPU-heavy animations when the device enters low-power mode.",
-        "Tools": ["Battery Status API", "prefers-reduced-motion", "JS Optimization"]
-      },
-      {
-        "Type": "Culturally-Sensitive Motion",
-        "Effect": "Adjusting animation directions and easing based on localized reading patterns (RTL/LTR).",
-        "Tools": ["CSS i18n", "Framer Motion (dir)", "Custom Hooks"]
-      },
-      {
-        "Type": "Context-Aware Kinematics (Elite)",
-        "Effect": "Automatically simplifying animations based on battery level, reduced-motion triggers, and reading direction.",
-        "Tools": ["Battery Status API", "prefers-reduced-motion", "CSS Logical Properties"]
-      },
-      {
-        "Type": "Reduced Motion Alternatives (Elite)",
-        "Effect": "Substituting high-velocity motion with gentle crossfades for users with vestibular sensitivities.",
-        "Tools": ["MatchMedia", "Framer Motion (useReducedMotion)", "CSS Filters"]
-      },
-      {
-        "Type": "Performance-Adaptive Easing (Elite)",
-        "Effect": "Detecting hardware concurrency and network throttles to downgrade heavy shader effects instantly.",
-        "Tools": ["navigator.hardwareConcurrency", "Network Information API", "React Suspense"]
-      }
-    ]
-  },
-  {
-    "Category": "Shader-Based Visuals & GLSL",
-    "Description": "High-end visual effects powered by raw GPU fragment shaders for organic textures, lighting, and complex particle systems.",
-    "SubAnimations": [
-      {
-        "Type": "Dynamic Liquid Textures (Standard)",
-        "Effect": "Organic, flowing background surfaces that ripple and warp in response to interaction.",
-        "Tools": ["WebGL/GLSL", "Three.js Shaders", "PixiJS", "Curtains.js"]
-      },
-      {
-        "Type": "Deep Glow & Light Bloom",
-        "Effect": "Intense light-bleeding and neon-glow effects that simulate physical light emission.",
-        "Tools": ["CSS Backdrop-Filter", "SVG feGaussianBlur", "WebGL Post-Processing"]
-      },
-      {
-        "Type": "Grainy Noise Transitions",
-        "Effect": "Adding a tactile, film-like grain texture to transitions for a 'lo-fi' premium aesthetic.",
-        "Tools": ["SVG Filters (feTurbulence)", "CSS Mix-Blend-Mode", "Canvas API"]
-      },
-      {
-        "Type": "Pixel Blast & Disintegration",
-        "Effect": "Dissolving elements into high-density particles upon exit or scroll-out.",
-        "Tools": ["Canvas 2D API", "GSAP PhysicsProps", "Framer Motion"]
-      },
-      {
-        "Type": "Real-Time Fragment Distortion (Elite)",
-        "Effect": "Manipulating the color and position of every pixel simultaneously for cinematic distortion.",
-        "Tools": ["WebGL", "GLSL Shaders", "Curtains.js", "OGL"]
-      },
-      {
-        "Type": "Chromatic Aberration Surfaces (Elite)",
-        "Effect": "Simulating lens-like color fringing based on scroll velocity vectors or pointer movement.",
-        "Tools": ["GLSL Shaders", "CSS Filters", "WebGL Post-Processing"]
-      },
-      {
-        "Type": "Dynamic Noise-Grain Gradients (Elite)",
-        "Effect": "Using animated Fractal Brownian Motion (fBm) to create tactile, film-like textured surfaces.",
-        "Tools": ["SVG feTurbulence", "Canvas API", "WebGL Fragment Shaders"]
-      }
-    ]
-  }
+    {
+        "Category": "Navigational & Functional Animations",
+        "Description": "The eradication of the traditional page load via fluid, continuous spatial routing and functional guidance.",
+        "SubAnimations": [
+            {
+                "Type": "Page Transitions (Basic)",
+                "Effect": "Cross-fades, slides, or shared element transitions between views.",
+                "Tools": [
+                    "Framer Motion",
+                    "React Transition Group",
+                    "GSAP",
+                    "CSS View Transitions API"
+                ]
+            },
+            {
+                "Type": "Sidebars & Modals",
+                "Effect": "Off-canvas menus sliding in or overlays springing into view.",
+                "Tools": [
+                    "CSS Transforms",
+                    "React Spring",
+                    "Radix UI",
+                    "Headless UI"
+                ]
+            },
+            {
+                "Type": "Breadcrumb Transitions",
+                "Effect": "Smoothly updating navigation paths as users drill down into content.",
+                "Tools": ["Framer Motion", "React Router", "CSS Transitions"]
+            },
+            {
+                "Type": "Continuous Spatial Routing (Elite)",
+                "Effect": "Elements (cards, images) morph and persist across URLs, simulating an unbroken spatial reality.",
+                "Tools": [
+                    "View Transitions API",
+                    "GSAP Flip",
+                    "React useTransition",
+                    "Next.js App Router"
+                ]
+            },
+            {
+                "Type": "FAB Morphing",
+                "Effect": "Floating Action Buttons physically expanding into full-page containers without DOM destruction.",
+                "Tools": [
+                    "View Transitions API",
+                    "CSS Clip-Path",
+                    "GSAP",
+                    "contain: paint"
+                ]
+            },
+            {
+                "Type": "Shared Element Transitions",
+                "Effect": "Decoupling components from the document flow to translate seamlessly into new coordinates.",
+                "Tools": [
+                    "view-transition-name",
+                    "Framer Motion (layoutId)",
+                    "GSAP Flip"
+                ]
+            },
+            {
+                "Type": "Layout Morphing (FLIP)",
+                "Effect": "Smoothly resizing and moving elements while bypassing browser layout bottlenecks.",
+                "Tools": ["GSAP Flip", "Framer Motion", "Magic Move"]
+            },
+            {
+                "Type": "Interactive Steppers",
+                "Effect": "Guiding users through complex multi-step flows with animated progress indicators.",
+                "Tools": ["Framer Motion", "React Spring", "Lucide React"]
+            }
+        ]
+    },
+    {
+        "Category": "Feedback & Interaction Animations",
+        "Description": "Immediate visual responses to user actions, bridging the gap between flat glass screens and tangible physics.",
+        "SubAnimations": [
+            {
+                "Type": "Micro-interactions (Basic)",
+                "Effect": "Subtle button presses, toggle switches, or heart icons bubbling up.",
+                "Tools": [
+                    "CSS Active States",
+                    "Lottie",
+                    "Framer Motion",
+                    "Anime.js"
+                ]
+            },
+            {
+                "Type": "Loading & Progress",
+                "Effect": "Spinners, progress bars, or skeleton screens indicating back-end activity.",
+                "Tools": [
+                    "CSS Keyframes",
+                    "React Loading Skeleton",
+                    "NProgress"
+                ]
+            },
+            {
+                "Type": "Hover Effects (Essential)",
+                "Effect": "Scale changes, shadow elevations, or color shifts on mouse-over.",
+                "Tools": [
+                    "Tailwind CSS",
+                    "CSS Transitions",
+                    "Framer Motion (whileHover)"
+                ]
+            },
+            {
+                "Type": "Success & Error Feedback",
+                "Effect": "Checkmark reveals, error shakes, or celebratory confetti on action completion.",
+                "Tools": ["Canvas Confetti", "Framer Motion", "Lottie"]
+            },
+            {
+                "Type": "Swipe-to-Action",
+                "Effect": "Revealing hidden actions (delete, archive) by swiping list items.",
+                "Tools": ["Framer Motion (Drag)", "Hammer.js", "Pointer Events"]
+            },
+            {
+                "Type": "Tactile Liquid Interfaces (Elite)",
+                "Effect": "Interactive nodes responding with magnetic attraction, haptic recoil, and organic fluid ripples.",
+                "Tools": [
+                    "Rive",
+                    "WebGL Shaders",
+                    "Framer Motion (Spring Physics)"
+                ]
+            },
+            {
+                "Type": "Haptic-Style Visual Shakes (Elite)",
+                "Effect": "Simulating tactile recoil through directional shakes that respond proportionally to interaction velocity.",
+                "Tools": [
+                    "Framer Motion",
+                    "React Spring",
+                    "Custom Physics Hooks"
+                ]
+            },
+            {
+                "Type": "Dynamic Organic Ripples (Elite)",
+                "Effect": "WebGL-driven ripples that physically distort background pixels based on impact coordinates.",
+                "Tools": ["WebGL Fragment Shaders", "Canvas 2D API", "GSAP"]
+            },
+            {
+                "Type": "Interactive State Machines (Elite)",
+                "Effect": "UI components that transition through an infinite matrix of states based on live inputs.",
+                "Tools": [
+                    "Rive Runtime",
+                    "State Machine Editor",
+                    "Conditional Logic"
+                ]
+            }
+        ]
+    },
+    {
+        "Category": "Structural & Hierarchy Animations",
+        "Description": "Kinetic reflows and architectural choreography that manage cognitive load and guide user focus.",
+        "SubAnimations": [
+            {
+                "Type": "Staggered Reveals (Basic)",
+                "Effect": "List items or grid cards appearing one by one with a slight delay.",
+                "Tools": ["Framer Motion (Variants)", "GSAP (Stagger)", "AOS"]
+            },
+            {
+                "Type": "Accordion & Collapsibles",
+                "Effect": "Content expanding and contracting vertically to manage space.",
+                "Tools": [
+                    "CSS Max-Height",
+                    "Framer Motion AnimatePresence",
+                    "Radix Accordion"
+                ]
+            },
+            {
+                "Type": "Focus & Highlight",
+                "Effect": "Pulsing borders or background glows on active form fields or focused elements.",
+                "Tools": ["CSS Box-Shadow", "React Aria", "Tailwind Ring"]
+            },
+            {
+                "Type": "Content Masking",
+                "Effect": "Revealing sections via animated geometric or organic clipping paths.",
+                "Tools": ["CSS clip-path", "SVG Masks", "GSAP"]
+            },
+            {
+                "Type": "Kinetic Bento Morphing (Elite)",
+                "Effect": "Asymmetric grids fluidly reorganizing across viewports without redundant layout repaints using FLIP.",
+                "Tools": ["GSAP FLIP", "CSS Grid", "React Server Components"]
+            },
+            {
+                "Type": "Animated Focus Management (Elite)",
+                "Effect": "Floating SVG layers that physically track and morph around focused interactive elements.",
+                "Tools": [
+                    "SVG Focus Tracking",
+                    "Framer Motion",
+                    "CSS :focus-visible"
+                ]
+            },
+            {
+                "Type": "Hierarchical Reveals (Elite)",
+                "Effect": "Content layering that slides or fades in based on structural importance to guide the eye.",
+                "Tools": [
+                    "Intersection Observer",
+                    "Framer Motion (Stagger)",
+                    "GSAP"
+                ]
+            }
+        ]
+    },
+    {
+        "Category": "Branding & Delighters",
+        "Description": "Identity as a kinetic origin point, transforming static branding into narrative digital journeys and emotional connections.",
+        "SubAnimations": [
+            {
+                "Type": "Illustrative Motion (Basic)",
+                "Effect": "Complex vector animations used for storytelling or hero sections.",
+                "Tools": ["Lottie (After Effects)", "Rive", "SVG Animations"]
+            },
+            {
+                "Type": "Parallax Scrolling",
+                "Effect": "Background elements moving slower than foreground elements on scroll to create depth.",
+                "Tools": [
+                    "Lenis",
+                    "GSAP ScrollTrigger",
+                    "React Scroll Parallax"
+                ]
+            },
+            {
+                "Type": "Particle Systems & 3D (Standard)",
+                "Effect": "Floating backgrounds, interactive 3D models, or mouse-trailing effects.",
+                "Tools": [
+                    "Three.js",
+                    "React Three Fiber",
+                    "tsparticles",
+                    "Spline"
+                ]
+            },
+            {
+                "Type": "Logo Morphing (Standard)",
+                "Effect": "The brand logo transforming into a navigation icon or back to a home link upon scroll/click.",
+                "Tools": ["SVGO", "GSAP MorphSVG", "Framer Motion"]
+            },
+            {
+                "Type": "Cinematic Brand Sequencing (Elite)",
+                "Effect": "Transforming loading phases into emotional onboarding via logo morphs and full-screen reveals.",
+                "Tools": [
+                    "GSAP MorphSVG",
+                    "Three.js",
+                    "CSS clip-path",
+                    "High-bitrate Video"
+                ]
+            },
+            {
+                "Type": "Logo-to-Icon Morphing (Elite)",
+                "Effect": "Brand emblems mathematically untangling into functional UI elements like hamburger icons.",
+                "Tools": ["GSAP MorphSVG", "SVGO", "Framer Motion"]
+            },
+            {
+                "Type": "Micro-Narrative Scrollytelling (Elite)",
+                "Effect": "Sequencing animations to tell a story where each element acts as a chapter.",
+                "Tools": ["GSAP ScrollTrigger", "Lenis", "Framer Motion"]
+            },
+            {
+                "Type": "Cinematic Overlay Intros (Elite)",
+                "Effect": "High-end full-screen reveals using typography and masks on first interaction.",
+                "Tools": ["GSAP", "Framer Motion", "CSS Masks"]
+            }
+        ]
+    },
+    {
+        "Category": "Technical & Utility Animations",
+        "Description": "Animations that solve specific technical display problems or optimize perception and perceived performance.",
+        "SubAnimations": [
+            {
+                "Type": "Infinite Marquees (Standard)",
+                "Effect": "Continuously scrolling text or logo ribbons for dynamic content display.",
+                "Tools": [
+                    "CSS Animation (linear)",
+                    "Framer Motion",
+                    "React Fast Marquee"
+                ]
+            },
+            {
+                "Type": "Text Typing Effects",
+                "Effect": "Characters appearing as if typed in real-time to simulate active input or system messaging.",
+                "Tools": [
+                    "Typed.js",
+                    "Typewriter-Effect",
+                    "CSS Steps() function"
+                ]
+            },
+            {
+                "Type": "Pull-to-Refresh",
+                "Effect": "Bouncy icons triggered by vertical over-scrolling on mobile devices.",
+                "Tools": [
+                    "Framer Motion (Drag)",
+                    "React Pull To Refresh",
+                    "Hammer.js"
+                ]
+            },
+            {
+                "Type": "Image Blur-Up / Reveal",
+                "Effect": "Transitioning from low-resolution placeholders or BlurHash to full-fidelity images.",
+                "Tools": ["BlurHash", "Next.js Image", "CSS Filter"]
+            },
+            {
+                "Type": "Perceptual Load Masking (Elite)",
+                "Effect": "Algorithmic skeletons and BlurHash resoltuions resolving into high-res assets to disguise network latency.",
+                "Tools": [
+                    "BlurHash",
+                    "WebGL Shaders",
+                    "React Suspense",
+                    "Network Info API"
+                ]
+            },
+            {
+                "Type": "Skeleton Shimmer Layers (Elite)",
+                "Effect": "Dynamic lighting effects passing organically over DOM placeholders to simulate activity.",
+                "Tools": [
+                    "CSS Custom Properties",
+                    "requestAnimationFrame",
+                    "WebGL Noise Shaders"
+                ]
+            },
+            {
+                "Type": "Skeleton Loading",
+                "Effect": "Subtle shimmering pulses representing document structure before asset resolution.",
+                "Tools": [
+                    "React Content Loader",
+                    "Tailwind Animate-Pulse",
+                    "CSS Gradients"
+                ]
+            }
+        ]
+    },
+    {
+        "Category": "Advanced Scroll & Immersion",
+        "Description": "Dimensional orchestration where scroll input is translated into multi-dimensional narrative sequences and high-end depth effects.",
+        "SubAnimations": [
+            {
+                "Type": "Scroll-Driven Reveal (Basic)",
+                "Effect": "Elements fading, scaling, or sliding in as they enter the viewport.",
+                "Tools": [
+                    "GSAP ScrollTrigger",
+                    "Framer Motion (whileInView)",
+                    "Intersection Observer"
+                ]
+            },
+            {
+                "Type": "Horizontal Scroll Sections",
+                "Effect": "Vertical scrolling translates to horizontal movement of content blocks.",
+                "Tools": ["GSAP ScrollTrigger", "Lenis", "Locomotive Scroll"]
+            },
+            {
+                "Type": "Sticky Parallax",
+                "Effect": "Layered backgrounds moving at different speeds while foreground content remains 'stuck'.",
+                "Tools": ["CSS Sticky", "React Scroll Parallax", "GSAP"]
+            },
+            {
+                "Type": "Scroll-Path Animations",
+                "Effect": "Elements following a complex SVG path as the user scrolls down.",
+                "Tools": ["GSAP MotionPath", "Framer Motion (useScroll)"]
+            },
+            {
+                "Type": "Dimensional Scrollytelling (Elite)",
+                "Effect": "Vertical scroll wheel input hijacked and translated into Z-axis depth and masked horizontal narratives.",
+                "Tools": [
+                    "GSAP ScrollTrigger",
+                    "Lenis",
+                    "Locomotive Scroll",
+                    "Z-Depth Scaling"
+                ]
+            },
+            {
+                "Type": "Non-Traditional Axis Scroll (Elite)",
+                "Effect": "Propelling users through 3D spatial environments where the camera trajectory is the narrative.",
+                "Tools": ["Three.js", "GSAP ScrollTrigger", "React Three Fiber"]
+            },
+            {
+                "Type": "Masked Scroll Reveal (Elite)",
+                "Effect": "Revealing underlying layers through dynamically shifting geometric or organic masks bound to scroll.",
+                "Tools": ["CSS clip-path", "SVG Masks", "WebGL Shaders"]
+            }
+        ]
+    },
+    {
+        "Category": "SVG & Vector Morphing",
+        "Description": "Mathematical vector-based animations that create organic motion without raster pixelation, from simple path changes to algorithmic noise.",
+        "SubAnimations": [
+            {
+                "Type": "Shape Morphing (Standard)",
+                "Effect": "One SVG shape smoothly transforming into another (e.g., Play button to Pause).",
+                "Tools": [
+                    "GSAP MorphSVG",
+                    "Framer Motion",
+                    "Anime.js",
+                    "Kute.js"
+                ]
+            },
+            {
+                "Type": "SVG Filter Effects",
+                "Effect": "Distortions like 'Gooey' effects or grainy noise applied to vector shapes.",
+                "Tools": ["SVG Filters (feGaussianBlur)", "CSS Filter", "GSAP"]
+            },
+            {
+                "Type": "Algorithmic Vector Distortion (Elite)",
+                "Effect": "Applying feTurbulence and feDisplacementMap noise algorithms to vector shapes in real-time.",
+                "Tools": [
+                    "SVG Filter Primitives",
+                    "feTurbulence",
+                    "GSAP",
+                    "requestAnimationFrame"
+                ]
+            },
+            {
+                "Type": "SVG Line Drawing (Standard/Elite)",
+                "Effect": "Binding stroke-dasharray to scroll or interaction to physically 'draw' illustrations.",
+                "Tools": [
+                    "CSS Stroke-Dasharray",
+                    "Framer Motion (pathLength)",
+                    "GSAP"
+                ]
+            },
+            {
+                "Type": "Path-Following Scrollytelling (Elite)",
+                "Effect": "Binding assets to invisible, complex Bezier curves to swoop and dive during scroll traversal.",
+                "Tools": ["GSAP MotionPath", "SVG <path>", "Framer Motion"]
+            }
+        ]
+    },
+    {
+        "Category": "State & Data Visualizations",
+        "Description": "Fluid orchestration of complex datasets into narrative-driven, continuous visual streams and interactive analytics.",
+        "SubAnimations": [
+            {
+                "Type": "Dynamic Charts (Basic)",
+                "Effect": "Bars, lines, or points smoothly transitioning when underlying data updates.",
+                "Tools": ["D3.js", "Recharts", "Victory", "Framer Motion"]
+            },
+            {
+                "Type": "Counter Animations",
+                "Effect": "Numbers rapidly ticking up or down to reflect new values.",
+                "Tools": ["React CountUp", "GSAP", "CSS Number Transitions"]
+            },
+            {
+                "Type": "Animated Table Sorting",
+                "Effect": "Table rows sliding and reordering smoothly when headers are clicked.",
+                "Tools": [
+                    "Framer Motion (layout)",
+                    "TanStack Table",
+                    "React Flip Toolkit"
+                ]
+            },
+            {
+                "Type": "Fluid Data Orchestration (Elite)",
+                "Effect": "Data points physically traveling to new coordinates during sorting/filtering rather than instant changes.",
+                "Tools": [
+                    "D3.js",
+                    "WebGL Instancing",
+                    "Three.js",
+                    "React Spring"
+                ]
+            },
+            {
+                "Type": "Narrative Data Streams (Elite)",
+                "Effect": "Staggered, chronological entry of data points to physically 'draw' analytical insights.",
+                "Tools": ["GSAP", "D3.js", "WebGL Instanced Geometries"]
+            },
+            {
+                "Type": "State Sorting (FLIP)",
+                "Effect": "Analytical grids shuffling positions smoothly using invertible transform mathematics.",
+                "Tools": [
+                    "Framer Motion (layout)",
+                    "React-Flip-Toolkit",
+                    "GSAP FLIP"
+                ]
+            }
+        ]
+    },
+    {
+        "Category": "Psychological & Haptic Motion",
+        "Description": "Neuro-responsive motion paths and physical easing designed to trigger dopamine loops and simulate tangible physics.",
+        "SubAnimations": [
+            {
+                "Type": "Anticipation & Overshoot (Standard)",
+                "Effect": "An element pulling back slightly before moving forward, then bouncing at the end.",
+                "Tools": [
+                    "React Spring",
+                    "Framer Motion (spring)",
+                    "Bezier Curves"
+                ]
+            },
+            {
+                "Type": "Elastic & Organic Easing",
+                "Effect": "Using non-linear spring curves to mimic natural physical objects with soft rebounds.",
+                "Tools": [
+                    "Framer Motion (spring)",
+                    "GSAP CustomEase",
+                    "Bezier Curves"
+                ]
+            },
+            {
+                "Type": "Neuro-Responsive Motion (Elite)",
+                "Effect": "Utilizing tension, release, and calculated curiosity gaps to drive obsessed user progression.",
+                "Tools": [
+                    "Custom Asymmetric Beziers",
+                    "Behavioral Analytics",
+                    "GSAP"
+                ]
+            },
+            {
+                "Type": "Emotion-Led Motion Paths (Elite)",
+                "Effect": "Organic sweeping arcs vs. sharp linear paths to evoke specific brand archetypes.",
+                "Tools": [
+                    "GSAP MotionPath",
+                    "Framer Motion",
+                    "Custom Easing Functions"
+                ]
+            },
+            {
+                "Type": "Visual Haptics (Elite)",
+                "Effect": "Simulating physical 'click' resonance through subtle, physics-based recoil and scale dips.",
+                "Tools": [
+                    "Framer Motion (Spring)",
+                    "Anime.js",
+                    "Pointer Events"
+                ]
+            }
+        ]
+    },
+    {
+        "Category": "Kinetic Typography & Type Motion",
+        "Description": "Breathing letterforms that dynamically morph axes in real-time synchronization with user inputs and narrative flow.",
+        "SubAnimations": [
+            {
+                "Type": "Text Path Animation",
+                "Effect": "Text sliding along complex organic or geometric curves to guide eye movement.",
+                "Tools": [
+                    "SVG <textPath>",
+                    "Framer Motion",
+                    "GSAP ScrollTrigger"
+                ]
+            },
+            {
+                "Type": "Glitch & Sci-Fi Typo",
+                "Effect": "High-energy, jittery character offsets and neon-glow shifts for futuristic designs.",
+                "Tools": ["CSS Keyframes", "SVG Filters", "GSAP"]
+            },
+            {
+                "Type": "Kinetic Variable Typography (Elite)",
+                "Effect": "Text morphing in weight, slant, and width based on scroll velocity or pointer proximity.",
+                "Tools": [
+                    "Variable Fonts (.woff2)",
+                    "CSS font-variation-settings",
+                    "GSAP SplitText"
+                ]
+            },
+            {
+                "Type": "Animated Text Masking (Elite/Standard)",
+                "Effect": "Video or complex GLSL textures playing through the clipping mask of morphing typography.",
+                "Tools": [
+                    "CSS background-clip: text",
+                    "SVG Masks",
+                    "WebGL Shaders"
+                ]
+            },
+            {
+                "Type": "Text Scrambling & Decode (Elite/Standard)",
+                "Effect": "Characters cycling through algorithmic noise fields before resolving into legible content.",
+                "Tools": [
+                    "GSAP TextPlugin",
+                    "Baffle.js",
+                    "Custom JS Algorithms"
+                ]
+            }
+        ]
+    },
+    {
+        "Category": "Interactive Cursors & Mouse Trailing",
+        "Description": "Fluid physics pointers that act as localized light sources, magnetic gravitational fields, and interactive reveals.",
+        "SubAnimations": [
+            {
+                "Type": "Magnetic Elements (Standard)",
+                "Effect": "Buttons or icons being 'pulled' toward the cursor when it gets close.",
+                "Tools": ["Framer Motion (useTransform)", "GSAP", "Canvas API"]
+            },
+            {
+                "Type": "Custom Cursor Trails",
+                "Effect": "Shadows, sparkles, or text following the cursor with smoothed physics.",
+                "Tools": [
+                    "Canvas 2D API",
+                    "Cursor-trailing.js",
+                    "Three.js Particles"
+                ]
+            },
+            {
+                "Type": "Cursor-Reactive Masks",
+                "Effect": "The cursor acting as a 'flashlight' to reveal hidden content layers underneath.",
+                "Tools": ["CSS Clip-Path", "SVG Masks", "Framer Motion Drag"]
+            },
+            {
+                "Type": "Cursor Color Inversion",
+                "Effect": "The cursor dynamically changing blend mode based on the background it hovers over.",
+                "Tools": ["CSS mix-blend-mode", "Canvas API", "Framer Motion"]
+            },
+            {
+                "Type": "Cursor-Driven Physics",
+                "Effect": "Particles or floating elements being realistically attracted to or repelled by the cursor.",
+                "Tools": ["Matter.js", "P5.js", "Canvas API"]
+            },
+            {
+                "Type": "Fluid Physics Pointers (Elite)",
+                "Effect": "Cursors displacing liquid simulations or generating swirling chromatic wakes.",
+                "Tools": ["WebGL/GLSL", "Three.js", "2D Fluid Dynamics"]
+            },
+            {
+                "Type": "Magnetic Gravitational Fields (Elite)",
+                "Effect": "Interactive elements being physically pulled off-axis toward the cursor's coordinates.",
+                "Tools": [
+                    "Matter.js",
+                    "Framer Motion (useTransform)",
+                    "DOM Bounding Tracking"
+                ]
+            },
+            {
+                "Type": "Shader-Reactive Cursors (Elite)",
+                "Effect": "Localized fragment distortions (ripples, aberration) triggered by cursor passage.",
+                "Tools": ["WebGL Shaders", "GSAP", "Three.js"]
+            }
+        ]
+    },
+    {
+        "Category": "Generative & Procedural Motion",
+        "Description": "Non-linear motion governed by complex matrices of conditional logic, algorithms, and environmental variables.",
+        "SubAnimations": [
+            {
+                "Type": "Perlin Noise Backgrounds (Standard)",
+                "Effect": "Organic, flow-like movements that never repeat exactly.",
+                "Tools": ["WebGL/GLSL", "Three.js", "Simplex-noise.js"]
+            },
+            {
+                "Type": "Particle Attraction & Repulsion",
+                "Effect": "Thousands of dots reacting to mouse movement or screen events.",
+                "Tools": ["tsparticles", "Canvas API", "PixiJS"]
+            },
+            {
+                "Type": "Fluid Simulations (Standard)",
+                "Effect": "Simulating high-fidelity liquid or smoke movement on the screen.",
+                "Tools": ["WebGL", "p5.js", "GPU.js"]
+            },
+            {
+                "Type": "State-Driven Procedural Motion (Elite)",
+                "Effect": "Logic-based animations (e.g., mascots) that respond conditionally to live inputs.",
+                "Tools": [
+                    "Rive Runtime",
+                    "State Machine Editor",
+                    "Conditional Logic"
+                ]
+            },
+            {
+                "Type": "Algorithmic Noise Backgrounds (Elite)",
+                "Effect": "Organic, flow-like movements generated on the GPU via Perlin or Simplex noise shaders.",
+                "Tools": [
+                    "WebGL Compute Shaders",
+                    "Three.js",
+                    "Math.random() Algorithms"
+                ]
+            },
+            {
+                "Type": "Particle Physics Simulations (Elite)",
+                "Effect": "Massive boids or flocking simulations pushing millions of particles directly on the GPU.",
+                "Tools": ["WebGL", "PixiJS", "Canvas API"]
+            }
+        ]
+    },
+    {
+        "Category": "Spatial UI & Immersive Depth",
+        "Description": "The dissolution of boundaries between 2D interface elements and 3D spatial environments using the Z-axis.",
+        "SubAnimations": [
+            {
+                "Type": "3D Card Tilting (Standard)",
+                "Effect": "Elements tilting and reflecting light based on mouse position.",
+                "Tools": [
+                    "Vanilla-Tilt.js",
+                    "Framer Motion (rotateX/Y)",
+                    "CSS Perspective"
+                ]
+            },
+            {
+                "Type": "Camera Orbit & Flythroughs",
+                "Effect": "The viewpoint moving through a 3D landscape of UI components.",
+                "Tools": ["Three.js", "React Three Fiber", "Spline"]
+            },
+            {
+                "Type": "AR/VR Web Transitions (Standard)",
+                "Effect": "Preparing UI elements for spatial computing and immersive head-mounted displays.",
+                "Tools": ["WebXR Device API", "A-Frame", "Three.js"]
+            },
+            {
+                "Type": "Hybrid Dimensionality (Elite)",
+                "Effect": "Persistent WebGL scenes that maintain state across URL changes via uninterrupted camera flights.",
+                "Tools": [
+                    "React Three Fiber (R3F)",
+                    "Three.js",
+                    "App Shell Model",
+                    "GLTF Compression"
+                ]
+            },
+            {
+                "Type": "Z-Axis Depth Transitions (Elite)",
+                "Effect": "Layers pushing back or coming forward to indicate hierarchy depth and architectural volume.",
+                "Tools": ["CSS 3D Transforms", "Framer Motion", "GSAP"]
+            },
+            {
+                "Type": "Mixed 2D/3D Storytelling (Elite)",
+                "Effect": "Blending flat illustrations with Z-axis camera movements for deep visual narratives.",
+                "Tools": ["Three.js", "React Three Fiber", "Framer Motion 3D"]
+            }
+        ]
+    },
+    {
+        "Category": "Inclusive & Adaptive Motion",
+        "Description": "Context-aware kinematics that intelligently adapt to hardware, accessibility, and environmental variables.",
+        "SubAnimations": [
+            {
+                "Type": "Contextual Intent Scaling (Standard)",
+                "Effect": "Speeding up or slowing down transitions based on the user's interaction frequency.",
+                "Tools": [
+                    "Framer Motion",
+                    "Custom Hooks",
+                    "Interaction Timing APIs"
+                ]
+            },
+            {
+                "Type": "Battery-Aware Motion",
+                "Effect": "Disabling or simplifying GPU-heavy animations when the device enters low-power mode.",
+                "Tools": [
+                    "Battery Status API",
+                    "prefers-reduced-motion",
+                    "JS Optimization"
+                ]
+            },
+            {
+                "Type": "Culturally-Sensitive Motion",
+                "Effect": "Adjusting animation directions and easing based on localized reading patterns (RTL/LTR).",
+                "Tools": ["CSS i18n", "Framer Motion (dir)", "Custom Hooks"]
+            },
+            {
+                "Type": "Context-Aware Kinematics (Elite)",
+                "Effect": "Automatically simplifying animations based on battery level, reduced-motion triggers, and reading direction.",
+                "Tools": [
+                    "Battery Status API",
+                    "prefers-reduced-motion",
+                    "CSS Logical Properties"
+                ]
+            },
+            {
+                "Type": "Reduced Motion Alternatives (Elite)",
+                "Effect": "Substituting high-velocity motion with gentle crossfades for users with vestibular sensitivities.",
+                "Tools": [
+                    "MatchMedia",
+                    "Framer Motion (useReducedMotion)",
+                    "CSS Filters"
+                ]
+            },
+            {
+                "Type": "Performance-Adaptive Easing (Elite)",
+                "Effect": "Detecting hardware concurrency and network throttles to downgrade heavy shader effects instantly.",
+                "Tools": [
+                    "navigator.hardwareConcurrency",
+                    "Network Information API",
+                    "React Suspense"
+                ]
+            }
+        ]
+    },
+    {
+        "Category": "Shader-Based Visuals & GLSL",
+        "Description": "High-end visual effects powered by raw GPU fragment shaders for organic textures, lighting, and complex particle systems.",
+        "SubAnimations": [
+            {
+                "Type": "Dynamic Liquid Textures (Standard)",
+                "Effect": "Organic, flowing background surfaces that ripple and warp in response to interaction.",
+                "Tools": [
+                    "WebGL/GLSL",
+                    "Three.js Shaders",
+                    "PixiJS",
+                    "Curtains.js"
+                ]
+            },
+            {
+                "Type": "Deep Glow & Light Bloom",
+                "Effect": "Intense light-bleeding and neon-glow effects that simulate physical light emission.",
+                "Tools": [
+                    "CSS Backdrop-Filter",
+                    "SVG feGaussianBlur",
+                    "WebGL Post-Processing"
+                ]
+            },
+            {
+                "Type": "Grainy Noise Transitions",
+                "Effect": "Adding a tactile, film-like grain texture to transitions for a 'lo-fi' premium aesthetic.",
+                "Tools": [
+                    "SVG Filters (feTurbulence)",
+                    "CSS Mix-Blend-Mode",
+                    "Canvas API"
+                ]
+            },
+            {
+                "Type": "Pixel Blast & Disintegration",
+                "Effect": "Dissolving elements into high-density particles upon exit or scroll-out.",
+                "Tools": ["Canvas 2D API", "GSAP PhysicsProps", "Framer Motion"]
+            },
+            {
+                "Type": "Real-Time Fragment Distortion (Elite)",
+                "Effect": "Manipulating the color and position of every pixel simultaneously for cinematic distortion.",
+                "Tools": ["WebGL", "GLSL Shaders", "Curtains.js", "OGL"]
+            },
+            {
+                "Type": "Chromatic Aberration Surfaces (Elite)",
+                "Effect": "Simulating lens-like color fringing based on scroll velocity vectors or pointer movement.",
+                "Tools": [
+                    "GLSL Shaders",
+                    "CSS Filters",
+                    "WebGL Post-Processing"
+                ]
+            },
+            {
+                "Type": "Dynamic Noise-Grain Gradients (Elite)",
+                "Effect": "Using animated Fractal Brownian Motion (fBm) to create tactile, film-like textured surfaces.",
+                "Tools": [
+                    "SVG feTurbulence",
+                    "Canvas API",
+                    "WebGL Fragment Shaders"
+                ]
+            }
+        ]
+    }
 ]
