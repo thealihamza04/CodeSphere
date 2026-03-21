@@ -19,7 +19,6 @@ const Footer = () => {
         { name: "Language Timeline", path: "/TimeLine" },
       ],
     },
-
     {
       title: "Architecture",
       links: [
@@ -29,12 +28,17 @@ const Footer = () => {
       ],
     },
     {
-      title: "Insights",
+      title: "Design",
       links: [
         { name: "Design Principles", path: "/design-principles" },
         { name: "Design Styles", path: "/design-styles" },
         { name: "Motion Principles", path: "/motion-design" },
         { name: "Animation Systems", path: "/animations-guide" },
+      ],
+    },
+    {
+      title: "Humanity",
+      links: [
         { name: "Civic Sense", path: "/civic-sense" },
         { name: "Social Intelligence", path: "/social-intelligence" },
       ],
@@ -46,7 +50,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
 
         {/* Main Links Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-24">
           {linkGroups.map((group, idx) => (
             <div key={idx} className="space-y-6">
               <h6 className="text-[11px] font-black uppercase tracking-widest text-base-content/40">

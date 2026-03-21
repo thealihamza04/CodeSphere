@@ -1,86 +1,4212 @@
 [
-  {
-    "category": "Retro & Nostalgic",
-    "styles": [
-      "Brutalist Web",
-      "Lo-Fi Grunge",
-      "VHS Distortion",
-      "Retro Futurism",
-      "Psychedelic 70s",
-      "Art Deco Revival",
-      "80s Neon Glow",
-      "Y2K Glitch",
-      "Cassette Punk",
-      "Analog Noise"
-    ]
-  },
-  {
-    "category": "Type & Layout Driven",
-    "styles": [
-      "Anti-Design",
-      "Deconstructed Grid",
-      "Maximalist Type",
-      "Raw Typographic",
-      "Bauhaus Minimalism",
-      "Condensed Editorial",
-      "Poster Vernacular",
-      "Oversized Headline"
-    ]
-  },
-  {
-    "category": "Texture & Material",
-    "styles": [
-      "Paper Cutout",
-      "Risograph Print",
-      "Woodblock Print",
-      "Letterpress Craft",
-      "Grain & Grit",
-      "Wax Seal Gothic",
-      "Distressed Ink",
-      "Screen Print Pop"
-    ]
-  },
-  {
-    "category": "Digital & Tech",
-    "styles": [
-      "Dark UI Glassmorphism",
-      "Neomorphic Soft UI",
-      "ASCII Terminal",
-      "Wireframe Aesthetic",
-      "Data Viz Minimal",
-      "Isometric Flat",
-      "Vaporwave Grid",
-      "Synthwave Neon",
-      "Holographic Iridescent",
-      "Cyberpunk Industrial"
-    ]
-  },
-  {
-    "category": "Art Movement Inspired",
-    "styles": [
-      "Neo-Brutalism",
-      "Memphis Pattern",
-      "Constructivist Bold",
-      "Surrealist Collage",
-      "De Stijl Geometric",
-      "Cubist Fragment",
-      "Abstract Expressionist",
-      "Pop Art Flat",
-      "Dadaist Chaos",
-      "Futurist Motion"
-    ]
-  },
-  {
-    "category": "Contemporary Minimal",
-    "styles": [
-      "Organic Soft",
-      "Earthy Neutral",
-      "Quiet Luxury",
-      "Mono Ink",
-      "Japanese Wabi-Sabi",
-      "Nordic Cold Minimal",
-      "Negative Space",
-      "Ghost White Editorial"
-    ]
-  }
+    {
+        "category": "Retro & Nostalgic",
+        "styles": [
+            {
+                "style": "Brutalist Web",
+                "best_for": {
+                    "industries": [
+                        "art galleries",
+                        "independent publishing",
+                        "music labels",
+                        "fashion avant-garde",
+                        "portfolio sites"
+                    ],
+                    "brand_personality": [
+                        "rebellious",
+                        "unapologetic",
+                        "anti-establishment",
+                        "raw",
+                        "direct"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "no-frills instant jump",
+                        "abrupt section snaps"
+                    ],
+                    "transitions": [
+                        "none or jarring hard cuts",
+                        "flicker on load"
+                    ],
+                    "hover": [
+                        "cursor inversion",
+                        "sudden background color flood",
+                        "text scramble"
+                    ],
+                    "avoid": ["smooth easing curves", "parallax", "fade-ins"]
+                },
+                "typography": {
+                    "feel": [
+                        "system fonts intentional",
+                        "Times New Roman or Courier unmodified",
+                        "extreme size contrast",
+                        "unstyled defaults"
+                    ],
+                    "avoid": [
+                        "custom webfonts used decoratively",
+                        "refined spacing"
+                    ]
+                },
+                "palette_tendency": "black, white, raw red, unmodified browser defaults",
+                "intensity": "deliberately ugly, confrontational, anti-design",
+                "tags": [
+                    "raw",
+                    "anti-design",
+                    "punk",
+                    "confrontational",
+                    "web1.0"
+                ]
+            },
+            {
+                "style": "Lo-Fi Grunge",
+                "best_for": {
+                    "industries": [
+                        "music",
+                        "streetwear",
+                        "zines",
+                        "skateboarding",
+                        "independent coffee"
+                    ],
+                    "brand_personality": [
+                        "authentic",
+                        "underground",
+                        "unpretentious",
+                        "worn-in",
+                        "nostalgic"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "slow parallax on texture layers",
+                        "grain overlay persists fixed"
+                    ],
+                    "transitions": [
+                        "VHS-style glitch cuts",
+                        "film burn transitions"
+                    ],
+                    "hover": ["desaturate then resaturate", "noise intensify"],
+                    "avoid": ["clean polished motion", "glass morphism effects"]
+                },
+                "typography": {
+                    "feel": [
+                        "distressed display fonts",
+                        "hand-stamped or typewriter styles",
+                        "irregular baseline"
+                    ],
+                    "avoid": ["pristine geometric sans", "ultra-thin weights"]
+                },
+                "palette_tendency": "muted ochres, washed-out greens, faded blacks, aged paper whites",
+                "intensity": "textured, worn, low-energy but characterful",
+                "tags": [
+                    "grunge",
+                    "texture",
+                    "authentic",
+                    "underground",
+                    "worn"
+                ]
+            },
+            {
+                "style": "VHS Distortion",
+                "best_for": {
+                    "industries": [
+                        "music videos",
+                        "gaming",
+                        "horror content",
+                        "retro events",
+                        "nostalgia brands"
+                    ],
+                    "brand_personality": [
+                        "nostalgic",
+                        "edgy",
+                        "playful with darkness",
+                        "lo-fi cool"
+                    ],
+                    "avoid_for": ["healthcare", "finance", "legal services"]
+                },
+                "motion": {
+                    "scroll": [
+                        "scanline overlay fixed on scroll",
+                        "RGB channel offset on scroll speed"
+                    ],
+                    "transitions": [
+                        "horizontal glitch wipe",
+                        "static burst between sections"
+                    ],
+                    "hover": [
+                        "chromatic aberration on hover",
+                        "tracking lines flicker"
+                    ],
+                    "avoid": ["smooth 60fps polished motion", "clean fades"]
+                },
+                "typography": {
+                    "feel": [
+                        "chunky pixel or LCD fonts",
+                        "italic distorted display",
+                        "tracking lines through text"
+                    ],
+                    "avoid": ["refined serif", "optical sizing"]
+                },
+                "palette_tendency": "oversaturated cyan, magenta, green on near-black, RGB splits",
+                "intensity": "loud, glitchy, deliberately degraded",
+                "tags": ["glitch", "nostalgia", "80s", "distorted", "lo-fi"]
+            },
+            {
+                "style": "Retro Futurism",
+                "best_for": {
+                    "industries": [
+                        "tech startups",
+                        "space / aerospace",
+                        "sci-fi entertainment",
+                        "automotive",
+                        "events"
+                    ],
+                    "brand_personality": [
+                        "optimistic",
+                        "visionary",
+                        "bold",
+                        "forward-thinking with a wink"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "slow orbital rotation of decorative elements",
+                        "star field parallax"
+                    ],
+                    "transitions": [
+                        "wipe with geometric shapes",
+                        "iris open/close"
+                    ],
+                    "hover": ["concentric ring pulse", "chrome shimmer"],
+                    "avoid": ["brutalist snaps", "chaotic glitch"]
+                },
+                "typography": {
+                    "feel": [
+                        "rounded futuristic sans",
+                        "wide tracking",
+                        "chrome or metallic treatment"
+                    ],
+                    "avoid": ["handwritten", "traditional serif"]
+                },
+                "palette_tendency": "chrome silver, space black, atomic orange, powder blue, metallic gold",
+                "intensity": "cinematic, optimistic, grand",
+                "tags": [
+                    "futurism",
+                    "space age",
+                    "optimistic",
+                    "sci-fi",
+                    "chrome"
+                ]
+            },
+            {
+                "style": "Psychedelic 70s",
+                "best_for": {
+                    "industries": [
+                        "festivals",
+                        "music",
+                        "cannabis",
+                        "wellness retreats",
+                        "vintage fashion"
+                    ],
+                    "brand_personality": [
+                        "free-spirited",
+                        "expressive",
+                        "warm",
+                        "counter-culture",
+                        "joyful"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "slow morphing blob backgrounds",
+                        "spinning sun rays on hero"
+                    ],
+                    "transitions": [
+                        "swirling kaleidoscope wipe",
+                        "color wave dissolve"
+                    ],
+                    "hover": [
+                        "color temperature shift",
+                        "wavy text distortion"
+                    ],
+                    "avoid": [
+                        "clinical straight-line motion",
+                        "cold transitions"
+                    ]
+                },
+                "typography": {
+                    "feel": [
+                        "fat rounded psychedelic display",
+                        "Abril Fatface or similar",
+                        "stacked letterforms",
+                        "curved baselines"
+                    ],
+                    "avoid": ["ultra-thin sans", "cold geometric fonts"]
+                },
+                "palette_tendency": "rust, mustard, olive, teal, plum, burnt orange, cream",
+                "intensity": "warm, energetic, maximalist colour",
+                "tags": ["70s", "psychedelic", "warm", "festival", "retro"]
+            },
+            {
+                "style": "Art Deco Revival",
+                "best_for": {
+                    "industries": [
+                        "luxury hotels",
+                        "jewelry",
+                        "cosmetics",
+                        "finance",
+                        "architecture",
+                        "events"
+                    ],
+                    "brand_personality": [
+                        "glamorous",
+                        "sophisticated",
+                        "exclusive",
+                        "timeless",
+                        "opulent"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "slow reveal with geometric mask",
+                        "gold line drawing on scroll"
+                    ],
+                    "transitions": [
+                        "fan wipe with geometric shapes",
+                        "slow vertical reveal"
+                    ],
+                    "hover": ["gold stroke border draw", "subtle shimmer"],
+                    "avoid": ["glitch", "chaotic motion", "bouncy physics"]
+                },
+                "typography": {
+                    "feel": [
+                        "tall geometric serif",
+                        "wide tracking caps",
+                        "hairline rules between text",
+                        "Bodoni or Didot style"
+                    ],
+                    "avoid": ["casual sans", "rounded fonts", "hand-drawn"]
+                },
+                "palette_tendency": "black, gold, champagne, ivory, deep emerald, rich burgundy",
+                "intensity": "formal, opulent, controlled grandeur",
+                "tags": ["luxury", "gold", "geometric", "1920s", "glamour"]
+            },
+            {
+                "style": "80s Neon Glow",
+                "best_for": {
+                    "industries": [
+                        "nightlife",
+                        "gaming",
+                        "fitness",
+                        "entertainment",
+                        "retro events",
+                        "streetwear"
+                    ],
+                    "brand_personality": [
+                        "bold",
+                        "energetic",
+                        "nostalgic",
+                        "fun",
+                        "high-energy"
+                    ],
+                    "avoid_for": ["healthcare", "legal", "B2B enterprise"]
+                },
+                "motion": {
+                    "scroll": ["neon flicker on enter", "scanlines parallax"],
+                    "transitions": ["electric flash cut", "neon tube light-up"],
+                    "hover": ["glow bloom intensify", "neon color swap"],
+                    "avoid": ["natural organic motion", "slow dissolves"]
+                },
+                "typography": {
+                    "feel": [
+                        "chrome italics",
+                        "condensed display",
+                        "Outrun-style lettering",
+                        "neon tube simulation"
+                    ],
+                    "avoid": ["thin weights", "quiet fonts"]
+                },
+                "palette_tendency": "hot pink, electric cyan, deep purple, near-black, neon green",
+                "intensity": "loud, glowing, electric",
+                "tags": ["neon", "80s", "retro", "electric", "nightlife"]
+            },
+            {
+                "style": "Y2K Glitch",
+                "best_for": {
+                    "industries": [
+                        "fashion",
+                        "pop music",
+                        "beauty",
+                        "youth culture",
+                        "streetwear"
+                    ],
+                    "brand_personality": [
+                        "playful",
+                        "maximalist",
+                        "ironic",
+                        "digitally native",
+                        "trend-aware"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "glitch stutter on section enter",
+                        "holographic shift on scroll"
+                    ],
+                    "transitions": ["pixel scatter", "RGB split dissolve"],
+                    "hover": ["chromatic aberration", "digital noise burst"],
+                    "avoid": ["clean minimal motion", "slow meditative reveals"]
+                },
+                "typography": {
+                    "feel": [
+                        "pixel fonts",
+                        "techno display",
+                        "mixed sizes chaotically",
+                        "Helvetica with distortion"
+                    ],
+                    "avoid": ["traditional serif", "quiet editorial fonts"]
+                },
+                "palette_tendency": "metallics, holographic gradients, electric blue, lime, hot pink, silver",
+                "intensity": "chaotic, maximalist, screen-obsessed",
+                "tags": ["Y2K", "holographic", "digital", "maximalist", "2000s"]
+            },
+            {
+                "style": "Cassette Punk",
+                "best_for": {
+                    "industries": [
+                        "indie music",
+                        "podcasts",
+                        "retro tech brands",
+                        "zine culture",
+                        "lo-fi content"
+                    ],
+                    "brand_personality": [
+                        "DIY",
+                        "intimate",
+                        "analogue-loving",
+                        "counter-culture"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "tape rewind effect on hero",
+                        "wow and flutter audio-inspired wobble"
+                    ],
+                    "transitions": [
+                        "static burst",
+                        "play button press metaphor"
+                    ],
+                    "hover": ["tape label peel", "track list highlight"],
+                    "avoid": ["digital slick animation", "ultra-smooth easing"]
+                },
+                "typography": {
+                    "feel": [
+                        "typewriter mono",
+                        "sticker label fonts",
+                        "hand-inked feel",
+                        "condensed bold"
+                    ],
+                    "avoid": ["refined webfonts", "thin luxury serifs"]
+                },
+                "palette_tendency": "black, cream, worn red, dusty yellow, hand-stamp brown",
+                "intensity": "warm, intimate, crafted, nostalgic",
+                "tags": ["analogue", "DIY", "indie", "music", "tactile"]
+            },
+            {
+                "style": "Analog Noise",
+                "best_for": {
+                    "industries": [
+                        "photography",
+                        "editorial",
+                        "coffee",
+                        "independent publishing",
+                        "art"
+                    ],
+                    "brand_personality": [
+                        "authentic",
+                        "quiet",
+                        "artistic",
+                        "imperfect by choice"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "grain overlay at fixed opacity",
+                        "very slow cross-dissolve"
+                    ],
+                    "transitions": ["film grain burn", "overexposure flash"],
+                    "hover": ["grain density increase", "slight desaturation"],
+                    "avoid": ["sharp digital motion", "glitch effects"]
+                },
+                "typography": {
+                    "feel": [
+                        "photocopied feel",
+                        "light serif",
+                        "text as texture element"
+                    ],
+                    "avoid": [
+                        "digital-looking display",
+                        "perfect optical alignment"
+                    ]
+                },
+                "palette_tendency": "high grain blacks, film whites, pushed shadows, bleached highlights",
+                "intensity": "quiet, grainy, deliberately imperfect",
+                "tags": ["grain", "film", "analogue", "texture", "quiet"]
+            },
+            {
+                "style": "Geocities Web 1.0",
+                "best_for": {
+                    "industries": [
+                        "ironic fashion",
+                        "internet culture brands",
+                        "nostalgia entertainment"
+                    ],
+                    "brand_personality": [
+                        "ironic",
+                        "maximalist",
+                        "self-aware",
+                        "playful"
+                    ],
+                    "avoid_for": ["any serious professional service"]
+                },
+                "motion": {
+                    "scroll": ["marquee text scrolling", "blinking elements"],
+                    "transitions": ["none, or jarring page reload simulation"],
+                    "hover": ["cursor trail sparkle", "under-construction gif"],
+                    "avoid": ["anything polished"]
+                },
+                "typography": {
+                    "feel": [
+                        "Comic Sans intentional",
+                        "Times New Roman",
+                        "rainbow text",
+                        "hit counter font"
+                    ],
+                    "avoid": ["designed webfonts"]
+                },
+                "palette_tendency": "tiled backgrounds, web-safe 256 colours, primary RGB chaos",
+                "intensity": "chaotic, maximalist, unfiltered",
+                "tags": [
+                    "web1.0",
+                    "nostalgia",
+                    "internet",
+                    "ironic",
+                    "maximalist"
+                ]
+            },
+            {
+                "style": "Flash Era Maximalism",
+                "best_for": {
+                    "industries": [
+                        "entertainment",
+                        "gaming",
+                        "ironic nostalgia brands"
+                    ],
+                    "brand_personality": [
+                        "loud",
+                        "energetic",
+                        "irreverent",
+                        "maximalist"
+                    ]
+                },
+                "motion": {
+                    "scroll": ["animated backgrounds", "auto-playing elements"],
+                    "transitions": ["zoom blast", "warp speed"],
+                    "hover": ["explosion of animation", "sound implication"],
+                    "avoid": ["restraint of any kind"]
+                },
+                "typography": {
+                    "feel": [
+                        "Impact caps",
+                        "drop shadows everywhere",
+                        "bevel and emboss"
+                    ],
+                    "avoid": ["clean modern sans"]
+                },
+                "palette_tendency": "every colour at once, gradients on gradients, chrome bevels",
+                "intensity": "absolutely maximal, relentless",
+                "tags": ["flash", "2000s", "maximalist", "animated", "loud"]
+            },
+            {
+                "style": "Indie Sleaze 2012",
+                "best_for": {
+                    "industries": [
+                        "fashion",
+                        "music",
+                        "nightlife",
+                        "photography",
+                        "youth culture"
+                    ],
+                    "brand_personality": [
+                        "effortlessly cool",
+                        "undone",
+                        "nocturnal",
+                        "ironic"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "film photo strip horizontal scroll",
+                        "disposable camera flash"
+                    ],
+                    "transitions": ["blown-out flash cut", "grainy dissolve"],
+                    "hover": ["slight overexposure", "film grain surge"],
+                    "avoid": ["polished commercial motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "American Apparel-style condensed",
+                        "lowercase everything",
+                        "helvetica undesigned"
+                    ],
+                    "avoid": ["luxury serifs", "display decoration"]
+                },
+                "palette_tendency": "flash-blown whites, high-contrast darks, skin tones, disposable film colours",
+                "intensity": "effortless, washed-out, intentionally careless",
+                "tags": ["2010s", "indie", "nightlife", "fashion", "film"]
+            },
+            {
+                "style": "Tumblr Core",
+                "best_for": {
+                    "industries": [
+                        "beauty",
+                        "lifestyle",
+                        "indie fashion",
+                        "wellness",
+                        "content creators"
+                    ],
+                    "brand_personality": [
+                        "dreamy",
+                        "introspective",
+                        "aesthetic-obsessed",
+                        "soft rebellious"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "slow fade in staggered images",
+                        "soft parallax on layered images"
+                    ],
+                    "transitions": ["long crossfade", "blurred dissolve"],
+                    "hover": ["soft glow", "slight zoom blur"],
+                    "avoid": ["aggressive motion", "hard cuts"]
+                },
+                "typography": {
+                    "feel": [
+                        "thin serif italic",
+                        "poetry line breaks",
+                        "Georgia or Garamond loose tracking"
+                    ],
+                    "avoid": ["industrial sans", "loud display"]
+                },
+                "palette_tendency": "film-washed pastels, muted rose, pale sage, dusty lavender, overexposed whites",
+                "intensity": "dreamy, soft, melancholic",
+                "tags": ["soft", "dreamy", "aesthetic", "tumblr", "indie"]
+            },
+            {
+                "style": "Frutiger Aero",
+                "best_for": {
+                    "industries": [
+                        "tech consumer products",
+                        "environmental brands",
+                        "health apps",
+                        "early 2010s nostalgia"
+                    ],
+                    "brand_personality": [
+                        "optimistic",
+                        "clean",
+                        "natural-digital hybrid",
+                        "approachable"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "glass panel slide-ins",
+                        "nature element parallax"
+                    ],
+                    "transitions": ["glossy page turn", "light ray sweep"],
+                    "hover": ["glass highlight shift", "soft glow bloom"],
+                    "avoid": ["flat dry motion", "glitch"]
+                },
+                "typography": {
+                    "feel": [
+                        "rounded humanist sans like Frutiger or Myriad",
+                        "clean generous spacing"
+                    ],
+                    "avoid": ["aggressive display", "rough textures"]
+                },
+                "palette_tendency": "sky blue, grass green, clean white, soft teal, translucent glass",
+                "intensity": "bright, optimistic, clean-air feeling",
+                "tags": [
+                    "glossy",
+                    "2010s",
+                    "glass",
+                    "nature-tech",
+                    "optimistic"
+                ]
+            },
+            {
+                "style": "Soviet Propaganda",
+                "best_for": {
+                    "industries": [
+                        "political campaigns",
+                        "social commentary art",
+                        "editorial",
+                        "provocative fashion"
+                    ],
+                    "brand_personality": [
+                        "bold",
+                        "ideological",
+                        "striking",
+                        "urgent"
+                    ],
+                    "avoid_for": ["consumer brands", "luxury", "healthcare"]
+                },
+                "motion": {
+                    "scroll": [
+                        "stark reveal from black",
+                        "bold type stamping in on scroll"
+                    ],
+                    "transitions": ["hard cut smash", "red flood transition"],
+                    "hover": [
+                        "poster element slam to position",
+                        "stark contrast inversion"
+                    ],
+                    "avoid": ["gentle fades", "soft motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "condensed slab serif",
+                        "Constructivist diagonal type",
+                        "bold propaganda poster weight"
+                    ],
+                    "avoid": ["delicate serif", "anything soft"]
+                },
+                "palette_tendency": "red, black, white, gold — strict limited palette",
+                "intensity": "stark, commanding, uncompromising",
+                "tags": [
+                    "propaganda",
+                    "bold",
+                    "political",
+                    "constructivist",
+                    "stark"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Type & Layout Driven",
+        "styles": [
+            {
+                "style": "Anti-Design",
+                "best_for": {
+                    "industries": [
+                        "fashion avant-garde",
+                        "contemporary art",
+                        "music labels",
+                        "provocative publishing"
+                    ],
+                    "brand_personality": [
+                        "rebellious",
+                        "intellectual",
+                        "provocative",
+                        "anti-establishment"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "elements moving against scroll direction",
+                        "intentional layout breaking on scroll"
+                    ],
+                    "transitions": [
+                        "wrong-direction slide",
+                        "overlapping simultaneous transitions"
+                    ],
+                    "hover": ["element repels cursor", "layout destabilises"],
+                    "avoid": ["anything conventionally pleasing"]
+                },
+                "typography": {
+                    "feel": [
+                        "intentional bad kerning",
+                        "clashing typefaces",
+                        "text overlapping images",
+                        "wrong scale"
+                    ],
+                    "avoid": ["typographic harmony"]
+                },
+                "palette_tendency": "clashing, uncomfortable combinations, nothing that coordinates",
+                "intensity": "deliberately wrong, intellectually provocative",
+                "tags": [
+                    "anti-design",
+                    "provocative",
+                    "fashion",
+                    "art",
+                    "rebellious"
+                ]
+            },
+            {
+                "style": "Deconstructed Grid",
+                "best_for": {
+                    "industries": [
+                        "architecture firms",
+                        "design studios",
+                        "fashion",
+                        "contemporary art galleries"
+                    ],
+                    "brand_personality": [
+                        "sophisticated",
+                        "experimental",
+                        "considered",
+                        "intellectually curious"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "grid lines draw in on scroll",
+                        "elements slot to positions progressively"
+                    ],
+                    "transitions": ["grid rearrange wipe"],
+                    "hover": ["grid cell highlight", "alignment guides appear"],
+                    "avoid": ["formless motion", "organic blob animation"]
+                },
+                "typography": {
+                    "feel": [
+                        "elements placed off-grid intentionally",
+                        "mixed alignment within same block",
+                        "strong contrast of scales"
+                    ],
+                    "avoid": ["safe centred layouts", "predictable hierarchy"]
+                },
+                "palette_tendency": "restrained — black, white, one structural accent colour",
+                "intensity": "cerebral, structured yet broken",
+                "tags": [
+                    "grid",
+                    "editorial",
+                    "architecture",
+                    "deconstructed",
+                    "intellectual"
+                ]
+            },
+            {
+                "style": "Maximalist Type",
+                "best_for": {
+                    "industries": [
+                        "fashion",
+                        "music",
+                        "entertainment",
+                        "culture magazines",
+                        "streetwear"
+                    ],
+                    "brand_personality": [
+                        "loud",
+                        "confident",
+                        "expressive",
+                        "unapologetic"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "type scales up dramatically on scroll",
+                        "kinetic text cascade"
+                    ],
+                    "transitions": [
+                        "type-driven wipe where letters become the transition"
+                    ],
+                    "hover": [
+                        "letter spacing explosion",
+                        "weight shift on hover"
+                    ],
+                    "avoid": ["static type", "restrained entry"]
+                },
+                "typography": {
+                    "feel": [
+                        "type IS the design",
+                        "mixing 3–4 typefaces intentionally",
+                        "type overlapping imagery",
+                        "negative space eliminated by type"
+                    ],
+                    "avoid": ["quiet supporting role for type"]
+                },
+                "palette_tendency": "type creates the palette — often high contrast black/white with one colour",
+                "intensity": "loud, type-first, relentless",
+                "tags": [
+                    "typography",
+                    "maximalist",
+                    "editorial",
+                    "fashion",
+                    "bold"
+                ]
+            },
+            {
+                "style": "Raw Typographic",
+                "best_for": {
+                    "industries": [
+                        "independent publishing",
+                        "design studios",
+                        "cultural institutions",
+                        "portfolio sites"
+                    ],
+                    "brand_personality": [
+                        "honest",
+                        "craft-focused",
+                        "direct",
+                        "stripped back"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "plain fade-up on text blocks",
+                        "no decorative motion"
+                    ],
+                    "transitions": ["simple opacity"],
+                    "hover": ["text underline draw", "weight shift"],
+                    "avoid": ["decorative effects"]
+                },
+                "typography": {
+                    "feel": [
+                        "typeface is the only visual element",
+                        "extreme weight contrast",
+                        "mono or editorial serif",
+                        "tight leading"
+                    ],
+                    "avoid": [
+                        "illustration",
+                        "photography",
+                        "colour decoration"
+                    ]
+                },
+                "palette_tendency": "black ink on white or off-white — nothing else",
+                "intensity": "pure, stripped, type-only",
+                "tags": [
+                    "minimal",
+                    "type-only",
+                    "stripped",
+                    "editorial",
+                    "honest"
+                ]
+            },
+            {
+                "style": "Bauhaus Minimalism",
+                "best_for": {
+                    "industries": [
+                        "architecture",
+                        "industrial design",
+                        "design education",
+                        "homeware",
+                        "cultural institutions"
+                    ],
+                    "brand_personality": [
+                        "functional",
+                        "principled",
+                        "modern",
+                        "timeless",
+                        "rational"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "geometric shapes rotate or slot into position",
+                        "primary shape reveals"
+                    ],
+                    "transitions": ["horizontal wipe with geometric precision"],
+                    "hover": ["primary colour fill", "shape transformation"],
+                    "avoid": ["organic curves", "decorative flourishes"]
+                },
+                "typography": {
+                    "feel": [
+                        "geometric sans only",
+                        "Herbert Bayer Universal style",
+                        "lowercase preference",
+                        "grid-locked alignment"
+                    ],
+                    "avoid": ["serif", "script", "decorative display"]
+                },
+                "palette_tendency": "red, yellow, blue, black, white — Bauhaus primaries only",
+                "intensity": "rational, functional, principled",
+                "tags": [
+                    "bauhaus",
+                    "geometric",
+                    "functional",
+                    "minimal",
+                    "rational"
+                ]
+            },
+            {
+                "style": "Condensed Editorial",
+                "best_for": {
+                    "industries": [
+                        "news media",
+                        "magazines",
+                        "culture publications",
+                        "journalism platforms"
+                    ],
+                    "brand_personality": [
+                        "authoritative",
+                        "dense with information",
+                        "credible",
+                        "journalistic"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "staggered article card reveal",
+                        "headline underline draw"
+                    ],
+                    "transitions": ["fast horizontal swipe", "newspaper fold"],
+                    "hover": [
+                        "image reveal under headline",
+                        "category colour flash"
+                    ],
+                    "avoid": ["slow languid motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "condensed bold headline fonts",
+                        "tight leading",
+                        "strong column grid",
+                        "ink-trap serifs"
+                    ],
+                    "avoid": ["loose airy layout", "thin weights"]
+                },
+                "palette_tendency": "newsprint white, ink black, one editorial accent (red or cobalt)",
+                "intensity": "dense, informative, fast-reading",
+                "tags": [
+                    "editorial",
+                    "journalism",
+                    "condensed",
+                    "news",
+                    "typographic"
+                ]
+            },
+            {
+                "style": "Poster Vernacular",
+                "best_for": {
+                    "industries": [
+                        "events",
+                        "music",
+                        "theatre",
+                        "local culture",
+                        "community brands"
+                    ],
+                    "brand_personality": [
+                        "community-rooted",
+                        "handmade feel",
+                        "direct",
+                        "local"
+                    ]
+                },
+                "motion": {
+                    "scroll": ["poster elements paste onto wall on scroll"],
+                    "transitions": ["paper paste slap"],
+                    "hover": ["corner peel", "poster curl"],
+                    "avoid": ["digital slick transitions"]
+                },
+                "typography": {
+                    "feel": [
+                        "mismatched found type",
+                        "wood block print style",
+                        "size hierarchy tells the story",
+                        "mixed font families"
+                    ],
+                    "avoid": ["brand-consistent fonts", "designed systems"]
+                },
+                "palette_tendency": "limited spot colours, two or three at most — print constraint aesthetic",
+                "intensity": "street-level, direct, handmade energy",
+                "tags": [
+                    "poster",
+                    "vernacular",
+                    "community",
+                    "events",
+                    "handmade"
+                ]
+            },
+            {
+                "style": "Oversized Headline",
+                "best_for": {
+                    "industries": [
+                        "agencies",
+                        "studios",
+                        "SaaS",
+                        "tech brands",
+                        "fashion"
+                    ],
+                    "brand_personality": [
+                        "confident",
+                        "modern",
+                        "statement-making",
+                        "minimal"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "headline scales down from massive on scroll",
+                        "text clip reveal"
+                    ],
+                    "transitions": ["headline morphs into next headline"],
+                    "hover": ["letter spacing opens", "weight increase"],
+                    "avoid": ["busy body copy motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "one massive display font above all else",
+                        "everything else secondary",
+                        "viewport-filling type"
+                    ],
+                    "avoid": [
+                        "equal-weight hierarchy",
+                        "many competing elements"
+                    ]
+                },
+                "palette_tendency": "minimal — the type is the statement, colour is secondary",
+                "intensity": "bold, single-minded, confident",
+                "tags": ["display", "bold", "minimal", "modern", "statement"]
+            },
+            {
+                "style": "Kinetic Typography",
+                "best_for": {
+                    "industries": [
+                        "broadcast",
+                        "advertising",
+                        "streaming platforms",
+                        "music",
+                        "sport brands"
+                    ],
+                    "brand_personality": [
+                        "dynamic",
+                        "energetic",
+                        "modern",
+                        "performance-driven"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "words animate in on every scroll step",
+                        "velocity-linked type speed"
+                    ],
+                    "transitions": [
+                        "type is the transition — letters morph between screens"
+                    ],
+                    "hover": [
+                        "individual letter bounce",
+                        "typeface switch on hover"
+                    ],
+                    "avoid": ["static type", "layout without motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "type that is designed to move",
+                        "variable weight fonts for morphing",
+                        "staggered per-letter animation"
+                    ],
+                    "avoid": ["fonts that don't animate well"]
+                },
+                "palette_tendency": "flexible — type motion is the core, not colour",
+                "intensity": "always in motion, choreographed, cinematic",
+                "tags": [
+                    "motion",
+                    "kinetic",
+                    "animation",
+                    "broadcast",
+                    "dynamic"
+                ]
+            },
+            {
+                "style": "Oversized Italic",
+                "best_for": {
+                    "industries": [
+                        "fashion",
+                        "luxury",
+                        "editorial",
+                        "cosmetics",
+                        "culture brands"
+                    ],
+                    "brand_personality": [
+                        "elegant",
+                        "confident",
+                        "fashionable",
+                        "editorial"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "italic type leans further on scroll",
+                        "slow reveal top to bottom"
+                    ],
+                    "transitions": ["italic sweep wipe"],
+                    "hover": ["slant intensifies", "weight shift"],
+                    "avoid": ["upright stiff motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "extreme italic angle",
+                        "high-contrast serif in italic",
+                        "Didot, Bodoni, or custom editorial serif"
+                    ],
+                    "avoid": ["upright fonts", "geometric sans"]
+                },
+                "palette_tendency": "black, cream, dusty rose — fashion-editorial neutrals",
+                "intensity": "elegant, leaning, confident movement",
+                "tags": ["italic", "fashion", "editorial", "elegant", "serif"]
+            },
+            {
+                "style": "Variable Font Play",
+                "best_for": {
+                    "industries": [
+                        "tech",
+                        "design tools",
+                        "interactive media",
+                        "digital agencies"
+                    ],
+                    "brand_personality": [
+                        "technically sophisticated",
+                        "innovative",
+                        "playful",
+                        "forward-thinking"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "font weight shifts from thin to black on scroll progress",
+                        "width axis opens on entry"
+                    ],
+                    "transitions": ["morph between two font states"],
+                    "hover": ["axis responds to cursor position"],
+                    "avoid": ["static font rendering"]
+                },
+                "typography": {
+                    "feel": [
+                        "single font family showing its full axis range",
+                        "weight and width as visual tools"
+                    ],
+                    "avoid": [
+                        "multiple competing typefaces — the variable font is the whole show"
+                    ]
+                },
+                "palette_tendency": "minimal — monochrome often best to showcase the font",
+                "intensity": "technically expressive, interactive, modern",
+                "tags": [
+                    "variable font",
+                    "interactive",
+                    "motion",
+                    "tech",
+                    "typography"
+                ]
+            },
+            {
+                "style": "Tabloid Broadsheet",
+                "best_for": {
+                    "industries": [
+                        "news",
+                        "satire",
+                        "investigative journalism",
+                        "political media"
+                    ],
+                    "brand_personality": [
+                        "punchy",
+                        "authoritative",
+                        "provocative",
+                        "populist or serious"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "headlines drop in like printing press",
+                        "ink bleed effect on load"
+                    ],
+                    "transitions": ["press print wipe"],
+                    "hover": ["ink highlight", "column rule draw"],
+                    "avoid": ["digital-native slick animation"]
+                },
+                "typography": {
+                    "feel": [
+                        "ink-trap newspaper serifs",
+                        "condensed bold for headlines",
+                        "justified body copy",
+                        "strong column structure"
+                    ],
+                    "avoid": ["sans-heavy layouts", "thin delicate type"]
+                },
+                "palette_tendency": "newsprint, ink black, spot red — print production palette",
+                "intensity": "urgent, ink-stained, high information density",
+                "tags": [
+                    "newspaper",
+                    "print",
+                    "editorial",
+                    "journalism",
+                    "broadsheet"
+                ]
+            },
+            {
+                "style": "Stacked Serif Editorial",
+                "best_for": {
+                    "industries": [
+                        "luxury publishing",
+                        "literary brands",
+                        "cultural institutions",
+                        "premium magazines"
+                    ],
+                    "brand_personality": [
+                        "intellectual",
+                        "unhurried",
+                        "premium",
+                        "literary"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "slow vertical text reveal line by line",
+                        "column appears on scroll"
+                    ],
+                    "transitions": ["page turn", "slow cross dissolve"],
+                    "hover": ["text underline bloom", "pull-quote highlight"],
+                    "avoid": ["fast snappy motion", "kinetic excess"]
+                },
+                "typography": {
+                    "feel": [
+                        "stacked vertically with generous leading",
+                        "high-contrast serif throughout",
+                        "drop caps",
+                        "long form reading comfort"
+                    ],
+                    "avoid": ["sans dominance", "tight information density"]
+                },
+                "palette_tendency": "warm paper white, ink black, single muted accent",
+                "intensity": "literary, unhurried, premium reading experience",
+                "tags": ["serif", "literary", "editorial", "premium", "stacked"]
+            }
+        ]
+    },
+    {
+        "category": "Texture & Material",
+        "styles": [
+            {
+                "style": "Paper Cutout",
+                "best_for": {
+                    "industries": [
+                        "children's brands",
+                        "education",
+                        "handmade goods",
+                        "craft",
+                        "greeting cards",
+                        "indie publishing"
+                    ],
+                    "brand_personality": [
+                        "playful",
+                        "handmade",
+                        "approachable",
+                        "joyful",
+                        "tactile"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "layers shift at different parallax speeds creating depth",
+                        "cutout elements float in on scroll"
+                    ],
+                    "transitions": ["paper fold reveal", "layer peel"],
+                    "hover": [
+                        "element lifts with shadow",
+                        "shadow deepens on hover"
+                    ],
+                    "avoid": ["digital glitch", "smooth morphing"]
+                },
+                "typography": {
+                    "feel": [
+                        "rounded friendly display",
+                        "hand-cut feel",
+                        "slightly imperfect spacing"
+                    ],
+                    "avoid": ["cold geometric precision", "thin serifs"]
+                },
+                "palette_tendency": "construction paper primaries, kraft brown, sugar-paper pastels",
+                "intensity": "cheerful, layered, tangibly crafted",
+                "tags": ["handmade", "paper", "layered", "tactile", "playful"]
+            },
+            {
+                "style": "Risograph Print",
+                "best_for": {
+                    "industries": [
+                        "indie publishing",
+                        "art prints",
+                        "music merchandise",
+                        "zines",
+                        "illustration"
+                    ],
+                    "brand_personality": [
+                        "independent",
+                        "artistic",
+                        "limited edition",
+                        "collectible",
+                        "craft-first"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "ink mis-registration shifts on scroll",
+                        "colour separation layers move slightly out of sync"
+                    ],
+                    "transitions": ["ink overprint dissolve"],
+                    "hover": ["colour layer shifts off-register on hover"],
+                    "avoid": [
+                        "perfect digital registration",
+                        "full colour photography motion"
+                    ]
+                },
+                "typography": {
+                    "feel": [
+                        "heavy spot-colour type",
+                        "limited palette forced overlap",
+                        "print-constraint aesthetic"
+                    ],
+                    "avoid": [
+                        "full colour gradients",
+                        "photographic type treatments"
+                    ]
+                },
+                "palette_tendency": "two or three ink spot colours — fluorescent pink, teal, yellow, black",
+                "intensity": "limited, craft, artisanal, collectible",
+                "tags": ["print", "risograph", "indie", "limited", "tactile"]
+            },
+            {
+                "style": "Woodblock Print",
+                "best_for": {
+                    "industries": [
+                        "craft spirits",
+                        "artisan food",
+                        "heritage brands",
+                        "Japanese-inspired"
+                    ],
+                    "brand_personality": [
+                        "artisanal",
+                        "heritage",
+                        "skilled",
+                        "patient",
+                        "cultural"
+                    ]
+                },
+                "motion": {
+                    "scroll": ["ink impression stamps in on scroll"],
+                    "transitions": ["woodblock slam cut"],
+                    "hover": ["ink pressure variation"],
+                    "avoid": ["digital smoothness"]
+                },
+                "typography": {
+                    "feel": [
+                        "brush-informed letterforms",
+                        "variable ink pressure simulation",
+                        "strong woodcut weight"
+                    ],
+                    "avoid": ["perfectly even digital strokes"]
+                },
+                "palette_tendency": "ink black on rice paper cream, ochre, natural earth tones",
+                "intensity": "deliberate, skilled, slow and considered",
+                "tags": ["craft", "print", "heritage", "artisanal", "woodcut"]
+            },
+            {
+                "style": "Letterpress Craft",
+                "best_for": {
+                    "industries": [
+                        "wedding stationery",
+                        "premium packaging",
+                        "boutique hospitality",
+                        "luxury goods"
+                    ],
+                    "brand_personality": [
+                        "refined",
+                        "tactile",
+                        "premium craft",
+                        "considered",
+                        "heirloom quality"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "impression deepens on scroll",
+                        "deboss shadow effect on entry"
+                    ],
+                    "transitions": ["press impression reveal"],
+                    "hover": ["deboss depth increases"],
+                    "avoid": ["flat digital motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "classic serif with impression depth",
+                        "tight elegant spacing",
+                        "Caslon or Garamond quality"
+                    ],
+                    "avoid": [
+                        "sans-serif dominance",
+                        "digital-looking precision"
+                    ]
+                },
+                "palette_tendency": "cotton white, cream, ink navy, warm black — paper stock palette",
+                "intensity": "refined, tactile, quietly premium",
+                "tags": ["letterpress", "craft", "premium", "tactile", "print"]
+            },
+            {
+                "style": "Grain & Grit",
+                "best_for": {
+                    "industries": [
+                        "whisky and spirits",
+                        "workwear",
+                        "heritage fashion",
+                        "outdoor brands",
+                        "coffee"
+                    ],
+                    "brand_personality": [
+                        "rugged",
+                        "authentic",
+                        "earned",
+                        "no-nonsense",
+                        "craft"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "grain overlay intensifies and clears on scroll",
+                        "slow parallax on gritty backgrounds"
+                    ],
+                    "transitions": ["film grain burn dissolve"],
+                    "hover": ["grain surge on hover"],
+                    "avoid": ["clean polished digital motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "slab serif or condensed bold",
+                        "stamped or pressed feel",
+                        "rough-edged display"
+                    ],
+                    "avoid": ["refined thin weights", "luxury serifs"]
+                },
+                "palette_tendency": "muted earth tones, concrete grey, raw umber, whisky amber, worn black",
+                "intensity": "rugged, textured, unvarnished",
+                "tags": ["grain", "rugged", "heritage", "authentic", "textured"]
+            },
+            {
+                "style": "Wax Seal Gothic",
+                "best_for": {
+                    "industries": [
+                        "premium spirits",
+                        "exclusive membership clubs",
+                        "legal or old-money brands",
+                        "gothic fashion"
+                    ],
+                    "brand_personality": [
+                        "exclusive",
+                        "secretive",
+                        "arcane",
+                        "premium",
+                        "establishment"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "wax drip reveal on scroll",
+                        "seal stamp on section enter"
+                    ],
+                    "transitions": ["wax seal stamp with ripple"],
+                    "hover": ["seal glow and crack texture"],
+                    "avoid": ["digital clinical motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "gothic blackletter",
+                        "engraved serif",
+                        "archaic letterforms",
+                        "wide tracking caps"
+                    ],
+                    "avoid": ["modern geometric sans", "casual fonts"]
+                },
+                "palette_tendency": "deep crimson, black wax, aged gold, parchment, forest green",
+                "intensity": "arcane, secretive, gravely premium",
+                "tags": [
+                    "gothic",
+                    "premium",
+                    "exclusive",
+                    "darkacademia",
+                    "archaic"
+                ]
+            },
+            {
+                "style": "Distressed Ink",
+                "best_for": {
+                    "industries": [
+                        "tattoo studios",
+                        "metal bands",
+                        "hard liquor",
+                        "streetwear",
+                        "motorcycle brands"
+                    ],
+                    "brand_personality": [
+                        "hard-edged",
+                        "rebellious",
+                        "underground",
+                        "intense"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "ink bleed spreads on scroll",
+                        "distressed reveal wipe"
+                    ],
+                    "transitions": ["ink flood transition"],
+                    "hover": ["ink runs further on hover"],
+                    "avoid": ["clean polished motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "heavily distressed serif",
+                        "ink spread simulation",
+                        "worn and degraded",
+                        "gothic or slab"
+                    ],
+                    "avoid": ["clean renders", "any typographic refinement"]
+                },
+                "palette_tendency": "black ink, blood red, bone white — nothing else",
+                "intensity": "intense, degraded, underground",
+                "tags": [
+                    "distressed",
+                    "ink",
+                    "underground",
+                    "intense",
+                    "rebellious"
+                ]
+            },
+            {
+                "style": "Screen Print Pop",
+                "best_for": {
+                    "industries": [
+                        "band merchandise",
+                        "art prints",
+                        "streetwear",
+                        "event posters",
+                        "activist brands"
+                    ],
+                    "brand_personality": [
+                        "bold",
+                        "direct",
+                        "populist",
+                        "colourful",
+                        "reproducible"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "colour layers register on scroll one by one",
+                        "spot colours flood in separately"
+                    ],
+                    "transitions": ["colour separation wipe"],
+                    "hover": ["colour registration shift", "ink smear"],
+                    "avoid": ["full-colour photographic motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "bold flat type",
+                        "limited typefaces",
+                        "print registration variation",
+                        "spot colour blocking"
+                    ],
+                    "avoid": ["subtle gradients", "thin weights"]
+                },
+                "palette_tendency": "three to four flat spot colours, intentional overprint mixing",
+                "intensity": "punchy, flat, immediate, reproducible",
+                "tags": ["screenprint", "pop", "bold", "flat", "street"]
+            }
+        ]
+    },
+    {
+        "category": "Digital & Tech",
+        "styles": [
+            {
+                "style": "Dark UI Glassmorphism",
+                "best_for": {
+                    "industries": [
+                        "SaaS products",
+                        "fintech dashboards",
+                        "crypto",
+                        "music apps",
+                        "AI tools"
+                    ],
+                    "brand_personality": [
+                        "sophisticated",
+                        "premium-digital",
+                        "modern",
+                        "cool"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "glass panels slide up with blur trail",
+                        "backdrop blur deepens on scroll"
+                    ],
+                    "transitions": [
+                        "frosted glass door open",
+                        "blur-in from transparent"
+                    ],
+                    "hover": [
+                        "glass reflectivity shift",
+                        "border glow increase"
+                    ],
+                    "avoid": ["warm organic motion", "paper textures"]
+                },
+                "typography": {
+                    "feel": [
+                        "clean modern sans",
+                        "light weights on dark",
+                        "tight letter-spacing for data"
+                    ],
+                    "avoid": ["serif", "display type with personality"]
+                },
+                "palette_tendency": "deep dark backgrounds, white frosted panels, subtle colour accents, blur",
+                "intensity": "sleek, cool, premium-dark",
+                "tags": ["glass", "dark", "premium", "SaaS", "modern"]
+            },
+            {
+                "style": "Neomorphic Soft UI",
+                "best_for": {
+                    "industries": [
+                        "mobile apps",
+                        "consumer tech",
+                        "health apps",
+                        "music players"
+                    ],
+                    "brand_personality": [
+                        "soft",
+                        "friendly",
+                        "clean",
+                        "approachable-premium"
+                    ]
+                },
+                "motion": {
+                    "scroll": ["soft shadow depth shifts on scroll"],
+                    "transitions": [
+                        "element extrudes from surface",
+                        "press-in button physics"
+                    ],
+                    "hover": ["shadow flips from concave to convex"],
+                    "avoid": ["sharp contrast motion", "glitch"]
+                },
+                "typography": {
+                    "feel": [
+                        "light to medium rounded sans",
+                        "subtle not dominant"
+                    ],
+                    "avoid": ["aggressive display", "heavy weights"]
+                },
+                "palette_tendency": "light grey, soft beige — single-tone with only light and shadow",
+                "intensity": "whisper-quiet, soft, tactile-digital",
+                "tags": ["neumorphism", "soft", "shadow", "mobile", "minimal"]
+            },
+            {
+                "style": "ASCII Terminal",
+                "best_for": {
+                    "industries": [
+                        "developer tools",
+                        "cybersecurity",
+                        "hacker culture",
+                        "indie games",
+                        "tech blogs"
+                    ],
+                    "brand_personality": [
+                        "technical",
+                        "authentic to developers",
+                        "no-nonsense",
+                        "underground-tech"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "typewriter text builds on scroll",
+                        "cursor blink"
+                    ],
+                    "transitions": [
+                        "terminal loading sequence",
+                        "text print-out"
+                    ],
+                    "hover": ["command highlight", "cursor moves to element"],
+                    "avoid": ["smooth graphical animation"]
+                },
+                "typography": {
+                    "feel": [
+                        "monospace only",
+                        "Courier New or custom terminal font",
+                        "character-level layout"
+                    ],
+                    "avoid": ["proportional fonts of any kind"]
+                },
+                "palette_tendency": "green on black, amber on black, or white on black — terminal colours only",
+                "intensity": "pure text, zero decoration, authentically terminal",
+                "tags": ["terminal", "developer", "mono", "hacker", "minimal"]
+            },
+            {
+                "style": "Wireframe Aesthetic",
+                "best_for": {
+                    "industries": [
+                        "design studios",
+                        "UX agencies",
+                        "developer tools",
+                        "SaaS onboarding"
+                    ],
+                    "brand_personality": [
+                        "process-transparent",
+                        "rational",
+                        "craft-forward",
+                        "honest"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "components draw into place on scroll",
+                        "annotation lines extend"
+                    ],
+                    "transitions": ["component build sequence"],
+                    "hover": ["annotation appears", "dimension lines reveal"],
+                    "avoid": ["polished full-colour motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "monospace or technical sans",
+                        "annotation style",
+                        "DM Mono or similar"
+                    ],
+                    "avoid": ["decorative display"]
+                },
+                "palette_tendency": "paper white, ink grey, red annotation lines, blueprint blue",
+                "intensity": "technical, honest, process-visible",
+                "tags": ["wireframe", "UX", "technical", "process", "minimal"]
+            },
+            {
+                "style": "Data Viz Minimal",
+                "best_for": {
+                    "industries": [
+                        "analytics platforms",
+                        "fintech",
+                        "research institutions",
+                        "journalism data teams"
+                    ],
+                    "brand_personality": [
+                        "evidence-based",
+                        "clear",
+                        "authoritative",
+                        "precise"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "charts draw on scroll entry",
+                        "data points plot progressively"
+                    ],
+                    "transitions": [
+                        "data morphs between states",
+                        "axis relabels smoothly"
+                    ],
+                    "hover": ["data point tooltip", "highlight row/column"],
+                    "avoid": ["decorative motion unrelated to data"]
+                },
+                "typography": {
+                    "feel": [
+                        "tabular figures monospace for numbers",
+                        "clean axis labels",
+                        "hierarchy of data not decoration"
+                    ],
+                    "avoid": ["display fonts", "personality over clarity"]
+                },
+                "palette_tendency": "one primary data colour, grey for context, white space as structure",
+                "intensity": "precise, evidence-first, zero noise",
+                "tags": ["data", "charts", "analytics", "minimal", "evidence"]
+            },
+            {
+                "style": "Isometric Flat",
+                "best_for": {
+                    "industries": [
+                        "SaaS",
+                        "logistics",
+                        "enterprise software",
+                        "tech explainers",
+                        "architecture"
+                    ],
+                    "brand_personality": [
+                        "systematic",
+                        "clear",
+                        "modern",
+                        "organised"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "isometric elements build in from bottom",
+                        "layers stack on scroll"
+                    ],
+                    "transitions": ["isometric slide-in from 30deg angle"],
+                    "hover": ["element lifts on z-axis", "face highlights"],
+                    "avoid": ["flat 2D transitions that break the illusion"]
+                },
+                "typography": {
+                    "feel": [
+                        "clean geometric sans for labels",
+                        "simple hierarchy",
+                        "supporting the illustration not competing"
+                    ],
+                    "avoid": ["serif", "expressive display"]
+                },
+                "palette_tendency": "flat primary + secondary colours, no shadows only colour planes",
+                "intensity": "systematic, clear, architectural",
+                "tags": ["isometric", "3D", "flat", "SaaS", "systematic"]
+            },
+            {
+                "style": "Vaporwave Grid",
+                "best_for": {
+                    "industries": [
+                        "music streaming",
+                        "gaming",
+                        "internet culture brands",
+                        "retro-digital events"
+                    ],
+                    "brand_personality": [
+                        "nostalgic-digital",
+                        "ironic",
+                        "internet-native",
+                        "aesthetic-obsessed"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "perspective grid speeds up on scroll",
+                        "horizon recedes"
+                    ],
+                    "transitions": ["grid portal entry", "neon scan line wipe"],
+                    "hover": ["grid distort", "colour temperature shift"],
+                    "avoid": ["clean minimal motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "Orbitron or pixel display",
+                        "wide tracked caps",
+                        "neon glow treatment"
+                    ],
+                    "avoid": ["humanist fonts", "traditional serif"]
+                },
+                "palette_tendency": "purple, magenta, cyan, teal on near-black — synthwave palette",
+                "intensity": "dreamy-electric, perspective-driven, nostalgic-digital",
+                "tags": [
+                    "vaporwave",
+                    "grid",
+                    "synthwave",
+                    "nostalgia",
+                    "digital"
+                ]
+            },
+            {
+                "style": "Synthwave Neon",
+                "best_for": {
+                    "industries": [
+                        "music",
+                        "gaming",
+                        "events",
+                        "streaming",
+                        "fitness tech"
+                    ],
+                    "brand_personality": [
+                        "energetic",
+                        "nocturnal",
+                        "retro-forward",
+                        "cool"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "neon glow pulses on scroll",
+                        "horizon line glows brighter"
+                    ],
+                    "transitions": ["laser grid wipe", "neon tube light up"],
+                    "hover": ["glow bloom amplify", "neon colour cycle"],
+                    "avoid": ["daylight clean motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "condensed chrome italic",
+                        "neon tube simulation",
+                        "back-lit effect"
+                    ],
+                    "avoid": ["warm serif", "quiet fonts"]
+                },
+                "palette_tendency": "hot pink, electric blue, purple, gold on black — neon set",
+                "intensity": "electric, nocturnal, charged",
+                "tags": ["synthwave", "neon", "80s", "music", "electric"]
+            },
+            {
+                "style": "Holographic Iridescent",
+                "best_for": {
+                    "industries": [
+                        "beauty",
+                        "fashion",
+                        "luxury tech",
+                        "NFT/digital art",
+                        "premium packaging"
+                    ],
+                    "brand_personality": [
+                        "futuristic",
+                        "premium",
+                        "magical",
+                        "exclusive",
+                        "trend-forward"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "rainbow shift on scroll speed",
+                        "holographic shimmer follows scroll position"
+                    ],
+                    "transitions": ["iridescent flood wipe"],
+                    "hover": [
+                        "colour spectrum rotates on cursor position",
+                        "shine travels across surface"
+                    ],
+                    "avoid": ["flat matte motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "chrome gradient type",
+                        "holographic foil simulation",
+                        "clean sans for legibility against shimmer"
+                    ],
+                    "avoid": ["heavy ink textures", "matte type treatments"]
+                },
+                "palette_tendency": "full spectrum iridescent — shifts through rainbow on angle/scroll",
+                "intensity": "prismatic, magical, luxury-digital",
+                "tags": [
+                    "holographic",
+                    "iridescent",
+                    "luxury",
+                    "beauty",
+                    "spectrum"
+                ]
+            },
+            {
+                "style": "Cyberpunk Industrial",
+                "best_for": {
+                    "industries": [
+                        "gaming",
+                        "tech hardware",
+                        "energy drinks",
+                        "dystopian entertainment",
+                        "streetwear"
+                    ],
+                    "brand_personality": [
+                        "aggressive",
+                        "urban",
+                        "high-tech low-life",
+                        "intense",
+                        "dystopian"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "HUD elements overlay on scroll",
+                        "glitch stutter on section change"
+                    ],
+                    "transitions": [
+                        "system override flash cut",
+                        "data stream wipe"
+                    ],
+                    "hover": ["HUD bracket lock-on", "alert state colour"],
+                    "avoid": ["warm organic motion", "anything pastoral"]
+                },
+                "typography": {
+                    "feel": [
+                        "tech-military stencil",
+                        "hacked terminal display",
+                        "interrupted readability"
+                    ],
+                    "avoid": ["friendly rounded sans", "luxury serif"]
+                },
+                "palette_tendency": "warning yellow, acid green, blood red, matte black, chrome",
+                "intensity": "aggressive, high-stakes, dystopian-tech",
+                "tags": [
+                    "cyberpunk",
+                    "industrial",
+                    "gaming",
+                    "dystopian",
+                    "tech"
+                ]
+            },
+            {
+                "style": "Skeuomorphic",
+                "best_for": {
+                    "industries": [
+                        "productivity apps",
+                        "music tools",
+                        "nostalgia tech",
+                        "early-adopter audiences"
+                    ],
+                    "brand_personality": [
+                        "familiar",
+                        "tactile-digital",
+                        "approachable",
+                        "detailed"
+                    ]
+                },
+                "motion": {
+                    "scroll": ["page curl on scroll", "physical switch toggle"],
+                    "transitions": ["leather page turn", "felt texture wipe"],
+                    "hover": ["button physically depresses", "knob rotates"],
+                    "avoid": ["flat abstract motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "embossed or debossed in surface",
+                        "stitched texture labels",
+                        "realistic material contexts"
+                    ],
+                    "avoid": ["floating type disconnected from surface"]
+                },
+                "palette_tendency": "simulated real materials — wood grain, leather, felt, metal, glass",
+                "intensity": "tactile, detailed, physically referential",
+                "tags": [
+                    "skeuomorphic",
+                    "tactile",
+                    "realistic",
+                    "iOS6",
+                    "material"
+                ]
+            },
+            {
+                "style": "Claymorphism 3D",
+                "best_for": {
+                    "industries": [
+                        "consumer apps",
+                        "fintech for consumers",
+                        "children's tech",
+                        "playful SaaS"
+                    ],
+                    "brand_personality": [
+                        "friendly",
+                        "approachable",
+                        "fun",
+                        "modern-playful"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "clay elements squish on scroll entry",
+                        "soft bounce physics"
+                    ],
+                    "transitions": [
+                        "clay morph between shapes",
+                        "squash and stretch"
+                    ],
+                    "hover": ["element squishes under cursor", "soft inflate"],
+                    "avoid": ["sharp hard-edged motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "rounded soft geometric sans",
+                        "plump letter forms",
+                        "inflated feeling"
+                    ],
+                    "avoid": ["sharp angular type", "thin serifs"]
+                },
+                "palette_tendency": "pastel saturated 3D colours with inner shadow — clay material simulation",
+                "intensity": "playful, soft, bouncy, friendly",
+                "tags": ["clay", "3D", "soft", "playful", "consumer"]
+            },
+            {
+                "style": "Bento Box UI",
+                "best_for": {
+                    "industries": [
+                        "Apple-adjacent tech",
+                        "SaaS dashboards",
+                        "product landing pages",
+                        "portfolio"
+                    ],
+                    "brand_personality": [
+                        "organised",
+                        "product-focused",
+                        "modern",
+                        "Apple-influenced"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "bento cells stagger in on scroll",
+                        "each cell reveals independently"
+                    ],
+                    "transitions": ["grid slot rearrange"],
+                    "hover": ["cell lifts slightly", "content preview expands"],
+                    "avoid": ["chaotic unstructured motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "SF Pro or clean geometric sans",
+                        "large stat numbers",
+                        "brief labels",
+                        "Apple keynote influenced"
+                    ],
+                    "avoid": ["verbose body copy in cells", "decorative type"]
+                },
+                "palette_tendency": "clean white or light grey cells, dark mode variant, single accent",
+                "intensity": "organised, product-led, modern minimal",
+                "tags": ["bento", "grid", "Apple", "product", "modern"]
+            },
+            {
+                "style": "Flat 2.0 Material",
+                "best_for": {
+                    "industries": [
+                        "Android apps",
+                        "Google ecosystem products",
+                        "productivity tools",
+                        "enterprise software"
+                    ],
+                    "brand_personality": [
+                        "accessible",
+                        "functional",
+                        "clear",
+                        "systematic"
+                    ]
+                },
+                "motion": {
+                    "scroll": ["material elevation shadows deepen on scroll"],
+                    "transitions": [
+                        "shared element transition",
+                        "ripple from touch point"
+                    ],
+                    "hover": ["ripple effect from cursor", "elevation lift"],
+                    "avoid": ["skeuomorphic or decorative motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "Roboto or similar systematic humanist sans",
+                        "clear hierarchy levels",
+                        "reading-optimised"
+                    ],
+                    "avoid": ["personality fonts", "display decorative"]
+                },
+                "palette_tendency": "primary colour with tonal palette, surfaces from white to dark",
+                "intensity": "systematic, accessible, functional",
+                "tags": [
+                    "material",
+                    "flat",
+                    "Google",
+                    "systematic",
+                    "accessible"
+                ]
+            },
+            {
+                "style": "Terminal Green CRT",
+                "best_for": {
+                    "industries": [
+                        "cybersecurity",
+                        "retro gaming",
+                        "developer tools",
+                        "sci-fi themed brands"
+                    ],
+                    "brand_personality": [
+                        "hardcore-technical",
+                        "retro-authentic",
+                        "underground",
+                        "specialist"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "phosphor trail on scroll",
+                        "CRT flicker on section entry"
+                    ],
+                    "transitions": ["horizontal CRT scan wipe"],
+                    "hover": ["brightness bloom on cursor", "phosphor glow"],
+                    "avoid": ["modern clean motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "authentic monospace",
+                        "phosphor glow text shadow",
+                        "CRT scanline overlay on type"
+                    ],
+                    "avoid": ["any proportional font"]
+                },
+                "palette_tendency": "phosphor green or amber on pure black — CRT palette only",
+                "intensity": "nostalgic-technical, authentic, specialist",
+                "tags": ["CRT", "terminal", "green", "phosphor", "retro-tech"]
+            },
+            {
+                "style": "AI Diffusion Aesthetic",
+                "best_for": {
+                    "industries": [
+                        "AI tools",
+                        "generative art platforms",
+                        "creative tech",
+                        "research labs"
+                    ],
+                    "brand_personality": [
+                        "cutting-edge",
+                        "experimental",
+                        "generative",
+                        "current"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "noise field shifts on scroll",
+                        "latent space interpolation on scroll progress"
+                    ],
+                    "transitions": [
+                        "diffusion step dissolve — image emerges from noise"
+                    ],
+                    "hover": [
+                        "noise seed changes",
+                        "image slightly re-generates"
+                    ],
+                    "avoid": ["static flat motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "clean technical sans to contrast the generative imagery",
+                        "grounded and precise"
+                    ],
+                    "avoid": ["competing with the generative visual"]
+                },
+                "palette_tendency": "emergent from the generative content — not pre-specified",
+                "intensity": "generative, shifting, emergent",
+                "tags": [
+                    "AI",
+                    "generative",
+                    "diffusion",
+                    "experimental",
+                    "tech"
+                ]
+            },
+            {
+                "style": "Loading Screen Art",
+                "best_for": {
+                    "industries": [
+                        "gaming",
+                        "immersive experiences",
+                        "app launches",
+                        "entertainment platforms"
+                    ],
+                    "brand_personality": [
+                        "world-building",
+                        "immersive",
+                        "detailed",
+                        "anticipation-building"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "progress bar as scroll indicator",
+                        "world reveals as you load in"
+                    ],
+                    "transitions": [
+                        "loading bar complete triggers next section"
+                    ],
+                    "hover": ["tip or lore text on hover"],
+                    "avoid": ["impatient fast motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "fantasy or sci-fi display for lore text",
+                        "clean system font for progress readout"
+                    ],
+                    "avoid": [
+                        "nothing — this style is about the world, not type rules"
+                    ]
+                },
+                "palette_tendency": "defined by the game or experience world — not generic",
+                "intensity": "anticipatory, world-building, immersive",
+                "tags": [
+                    "gaming",
+                    "loading",
+                    "immersive",
+                    "world-building",
+                    "anticipation"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Art Movement Inspired",
+        "styles": [
+            {
+                "style": "Neo-Brutalism",
+                "best_for": {
+                    "industries": [
+                        "fintech startups",
+                        "SaaS",
+                        "agencies",
+                        "design tools"
+                    ],
+                    "brand_personality": [
+                        "direct",
+                        "confident",
+                        "functional",
+                        "honest",
+                        "startup-bold"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "cards drop with hard shadow on scroll entry",
+                        "offset shadow appears on entry"
+                    ],
+                    "transitions": [
+                        "hard cut translate",
+                        "element slams to position"
+                    ],
+                    "hover": [
+                        "shadow shifts to new corner",
+                        "element translates 2px"
+                    ],
+                    "avoid": ["smooth soft easing", "opacity-only transitions"]
+                },
+                "typography": {
+                    "feel": [
+                        "heavy black sans",
+                        "high contrast weight usage",
+                        "DM Sans or Syne at heavy weights"
+                    ],
+                    "avoid": ["thin delicate weights", "serif elegance"]
+                },
+                "palette_tendency": "yellow, white, or off-white + black with hard-offset shadows",
+                "intensity": "punchy, functional-raw, startup confident",
+                "tags": [
+                    "neo-brutalism",
+                    "startup",
+                    "bold",
+                    "functional",
+                    "direct"
+                ]
+            },
+            {
+                "style": "Memphis Pattern",
+                "best_for": {
+                    "industries": [
+                        "children's brands",
+                        "fun consumer goods",
+                        "retro events",
+                        "kitchenware",
+                        "lifestyle"
+                    ],
+                    "brand_personality": [
+                        "playful",
+                        "retro-fun",
+                        "optimistic",
+                        "bold",
+                        "irreverent"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "pattern shifts and rotates on scroll",
+                        "shapes scatter on entry"
+                    ],
+                    "transitions": ["shape confetti explosion wipe"],
+                    "hover": ["pattern tile rotates", "colour swaps"],
+                    "avoid": ["serious corporate motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "bold geometric sans in primary colours",
+                        "type as pattern element",
+                        "Futura or geometric at heavy weight"
+                    ],
+                    "avoid": ["refined editorial serif", "luxury fonts"]
+                },
+                "palette_tendency": "primary + pastel mix: red, yellow, blue, pink, teal, black",
+                "intensity": "joyful, chaotic-fun, retro-optimistic",
+                "tags": ["memphis", "pattern", "80s", "playful", "geometric"]
+            },
+            {
+                "style": "Constructivist Bold",
+                "best_for": {
+                    "industries": [
+                        "political campaigns",
+                        "social causes",
+                        "arts institutions",
+                        "typography-first brands"
+                    ],
+                    "brand_personality": [
+                        "urgent",
+                        "ideological",
+                        "bold",
+                        "uncompromising"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "diagonal compositions rotate into place on scroll"
+                    ],
+                    "transitions": ["diagonal swipe cut", "red flood wipe"],
+                    "hover": ["element dynamically re-angles"],
+                    "avoid": ["soft gentle motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "heavy condensed sans at diagonal angles",
+                        "Rodchenko/Lissitzky reference",
+                        "type as structural element"
+                    ],
+                    "avoid": [
+                        "refined delicate type",
+                        "neutral horizontal layout"
+                    ]
+                },
+                "palette_tendency": "red, black, white — hard limit, no exceptions",
+                "intensity": "urgent, ideological, stark",
+                "tags": [
+                    "constructivism",
+                    "bold",
+                    "political",
+                    "diagonal",
+                    "stark"
+                ]
+            },
+            {
+                "style": "Surrealist Collage",
+                "best_for": {
+                    "industries": [
+                        "fashion",
+                        "perfume",
+                        "arts",
+                        "editorial",
+                        "experimental brands"
+                    ],
+                    "brand_personality": [
+                        "dreamlike",
+                        "unexpected",
+                        "intellectual",
+                        "otherworldly"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "collage elements float at different speeds",
+                        "impossible juxtapositions slide past each other"
+                    ],
+                    "transitions": [
+                        "dreamlike dissolve — one impossible scene to another"
+                    ],
+                    "hover": [
+                        "element transforms into something else",
+                        "scale warps on hover"
+                    ],
+                    "avoid": ["literal corporate motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "classical elegant type contrasting with surreal imagery",
+                        "Didot or refined serif against the chaos"
+                    ],
+                    "avoid": [
+                        "matching the chaos — type should be the counterpoint"
+                    ]
+                },
+                "palette_tendency": "painterly — de Chirico ochres, Magritte blues, dreamscape palette",
+                "intensity": "dreamlike, uncanny, intellectually playful",
+                "tags": ["surrealism", "collage", "dreamlike", "fashion", "art"]
+            },
+            {
+                "style": "De Stijl Geometric",
+                "best_for": {
+                    "industries": [
+                        "architecture",
+                        "furniture",
+                        "design education",
+                        "Dutch brands",
+                        "homeware"
+                    ],
+                    "brand_personality": [
+                        "principled",
+                        "balanced",
+                        "architectural",
+                        "rational-beautiful"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "primary colour rectangles slide into composition on scroll"
+                    ],
+                    "transitions": ["Mondrian grid rearrange"],
+                    "hover": ["cell colour fills in"],
+                    "avoid": ["decorative motion", "diagonal movement"]
+                },
+                "typography": {
+                    "feel": [
+                        "geometric sans, absolutely horizontal and vertical",
+                        "no angles, no curves in layout"
+                    ],
+                    "avoid": ["diagonal", "organic", "curved"]
+                },
+                "palette_tendency": "red, yellow, blue, black, white — Mondrian only",
+                "intensity": "principled, grid-absolute, visually total",
+                "tags": [
+                    "de stijl",
+                    "mondrian",
+                    "geometric",
+                    "primary",
+                    "architectural"
+                ]
+            },
+            {
+                "style": "Cubist Fragment",
+                "best_for": {
+                    "industries": [
+                        "art galleries",
+                        "architecture",
+                        "contemporary fashion",
+                        "luxury fragrance"
+                    ],
+                    "brand_personality": [
+                        "intellectual",
+                        "multi-perspective",
+                        "complex",
+                        "avant-garde"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "fragments reassemble on scroll",
+                        "faceted planes rotate into view"
+                    ],
+                    "transitions": ["faceted break-apart and reassemble"],
+                    "hover": ["planes shift perspective on cursor"],
+                    "avoid": ["seamless smooth motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "type fragmented and reassembled",
+                        "letters as geometric planes",
+                        "Cubist visual logic"
+                    ],
+                    "avoid": ["conventional reading layouts"]
+                },
+                "palette_tendency": "brown, ochre, grey, muted earth tones — Analytic Cubism palette",
+                "intensity": "intellectual, fragmented, multi-perspective",
+                "tags": [
+                    "cubism",
+                    "fragmented",
+                    "art",
+                    "intellectual",
+                    "planes"
+                ]
+            },
+            {
+                "style": "Abstract Expressionist",
+                "best_for": {
+                    "industries": [
+                        "fine art platforms",
+                        "luxury fashion",
+                        "galleries",
+                        "experimental music"
+                    ],
+                    "brand_personality": [
+                        "emotional",
+                        "expressive",
+                        "high-art",
+                        "uncompromising"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "paint strokes animate on scroll",
+                        "gestural brush marks draw across screen"
+                    ],
+                    "transitions": [
+                        "paint splash wipe",
+                        "canvas wipe from corner"
+                    ],
+                    "hover": ["paint drip responds to cursor"],
+                    "avoid": ["tight geometric motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "minimal type against expressive backgrounds — counterpoint",
+                        "type should not compete"
+                    ],
+                    "avoid": ["type-heavy layouts", "information density"]
+                },
+                "palette_tendency": "emotional not decorative — Rothko fields, Pollock splatter, De Kooning gesture",
+                "intensity": "emotional, gestural, unconstrained",
+                "tags": [
+                    "abstract",
+                    "expressionist",
+                    "art",
+                    "gestural",
+                    "emotional"
+                ]
+            },
+            {
+                "style": "Pop Art Flat",
+                "best_for": {
+                    "industries": [
+                        "consumer goods",
+                        "food and beverage",
+                        "entertainment",
+                        "pop culture brands"
+                    ],
+                    "brand_personality": [
+                        "populist",
+                        "fun",
+                        "accessible",
+                        "bold",
+                        "commercial-ironic"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "halftone dots scale up on scroll",
+                        "bold colour fields flood in"
+                    ],
+                    "transitions": ["Roy Lichtenstein dot wipe"],
+                    "hover": [
+                        "dot pattern appears on hover",
+                        "bold outline draws"
+                    ],
+                    "avoid": ["subtle refined motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "Ben-Day dots",
+                        "speech bubble lettering",
+                        "primary bold caps",
+                        "Warhol silk-screen feel"
+                    ],
+                    "avoid": ["subtle refined type"]
+                },
+                "palette_tendency": "primary yellow, red, blue, cyan, black outline — comic book palette",
+                "intensity": "loud, populist, graphic, immediately readable",
+                "tags": ["pop art", "flat", "bold", "consumer", "graphic"]
+            },
+            {
+                "style": "Dadaist Chaos",
+                "best_for": {
+                    "industries": [
+                        "experimental art",
+                        "provocative fashion",
+                        "subversive media"
+                    ],
+                    "brand_personality": [
+                        "anti-sense",
+                        "provocative",
+                        "collage-brained",
+                        "anti-establishment"
+                    ],
+                    "avoid_for": ["any brand needing clear communication"]
+                },
+                "motion": {
+                    "scroll": [
+                        "elements randomise position on each scroll",
+                        "nothing is anchored"
+                    ],
+                    "transitions": ["anti-transition — random appearance"],
+                    "hover": ["chaos increases on hover"],
+                    "avoid": [
+                        "organised predictable motion — that defeats the point"
+                    ]
+                },
+                "typography": {
+                    "feel": [
+                        "cut-up ransom note aesthetic",
+                        "mixed typefaces at random sizes",
+                        "readability optional"
+                    ],
+                    "avoid": ["hierarchy", "consistency"]
+                },
+                "palette_tendency": "no rule — whatever is most unexpected",
+                "intensity": "maximum chaos, anti-rational, deliberately broken",
+                "tags": [
+                    "dada",
+                    "chaos",
+                    "anti-design",
+                    "collage",
+                    "subversive"
+                ]
+            },
+            {
+                "style": "Futurist Motion",
+                "best_for": {
+                    "industries": [
+                        "sport brands",
+                        "automotive",
+                        "speed-adjacent brands",
+                        "tech"
+                    ],
+                    "brand_personality": [
+                        "dynamic",
+                        "speed-obsessed",
+                        "forward",
+                        "kinetic"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "motion lines accelerate on scroll",
+                        "elements streak past"
+                    ],
+                    "transitions": ["speed blur transition", "streak wipe"],
+                    "hover": ["motion trail follows cursor"],
+                    "avoid": ["static or slow motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "oblique italic suggesting speed",
+                        "motion lines through text",
+                        "condensed bold"
+                    ],
+                    "avoid": ["upright static type"]
+                },
+                "palette_tendency": "black, white, speed silver — motion is the palette",
+                "intensity": "kinetic, speed-first, always moving",
+                "tags": ["futurism", "speed", "motion", "kinetic", "dynamic"]
+            },
+            {
+                "style": "Suprematist",
+                "best_for": {
+                    "industries": [
+                        "art institutions",
+                        "high-end architecture",
+                        "contemporary fashion",
+                        "design education"
+                    ],
+                    "brand_personality": [
+                        "pure",
+                        "absolute",
+                        "non-objective",
+                        "radical-minimal"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "pure geometric forms orbit and translate on scroll"
+                    ],
+                    "transitions": ["shape floats across screen with purpose"],
+                    "hover": ["shape scale shifts"],
+                    "avoid": ["representational imagery", "decorative motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "geometric sans as pure form",
+                        "type as shape not language",
+                        "Malevich-influenced placement"
+                    ],
+                    "avoid": ["ornamental type", "serif flourish"]
+                },
+                "palette_tendency": "black, red, white — Suprematist constraint. Occasionally pure primary.",
+                "intensity": "pure, non-objective, absolute",
+                "tags": [
+                    "suprematism",
+                    "geometric",
+                    "pure",
+                    "abstract",
+                    "Malevich"
+                ]
+            },
+            {
+                "style": "Fluxus",
+                "best_for": {
+                    "industries": [
+                        "experimental art",
+                        "performance spaces",
+                        "avant-garde publishing"
+                    ],
+                    "brand_personality": [
+                        "process-over-product",
+                        "anti-precious",
+                        "participatory",
+                        "instructional"
+                    ],
+                    "avoid_for": ["commercial consumer brands"]
+                },
+                "motion": {
+                    "scroll": [
+                        "instructions appear on scroll — text as the event"
+                    ],
+                    "transitions": ["intentional non-transition"],
+                    "hover": [
+                        "instruction changes on hover — event score logic"
+                    ],
+                    "avoid": ["visual spectacle"]
+                },
+                "typography": {
+                    "feel": [
+                        "plain instructions",
+                        "typewriter or plain text",
+                        "text IS the art"
+                    ],
+                    "avoid": ["visual decoration around the instruction"]
+                },
+                "palette_tendency": "plain — the concept is the aesthetic",
+                "intensity": "anti-visual, instruction-based, concept-first",
+                "tags": [
+                    "fluxus",
+                    "conceptual",
+                    "instruction",
+                    "anti-art",
+                    "process"
+                ]
+            },
+            {
+                "style": "Bauhaus in Motion",
+                "best_for": {
+                    "industries": [
+                        "design institutions",
+                        "architecture",
+                        "product design brands"
+                    ],
+                    "brand_personality": [
+                        "functional",
+                        "principled",
+                        "animated-systematic",
+                        "educational"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "Bauhaus geometric forms assemble into composition on scroll"
+                    ],
+                    "transitions": ["primary shapes build the transition"],
+                    "hover": [
+                        "geometric transformation — circle to square to triangle"
+                    ],
+                    "avoid": ["organic curves in motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "Bauhaus geometric sans in motion",
+                        "letterforms as animated geometric shapes"
+                    ],
+                    "avoid": ["serif", "organic type"]
+                },
+                "palette_tendency": "red, yellow, blue, black — Bauhaus primary only, animated",
+                "intensity": "principled motion, systematic, geometry in time",
+                "tags": [
+                    "bauhaus",
+                    "motion",
+                    "geometric",
+                    "systematic",
+                    "functional"
+                ]
+            },
+            {
+                "style": "Italian Rationalism",
+                "best_for": {
+                    "industries": [
+                        "Italian luxury brands",
+                        "architecture",
+                        "furniture",
+                        "classic automotive"
+                    ],
+                    "brand_personality": [
+                        "rational-beautiful",
+                        "disciplined",
+                        "classical-modern",
+                        "confident"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "architectural reveals — facades drawing in",
+                        "horizontal slide compositions"
+                    ],
+                    "transitions": ["clean architectural wipe"],
+                    "hover": ["structural element highlights"],
+                    "avoid": ["expressionist or chaotic motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "strong axis, Italian modernist serifs",
+                        "Bodoni-influenced high contrast",
+                        "disciplined grid adherence"
+                    ],
+                    "avoid": ["casual or chaotic type"]
+                },
+                "palette_tendency": "black, white, travertine, warm marble grey — architectural materials",
+                "intensity": "disciplined, architecturally rational, quietly imposing",
+                "tags": [
+                    "rationalism",
+                    "Italian",
+                    "architecture",
+                    "classical-modern",
+                    "disciplined"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Contemporary & Lifestyle",
+        "styles": [
+            {
+                "style": "Organic Soft",
+                "best_for": {
+                    "industries": [
+                        "wellness",
+                        "skincare",
+                        "yoga",
+                        "organic food",
+                        "sustainable brands"
+                    ],
+                    "brand_personality": [
+                        "gentle",
+                        "natural",
+                        "inclusive",
+                        "calming",
+                        "earth-conscious"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "elements drift in like floating leaves",
+                        "slow blob morphing in background"
+                    ],
+                    "transitions": ["long liquid dissolve"],
+                    "hover": ["soft bloom glow", "slight scale with ease"],
+                    "avoid": ["hard snaps", "mechanical motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "organic humanist sans",
+                        "light weights",
+                        "generous line height",
+                        "DM Sans or similar"
+                    ],
+                    "avoid": ["geometric cold precision", "aggressive display"]
+                },
+                "palette_tendency": "warm sage, terracotta, oat, dusty rose, clay — earth tones",
+                "intensity": "gentle, warm, breathing",
+                "tags": ["organic", "wellness", "soft", "natural", "calm"]
+            },
+            {
+                "style": "Earthy Neutral",
+                "best_for": {
+                    "industries": [
+                        "sustainable fashion",
+                        "homewares",
+                        "natural beauty",
+                        "architecture",
+                        "real estate"
+                    ],
+                    "brand_personality": [
+                        "grounded",
+                        "considered",
+                        "natural",
+                        "unpretentious luxury"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "slow fade-up reveals",
+                        "subtle parallax on texture backgrounds"
+                    ],
+                    "transitions": ["slow cross-dissolve"],
+                    "hover": ["warm tone shift", "subtle shadow depth"],
+                    "avoid": ["bright colour floods", "fast energetic motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "humanist serif for warmth",
+                        "medium weights",
+                        "generous leading"
+                    ],
+                    "avoid": ["cold geometric", "thin luxury that reads cold"]
+                },
+                "palette_tendency": "sand, stone, warm white, raw linen, olive, aged copper",
+                "intensity": "grounded, warm, slow",
+                "tags": ["neutral", "earthy", "sustainable", "warm", "natural"]
+            },
+            {
+                "style": "Quiet Luxury",
+                "best_for": {
+                    "industries": [
+                        "luxury fashion",
+                        "fine fragrance",
+                        "high-end real estate",
+                        "premium financial"
+                    ],
+                    "brand_personality": [
+                        "understated",
+                        "exclusive",
+                        "confident without logos",
+                        "discerning"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "hairline rules draw across screen",
+                        "type reveals letter by letter slowly"
+                    ],
+                    "transitions": ["long opacity dissolve — nothing hurried"],
+                    "hover": [
+                        "gold underline draws",
+                        "barely perceptible scale"
+                    ],
+                    "avoid": ["anything loud or attention-seeking"]
+                },
+                "typography": {
+                    "feel": [
+                        "Cormorant Garamond or similar high-contrast serif",
+                        "extreme letter-spacing on caps",
+                        "italic for warmth"
+                    ],
+                    "avoid": [
+                        "sans dominance",
+                        "heavy weights",
+                        "display decoration"
+                    ]
+                },
+                "palette_tendency": "ivory, parchment, warm caramel, camel, gold — no cold colours",
+                "intensity": "whisper-quiet, confident in its restraint",
+                "tags": ["luxury", "quiet", "restrained", "fashion", "serif"]
+            },
+            {
+                "style": "Mono Ink",
+                "best_for": {
+                    "industries": [
+                        "independent publishing",
+                        "poetry",
+                        "art studios",
+                        "personal portfolios"
+                    ],
+                    "brand_personality": [
+                        "singular",
+                        "focused",
+                        "ink-on-paper honest",
+                        "literary"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "ink strokes draw on scroll",
+                        "text fades in like ink drying"
+                    ],
+                    "transitions": ["ink wash dissolve"],
+                    "hover": ["ink weight increases on hover"],
+                    "avoid": ["colour", "gloss", "digital polish"]
+                },
+                "typography": {
+                    "feel": [
+                        "ink-weighted serif or brushed display",
+                        "imperfect stroke simulation"
+                    ],
+                    "avoid": ["digital perfection", "colour type treatments"]
+                },
+                "palette_tendency": "black ink on white — absolutely nothing else",
+                "intensity": "singular, absolute, ink-only",
+                "tags": ["mono", "ink", "minimal", "literary", "black-white"]
+            },
+            {
+                "style": "Japanese Wabi-Sabi",
+                "best_for": {
+                    "industries": [
+                        "ceramics",
+                        "tea",
+                        "zen wellness",
+                        "Japanese-inspired restaurants",
+                        "meditation apps"
+                    ],
+                    "brand_personality": [
+                        "imperfect",
+                        "transient",
+                        "quietly beautiful",
+                        "considered"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "elements appear incompletely — suggestion not completion"
+                    ],
+                    "transitions": [
+                        "slow dissolve with grain",
+                        "image fades like memory"
+                    ],
+                    "hover": ["barely perceptible response"],
+                    "avoid": ["completion", "perfection", "digital precision"]
+                },
+                "typography": {
+                    "feel": [
+                        "brush-influenced with variation",
+                        "imperfect stroke weight",
+                        "sparse placement"
+                    ],
+                    "avoid": ["digital optical perfection"]
+                },
+                "palette_tendency": "rust, ash, stone grey, clay, charcoal, aged white",
+                "intensity": "incomplete, imperfect, transient",
+                "tags": ["wabi-sabi", "Japanese", "imperfect", "zen", "quiet"]
+            },
+            {
+                "style": "Nordic Cold Minimal",
+                "best_for": {
+                    "industries": [
+                        "Scandinavian design",
+                        "architecture",
+                        "premium skincare",
+                        "furniture",
+                        "luxury goods"
+                    ],
+                    "brand_personality": [
+                        "restrained",
+                        "cold-premium",
+                        "considered",
+                        "functional beauty"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "slow staggered fade-up on all elements",
+                        "hairline rules extend on scroll"
+                    ],
+                    "transitions": ["long opacity only — nothing spatial"],
+                    "hover": [
+                        "letter-spacing opens slightly",
+                        "underline draws slowly"
+                    ],
+                    "avoid": [
+                        "bouncy physics",
+                        "warm organic motion",
+                        "fast anything"
+                    ]
+                },
+                "typography": {
+                    "feel": [
+                        "ultra-light Josefin Sans or similar",
+                        "extreme letter-spacing",
+                        "mixed serif italic for warmth"
+                    ],
+                    "avoid": ["heavy weights", "decorative display"]
+                },
+                "palette_tendency": "fog white, ice blue, frost, slate, deep fjord — cold tonal range",
+                "intensity": "cold, restrained, architectural",
+                "tags": [
+                    "nordic",
+                    "minimal",
+                    "cold",
+                    "scandinavian",
+                    "restrained"
+                ]
+            },
+            {
+                "style": "Negative Space",
+                "best_for": {
+                    "industries": [
+                        "luxury",
+                        "architecture",
+                        "high-end tech",
+                        "galleries",
+                        "premium consulting"
+                    ],
+                    "brand_personality": [
+                        "confident enough to say almost nothing",
+                        "premium",
+                        "selective"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "single element exists in vast white — moves slightly on scroll"
+                    ],
+                    "transitions": ["element disappears. white. new element."],
+                    "hover": ["element scale hint only"],
+                    "avoid": ["filling the space"]
+                },
+                "typography": {
+                    "feel": [
+                        "one line. much space. a serif or ultra-light sans."
+                    ],
+                    "avoid": ["text density", "multiple elements competing"]
+                },
+                "palette_tendency": "white. off-white. one element. that is all.",
+                "intensity": "total restraint — the absence is the design",
+                "tags": [
+                    "negative space",
+                    "minimal",
+                    "luxury",
+                    "white",
+                    "restrained"
+                ]
+            },
+            {
+                "style": "Ghost White Editorial",
+                "best_for": {
+                    "industries": [
+                        "fashion editorial",
+                        "luxury beauty",
+                        "art photography",
+                        "high-fashion publishing"
+                    ],
+                    "brand_personality": [
+                        "ethereal",
+                        "cool",
+                        "photographic",
+                        "fashion-intelligence"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "images ghostly fade in at near-zero opacity",
+                        "white bleeds across on scroll"
+                    ],
+                    "transitions": ["overexposure white-out"],
+                    "hover": ["image materialises on hover from ghost"],
+                    "avoid": ["saturated colour", "dark heavy motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "thin light serif or sans barely visible against white",
+                        "type as ghost element"
+                    ],
+                    "avoid": ["heavy ink type", "dark on light contrast"]
+                },
+                "palette_tendency": "white, more white, overexposed near-white, barely visible elements",
+                "intensity": "ethereal, barely-there, overexposed",
+                "tags": [
+                    "white",
+                    "editorial",
+                    "fashion",
+                    "ethereal",
+                    "overexposed"
+                ]
+            },
+            {
+                "style": "Dark Academia",
+                "best_for": {
+                    "industries": [
+                        "education",
+                        "publishing",
+                        "literary apps",
+                        "wine",
+                        "heritage institutions"
+                    ],
+                    "brand_personality": [
+                        "intellectual",
+                        "bookish",
+                        "serious",
+                        "romantic about knowledge"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "pages turn slowly on scroll",
+                        "candlelight flicker on backgrounds"
+                    ],
+                    "transitions": [
+                        "library card catalogue slide",
+                        "vellum overlay dissolve"
+                    ],
+                    "hover": [
+                        "parchment warm on hover",
+                        "book spine highlights"
+                    ],
+                    "avoid": ["fast digital motion", "neon or bright"]
+                },
+                "typography": {
+                    "feel": [
+                        "classical high-contrast serif",
+                        "Garamond, Caslon, or Baskerville",
+                        "drop caps",
+                        "footnote-style secondary text"
+                    ],
+                    "avoid": ["modern sans", "tech-adjacent fonts"]
+                },
+                "palette_tendency": "dark wood, aged paper, hunter green, oxblood, candlelight gold, ink black",
+                "intensity": "bookish, warm-dark, romantic-intellectual",
+                "tags": [
+                    "dark academia",
+                    "literary",
+                    "intellectual",
+                    "classic",
+                    "heritage"
+                ]
+            },
+            {
+                "style": "Cottagecore",
+                "best_for": {
+                    "industries": [
+                        "artisan food",
+                        "florals",
+                        "sustainable living",
+                        "slow fashion",
+                        "homewares"
+                    ],
+                    "brand_personality": [
+                        "gentle",
+                        "nostalgic",
+                        "handmade",
+                        "pastoral",
+                        "anti-hustle"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "petals drift down on scroll",
+                        "soft bob of floral elements"
+                    ],
+                    "transitions": ["watercolour bloom transition"],
+                    "hover": ["flower opens on hover", "soft warm glow"],
+                    "avoid": ["corporate precision", "tech-forward motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "hand-lettered or calligraphic display",
+                        "friendly serif body",
+                        "flourished capitals"
+                    ],
+                    "avoid": ["sans-serif dominance", "cold precision fonts"]
+                },
+                "palette_tendency": "dusty rose, sage green, butter yellow, lavender, cream, floral naturals",
+                "intensity": "soft, pastoral, slow, handmade",
+                "tags": [
+                    "cottagecore",
+                    "floral",
+                    "pastoral",
+                    "handmade",
+                    "gentle"
+                ]
+            },
+            {
+                "style": "Old Money",
+                "best_for": {
+                    "industries": [
+                        "private banking",
+                        "country clubs",
+                        "heritage fashion",
+                        "boarding schools",
+                        "estates"
+                    ],
+                    "brand_personality": [
+                        "established",
+                        "never needs to advertise",
+                        "traditional",
+                        "understatedly wealthy"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "barely any motion — things were here before you arrived"
+                    ],
+                    "transitions": ["slow dignified fade"],
+                    "hover": ["crest or monogram appears", "gold rule draws"],
+                    "avoid": [
+                        "trend-chasing motion",
+                        "anything that would seem eager"
+                    ]
+                },
+                "typography": {
+                    "feel": [
+                        "traditional serif with gravitas",
+                        "Trajan, Times, or Garamond",
+                        "engraved feeling",
+                        "wide tracking on caps"
+                    ],
+                    "avoid": ["modern geometric", "display novelty fonts"]
+                },
+                "palette_tendency": "navy, forest green, burgundy, cream, camel, gold — club colours",
+                "intensity": "established, dignified, requires no effort",
+                "tags": [
+                    "old money",
+                    "heritage",
+                    "traditional",
+                    "establishment",
+                    "luxury"
+                ]
+            },
+            {
+                "style": "Coastal Mediterranean",
+                "best_for": {
+                    "industries": [
+                        "hospitality",
+                        "travel",
+                        "food and beverage",
+                        "swimwear",
+                        "holiday brands"
+                    ],
+                    "brand_personality": [
+                        "warm",
+                        "relaxed",
+                        "sensory",
+                        "sun-soaked",
+                        "unhurried"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "parallax on water/sky",
+                        "elements sway like in a sea breeze"
+                    ],
+                    "transitions": [
+                        "warm light sweep",
+                        "sun-bleached dissolve"
+                    ],
+                    "hover": ["warm colour shift", "slight drift"],
+                    "avoid": ["cold clinical motion", "dark heavy transitions"]
+                },
+                "typography": {
+                    "feel": [
+                        "sun-bleached humanist sans or editorial serif",
+                        "slightly loose tracking",
+                        "warm and unhurried"
+                    ],
+                    "avoid": ["cold Scandinavian precision", "industrial sans"]
+                },
+                "palette_tendency": "ceramic blue, terracotta, sun yellow, sea foam white, olive, warm sand",
+                "intensity": "warm, sensory, unhurried",
+                "tags": [
+                    "mediterranean",
+                    "coastal",
+                    "warm",
+                    "hospitality",
+                    "summer"
+                ]
+            },
+            {
+                "style": "VSCO Indie",
+                "best_for": {
+                    "industries": [
+                        "photography",
+                        "lifestyle",
+                        "independent fashion",
+                        "music",
+                        "youth brands"
+                    ],
+                    "brand_personality": [
+                        "effortless",
+                        "photo-first",
+                        "authentic-feeling",
+                        "subtle aesthetic"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "film photo grid parallax",
+                        "slow image fade-in"
+                    ],
+                    "transitions": ["camera shutter", "soft film dissolve"],
+                    "hover": ["filter intensifies on hover", "slight vignette"],
+                    "avoid": ["aggressive digital motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "minimal — the photo is everything",
+                        "clean sans in lower case",
+                        "type retreats"
+                    ],
+                    "avoid": ["type competing with photography"]
+                },
+                "palette_tendency": "film-edited — faded greens, lifted shadows, warm highlights, muted saturation",
+                "intensity": "effortless, photo-first, quietly curated",
+                "tags": ["VSCO", "film", "indie", "photography", "lifestyle"]
+            },
+            {
+                "style": "Maximalist Eclectic",
+                "best_for": {
+                    "industries": [
+                        "interior design",
+                        "vintage fashion",
+                        "eclectic retail",
+                        "festival brands"
+                    ],
+                    "brand_personality": [
+                        "more is more",
+                        "collected over time",
+                        "joyfully chaotic",
+                        "personality-rich"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "every element has its own independent animation",
+                        "layered parallax chaos"
+                    ],
+                    "transitions": [
+                        "visual abundance continues — no breathing room"
+                    ],
+                    "hover": ["element responds with delight"],
+                    "avoid": ["negative space", "restraint"]
+                },
+                "typography": {
+                    "feel": [
+                        "multiple typefaces — each chosen for its own reason",
+                        "type competes happily"
+                    ],
+                    "avoid": ["single-font consistency"]
+                },
+                "palette_tendency": "all of them — deliberately and joyfully",
+                "intensity": "maximum, joyful, abundant",
+                "tags": [
+                    "maximalist",
+                    "eclectic",
+                    "abundance",
+                    "joyful",
+                    "collected"
+                ]
+            },
+            {
+                "style": "Goblincore",
+                "best_for": {
+                    "industries": [
+                        "indie games",
+                        "fantasy brands",
+                        "alternative fashion",
+                        "foraging/herbalism"
+                    ],
+                    "brand_personality": [
+                        "proudly weird",
+                        "nature-in-shadow",
+                        "collector",
+                        "anti-pretty"
+                    ],
+                    "avoid_for": ["corporate mainstream brands"]
+                },
+                "motion": {
+                    "scroll": ["things crawl and scuttle into view"],
+                    "transitions": [
+                        "moss grows across screen",
+                        "mushroom spore burst"
+                    ],
+                    "hover": ["creature peeks from corner"],
+                    "avoid": [
+                        "aspirational luxury motion",
+                        "clean minimal animation"
+                    ]
+                },
+                "typography": {
+                    "feel": [
+                        "hand-carved or mossy display",
+                        "irregular baseline",
+                        "nature-worn letterforms"
+                    ],
+                    "avoid": ["clean modern sans", "luxury refinement"]
+                },
+                "palette_tendency": "moss green, mud brown, mushroom grey, dark gold, shadow black",
+                "intensity": "delightfully weird, dark-earthy, proudly niche",
+                "tags": ["goblincore", "weird", "nature-dark", "indie", "niche"]
+            },
+            {
+                "style": "Quiet Posh",
+                "best_for": {
+                    "industries": [
+                        "British luxury",
+                        "premium services",
+                        "private members clubs",
+                        "heritage brands"
+                    ],
+                    "brand_personality": [
+                        "understated British",
+                        "quality assumed",
+                        "ironic about its own privilege"
+                    ]
+                },
+                "motion": {
+                    "scroll": ["nothing much happens — it was always there"],
+                    "transitions": ["graceful fade"],
+                    "hover": ["subtle acknowledgement"],
+                    "avoid": ["trying too hard"]
+                },
+                "typography": {
+                    "feel": [
+                        "quietly confident classic serif",
+                        "not trying, just being",
+                        "Caslon or Baskerville naturally"
+                    ],
+                    "avoid": [
+                        "display novelty",
+                        "anything that announces itself"
+                    ]
+                },
+                "palette_tendency": "faded regency colours — eau de nil, faded rose, library leather, cream",
+                "intensity": "understated, effortless, quietly superior",
+                "tags": [
+                    "British",
+                    "posh",
+                    "understated",
+                    "heritage",
+                    "classic"
+                ]
+            },
+            {
+                "style": "Dopamine Dressing",
+                "best_for": {
+                    "industries": [
+                        "colour-forward fashion",
+                        "joyful consumer brands",
+                        "youth culture",
+                        "activewear"
+                    ],
+                    "brand_personality": [
+                        "unapologetically colourful",
+                        "mood-boosting",
+                        "anti-neutral",
+                        "joyful"
+                    ]
+                },
+                "motion": {
+                    "scroll": ["colour waves wash through on scroll"],
+                    "transitions": ["colour flood wipe — one joy to the next"],
+                    "hover": [
+                        "colour intensifies",
+                        "element vibrates with joy"
+                    ],
+                    "avoid": [
+                        "muted neutrals in motion",
+                        "slow sad transitions"
+                    ]
+                },
+                "typography": {
+                    "feel": [
+                        "bold friendly rounded sans",
+                        "type in the brightest colours available"
+                    ],
+                    "avoid": ["neutral quiet type"]
+                },
+                "palette_tendency": "cobalt, cerise, saffron, lime, tangerine — maximum saturation always",
+                "intensity": "maximum joy, colour-first, anti-neutral",
+                "tags": ["colour", "joyful", "dopamine", "fashion", "bold"]
+            }
+        ]
+    },
+    {
+        "category": "Print & Editorial",
+        "styles": [
+            {
+                "style": "Swiss Grid Magazine",
+                "best_for": {
+                    "industries": [
+                        "design magazines",
+                        "architecture journals",
+                        "brand identity studios",
+                        "cultural institutions"
+                    ],
+                    "brand_personality": [
+                        "rigorous",
+                        "intellectual",
+                        "craft-serious",
+                        "Helvetica-honest"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "grid lines visibly structure the reveal",
+                        "columns appear independently on scroll"
+                    ],
+                    "transitions": [
+                        "horizontal grid wipe",
+                        "column transition"
+                    ],
+                    "hover": ["grid overlay appears", "column highlight"],
+                    "avoid": ["expressive or chaotic motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "Helvetica Neue or Aktiv Grotesk",
+                        "strict grid adherence",
+                        "tabular layout",
+                        "no ornament"
+                    ],
+                    "avoid": ["decorative type", "anything off-grid"]
+                },
+                "palette_tendency": "black, white, one red — Muller-Brockmann constraint",
+                "intensity": "rigorously grid, intellectually honest",
+                "tags": ["swiss", "grid", "helvetica", "magazine", "rigorous"]
+            },
+            {
+                "style": "Zine DIY",
+                "best_for": {
+                    "industries": [
+                        "indie publishing",
+                        "music",
+                        "activism",
+                        "queer culture",
+                        "art school"
+                    ],
+                    "brand_personality": [
+                        "self-published",
+                        "urgent",
+                        "community-made",
+                        "rough-edged",
+                        "authentic"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "photocopied feel judders on scroll",
+                        "elements paste in like cut-and-stick"
+                    ],
+                    "transitions": ["photocopy smear wipe"],
+                    "hover": ["paper shifts under finger"],
+                    "avoid": ["polished digital production"]
+                },
+                "typography": {
+                    "feel": [
+                        "mixed found type",
+                        "Letraset dry transfer",
+                        "photocopied degradation",
+                        "ransom note assemblage"
+                    ],
+                    "avoid": ["designed font systems"]
+                },
+                "palette_tendency": "black ink, photocopier grey, newsprint, spot risograph colour",
+                "intensity": "urgently made, community-first, rough but intentional",
+                "tags": ["zine", "DIY", "indie", "activist", "print"]
+            },
+            {
+                "style": "Fashion Editorial",
+                "best_for": {
+                    "industries": [
+                        "luxury fashion",
+                        "Vogue-tier publishing",
+                        "beauty",
+                        "style media"
+                    ],
+                    "brand_personality": [
+                        "aspirational",
+                        "directorial",
+                        "image-obsessed",
+                        "cultural authority"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "full-bleed images consume scroll",
+                        "editorial pace — slow and deliberate"
+                    ],
+                    "transitions": [
+                        "full-bleed image flip",
+                        "slow vertical peel"
+                    ],
+                    "hover": ["image expands to full bleed", "caption appears"],
+                    "avoid": ["data or information-style motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "Vogue-masthead Didot or Bodoni",
+                        "high-contrast serif",
+                        "fashion editorial hierarchy",
+                        "credit-line small type"
+                    ],
+                    "avoid": ["sans dominance", "utility type"]
+                },
+                "palette_tendency": "defined per shoot — type and layout palette is black and cream",
+                "intensity": "image-first, directorial, aspirational",
+                "tags": [
+                    "fashion",
+                    "editorial",
+                    "luxury",
+                    "image-first",
+                    "vogue"
+                ]
+            },
+            {
+                "style": "Catalog Minimal",
+                "best_for": {
+                    "industries": [
+                        "design-led e-commerce",
+                        "furniture",
+                        "homewares",
+                        "fashion basics"
+                    ],
+                    "brand_personality": [
+                        "product-first",
+                        "honest",
+                        "functional aesthetic",
+                        "anti-lifestyle"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "product reveals cleanly on scroll",
+                        "no theatrical reveal"
+                    ],
+                    "transitions": ["simple cross dissolve"],
+                    "hover": ["alternate view appears", "zoom to detail"],
+                    "avoid": [
+                        "lifestyle storytelling motion",
+                        "branded emotion"
+                    ]
+                },
+                "typography": {
+                    "feel": [
+                        "functional sans",
+                        "product name, material, price — nothing else",
+                        "IKEA catalog clarity"
+                    ],
+                    "avoid": ["emotional storytelling fonts"]
+                },
+                "palette_tendency": "white background, natural product colours — nothing that competes with product",
+                "intensity": "product-absolute, honest, zero lifestyle",
+                "tags": [
+                    "catalog",
+                    "product",
+                    "minimal",
+                    "honest",
+                    "functional"
+                ]
+            },
+            {
+                "style": "Academic Typeset",
+                "best_for": {
+                    "industries": [
+                        "research platforms",
+                        "education",
+                        "publishing",
+                        "think tanks",
+                        "journals"
+                    ],
+                    "brand_personality": [
+                        "rigorous",
+                        "credible",
+                        "evidence-based",
+                        "long-form"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "text reveals as if being typeset on scroll",
+                        "marginal notes appear"
+                    ],
+                    "transitions": ["page turn", "footnote expand"],
+                    "hover": ["footnote popup", "citation expand"],
+                    "avoid": ["decorative motion that undermines credibility"]
+                },
+                "typography": {
+                    "feel": [
+                        "LaTeX or Knuth-influenced layout",
+                        "Computer Modern or Palatino",
+                        "justified columns",
+                        "footnotes and marginalia"
+                    ],
+                    "avoid": ["display type", "fashion-editorial treatments"]
+                },
+                "palette_tendency": "cream paper, ink black, perhaps one highlight colour for notes",
+                "intensity": "credibly dense, long-form, evidence-first",
+                "tags": [
+                    "academic",
+                    "typeset",
+                    "research",
+                    "credible",
+                    "long-form"
+                ]
+            },
+            {
+                "style": "Broadsheet Newspaper",
+                "best_for": {
+                    "industries": [
+                        "news media",
+                        "journalism platforms",
+                        "political brands",
+                        "serious publishing"
+                    ],
+                    "brand_personality": [
+                        "authoritative",
+                        "credible",
+                        "civic",
+                        "journalistic tradition"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "headlines drop in on scroll with ink weight",
+                        "rule lines draw across"
+                    ],
+                    "transitions": ["broadsheet fold", "press print reveal"],
+                    "hover": ["byline highlights", "ink underline draws"],
+                    "avoid": ["tabloid sensationalism in motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "traditional newspaper serifs — Guardian, NYT quality",
+                        "tight justified columns",
+                        "strong editorial hierarchy"
+                    ],
+                    "avoid": ["sans-first layouts", "thin delicate type"]
+                },
+                "palette_tendency": "newsprint, ink black, section colour coding — one colour per section",
+                "intensity": "authoritative, civic, densely informative",
+                "tags": [
+                    "newspaper",
+                    "broadsheet",
+                    "journalism",
+                    "authoritative",
+                    "civic"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Cultural & Regional",
+        "styles": [
+            {
+                "style": "Japanese Kawaii",
+                "best_for": {
+                    "industries": [
+                        "children's brands",
+                        "beauty",
+                        "fashion",
+                        "gaming",
+                        "food and beverage"
+                    ],
+                    "brand_personality": [
+                        "adorable",
+                        "joyful",
+                        "soft-power",
+                        "collectible",
+                        "character-driven"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "character bounces on scroll",
+                        "sparkle and star elements scatter"
+                    ],
+                    "transitions": [
+                        "kawaii wink wipe",
+                        "bubble float between sections"
+                    ],
+                    "hover": [
+                        "character reacts with emotion",
+                        "heart burst on hover"
+                    ],
+                    "avoid": ["serious corporate motion", "harsh transitions"]
+                },
+                "typography": {
+                    "feel": [
+                        "rounded bubbly display",
+                        "hiragana-influenced curves",
+                        "friendly and approachable"
+                    ],
+                    "avoid": ["cold geometric", "serious serif"]
+                },
+                "palette_tendency": "pastel pink, lilac, sky blue, cream, character red — Sanrio palette",
+                "intensity": "maximum cute, soft, character-led",
+                "tags": ["kawaii", "Japanese", "cute", "character", "soft"]
+            },
+            {
+                "style": "K-Design Bold",
+                "best_for": {
+                    "industries": [
+                        "K-beauty",
+                        "K-pop merchandise",
+                        "Korean fashion",
+                        "entertainment",
+                        "youth tech"
+                    ],
+                    "brand_personality": [
+                        "trend-first",
+                        "bold",
+                        "saturated",
+                        "idol-culture",
+                        "aspirational youth"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "high energy reveal on scroll",
+                        "bold type stamps in"
+                    ],
+                    "transitions": ["K-drama cut speed", "idol reveal flash"],
+                    "hover": [
+                        "saturated colour intensify",
+                        "star burst on hover"
+                    ],
+                    "avoid": ["quiet restrained motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "bold Hangul-influenced geometric sans",
+                        "high contrast weight mixing",
+                        "clean modern display"
+                    ],
+                    "avoid": ["traditional serif", "Western-only font choices"]
+                },
+                "palette_tendency": "saturated pinks, bold reds, clean white, black — K-beauty palette",
+                "intensity": "trend-saturated, bold, culturally current",
+                "tags": ["Korean", "K-pop", "bold", "trend", "youth"]
+            },
+            {
+                "style": "Brazilian Tropical",
+                "best_for": {
+                    "industries": [
+                        "travel",
+                        "food and beverage",
+                        "music",
+                        "fashion",
+                        "festival brands"
+                    ],
+                    "brand_personality": [
+                        "exuberant",
+                        "warm",
+                        "sensory",
+                        "cultural pride",
+                        "joyful"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "tropical foliage sways on scroll",
+                        "warm colour cascade on entry"
+                    ],
+                    "transitions": ["carnival colour burst", "foliage wipe"],
+                    "hover": ["warmth intensifies", "flora blooms on hover"],
+                    "avoid": ["cold clinical motion", "restraint"]
+                },
+                "typography": {
+                    "feel": [
+                        "bold warm display",
+                        "rounded and expressive",
+                        "colour-rich type treatment"
+                    ],
+                    "avoid": ["cold northern European precision"]
+                },
+                "palette_tendency": "tropical green, carnival yellow, cobalt blue, warm terracotta, flamingo pink",
+                "intensity": "exuberant, warm, sensory abundant",
+                "tags": [
+                    "Brazilian",
+                    "tropical",
+                    "warm",
+                    "carnival",
+                    "exuberant"
+                ]
+            },
+            {
+                "style": "Middle Eastern Geometric",
+                "best_for": {
+                    "industries": [
+                        "architecture",
+                        "luxury hospitality",
+                        "fashion",
+                        "cultural institutions",
+                        "tech from the region"
+                    ],
+                    "brand_personality": [
+                        "mathematically beautiful",
+                        "geometric spirituality",
+                        "sophisticated",
+                        "culturally rich"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "geometric pattern tiles in from centre on scroll",
+                        "tessellation builds"
+                    ],
+                    "transitions": [
+                        "Islamic pattern mandala wipe",
+                        "star polygon unfold"
+                    ],
+                    "hover": ["pattern cell highlights", "geometry responds"],
+                    "avoid": ["chaotic non-geometric motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "Arabic calligraphic influence even in Latin type",
+                        "geometric precision",
+                        "gold treatment appropriate"
+                    ],
+                    "avoid": [
+                        "type that ignores the geometric logic of the system"
+                    ]
+                },
+                "palette_tendency": "lapis blue, gold, turquoise, deep crimson, sand — Islamic art palette",
+                "intensity": "mathematically precise, culturally rich, geometrically meditative",
+                "tags": [
+                    "Islamic",
+                    "geometric",
+                    "Middle East",
+                    "pattern",
+                    "cultural"
+                ]
+            },
+            {
+                "style": "Scandinavian Folk",
+                "best_for": {
+                    "industries": [
+                        "artisan food",
+                        "heritage crafts",
+                        "Nordic tourism",
+                        "cultural brands",
+                        "winter products"
+                    ],
+                    "brand_personality": [
+                        "heritage",
+                        "hand-crafted",
+                        "seasonal",
+                        "community-rooted",
+                        "warm in cold"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "folk pattern weaves in on scroll",
+                        "rosemaling elements grow"
+                    ],
+                    "transitions": ["embroidery stitch draw transition"],
+                    "hover": ["pattern element blooms", "folk motif appears"],
+                    "avoid": ["digital tech motion", "slick modern animation"]
+                },
+                "typography": {
+                    "feel": [
+                        "woodblock-influenced serif",
+                        "Scandinavian heritage feel",
+                        "warm and hand-crafted character"
+                    ],
+                    "avoid": [
+                        "cold Helvetica modernism — that's a different Scandinavian story"
+                    ]
+                },
+                "palette_tendency": "Scandinavian folk palette: red, blue, green, white, black — rosemaling colours",
+                "intensity": "warm-heritage, hand-made, seasonally rooted",
+                "tags": [
+                    "Scandinavian",
+                    "folk",
+                    "heritage",
+                    "craft",
+                    "seasonal"
+                ]
+            },
+            {
+                "style": "Afrofuturism",
+                "best_for": {
+                    "industries": [
+                        "music",
+                        "fashion",
+                        "film and entertainment",
+                        "tech with cultural identity",
+                        "art"
+                    ],
+                    "brand_personality": [
+                        "visionary",
+                        "culturally grounded future",
+                        "powerful",
+                        "reclaiming",
+                        "transcendent"
+                    ]
+                },
+                "motion": {
+                    "scroll": [
+                        "cosmic and earth elements coexist in motion",
+                        "ancestral and futuristic simultaneously"
+                    ],
+                    "transitions": [
+                        "starfield to earth surface",
+                        "time-collapse wipe"
+                    ],
+                    "hover": ["cosmic glow on hover", "pattern activates"],
+                    "avoid": ["culturally empty sci-fi motion"]
+                },
+                "typography": {
+                    "feel": [
+                        "custom display that merges African letterform traditions with futurist tech",
+                        "bold and visionary"
+                    ],
+                    "avoid": ["generic sci-fi fonts that carry no cultural DNA"]
+                },
+                "palette_tendency": "deep cosmic black, gold, terracotta, Kente cloth primary colours, electric violet",
+                "intensity": "visionary, culturally powerful, past-future simultaneously",
+                "tags": [
+                    "afrofuturism",
+                    "cultural",
+                    "visionary",
+                    "cosmic",
+                    "powerful"
+                ]
+            }
+        ]
+    }
 ]
