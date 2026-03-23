@@ -1,56 +1,59 @@
-# CodeSphere
+<div align="center">
+  <h1 style="font-family: sans-serif; text-transform: uppercase; letter-spacing: 2px;">CodeSphere</h1>
+  <p style="color: #666; font-size: 1.2em;">Platform for collaborative coding.</p>
+</div>
 
-## Overview
-CodeSphere is a collaborative coding platform interface designed to showcase interactive project spaces. The application emphasizes clarity, responsive layouts, and smooth user flows so teams can explore ideas with minimal friction.
+---
 
-## Key Highlights
-- Intuitive navigation with clearly defined sections for projects, teams, and documentation.
-- Responsive design that adapts fluidly to a range of screen sizes and device orientations.
-- Accessible color palette and typography choices that prioritize readability and contrast.
-- Modular components organized for easy maintenance and iteration.
+<br />
 
-## Getting Started
-1. Clone the repository to your local machine.
-2. Install project dependencies using your preferred JavaScript package manager (example commands below use `npm`).
-   ```bash
-   npm install
-   ```
-3. Launch a local development server.
-   ```bash
-   npm run dev
-   ```
-4. Open the displayed local URL in your browser to explore the interface.
+### ■ OVERVIEW
 
-## Project Structure
-- `src/` – Application source files, including components, styles, and utilities.
-- `public/` – Static assets that are served as-is.
-- `scripts/` – Automation helpers for setup and maintenance tasks.
-- `index.html` – Entry point loaded by the development server and build pipeline.
+CodeSphere emphasizes **clarity**, **responsive layouts**, and **smooth user flows**. Teams can explore ideas with minimal friction.
 
-## Available Scripts
-- `npm run dev` – Starts a local development server for interactive iteration.
-- `npm run build` – Produces an optimized production build in the `dist/` directory.
-- `npm run preview` – Serves the production build locally for verification before deployment.
-- `npm run lint` – Runs the configured lint rules to ensure code quality.
+### ■ HIGHLIGHTS
 
-## Deployment
-1. Ensure the production build completes successfully.
-   ```bash
-   npm run build
-   ```
-2. Deploy the contents of the generated `dist/` directory to your hosting provider of choice.
+- **Intuitive Navigation:** Clear sections for projects, teams, documentation.
+- **Responsive Design:** Fluid adaptation to screen sizes.
+- **Accessible Palette:** Prioritizes readability and contrast.
+- **Modular Components:** Easy iteration.
 
-## Rendering Strategy
-- **Pre-rendering** – Pages are pre-generated at build time so that core views ship as ready-to-serve HTML. This approach improves perceived load speed for first-time visitors and allows search engines to index meaningful markup without executing client-side scripts. When updating content that participates in pre-rendering, rebuild the project to refresh the generated output.
+### ■ START
 
-## SEO Enhancements
-- **Document head management** – The app uses React Helmet to declaratively manage `<title>`, meta descriptions, and other head tags from within components. Each route-specific component sets its own Helmet block to ensure contextually accurate metadata. Keep these Helmet definitions aligned with the visible content and update them alongside UI or copy changes so crawlers receive up-to-date information.
+```bash
+git clone <repository>
+npm install
+npm run dev
+```
 
-## Contributing
-1. Create a new branch for your contribution.
-2. Follow the existing code style and naming conventions.
-3. Include updates to tests or documentation when relevant.
-4. Submit a pull request describing your changes and the reasoning behind them.
+### ■ STRUCTURE
 
-## License
-This project is distributed under the terms specified in the `LICENSE` file. Please review that document for full details.
+`src/` — Source files  
+`public/` — Static assets  
+`scripts/` — Automation  
+`index.html` — Entry point
+
+### ■ SCRIPTS
+
+`npm run dev` : Development Server  
+`npm run build` : Production Build  
+`npm run preview` : Serve Production Build  
+`npm run lint` : Code Quality Check
+
+### ■ RENDERING & SEO
+
+**Pre-rendering** — Pages pre-generated at build time for perceived load speed and search indexing.  
+**SEO Enhancements** — Uses React Helmet for document head management `<title>`, meta descriptions.
+
+### ■ CONTRIBUTE
+
+1. **Branch** — Create a new branch.
+2. **Style** — Follow conventions.
+3. **Docs** — Update tests/documentation.
+4. **PR** — Submit descriptive Pull Request.
+
+---
+
+<div align="center">
+  <p style="font-family: sans-serif; font-size: 0.8em; color: #999;">LICENSE INCLUDED in `LICENSE` file</p>
+</div>

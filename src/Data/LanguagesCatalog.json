@@ -228,7 +228,7 @@
             },
             {
                 "Framework": "FastAPI",
-                "Summary": "A modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.",
+                "Summary": "A modern, fast web framework for building APIs with Python based on standard Python type hints.",
                 "URL": "https://fastapi.tiangolo.com/"
             },
             {
@@ -237,14 +237,214 @@
                 "URL": "https://www.tornadoweb.org/en/stable/"
             },
             {
-                "Framework": "Data Science & Machine Learning",
-                "Summary": "A collection of libraries and frameworks for data analysis, machine learning, and artificial intelligence.",
-                "URL": "https://www.python.org/solutions/scientific/"
+                "Framework": "Starlette",
+                "Summary": "A lightweight ASGI framework and toolkit for building high-performance async web services in Python.",
+                "URL": "https://www.starlette.io/"
             },
             {
-                "Framework": "Scientific Computing & Automation",
-                "Summary": "Tools and libraries for scientific research, automation, and general utility.",
-                "URL": "https://www.python.org/about/apps/"
+                "Framework": "Sanic",
+                "Summary": "A Python web framework and server built for fast HTTP responses with async/await syntax support.",
+                "URL": "https://sanic.dev/"
+            },
+            {
+                "Framework": "Reflex",
+                "Summary": "A pure-Python full-stack web framework for building interactive web apps without JavaScript.",
+                "URL": "https://reflex.dev/"
+            },
+            {
+                "Framework": "aiohttp",
+                "Summary": "An asynchronous HTTP client/server framework for Python built on asyncio for high-concurrency applications.",
+                "URL": "https://docs.aiohttp.org/"
+            },
+            {
+                "Framework": "Django REST Framework",
+                "Summary": "A powerful and flexible toolkit for building Web APIs on top of Django.",
+                "URL": "https://www.django-rest-framework.org/"
+            },
+            {
+                "Framework": "Wagtail",
+                "Summary": "A fast, elegant, open-source CMS framework built on Django, aimed at developers and content editors.",
+                "URL": "https://wagtail.org/"
+            },
+            {
+                "Framework": "django CMS",
+                "Summary": "An open-source enterprise-grade CMS framework built on Django for creating and managing web content.",
+                "URL": "https://www.django-cms.org/"
+            },
+            {
+                "Framework": "Jinja",
+                "Summary": "A fast, expressive, and extensible templating framework for Python used by Flask and many other frameworks.",
+                "URL": "https://jinja.palletsprojects.com/"
+            },
+            {
+                "Framework": "Chalice",
+                "Summary": "An AWS microframework for Python that makes it easy to deploy serverless applications on AWS Lambda.",
+                "URL": "https://aws.github.io/chalice/"
+            },
+            {
+                "Framework": "TensorFlow",
+                "Summary": "An open-source deep learning framework developed by Google for building and training machine learning models.",
+                "URL": "https://www.tensorflow.org/"
+            },
+            {
+                "Framework": "PyTorch",
+                "Summary": "An open-source deep learning framework developed by Meta AI providing flexible tensor computation with GPU acceleration.",
+                "URL": "https://pytorch.org/"
+            },
+            {
+                "Framework": "Keras",
+                "Summary": "A high-level deep learning framework written in Python, running on top of TensorFlow, designed for fast experimentation.",
+                "URL": "https://keras.io/"
+            },
+            {
+                "Framework": "JAX",
+                "Summary": "A Google framework for high-performance numerical computing and ML research with automatic differentiation and GPU/TPU support.",
+                "URL": "https://jax.readthedocs.io/"
+            },
+            {
+                "Framework": "Transformers",
+                "Summary": "Hugging Face's framework providing thousands of pretrained models for NLP, vision, and audio tasks.",
+                "URL": "https://huggingface.co/docs/transformers/"
+            },
+            {
+                "Framework": "Diffusers",
+                "Summary": "Hugging Face's framework for state-of-the-art diffusion models for image, audio, and video generation.",
+                "URL": "https://huggingface.co/docs/diffusers/"
+            },
+            {
+                "Framework": "PyTorch Lightning",
+                "Summary": "A lightweight PyTorch framework for high-performance AI research that removes boilerplate from training loops.",
+                "URL": "https://lightning.ai/"
+            },
+            {
+                "Framework": "Stable Baselines3",
+                "Summary": "A framework with reliable implementations of reinforcement learning algorithms built on PyTorch.",
+                "URL": "https://stable-baselines3.readthedocs.io/"
+            },
+            {
+                "Framework": "LangChain",
+                "Summary": "A framework for building applications powered by large language models through composable chains and agents.",
+                "URL": "https://www.langchain.com/"
+            },
+            {
+                "Framework": "CrewAI",
+                "Summary": "A framework for orchestrating role-playing autonomous AI agents to collaboratively solve complex tasks.",
+                "URL": "https://crewai.com/"
+            },
+            {
+                "Framework": "AutoGen",
+                "Summary": "A Microsoft framework for building multi-agent AI applications that can converse and collaborate to solve tasks.",
+                "URL": "https://microsoft.github.io/autogen/"
+            },
+            {
+                "Framework": "LlamaIndex",
+                "Summary": "A data framework for building LLM-powered applications over custom data sources with retrieval-augmented generation.",
+                "URL": "https://www.llamaindex.ai/"
+            },
+            {
+                "Framework": "DSPy",
+                "Summary": "A framework for algorithmically optimizing LLM prompts and weights to build reliable AI pipelines.",
+                "URL": "https://dspy-docs.vercel.app/"
+            },
+            {
+                "Framework": "Pydantic AI",
+                "Summary": "An agent framework built by the Pydantic team for production-grade generative AI applications in Python.",
+                "URL": "https://ai.pydantic.dev/"
+            },
+            {
+                "Framework": "vLLM",
+                "Summary": "A high-throughput and memory-efficient inference and serving framework for large language models.",
+                "URL": "https://github.com/vllm-project/vllm"
+            },
+            {
+                "Framework": "Apache Airflow",
+                "Summary": "A platform for programmatically authoring, scheduling, and monitoring data workflows and pipelines.",
+                "URL": "https://airflow.apache.org/"
+            },
+            {
+                "Framework": "Prefect",
+                "Summary": "A modern workflow orchestration framework for building, scheduling, and monitoring data pipelines in Python.",
+                "URL": "https://prefect.io/"
+            },
+            {
+                "Framework": "Dagster",
+                "Summary": "A cloud-native data orchestration framework for building, testing, and monitoring data pipelines.",
+                "URL": "https://dagster.io/"
+            },
+            {
+                "Framework": "Luigi",
+                "Summary": "A Spotify-developed Python framework that helps build complex pipelines of batch jobs with dependency management.",
+                "URL": "https://github.com/spotify/luigi"
+            },
+            {
+                "Framework": "Celery",
+                "Summary": "A distributed task queue framework for Python that enables asynchronous processing of work outside the main request.",
+                "URL": "https://docs.celeryq.dev/"
+            },
+            {
+                "Framework": "Ray",
+                "Summary": "A unified framework for scaling AI and Python workloads, from reinforcement learning to distributed computing.",
+                "URL": "https://ray.io/"
+            },
+            {
+                "Framework": "PySpark",
+                "Summary": "The Python framework for Apache Spark, enabling large-scale distributed data processing and analytics.",
+                "URL": "https://spark.apache.org/docs/latest/api/python/"
+            },
+            {
+                "Framework": "Dask",
+                "Summary": "A flexible framework for parallel and distributed computing in Python, scaling from laptops to clusters.",
+                "URL": "https://www.dask.org/"
+            },
+            {
+                "Framework": "Pathway",
+                "Summary": "A data processing framework for building real-time and streaming data pipelines in Python.",
+                "URL": "https://pathway.com/"
+            },
+            {
+                "Framework": "Scrapy",
+                "Summary": "A fast, high-level web crawling and scraping framework for extracting structured data from websites.",
+                "URL": "https://scrapy.org/"
+            },
+            {
+                "Framework": "Robot Framework",
+                "Summary": "A generic open-source automation framework for acceptance testing and robotic process automation (RPA).",
+                "URL": "https://robotframework.org/"
+            },
+            {
+                "Framework": "pytest",
+                "Summary": "A mature, full-featured testing framework for Python that makes it easy to write small and scalable tests.",
+                "URL": "https://docs.pytest.org/"
+            },
+            {
+                "Framework": "Streamlit",
+                "Summary": "An open-source app framework for building and sharing interactive data science and ML web apps in pure Python.",
+                "URL": "https://streamlit.io/"
+            },
+            {
+                "Framework": "Gradio",
+                "Summary": "A framework for building interactive machine learning demos and web apps with just a few lines of Python.",
+                "URL": "https://gradio.app/"
+            },
+            {
+                "Framework": "Kivy",
+                "Summary": "An open-source Python framework for developing multitouch application software with a natural user interface.",
+                "URL": "https://kivy.org/"
+            },
+            {
+                "Framework": "Flet",
+                "Summary": "A framework for building interactive multi-platform apps in Python using Flutter under the hood.",
+                "URL": "https://flet.dev/"
+            },
+            {
+                "Framework": "NiceGUI",
+                "Summary": "A Python-based UI framework for building web interfaces, desktop apps, and robotics front-ends with ease.",
+                "URL": "https://nicegui.io/"
+            },
+            {
+                "Framework": "Hydra",
+                "Summary": "A Facebook Research framework for elegantly configuring complex applications with hierarchical configuration.",
+                "URL": "https://hydra.cc/"
             }
         ]
     },
