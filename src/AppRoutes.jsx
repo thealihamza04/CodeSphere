@@ -18,6 +18,8 @@ import Footer from "./Components/Footer.jsx";
 import DesignStyles from "./Components/DesignStyles";
 import { Toaster } from "react-hot-toast";
 import ThemeToggle from "./Components/ThemeToggle.jsx";
+import ProjectChecklist from "./Components/ProjectChecklist";
+import NotFound from "./Components/NotFound.jsx";
 
 const Layout = () => {
   const location = useLocation();
@@ -44,7 +46,8 @@ const Layout = () => {
         <Route path='/civic-sense' element={<CivicSense />} />
         <Route path='/social-intelligence' element={<SocialIntelligence />} />
         <Route path='/design-styles' element={<DesignStyles />} />
-        <Route path='*' element={<div>Not Found</div>} />
+        <Route path='/project-checklist' element={<ProjectChecklist />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       {!hideFooter && <Footer />}
     </div>

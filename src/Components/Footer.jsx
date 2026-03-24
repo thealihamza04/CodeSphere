@@ -25,6 +25,7 @@ const Footer = () => {
         { name: "System Design", path: "/system-design" },
         { name: "Design Patterns", path: "/design-patterns" },
         { name: "DevOps & Infrastructure", path: "/devops" },
+        { name: "Project Checklist", path: "/project-checklist" },
       ],
     },
     {
@@ -75,7 +76,7 @@ const Footer = () => {
 
         {/* Branding & Socials Strip */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 pt-10 border-t border-base-200">
-          
+
           {/* Copyright & Branding */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
             <p className="text-[11px] font-black text-base-content/25 tracking-[0.3em] uppercase italic">
