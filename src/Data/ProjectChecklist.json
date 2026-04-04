@@ -1,6 +1,6 @@
 {
   "title": "Universal Software Project Checklist",
-  "version": "1.0",
+  "version": "1.1",
   "description": "A base checklist for any software project. Use the core phases for every project, then attach relevant add-on modules based on what you are building.",
   "tags": {
     "must": "Non-negotiable. Skipping this breaks the project or client relationship.",
@@ -8,7 +8,7 @@
     "tip": "Professional extra that separates good from great."
   },
   "modules": {
-    "available": ["saas", "mobile", "ecommerce", "internal_tool", "marketplace"],
+    "available": ["saas", "mobile", "ecommerce", "internal_tool", "marketplace", "ai_ml", "fintech", "healthcare"],
     "description": "Add relevant module task lists to Phase 2 (Planning) and Phase 4 (Development) based on project type."
   },
   "core": {
@@ -20,32 +20,32 @@
           {
             "label": "Understand the business",
             "tasks": [
-              { "text": "Define the core problem the software will solve", "tags": ["must"] },
-              { "text": "Identify the target users (who will use this daily?)", "tags": ["must"] },
-              { "text": "Understand how the client plans to make money or derive value from this", "tags": ["must"] },
-              { "text": "Research competitors and existing solutions in the market", "tags": [] },
-              { "text": "Define what success looks like (KPIs, metrics, launch goals)", "tags": [] }
+              { "id": "c_p1_s1_t1", "text": "Define the core problem the software will solve", "tags": ["must"] },
+              { "id": "c_p1_s1_t2", "text": "Identify the target users (who will use this daily?)", "tags": ["must"] },
+              { "id": "c_p1_s1_t3", "text": "Understand how the client plans to make money or derive value from this", "tags": ["must"] },
+              { "id": "c_p1_s1_t4", "text": "Research competitors and existing solutions in the market", "tags": [] },
+              { "id": "c_p1_s1_t5", "text": "Define what success looks like (KPIs, metrics, launch goals)", "tags": [] }
             ]
           },
           {
             "label": "Scope & requirements",
             "tasks": [
-              { "text": "List all features the client wants (brain dump, no filtering yet)", "tags": ["must"] },
-              { "text": "Separate features into: Must Have (MVP) vs Nice to Have vs Future", "tags": ["must"] },
-              { "text": "Define user roles and permission levels (admin, user, guest, etc.)", "tags": ["must"] },
-              { "text": "Identify any third-party integrations needed", "tags": [] },
-              { "text": "Clarify data ownership, privacy, and compliance requirements (GDPR, HIPAA, etc.)", "tags": ["caution"] },
-              { "text": "Document all requirements in a clear PRD (Product Requirements Doc)", "tags": ["must"] }
+              { "id": "c_p1_s2_t1", "text": "List all features the client wants (brain dump, no filtering yet)", "tags": ["must"] },
+              { "id": "c_p1_s2_t2", "text": "Separate features into: Must Have (MVP) vs Nice to Have vs Future", "tags": ["must"] },
+              { "id": "c_p1_s2_t3", "text": "Define user roles and permission levels (admin, user, guest, etc.)", "tags": ["must"] },
+              { "id": "c_p1_s2_t4", "text": "Identify any third-party integrations needed", "tags": [] },
+              { "id": "c_p1_s2_t5", "text": "Clarify data ownership, privacy, and compliance requirements (GDPR, HIPAA, etc.)", "tags": ["caution"] },
+              { "id": "c_p1_s2_t6", "text": "Document all requirements in a clear PRD (Product Requirements Doc)", "tags": ["must"] }
             ]
           },
           {
             "label": "Project setup",
             "tasks": [
-              { "text": "Agree on budget and payment milestones", "tags": ["must"] },
-              { "text": "Sign a contract with scope, timeline, revision policy, and IP ownership", "tags": ["must"] },
-              { "text": "Agree on communication channel and meeting cadence", "tags": [] },
-              { "text": "Set up a shared project management board (Notion, Jira, Linear, Trello)", "tags": [] },
-              { "text": "Define change request policy for scope changes mid-project", "tags": ["caution"] }
+              { "id": "c_p1_s3_t1", "text": "Agree on budget and payment milestones", "tags": ["must"] },
+              { "id": "c_p1_s3_t2", "text": "Sign a contract with scope, timeline, revision policy, and IP ownership", "tags": ["must"] },
+              { "id": "c_p1_s3_t3", "text": "Agree on communication channel and meeting cadence", "tags": [] },
+              { "id": "c_p1_s3_t4", "text": "Set up a shared project management board (Notion, Jira, Linear, Trello)", "tags": [] },
+              { "id": "c_p1_s3_t5", "text": "Define change request policy for scope changes mid-project", "tags": ["caution"] }
             ]
           }
         ]
@@ -58,23 +58,23 @@
           {
             "label": "Technical planning",
             "tasks": [
-              { "text": "Choose the tech stack (frontend, backend, database, hosting)", "tags": ["must"] },
-              { "text": "Design the database schema and data models", "tags": ["must"] },
-              { "text": "Plan the API structure and key endpoints", "tags": [] },
-              { "text": "Define authentication method (email/password, OAuth, SSO, magic link)", "tags": ["must"] },
-              { "text": "Plan file storage strategy if needed (AWS S3, Cloudinary, etc.)", "tags": [] },
-              { "text": "Choose hosting and infrastructure provider", "tags": [] },
-              { "text": "Plan scalability requirements from the start", "tags": ["caution"] }
+              { "id": "c_p2_s1_t1", "text": "Choose the tech stack (frontend, backend, database, hosting)", "tags": ["must"] },
+              { "id": "c_p2_s1_t2", "text": "Design the database schema and data models", "tags": ["must"] },
+              { "id": "c_p2_s1_t3", "text": "Plan the API structure and key endpoints", "tags": [] },
+              { "id": "c_p2_s1_t4", "text": "Define authentication method (email/password, OAuth, SSO, magic link)", "tags": ["must"] },
+              { "id": "c_p2_s1_t5", "text": "Plan file storage strategy if needed (AWS S3, Cloudinary, etc.)", "tags": [] },
+              { "id": "c_p2_s1_t6", "text": "Choose hosting and infrastructure provider", "tags": [] },
+              { "id": "c_p2_s1_t7", "text": "Plan scalability requirements from the start", "tags": ["caution"] }
             ]
           },
           {
             "label": "Project breakdown",
             "tasks": [
-              { "text": "Break all features into small, estimable development tasks", "tags": [] },
-              { "text": "Create a sprint plan or development roadmap with milestones", "tags": [] },
-              { "text": "Set up version control repository (GitHub, GitLab)", "tags": ["must"] },
-              { "text": "Define branching strategy (main, dev, feature branches)", "tags": [] },
-              { "text": "Set up staging and production environments", "tags": ["must"] }
+              { "id": "c_p2_s2_t1", "text": "Break all features into small, estimable development tasks", "tags": [] },
+              { "id": "c_p2_s2_t2", "text": "Create a sprint plan or development roadmap with milestones", "tags": [] },
+              { "id": "c_p2_s2_t3", "text": "Set up version control repository (GitHub, GitLab)", "tags": ["must"] },
+              { "id": "c_p2_s2_t4", "text": "Define branching strategy (main, dev, feature branches)", "tags": [] },
+              { "id": "c_p2_s2_t5", "text": "Set up staging and production environments", "tags": ["must"] }
             ]
           }
         ]
@@ -86,22 +86,22 @@
           {
             "label": "User experience",
             "tasks": [
-              { "text": "Map out all user flows for every major feature", "tags": ["must"] },
-              { "text": "Create low-fidelity wireframes for every key screen", "tags": ["must"] },
-              { "text": "Plan empty states (what does the app look like before data exists?)", "tags": [] },
-              { "text": "Plan error states and loading states for all key actions", "tags": ["caution"] },
-              { "text": "Design onboarding flow for new users", "tags": [] }
+              { "id": "c_p3_s1_t1", "text": "Map out all user flows for every major feature", "tags": ["must"] },
+              { "id": "c_p3_s1_t2", "text": "Create low-fidelity wireframes for every key screen", "tags": ["must"] },
+              { "id": "c_p3_s1_t3", "text": "Plan empty states (what does the app look like before data exists?)", "tags": [] },
+              { "id": "c_p3_s1_t4", "text": "Plan error states and loading states for all key actions", "tags": ["caution"] },
+              { "id": "c_p3_s1_t5", "text": "Design onboarding flow for new users", "tags": [] }
             ]
           },
           {
             "label": "Visual design",
             "tasks": [
-              { "text": "Define design system: colors, typography, spacing, and component library", "tags": ["must"] },
-              { "text": "Design high-fidelity mockups for all screens", "tags": ["must"] },
-              { "text": "Design email templates (welcome, notifications, password reset)", "tags": [] },
-              { "text": "Ensure designs are responsive (mobile, tablet, desktop)", "tags": ["must"] },
-              { "text": "Ensure designs meet WCAG accessibility standards", "tags": ["caution"] },
-              { "text": "Get client approval on all designs before development starts", "tags": ["must"] }
+              { "id": "c_p3_s2_t1", "text": "Define design system: colors, typography, spacing, and component library", "tags": ["must"] },
+              { "id": "c_p3_s2_t2", "text": "Design high-fidelity mockups for all screens", "tags": ["must"] },
+              { "id": "c_p3_s2_t3", "text": "Design email templates (welcome, notifications, password reset)", "tags": [] },
+              { "id": "c_p3_s2_t4", "text": "Ensure designs are responsive (mobile, tablet, desktop)", "tags": ["must"] },
+              { "id": "c_p3_s2_t5", "text": "Ensure designs meet WCAG accessibility standards", "tags": ["caution"] },
+              { "id": "c_p3_s2_t6", "text": "Get client approval on all designs before development starts", "tags": ["must"] }
             ]
           }
         ]
@@ -114,33 +114,33 @@
           {
             "label": "Foundation",
             "tasks": [
-              { "text": "Set up project boilerplate and folder structure", "tags": ["must"] },
-              { "text": "Configure environment variables and secrets management", "tags": ["must"] },
-              { "text": "Set up CI/CD pipeline for automatic deployments", "tags": ["tip"] },
-              { "text": "Set up linting, formatting, and code standards", "tags": [] },
-              { "text": "Set up error logging and monitoring (Sentry, Datadog, etc.)", "tags": ["caution"] }
+              { "id": "c_p4_s1_t1", "text": "Set up project boilerplate and folder structure", "tags": ["must"] },
+              { "id": "c_p4_s1_t2", "text": "Configure environment variables and secrets management", "tags": ["must"] },
+              { "id": "c_p4_s1_t3", "text": "Set up CI/CD pipeline for automatic deployments", "tags": ["tip"] },
+              { "id": "c_p4_s1_t4", "text": "Set up linting, formatting, and code standards", "tags": [] },
+              { "id": "c_p4_s1_t5", "text": "Set up error logging and monitoring (Sentry, Datadog, etc.)", "tags": ["caution"] }
             ]
           },
           {
             "label": "Core features",
             "tasks": [
-              { "text": "Build authentication system (sign up, log in, log out, password reset)", "tags": ["must"] },
-              { "text": "Build user dashboard and core app layout", "tags": ["must"] },
-              { "text": "Build all MVP features as defined in the PRD", "tags": ["must"] },
-              { "text": "Build admin panel for the client to manage users and data", "tags": ["must"] },
-              { "text": "Implement role-based access control (RBAC)", "tags": [] },
-              { "text": "Build email notification system (transactional emails)", "tags": ["must"] },
-              { "text": "Build all third-party integrations", "tags": ["caution"] }
+              { "id": "c_p4_s2_t1", "text": "Build authentication system (sign up, log in, log out, password reset)", "tags": ["must"] },
+              { "id": "c_p4_s2_t2", "text": "Build user dashboard and core app layout", "tags": ["must"] },
+              { "id": "c_p4_s2_t3", "text": "Build all MVP features as defined in the PRD", "tags": ["must"] },
+              { "id": "c_p4_s2_t4", "text": "Build admin panel for the client to manage users and data", "tags": ["must"] },
+              { "id": "c_p4_s2_t5", "text": "Implement role-based access control (RBAC)", "tags": [] },
+              { "id": "c_p4_s2_t6", "text": "Build email notification system (transactional emails)", "tags": ["must"] },
+              { "id": "c_p4_s2_t7", "text": "Build all third-party integrations", "tags": ["caution"] }
             ]
           },
           {
             "label": "Data & security",
             "tasks": [
-              { "text": "Implement input validation on all forms (frontend + backend)", "tags": ["must"] },
-              { "text": "Protect all API routes with proper authentication middleware", "tags": ["must"] },
-              { "text": "Set up automated database backups", "tags": ["must"] },
-              { "text": "Implement rate limiting to prevent API abuse", "tags": ["caution"] },
-              { "text": "Ensure passwords are hashed and sensitive data is encrypted", "tags": ["must"] }
+              { "id": "c_p4_s3_t1", "text": "Implement input validation on all forms (frontend + backend)", "tags": ["must"] },
+              { "id": "c_p4_s3_t2", "text": "Protect all API routes with proper authentication middleware", "tags": ["must"] },
+              { "id": "c_p4_s3_t3", "text": "Set up automated database backups", "tags": ["must"] },
+              { "id": "c_p4_s3_t4", "text": "Implement rate limiting to prevent API abuse", "tags": ["caution"] },
+              { "id": "c_p4_s3_t5", "text": "Ensure passwords are hashed and sensitive data is encrypted", "tags": ["must"] }
             ]
           }
         ]
@@ -152,30 +152,30 @@
           {
             "label": "Functional testing",
             "tasks": [
-              { "text": "Test every user flow end-to-end", "tags": ["must"] },
-              { "text": "Test all edge cases: empty inputs, max limits, duplicate entries", "tags": ["must"] },
-              { "text": "Test all user roles and permission restrictions", "tags": [] },
-              { "text": "Test all email notifications are triggered and received correctly", "tags": [] }
+              { "id": "c_p5_s1_t1", "text": "Test every user flow end-to-end", "tags": ["must"] },
+              { "id": "c_p5_s1_t2", "text": "Test all edge cases: empty inputs, max limits, duplicate entries", "tags": ["must"] },
+              { "id": "c_p5_s1_t3", "text": "Test all user roles and permission restrictions", "tags": [] },
+              { "id": "c_p5_s1_t4", "text": "Test all email notifications are triggered and received correctly", "tags": [] }
             ]
           },
           {
             "label": "Technical testing",
             "tasks": [
-              { "text": "Write and run unit tests for critical business logic", "tags": ["tip"] },
-              { "text": "Run integration tests on key API endpoints", "tags": [] },
-              { "text": "Test on multiple browsers (Chrome, Safari, Firefox, Edge)", "tags": ["must"] },
-              { "text": "Test on mobile devices (iOS Safari, Android Chrome)", "tags": ["must"] },
-              { "text": "Run a load/performance test to check behavior under traffic", "tags": ["caution"] },
-              { "text": "Run a security audit — check for XSS, CSRF, SQL injection vulnerabilities", "tags": ["must"] }
+              { "id": "c_p5_s2_t1", "text": "Write and run unit tests for critical business logic", "tags": ["tip"] },
+              { "id": "c_p5_s2_t2", "text": "Run integration tests on key API endpoints", "tags": [] },
+              { "id": "c_p5_s2_t3", "text": "Test on multiple browsers (Chrome, Safari, Firefox, Edge)", "tags": ["must"] },
+              { "id": "c_p5_s2_t4", "text": "Test on mobile devices (iOS Safari, Android Chrome)", "tags": ["must"] },
+              { "id": "c_p5_s2_t5", "text": "Run a load/performance test to check behavior under traffic", "tags": ["caution"] },
+              { "id": "c_p5_s2_t6", "text": "Run a security audit — check for XSS, CSRF, SQL injection vulnerabilities", "tags": ["must"] }
             ]
           },
           {
             "label": "Client review",
             "tasks": [
-              { "text": "Share staging environment with client for review", "tags": ["must"] },
-              { "text": "Run a live walkthrough of all features with the client", "tags": [] },
-              { "text": "Collect feedback, apply revisions, and re-test changed areas", "tags": [] },
-              { "text": "Get written sign-off from client before going live", "tags": ["must"] }
+              { "id": "c_p5_s3_t1", "text": "Share staging environment with client for review", "tags": ["must"] },
+              { "id": "c_p5_s3_t2", "text": "Run a live walkthrough of all features with the client", "tags": [] },
+              { "id": "c_p5_s3_t3", "text": "Collect feedback, apply revisions, and re-test changed areas", "tags": [] },
+              { "id": "c_p5_s3_t4", "text": "Get written sign-off from client before going live", "tags": ["must"] }
             ]
           }
         ]
@@ -187,20 +187,20 @@
           {
             "label": "Pre-launch",
             "tasks": [
-              { "text": "Set up custom domain and SSL certificate", "tags": ["must"] },
-              { "text": "Configure all production environment variables", "tags": ["must"] },
-              { "text": "Run final full regression test on production environment", "tags": ["must"] },
-              { "text": "Set up uptime monitoring (UptimeRobot, Better Uptime)", "tags": ["caution"] },
-              { "text": "Prepare a rollback plan in case something breaks", "tags": ["caution"] },
-              { "text": "Set up analytics tracking", "tags": ["tip"] }
+              { "id": "c_p6_s1_t1", "text": "Set up custom domain and SSL certificate", "tags": ["must"] },
+              { "id": "c_p6_s1_t2", "text": "Configure all production environment variables", "tags": ["must"] },
+              { "id": "c_p6_s1_t3", "text": "Run final full regression test on production environment", "tags": ["must"] },
+              { "id": "c_p6_s1_t4", "text": "Set up uptime monitoring (UptimeRobot, Better Uptime)", "tags": ["caution"] },
+              { "id": "c_p6_s1_t5", "text": "Prepare a rollback plan in case something breaks", "tags": ["caution"] },
+              { "id": "c_p6_s1_t6", "text": "Set up analytics tracking", "tags": ["tip"] }
             ]
           },
           {
             "label": "Go live",
             "tasks": [
-              { "text": "Deploy to production", "tags": ["must"] },
-              { "text": "Smoke-test all critical flows immediately after deploy", "tags": ["must"] },
-              { "text": "Confirm auth and emails work correctly in production", "tags": ["must"] }
+              { "id": "c_p6_s2_t1", "text": "Deploy to production", "tags": ["must"] },
+              { "id": "c_p6_s2_t2", "text": "Smoke-test all critical flows immediately after deploy", "tags": ["must"] },
+              { "id": "c_p6_s2_t3", "text": "Confirm auth and emails work correctly in production", "tags": ["must"] }
             ]
           }
         ]
@@ -212,20 +212,20 @@
           {
             "label": "Client handover",
             "tasks": [
-              { "text": "Deliver all credentials (hosting, domain, admin panel, repo access)", "tags": ["must"] },
-              { "text": "Provide documentation on how to manage the system", "tags": ["must"] },
-              { "text": "Record a walkthrough video of the admin panel for the client", "tags": ["tip"] },
-              { "text": "Hand over codebase with a clear README and setup instructions", "tags": [] }
+              { "id": "c_p7_s1_t1", "text": "Deliver all credentials (hosting, domain, admin panel, repo access)", "tags": ["must"] },
+              { "id": "c_p7_s1_t2", "text": "Provide documentation on how to manage the system", "tags": ["must"] },
+              { "id": "c_p7_s1_t3", "text": "Record a walkthrough video of the admin panel for the client", "tags": ["tip"] },
+              { "id": "c_p7_s1_t4", "text": "Hand over codebase with a clear README and setup instructions", "tags": [] }
             ]
           },
           {
             "label": "Ongoing & growth",
             "tasks": [
-              { "text": "Set a 30-day post-launch check-in to review bugs and feedback", "tags": [] },
-              { "text": "Monitor error logs and fix production bugs within agreed SLA", "tags": ["caution"] },
-              { "text": "Review analytics to identify usage patterns and drop-off points", "tags": ["tip"] },
-              { "text": "Plan Phase 2 features based on real user feedback", "tags": ["tip"] },
-              { "text": "Discuss ongoing maintenance retainer if client needs continued support", "tags": ["tip"] }
+              { "id": "c_p7_s2_t1", "text": "Set a 30-day post-launch check-in to review bugs and feedback", "tags": [] },
+              { "id": "c_p7_s2_t2", "text": "Monitor error logs and fix production bugs within agreed SLA", "tags": ["caution"] },
+              { "id": "c_p7_s2_t3", "text": "Review analytics to identify usage patterns and drop-off points", "tags": ["tip"] },
+              { "id": "c_p7_s2_t4", "text": "Plan Phase 2 features based on real user feedback", "tags": ["tip"] },
+              { "id": "c_p7_s2_t5", "text": "Discuss ongoing maintenance retainer if client needs continued support", "tags": ["tip"] }
             ]
           }
         ]
@@ -235,181 +235,273 @@
   "addons": {
     "saas": {
       "title": "SaaS Add-on Module",
+      "tooltip": "B2B platforms, subscription tools, multi-tenant dashboards, and gated feature sets.",
       "description": "Attach these tasks when building a subscription-based SaaS product.",
       "inject_into_phase": {
         "2": {
           "label": "SaaS planning",
           "tasks": [
-            { "text": "Define subscription plans and pricing tiers (Free, Pro, Enterprise)", "tags": ["must"] },
-            { "text": "Plan billing and payment flow (Stripe, Paddle, LemonSqueezy)", "tags": ["must"] },
-            { "text": "Define trial period logic (free trial, freemium, demo)", "tags": ["tip"] },
-            { "text": "Plan email notification system (welcome, invoices, upgrade prompts)", "tags": [] },
-            { "text": "Define multi-tenancy model if applicable (one DB per tenant vs shared DB)", "tags": ["caution"] }
+            { "id": "a_saas_p2_t1", "text": "Define subscription plans and pricing tiers (Free, Pro, Enterprise)", "tags": ["must"] },
+            { "id": "a_saas_p2_t2", "text": "Plan billing and payment flow (Stripe, Paddle, LemonSqueezy)", "tags": ["must"] },
+            { "id": "a_saas_p2_t3", "text": "Define trial period logic (free trial, freemium, demo)", "tags": ["tip"] },
+            { "id": "a_saas_p2_t4", "text": "Plan email notification system (welcome, invoices, upgrade prompts)", "tags": [] },
+            { "id": "a_saas_p2_t5", "text": "Define multi-tenancy model if applicable (one DB per tenant vs shared DB)", "tags": ["caution"] }
           ]
         },
         "4": {
           "label": "SaaS development",
           "tasks": [
-            { "text": "Build billing and subscription system with Stripe or equivalent", "tags": ["must"] },
-            { "text": "Implement plan-based feature gating (lock features behind paid tiers)", "tags": ["must"] },
-            { "text": "Build usage tracking if plans are usage-based", "tags": [] },
-            { "text": "Handle webhook events from billing provider (payment failed, subscription cancelled)", "tags": ["caution"] },
-            { "text": "Build customer billing portal (view invoices, update payment method, cancel)", "tags": ["must"] }
+            { "id": "a_saas_p4_t1", "text": "Build billing and subscription system with Stripe or equivalent", "tags": ["must"] },
+            { "id": "a_saas_p4_t2", "text": "Implement plan-based feature gating (lock features behind paid tiers)", "tags": ["must"] },
+            { "id": "a_saas_p4_t3", "text": "Build usage tracking if plans are usage-based", "tags": [] },
+            { "id": "a_saas_p4_t4", "text": "Handle webhook events from billing provider (payment failed, subscription cancelled)", "tags": ["caution"] },
+            { "id": "a_saas_p4_t5", "text": "Build customer billing portal (view invoices, update payment method, cancel)", "tags": ["must"] }
           ]
         },
         "5": {
           "label": "SaaS testing",
           "tasks": [
-            { "text": "Test billing flows: upgrade, downgrade, cancellation, and failed payment", "tags": ["must"] },
-            { "text": "Test that feature gating correctly restricts access per plan", "tags": ["must"] },
-            { "text": "Test webhook handling for all billing events", "tags": ["caution"] }
+            { "id": "a_saas_p5_t1", "text": "Test billing flows: upgrade, downgrade, cancellation, and failed payment", "tags": ["must"] },
+            { "id": "a_saas_p5_t2", "text": "Test that feature gating correctly restricts access per plan", "tags": ["must"] },
+            { "id": "a_saas_p5_t3", "text": "Test webhook handling for all billing events", "tags": ["caution"] }
           ]
         }
       }
     },
     "mobile": {
       "title": "Mobile App Add-on Module",
+      "tooltip": "Native iOS/Android apps, React Native/Flutter projects, and mobile-first companion tools.",
       "description": "Attach these tasks when building a native or cross-platform mobile app (iOS / Android).",
       "inject_into_phase": {
         "2": {
           "label": "Mobile planning",
           "tasks": [
-            { "text": "Decide on framework: native (Swift/Kotlin) or cross-platform (React Native, Flutter)", "tags": ["must"] },
-            { "text": "Define which platforms are in scope: iOS, Android, or both", "tags": ["must"] },
-            { "text": "Plan push notification strategy and provider (FCM, APNs, OneSignal)", "tags": [] },
-            { "text": "Plan offline support and local data caching strategy", "tags": ["caution"] },
-            { "text": "Review App Store and Google Play submission requirements early", "tags": ["caution"] }
+            { "id": "a_mobile_p2_t1", "text": "Decide on framework: native (Swift/Kotlin) or cross-platform (React Native, Flutter)", "tags": ["must"] },
+            { "id": "a_mobile_p2_t2", "text": "Define which platforms are in scope: iOS, Android, or both", "tags": ["must"] },
+            { "id": "a_mobile_p2_t3", "text": "Plan push notification strategy and provider (FCM, APNs, OneSignal)", "tags": [] },
+            { "id": "a_mobile_p2_t4", "text": "Plan offline support and local data caching strategy", "tags": ["caution"] },
+            { "id": "a_mobile_p2_t5", "text": "Review App Store and Google Play submission requirements early", "tags": ["caution"] }
           ]
         },
         "4": {
           "label": "Mobile development",
           "tasks": [
-            { "text": "Build deep linking support for notifications and shared links", "tags": [] },
-            { "text": "Implement push notification system", "tags": [] },
-            { "text": "Implement biometric authentication (Face ID, fingerprint) if required", "tags": [] },
-            { "text": "Handle app permissions gracefully (camera, location, notifications)", "tags": ["must"] },
-            { "text": "Optimize for battery and memory usage", "tags": ["caution"] }
+            { "id": "a_mobile_p4_t1", "text": "Build deep linking support for notifications and shared links", "tags": [] },
+            { "id": "a_mobile_p4_t2", "text": "Implement push notification system", "tags": [] },
+            { "id": "a_mobile_p4_t3", "text": "Implement biometric authentication (Face ID, fingerprint) if required", "tags": [] },
+            { "id": "a_mobile_p4_t4", "text": "Handle app permissions gracefully (camera, location, notifications)", "tags": ["must"] },
+            { "id": "a_mobile_p4_t5", "text": "Optimize for battery and memory usage", "tags": ["caution"] }
           ]
         },
         "5": {
           "label": "Mobile testing",
           "tasks": [
-            { "text": "Test on real physical devices (not just simulators)", "tags": ["must"] },
-            { "text": "Test on multiple iOS versions and Android API levels", "tags": ["must"] },
-            { "text": "Test push notifications end-to-end", "tags": [] },
-            { "text": "Test offline mode and reconnection behavior", "tags": ["caution"] }
+            { "id": "a_mobile_p5_t1", "text": "Test on real physical devices (not just simulators)", "tags": ["must"] },
+            { "id": "a_mobile_p5_t2", "text": "Test on multiple iOS versions and Android API levels", "tags": ["must"] },
+            { "id": "a_mobile_p5_t3", "text": "Test push notifications end-to-end", "tags": [] },
+            { "id": "a_mobile_p5_t4", "text": "Test offline mode and reconnection behavior", "tags": ["caution"] }
           ]
         },
         "6": {
           "label": "Mobile launch",
           "tasks": [
-            { "text": "Prepare App Store listing: screenshots, description, keywords, privacy policy", "tags": ["must"] },
-            { "text": "Prepare Google Play listing with the same assets", "tags": ["must"] },
-            { "text": "Submit to TestFlight (iOS) and Internal Testing (Android) first", "tags": ["must"] },
-            { "text": "Submit for App Store and Google Play review", "tags": ["must"] },
-            { "text": "Plan for review turnaround time (Apple: 1-3 days, Google: a few hours)", "tags": ["caution"] }
+            { "id": "a_mobile_p6_t1", "text": "Prepare App Store listing: screenshots, description, keywords, privacy policy", "tags": ["must"] },
+            { "id": "a_mobile_p6_t2", "text": "Prepare Google Play listing with the same assets", "tags": ["must"] },
+            { "id": "a_mobile_p6_t3", "text": "Submit to TestFlight (iOS) and Internal Testing (Android) first", "tags": ["must"] },
+            { "id": "a_mobile_p6_t4", "text": "Submit for App Store and Google Play review", "tags": ["must"] },
+            { "id": "a_mobile_p6_t5", "text": "Plan for review turnaround time (Apple: 1-3 days, Google: a few hours)", "tags": ["caution"] }
           ]
         }
       }
     },
     "ecommerce": {
       "title": "E-commerce Add-on Module",
+      "tooltip": "Online stores, shopping carts, inventory systems, and multi-vendor shopping experiences.",
       "description": "Attach these tasks when building an online store or shopping experience.",
       "inject_into_phase": {
         "2": {
           "label": "E-commerce planning",
           "tasks": [
-            { "text": "Define product catalog structure (categories, variants, attributes)", "tags": ["must"] },
-            { "text": "Plan inventory management approach", "tags": ["must"] },
-            { "text": "Choose and plan payment gateway (Stripe, PayPal, local providers)", "tags": ["must"] },
-            { "text": "Plan shipping logic (flat rate, weight-based, real-time carrier rates)", "tags": ["must"] },
-            { "text": "Define tax calculation strategy (by region, product type, etc.)", "tags": ["caution"] },
-            { "text": "Plan return and refund flow", "tags": [] }
+            { "id": "a_ecom_p2_t1", "text": "Define product catalog structure (categories, variants, attributes)", "tags": ["must"] },
+            { "id": "a_ecom_p2_t2", "text": "Plan inventory management approach", "tags": ["must"] },
+            { "id": "a_ecom_p2_t3", "text": "Choose and plan payment gateway (Stripe, PayPal, local providers)", "tags": ["must"] },
+            { "id": "a_ecom_p2_t4", "text": "Plan shipping logic (flat rate, weight-based, real-time carrier rates)", "tags": ["must"] },
+            { "id": "a_ecom_p2_t5", "text": "Define tax calculation strategy (by region, product type, etc.)", "tags": ["caution"] },
+            { "id": "a_ecom_p2_t6", "text": "Plan return and refund flow", "tags": [] }
           ]
         },
         "4": {
           "label": "E-commerce development",
           "tasks": [
-            { "text": "Build product listing and detail pages", "tags": ["must"] },
-            { "text": "Build shopping cart and checkout flow", "tags": ["must"] },
-            { "text": "Implement payment processing with success and failure handling", "tags": ["must"] },
-            { "text": "Build order management system for the client (view, fulfill, refund orders)", "tags": ["must"] },
-            { "text": "Build inventory tracking and low-stock alerts", "tags": [] },
-            { "text": "Implement discount codes and promotions logic", "tags": [] },
-            { "text": "Send transactional emails: order confirmation, shipping update, refund", "tags": ["must"] },
-            { "text": "Integrate shipping provider API for label generation or tracking", "tags": [] }
+            { "id": "a_ecom_p4_t1", "text": "Build product listing and detail pages", "tags": ["must"] },
+            { "id": "a_ecom_p4_t2", "text": "Build shopping cart and checkout flow", "tags": ["must"] },
+            { "id": "a_ecom_p4_t3", "text": "Implement payment processing with success and failure handling", "tags": ["must"] },
+            { "id": "a_ecom_p4_t4", "text": "Build order management system for the client (view, fulfill, refund orders)", "tags": ["must"] },
+            { "id": "a_ecom_p4_t5", "text": "Build inventory tracking and low-stock alerts", "tags": [] },
+            { "id": "a_ecom_p4_t6", "text": "Implement discount codes and promotions logic", "tags": [] },
+            { "id": "a_ecom_p4_t7", "text": "Send transactional emails: order confirmation, shipping update, refund", "tags": ["must"] },
+            { "id": "a_ecom_p4_t8", "text": "Integrate shipping provider API for label generation or tracking", "tags": [] }
           ]
         },
         "5": {
           "label": "E-commerce testing",
           "tasks": [
-            { "text": "Test full checkout flow with real test payments", "tags": ["must"] },
-            { "text": "Test payment failure and decline handling", "tags": ["must"] },
-            { "text": "Test discount codes, edge cases, and expiry logic", "tags": [] },
-            { "text": "Test order confirmation and shipping emails", "tags": ["must"] },
-            { "text": "Test inventory decrement after successful purchase", "tags": ["must"] }
+            { "id": "a_ecom_p5_t1", "text": "Test full checkout flow with real test payments", "tags": ["must"] },
+            { "id": "a_ecom_p5_t2", "text": "Test payment failure and decline handling", "tags": ["must"] },
+            { "id": "a_ecom_p5_t3", "text": "Test discount codes, edge cases, and expiry logic", "tags": [] },
+            { "id": "a_ecom_p5_t4", "text": "Test order confirmation and shipping emails", "tags": ["must"] },
+            { "id": "a_ecom_p5_t5", "text": "Test inventory decrement after successful purchase", "tags": ["must"] }
           ]
         }
       }
     },
     "internal_tool": {
       "title": "Internal Tool Add-on Module",
+      "tooltip": "CRMs, ERPs, admin dashboards, data management tools, and business automation software.",
       "description": "Attach these tasks when building a dashboard, CRM, ERP, or internal business tool.",
       "inject_into_phase": {
         "2": {
           "label": "Internal tool planning",
           "tasks": [
-            { "text": "Map all existing workflows the tool will replace or improve", "tags": ["must"] },
-            { "text": "Plan SSO or company identity provider integration (Google, Azure AD, Okta)", "tags": ["must"] },
-            { "text": "Identify existing data sources to import or connect (spreadsheets, old DBs)", "tags": ["caution"] },
-            { "text": "Define data export requirements (CSV, PDF reports, API access)", "tags": [] }
+            { "id": "a_internal_p2_t1", "text": "Map all existing workflows the tool will replace or improve", "tags": ["must"] },
+            { "id": "a_internal_p2_t2", "text": "Plan SSO or company identity provider integration (Google, Azure AD, Okta)", "tags": ["must"] },
+            { "id": "a_internal_p2_t3", "text": "Identify existing data sources to import or connect (spreadsheets, old DBs)", "tags": ["caution"] },
+            { "id": "a_internal_p2_t4", "text": "Define data export requirements (CSV, PDF reports, API access)", "tags": [] }
           ]
         },
         "4": {
           "label": "Internal tool development",
           "tasks": [
-            { "text": "Build data import tool for migrating existing data", "tags": [] },
-            { "text": "Build reporting and export features (CSV, PDF, charts)", "tags": [] },
-            { "text": "Implement audit logs so admins can see who changed what", "tags": ["caution"] },
-            { "text": "Build bulk action support for managing large datasets", "tags": [] }
+            { "id": "a_internal_p4_t1", "text": "Build data import tool for migrating existing data", "tags": [] },
+            { "id": "a_internal_p4_t2", "text": "Build reporting and export features (CSV, PDF, charts)", "tags": [] },
+            { "id": "a_internal_p4_t3", "text": "Implement audit logs so admins can see who changed what", "tags": ["caution"] },
+            { "id": "a_internal_p4_t4", "text": "Build bulk action support for managing large datasets", "tags": [] }
           ]
         }
       }
     },
     "marketplace": {
       "title": "Marketplace Add-on Module",
+      "tooltip": "P2P platforms, booking systems, supply/demand aggregators, and two-sided commerce.",
       "description": "Attach these tasks when building a two-sided marketplace (buyers and sellers).",
       "inject_into_phase": {
         "2": {
           "label": "Marketplace planning",
           "tasks": [
-            { "text": "Define the two sides clearly: who are the buyers and who are the sellers?", "tags": ["must"] },
-            { "text": "Plan the commission or fee model (flat fee, percentage, subscription)", "tags": ["must"] },
-            { "text": "Plan seller payout flow (Stripe Connect, manual payouts)", "tags": ["must"] },
-            { "text": "Plan trust and safety features (reviews, verification, dispute resolution)", "tags": ["caution"] },
-            { "text": "Define how listings are created, approved, and managed", "tags": ["must"] }
+            { "id": "a_market_p2_t1", "text": "Define the two sides clearly: who are the buyers and who are the sellers?", "tags": ["must"] },
+            { "id": "a_market_p2_t2", "text": "Plan the commission or fee model (flat fee, percentage, subscription)", "tags": ["must"] },
+            { "id": "a_market_p2_t3", "text": "Plan seller payout flow (Stripe Connect, manual payouts)", "tags": ["must"] },
+            { "id": "a_market_p2_t4", "text": "Plan trust and safety features (reviews, verification, dispute resolution)", "tags": ["caution"] },
+            { "id": "a_market_p2_t5", "text": "Define how listings are created, approved, and managed", "tags": ["must"] }
           ]
         },
         "4": {
           "label": "Marketplace development",
           "tasks": [
-            { "text": "Build seller onboarding flow and profile setup", "tags": ["must"] },
-            { "text": "Build listing creation, editing, and management for sellers", "tags": ["must"] },
-            { "text": "Build search and filter functionality for buyers", "tags": ["must"] },
-            { "text": "Build booking, ordering, or purchasing flow", "tags": ["must"] },
-            { "text": "Build seller payout system with Stripe Connect or equivalent", "tags": ["must"] },
-            { "text": "Build review and rating system for both sides", "tags": [] },
-            { "text": "Build messaging system between buyers and sellers", "tags": [] },
-            { "text": "Build admin moderation tools (approve listings, handle disputes, ban users)", "tags": ["must"] }
+            { "id": "a_market_p4_t1", "text": "Build seller onboarding flow and profile setup", "tags": ["must"] },
+            { "id": "a_market_p4_t2", "text": "Build listing creation, editing, and management for sellers", "tags": ["must"] },
+            { "id": "a_market_p4_t3", "text": "Build search and filter functionality for buyers", "tags": ["must"] },
+            { "id": "a_market_p4_t4", "text": "Build booking, ordering, or purchasing flow", "tags": ["must"] },
+            { "id": "a_market_p4_t5", "text": "Build seller payout system with Stripe Connect or equivalent", "tags": ["must"] },
+            { "id": "a_market_p4_t6", "text": "Build review and rating system for both sides", "tags": [] },
+            { "id": "a_market_p4_t7", "text": "Build messaging system between buyers and sellers", "tags": [] },
+            { "id": "a_market_p4_t8", "text": "Build admin moderation tools (approve listings, handle disputes, ban users)", "tags": ["must"] }
           ]
         },
         "5": {
           "label": "Marketplace testing",
           "tasks": [
-            { "text": "Test full buyer journey: browse → book/buy → pay → review", "tags": ["must"] },
-            { "text": "Test full seller journey: onboard → list → receive booking → get paid", "tags": ["must"] },
-            { "text": "Test commission deduction and payout flow end-to-end", "tags": ["must"] },
-            { "text": "Test dispute and refund scenarios", "tags": ["caution"] }
+            { "id": "a_market_p5_t1", "text": "Test full buyer journey: browse → book/buy → pay → review", "tags": ["must"] },
+            { "id": "a_market_p5_t2", "text": "Test full seller journey: onboard → list → receive booking → get paid", "tags": ["must"] },
+            { "id": "a_market_p5_t3", "text": "Test commission deduction and payout flow end-to-end", "tags": ["must"] },
+            { "id": "a_market_p5_t4", "text": "Test dispute and refund scenarios", "tags": ["caution"] }
+          ]
+        }
+      }
+    },
+    "ai_ml": {
+      "title": "AI/ML Add-on Module",
+      "tooltip": "Generative AI apps, LLM integrations (OpenAI/Claude), predictive models, and agentic workflows.",
+      "description": "Attach these tasks when building an AI or ML-powered application.",
+      "inject_into_phase": {
+        "2": {
+          "label": "AI/ML planning",
+          "tasks": [
+            { "id": "a_ai_p2_t1", "text": "Define AI use case: Generative, Classification, Recommendation, or Agents", "tags": ["must"] },
+            { "id": "a_ai_p2_t2", "text": "Identify model providers (OpenAI, Anthropic, Gemini, Llama)", "tags": ["must"] },
+            { "id": "a_ai_p2_t3", "text": "Plan data strategy: Vector DB (Pinecone, Chroma), RAG, or Fine-tuning", "tags": ["caution"] },
+            { "id": "a_ai_p2_t4", "text": "Audit data privacy: PII masking before sending data to external LLMs", "tags": ["must"] }
+          ]
+        },
+        "4": {
+          "label": "AI/ML development",
+          "tasks": [
+            { "id": "a_ai_p4_t1", "text": "Integrate LLM API or host open-source model", "tags": ["must"] },
+            { "id": "a_ai_p4_t2", "text": "Build prompting system with versioning and safety guardrails", "tags": ["must"] },
+            { "id": "a_ai_p4_t3", "text": "Implement streaming logic for real-time model responses", "tags": ["tip"] },
+            { "id": "a_ai_p4_t4", "text": "Set up human-in-the-loop evaluation for model outputs", "tags": [] }
+          ]
+        },
+        "5": {
+          "label": "AI/ML testing",
+          "tasks": [
+            { "id": "a_ai_p5_t1", "text": "Test for model hallucinations and biased outputs", "tags": ["must"] },
+            { "id": "a_ai_p5_t2", "text": "Run prompt injection security tests", "tags": ["caution"] },
+            { "id": "a_ai_p5_t3", "text": "Benchmark latency and token usage costs", "tags": [] }
+          ]
+        }
+      }
+    },
+    "fintech": {
+      "title": "Fintech Add-on Module",
+      "tooltip": "Payment gateways, banking apps, trading platforms, and financial compliance tools.",
+      "description": "Attach these tasks when building a financial or payment-heavy platform.",
+      "inject_into_phase": {
+        "2": {
+          "label": "Fintech planning",
+          "tasks": [
+            { "id": "a_fin_p2_t1", "text": "Identify regulatory requirements (PCI DSS, KYC/AML, GDPR)", "tags": ["must"] },
+            { "id": "a_fin_p2_t2", "text": "Plan immutable ledger and double-entry book-keeping system", "tags": ["must"] },
+            { "id": "a_fin_p2_t3", "text": "Choose payment rails and settlement partners", "tags": ["must"] }
+          ]
+        },
+        "4": {
+          "label": "Fintech development",
+          "tasks": [
+            { "id": "a_fin_p4_t1", "text": "Implement bank-grade encryption for all financial PII", "tags": ["must"] },
+            { "id": "a_fin_p4_t2", "text": "Build detailed audit logging for every financial transaction", "tags": ["must"] },
+            { "id": "a_fin_p4_t3", "text": "Implement automated reconciliation logic", "tags": ["caution"] }
+          ]
+        },
+        "5": {
+          "label": "Fintech testing",
+          "tasks": [
+            { "id": "a_fin_p5_t1", "text": "Run rigorous stress tests on transaction processing system", "tags": ["must"] },
+            { "id": "a_fin_p5_t2", "text": "Perform third-party security penetration testing", "tags": ["must"] },
+            { "id": "a_fin_p5_t3", "text": "Test edge cases: partial failures, double spending, and race conditions", "tags": ["caution"] }
+          ]
+        }
+      }
+    },
+    "healthcare": {
+      "title": "Healthcare Add-on Module",
+      "tooltip": "Patient portals, EMR integrations, telemedicine apps, and clinical data tools.",
+      "description": "Attach these tasks when building a health-tech or medical application.",
+      "inject_into_phase": {
+        "2": {
+          "label": "Healthcare planning",
+          "tasks": [
+            { "id": "a_health_p2_t1", "text": "Ensure HIPAA/HITECH (US) or GDPR (EU) compliance for PHI data", "tags": ["must"] },
+            { "id": "a_health_p2_t2", "text": "Plan EMR/EHR integration (HL7/FHIR standards)", "tags": [] },
+            { "id": "a_health_p2_t3", "text": "Define strict clinical data access controls and RBAC roles", "tags": ["must"] }
+          ]
+        },
+        "4": {
+          "label": "Healthcare development",
+          "tasks": [
+            { "id": "a_health_p4_t1", "text": "Build granular data-access audit logs (who viewed which record?)", "tags": ["must"] },
+            { "id": "a_health_p4_t2", "text": "Implement secure messaging and end-to-end encrypted consultations", "tags": [] },
+            { "id": "a_health_p4_t3", "text": "Implement data de-identification for research or analytics", "tags": ["tip"] }
           ]
         }
       }
