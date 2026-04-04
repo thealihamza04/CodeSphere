@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LuX } from "react-icons/lu";
 import PropTypes from "prop-types";
@@ -50,6 +51,23 @@ const StyleFilterModal = ({
   selectedIntensities,
   setSelectedIntensities
 }) => {
+  useEffect(() => {
+    const lockScroll = () => {
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    };
+    const unlockScroll = () => {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+
+    if (isOpen) {
+      lockScroll();
+    } else {
+      unlockScroll();
+    }
+    return () => unlockScroll();
+  }, [isOpen]);
 
   const toggleFilter = (setFn, currentSelection, item) => {
     if (currentSelection.includes(item)) {

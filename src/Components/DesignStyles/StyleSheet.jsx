@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import PropTypes from "prop-types";
 
 const BulletItem = ({ text, variant = "default" }) => (
@@ -49,6 +50,24 @@ SectionCard.propTypes = {
 };
 
 const StyleSheet = ({ style, onClose }) => {
+  useEffect(() => {
+    const lockScroll = () => {
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    };
+    const unlockScroll = () => {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+
+    if (style) {
+      lockScroll();
+    } else {
+      unlockScroll();
+    }
+    return () => unlockScroll();
+  }, [style]);
+
   if (!style) return null;
 
   return (

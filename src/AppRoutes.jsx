@@ -20,6 +20,7 @@ import { Toaster } from "react-hot-toast";
 import ThemeToggle from "./Components/ThemeToggle.jsx";
 import ProjectChecklist from "./Components/ProjectChecklist";
 import NotFound from "./Components/NotFound.jsx";
+import SearchCommand from "./Components/common/SearchCommandMenu.jsx";
 
 const Layout = () => {
   const location = useLocation();
@@ -29,6 +30,7 @@ const Layout = () => {
     <div className="max-w-full overflow-x-hidden">
       <Toaster />
       <ThemeToggle />
+      <SearchCommand />
       <Routes>
         <Route path='/' element={<ProgrammingLanguages />} />
         <Route path='/Frameworks' element={<Frameworks />} />

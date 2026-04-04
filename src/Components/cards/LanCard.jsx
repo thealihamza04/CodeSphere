@@ -6,8 +6,7 @@ const LanCard = ({
   Title,
   Summary,
   Details,
-  Libraries,
-  LanguageURL,
+  LanguageURL = "",
 }) => {
   return (
     <div className='w-full md:w-80 h-full group'>
@@ -52,10 +51,6 @@ LanCard.propTypes = {
   Summary: PropTypes.string.isRequired,
   Details: PropTypes.array.isRequired,
   LanguageURL: PropTypes.string,
-};
-
-LanCard.defaultProps = {
-  LanguageURL: "",
 };
 
 export default LanCard;
