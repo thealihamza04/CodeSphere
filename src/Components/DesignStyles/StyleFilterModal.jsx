@@ -66,8 +66,20 @@ const StyleFilterModal = ({
     } else {
       unlockScroll();
     }
-    return () => unlockScroll();
-  }, [isOpen]);
+
+    const handleEsc = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+
+    if (isOpen) {
+      window.addEventListener("keydown", handleEsc);
+    }
+
+    return () => {
+      unlockScroll();
+      window.removeEventListener("keydown", handleEsc);
+    };
+  }, [isOpen, onClose]);
 
   const toggleFilter = (setFn, currentSelection, item) => {
     if (currentSelection.includes(item)) {

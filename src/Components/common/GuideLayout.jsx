@@ -63,7 +63,19 @@ const GuideLayout = ({
         } else {
             unlockScroll();
         }
-        return () => unlockScroll();
+
+        const handleEsc = (e) => {
+            if (e.key === "Escape") setSelectedPrinciple(null);
+        };
+
+        if (selectedPrinciple) {
+            window.addEventListener("keydown", handleEsc);
+        }
+
+        return () => {
+            unlockScroll();
+            window.removeEventListener("keydown", handleEsc);
+        };
     }, [selectedPrinciple]);
 
     // Icon for the side sheet

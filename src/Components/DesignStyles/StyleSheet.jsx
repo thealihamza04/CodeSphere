@@ -65,8 +65,20 @@ const StyleSheet = ({ style, onClose }) => {
     } else {
       unlockScroll();
     }
-    return () => unlockScroll();
-  }, [style]);
+
+    const handleEsc = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+
+    if (style) {
+      window.addEventListener("keydown", handleEsc);
+    }
+
+    return () => {
+      unlockScroll();
+      window.removeEventListener("keydown", handleEsc);
+    };
+  }, [style, onClose]);
 
   if (!style) return null;
 
