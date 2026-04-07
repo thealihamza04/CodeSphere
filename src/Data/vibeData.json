@@ -1,0 +1,503 @@
+{
+  "moods": [
+    { "id": "focus",     "label": "Deep Focus",       "icon": "🧠" },
+    { "id": "energy",    "label": "High Energy",      "icon": "⚡" },
+    { "id": "sad",       "label": "Sad / Emotional",  "icon": "💔" },
+    { "id": "happy",     "label": "Happy / Upbeat",   "icon": "😊" },
+    { "id": "romance",   "label": "Romance",          "icon": "❤️" },
+    { "id": "chill",     "label": "Chill / Relax",    "icon": "😌" },
+    { "id": "party",     "label": "Party / Social",   "icon": "🎉" },
+    { "id": "angry",     "label": "Anger / Power",    "icon": "😤" },
+    { "id": "spiritual", "label": "Spiritual / Calm", "icon": "🙏" },
+    { "id": "nostalgia", "label": "Nostalgia",        "icon": "🌅" }
+  ],
+  "genres": [
+    {
+      "id": "alternative",
+      "icon": "🎸",
+      "name": "Alternative",
+      "category": "Rock & Guitar",
+      "tagline": "Punk, grunge & experimental rock",
+      "subgenres": [
+        "Art Punk", "Alternative Rock", "Britpunk", "Crossover Thrash", "Crust Punk",
+        "Emotional Hardcore (Emo)", "Experimental Rock", "Folk Punk", "Goth / Gothic Rock",
+        "Grunge", "Hardcore Punk", "Hard Rock", "Indie Rock", "Lo-fi",
+        "Musique Concrète", "New Wave", "Progressive Rock", "Punk", "Shoegaze", "Steampunk"
+      ],
+      "best_for": [
+        { "emoji": "😤", "label": "Anger release",   "description": "Cathartic emotional outlet" },
+        { "emoji": "🏋️", "label": "Workout",         "description": "Intense training" },
+        { "emoji": "🌧️", "label": "Rainy day",       "description": "Moody introspection" },
+        { "emoji": "🚗", "label": "Drive",            "description": "Window-down energy" }
+      ],
+      "mood_profile": { "Energy": 80, "Emotion": 78, "Tension": 72, "Calm": 20 },
+      "mood_fit": {
+        "focus": 35, "energy": 88, "sad": 70, "happy": 45, "romance": 30,
+        "chill": 38, "party": 55, "angry": 92, "spiritual": 22, "nostalgia": 58
+      },
+      "note": "Grunge & shoegaze for introspective moods; hardcore punk & hard rock for pure energy release. Lo-fi works as chill background."
+    },
+    {
+      "id": "blues",
+      "icon": "🎵",
+      "name": "Blues",
+      "category": "Soul & Roots",
+      "tagline": "Raw, soulful roots music",
+      "subgenres": [
+        "Acoustic Blues", "African Blues", "Blues Rock", "Chicago Blues", "Classic Blues",
+        "Country Blues", "Delta Blues", "Detroit Blues", "Electric Blues", "Folk Blues",
+        "Gospel Blues", "Jump Blues", "Memphis Blues", "Piano Blues", "Piedmont Blues",
+        "Punk Blues", "Rhythm Blues", "Soul Blues", "Swamp Blues", "Texas Blues",
+        "Urban Blues", "West Coast Blues", "Zydeco"
+      ],
+      "best_for": [
+        { "emoji": "💔", "label": "Heartbreak",   "description": "Processing pain & loss" },
+        { "emoji": "🌃", "label": "Late night",   "description": "Quiet bars & dimly lit rooms" },
+        { "emoji": "☕", "label": "Morning slow", "description": "Easy Sunday start" },
+        { "emoji": "🎙️", "label": "Storytelling", "description": "Music with a narrative" }
+      ],
+      "mood_profile": { "Energy": 45, "Emotion": 90, "Tension": 55, "Calm": 50 },
+      "mood_fit": {
+        "focus": 45, "energy": 45, "sad": 95, "happy": 55, "romance": 78,
+        "chill": 68, "party": 45, "angry": 60, "spiritual": 60, "nostalgia": 88
+      },
+      "note": "Delta & acoustic blues for deep reflection; Chicago & Texas blues for livelier settings. Jump blues brings a danceable energy."
+    },
+    {
+      "id": "classical",
+      "icon": "🎻",
+      "name": "Classical",
+      "category": "Orchestral",
+      "tagline": "Timeless orchestral compositions",
+      "subgenres": [
+        "Avant-Garde", "Ballet", "Baroque", "Cantata", "Chamber Music", "Chant", "Choral",
+        "Classical Crossover", "Concerto", "Contemporary Classical", "Early Music",
+        "Expressionist", "High Classical", "Impressionist", "Mass Requiem", "Medieval",
+        "Minimalism", "Modern Composition", "Opera", "Oratorio", "Orchestral", "Renaissance",
+        "Romantic (early)", "Romantic (later)", "Symphonic", "Symphony", "Twelve-tone", "Wedding Music"
+      ],
+      "best_for": [
+        { "emoji": "📚", "label": "Deep study",  "description": "Focus without distraction" },
+        { "emoji": "🧘", "label": "Meditation",  "description": "Mindful stillness" },
+        { "emoji": "🍷", "label": "Fine dining", "description": "Elegant atmosphere" },
+        { "emoji": "😴", "label": "Wind down",   "description": "Peaceful evening" }
+      ],
+      "mood_profile": { "Energy": 30, "Emotion": 75, "Tension": 38, "Calm": 90 },
+      "mood_fit": {
+        "focus": 95, "energy": 25, "sad": 85, "happy": 48, "romance": 72,
+        "chill": 88, "party": 20, "angry": 15, "spiritual": 88, "nostalgia": 72
+      },
+      "note": "Baroque & chamber music for study; romantic & symphonic for emotional depth. Opera and choral for grand, moving experiences."
+    },
+    {
+      "id": "country",
+      "icon": "🤠",
+      "name": "Country",
+      "category": "Americana & Folk",
+      "tagline": "Boots, ballads, and the American heartland",
+      "subgenres": [
+        "Alternative Country", "Americana", "Australian Country", "Bakersfield Sound",
+        "Bluegrass", "Blues Country", "Cajun Fiddle Tunes", "Christian Country", "Classic Country",
+        "Contemporary Country", "Country Gospel", "Country Pop", "Country Rock",
+        "Cowboy / Western", "Honky Tonk", "Outlaw Country", "Progressive Bluegrass",
+        "Red Dirt", "Rockabilly", "Texas County", "Traditional Bluegrass",
+        "Traditional Country", "Western Swing", "Zydeco"
+      ],
+      "best_for": [
+        { "emoji": "🌾", "label": "Road trip",     "description": "Open highway driving" },
+        { "emoji": "🔥", "label": "Bonfire",        "description": "Outdoor gatherings" },
+        { "emoji": "💃", "label": "Line dancing",   "description": "Social & fun nights" },
+        { "emoji": "🏡", "label": "Home comfort",   "description": "Nostalgic & warm moods" }
+      ],
+      "mood_profile": { "Energy": 55, "Emotion": 70, "Tension": 28, "Calm": 62 },
+      "mood_fit": {
+        "focus": 35, "energy": 55, "sad": 62, "happy": 68, "romance": 58,
+        "chill": 60, "party": 65, "angry": 28, "spiritual": 42, "nostalgia": 82
+      },
+      "note": "Bluegrass & acoustic country for laid-back days; honky tonk & outlaw country for rowdy nights. Country pop for lighter listening."
+    },
+    {
+      "id": "dance",
+      "icon": "💃",
+      "name": "Dance / EDM",
+      "category": "Electronic & Dance",
+      "tagline": "Built for the floor",
+      "subgenres": [
+        "Acid House", "Breakbeat", "Brostep", "Deep House", "Dubstep", "Electro House",
+        "Eurobeat", "French House", "Garage", "Goa Trance", "Happy Hardcore", "Hard Dance",
+        "Hardstyle", "Hi-NRG", "House", "Jungle / Drum'n'Bass", "Progressive House",
+        "Psytrance", "Techno", "Trance", "Trap (EDM)", "Tribal House", "Tropical House",
+        "UK Garage", "Uplifting Trance", "Vocal House"
+      ],
+      "best_for": [
+        { "emoji": "🎉", "label": "Party",    "description": "Dance floors & celebrations" },
+        { "emoji": "🏃", "label": "Running",  "description": "Sustained tempo & drive" },
+        { "emoji": "🌅", "label": "Festival", "description": "Outdoor raves & events" },
+        { "emoji": "⚡", "label": "Pump up",  "description": "Pre-game energy boost" }
+      ],
+      "mood_profile": { "Energy": 94, "Emotion": 50, "Tension": 48, "Calm": 12 },
+      "mood_fit": {
+        "focus": 15, "energy": 90, "sad": 10, "happy": 90, "romance": 35,
+        "chill": 18, "party": 98, "angry": 30, "spiritual": 8, "nostalgia": 38
+      },
+      "note": "Deep house & tropical house for lighter gatherings; techno & hardstyle for intense energy. Trance for euphoric, uplifting moments."
+    },
+    {
+      "id": "electronic",
+      "icon": "🎛️",
+      "name": "Electronic",
+      "category": "Electronic & Dance",
+      "tagline": "Synthesized soundscapes & digital beats",
+      "subgenres": [
+        "2-Step", "8-bit / Chiptune", "Ambient", "Ambient Dub", "Asian Underground",
+        "Bassline", "Chillwave", "Downtempo", "Drum & Bass", "Electro", "Electronica",
+        "Glitch", "IDM / Experimental", "Industrial", "Synthpop", "Synthwave",
+        "Trip Hop", "Vaporwave", "Video Game Music"
+      ],
+      "best_for": [
+        { "emoji": "💻", "label": "Coding",      "description": "Rhythmic flow state" },
+        { "emoji": "🌙", "label": "Night drive", "description": "Synthwave & neon vibes" },
+        { "emoji": "🧠", "label": "Deep focus",  "description": "Ambient & IDM for flow" },
+        { "emoji": "🕺", "label": "Dancing",     "description": "Electronic sets" }
+      ],
+      "mood_profile": { "Energy": 72, "Emotion": 48, "Tension": 42, "Calm": 58 },
+      "mood_fit": {
+        "focus": 72, "energy": 75, "sad": 30, "happy": 60, "romance": 32,
+        "chill": 72, "party": 72, "angry": 55, "spiritual": 50, "nostalgia": 40
+      },
+      "note": "Ambient, lo-fi & downtempo for calm focus; drum & bass, techno & house for energy. Synthwave for nostalgic late-night drives."
+    },
+    {
+      "id": "folk",
+      "icon": "🪕",
+      "name": "Folk / Acoustic",
+      "category": "Americana & Folk",
+      "tagline": "Stories, strings and natural simplicity",
+      "subgenres": [
+        "American Folk Revival", "Anti-Folk", "British Folk Revival", "Celtic Folk",
+        "Contemporary Folk", "Filk Music", "Freak Folk", "Indie Folk", "Industrial Folk",
+        "Neofolk", "Progressive Folk", "Psychedelic Folk", "Singer-Songwriter",
+        "Sung Poetry", "Techno-Folk", "Traditional Folk"
+      ],
+      "best_for": [
+        { "emoji": "🌿", "label": "Nature walk",  "description": "Hiking & the outdoors" },
+        { "emoji": "📖", "label": "Reading",       "description": "Quiet background music" },
+        { "emoji": "🌧️", "label": "Rainy days",   "description": "Cozy introspective mood" },
+        { "emoji": "👨👩👧", "label": "Family time", "description": "Warm, wholesome setting" }
+      ],
+      "mood_profile": { "Energy": 30, "Emotion": 80, "Tension": 15, "Calm": 90 },
+      "mood_fit": {
+        "focus": 68, "energy": 28, "sad": 80, "happy": 60, "romance": 65,
+        "chill": 88, "party": 35, "angry": 10, "spiritual": 75, "nostalgia": 78
+      },
+      "note": "Celtic & acoustic folk for peaceful focus; singer-songwriter for emotional processing. Indie folk bridges folk and modern indie sounds."
+    },
+    {
+      "id": "gospel",
+      "icon": "🙏",
+      "name": "Gospel / Inspirational",
+      "category": "Soul & Roots",
+      "tagline": "Uplifting, spiritual and powerfully vocal",
+      "subgenres": [
+        "CCM", "Christian Metal", "Christian Pop", "Christian Rap", "Christian Rock",
+        "Classic Christian", "Contemporary Gospel", "Gospel", "Praise & Worship",
+        "Qawwali", "Southern Gospel", "Traditional Gospel"
+      ],
+      "best_for": [
+        { "emoji": "🌅", "label": "Morning ritual", "description": "Uplifting start to the day" },
+        { "emoji": "🤲", "label": "Spiritual",       "description": "Prayer & worship" },
+        { "emoji": "💪", "label": "Motivation",      "description": "Deep, soulful encouragement" },
+        { "emoji": "🫂", "label": "Community",       "description": "Shared joy & togetherness" }
+      ],
+      "mood_profile": { "Energy": 65, "Emotion": 90, "Tension": 8, "Calm": 60 },
+      "mood_fit": {
+        "focus": 42, "energy": 60, "sad": 65, "happy": 82, "romance": 40,
+        "chill": 58, "party": 60, "angry": 38, "spiritual": 95, "nostalgia": 68
+      },
+      "note": "Traditional gospel for deep spiritual immersion; contemporary gospel & CCM for uplifting everyday listening. Qawwali is intensely powerful for devotional states."
+    },
+    {
+      "id": "hiphop",
+      "icon": "🎤",
+      "name": "Hip-Hop / Rap",
+      "category": "Urban & Rhythmic",
+      "tagline": "Beats, bars and bold storytelling",
+      "subgenres": [
+        "Alternative Rap", "Boom Bap", "Bounce", "Chap Hop", "Christian Hip Hop",
+        "Conscious Hip Hop", "Country-Rap", "Dirty South", "East Coast", "Freestyle Rap",
+        "G-Funk", "Gangsta Rap", "Golden Age", "Grime", "Hardcore Rap", "Hip Pop",
+        "Horrorcore", "Industrial Hip Hop", "Instrumental Hip Hop", "Jazz Rap",
+        "Latin Rap", "Lo-fi Hip-Hop", "Lyrical Hip Hop", "Midwest Hip Hop",
+        "New School Hip Hop", "Old School Rap", "Trap", "Turntablism",
+        "Underground Rap", "West Coast Rap"
+      ],
+      "best_for": [
+        { "emoji": "🏃", "label": "Running",    "description": "Steady rhythm & cadence" },
+        { "emoji": "🧹", "label": "Chores",     "description": "Makes tasks feel fun" },
+        { "emoji": "🔥", "label": "Motivation", "description": "Pre-game pump-up" },
+        { "emoji": "🖌️", "label": "Creating",  "description": "Artistic inspiration flow" }
+      ],
+      "mood_profile": { "Energy": 78, "Emotion": 65, "Tension": 60, "Calm": 22 },
+      "mood_fit": {
+        "focus": 55, "energy": 85, "sad": 45, "happy": 70, "romance": 50,
+        "chill": 42, "party": 85, "angry": 78, "spiritual": 30, "nostalgia": 50
+      },
+      "note": "Lo-fi hip-hop & jazz rap for study & calm; trap & drill for high energy. Conscious rap is rich for focused listening and reflection."
+    },
+    {
+      "id": "jazz",
+      "icon": "🎷",
+      "name": "Jazz",
+      "category": "Soul & Roots",
+      "tagline": "Cool, spontaneous and endlessly expressive",
+      "subgenres": [
+        "Acid Jazz", "Afro-Cuban Jazz", "Avant-Garde Jazz", "Bebop", "Big Band",
+        "Blue Note", "Bossa Nova", "Cape Jazz", "Chamber Jazz", "Contemporary Jazz",
+        "Cool Jazz", "Crossover Jazz", "Dark Jazz", "Dixieland", "Early Jazz",
+        "Electro Swing", "Free Jazz", "Fusion", "Gypsy Jazz", "Hard Bop",
+        "Indo Jazz", "Jazz Blues", "Jazz-Funk", "Kansas City Jazz", "Latin Jazz",
+        "Modal Jazz", "Neo-Swing", "Nu Jazz", "Orchestral Jazz", "Post-Bop",
+        "Ragtime", "Ska Jazz", "Smooth Jazz", "Soul Jazz", "Swing Jazz", "West Coast Jazz"
+      ],
+      "best_for": [
+        { "emoji": "☕", "label": "Morning coffee", "description": "Slow, thoughtful start" },
+        { "emoji": "✍️", "label": "Writing",        "description": "Creative flow state" },
+        { "emoji": "🍽️", "label": "Dinner party",  "description": "Relaxed social setting" },
+        { "emoji": "🌃", "label": "Late nights",    "description": "Bars & lounges" }
+      ],
+      "mood_profile": { "Energy": 48, "Emotion": 72, "Tension": 25, "Calm": 80 },
+      "mood_fit": {
+        "focus": 78, "energy": 40, "sad": 72, "happy": 75, "romance": 92,
+        "chill": 85, "party": 58, "angry": 18, "spiritual": 65, "nostalgia": 90
+      },
+      "note": "Smooth jazz & bossa nova for background ambience; bebop & fusion demand active listening. Big band & swing for upbeat social occasions."
+    },
+    {
+      "id": "latin",
+      "icon": "🌶️",
+      "name": "Latin",
+      "category": "World & Cultural",
+      "tagline": "Rhythm, passion and Latin soul",
+      "subgenres": [
+        "Argentine Tango", "Bachata", "Baithak Gana", "Baladas y Boleros", "Bolero",
+        "Bossa Nova", "Brazilian Samba", "Chicha", "Corrido", "Cumbia", "Flamenco",
+        "Joropo", "Latin Jazz", "Mambo", "Mariachi", "Merengue", "Nuevo Flamenco",
+        "Pop Latino", "Portuguese Fado", "Reggaeton", "Regional Mexicano", "Salsa",
+        "Soca", "Son", "Tejano", "Tango", "Timba", "Vallenato", "Zouk"
+      ],
+      "best_for": [
+        { "emoji": "💃", "label": "Dancing", "description": "Salsa, merengue & reggaeton" },
+        { "emoji": "🌞", "label": "Summer",  "description": "Beach & outdoor parties" },
+        { "emoji": "❤️", "label": "Romance", "description": "Passionate & sensual tones" },
+        { "emoji": "🍜", "label": "Cooking", "description": "Kitchen dance sessions" }
+      ],
+      "mood_profile": { "Energy": 85, "Emotion": 75, "Tension": 28, "Calm": 28 },
+      "mood_fit": {
+        "focus": 30, "energy": 80, "sad": 35, "happy": 92, "romance": 90,
+        "chill": 55, "party": 90, "angry": 35, "spiritual": 40, "nostalgia": 70
+      },
+      "note": "Bossa nova & fado for quiet, emotional moments; salsa, cumbia & reggaeton for dancing. Tango is uniquely suited for dramatic, passionate settings."
+    },
+    {
+      "id": "metal",
+      "icon": "🤘",
+      "name": "Metal",
+      "category": "Rock & Guitar",
+      "tagline": "Heavy, loud and technically ferocious",
+      "subgenres": [
+        "Avantgarde Metal", "Black Metal", "Death Metal", "Djent", "Doom Metal",
+        "Folk Metal", "Glam Metal", "Gothic Metal", "Groove Metal", "Hair Metal",
+        "Heavy Metal", "Industrial Metal", "Kawaii Metal", "Math Metal", "Metalcore",
+        "Neoclassical Metal", "New Wave of British Heavy Metal", "Nu Metal", "Pagan Metal",
+        "Pirate Metal", "Post Metal", "Power Metal", "Progressive Metal", "Sludge",
+        "Speed Metal", "Symphonic Metal", "Thrash Metal", "Viking Metal"
+      ],
+      "best_for": [
+        { "emoji": "😤", "label": "Anger release",  "description": "Cathartic emotional outlet" },
+        { "emoji": "🏋️", "label": "Heavy lifting", "description": "Maximum power sessions" },
+        { "emoji": "🧩", "label": "Deep listening", "description": "Technical complexity & craft" },
+        { "emoji": "🎮", "label": "Gaming",         "description": "Intensity & focus boost" }
+      ],
+      "mood_profile": { "Energy": 94, "Emotion": 62, "Tension": 88, "Calm": 6 },
+      "mood_fit": {
+        "focus": 20, "energy": 98, "sad": 42, "happy": 20, "romance": 10,
+        "chill": 5, "party": 50, "angry": 98, "spiritual": 10, "nostalgia": 30
+      },
+      "note": "Symphonic & power metal for epic, cinematic moods; doom & gothic for dark melancholy. Progressive metal rewards concentrated, active listening."
+    },
+    {
+      "id": "newage",
+      "icon": "🌙",
+      "name": "New Age",
+      "category": "Ambient & Healing",
+      "tagline": "Healing, meditative and atmospheric sounds",
+      "subgenres": [
+        "Environmental", "Healing", "Meditation", "Nature", "Relaxation", "Travel"
+      ],
+      "best_for": [
+        { "emoji": "🧘", "label": "Meditation", "description": "Deep mindfulness practice" },
+        { "emoji": "💆", "label": "Spa",         "description": "Calm therapeutic setting" },
+        { "emoji": "😴", "label": "Sleep",       "description": "Drifting off peacefully" },
+        { "emoji": "🌊", "label": "Nature",      "description": "Connecting with the outdoors" }
+      ],
+      "mood_profile": { "Energy": 8, "Emotion": 45, "Tension": 4, "Calm": 99 },
+      "mood_fit": {
+        "focus": 90, "energy": 5, "sad": 55, "happy": 30, "romance": 50,
+        "chill": 98, "party": 5, "angry": 2, "spiritual": 98, "nostalgia": 45
+      },
+      "note": "Purpose-built for relaxation and mindfulness. Ideal alongside yoga, spa treatments, or any moment requiring total calm and mental clarity."
+    },
+    {
+      "id": "pop",
+      "icon": "🎶",
+      "name": "Pop",
+      "category": "Pop & Commercial",
+      "tagline": "Catchy, polished and universally appealing",
+      "subgenres": [
+        "Adult Contemporary", "Arab Pop", "Baroque Pop", "Britpop", "Bubblegum Pop",
+        "Chamber Pop", "Christian Pop", "Classical Crossover", "Dance Pop", "Dream Pop",
+        "Electro Pop", "Europop", "Indie Pop", "Iranian Pop", "Jangle Pop",
+        "K-Pop", "New Romanticism", "Orchestral Pop", "Pop Punk", "Pop Rap",
+        "Power Pop", "Psychedelic Pop", "Schlager", "Soft Rock", "Sophisti-Pop",
+        "Sunshine Pop", "Surf Pop", "Synthpop", "Teen Pop", "Traditional Pop"
+      ],
+      "best_for": [
+        { "emoji": "🎉", "label": "Party",    "description": "Everyone knows the words" },
+        { "emoji": "🚗", "label": "Commute",  "description": "Upbeat & mood-lifting" },
+        { "emoji": "🧹", "label": "Chores",   "description": "Background boost" },
+        { "emoji": "😊", "label": "Good mood","description": "Amplify happiness" }
+      ],
+      "mood_profile": { "Energy": 70, "Emotion": 62, "Tension": 18, "Calm": 45 },
+      "mood_fit": {
+        "focus": 30, "energy": 70, "sad": 40, "happy": 95, "romance": 70,
+        "chill": 50, "party": 92, "angry": 20, "spiritual": 25, "nostalgia": 75
+      },
+      "note": "Dream pop & chamber pop for introspective evenings; dance pop & electropop for energy. K-Pop blends spectacle with infectious hooks."
+    },
+    {
+      "id": "reggae",
+      "icon": "🌴",
+      "name": "Reggae / Ska",
+      "category": "World & Cultural",
+      "tagline": "Roots, rhythm and conscious vibes",
+      "subgenres": [
+        "2-Tone", "Dancehall", "Dub", "Lovers Rock", "Raggamuffin", "Ragga",
+        "Reggae Fusion", "Reggae en Español", "Roots Reggae", "Rocksteady", "Ska"
+      ],
+      "best_for": [
+        { "emoji": "🏖️", "label": "Beach",     "description": "Sun, sand and waves" },
+        { "emoji": "😌", "label": "Unwinding", "description": "End-of-day decompression" },
+        { "emoji": "🌿", "label": "Outdoors",  "description": "Nature & fresh air vibes" },
+        { "emoji": "🤝", "label": "Community", "description": "Positive, uplifting social music" }
+      ],
+      "mood_profile": { "Energy": 55, "Emotion": 62, "Tension": 14, "Calm": 78 },
+      "mood_fit": {
+        "focus": 38, "energy": 52, "sad": 38, "happy": 88, "romance": 60,
+        "chill": 82, "party": 78, "angry": 30, "spiritual": 68, "nostalgia": 65
+      },
+      "note": "Roots reggae & dub for deep relaxation; ska & dancehall for energy. Reggae is uniquely suited to outdoor, sun-drenched settings."
+    },
+    {
+      "id": "rnb",
+      "icon": "🎙️",
+      "name": "R&B / Soul",
+      "category": "Soul & Roots",
+      "tagline": "Groove, emotion and deep vocal warmth",
+      "subgenres": [
+        "Beach Music", "Contemporary R&B", "Disco", "Doo Wop", "Funk",
+        "Modern Soul", "Motown", "Neo-Soul", "Northern Soul",
+        "Psychedelic Soul", "Quiet Storm", "Soul", "Soul Blues", "Southern Soul"
+      ],
+      "best_for": [
+        { "emoji": "❤️", "label": "Romance",        "description": "Date night atmosphere" },
+        { "emoji": "🛁", "label": "Self-care",       "description": "Bath & slow evening" },
+        { "emoji": "🌅", "label": "Sunday morning", "description": "Slow, warm start" },
+        { "emoji": "🫂", "label": "Heartbreak",     "description": "Processing deep emotion" }
+      ],
+      "mood_profile": { "Energy": 52, "Emotion": 88, "Tension": 28, "Calm": 68 },
+      "mood_fit": {
+        "focus": 40, "energy": 50, "sad": 88, "happy": 78, "romance": 98,
+        "chill": 70, "party": 75, "angry": 35, "spiritual": 55, "nostalgia": 80
+      },
+      "note": "Neo-soul & quiet storm for introspective moments; funk & Motown for upbeat joy. Disco is perfect for nostalgic dancing."
+    },
+    {
+      "id": "rock",
+      "icon": "🎸",
+      "name": "Rock",
+      "category": "Rock & Guitar",
+      "tagline": "Electric, rebellious and timeless",
+      "subgenres": [
+        "Acid Rock", "Adult Alternative", "Alternative Rock", "Anatolian Rock",
+        "Arena Rock", "Art Rock", "Blues-Rock", "British Invasion", "Classic Rock",
+        "Garage Rock", "Glam Rock", "Grunge", "Hard Rock", "Indie Rock",
+        "Jam Bands", "Math Rock", "Post Punk", "Post Rock", "Prog-Rock / Art Rock",
+        "Psychedelic Rock", "Rock & Roll", "Rockabilly", "Roots Rock",
+        "Southern Rock", "Stoner Metal", "Surf Rock", "Yacht Rock"
+      ],
+      "best_for": [
+        { "emoji": "🏋️", "label": "Workout",   "description": "High energy training" },
+        { "emoji": "🚗", "label": "Road trip",  "description": "Windows-down driving" },
+        { "emoji": "🎉", "label": "Party",      "description": "Classic crowd pleasers" },
+        { "emoji": "😤", "label": "Release",    "description": "Stress & cathartic outlet" }
+      ],
+      "mood_profile": { "Energy": 82, "Emotion": 65, "Tension": 60, "Calm": 22 },
+      "mood_fit": {
+        "focus": 35, "energy": 92, "sad": 60, "happy": 65, "romance": 30,
+        "chill": 30, "party": 70, "angry": 88, "spiritual": 20, "nostalgia": 85
+      },
+      "note": "Indie & art rock for thoughtful listening; classic rock & hard rock for energy. Post-rock builds vast, cinematic soundscapes perfect for focus."
+    },
+    {
+      "id": "singer",
+      "icon": "🪗",
+      "name": "Singer-Songwriter",
+      "category": "Americana & Folk",
+      "tagline": "Intimate, personal and lyrically rich",
+      "subgenres": [
+        "Alternative Folk", "Contemporary Folk", "Contemporary Singer-Songwriter",
+        "Folk-Rock", "Indie Folk", "Love Song / Chanson", "New Acoustic", "Traditional Folk"
+      ],
+      "best_for": [
+        { "emoji": "💔", "label": "Processing feelings", "description": "Deeply personal & honest" },
+        { "emoji": "📖", "label": "Quiet evening",       "description": "Thoughtful background" },
+        { "emoji": "🌧️", "label": "Rainy day",          "description": "Cozy introspection" },
+        { "emoji": "✍️", "label": "Journaling",          "description": "Reflective writing sessions" }
+      ],
+      "mood_profile": { "Energy": 25, "Emotion": 94, "Tension": 20, "Calm": 82 },
+      "mood_fit": {
+        "focus": 62, "energy": 22, "sad": 98, "happy": 40, "romance": 85,
+        "chill": 75, "party": 22, "angry": 22, "spiritual": 70, "nostalgia": 85
+      },
+      "note": "The most personal of all genres. Best for quiet, solitary moments — journaling, late evenings, or emotional processing."
+    },
+    {
+      "id": "world",
+      "icon": "🌍",
+      "name": "World Music",
+      "category": "World & Cultural",
+      "tagline": "Rhythms and traditions from every corner of Earth",
+      "subgenres": [
+        "Afrobeats", "Afro-Beat", "Afro-Pop", "Apala", "Baila", "Bhangra",
+        "Bhojpuri", "Bollywood / Filmi", "Bossa Nova", "Calypso", "Cape Jazz",
+        "Celtic", "Dangdut", "Enka", "Fado", "Flamenco", "Gamelan", "Gnawa",
+        "Highlife", "Hindustani", "Indian Classical (Carnatic)", "J-Pop",
+        "K-Pop", "Klezmer", "Luk Thung", "Mbalax", "Polka", "Qawwali",
+        "Soca", "Soukous", "Taarab", "Thai Pop", "Throat Singing",
+        "Worldbeat", "Zydeco"
+      ],
+      "best_for": [
+        { "emoji": "✈️", "label": "Travel mood", "description": "Exploring cultures sonically" },
+        { "emoji": "🌞", "label": "Summer",       "description": "Outdoors & festivals" },
+        { "emoji": "💃", "label": "Dancing",      "description": "Groove-rich traditions" },
+        { "emoji": "🍜", "label": "Cooking",      "description": "Kitchen dance sessions" }
+      ],
+      "mood_profile": { "Energy": 70, "Emotion": 72, "Tension": 22, "Calm": 48 },
+      "mood_fit": {
+        "focus": 40, "energy": 68, "sad": 50, "happy": 85, "romance": 55,
+        "chill": 65, "party": 80, "angry": 25, "spiritual": 78, "nostalgia": 60
+      },
+      "note": "Celtic & bossa nova for calm listening; Afrobeats, bhangra & soca for infectious energy. World music is an endless explorer's genre."
+    }
+  ]
+}

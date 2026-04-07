@@ -35,6 +35,7 @@ const pageGroups = [
       { label: 'Animations Guide', path: '/animations-guide' },
       { label: 'Motion Design', path: '/motion-design' },
       { label: 'Design Styles', path: '/design-styles' },
+      { label: 'Vibe Explorer', path: '/vibe-explorer' },
     ]
   },
   {

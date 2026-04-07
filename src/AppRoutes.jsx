@@ -19,6 +19,7 @@ import DesignStyles from "./Components/DesignStyles";
 import { Toaster } from "react-hot-toast";
 import ThemeToggle from "./Components/ThemeToggle.jsx";
 import ProjectChecklist from "./Components/ProjectChecklist";
+import VibeExplorer from "./Components/VibeExplorer.jsx";
 import NotFound from "./Components/NotFound.jsx";
 import SearchCommand from "./Components/common/SearchCommandMenu.jsx";
 
@@ -49,6 +50,7 @@ const Layout = () => {
         <Route path='/social-intelligence' element={<SocialIntelligence />} />
         <Route path='/design-styles' element={<DesignStyles />} />
         <Route path='/project-checklist' element={<ProjectChecklist />} />
+        <Route path='/vibe-explorer' element={<VibeExplorer />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       {!hideFooter && <Footer />}
