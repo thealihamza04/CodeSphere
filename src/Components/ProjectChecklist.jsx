@@ -173,7 +173,10 @@ const ProjectChecklist = () => {
   };
 
   return (
-    <div className="max-w-full overflow-x-hidden min-h-screen bg-[#fdfdfc] dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 font-serif selection:bg-neutral-200 dark:selection:bg-neutral-800 pb-32">
+    <div 
+      className="max-w-full overflow-x-hidden min-h-screen bg-[#fdfdfc] dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 font-serif selection:bg-neutral-200 dark:selection:bg-neutral-800 pb-32"
+      data-page-context={JSON.stringify(checklistData)}
+    >
       
       {/* Hero Header */}
       <div className="border-b-[3px] border-neutral-900 dark:border-neutral-100 pb-12 pt-16 md:pt-24 px-6 max-w-5xl mx-auto relative text-center">

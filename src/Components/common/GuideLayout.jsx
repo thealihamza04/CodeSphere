@@ -82,7 +82,10 @@ const GuideLayout = ({
     const SelectedCategoryIcon = selectedPrinciple ? (categoryIcons[selectedPrinciple.category] || DefaultIcon) : null;
 
     return (
-        <div className='relative max-w-full min-h-screen overflow-x-hidden bg-base-100'>
+        <div 
+            className='relative max-w-full min-h-screen overflow-x-hidden bg-base-100'
+            data-page-context={JSON.stringify(data)}
+        >
             {/* Main Content Wrapper with Dynamic Blur */}
             <div className={`transition-all duration-500 ease-in-out ${selectedPrinciple ? 'blur-sm scale-[0.98] pointer-events-none brightness-75' : 'blur-0 scale-100'}`}>
                 <div className="px-4 py-12 md:px-12 lg:px-24">

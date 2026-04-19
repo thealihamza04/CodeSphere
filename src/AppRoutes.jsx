@@ -22,6 +22,7 @@ import ProjectChecklist from "./Components/ProjectChecklist";
 import VibeExplorer from "./Components/VibeExplorer.jsx";
 import NotFound from "./Components/NotFound.jsx";
 import SearchCommand from "./Components/common/SearchCommandMenu.jsx";
+import CopyPage from "./Components/CopyPage.jsx";
 
 const Layout = () => {
   const location = useLocation();
@@ -31,6 +32,7 @@ const Layout = () => {
     <div className="max-w-full overflow-x-hidden">
       <Toaster />
       <ThemeToggle />
+      <CopyPage />
       <SearchCommand />
       <Routes>
         <Route path='/' element={<ProgrammingLanguages />} />

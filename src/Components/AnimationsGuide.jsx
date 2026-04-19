@@ -79,7 +79,10 @@ const AnimationsGuide = () => {
   }, [selectedAnim]);
 
   return (
-    <div className="relative min-h-screen bg-base-100 max-w-full overflow-x-hidden">
+    <div 
+      className="relative min-h-screen bg-base-100 max-w-full overflow-x-hidden"
+      data-page-context={JSON.stringify(AnimationsData)}
+    >
       {/* Main Content Wrapper with Dynamic Blur */}
       <div className={`transition-all duration-500 ease-in-out ${selectedAnim ? 'blur-sm scale-[0.98] pointer-events-none brightness-75' : 'blur-0 scale-100'}`}>
         <div className="px-4 py-12 md:px-12 lg:px-24">
