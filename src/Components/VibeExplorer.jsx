@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, memo } from "react";
+import { useState, useMemo, useEffect, memo, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LuFilter, LuRotateCcw, LuSearch, LuInbox } from "react-icons/lu";
 import vibeData from "../Data/vibeData.json";
@@ -46,6 +46,21 @@ const VibeExplorer = () => {
       return fitB - fitA;
     });
   }, [selectedMood, searchQuery]);
+
+  const selectedGenreIndex = useMemo(
+    () => filteredGenres.findIndex((genre) => genre.id === selectedGenre?.id),
+    [filteredGenres, selectedGenre]
+  );
+
+  const selectNextGenre = useCallback(() => {
+    if (!filteredGenres.length || selectedGenreIndex < 0) return;
+    setSelectedGenre(filteredGenres[(selectedGenreIndex + 1) % filteredGenres.length]);
+  }, [filteredGenres, selectedGenreIndex]);
+
+  const selectPrevGenre = useCallback(() => {
+    if (!filteredGenres.length || selectedGenreIndex < 0) return;
+    setSelectedGenre(filteredGenres[(selectedGenreIndex - 1 + filteredGenres.length) % filteredGenres.length]);
+  }, [filteredGenres, selectedGenreIndex]);
 
   const activeMood = useMemo(() => 
     vibeData.moods.find(m => m.id === selectedMood), 
@@ -182,6 +197,8 @@ const VibeExplorer = () => {
           <GenreSheet 
             genre={selectedGenre} 
             onClose={() => setSelectedGenre(null)} 
+            onNext={selectNextGenre}
+            onPrev={selectPrevGenre}
           />
         )}
       </AnimatePresence>

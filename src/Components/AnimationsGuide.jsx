@@ -1,5 +1,6 @@
 import AnimationsData from "../Data/AnimationsData.json";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import PropTypes from "prop-types";
 import useSEO from "./Hooks/useSEO";
 import { 
   LuMove, 
@@ -46,6 +47,11 @@ const AnimationSubCard = ({ type, onClick }) => (
   </button>
 );
 
+AnimationSubCard.propTypes = {
+  type: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
 const AnimationsGuide = () => {
   const [selectedAnim, setSelectedAnim] = useState(null);
 
@@ -59,6 +65,16 @@ const AnimationsGuide = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
+
+  const flattenedItems = useMemo(() =>
+    AnimationsData.flatMap((category) =>
+      category.SubAnimations.map((item) => ({ ...item, category: category.Category }))
+    ),
+  []);
+
+  const selectedItemIndex = useMemo(() =>
+    flattenedItems.findIndex((item) => item.Type === selectedAnim?.Type && item.category === selectedAnim?.category),
+  [flattenedItems, selectedAnim]);
 
   useEffect(() => {
     const lockScroll = () => {
@@ -75,8 +91,28 @@ const AnimationsGuide = () => {
     } else {
       unlockScroll();
     }
-    return () => unlockScroll();
-  }, [selectedAnim]);
+
+    const handleKeydown = (e) => {
+      if (e.key === "Escape") {
+        setSelectedAnim(null);
+      }
+      if (e.key === "ArrowRight" && selectedItemIndex >= 0) {
+        setSelectedAnim(flattenedItems[(selectedItemIndex + 1) % flattenedItems.length]);
+      }
+      if (e.key === "ArrowLeft" && selectedItemIndex >= 0) {
+        setSelectedAnim(flattenedItems[(selectedItemIndex - 1 + flattenedItems.length) % flattenedItems.length]);
+      }
+    };
+
+    if (selectedAnim) {
+      window.addEventListener("keydown", handleKeydown);
+    }
+
+    return () => {
+      unlockScroll();
+      window.removeEventListener("keydown", handleKeydown);
+    };
+  }, [flattenedItems, selectedItemIndex, selectedAnim]);
 
   return (
     <div 

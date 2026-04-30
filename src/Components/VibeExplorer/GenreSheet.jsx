@@ -47,7 +47,7 @@ const SectionHeader = ({ icon: Icon, title }) => (
   </div>
 );
 
-const GenreSheet = ({ genre, onClose }) => {
+const GenreSheet = ({ genre, onClose, onNext, onPrev }) => {
   useEffect(() => {
     const lockScroll = () => {
       document.documentElement.style.overflow = "hidden";
@@ -61,16 +61,18 @@ const GenreSheet = ({ genre, onClose }) => {
     if (genre) lockScroll();
     else unlockScroll();
 
-    const handleEsc = (e) => {
+    const handleKeydown = (e) => {
       if (e.key === "Escape") onClose();
+      if (e.key === "ArrowRight") onNext?.();
+      if (e.key === "ArrowLeft") onPrev?.();
     };
 
-    if (genre) window.addEventListener("keydown", handleEsc);
+    if (genre) window.addEventListener("keydown", handleKeydown);
     return () => {
       unlockScroll();
-      window.removeEventListener("keydown", handleEsc);
+      window.removeEventListener("keydown", handleKeydown);
     };
-  }, [genre, onClose]);
+  }, [genre, onClose, onNext, onPrev]);
 
   if (!genre) return null;
 
@@ -211,6 +213,8 @@ GenreSheet.propTypes = {
     note: PropTypes.string.isRequired,
   }),
   onClose: PropTypes.func.isRequired,
+  onNext: PropTypes.func,
+  onPrev: PropTypes.func,
 };
 
 ComparisonRow.propTypes = {

@@ -49,7 +49,7 @@ SectionCard.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-const StyleSheet = ({ style, onClose }) => {
+const StyleSheet = ({ style, onClose, onNext, onPrev }) => {
   useEffect(() => {
     const lockScroll = () => {
       document.documentElement.style.overflow = "hidden";
@@ -66,19 +66,21 @@ const StyleSheet = ({ style, onClose }) => {
       unlockScroll();
     }
 
-    const handleEsc = (e) => {
+    const handleKeydown = (e) => {
       if (e.key === "Escape") onClose();
+      if (e.key === "ArrowRight") onNext?.();
+      if (e.key === "ArrowLeft") onPrev?.();
     };
 
     if (style) {
-      window.addEventListener("keydown", handleEsc);
+      window.addEventListener("keydown", handleKeydown);
     }
 
     return () => {
       unlockScroll();
-      window.removeEventListener("keydown", handleEsc);
+      window.removeEventListener("keydown", handleKeydown);
     };
-  }, [style, onClose]);
+  }, [style, onClose, onNext, onPrev]);
 
   if (!style) return null;
 
@@ -218,6 +220,8 @@ const StyleSheet = ({ style, onClose }) => {
 StyleSheet.propTypes = {
   style: PropTypes.object,
   onClose: PropTypes.func.isRequired,
+  onNext: PropTypes.func,
+  onPrev: PropTypes.func,
 };
 
 export default StyleSheet;
