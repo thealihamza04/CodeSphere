@@ -116,6 +116,27 @@ const DesignStyles = () => {
 
   const closeSheet = useCallback(() => setSelectedStyle(null), []);
 
+  const flattenedStyles = useMemo(
+    () => filteredData.flatMap((category) => category.styles),
+    [filteredData]
+  );
+
+  const selectedStyleIndex = useMemo(
+    () => flattenedStyles.findIndex((item) => item.style === selectedStyle?.style),
+    [flattenedStyles, selectedStyle]
+  );
+
+  const selectNextStyle = useCallback(() => {
+    if (!flattenedStyles.length || selectedStyleIndex < 0) return;
+    setSelectedStyle(flattenedStyles[(selectedStyleIndex + 1) % flattenedStyles.length]);
+  }, [flattenedStyles, selectedStyleIndex]);
+
+  const selectPrevStyle = useCallback(() => {
+    if (!flattenedStyles.length || selectedStyleIndex < 0) return;
+    setSelectedStyle(flattenedStyles[(selectedStyleIndex - 1 + flattenedStyles.length) % flattenedStyles.length]);
+  }, [flattenedStyles, selectedStyleIndex]);
+
+
   return (
     <div className="relative max-w-full min-h-screen overflow-x-hidden bg-base-100">
       {/* Main Content Wrapper (Optimized for composite-only 60fps performance) */}
@@ -190,7 +211,7 @@ const DesignStyles = () => {
       </div>
 
       {/* Side Sheet */}
-      <StyleSheet style={selectedStyle} onClose={closeSheet} />
+      <StyleSheet style={selectedStyle} onClose={closeSheet} onNext={selectNextStyle} onPrev={selectPrevStyle} />
 
       {/* Filter Modal */}
       <StyleFilterModal 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import PropTypes from "prop-types";
 import useSEO from "../Hooks/useSEO";
 import {
@@ -42,6 +42,14 @@ const GuideLayout = ({
 }) => {
     const [selectedPrinciple, setSelectedPrinciple] = useState(null);
 
+    const flattenedPrinciples = useMemo(() =>
+        data.flatMap((category) => (category.Principles || category.Skills || []).map((item) => ({ ...item, category: category.Category }))),
+    [data]);
+
+    const selectedPrincipleIndex = useMemo(() =>
+        flattenedPrinciples.findIndex((item) => item.Title === selectedPrinciple?.Title && item.category === selectedPrinciple?.category),
+    [flattenedPrinciples, selectedPrinciple]);
+
     useSEO(seoConfig);
 
     useEffect(() => {
@@ -64,19 +72,25 @@ const GuideLayout = ({
             unlockScroll();
         }
 
-        const handleEsc = (e) => {
+        const handleKeydown = (e) => {
             if (e.key === "Escape") setSelectedPrinciple(null);
+            if (e.key === "ArrowRight" && selectedPrincipleIndex >= 0) {
+                setSelectedPrinciple(flattenedPrinciples[(selectedPrincipleIndex + 1) % flattenedPrinciples.length]);
+            }
+            if (e.key === "ArrowLeft" && selectedPrincipleIndex >= 0) {
+                setSelectedPrinciple(flattenedPrinciples[(selectedPrincipleIndex - 1 + flattenedPrinciples.length) % flattenedPrinciples.length]);
+            }
         };
 
         if (selectedPrinciple) {
-            window.addEventListener("keydown", handleEsc);
+            window.addEventListener("keydown", handleKeydown);
         }
 
         return () => {
             unlockScroll();
-            window.removeEventListener("keydown", handleEsc);
+            window.removeEventListener("keydown", handleKeydown);
         };
-    }, [selectedPrinciple]);
+    }, [flattenedPrinciples, selectedPrinciple, selectedPrincipleIndex]);
 
     // Icon for the side sheet
     const SelectedCategoryIcon = selectedPrinciple ? (categoryIcons[selectedPrinciple.category] || DefaultIcon) : null;

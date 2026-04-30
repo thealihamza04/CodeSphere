@@ -1,5 +1,5 @@
 import MotionDesignData from "../Data/MotionDesignData.json";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import PropTypes from "prop-types";
 import useSEO from "./Hooks/useSEO";
@@ -62,6 +62,16 @@ const MotionDesign = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
+  const flattenedItems = useMemo(() =>
+    MotionDesignData.flatMap((category) =>
+      category.SubPrinciples.map((item) => ({ ...item, category: category.Category }))
+    ),
+  []);
+
+  const selectedItemIndex = useMemo(() =>
+    flattenedItems.findIndex((item) => item.Type === selectedPrinciple?.Type && item.category === selectedPrinciple?.category),
+  [flattenedItems, selectedPrinciple]);
+
   useEffect(() => {
     const lockScroll = () => {
       document.documentElement.style.overflow = "hidden";
@@ -77,8 +87,28 @@ const MotionDesign = () => {
     } else {
       unlockScroll();
     }
-    return () => unlockScroll();
-  }, [selectedPrinciple]);
+
+    const handleKeydown = (e) => {
+      if (e.key === "Escape") {
+        setSelectedPrinciple(null);
+      }
+      if (e.key === "ArrowRight" && selectedItemIndex >= 0) {
+        setSelectedPrinciple(flattenedItems[(selectedItemIndex + 1) % flattenedItems.length]);
+      }
+      if (e.key === "ArrowLeft" && selectedItemIndex >= 0) {
+        setSelectedPrinciple(flattenedItems[(selectedItemIndex - 1 + flattenedItems.length) % flattenedItems.length]);
+      }
+    };
+
+    if (selectedPrinciple) {
+      window.addEventListener("keydown", handleKeydown);
+    }
+
+    return () => {
+      unlockScroll();
+      window.removeEventListener("keydown", handleKeydown);
+    };
+  }, [flattenedItems, selectedItemIndex, selectedPrinciple]);
 
   return (
     <div className="relative min-h-screen bg-base-100 max-w-full overflow-x-hidden">
