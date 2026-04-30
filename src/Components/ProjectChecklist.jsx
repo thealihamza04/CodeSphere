@@ -9,18 +9,23 @@ import useSEO from "./Hooks/useSEO";
 import checklistData from "../Data/ProjectChecklist.json";
 
 const ProjectChecklist = () => {
+  const canUseStorage = typeof window !== "undefined" && typeof localStorage !== "undefined";
+
   // Persistence states
   const [selectedAddons, setSelectedAddons] = useState(() => {
+    if (!canUseStorage) return [];
     const saved = localStorage.getItem("codesphere_checklist_addons");
     return saved ? JSON.parse(saved) : [];
   });
 
   const [checkedTaskIds, setCheckedTaskIds] = useState(() => {
+    if (!canUseStorage) return [];
     const saved = localStorage.getItem("codesphere_checklist_checked");
     return saved ? JSON.parse(saved) : [];
   });
 
   const [hasShownWarning, setHasShownWarning] = useState(() => {
+    if (!canUseStorage) return false;
     return localStorage.getItem("codesphere_checklist_warning_shown") === "true";
   });
 
@@ -52,18 +57,21 @@ const ProjectChecklist = () => {
 
   // Persistence effects
   useEffect(() => {
+    if (!canUseStorage) return;
     localStorage.setItem("codesphere_checklist_addons", JSON.stringify(selectedAddons));
-  }, [selectedAddons]);
+  }, [canUseStorage, selectedAddons]);
 
   useEffect(() => {
+    if (!canUseStorage) return;
     localStorage.setItem("codesphere_checklist_checked", JSON.stringify(checkedTaskIds));
-  }, [checkedTaskIds]);
+  }, [canUseStorage, checkedTaskIds]);
 
   useEffect(() => {
+    if (!canUseStorage) return;
     if (hasShownWarning) {
       localStorage.setItem("codesphere_checklist_warning_shown", "true");
     }
-  }, [hasShownWarning]);
+  }, [canUseStorage, hasShownWarning]);
 
   const toggleAddon = (addonKey) => {
     setSelectedAddons((prev) =>

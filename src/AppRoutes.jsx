@@ -26,7 +26,8 @@ import CopyPage from "./Components/CopyPage.jsx";
 
 const Layout = () => {
   const location = useLocation();
-  const hideFooter = location.pathname.startsWith("/Frameworks");
+  const lowerPath = location.pathname.toLowerCase();
+  const hideFooter = lowerPath.startsWith("/frameworks");
 
   return (
     <div className="max-w-full overflow-x-hidden">
@@ -37,6 +38,7 @@ const Layout = () => {
       <Routes>
         <Route path='/' element={<ProgrammingLanguages />} />
         <Route path='/Frameworks' element={<Frameworks />} />
+        <Route path='/frameworks/:langSlug' element={<Frameworks />} />
         <Route path='/TimeLine' element={<ProgrammingTimeline />} />
         <Route path='/ml-roadmap' element={<MachineLearningRoadmap />} />
         <Route path='/ai-roadmap' element={<AIEngineerRoadmap />} />
