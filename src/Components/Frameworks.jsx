@@ -1,17 +1,31 @@
 import { useEffect, useMemo } from "react";
 import Card from "./cards/Card";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import useSEO from "./Hooks/useSEO";
 import LanguagesCatalog from "../Data/LanguagesCatalog.json";
 import { IoIosArrowBack } from "react-icons/io";
 
 
+
+const FRAMEWORK_SLUG_MAP = {
+  cpp: "C++",
+  csharp: "C#",
+}
+
+const normalizeFrameworkSlug = (langSlug = "") => {
+  if (!langSlug) return null
+  return FRAMEWORK_SLUG_MAP[langSlug.toLowerCase()] ?? langSlug
+}
+
 const Frameworks = () => {
   const location = useLocation();
+  const { langSlug } = useParams();
   const { Frameworks: stateFrameworks = [] } = location.state || {};
 
   const langFromQuery = new URLSearchParams(location.search).get("lang");
-  const normalizedLang = langFromQuery?.toLowerCase();
+  const langFromSlug = normalizeFrameworkSlug(langSlug);
+  const activeLang = langFromQuery || langFromSlug;
+  const normalizedLang = activeLang?.toLowerCase();
 
   const languageDetails = useMemo(() => {
     if (!normalizedLang) return null;
@@ -123,8 +137,10 @@ const Frameworks = () => {
   ]);
 
   const canonicalUrl = languageDetails
-    ? `https://codes-sphere.vercel.app/Frameworks?lang=${encodeURIComponent(
-      languageDetails.Language
+    ? `https://codes-sphere.vercel.app/frameworks/${encodeURIComponent(
+      languageDetails.Language.toLowerCase()
+        .replace("c++", "cpp")
+        .replace("c#", "csharp")
     )}`
     : "https://codes-sphere.vercel.app/Frameworks";
 
