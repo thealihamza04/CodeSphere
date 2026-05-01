@@ -31,13 +31,13 @@ const categoryIcons = {
   "Spatial Navigation": <LuMove />
 };
 
-const PrincipleSubCard = ({ type, onClick }) => (
+const PrincipleSubCard = ({ type, onClick, isActive }) => (
   <button 
     onClick={onClick}
-    className="group flex items-center justify-between py-4 border-b border-base-300/60 last:border-0 w-full text-left transition-[padding-left] duration-300 hover:pl-2"
+    className={`group flex items-center justify-between py-4 px-3 rounded-xl border-b border-base-300/60 last:border-0 w-full text-left transition-all duration-300 ${isActive ? "bg-primary/10 border border-primary/40" : "hover:pl-2 hover:bg-base-200/50"}`}
   >
-    <h3 className="text-[15px] font-bold tracking-tight text-base-content/80 group-hover:text-primary leading-none">{type}</h3>
-    <div className="text-base-content/20 group-hover:text-primary group-hover:translate-x-1 transition-transform duration-300">
+    <h3 className={`text-[15px] font-bold tracking-tight leading-none ${isActive ? "text-primary" : "text-base-content/80 group-hover:text-primary"}`}>{type}</h3>
+    <div className={`group-hover:translate-x-1 transition-transform duration-300 ${isActive ? "text-primary/80" : "text-base-content/20 group-hover:text-primary"}`}>
       <LuArrowUpRight className="size-4" />
     </div>
   </button>
@@ -46,10 +46,12 @@ const PrincipleSubCard = ({ type, onClick }) => (
 PrincipleSubCard.propTypes = {
   type: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+  isActive: PropTypes.bool,
 };
 
 const MotionDesign = () => {
   const [selectedPrinciple, setSelectedPrinciple] = useState(null);
+  const [lastViewedPrinciple, setLastViewedPrinciple] = useState(null);
 
   useSEO({
     title: "Motion Design Principles | CodeSphere",
@@ -71,6 +73,10 @@ const MotionDesign = () => {
   const selectedItemIndex = useMemo(() =>
     flattenedItems.findIndex((item) => item.Type === selectedPrinciple?.Type && item.category === selectedPrinciple?.category),
   [flattenedItems, selectedPrinciple]);
+
+  useEffect(() => {
+    if (selectedPrinciple) setLastViewedPrinciple(selectedPrinciple);
+  }, [selectedPrinciple]);
 
   useEffect(() => {
     const lockScroll = () => {
@@ -157,6 +163,7 @@ const MotionDesign = () => {
                       key={sIdx}
                       type={sub.Type}
                       onClick={() => setSelectedPrinciple({ ...sub, category: category.Category })}
+                      isActive={lastViewedPrinciple?.Type === sub.Type && lastViewedPrinciple?.category === category.Category}
                     />
                   ))}
                 </div>

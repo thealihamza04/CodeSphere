@@ -29,6 +29,7 @@ const containerVariants = {
 
 const DesignStyles = () => {
   const [selectedStyle, setSelectedStyle] = useState(null);
+  const [lastViewedStyle, setLastViewedStyle] = useState(null);
   
   // Filtering States
   const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
@@ -126,6 +127,10 @@ const DesignStyles = () => {
     [flattenedStyles, selectedStyle]
   );
 
+  useEffect(() => {
+    if (selectedStyle) setLastViewedStyle(selectedStyle);
+  }, [selectedStyle]);
+
   const selectNextStyle = useCallback(() => {
     if (!flattenedStyles.length || selectedStyleIndex < 0) return;
     setSelectedStyle(flattenedStyles[(selectedStyleIndex + 1) % flattenedStyles.length]);
@@ -195,6 +200,7 @@ const DesignStyles = () => {
                 index={idx}
                 categoryIcons={categoryIcons}
                 onSelectStyle={setSelectedStyle}
+                activeStyleName={lastViewedStyle?.style}
               />
             )) : (
               <div className="flex flex-col items-center justify-center col-span-1 py-20 text-center border-2 border-dashed rounded-3xl md:col-span-2 lg:col-span-3 border-base-content/10 bg-base-200/50">

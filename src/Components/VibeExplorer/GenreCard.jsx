@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import { genreIcons } from "./iconMap";
 
-const GenreCard = ({ genre, onSelectGenre, fitScore }) => {
+const GenreCard = ({ genre, onSelectGenre, fitScore, isActive }) => {
   const Icon = genreIcons[genre.id] || genreIcons.blues;
 
   return (
@@ -11,7 +11,7 @@ const GenreCard = ({ genre, onSelectGenre, fitScore }) => {
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ borderColor: "rgba(var(--p), 0.5)" }} // Highlight on hover using theme primary
       onClick={() => onSelectGenre(genre)}
-      className="group flex flex-col p-5 bg-base-100 border border-base-300 rounded-lg cursor-pointer transition-all duration-200 hover:bg-base-200/40"
+      className={`group flex flex-col p-5 bg-base-100 border rounded-lg cursor-pointer transition-all duration-200 hover:bg-base-200/40 ${isActive ? "border-primary bg-primary/5 shadow-sm" : "border-base-300"}`}
     >
       <div className="flex items-start justify-between mb-6">
         <div className="flex flex-col gap-1">
@@ -56,6 +56,7 @@ GenreCard.propTypes = {
   }).isRequired,
   onSelectGenre: PropTypes.func.isRequired,
   fitScore: PropTypes.number,
+  isActive: PropTypes.bool,
 };
 
 export default GenreCard;
