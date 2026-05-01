@@ -12,6 +12,7 @@ const MemoizedGenreCard = memo(GenreCard);
 const VibeExplorer = () => {
   const [selectedMood, setSelectedMood] = useState(null);
   const [selectedGenre, setSelectedGenre] = useState(null);
+  const [lastViewedGenre, setLastViewedGenre] = useState(null);
   const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -61,6 +62,10 @@ const VibeExplorer = () => {
     if (!filteredGenres.length || selectedGenreIndex < 0) return;
     setSelectedGenre(filteredGenres[(selectedGenreIndex - 1 + filteredGenres.length) % filteredGenres.length]);
   }, [filteredGenres, selectedGenreIndex]);
+
+  useEffect(() => {
+    if (selectedGenre) setLastViewedGenre(selectedGenre);
+  }, [selectedGenre]);
 
   const activeMood = useMemo(() => 
     vibeData.moods.find(m => m.id === selectedMood), 
@@ -160,6 +165,7 @@ const VibeExplorer = () => {
                     genre={genre} 
                     onSelectGenre={setSelectedGenre} 
                     fitScore={selectedMood ? genre.mood_fit[selectedMood] : 0}
+                    isActive={lastViewedGenre?.id === genre.id}
                   />
                 ))}
               </motion.div>

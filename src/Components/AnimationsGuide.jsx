@@ -35,13 +35,13 @@ const categoryIcons = {
   "Spatial UI & Immersive Depth": <LuBox />
 };
 
-const AnimationSubCard = ({ type, onClick }) => (
+const AnimationSubCard = ({ type, onClick, isActive }) => (
   <button 
     onClick={onClick}
-    className="group flex items-center justify-between py-4 border-b border-base-300/60 last:border-0 w-full text-left transition-[padding-left] duration-300 hover:pl-2"
+    className={`group flex items-center justify-between py-4 px-3 rounded-xl border-b border-base-300/60 last:border-0 w-full text-left transition-all duration-300 ${isActive ? "bg-primary/10 border border-primary/40" : "hover:pl-2 hover:bg-base-200/50"}`}
   >
-    <h3 className="text-[15px] font-bold tracking-tight text-base-content/80 group-hover:text-primary leading-none">{type}</h3>
-    <div className="text-base-content/20 group-hover:text-primary group-hover:translate-x-1 transition-transform duration-300">
+    <h3 className={`text-[15px] font-bold tracking-tight leading-none ${isActive ? "text-primary" : "text-base-content/80 group-hover:text-primary"}`}>{type}</h3>
+    <div className={`group-hover:translate-x-1 transition-transform duration-300 ${isActive ? "text-primary/80" : "text-base-content/20 group-hover:text-primary"}`}>
       <LuArrowUpRight className="size-4" />
     </div>
   </button>
@@ -50,10 +50,12 @@ const AnimationSubCard = ({ type, onClick }) => (
 AnimationSubCard.propTypes = {
   type: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+  isActive: PropTypes.bool,
 };
 
 const AnimationsGuide = () => {
   const [selectedAnim, setSelectedAnim] = useState(null);
+  const [lastViewedAnim, setLastViewedAnim] = useState(null);
 
   useSEO({
     title: "Modern Animation Systems Guide | CodeSphere",
@@ -75,6 +77,10 @@ const AnimationsGuide = () => {
   const selectedItemIndex = useMemo(() =>
     flattenedItems.findIndex((item) => item.Type === selectedAnim?.Type && item.category === selectedAnim?.category),
   [flattenedItems, selectedAnim]);
+
+  useEffect(() => {
+    if (selectedAnim) setLastViewedAnim(selectedAnim);
+  }, [selectedAnim]);
 
   useEffect(() => {
     const lockScroll = () => {
@@ -150,6 +156,7 @@ const AnimationsGuide = () => {
                       key={sIdx}
                       type={sub.Type}
                       onClick={() => setSelectedAnim({ ...sub, category: category.Category })}
+                      isActive={lastViewedAnim?.Type === sub.Type && lastViewedAnim?.category === category.Category}
                     />
                   ))}
                 </div>

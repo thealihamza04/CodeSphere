@@ -7,14 +7,14 @@ import {
     LuWaypoints
 } from "react-icons/lu";
 
-const PrincipleItem = ({ title, onClick, isLast }) => (
+const PrincipleItem = ({ title, onClick, isLast, isActive }) => (
     <>
         <button
             onClick={onClick}
-            className="group flex items-center justify-between py-5 w-full text-left hover:pl-2 transition-[padding-left] duration-300"
+            className={`group flex items-center justify-between py-5 px-3 w-full text-left rounded-2xl border transition-all duration-300 ${isActive ? "border-primary/60 bg-primary/10 shadow-sm" : "border-transparent hover:border-base-300/70 hover:bg-base-200/50"}` }
         >
-            <h3 className="text-[15px] font-bold tracking-tight text-base-content/80 group-hover:text-primary leading-none">{title}</h3>
-            <div className="transition-transform duration-300 text-base-content/20 group-hover:text-primary group-hover:translate-x-1">
+            <h3 className={`text-[15px] font-bold tracking-tight leading-none transition-colors duration-300 ${isActive ? "text-primary" : "text-base-content/80 group-hover:text-primary"}`}>{title}</h3>
+            <div className={`transition-transform duration-300 ${isActive ? "text-primary/80" : "text-base-content/20 group-hover:text-primary"} group-hover:translate-x-1`}>
                 <LuArrowUpRight className="size-4" />
             </div>
         </button>
@@ -25,7 +25,8 @@ const PrincipleItem = ({ title, onClick, isLast }) => (
 PrincipleItem.propTypes = {
     title: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
-    isLast: PropTypes.bool.isRequired
+    isLast: PropTypes.bool.isRequired,
+    isActive: PropTypes.bool
 };
 
 const GuideLayout = ({
@@ -41,6 +42,7 @@ const GuideLayout = ({
     footerNoteIcon: FooterNoteIcon = LuLightbulb
 }) => {
     const [selectedPrinciple, setSelectedPrinciple] = useState(null);
+    const [lastViewedPrinciple, setLastViewedPrinciple] = useState(null);
 
     const flattenedPrinciples = useMemo(() =>
         data.flatMap((category) => (category.Principles || category.Skills || []).map((item) => ({ ...item, category: category.Category }))),
@@ -50,7 +52,16 @@ const GuideLayout = ({
         flattenedPrinciples.findIndex((item) => item.Title === selectedPrinciple?.Title && item.category === selectedPrinciple?.category),
     [flattenedPrinciples, selectedPrinciple]);
 
+    const isLastViewedPrinciple = (item, category) =>
+        lastViewedPrinciple?.Title === item.Title && lastViewedPrinciple?.category === category;
+
     useSEO(seoConfig);
+
+    useEffect(() => {
+        if (selectedPrinciple) {
+            setLastViewedPrinciple(selectedPrinciple);
+        }
+    }, [selectedPrinciple]);
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "instant" });
@@ -133,7 +144,12 @@ const GuideLayout = ({
                                                 key={pIdx}
                                                 title={item.Title}
                                                 isLast={pIdx === arr.length - 1}
-                                                onClick={() => setSelectedPrinciple({ ...item, category: category.Category })}
+                                                onClick={() => {
+                                                    const selectedItem = { ...item, category: category.Category };
+                                                    setSelectedPrinciple(selectedItem);
+                                                    setLastViewedPrinciple(selectedItem);
+                                                }}
+                                                isActive={isLastViewedPrinciple(item, category.Category)}
                                             />
                                         ))}
                                     </div>

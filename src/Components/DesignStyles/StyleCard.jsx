@@ -7,7 +7,7 @@ const itemVariants = {
   visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 100 } },
 };
 
-const StyleCard = ({ category, index, categoryIcons, onSelectStyle }) => {
+const StyleCard = ({ category, index, categoryIcons, onSelectStyle, activeStyleName }) => {
   const CategoryIcon = categoryIcons[category.category] || LuZap;
 
   return (
@@ -41,7 +41,7 @@ const StyleCard = ({ category, index, categoryIcons, onSelectStyle }) => {
             <li
               key={sIdx}
               onClick={() => onSelectStyle(style)}
-              className="flex items-center gap-4 cursor-pointer text-base-content/60 group/item hover:text-primary"
+              className={`flex items-center gap-4 cursor-pointer group/item rounded-lg px-2 py-1.5 transition-colors ${activeStyleName === style.style ? "bg-primary/10 text-primary" : "text-base-content/60 hover:text-primary"}`}
             >
               <div className="transition-transform duration-300 size-2 bg-base-content/20 group-hover/item:bg-primary group-hover/item:rotate-45" />
               <span className="text-[14px] font-black tracking-tighter uppercase transition-[letter-spacing] duration-300">
@@ -68,6 +68,7 @@ StyleCard.propTypes = {
   index: PropTypes.number.isRequired,
   categoryIcons: PropTypes.object.isRequired,
   onSelectStyle: PropTypes.func.isRequired,
+  activeStyleName: PropTypes.string,
 };
 
 export default StyleCard;
