@@ -155,7 +155,7 @@ const ProgrammingLanguages = () => {
 
   return (
     <div
-      className={`relative min-h-screen bg-base-100 max-w-full overflow-x-hidden`}
+      className={`relative min-h-screen bg-base-100 max-w-full overflow-x-clip`}
     >
       {/* Header Section */}
       <div
