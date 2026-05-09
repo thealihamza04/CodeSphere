@@ -7,9 +7,11 @@ const LanCard = ({
   Summary,
   Details,
   LanguageURL = "",
+  className = "",
+  style,
 }) => {
   return (
-    <div className='w-full md:w-80 h-full group'>
+    <div className={`w-full md:w-80 h-full group ${className}`} style={style}>
       <div className='card h-full bg-base-200/50 hover:bg-base-200 border border-base-300 rounded-[2rem] transition-[transform,shadow] duration-300 group-hover:border-base-content/20'>
         <div className='p-8 card-body flex flex-col justify-between'>
           <div>
@@ -51,6 +53,8 @@ LanCard.propTypes = {
   Summary: PropTypes.string.isRequired,
   Details: PropTypes.array.isRequired,
   LanguageURL: PropTypes.string,
+  className: PropTypes.string,
+  style: PropTypes.object,
 };
 
 export default LanCard;

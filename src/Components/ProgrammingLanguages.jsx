@@ -1,8 +1,13 @@
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import LanguagesCatalog from "../Data/LanguagesCatalog.json";
 import LibrariesRegistry from "../Data/LibrariesRegistry.json";
 import LanCard from "./cards/LanCard";
 import useSEO from "./Hooks/useSEO";
+import {
+  buildEnhancedLanguageMasonryLayout,
+  buildLanguageMasonryLayout,
+  getLanguageMasonryConfig,
+} from "../utils/pretextMasonry";
 
 const ProgrammingLanguages = () => {
   useSEO({
@@ -37,6 +42,9 @@ const ProgrammingLanguages = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
+  const [viewportWidth, setViewportWidth] = useState(1024);
+  const [pretextMasonryLayout, setPretextMasonryLayout] = useState(null);
+
   const languagesWithLibraries = useMemo(() => {
     const libraryMap = new Map(
       LibrariesRegistry.map((entry) => [entry.Language.toLowerCase(), entry])
@@ -52,6 +60,49 @@ const ProgrammingLanguages = () => {
       };
     });
   }, []);
+
+  useEffect(() => {
+    const updateViewportWidth = () => setViewportWidth(window.innerWidth);
+
+    updateViewportWidth();
+    window.addEventListener("resize", updateViewportWidth);
+
+    return () => window.removeEventListener("resize", updateViewportWidth);
+  }, []);
+
+  const masonryConfig = useMemo(
+    () => getLanguageMasonryConfig(viewportWidth),
+    [viewportWidth]
+  );
+
+  const masonryConfigKey = `${masonryConfig.columns}-${masonryConfig.containerWidth}`;
+
+  const fallbackMasonryLayout = useMemo(
+    () => buildLanguageMasonryLayout(languagesWithLibraries, masonryConfig),
+    [languagesWithLibraries, masonryConfig]
+  );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    buildEnhancedLanguageMasonryLayout(
+      languagesWithLibraries,
+      masonryConfig
+    ).then((layout) => {
+      if (!cancelled) {
+        setPretextMasonryLayout({ key: masonryConfigKey, layout });
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [languagesWithLibraries, masonryConfig, masonryConfigKey]);
+
+  const masonryLayout =
+    pretextMasonryLayout?.key === masonryConfigKey
+      ? pretextMasonryLayout.layout
+      : fallbackMasonryLayout;
 
   const def =
     "A programming language is a formal set of instructions that allows developers to communicate with computers to create software applications, scripts, or other tools. It provides the syntax and semantics for writing code that can perform specific tasks, manipulate data, and control hardware. Examples of programming languages include Python, Java, C++, and JavaScript, each with its own features, use cases, and paradigms.";
@@ -73,17 +124,35 @@ const ProgrammingLanguages = () => {
       </div>
 
       {/* Language Cards */}
-      <div className='flex flex-wrap items-center justify-center gap-6 px-4 pb-10 md:px-10 lg:px-8'>
-        {languagesWithLibraries.map((Language, index) => (
-          <LanCard
-            key={index}
-            Title={Language.Language}
-            Summary={Language.Summary}
-            Details={Language.More}
-            Libraries={Language.Libraries}
-            LanguageURL={Language.LanguageURL}
-          />
-        ))}
+      <div className='px-4 pb-10 md:px-10 lg:px-8'>
+        <div
+          className='relative mx-auto transition-[height] duration-500 ease-out'
+          style={{
+            height: masonryLayout.height,
+            width: masonryConfig.containerWidth,
+            maxWidth: "100%",
+          }}
+        >
+          {languagesWithLibraries.map((Language, index) => {
+            const position = masonryLayout.cards[index];
+
+            return (
+              <LanCard
+                key={Language.Language}
+                Title={Language.Language}
+                Summary={Language.Summary}
+                Details={Language.More}
+                Libraries={Language.Libraries}
+                LanguageURL={Language.LanguageURL}
+                className='absolute left-0 top-0 transition-transform duration-500 ease-out'
+                style={{
+                  height: position.height,
+                  transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
+                }}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
