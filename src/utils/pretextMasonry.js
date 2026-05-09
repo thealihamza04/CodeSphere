@@ -55,13 +55,21 @@ export const getLanguageMasonryConfig = (viewportWidth = 1024) => {
   };
 };
 
-export const buildLanguageMasonryLayout = (items, config, pretext = null) => {
+export const buildLanguageMasonryLayout = (
+  items,
+  config,
+  pretext = null,
+  measuredHeights = {}
+) => {
   const columnHeights = Array(config.columns).fill(0);
 
   const cards = items.map((item) => {
     const column = columnHeights.indexOf(Math.min(...columnHeights));
     const summaryHeight = measureSummaryHeight(item.Summary, pretext);
-    const height = Math.ceil(summaryHeight + CARD_VERTICAL_CHROME);
+    const measuredHeight = measuredHeights[item.Language];
+    const height = Math.ceil(
+      measuredHeight ?? summaryHeight + CARD_VERTICAL_CHROME
+    );
     const x = column * (config.cardWidth + config.gap);
     const y = columnHeights[column];
 

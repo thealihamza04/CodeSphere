@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import LanguagesCatalog from "../Data/LanguagesCatalog.json";
 import LibrariesRegistry from "../Data/LibrariesRegistry.json";
 import LanCard from "./cards/LanCard";
@@ -44,6 +44,8 @@ const ProgrammingLanguages = () => {
 
   const [viewportWidth, setViewportWidth] = useState(1024);
   const [pretextMasonryLayout, setPretextMasonryLayout] = useState(null);
+  const [measuredCardHeights, setMeasuredCardHeights] = useState({});
+  const languageCardRefs = useRef([]);
 
   const languagesWithLibraries = useMemo(() => {
     const libraryMap = new Map(
@@ -78,8 +80,14 @@ const ProgrammingLanguages = () => {
   const masonryConfigKey = `${masonryConfig.columns}-${masonryConfig.containerWidth}`;
 
   const fallbackMasonryLayout = useMemo(
-    () => buildLanguageMasonryLayout(languagesWithLibraries, masonryConfig),
-    [languagesWithLibraries, masonryConfig]
+    () =>
+      buildLanguageMasonryLayout(
+        languagesWithLibraries,
+        masonryConfig,
+        null,
+        measuredCardHeights
+      ),
+    [languagesWithLibraries, masonryConfig, measuredCardHeights]
   );
 
   useEffect(() => {
@@ -99,10 +107,48 @@ const ProgrammingLanguages = () => {
     };
   }, [languagesWithLibraries, masonryConfig, masonryConfigKey]);
 
+  useEffect(() => {
+    if (typeof ResizeObserver === "undefined") {
+      return undefined;
+    }
+
+    const observer = new ResizeObserver((entries) => {
+      setMeasuredCardHeights((previousHeights) => {
+        let changed = false;
+        const nextHeights = { ...previousHeights };
+
+        entries.forEach((entry) => {
+          const card = entry.target;
+          const language = card.dataset.language;
+          const cardContentHeight = card.firstElementChild?.scrollHeight ?? 0;
+          const height = Math.ceil(
+            Math.max(card.scrollHeight, cardContentHeight)
+          );
+
+          if (language && Math.abs((nextHeights[language] ?? 0) - height) > 1) {
+            nextHeights[language] = height;
+            changed = true;
+          }
+        });
+
+        return changed ? nextHeights : previousHeights;
+      });
+    });
+
+    languageCardRefs.current.forEach((card) => {
+      if (card) {
+        observer.observe(card);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, [languagesWithLibraries, masonryConfigKey]);
+
+  const hasMeasuredCardHeights = Object.keys(measuredCardHeights).length > 0;
   const masonryLayout =
-    pretextMasonryLayout?.key === masonryConfigKey
-      ? pretextMasonryLayout.layout
-      : fallbackMasonryLayout;
+    hasMeasuredCardHeights || pretextMasonryLayout?.key !== masonryConfigKey
+      ? fallbackMasonryLayout
+      : pretextMasonryLayout.layout;
 
   const def =
     "A programming language is a formal set of instructions that allows developers to communicate with computers to create software applications, scripts, or other tools. It provides the syntax and semantics for writing code that can perform specific tasks, manipulate data, and control hardware. Examples of programming languages include Python, Java, C++, and JavaScript, each with its own features, use cases, and paradigms.";
@@ -145,6 +191,9 @@ const ProgrammingLanguages = () => {
                 Libraries={Language.Libraries}
                 LanguageURL={Language.LanguageURL}
                 className='absolute left-0 top-0 transition-transform duration-500 ease-out'
+                cardRef={(card) => {
+                  languageCardRefs.current[index] = card;
+                }}
                 style={{
                   height: position.height,
                   transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
