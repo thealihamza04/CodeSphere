@@ -30,7 +30,7 @@ const Layout = () => {
   const hideFooter = lowerPath.startsWith("/frameworks");
 
   return (
-    <div className="max-w-full overflow-x-hidden">
+    <div className="max-w-full overflow-x-clip">
       <Toaster />
       <ThemeToggle />
       <CopyPage />
