@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/Frameworks", "permanent": true, "destination": "/frameworks" }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]

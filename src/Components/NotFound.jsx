@@ -1,6 +1,19 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
+  useEffect(() => {
+    document.title = "Page Not Found — CodeSphere";
+    let robots = document.head.querySelector('meta[name="robots"]');
+    if (!robots) {
+      robots = document.createElement("meta");
+      robots.setAttribute("name", "robots");
+      document.head.appendChild(robots);
+    }
+    robots.setAttribute("content", "noindex, nofollow");
+    return () => robots.setAttribute("content", "index, follow");
+  }, []);
+
   return (
     <div className="min-h-[85vh] bg-[#dcd0bc] dark:bg-[#1a1715] flex flex-col items-center justify-center relative perspective-[1200px] font-serif py-16 md:py-0 overflow-x-hidden">
       
@@ -15,17 +28,17 @@ const NotFound = () => {
         
         {/* Fragment 1: The First '4' */}
         <div className="bg-[#e8decb] dark:bg-[#2d2824] p-8 md:p-16 flex items-center justify-center transform transition-all duration-700 -rotate-2 hover:translate-x-2 hover:-rotate-1 hover:-translate-y-2 hover:scale-[1.02] hover:z-20 shadow-[-10px_10px_30px_rgba(0,0,0,0.1)] border-r-2 border-b-2 border-[#817260] dark:border-[#423930] origin-bottom-right">
-          <h1 className="text-8xl sm:text-[10rem] md:text-[14rem] font-bold text-[#4a3c2e] dark:text-[#c4b69d] leading-none mb-0 tracking-tighter">
+          <span aria-hidden="true" className="text-8xl sm:text-[10rem] md:text-[14rem] font-bold text-[#4a3c2e] dark:text-[#c4b69d] leading-none mb-0 tracking-tighter">
             4
-          </h1>
+          </span>
         </div>
         
         {/* Fragment 2: The '0' and skewed info */}
         <div className="bg-[#c4b59f] dark:bg-[#221e1a] p-8 md:p-16 flex flex-col items-end justify-center transform transition-all duration-700 rotate-1 -translate-y-2 hover:-translate-y-6 hover:rotate-3 hover:scale-[1.03] hover:z-20 shadow-[10px_10px_30px_rgba(0,0,0,0.15)] border-l-[6px] border-[#504437] dark:border-[#6a5e4d] origin-top-left relative overflow-hidden">
            <div className="absolute top-0 right-0 w-full h-full bg-[#3e3428] opacity-5 transform rotate-45 scale-150"></div>
-           <h1 className="text-7xl sm:text-9xl md:text-[11rem] font-black tracking-tight text-[#2d2319] dark:text-[#dfccae] leading-none mix-blend-multiply dark:mix-blend-screen relative z-10">
+           <span aria-hidden="true" className="text-7xl sm:text-9xl md:text-[11rem] font-black tracking-tight text-[#2d2319] dark:text-[#dfccae] leading-none mix-blend-multiply dark:mix-blend-screen relative z-10">
             0
-          </h1>
+          </span>
           <span className="text-xl md:text-2xl font-black text-[#5e4b39] dark:text-[#a08e75] uppercase tracking-[0.3em] transform -rotate-90 origin-bottom-right absolute right-4 bottom-12 opacity-80 mix-blend-multiply dark:mix-blend-plus-lighter">
              Missing
           </span>
@@ -33,9 +46,9 @@ const NotFound = () => {
 
         {/* Fragment 3: The Second '4' and description text */}
         <div className="bg-[#b3a18a] dark:bg-[#342e27] p-8 md:p-12 flex flex-col justify-end transform transition-all duration-700 -skew-x-[4deg] hover:skew-x-0 group-hover:-translate-x-3 group-hover:translate-y-3 origin-top-left border-t-[8px] border-r-4 border-[#3a2d20] shadow-[15px_-5px_25px_rgba(0,0,0,0.2)]">
-          <h1 className="text-[6rem] sm:text-[8rem] md:text-[10rem] font-bold text-[#e1d5c0] dark:text-[#181512] leading-none absolute top-4 left-4 opacity-50 mix-blend-overlay">
+          <span aria-hidden="true" className="text-[6rem] sm:text-[8rem] md:text-[10rem] font-bold text-[#e1d5c0] dark:text-[#181512] leading-none absolute top-4 left-4 opacity-50 mix-blend-overlay">
             4
-          </h1>
+          </span>
           <p className="mt-20 md:mt-24 text-lg md:text-xl text-[#292015] dark:text-[#c7baa4] font-medium leading-relaxed max-w-sm ml-auto text-right border-r-2 border-[#76634d] pr-4 shadow-sm">
             Reality fractured. The perspective you seek has been fragmented into disparate planes.
           </p>

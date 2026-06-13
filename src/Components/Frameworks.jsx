@@ -142,7 +142,7 @@ const Frameworks = () => {
         .replace("c++", "cpp")
         .replace("c#", "csharp")
     )}`
-    : "https://codes-sphere.vercel.app/Frameworks";
+    : "https://codes-sphere.vercel.app/frameworks";
 
   const seoTitle = languageDetails
     ? `${languageDetails.Language} Frameworks | CodeSphere`

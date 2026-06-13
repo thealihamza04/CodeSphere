@@ -41,7 +41,7 @@ const LanCard = ({
             <div className='flex items-center gap-3'>
               <Link
                 className='w-full py-2.5 rounded-xl border border-base-300 bg-base-200 hover:bg-base-300 text-[11px] font-bold uppercase tracking-wider text-center'
-                to={`/Frameworks?lang=${encodeURIComponent(Title)}`}
+                to={`/frameworks?lang=${encodeURIComponent(Title)}`}
                 state={{ Frameworks: Details }}
               >
                 Frameworks

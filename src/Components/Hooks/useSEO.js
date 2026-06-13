@@ -10,11 +10,14 @@ const setMeta = (attr, name, content) => {
   element.setAttribute("content", content);
 };
 
+const OG_IMAGE_DEFAULT = 'https://codes-sphere.vercel.app/og-image.jpg';
+
 const useSEO = ({
   title,
   description,
   keywords,
   canonical,
+  image,
   og = {},
   twitter = {},
   structuredData,
@@ -29,6 +32,9 @@ const useSEO = ({
     if (keywords) {
       setMeta("name", "keywords", keywords);
     }
+    const resolvedImage = image || OG_IMAGE_DEFAULT;
+    setMeta("property", "og:image", resolvedImage);
+    setMeta("name", "twitter:image", resolvedImage);
     if (canonical) {
       let link = document.head.querySelector("link[rel=\"canonical\"]");
       if (!link) {
@@ -60,7 +66,7 @@ const useSEO = ({
     } else if (script) {
       script.remove();
     }
-  }, [title, description, keywords, canonical, og, twitter, structuredData]);
+  }, [title, description, keywords, canonical, image, og, twitter, structuredData]);
 };
 
 export default useSEO;

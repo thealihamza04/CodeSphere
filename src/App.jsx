@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Lenis from "lenis";
-import AppRoutes from "./AppRoutes.jsx";
+import AppRoutes from "./AppRoutesClient.jsx";
 
 const App = () => {
   useEffect(() => {

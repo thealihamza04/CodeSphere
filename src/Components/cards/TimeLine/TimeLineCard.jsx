@@ -15,9 +15,9 @@ const TimeLineCard = ({ released, language, description }) => {
           : ""
           } `}
       >
-        <h1 className='min-w-[25%] text-right font-medium text-base-content/60'>{released}</h1>
+        <span className='min-w-[25%] text-right font-medium text-base-content/60'>{released}</span>
         <MdCircle className='min-w-[20%] text-3xl text-base-content/20' />
-        <h1 className='min-w-[50%] font-bold text-base-content'>{language}</h1>
+        <span className='min-w-[50%] font-bold text-base-content'>{language}</span>
       </div>
 
       {description && (

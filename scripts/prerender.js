@@ -36,11 +36,22 @@ const frameworkLangs = [
   'Scala',
   'Lua',
   'Elixir',
+  'Assembly',
+  'Shell',
+  'C',
+  'SQL',
+  'MATLAB',
+  'Perl',
+  'Haskell',
+  'SASS',
+  'LESS',
+  'Zig',
+  'Julia',
 ]
 
 const baseRoutes = [
   '/',
-  '/Frameworks',
+  '/frameworks',
   '/TimeLine',
   '/ml-roadmap',
   '/ai-roadmap',
@@ -60,7 +71,7 @@ const baseRoutes = [
 ]
 
 const frameworkLangRoutes = frameworkLangs.map(
-  (lang) => `/Frameworks?lang=${encodeURIComponent(lang)}`,
+  (lang) => `/frameworks?lang=${encodeURIComponent(lang)}`,
 )
 
 const routesToPrerender = [...baseRoutes, ...frameworkLangRoutes]
@@ -71,7 +82,7 @@ const routeMeta = {
     description:
       'Explore programming languages and frameworks in one organized developer reference.',
   },
-  '/Frameworks': {
+  '/frameworks': {
     title: 'All Frameworks by Language — CodeSphere',
     description: 'Browse popular frameworks organized by programming language.',
   },
@@ -161,7 +172,7 @@ function toFrameworkSlug(lang) {
 
 function routeToOutputPath(route) {
   const [pathname, query] = route.split('?')
-  if (pathname === '/Frameworks' && query?.startsWith('lang=')) {
+  if (pathname === '/frameworks' && query?.startsWith('lang=')) {
     const lang = decodeURIComponent(query.slice(5))
     return path.join(distDir, 'frameworks', toFrameworkSlug(lang), 'index.html')
   }
@@ -180,7 +191,7 @@ function buildMetaTags(route) {
     description: 'A developer reference for programming languages, frameworks, and architecture.',
   }
 
-  if (pathname === '/Frameworks' && query?.startsWith('lang=')) {
+  if (pathname === '/frameworks' && query?.startsWith('lang=')) {
     const lang = decodeURIComponent(query.slice(5))
     const escapedLang = escapeHtml(lang)
     return {
@@ -196,16 +207,42 @@ function buildMetaTags(route) {
   }
 }
 
+const OG_IMAGE = 'https://codes-sphere.vercel.app/og-image.jpg'
+
 function buildHtmlWithMeta({ template, appHtml, title, description, canonicalPath }) {
   const escapedTitle = escapeHtml(title)
   const escapedDescription = escapeHtml(description)
   const canonicalUrl = `https://codes-sphere.vercel.app${canonicalPath}`
 
-  const metaTags = `\n    <meta name="description" content="${escapedDescription}" />\n    <meta property="og:title" content="${escapedTitle}" />\n    <meta property="og:description" content="${escapedDescription}" />\n    <meta property="og:type" content="website" />\n    <meta property="og:url" content="${canonicalUrl}" />\n    <meta name="twitter:card" content="summary_large_image" />\n    <meta name="twitter:title" content="${escapedTitle}" />\n    <meta name="twitter:description" content="${escapedDescription}" />\n    <link rel="canonical" href="${canonicalUrl}" />\n  `
+  const isHome = canonicalPath === '/'
+  const breadcrumbJsonLd = isHome ? '' : JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://codes-sphere.vercel.app/' },
+      { '@type': 'ListItem', position: 2, name: escapedTitle.replace(' — CodeSphere', ''), item: canonicalUrl },
+    ],
+  })
+
+  const metaTags = [
+    `<title>${escapedTitle}</title>`,
+    `<meta name="description" content="${escapedDescription}" />`,
+    `<meta name="robots" content="index, follow" />`,
+    `<link rel="canonical" href="${canonicalUrl}" />`,
+    `<meta property="og:title" content="${escapedTitle}" />`,
+    `<meta property="og:description" content="${escapedDescription}" />`,
+    `<meta property="og:type" content="website" />`,
+    `<meta property="og:url" content="${canonicalUrl}" />`,
+    `<meta property="og:image" content="${OG_IMAGE}" />`,
+    `<meta name="twitter:card" content="summary_large_image" />`,
+    `<meta name="twitter:title" content="${escapedTitle}" />`,
+    `<meta name="twitter:description" content="${escapedDescription}" />`,
+    `<meta name="twitter:image" content="${OG_IMAGE}" />`,
+    breadcrumbJsonLd ? `<script type="application/ld+json">${breadcrumbJsonLd}</script>` : '',
+  ].filter(Boolean).join('\n    ')
 
   return template
-    .replace('<title>CodeSphere</title>', `<title>${escapedTitle}</title>`)
-    .replace('</head>', `${metaTags}</head>`)
+    .replace('<title>CodeSphere</title>', metaTags)
     .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
 }
 

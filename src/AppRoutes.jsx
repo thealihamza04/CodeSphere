@@ -37,7 +37,7 @@ const Layout = () => {
       <SearchCommand />
       <Routes>
         <Route path='/' element={<ProgrammingLanguages />} />
-        <Route path='/Frameworks' element={<Frameworks />} />
+        <Route path='/frameworks' element={<Frameworks />} />
         <Route path='/frameworks/:langSlug' element={<Frameworks />} />
         <Route path='/TimeLine' element={<ProgrammingTimeline />} />
         <Route path='/ml-roadmap' element={<MachineLearningRoadmap />} />
