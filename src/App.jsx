@@ -4,6 +4,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Lenis from "lenis";
 import AppRoutes from "./AppRoutesClient.jsx";
 
+const shouldEnableAnalytics = import.meta.env.PROD;
+
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis();
@@ -23,7 +25,7 @@ const App = () => {
   return (
     <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <AppRoutes />
-      <Analytics />
+      {shouldEnableAnalytics && <Analytics />}
     </Router>
   );
 };

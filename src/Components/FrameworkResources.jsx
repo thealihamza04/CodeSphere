@@ -182,7 +182,7 @@ const FrameworkResources = () => {
       </div>
 
       <div className='flex flex-wrap items-center justify-center gap-4 px-4 md:px-10'>
-        {printIt.map((Item, index) => (
+        {printIt.map((Item) => (
           <Tool_Lib_Card
             key={Item.Name}
             Name={Item.Name}

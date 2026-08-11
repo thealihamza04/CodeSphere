@@ -6,8 +6,7 @@ import {
   LuCpu, 
   LuActivity, 
   LuZap,
-  LuCircuitBoard,
-  LuLightbulb
+  LuCircuitBoard
 } from "react-icons/lu";
 
 const categoryIcons = {

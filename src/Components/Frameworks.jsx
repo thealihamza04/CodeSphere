@@ -36,18 +36,6 @@ const Frameworks = () => {
     );
   }, [normalizedLang]);
 
-  const allFrameworks = useMemo(
-    () =>
-      LanguagesCatalog.flatMap((lang) =>
-        lang.More.map((fw) => ({
-          ...fw,
-          Language: lang.Language,
-          LanguageSummary: lang.Summary,
-        }))
-      ),
-    []
-  );
-
   const frameworksForLanguage = useMemo(() => {
     if (!languageDetails) return [];
     return languageDetails.More.map((fw) => ({
@@ -88,13 +76,6 @@ const Frameworks = () => {
       return fw;
     });
   }, [stateFrameworks, languageDetails]);
-
-  const frameworksData =
-    frameworksForLanguage.length > 0
-      ? frameworksForLanguage
-      : normalizedStateFrameworks.length > 0
-        ? normalizedStateFrameworks
-        : allFrameworks;
 
   const groupedFrameworks = useMemo(() => {
     if (frameworksForLanguage.length > 0) {
@@ -228,7 +209,7 @@ const Frameworks = () => {
           </Link>
         </div>
       </div>
-      {groupedFrameworks.map(({ language, list }, sectionIndex) => (
+      {groupedFrameworks.map(({ language, list }) => (
         <div key={language} className='w-full'>
           {groupedFrameworks.length > 1 && (
             <h2
@@ -238,7 +219,7 @@ const Frameworks = () => {
             </h2>
           )}
           <div className='flex flex-wrap items-center justify-center gap-4 px-4 pb-10 md:px-10'>
-            {list.map((framework, index) => (
+            {list.map((framework) => (
               <Card
                 key={`${language}-${framework.Framework}`}
                 Title={framework.Framework}

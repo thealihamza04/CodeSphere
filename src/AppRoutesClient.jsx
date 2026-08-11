@@ -26,40 +26,57 @@ const ProjectChecklist = lazy(() => import("./Components/ProjectChecklist"));
 const VibeExplorer = lazy(() => import("./Components/VibeExplorer.jsx"));
 const NotFound = lazy(() => import("./Components/NotFound.jsx"));
 
+const RouteLoading = () => (
+  <div
+    className="flex flex-1 min-h-[60vh] items-center justify-center bg-base-100 px-6 text-base-content"
+    aria-busy="true"
+    aria-live="polite"
+  >
+    <div className="flex flex-col items-center gap-5">
+      <div className="h-12 w-12 animate-spin rounded-full border-4 border-base-300 border-t-primary" />
+      <p className="text-xs font-black uppercase tracking-[0.28em] text-base-content/50">
+        Loading CodeSphere
+      </p>
+    </div>
+  </div>
+);
+
 const Layout = () => {
   const location = useLocation();
   const hideFooter = location.pathname.toLowerCase().startsWith("/frameworks");
 
   return (
-    <div className="max-w-full overflow-x-clip">
+    <div className="flex flex-col min-h-screen max-w-full overflow-x-clip">
       <Toaster />
       <ThemeToggle />
       <CopyPage />
       <SearchCommand />
-      <Suspense fallback={null}>
-        <Routes>
-          <Route path="/" element={<ProgrammingLanguages />} />
-          <Route path="/frameworks" element={<Frameworks />} />
-          <Route path="/frameworks/:langSlug" element={<Frameworks />} />
-          <Route path="/TimeLine" element={<ProgrammingTimeline />} />
-          <Route path="/ml-roadmap" element={<MachineLearningRoadmap />} />
-          <Route path="/ai-roadmap" element={<AIEngineerRoadmap />} />
-          <Route path="/swe-roadmap" element={<SoftwareEngineerRoadmap />} />
-          <Route path="/design-principles" element={<DesignPrinciples />} />
-          <Route path="/animations-guide" element={<AnimationsGuide />} />
-          <Route path="/motion-design" element={<MotionDesign />} />
-          <Route path="/developer-essential-skills" element={<EssentialSkills />} />
-          <Route path="/system-design" element={<SystemDesign />} />
-          <Route path="/design-patterns" element={<DesignPatterns />} />
-          <Route path="/devops" element={<DevOps />} />
-          <Route path="/civic-sense" element={<CivicSense />} />
-          <Route path="/social-intelligence" element={<SocialIntelligence />} />
-          <Route path="/design-styles" element={<DesignStyles />} />
-          <Route path="/project-checklist" element={<ProjectChecklist />} />
-          <Route path="/vibe-explorer" element={<VibeExplorer />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
+      <main className="flex-1">
+        <Suspense fallback={<RouteLoading />}>
+          <Routes>
+            <Route path="/" element={<ProgrammingLanguages />} />
+            <Route path="/frameworks" element={<Frameworks />} />
+            <Route path="/frameworks/:langSlug" element={<Frameworks />} />
+            <Route path="/TimeLine" element={<ProgrammingTimeline />} />
+            <Route path="/ml-roadmap" element={<MachineLearningRoadmap />} />
+            <Route path="/ai-roadmap" element={<AIEngineerRoadmap />} />
+            <Route path="/swe-roadmap" element={<SoftwareEngineerRoadmap />} />
+            <Route path="/design-principles" element={<DesignPrinciples />} />
+            <Route path="/animations-guide" element={<AnimationsGuide />} />
+            <Route path="/motion-design" element={<MotionDesign />} />
+            <Route path="/developer-essential-skills" element={<EssentialSkills />} />
+            <Route path="/system-design" element={<SystemDesign />} />
+            <Route path="/design-patterns" element={<DesignPatterns />} />
+            <Route path="/devops" element={<DevOps />} />
+            <Route path="/civic-sense" element={<CivicSense />} />
+            <Route path="/social-intelligence" element={<SocialIntelligence />} />
+            <Route path="/design-styles" element={<DesignStyles />} />
+            <Route path="/project-checklist" element={<ProjectChecklist />} />
+            <Route path="/vibe-explorer" element={<VibeExplorer />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </main>
       {!hideFooter && <Footer />}
     </div>
   );

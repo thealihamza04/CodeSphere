@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { LuArrowUpRight } from "react-icons/lu";
 
@@ -6,10 +5,6 @@ const Card = ({
   Title,
   Summary,
   URL,
-  Tools,
-  Lib,
-  RTNIT,
-  PrevPath,
 }) => {
   return (
     <div className='w-full md:w-80 group h-full'>

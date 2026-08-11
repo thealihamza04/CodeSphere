@@ -143,7 +143,7 @@ const LibrariesCatalog = () => {
         )}
       </div>
 
-      {sections.map((section, sectionIndex) => (
+      {sections.map((section) => (
         <section
           key={section.language}
           className='px-4 py-8 space-y-4 md:px-10 bg-base-100'
@@ -171,7 +171,7 @@ const LibrariesCatalog = () => {
 
           <div className='flex flex-wrap items-center justify-center gap-4'>
             {section.libraries.length > 0 ? (
-              section.libraries.map((library, index) => (
+              section.libraries.map((library) => (
                 <Tool_Lib_Card
                   key={`${section.language}-${library.Name}`}
                   Name={library.Name}

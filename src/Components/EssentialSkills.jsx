@@ -6,8 +6,7 @@ import {
   LuSettings, 
   LuShield, 
   LuSparkles,
-  LuZap,
-  LuLightbulb
+  LuZap
 } from "react-icons/lu";
 
 const categoryIcons = {

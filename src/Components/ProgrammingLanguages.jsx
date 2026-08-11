@@ -45,6 +45,7 @@ const ProgrammingLanguages = () => {
   const [viewportWidth, setViewportWidth] = useState(1024);
   const [pretextMasonryLayout, setPretextMasonryLayout] = useState(null);
   const [measuredCardHeights, setMeasuredCardHeights] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
   const languageCardRefs = useRef([]);
 
   const languagesWithLibraries = useMemo(() => {
@@ -99,6 +100,7 @@ const ProgrammingLanguages = () => {
     ).then((layout) => {
       if (!cancelled) {
         setPretextMasonryLayout({ key: masonryConfigKey, layout });
+        setIsLoading(false);
       }
     });
 
@@ -106,6 +108,13 @@ const ProgrammingLanguages = () => {
       cancelled = true;
     };
   }, [languagesWithLibraries, masonryConfig, masonryConfigKey]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 150);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if (typeof ResizeObserver === "undefined") {
@@ -171,37 +180,46 @@ const ProgrammingLanguages = () => {
 
       {/* Language Cards */}
       <div className='px-4 pb-10 md:px-10 lg:px-8'>
-        <div
-          className='relative mx-auto transition-[height] duration-500 ease-out'
-          style={{
-            height: masonryLayout.height,
-            width: masonryConfig.containerWidth,
-            maxWidth: "100%",
-          }}
-        >
-          {languagesWithLibraries.map((Language, index) => {
-            const position = masonryLayout.cards[index];
+        {isLoading ? (
+          <div className="flex flex-col items-center justify-center py-24 gap-5 min-h-[50vh]">
+            <div className="h-12 w-12 animate-spin rounded-full border-4 border-base-300 border-t-primary" />
+            <p className="text-xs font-black uppercase tracking-[0.28em] text-base-content/50">
+              Loading Catalog...
+            </p>
+          </div>
+        ) : (
+          <div
+            className='relative mx-auto transition-[height] duration-500 ease-out'
+            style={{
+              height: masonryLayout.height,
+              width: masonryConfig.containerWidth,
+              maxWidth: "100%",
+            }}
+          >
+            {languagesWithLibraries.map((Language, index) => {
+              const position = masonryLayout.cards[index];
 
-            return (
-              <LanCard
-                key={Language.Language}
-                Title={Language.Language}
-                Summary={Language.Summary}
-                Details={Language.More}
-                Libraries={Language.Libraries}
-                LanguageURL={Language.LanguageURL}
-                className='absolute left-0 top-0 transition-transform duration-500 ease-out'
-                cardRef={(card) => {
-                  languageCardRefs.current[index] = card;
-                }}
-                style={{
-                  height: position.height,
-                  transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
-                }}
-              />
-            );
-          })}
-        </div>
+              return (
+                <LanCard
+                  key={Language.Language}
+                  Title={Language.Language}
+                  Summary={Language.Summary}
+                  Details={Language.More}
+                  Libraries={Language.Libraries}
+                  LanguageURL={Language.LanguageURL}
+                  className='absolute left-0 top-0 transition-transform duration-500 ease-out'
+                  cardRef={(card) => {
+                    languageCardRefs.current[index] = card;
+                  }}
+                  style={{
+                    height: position.height,
+                    transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
+                  }}
+                />
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );
