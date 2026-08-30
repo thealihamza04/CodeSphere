@@ -53,6 +53,7 @@ const baseRoutes = [
   '/',
   '/frameworks',
   '/TimeLine',
+  '/business-timeline',
   '/ml-roadmap',
   '/ai-roadmap',
   '/swe-roadmap',
@@ -89,6 +90,10 @@ const routeMeta = {
   '/TimeLine': {
     title: 'History of Programming Languages — CodeSphere',
     description: 'Interactive timeline of major programming languages and their origins.',
+  },
+  '/business-timeline': {
+    title: 'Business Timeline — CodeSphere',
+    description: 'How major business models evolved from industrial manufacturing to AI-driven companies.',
   },
   '/ml-roadmap': {
     title: 'Machine Learning Roadmap — CodeSphere',

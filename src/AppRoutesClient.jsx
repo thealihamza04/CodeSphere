@@ -9,6 +9,7 @@ import Footer from "./Components/Footer.jsx";
 const ProgrammingLanguages = lazy(() => import("./Components/ProgrammingLanguages"));
 const Frameworks = lazy(() => import("./Components/Frameworks"));
 const ProgrammingTimeline = lazy(() => import("./Components/ProgrammingTimeline.jsx"));
+const BusinessTimeline = lazy(() => import("./Components/BusinessTimeline.jsx"));
 const MachineLearningRoadmap = lazy(() => import("./Components/MachineLearningRoadmap.jsx"));
 const AIEngineerRoadmap = lazy(() => import("./Components/AIEngineerRoadmap.jsx"));
 const SoftwareEngineerRoadmap = lazy(() => import("./Components/SoftwareEngineerRoadmap.jsx"));
@@ -58,6 +59,7 @@ const Layout = () => {
             <Route path="/frameworks" element={<Frameworks />} />
             <Route path="/frameworks/:langSlug" element={<Frameworks />} />
             <Route path="/TimeLine" element={<ProgrammingTimeline />} />
+            <Route path="/business-timeline" element={<BusinessTimeline />} />
             <Route path="/ml-roadmap" element={<MachineLearningRoadmap />} />
             <Route path="/ai-roadmap" element={<AIEngineerRoadmap />} />
             <Route path="/swe-roadmap" element={<SoftwareEngineerRoadmap />} />

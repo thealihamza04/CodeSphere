@@ -10,6 +10,7 @@ const pageGroups = [
       { label: 'Programming Languages', path: '/' },
       { label: 'Frameworks', path: '/Frameworks' },
       { label: 'Programming Timeline', path: '/TimeLine' },
+      { label: 'Business Timeline', path: '/business-timeline' },
     ]
   },
   {

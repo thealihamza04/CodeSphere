@@ -17,6 +17,7 @@ const Footer = () => {
         { name: "Home", path: "/" },
         { name: "Frameworks Catalog", path: "/Frameworks" },
         { name: "Language Timeline", path: "/TimeLine" },
+        { name: "Business Timeline", path: "/business-timeline" },
       ],
     },
     {

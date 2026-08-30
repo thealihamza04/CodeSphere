@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Frameworks from "./Components/Frameworks";
 import ProgrammingLanguages from "./Components/ProgrammingLanguages";
 import ProgrammingTimeline from "./Components/ProgrammingTimeline.jsx";
+import BusinessTimeline from "./Components/BusinessTimeline.jsx";
 import MachineLearningRoadmap from "./Components/MachineLearningRoadmap.jsx";
 import AIEngineerRoadmap from "./Components/AIEngineerRoadmap.jsx";
 import SoftwareEngineerRoadmap from "./Components/SoftwareEngineerRoadmap.jsx";
@@ -41,6 +42,7 @@ const Layout = () => {
           <Route path='/frameworks' element={<Frameworks />} />
           <Route path='/frameworks/:langSlug' element={<Frameworks />} />
           <Route path='/TimeLine' element={<ProgrammingTimeline />} />
+          <Route path='/business-timeline' element={<BusinessTimeline />} />
           <Route path='/ml-roadmap' element={<MachineLearningRoadmap />} />
           <Route path='/ai-roadmap' element={<AIEngineerRoadmap />} />
           <Route path='/swe-roadmap' element={<SoftwareEngineerRoadmap />} />
