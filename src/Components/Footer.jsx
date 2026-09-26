@@ -66,7 +66,7 @@ const Footer = () => {
                       className="group/link text-[14px] font-medium text-base-content/70 hover:text-primary transition-all flex items-center gap-2"
                     >
                       {link.name}
-                      <LuArrowUpRight className="size-3.5 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-[opacity,transform] duration-300 text-primary" />
+                      <LuArrowUpRight className="size-3.5 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-[opacity,transform] duration-0 text-primary" />
                     </Link>
                   </li>
                 ))}
