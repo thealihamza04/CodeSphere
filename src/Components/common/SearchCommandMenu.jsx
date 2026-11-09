@@ -11,6 +11,7 @@ const pageGroups = [
       { label: 'Frameworks', path: '/Frameworks' },
       { label: 'Programming Timeline', path: '/TimeLine' },
       { label: 'Business Timeline', path: '/business-timeline' },
+      { label: 'Tech Stack A–Z', path: '/tech-stack' },
     ]
   },
   {

@@ -17,6 +17,7 @@ const Footer = () => {
         { name: "Home", path: "/" },
         { name: "Frameworks Catalog", path: "/Frameworks" },
         { name: "Language Timeline", path: "/TimeLine" },
+        { name: "Tech Stack A–Z", path: "/tech-stack" },
         { name: "Business Timeline", path: "/business-timeline" },
       ],
     },
@@ -63,10 +64,10 @@ const Footer = () => {
                   <li key={lIdx}>
                     <Link
                       to={link.path}
-                      className="group/link text-[14px] font-medium text-base-content/70 hover:text-primary transition-all flex items-center gap-2"
+                      className="group/link text-[14px] font-medium text-base-content/70 hover:text-primary flex items-center gap-2"
                     >
                       {link.name}
-                      <LuArrowUpRight className="size-3.5 opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-[opacity,transform] duration-0 text-primary" />
+                      <LuArrowUpRight className="size-3.5 opacity-0 group-hover/link:opacity-100 text-primary" />
                     </Link>
                   </li>
                 ))}
@@ -90,13 +91,13 @@ const Footer = () => {
 
           {/* Subtle Socials */}
           <div className="flex items-center gap-8">
-            <a href="https://github.com/thealihamza04" target="_blank" rel="noreferrer" className="text-base-content/30 hover:text-primary hover:-translate-y-1 transition-all duration-300">
+            <a href="https://github.com/thealihamza04" target="_blank" rel="noreferrer" className="text-base-content/30 hover:text-primary">
               <FaGithub className="size-5" />
             </a>
-            <a href="https://www.linkedin.com/in/thealihamza04/" target="_blank" rel="noreferrer" className="text-base-content/30 hover:text-primary hover:-translate-y-1 transition-all duration-300">
+            <a href="https://www.linkedin.com/in/thealihamza04/" target="_blank" rel="noreferrer" className="text-base-content/30 hover:text-primary">
               <FaLinkedinIn className="size-5" />
             </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thealihamza0@gmail.com" target="_blank" rel="noreferrer" className="text-base-content/30 hover:text-primary hover:-translate-y-1 transition-all duration-300">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thealihamza0@gmail.com" target="_blank" rel="noreferrer" className="text-base-content/30 hover:text-primary">
               <FaEnvelope className="size-5" />
             </a>
           </div>

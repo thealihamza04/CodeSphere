@@ -69,6 +69,7 @@ const baseRoutes = [
   '/civic-sense',
   '/social-intelligence',
   '/vibe-explorer',
+  '/tech-stack',
 ]
 
 const frameworkLangRoutes = frameworkLangs.map(
