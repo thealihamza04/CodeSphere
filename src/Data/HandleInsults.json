@@ -3,13 +3,18 @@
     "Label": "Core Mindset",
     "Title": "Understanding Critics & Empathy",
     "Quote": "Wo kya jaane peer parayi, jiske na phate pair bivaayi.",
-    "Translation": "How can someone know another’s pain if their own feet have never cracked?",
-    "Text": "When dealing with unconstructive criticism or insults, remember that outsiders passing quick judgments often lack the lived experience or empathy to understand the weight of your journey. Do not let unqualified opinions affect your inner peace."
+    "Speech": "वो क्या जाने पीर पराई, जिसके न फटे पैर बिवाई।",
+    "Audio": "/audio/proverb.mp3",
+    "Translation": "How can someone know another’s pain if their own feet have never cracked?"
   },
   "Situations": [
     {
       "Title": "Backhanded Compliments",
       "Example": "\"You actually did a great job on this, I'm surprised!\"",
+      "Comic": {
+        "Them": "peep-standing-3.svg",
+        "You": "peep-standing-4.svg"
+      },
       "Scripts": [
         {
           "Name": "The Clarification Script",
@@ -26,6 +31,10 @@
     {
       "Title": "The Interrupt",
       "Example": "Someone repeatedly talking over you in a meeting.",
+      "Comic": {
+        "Them": "peep-standing-5.svg",
+        "You": "peep-standing-9.svg"
+      },
       "Scripts": [
         {
           "Name": "The Boundary Script",
@@ -41,6 +50,10 @@
     {
       "Title": "Credit Theft",
       "Example": "A colleague presenting your idea or work as their own.",
+      "Comic": {
+        "Them": "peep-standing-11.svg",
+        "You": "peep-standing-20.svg"
+      },
       "Scripts": [
         {
           "Name": "The Collaborative Reclaim",
@@ -55,6 +68,10 @@
     {
       "Title": "Direct Insults & Disrespect",
       "Example": "A rude remark disguised as a joke.",
+      "Comic": {
+        "Them": "peep-standing-4.svg",
+        "You": "peep-standing-3.svg"
+      },
       "Scripts": [
         {
           "Name": "The Mirror Script",
@@ -69,6 +86,10 @@
     {
       "Title": "Passive-Aggressive Jabs",
       "Example": "\"Wow, you're actually brave for wearing that today.\"",
+      "Comic": {
+        "Them": "peep-standing-9.svg",
+        "You": "peep-standing-5.svg"
+      },
       "Scripts": [
         {
           "Name": "The Clarification Call-Out",
@@ -80,6 +101,10 @@
     {
       "Title": "Unsolicited Criticism",
       "Example": "Unwanted negative feedback designed to make you second-guess yourself.",
+      "Comic": {
+        "Them": "peep-standing-20.svg",
+        "You": "peep-standing-11.svg"
+      },
       "Scripts": [
         {
           "Name": "The Boundary-Setting Script",
@@ -90,6 +115,10 @@
     {
       "Title": "Public Undermining / Sarcasm",
       "Example": "Someone trying to poke holes in your competence publicly.",
+      "Comic": {
+        "Them": "peep-standing-3.svg",
+        "You": "peep-standing-11.svg"
+      },
       "Scripts": [
         {
           "Name": "The Grey Rock Method",
@@ -101,6 +130,10 @@
     {
       "Title": "Constant Negative Venting",
       "Example": "People constantly dragging heavy negativity into your space.",
+      "Comic": {
+        "Them": "peep-standing-5.svg",
+        "You": "peep-standing-20.svg"
+      },
       "Scripts": [
         {
           "Name": "The Pivot Script",

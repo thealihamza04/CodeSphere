@@ -10,7 +10,7 @@ const templatePath = path.join(distDir, 'index.html')
 const entryServerPath = path.join(distDir, 'server/entry-server.js')
 
 const templateHtml = await fs.readFile(templatePath, 'utf-8')
-const { render } = await import(pathToFileURL(entryServerPath).href)
+const { render, pageJsonLd = {} } = await import(pathToFileURL(entryServerPath).href)
 
 if (typeof render !== 'function') {
   throw new Error('Expected entry-server to export a render() function')
@@ -157,6 +157,10 @@ const routeMeta = {
     title: 'Handle Insults & Bullies Like a Pro — CodeSphere',
     description: 'Exact scripts and composure techniques for handling insults, interruptions, and disrespect.',
   },
+  '/tech-stack': {
+    title: 'Tech Stack A–Z: Libraries, Frameworks & Dev Tools — CodeSphere',
+    description: 'An A–Z index of 550+ libraries, frameworks and developer tools, each with a one-line summary.',
+  },
   '/vibe-explorer': {
     title: 'Vibe Explorer — CodeSphere',
     description: 'Explore and discover coding vibes, genres, and creative themes.',
@@ -220,7 +224,7 @@ function buildMetaTags(route) {
 
 const OG_IMAGE = 'https://codes-sphere.vercel.app/og-image.jpg'
 
-function buildHtmlWithMeta({ template, appHtml, title, description, canonicalPath }) {
+function buildHtmlWithMeta({ template, appHtml, title, description, canonicalPath, jsonLd }) {
   const escapedTitle = escapeHtml(title)
   const escapedDescription = escapeHtml(description)
   const canonicalUrl = `https://codes-sphere.vercel.app${canonicalPath}`
@@ -250,11 +254,12 @@ function buildHtmlWithMeta({ template, appHtml, title, description, canonicalPat
     `<meta name="twitter:description" content="${escapedDescription}" />`,
     `<meta name="twitter:image" content="${OG_IMAGE}" />`,
     breadcrumbJsonLd ? `<script type="application/ld+json">${breadcrumbJsonLd}</script>` : '',
+    jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>` : '',
   ].filter(Boolean).join('\n    ')
 
   return template
-    .replace('<title>CodeSphere</title>', metaTags)
-    .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
+    .replace('<title>CodeSphere</title>', () => metaTags)
+    .replace('<div id="root"></div>', () => `<div id="root">${appHtml}</div>`)
 }
 
 for (const route of routesToPrerender) {
@@ -266,6 +271,7 @@ for (const route of routesToPrerender) {
     title: meta.title,
     description: meta.description,
     canonicalPath: meta.canonicalPath,
+    jsonLd: pageJsonLd[meta.canonicalPath],
   })
 
   if (renderedHtml === templateHtml) {

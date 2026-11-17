@@ -1,0 +1,45 @@
+# CodeSphere
+
+> A free developer reference: programming languages, frameworks, libraries and dev tools, learning roadmaps, software design and architecture guides, plus practical guides on communication and social skills.
+
+All pages are server-rendered HTML and free to read and cite. Base URL: https://codes-sphere.vercel.app
+
+## Languages, frameworks and tools
+
+- [Programming Language & Framework Catalog](https://codes-sphere.vercel.app/): Explore programming languages and frameworks in one organized developer reference.
+- [All Frameworks by Language](https://codes-sphere.vercel.app/frameworks): Browse popular frameworks organized by programming language.
+- [Tech Stack A–Z](https://codes-sphere.vercel.app/tech-stack): An A–Z index of 550+ libraries, frameworks and developer tools, each with a one-line summary.
+- [History of Programming Languages](https://codes-sphere.vercel.app/TimeLine): Timeline of major programming languages and their origins.
+
+## Roadmaps
+
+- [Software Engineer Roadmap](https://codes-sphere.vercel.app/swe-roadmap): Guided path through core software engineering skills and topics.
+- [AI Engineer Roadmap](https://codes-sphere.vercel.app/ai-roadmap): A practical roadmap to become an AI engineer from fundamentals to deployment.
+- [Machine Learning Roadmap](https://codes-sphere.vercel.app/ml-roadmap): Step-by-step learning roadmap for machine learning engineers.
+- [Developer Essential Skills](https://codes-sphere.vercel.app/developer-essential-skills): Key skills every modern developer should build for long-term growth.
+
+## Architecture and engineering
+
+- [System Design Reference](https://codes-sphere.vercel.app/system-design): Core system design concepts: scalability, caching, and distributed systems.
+- [Software Design Patterns](https://codes-sphere.vercel.app/design-patterns): Reference for creational, structural, and behavioral design patterns.
+- [Design Principles](https://codes-sphere.vercel.app/design-principles): Essential software design principles for maintainable and scalable systems.
+- [DevOps & Infrastructure Guide](https://codes-sphere.vercel.app/devops): DevOps tools, CI/CD workflows, and infrastructure best practices.
+- [Project Checklist](https://codes-sphere.vercel.app/project-checklist): Comprehensive checklist to plan, build, and ship software projects.
+
+## Design and motion
+
+- [Design Styles Guide](https://codes-sphere.vercel.app/design-styles): Explore modern design styles and their practical use cases.
+- [Motion Design Guide](https://codes-sphere.vercel.app/motion-design): Motion design principles, techniques, and implementation ideas.
+- [Animations Guide](https://codes-sphere.vercel.app/animations-guide): Practical guide to UI and web animations for developers.
+- [Vibe Explorer](https://codes-sphere.vercel.app/vibe-explorer): Explore and discover coding vibes, genres, and creative themes.
+
+## Communication and social skills
+
+- [Handle Insults & Bullies Like a Pro](https://codes-sphere.vercel.app/handle-insults): Exact scripts for backhanded compliments, interruptions, credit theft, insults, passive-aggressive jabs and other disrespect.
+- [Social Intelligence Guide](https://codes-sphere.vercel.app/social-intelligence): Develop communication, empathy, and interpersonal effectiveness.
+- [Civic Sense Guide](https://codes-sphere.vercel.app/civic-sense): Civic awareness and practical social responsibility insights.
+
+## Other
+
+- [Business Timeline](https://codes-sphere.vercel.app/business-timeline): How major business models evolved from industrial manufacturing to AI-driven companies.
+- [Sitemap](https://codes-sphere.vercel.app/sitemap.xml)
