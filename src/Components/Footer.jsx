@@ -44,6 +44,7 @@ const Footer = () => {
       links: [
         { name: "Civic Sense", path: "/civic-sense" },
         { name: "Social Intelligence", path: "/social-intelligence" },
+        { name: "Handle Insults", path: "/handle-insults" },
       ],
     },
   ];

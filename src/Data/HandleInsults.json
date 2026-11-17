@@ -1,0 +1,112 @@
+{
+  "Mindset": {
+    "Label": "Core Mindset",
+    "Title": "Understanding Critics & Empathy",
+    "Quote": "Wo kya jaane peer parayi, jiske na phate pair bivaayi.",
+    "Translation": "How can someone know another’s pain if their own feet have never cracked?",
+    "Text": "When dealing with unconstructive criticism or insults, remember that outsiders passing quick judgments often lack the lived experience or empathy to understand the weight of your journey. Do not let unqualified opinions affect your inner peace."
+  },
+  "Situations": [
+    {
+      "Title": "Backhanded Compliments",
+      "Example": "\"You actually did a great job on this, I'm surprised!\"",
+      "Scripts": [
+        {
+          "Name": "The Clarification Script",
+          "Line": "What did you mean by that?",
+          "Note": "Forces them to explain, putting the awkwardness back on them."
+        },
+        {
+          "Name": "The Disarming Script",
+          "Line": "Thanks! I worked hard on it.",
+          "Note": "Ignores the hidden jab and accepts only the positive words."
+        }
+      ]
+    },
+    {
+      "Title": "The Interrupt",
+      "Example": "Someone repeatedly talking over you in a meeting.",
+      "Scripts": [
+        {
+          "Name": "The Boundary Script",
+          "Line": "Hold on a second, let me finish my thought, and then I'd love to hear your point."
+        },
+        {
+          "Name": "The Firm Redirect",
+          "Line": "I wasn't quite finished—let me wrap up this point first.",
+          "Note": "Keeps your tone steady and calm without raising your voice."
+        }
+      ]
+    },
+    {
+      "Title": "Credit Theft",
+      "Example": "A colleague presenting your idea or work as their own.",
+      "Scripts": [
+        {
+          "Name": "The Collaborative Reclaim",
+          "Line": "I'm glad you liked the idea I shared earlier. To build on what I started..."
+        },
+        {
+          "Name": "The Direct Follow-Up",
+          "Line": "Thanks for bringing up my proposal, [Name]. Since I put the initial framework together, let me walk everyone through the next steps."
+        }
+      ]
+    },
+    {
+      "Title": "Direct Insults & Disrespect",
+      "Example": "A rude remark disguised as a joke.",
+      "Scripts": [
+        {
+          "Name": "The Mirror Script",
+          "Line": "Are you okay? That came across pretty harsh."
+        },
+        {
+          "Name": "The Joke-Breaker",
+          "Line": "I don't get the joke—can you explain why that's funny?"
+        }
+      ]
+    },
+    {
+      "Title": "Passive-Aggressive Jabs",
+      "Example": "\"Wow, you're actually brave for wearing that today.\"",
+      "Scripts": [
+        {
+          "Name": "The Clarification Call-Out",
+          "Line": "Help me understand what you mean by that comment.",
+          "Note": "Strips away the plausible deniability of a joke."
+        }
+      ]
+    },
+    {
+      "Title": "Unsolicited Criticism",
+      "Example": "Unwanted negative feedback designed to make you second-guess yourself.",
+      "Scripts": [
+        {
+          "Name": "The Boundary-Setting Script",
+          "Line": "I appreciate that you have a perspective on this, but I'm confident in the direction I've chosen."
+        }
+      ]
+    },
+    {
+      "Title": "Public Undermining / Sarcasm",
+      "Example": "Someone trying to poke holes in your competence publicly.",
+      "Scripts": [
+        {
+          "Name": "The Grey Rock Method",
+          "Line": "Are you alright? That felt a bit uncalled for.",
+          "Note": "Keeps voice flat and devoid of emotion to deny them drama."
+        }
+      ]
+    },
+    {
+      "Title": "Constant Negative Venting",
+      "Example": "People constantly dragging heavy negativity into your space.",
+      "Scripts": [
+        {
+          "Name": "The Pivot Script",
+          "Line": "That sounds like a heavy situation to deal with. Unfortunately, I'm completely swamped with my tasks right now and need to dive back in."
+        }
+      ]
+    }
+  ]
+}

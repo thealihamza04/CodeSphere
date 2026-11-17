@@ -46,6 +46,7 @@ const pageGroups = [
       { label: 'Developer Essential Skills', path: '/developer-essential-skills' },
       { label: 'Civic Sense', path: '/civic-sense' },
       { label: 'Social Intelligence', path: '/social-intelligence' },
+      { label: 'Handle Insults & Bullies', path: '/handle-insults' },
     ]
   },
   {

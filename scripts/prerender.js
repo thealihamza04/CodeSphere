@@ -68,6 +68,7 @@ const baseRoutes = [
   '/animations-guide',
   '/civic-sense',
   '/social-intelligence',
+  '/handle-insults',
   '/vibe-explorer',
   '/tech-stack',
 ]
@@ -151,6 +152,10 @@ const routeMeta = {
   '/social-intelligence': {
     title: 'Social Intelligence Guide — CodeSphere',
     description: 'Develop communication, empathy, and interpersonal effectiveness.',
+  },
+  '/handle-insults': {
+    title: 'Handle Insults & Bullies Like a Pro — CodeSphere',
+    description: 'Exact scripts and composure techniques for handling insults, interruptions, and disrespect.',
   },
   '/vibe-explorer': {
     title: 'Vibe Explorer — CodeSphere',
