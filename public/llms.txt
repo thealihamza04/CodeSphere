@@ -20,6 +20,7 @@ All pages are server-rendered HTML and free to read and cite. Base URL: https://
 
 ## Architecture and engineering
 
+- [RAG Architecture Guide](https://codes-sphere.vercel.app/rag): Interactive guide to Retrieval-Augmented Generation (RAG) architecture, vector indexing, hybrid retrieval, and grounded inference.
 - [System Design Reference](https://codes-sphere.vercel.app/system-design): Core system design concepts: scalability, caching, and distributed systems.
 - [Software Design Patterns](https://codes-sphere.vercel.app/design-patterns): Reference for creational, structural, and behavioral design patterns.
 - [Design Principles](https://codes-sphere.vercel.app/design-principles): Essential software design principles for maintainable and scalable systems.

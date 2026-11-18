@@ -1,0 +1,150 @@
+{
+  "Definition": {
+    "Label": "Core Definition",
+    "Title": "What is Retrieval-Augmented Generation (RAG)?",
+    "OneLiner": "Retrieval-Augmented Generation (RAG) is an AI architecture that enhances Large Language Models by retrieving relevant factual information from external knowledge bases before generating a response, ensuring grounded, verifiable, and hallucination-free answers.",
+    "Formula": "Generated Output = LLM(User Query + Retrieved Context)",
+    "KeyBenefits": [
+      {
+        "Label": "Zero Fine-Tuning",
+        "Desc": "Connect private data without expensive GPU retraining."
+      },
+      {
+        "Label": "Real-Time Freshness",
+        "Desc": "Overcome LLM knowledge cutoff dates instantly."
+      },
+      {
+        "Label": "Auditable Citations",
+        "Desc": "Trace every claim back to exact source documents."
+      }
+    ]
+  },
+  "Stages": [
+    {
+      "id": "documents",
+      "number": "01",
+      "title": "Document Ingestion & Parsing",
+      "phase": "Ingestion Pipeline",
+      "phaseType": "offline",
+      "summary": "Extract raw content from enterprise documents (PDF, Markdown, HTML, Notion, APIs) and cleanse boilerplate noise.",
+      "details": {
+        "whatHappens": "Raw unstructured files are loaded and stripped of non-informative markup, scripts, and duplicate headers. Documents are enriched with metadata such as source URI, creation date, author, and security tags.",
+        "keyTools": ["Unstructured.io", "LlamaIndex Document Loaders", "LangChain Document Loaders", "PyMuPDF / pdfplumber", "Apache Tika"],
+        "proTip": "80% of RAG failure modes happen here: tables and multi-column PDFs easily lose spatial meaning if parsed with basic regex extractors."
+      }
+    },
+    {
+      "id": "chunking",
+      "number": "02",
+      "title": "Text Chunking & Splitting",
+      "phase": "Ingestion Pipeline",
+      "phaseType": "offline",
+      "summary": "Partitioning long documents into semantically coherent passages with bounded token windows and overlap.",
+      "details": {
+        "whatHappens": "Long text is broken down into fixed or adaptive chunks (e.g. 256 to 512 tokens). A 10–20% sliding window overlap ensures boundary ideas are not truncated in isolation.",
+        "keyTools": ["RecursiveCharacterTextSplitter", "Semantic Chunking (BERT/Cross-encoders)", "Sentence Window Retrieval", "Parent Document Chunking"],
+        "proTip": "Use Parent Document Retriever: embed small chunks (128 tokens) for precise search, but return the larger parent chunk (1024 tokens) to the LLM for rich context."
+      }
+    },
+    {
+      "id": "embedding",
+      "number": "03",
+      "title": "Dense Vector Embeddings",
+      "phase": "Ingestion Pipeline",
+      "phaseType": "offline",
+      "summary": "Converting text chunks into high-dimensional numerical vectors capturing deep conceptual and semantic meaning.",
+      "details": {
+        "whatHappens": "Each chunk is transformed by an embedding model into a vector of numbers (e.g. 768 to 3072 floating points). Similar ideas cluster close together in geometric space.",
+        "keyTools": ["OpenAI text-embedding-3 (small/large)", "BAAI/bge-large-en-v1.5", "Cohere Embed v3", "Voyage AI voyage-3", "Nomic Embed"],
+        "proTip": "Ensure the embedding model used during document ingestion is identical to the one used for runtime query embedding, and normalize vectors for fast dot-product similarity."
+      }
+    },
+    {
+      "id": "vectordb",
+      "number": "04",
+      "title": "Vector Database & Indexing",
+      "phase": "Knowledge Store",
+      "phaseType": "storage",
+      "summary": "Indexing vectors and metadata using Approximate Nearest Neighbor (ANN) algorithms for sub-millisecond retrieval.",
+      "details": {
+        "whatHappens": "Vectors are indexed using specialized data structures such as HNSW (Hierarchical Navigable Small World) or IVF (Inverted File). Metadata is stored side-by-side to allow pre-filtering.",
+        "keyTools": ["Qdrant", "Pinecone", "ChromaDB", "Milvus", "pgvector (PostgreSQL)", "Weaviate"],
+        "proTip": "Always apply metadata filtering (e.g., department, user role, document date) before vector distance scoring to dramatically reduce candidate search space."
+      }
+    },
+    {
+      "id": "query",
+      "number": "05",
+      "title": "User Query & Pre-retrieval",
+      "phase": "Runtime Query Flow",
+      "phaseType": "online",
+      "summary": "Incoming user prompt is cleansed, rewritten, decomposed, and transformed into an embedding vector.",
+      "details": {
+        "whatHappens": "User questions are rarely written in the formal tone of reference docs. Advanced pre-retrieval systems apply HyDE (Hypothetical Document Embeddings) or sub-query decomposition to expand search intent.",
+        "keyTools": ["HyDE (Hypothetical Document Embeddings)", "Multi-Query Retriever", "Step-Back Prompting", "Query Translation"],
+        "proTip": "A conversational question like 'Does our plan cover braces?' often fails vector matching unless rewritten into 'Dental insurance coverage for orthodontics and braces'."
+      }
+    },
+    {
+      "id": "retrieval",
+      "number": "06",
+      "title": "Hybrid Search & Reranking",
+      "phase": "Runtime Query Flow",
+      "phaseType": "online",
+      "summary": "Combining dense semantic retrieval with sparse keyword search, then scoring top candidates with a Cross-Encoder reranker.",
+      "details": {
+        "whatHappens": "Dense vectors capture semantic concepts, while BM25 keyword search captures exact product numbers and codes. Candidates are combined via Reciprocal Rank Fusion (RRF), then scored by a Cross-Encoder.",
+        "keyTools": ["Cohere Rerank v3", "BGE Reranker-large", "BM25 + Dense Hybrid (RRF)", "Cross-Encoder / ms-marco"],
+        "proTip": "Adding a reranker is the single highest-ROI upgrade to Naive RAG. It consistently boosts Top-3 accuracy by 15–30% with minimal latency overhead."
+      }
+    },
+    {
+      "id": "augmentation",
+      "number": "07",
+      "title": "Prompt Augmentation & Context Assembly",
+      "phase": "Runtime Query Flow",
+      "phaseType": "online",
+      "summary": "Fusing retrieved reference passages with system guardrails and the original question into an augmented prompt.",
+      "details": {
+        "whatHappens": "Top-ranked context passages are wrapped in clean delimiters (<context>...</context>) with citation IDs. Strict prompt instructions command the model to only use the provided context and avoid assumptions.",
+        "keyTools": ["LangChain PromptTemplates", "Contextual Compression", "Lost-in-the-Middle sorting", "Token budget trimming"],
+        "proTip": "LLMs suffer from 'Lost in the Middle' attention degradation. Place the most authoritative chunks at the very beginning and very end of your context block."
+      }
+    },
+    {
+      "id": "generation",
+      "number": "08",
+      "title": "Grounded LLM Generation",
+      "phase": "Runtime Query Flow",
+      "phaseType": "online",
+      "summary": "The LLM synthesizes an accurate, fluent answer grounded exclusively in the provided context, citing sources.",
+      "details": {
+        "whatHappens": "The model acts as a reasoning engine over provided evidence rather than reciting memorized parameters. The final output includes bracketed source citations [1], [2] allowing users to verify provenance.",
+        "keyTools": ["Claude 3.5 Sonnet", "GPT-4o", "Gemini 1.5 Pro", "Llama 3.3 70B", "Ragas / TruLens (Evals)"],
+        "proTip": "Keep inference temperature low (0.0 to 0.2) for factual RAG and use automated RAG triade metrics (Context Precision, Faithfulness, Answer Relevance) to guard against drift."
+      }
+    }
+  ],
+  "Comparison": [
+    {
+      "dimension": "Architecture",
+      "naive": "Linear: Ingest -> Embed -> Top-K Search -> Prompt",
+      "advanced": "Modular: Query Rewriting -> Hybrid BM25/Dense -> Reranking -> Routing"
+    },
+    {
+      "dimension": "Retrieval Accuracy",
+      "naive": "Moderate (suffers from keyword mismatch & hallucinated context)",
+      "advanced": "High (Cross-encoder rerankers filter out semantic false-positives)"
+    },
+    {
+      "dimension": "Outdated Info Handling",
+      "naive": "Static vector DB updates; potential collision",
+      "advanced": "Partitioned metadata, time-decay scoring & dynamic routing"
+    },
+    {
+      "dimension": "Citation Fidelity",
+      "naive": "Generic or unverified citations",
+      "advanced": "Strict chunk-level provenance with sentence-level grounding"
+    }
+  ]
+}

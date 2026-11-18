@@ -25,6 +25,7 @@ const pageGroups = [
   {
     group: "Engineering & Architecture",
     items: [
+      { label: 'RAG Architecture Guide', path: '/rag' },
       { label: 'System Design', path: '/system-design' },
       { label: 'Design Patterns', path: '/design-patterns' },
       { label: 'DevOps', path: '/devops' },

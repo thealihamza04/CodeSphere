@@ -23,6 +23,7 @@ import ProjectChecklist from "./Components/ProjectChecklist";
 import VibeExplorer from "./Components/VibeExplorer.jsx";
 import TechStack from "./Components/TechStack.jsx";
 import HandleInsults from "./Components/HandleInsults.jsx";
+import RAGGuide from "./Components/RAGGuide.jsx";
 import NotFound from "./Components/NotFound.jsx";
 import SearchCommand from "./Components/common/SearchCommandMenu.jsx";
 import CopyPage from "./Components/CopyPage.jsx";
@@ -62,6 +63,7 @@ const Layout = () => {
           <Route path='/vibe-explorer' element={<VibeExplorer />} />
           <Route path='/tech-stack' element={<TechStack />} />
           <Route path='/handle-insults' element={<HandleInsults />} />
+          <Route path='/rag' element={<RAGGuide />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>

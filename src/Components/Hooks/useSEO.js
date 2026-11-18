@@ -36,13 +36,18 @@ const useSEO = ({
     setMeta("property", "og:image", resolvedImage);
     setMeta("name", "twitter:image", resolvedImage);
     if (canonical) {
-      let link = document.head.querySelector("link[rel=\"canonical\"]");
-      if (!link) {
-        link = document.createElement("link");
+      const canonicals = document.head.querySelectorAll("link[rel=\"canonical\"]");
+      if (canonicals.length > 0) {
+        canonicals[0].setAttribute("href", canonical);
+        for (let i = 1; i < canonicals.length; i++) {
+          canonicals[i].remove();
+        }
+      } else {
+        const link = document.createElement("link");
         link.setAttribute("rel", "canonical");
+        link.setAttribute("href", canonical);
         document.head.appendChild(link);
       }
-      link.setAttribute("href", canonical);
     }
 
     Object.entries(og).forEach(([key, value]) => {

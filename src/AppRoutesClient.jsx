@@ -27,6 +27,7 @@ const ProjectChecklist = lazy(() => import("./Components/ProjectChecklist"));
 const VibeExplorer = lazy(() => import("./Components/VibeExplorer.jsx"));
 const TechStack = lazy(() => import("./Components/TechStack.jsx"));
 const HandleInsults = lazy(() => import("./Components/HandleInsults.jsx"));
+const RAGGuide = lazy(() => import("./Components/RAGGuide.jsx"));
 const NotFound = lazy(() => import("./Components/NotFound.jsx"));
 
 const RouteLoading = () => (
@@ -79,6 +80,7 @@ const Layout = () => {
             <Route path="/vibe-explorer" element={<VibeExplorer />} />
             <Route path="/tech-stack" element={<TechStack />} />
             <Route path="/handle-insults" element={<HandleInsults />} />
+            <Route path="/rag" element={<RAGGuide />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

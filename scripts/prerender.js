@@ -69,6 +69,7 @@ const baseRoutes = [
   '/civic-sense',
   '/social-intelligence',
   '/handle-insults',
+  '/rag',
   '/vibe-explorer',
   '/tech-stack',
 ]
@@ -156,6 +157,10 @@ const routeMeta = {
   '/handle-insults': {
     title: 'Handle Insults & Bullies Like a Pro — CodeSphere',
     description: 'Exact scripts and composure techniques for handling insults, interruptions, and disrespect.',
+  },
+  '/rag': {
+    title: 'RAG Architecture Guide: Retrieval-Augmented Generation — CodeSphere',
+    description: 'Interactive visual architecture guide to Retrieval-Augmented Generation (RAG): document chunking, vector embeddings, hybrid search, cross-encoder reranking, and grounded LLM generation.',
   },
   '/tech-stack': {
     title: 'Tech Stack A–Z: Libraries, Frameworks & Dev Tools — CodeSphere',

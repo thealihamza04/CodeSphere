@@ -24,6 +24,7 @@ const Footer = () => {
     {
       title: "Architecture",
       links: [
+        { name: "RAG Architecture", path: "/rag" },
         { name: "System Design", path: "/system-design" },
         { name: "Design Patterns", path: "/design-patterns" },
         { name: "DevOps & Infrastructure", path: "/devops" },
